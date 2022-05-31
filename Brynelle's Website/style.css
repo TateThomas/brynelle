@@ -1,0 +1,118 @@
+@font-face{
+    src: url(fonts/alta-regular.otf);
+    font-family: alta;
+}
+
+@font-face{
+    src: url(fonts/alta-light.otf);
+    font-family: alta-light;
+}
+
+body{
+    background-color: #f0f1ed;
+    padding: 0;
+    margin: 0;
+    font-family: alta-light;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+#header{
+    background-color: #e6d2c6;
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    z-index: 1;
+}
+
+#header > a{
+    color: white;
+    margin: 15px;
+    display: inline-block;
+    float: left;
+    padding: 5px;
+    position: relative;
+    top: -30px;
+    font-family: alta;
+}
+
+#header ul{
+    list-style: none;
+    margin: 0px;
+    height: 0px;
+    padding: 0px;
+}
+
+#links{
+    position: relative;
+    right: 5px;
+    top: 5px;
+    right: 20px;
+}
+
+#links li{
+    display: inline-block;
+    float: right;
+    padding: 0px;
+    margin: 15px 2% 0px;
+}
+
+#links a:hover{
+    border-bottom: 1px solid white;
+}
+
+#filler{
+    display: block;
+    height: 100%;
+}
+
+#top-page{
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+}
+
+#top-page img{
+    position: absolute;
+    width: 100%;
+    top: -10vw;
+    transition: opacity 1s;
+}
+
+#top-page img.show{
+    opacity: 1;
+}
+
+#top-page img.hidden{
+    opacity: 0;
+}
+
+#top-page h2{
+    position: absolute;
+    top: 24vw;
+    left: 5%;
+    width: 60%;
+    color: white;
+    border-bottom: 2px solid white;
+    text-align: right;
+    font-size: 4vw;
+    text-shadow: 1px 1px 10px black;
+    transition: color 2s, border-bottom 2s, text-shadow 3.5s;
+}
+
+#top-page h2:hover{
+    color: #e6d2c6;
+    border-bottom: 2px solid #e6d2c6;
+    text-shadow: 1px 1px 10px white;
+}
+
+#top-page img[src="images/Photo Feb 04, 5 56 20 PM.jpg"]{
+    top: -7vw;
+}
+
+#top-page img[src="images/Photo Nov 20, 9 28 21 AM.jpg"]{
+    top: -14vw;
+}
