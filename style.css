@@ -116,3 +116,82 @@ a{
 #top-page img[src="images/Photo Nov 20, 9 28 21 AM.jpg"]{
     top: -14vw;
 }
+
+#arches{
+    width: 100%;
+}
+
+#arches ul{
+    list-style-type: none;
+    margin: 0;
+}
+
+#arches li{
+    display: inline-block;
+    width: 300px;
+    height: 60vh;
+    margin: 6.33%;
+    text-align: center;
+    background-color: white;
+    border-radius: 47% 47% 0px 0px;
+    overflow: hidden;
+    position: relative;
+    transition: 1s;
+}
+
+#arches li:hover{
+    box-shadow: 1px 1px 10px black;
+}
+
+#arches img{
+    width: 100%;
+    position: relative;
+}
+
+#arches img[src="images/Photo Nov 20, 8 34 00 AM.jpg"], #arches img[src="images/Photo Feb 04, 5 59 54 PM.jpg"]{
+    top: -20px;
+}
+
+#arches h3{
+    width: 100%;
+    position: absolute;
+    top: 175px;
+    color: white;
+    font-size: 30px;
+}
+
+#about-me{
+    background-color: #d4c0a7;
+    position: relative;
+    padding: 0px;
+    margin: 0px;
+}
+
+#about-me img:nth-child(1){
+    height: 70vh;
+    padding: 0;
+    margin: 11vh 20vw 11vh 10vw;
+    float: left;
+}
+
+#about-me img:nth-child(2){
+    height: 35vh;
+    position: absolute;
+    top: 25%;
+    left: 40vw;
+}
+
+#about-me div{
+    position: relative;
+    margin: 2%;
+    top: 20%;
+    color: white;
+}
+
+#about-me h2{
+    font-size: 60px;
+}
+
+#about-me p{
+    font-size: 20px;
+}
