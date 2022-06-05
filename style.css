@@ -24,49 +24,42 @@ a{
     background-color: #e6d2c6;
     position: fixed;
     width: 100%;
-    height: 60px;
+    height: 10vh;
     z-index: 1;
 }
 
-#header > a{
+#header > a h1{
     color: white;
-    margin: 15px;
     display: inline-block;
     float: left;
-    padding: 5px;
     position: relative;
-    top: -30px;
     font-family: alta;
+    font-size: 6vh;
+    height: 6vh;
+    padding: 0;
+    margin: 2vh 3vh 2vh;
 }
 
 #header ul{
     list-style: none;
-    margin: 0px;
+    margin: 0px 4% 0px;
     height: 0px;
     padding: 0px;
 }
 
 #links{
     position: relative;
-    right: 5px;
-    top: 5px;
-    right: 20px;
 }
 
 #links li{
     display: inline-block;
     float: right;
-    padding: 0px;
-    margin: 15px 2% 0px;
+    font-size: 3vh;
+    margin: 3.5vh 3vh 3.5vh;
 }
 
 #links a:hover{
     border-bottom: 1px solid white;
-}
-
-#filler{
-    display: block;
-    height: 100%;
 }
 
 #top-page{
@@ -77,8 +70,9 @@ a{
 
 #top-page img{
     position: absolute;
+    object-fit: cover;
     width: 100%;
-    top: -10vw;
+    height: 100%;
     transition: opacity 1s;
 }
 
@@ -92,7 +86,7 @@ a{
 
 #top-page h2{
     position: absolute;
-    top: 24vw;
+    top: 50vh;
     left: 5%;
     width: 60%;
     color: white;
@@ -109,34 +103,28 @@ a{
     text-shadow: 1px 1px 10px white;
 }
 
-#top-page img[src="images/Photo Feb 04, 5 56 20 PM.jpg"]{
-    top: -7vw;
-}
-
-#top-page img[src="images/Photo Nov 20, 9 28 21 AM.jpg"]{
-    top: -14vw;
-}
-
 #arches{
     width: 100%;
 }
 
 #arches ul{
     list-style-type: none;
-    margin: 0;
+    width: 90%;
+    padding: 0;
+    margin: 2% 5%;
 }
 
 #arches li{
     display: inline-block;
-    width: 300px;
-    height: 60vh;
-    margin: 6.33%;
+    width: 25%;
+    height: 30vw;
+    margin: 3.9%;
     text-align: center;
     background-color: white;
     border-radius: 47% 47% 0px 0px;
     overflow: hidden;
     position: relative;
-    transition: 1s;
+    transition: box-shadow 1s;
 }
 
 #arches li:hover{
@@ -145,53 +133,251 @@ a{
 
 #arches img{
     width: 100%;
+    height: 100%;
+    object-fit: cover;
     position: relative;
-}
-
-#arches img[src="images/Photo Nov 20, 8 34 00 AM.jpg"], #arches img[src="images/Photo Feb 04, 5 59 54 PM.jpg"]{
-    top: -20px;
 }
 
 #arches h3{
     width: 100%;
-    position: absolute;
-    top: 175px;
+    height: 0;
+    margin: 0;
+    position: relative;
+    top: -12vw;
     color: white;
-    font-size: 30px;
+    font-size: 4.6vh;
 }
 
 #about-me{
     background-color: #d4c0a7;
     position: relative;
-    padding: 0px;
+    height: 40vw;
+    padding: 0 0 10vw;
     margin: 0px;
 }
 
 #about-me img:nth-child(1){
-    height: 70vh;
+    height: 40vw;
     padding: 0;
-    margin: 11vh 20vw 11vh 10vw;
+    margin: 5vw 20vw 5vw 10vw;
     float: left;
 }
 
 #about-me img:nth-child(2){
-    height: 35vh;
+    height: 20vw;
     position: absolute;
-    top: 25%;
-    left: 40vw;
+    top: 15vw;
+    left: 33vw;
 }
 
-#about-me div{
-    position: relative;
-    margin: 2%;
-    top: 20%;
+#about-me > div{
+    position: absolute;
+    width: 33vw;
+    height: 40vw;
+    margin: 5vw 7vw 5vw 60vw;
     color: white;
+    overflow: hidden;
 }
 
 #about-me h2{
-    font-size: 60px;
+    font-size: 4vw;
 }
 
 #about-me p{
-    font-size: 20px;
+    font-size: 1.5vw;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1155px){
+    
+    #burger{
+        width: 7vh;
+        height: 7vh;
+        margin: 1.5vh 3vh;
+        float: right;
+        cursor: pointer;
+    }
+
+    #burger span{
+        display: block;
+        background-color: white;
+        height: 15%;
+        width: 100%;
+        margin: 13.75% 0px;
+        transition: .3s;
+        position: relative;
+        top: 0;
+    }
+    
+    #burger span.open:nth-child(1){
+        transform: rotate(45deg);
+        top: 28%;
+    }
+    
+    #burger span.open:nth-child(3){
+        transform: rotate(-45deg);
+        top: -28%;
+    }
+    
+    #burger span.open:nth-child(2){
+        opacity: 0;
+        width: 0;
+    }
+    
+    #links{
+        overflow: hidden;
+        height: 0px;
+        width: 100%;
+        transition: .3s;
+    }
+    
+    #links.open{
+        background-color: #c9b8ad;
+        height: 90vh;
+    }
+    
+    #links ul{
+        width: 100%;
+    }
+    
+    #links li{
+        display: block;
+        width: 100%;
+        text-align: center;
+        height: 7vh;
+        font-size: 7vh;
+        padding: 5.5vh;
+        margin: 0;
+    }
+    
+    #links li:nth-child(n + 2){
+        border-top: 2px solid #a89a91;
+    }
+    
+    #links li:hover{
+        background-color: #a89a91;
+    }
+    
+    #links li a:hover{
+        border-bottom: 0px;
+    }
+    
+    #top-page h2{
+        font-size: 6vh;
+        width: 70%;
+        left: 0;
+        margin: 5%;
+    }
+    
+    #about-me h2{
+        font-size: 4.5vw;
+    }
+
+    #about-me p{
+        font-size: 2.5vw;
+    }
+    
+}
+
+@media screen and (max-width: 625px){
+    
+    #header{
+        height: 15vh;
+    }
+    
+    #header > a{
+        width: 55%;
+    }
+    
+    #header > a h1{
+        width: inherit;
+        height: 11.66vh;
+        font-size: 5vh;
+        margin: 1.66vh 3vh 1.66vh;
+    }
+    
+    #burger{
+        height: 10vh;
+        width: 10vh;
+        margin: 2.3vh 3vh;
+    }
+    
+    #links.open{
+        height: 88vh;
+    }
+    
+    #links li{
+        height: 6vh;
+        font-size: 6vh;
+        padding: 5.2vh;
+        margin: 0;
+    }
+    
+    #top-page h2{
+        width: 90%;
+        margin: 5%;
+    }
+    
+    #arches li{
+        width: 80%;
+        margin: 10%;
+        height: 80vw;
+    }
+    
+    #arches h3{
+        font-size: 9vw;
+        top: -30vw;
+    }
+    
+    #about-me{
+        height: 115vw;
+    }
+    
+    #about-me img:nth-child(1){
+        width: 80%;
+        height: 60vw;
+        margin: 10vw;
+        object-fit: cover;
+    }
+    
+    #about-me img:nth-child(2){
+        height: 30vw;
+        top: 38vw;
+        left: 55vw;
+    }
+    
+    #about-me > div{
+        width: 80%;
+        height: 50vw;
+        margin: 70vw 10% 5vw 10%;
+    }
+    
+    #about-me h2{
+        font-size: 6vw;
+    }
+
+    #about-me p{
+        font-size: 3vw;
+    }
+    
+    
+}
+
+@media screen and (max-width: 370px){
+    
+    #burger{
+        height: 5vh;
+        width: 5vh;
+        margin: 1.66vh 3vh;
+    }
+    
+    #about-me h2{
+        font-size: 8vw;
+    }
+    
+    #about-me p{
+        font-size: 4vw;
+    }
+    
 }

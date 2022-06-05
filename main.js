@@ -22,3 +22,22 @@ function changeImage() {
 
 setInterval(changeImage, 3000);
 
+var burger = document.getElementById("burger");
+var links = document.getElementById("links");
+
+burger.onclick = function () {
+    
+    "use strict";
+    if (burger.getElementsByTagName("span")[0].className === "open") {
+        burger.getElementsByTagName("span")[0].className = "";
+        burger.getElementsByTagName("span")[1].className = "";
+        burger.getElementsByTagName("span")[2].className = "";
+        links.className = "";
+    } else {
+        burger.getElementsByTagName("span")[0].className = "open";
+        burger.getElementsByTagName("span")[1].className = "open";
+        burger.getElementsByTagName("span")[2].className = "open";
+        links.className = "open";
+    }
+    
+};
