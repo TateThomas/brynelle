@@ -192,12 +192,11 @@ a{
 @media screen and (max-aspect-ratio: 2330/1440){
     
     #burger{
-        width: 7vh;
-        height: 7vh;
-        margin: 1.5vh 3vh;
+        width: 5vh;
+        height: 5vh;
+        margin: 2.5vh 3vh;
         float: right;
         cursor: pointer;
-        background-color: ;
     }
 
     #burger span{
@@ -209,6 +208,10 @@ a{
         transition: .3s;
         position: relative;
         top: 0;
+    }
+    
+    #burger span:nth-child(1){
+        border-radius: 50%;
     }
     
     #burger span.open:nth-child(1){
@@ -299,7 +302,7 @@ a{
     }
     
     #burger{
-        margin: 4vh 3vh;
+        margin: 5vh 3vh;
     }
     
     #links.open{
@@ -366,8 +369,6 @@ a{
 @media screen and (max-aspect-ratio: 710/1440){
     
     #burger{
-        height: 5vh;
-        width: 5vh;
         margin: 1.66vh 3vh;
     }
     
