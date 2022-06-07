@@ -197,14 +197,15 @@ a{
         margin: 1.5vh 3vh;
         float: right;
         cursor: pointer;
+        background-color: ;
     }
 
     #burger span{
         display: block;
         background-color: white;
-        height: 15%;
+        height: 5%;
         width: 100%;
-        margin: 13.75% 0px;
+        margin: 21% 0px;
         transition: .3s;
         position: relative;
         top: 0;
@@ -298,9 +299,7 @@ a{
     }
     
     #burger{
-        height: 10vh;
-        width: 10vh;
-        margin: 2.3vh 3vh;
+        margin: 4vh 3vh;
     }
     
     #links.open{
