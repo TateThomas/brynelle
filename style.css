@@ -211,7 +211,7 @@ a{
     }
     
     #burger span:nth-child(1){
-        border-radius: 50%;
+        border-radius: 5px;
     }
     
     #burger span.open:nth-child(1){
