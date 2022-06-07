@@ -189,7 +189,7 @@ a{
 
 /* MEDIA QUERIES */
 
-@media screen and (max-width: 1155px){
+@media screen and (max-aspect-ratio: 2330/1440){
     
     #burger{
         width: 7vh;
@@ -280,7 +280,7 @@ a{
     
 }
 
-@media screen and (max-width: 625px){
+@media screen and (max-aspect-ratio: 1260/1440){
     
     #header{
         height: 15vh;
@@ -364,7 +364,7 @@ a{
     
 }
 
-@media screen and (max-width: 370px){
+@media screen and (max-aspect-ratio: 710/1440){
     
     #burger{
         height: 5vh;
