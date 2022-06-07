@@ -208,9 +208,6 @@ a{
         transition: .3s;
         position: relative;
         top: 0;
-    }
-    
-    #burger span:nth-child(1){
         border-radius: 5px;
     }
     
@@ -231,14 +228,16 @@ a{
     
     #links{
         overflow: hidden;
-        height: 0px;
-        width: 100%;
+        height: 0;
+        width: 41vw;
+        margin: 10vh 0 0 59vw;
         transition: .3s;
     }
     
     #links.open{
         background-color: #c9b8ad;
-        height: 90vh;
+        height: 41vh;
+        margin: 10vh 0 0 59vw;
     }
     
     #links ul{
@@ -249,9 +248,9 @@ a{
         display: block;
         width: 100%;
         text-align: center;
-        height: 7vh;
-        font-size: 7vh;
-        padding: 5.5vh;
+        height: 4vh;
+        font-size: 4vh;
+        padding: 2vh;
         margin: 0;
     }
     
@@ -306,14 +305,13 @@ a{
     }
     
     #links.open{
-        height: 88vh;
+        height: 36vh;
     }
     
     #links li{
-        height: 6vh;
-        font-size: 6vh;
-        padding: 5.2vh;
-        margin: 0;
+        height: 3vh;
+        font-size: 3vh;
+        padding: 2vh;
     }
     
     #top-page h2{
