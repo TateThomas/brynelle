@@ -86,21 +86,14 @@ a{
 
 #top-page h2{
     position: absolute;
-    top: 50vh;
+    top: 60vh;
     left: 5%;
     width: 60%;
     color: white;
     border-bottom: 2px solid white;
     text-align: right;
-    font-size: 4vw;
-    text-shadow: 1px 1px 10px black;
+    font-size: 3vw;
     transition: color 2s, border-bottom 2s, text-shadow 3.5s;
-}
-
-#top-page h2:hover{
-    color: #e6d2c6;
-    border-bottom: 2px solid #e6d2c6;
-    text-shadow: 1px 1px 10px white;
 }
 
 #arches{
@@ -267,8 +260,7 @@ a{
     }
     
     #top-page h2{
-        font-size: 6vh;
-        width: 70%;
+        font-size: 3.5vw;
         left: 0;
         margin: 5%;
     }
@@ -286,26 +278,33 @@ a{
 @media screen and (max-aspect-ratio: 1260/1440){
     
     #header{
-        height: 15vh;
+        height: 8vh;
     }
     
     #header > a{
-        width: 55%;
+        width: 70vw;
     }
     
     #header > a h1{
         width: inherit;
-        height: 11.66vh;
-        font-size: 5vh;
-        margin: 1.66vh 3vh 1.66vh;
+        height: 4vh;
+        font-size: 4vh;
+        margin: 2vh 3vh 2vh;
     }
     
     #burger{
-        margin: 5vh 3vh;
+        margin: 1.5vh 3vh;
+    }
+    
+    #links{
+        width: 41vw;
+        margin: 8vh 0 0 59vw;
     }
     
     #links.open{
         height: 36vh;
+        width: 41vw;
+        margin: 8vh 0 0 59vw;
     }
     
     #links li{
@@ -315,19 +314,13 @@ a{
     }
     
     #top-page h2{
+        font-size: 5vw;
         width: 90%;
         margin: 5%;
     }
     
-    #arches li{
-        width: 80%;
-        margin: 10%;
-        height: 80vw;
-    }
-    
     #arches h3{
-        font-size: 9vw;
-        top: -30vw;
+        font-size: 4vw;
     }
     
     #about-me{
@@ -364,10 +357,94 @@ a{
     
 }
 
-@media screen and (max-aspect-ratio: 710/1440){
+@media screen and (max-aspect-ratio: 950/1440){
+    
+    #header{
+        height: 7vh;
+    }
+    
+    #header > a{
+        width: 67vw;
+    }
+    
+    #header > a h1{
+        font-size: 3vh;
+        height: 3vh;
+        margin: 2vh;
+    }
     
     #burger{
-        margin: 1.66vh 3vh;
+        height: 4vh;
+        width: 4vh;
+        margin: 1.5vh 2vh;
+    }
+    
+    #links{
+        margin: 7vh 0 0 59vw;
+    }
+    
+    #links.open{
+        margin: 7vh 0 0 59vw;
+    }
+    
+    #top-page h2{
+        font-size: 6vw;
+    }
+    
+    #arches{
+        overflow-x: scroll;
+        white-space: nowrap;
+    }
+    
+    #arches li{
+        width: 50%;
+        margin: 10%;
+        height: 60vw;
+    }
+    
+    #arches h3{
+        font-size: 7vw;
+        top: -30vw;
+    }
+}
+
+@media screen and (max-aspect-ratio: 710/1440){
+    
+    #header > a{
+        width: 40vw;
+    }
+    
+    #header > a h1{
+        font-size: 2vh;
+        margin: 1.5vh;
+    }
+    
+    #burger{
+        margin: 1.66vh 2vh;
+    }
+    
+    #links.open{
+        height: 20.5vh;
+    }
+    
+    #links li{
+        font-size: 2vh;
+        height: 2vh;
+        padding: 1vh .5vh;
+    }
+    
+    #top-page h2{
+        font-size: 7vw;
+    }
+    
+    #arches ul{
+        margin: 0;
+    }
+    
+    #arches li{
+        width: 70%;
+        margin: 10%;
+        height: 80vw;
     }
     
     #about-me h2{
