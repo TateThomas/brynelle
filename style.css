@@ -409,10 +409,10 @@ a{
     }
 }
 
-@media screen and (max-aspect-ratio: 770/1440){
+@media screen and (max-aspect-ratio: 800/1440){
     
     #header > a{
-        width: 40vw;
+        width: 35vw;
     }
     
     #header > a h1{
