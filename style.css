@@ -371,6 +371,7 @@ a{
         font-size: 3vh;
         height: 3vh;
         margin: 2vh;
+        color: red;
     }
     
     #burger{
@@ -408,7 +409,7 @@ a{
     }
 }
 
-@media screen and (max-aspect-ratio: 750/1440){
+@media screen and (max-aspect-ratio: 770/1440){
     
     #header > a{
         width: 40vw;
@@ -417,6 +418,7 @@ a{
     #header > a h1{
         font-size: 2vh;
         margin: 1.5vh;
+        color: black;
     }
     
     #burger{
