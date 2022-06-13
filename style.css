@@ -357,7 +357,7 @@ a{
     
 }
 
-@media screen and (max-aspect-ratio: 19/30){
+@media screen and (max-device-aspect-ratio: 19/30){
     
     #header{
         height: 7vh;
@@ -408,7 +408,7 @@ a{
     }
 }
 
-@media screen and (max-aspect-ratio: 15/30){
+@media screen and (max-device-aspect-ratio: 15/30){
     
     #header > a{
         width: 35vw;
