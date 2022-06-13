@@ -275,7 +275,7 @@ a{
     
 }
 
-@media screen and (max-aspect-ratio: 25/30){
+@media screen and (max-aspect-ratio: 26/30){
     
     #header{
         height: 8vh;
