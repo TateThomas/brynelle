@@ -165,10 +165,13 @@ a{
 #about-me > div{
     position: absolute;
     width: 33vw;
-    height: 40vw;
-    margin: 5vw 7vw 5vw 60vw;
+    height: 30vw;
+    padding: 2vw;
+    margin: 8vw 5vw 8vw 58vw;
     color: white;
     overflow: hidden;
+    background-color: white;
+    color: black;
 }
 
 #about-me h2{
@@ -182,7 +185,7 @@ a{
 /* MEDIA QUERIES */
 
 @media screen and (max-aspect-ratio: 5/3),
-    screen and (max-device-aspect-ratio: 5/3) and (orientation: portrait),
+    screen and (max-device-aspect-ratio: 5/3),
     screen and (max-aspect-ratio: 5/3) and (min-device-aspect-ratio: 3/5) and (orientation: landscape){
     
     #burger{
@@ -230,7 +233,7 @@ a{
     
     #links.open{
         background-color: #c9b8ad;
-        height: 41vh;
+        height: auto;
         margin: 10vh 0 0 59vw;
     }
     
@@ -305,7 +308,6 @@ a{
     }
     
     #links.open{
-        height: 36vh;
         width: 41vw;
         margin: 8vh 0 0 59vw;
     }
@@ -336,7 +338,7 @@ a{
     }
     
     #header > a{
-        width: 67vw;
+        width: 69vw;
     }
     
     #header > a h1{
@@ -369,17 +371,30 @@ a{
     }
     
     #arches ul{
-        display: inline-block;
+        grid-template-columns: 50vw 50vw 50vw 5%;
+        grid-column-end: 4;
+        grid-template-areas: 'one two three four';
     }
     
     #arches li{
-        width: 50%;
         margin: 8%;
-        height: 60vw;
+        height: 53vw;
     }
     
-    #arches ul li:last-child{
-        margin: 8% 12% 8% 8%;
+    #arches ul:first-child{
+        grid-area: one;
+    }
+        
+    #arches ul:nth-child(2){
+        grid-area: two;
+    }
+        
+    #arches ul:nth-child(3){
+        grid-area: three;
+    }
+        
+    #arches ul:last-child{
+        grid-area: four;
     }
     
     #arches h3{
@@ -406,8 +421,8 @@ a{
     
     #about-me > div{
         width: 80%;
-        height: 50vw;
-        margin: 70vw 10% 5vw 10%;
+        height: 40vw;
+        margin: 75vw 10% 5vw 10%;
     }
     
     #about-me h2{
@@ -419,9 +434,9 @@ a{
     }
 }
 
-@media screen and (max-aspect-ratio: 15/30),
-    screen and (max-device-aspect-ratio: 15/30) and (orientation: portrait),
-    screen and (max-aspect-ratio: 15/30) and (min-device-aspect-ratio: 30/15) and (orientation: portrait){
+@media screen and (max-aspect-ratio: 16/30),
+    screen and (max-device-aspect-ratio: 16/30) and (orientation: portrait),
+    screen and (max-aspect-ratio: 16/30) and (min-device-aspect-ratio: 30/16) and (orientation: portrait){
     
     #header > a{
         width: 35vw;
@@ -438,7 +453,6 @@ a{
     }
     
     #links.open{
-        height: 20.5vh;
     }
     
     #links li{
@@ -453,16 +467,12 @@ a{
     
     #arches ul{
         margin: 0 5%;
+        grid-template-columns: 70vw 70vw 70vw 5%;
     }
     
     #arches li{
-        width: 70%;
         margin: 8% 5%;
         height: 80vw;
-    }
-    
-    #arches ul li:last-child{
-        margin: 8% 10% 8% 5%;
     }
     
     #about-me h2{
