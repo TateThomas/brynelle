@@ -182,7 +182,7 @@ a{
 
 /* MEDIA QUERIES */
 
-@media screen and (max-device-aspect-ratio: 490/300){
+@media screen and (max-aspect-ratio: 49/30){
     
     #burger{
         width: 5vh;
@@ -275,7 +275,7 @@ a{
     
 }
 
-@media screen and (max-device-aspect-ratio: 250/300){
+@media screen and (max-aspect-ratio: 25/30){
     
     #header{
         height: 8vh;
@@ -357,7 +357,7 @@ a{
     
 }
 
-@media screen and (max-device-aspect-ratio: 190/300){
+@media screen and (max-aspect-ratio: 19/30){
     
     #header{
         height: 7vh;
@@ -408,7 +408,7 @@ a{
     }
 }
 
-@media screen and (max-device-aspect-ratio: 150/300){
+@media screen and (max-aspect-ratio: 15/30){
     
     #header > a{
         width: 35vw;
