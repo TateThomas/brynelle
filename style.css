@@ -182,7 +182,7 @@ a{
 
 /* MEDIA QUERIES */
 
-@media screen and (max-aspect-ratio: 49/30), screen and (max-device-aspect-ratio: 30/49) and (orientation: landscape){
+@media screen and (max-aspect-ratio: 50/30), screen and (max-device-aspect-ratio: 30/50) and (orientation: landscape){
     
     #burger{
         width: 5vh;
