@@ -184,7 +184,7 @@ a{
 
 /* MEDIA QUERIES */
 
-@media screen and (max-aspect-ratio: 5/3),
+@media screen and (max-aspect-ratio: 55/30),
     screen and (max-device-aspect-ratio: 5/3) and (orientation: portrait),
     screen and (max-aspect-ratio: 5/3) and (min-device-aspect-ratio: 3/5) and (orientation: landscape){
     
