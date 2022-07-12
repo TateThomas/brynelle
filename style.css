@@ -155,16 +155,22 @@ a{
 
 #about-me img:nth-child(1){
     height: 40vw;
-    padding: 0;
+    padding: 0 0 0 1vw;
     margin: 5vw 20vw 5vw 10vw;
     float: left;
+    border-radius: 0 10% 10% 0;
+    border-left: 2px solid white;
 }
 
 #about-me img:nth-child(2){
     height: 20vw;
     position: absolute;
-    top: 15vw;
-    left: 33vw;
+    top: 14vw;
+    left: 32vw;
+    padding: 1vw;
+    border-top: 2px solid white;
+    border-left: 2px solid white;
+    border-radius: 6% 0 0 0;
 }
 
 #about-me > div{
@@ -177,6 +183,7 @@ a{
     overflow: hidden;
     background-color: white;
     color: black;
+    border-radius: 5% 5% 0 0;
 }
 
 #about-me h2{
@@ -185,6 +192,56 @@ a{
 
 #about-me p{
     font-size: 1.5vw;
+}
+
+#footer{
+    background-color: #A17A64;
+    margin: 0;
+    padding: 2vw 20vw;
+    width: 1fr;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: white;
+    border-top: 2px solid white;
+}
+
+#footer div ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#footer h3{
+    text-align: center;
+    margin: .75vw;
+    font-size: 2vw;
+}
+
+#useful-links li{
+    margin: .5vw;
+    font-size: 1.25vw;
+}
+
+#contact-info{
+    width: 100%;
+}
+
+#contact-info li{
+    float: left;
+    margin: 0 .2vw;
+    padding: 0;
+}
+
+#contact-info p{
+    margin: .75vw .2vw;
+    font-size: 1.25vw;
+    height: 1.25vw;
+}
+
+#contact-info img{
+    height: 3vw;
+    margin: 0 .5vw;
+    padding: 0;
 }
 
 /* MEDIA QUERIES */
@@ -282,6 +339,23 @@ a{
         font-size: 2.5vw;
     }
     
+    #footer{
+        padding: 2vw 15vw;
+    }
+        
+    #footer h3{
+        font-size: 2.5vw;
+    }
+    
+    #useful-links li{
+        font-size: 1.5vw;
+    }
+    
+    #contact-info p{
+        font-size: 1.5vw;
+        height: 1.5vw;
+        margin: 1vw .2vw;
+    }
 }
 
 @media screen and (max-aspect-ratio: 26/30),
@@ -331,6 +405,28 @@ a{
     
     #arches h3{
         font-size: 4vw;
+    }
+        
+    #footer{
+        padding: 4vw 10vw;
+    }
+        
+    #footer h3{
+        font-size: 3vw;
+    }
+    
+    #useful-links li{
+        font-size: 2vw;
+    }
+    
+    #contact-info p{
+        font-size: 2vw;
+        height: 2vw;
+        margin: 2.75vw .2vw;
+    }
+    
+    #contact-info img{
+        margin: 2vw .75vw;
     }
 }
 
@@ -416,12 +512,19 @@ a{
         height: 60vw;
         margin: 10vw;
         object-fit: cover;
+        border-bottom: 2px solid white;
+        padding-bottom: 1vw;
+        border-radius: 0 10% 0 10%;
     }
     
     #about-me img:nth-child(2){
         height: 30vw;
-        top: 38vw;
-        left: 55vw;
+        top: 34vw;
+        left: 58vw;
+        border-left: none;
+        padding-left: 0;
+        border-radius: 0;
+        border-right: 2px solid white;
     }
     
     #about-me > div{
@@ -436,6 +539,28 @@ a{
 
     #about-me p{
         font-size: 3vw;
+    }
+        
+    #footer{
+        padding: 4vw 5vw;
+    }
+        
+    #footer h3{
+        font-size: 3.75vw;
+    }
+    
+    #useful-links li{
+        font-size: 2.4vw;
+    }
+    
+    #contact-info p{
+        font-size: 2.4vw;
+        height: 2.4vw;
+        margin: 2.75vw .2vw;
+    }
+    
+    #contact-info img{
+        height: 4vw;
     }
 }
 
@@ -488,4 +613,35 @@ a{
         font-size: 4vw;
     }
     
+    #footer{
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+        
+    #footer h3{
+        font-size: 4.5vw;
+    }
+    
+    #useful-links{
+        margin-bottom: 3vw;
+    }
+    
+    #useful-links li{
+        font-size: 2.75vw;
+    }
+    
+    #contact-info p{
+        font-size: 2.75vw;
+        height: 2.75vw;
+        margin: 3vw .2vw;
+        margin-bottom: 2vw;
+    }
+    
+    #contact-info li{
+        float: none;
+    }
+    
+    #contact-info img{
+        height: 6vw;
+    }
 }
