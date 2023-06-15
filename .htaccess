@@ -4,3 +4,9 @@ RewriteRule ^ /%1 [NC,L,R]
 
 RewriteCond %{REQUEST_FILENAME}.html -f
 RewriteRule ^ %{REQUEST_URI}.html [NC,L]
+
+Options +Includes
+AddType text/html .html
+AddOutputFilter INCLUDES .html
+AddType text/html .htm
+AddOutputFilter INCLUDES .htm
