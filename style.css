@@ -13,6 +13,8 @@
     font-family: handwriting;
 }
 
+
+
 body{
     background-color: white;
     padding: 0;
@@ -39,12 +41,14 @@ a{
     text-decoration: none;
 }
 
+
+
 #header{
     background-color: #e6d2c6;
     position: fixed;
     width: 100%;
     height: 46px;
-    z-index: 3;
+    z-index: 5;
     border-bottom: 3px solid white;
 }
 
@@ -71,13 +75,15 @@ a{
     font-size: 22px;
 }
 
+
+
 #content{
     overflow-x: hidden;
     width: 100%;
 }
 
 #top-page{
-    --height: 1120px;
+    --height: 1130px;
     height: var(--height);
     position: relative;
     display: flex;
@@ -125,14 +131,16 @@ a{
     position: relative;
     background-image: linear-gradient(transparent, white);
     z-index: 1;
-    margin-top: auto
+    margin-top: auto;
 }
+
 
 #mid-page{
     position: relative;
     display: flex;
     width: 100%;
-    height: 300px;
+    height: 600px;
+    flex-direction: column;
 }
 
 #arches{
@@ -153,7 +161,7 @@ a{
     padding: 0;
     overflow: hidden;
     top: -200px;
-    z-index: 2;
+    z-index: 3;
     border-radius: 1000px;
     border: 5px solid white;
     transition: box-shadow 1.5s, top 1s;
@@ -178,6 +186,91 @@ a{
     text-align: center;
 }
 
-#photo-transition img{
+#transition{
     width: 100%;
+    height: 200px;
+    position: relative;
+}
+
+#transition img{
+    width: 100%;
+    height: 440px;
+    object-fit: cover;
+    position: absolute;
+    top: -354px;
+    object-position: bottom;
+}
+
+#gallery-peek{
+    width: 100%;
+}
+
+
+
+#footer{
+    background-color: #A17A64;
+    height: auto;
+    border-top: 4px solid white;
+    z-index: 4;
+    font-family: sans-serif;
+    padding: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 20px;
+}
+
+#nav{
+    display: flex;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+#nav div{
+    margin-right: 40px;
+}
+
+#nav h2{
+    display: block;
+    padding-bottom: 10px;
+}
+
+#nav li{
+    display: block;
+    margin-bottom: 3px;
+}
+
+#socials li{
+    display: inline-block;
+}
+
+#socials img{
+    width: 35px;
+    margin-right: 10px;
+}
+
+#contact-info{
+    display: flex;
+}
+
+#contact-info ul{
+    flex-basis: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#contact-info li{
+    font-size: 15px;
+    font-family: alta;
+    letter-spacing: 1px;
+    padding: 2px;
+}
+
+#footer h3{
+    display: block;
+    color: white;
+    font-size: 11px;
+    font-weight: normal;
+    padding: 5px;
+    padding-left: 0;
+    margin: 0;
 }
