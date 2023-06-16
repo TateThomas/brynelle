@@ -13,12 +13,12 @@ let appHeader = `
 
         <nav id="links">
             <ul>
-                <li><a href="https://brynelle.com/packages">Packages</a></li>
-                <li><a href="https://brynelle.com/travel">Travel</a></li>
-                <li><a href="https://brynelle.com/gallery">Gallery</a></li>
-                <li><a href="https://brynelle.com/contact">Contact</a></li>
-                <li><a href="https://brynelle.com/about_me">About Me</a></li>
-                <li><a href="https://brynelle.com/more">More</a></li>
+                <li><a href="https://www.brynelle.com/packages">Packages</a></li>
+                <li><a href="https://www.brynelle.com/travel">Travel</a></li>
+                <li><a href="https://www.brynelle.com/gallery">Gallery</a></li>
+                <li><a href="https://www.brynelle.com/contact">Contact</a></li>
+                <li><a href="https://www.brynelle.com/about_me">About Me</a></li>
+                <li><a href="https://www.brynelle.com/more">More</a></li>
             </ul>
         </nav>
 
