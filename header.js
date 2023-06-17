@@ -1,7 +1,9 @@
 let appHeader = `
-    <div id="header">
+    <div id="header" class="hidden">
 
-        <a href="https://brynelle.com">
+        <div></div>
+
+        <a href="https://www.brynelle.com">
             <h1>Brynelle Photo</h1>
         </a>
 

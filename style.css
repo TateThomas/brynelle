@@ -1,3 +1,7 @@
+@import "header.css";
+@import "footer.css";
+
+
 @font-face{
     src: url(fonts/alta-regular.otf);
     font-family: alta;
@@ -10,9 +14,13 @@
 
 @font-face{
     src: url(fonts/AnticallyRegular-OVox8.ttf);
-    font-family: handwriting;
+    font-family: antically-regular;
 }
 
+@font-face{
+    src: url(fonts/DarlingtonDemo-z8xjG.ttf);
+    font-family: halimun;
+}
 
 
 body{
@@ -40,41 +48,6 @@ a{
     color: white;
     text-decoration: none;
 }
-
-
-
-#header{
-    background-color: #e6d2c6;
-    position: fixed;
-    width: 100%;
-    height: 46px;
-    z-index: 5;
-    border-bottom: 3px solid white;
-}
-
-#header h1{
-    float: left;
-    display: inline-block;
-    padding: 10px;
-    padding-left: 26px;
-    font-size: 26px;
-}
-
-#links{
-    float: right;
-    display: inline-block;
-    position: relative;
-}
-
-#links ul{
-    padding-right: 14px;
-}
-
-#links li{
-    padding: 12px;
-    font-size: 22px;
-}
-
 
 
 #content{
@@ -115,14 +88,33 @@ a{
 }
 
 #top-page h2{
-    position: absolute;
+    opacity: 0;
+    position: relative;
     float: left;
-    top: 700px;
-    left: 50px;
-    font-family: handwriting;
-    font-size: 45px;
-    /*border-bottom: 2px solid white;*/
+    top: 650px;
+    left: -400px;
+    font-family: halimun;
+    font-size: 75px;
+    color: black;
     z-index: 2;
+    /*text-shadow: 0 0px 10px white;*/
+    word-spacing: 2px;
+    transition: left 3.5s, opacity 4.5s;
+}
+
+#top-page h2:nth-child(3){
+    left: -525px;
+    transition: left 3.75s, opacity 4.75s;
+}
+
+#top-page h2.loaded:nth-child(2){
+    left: 50px;
+    opacity: 1;
+}
+
+#top-page h2.loaded:nth-child(3){
+    left: 150px;
+    opacity: 1;
 }
 
 #gradient{
@@ -160,15 +152,28 @@ a{
     margin-right: auto;
     padding: 0;
     overflow: hidden;
-    top: -200px;
+    /*top: -200px;*/
+    top: -100px;
     z-index: 3;
     border-radius: 1000px;
     border: 5px solid white;
-    transition: box-shadow 1.5s, top 1s;
+    opacity: 0;
+    transition: box-shadow 1.5s, top 2s, opacity 3s;
 }
 
-#arches li:hover{
-    box-shadow: 0px 5px 30px black;
+#arches li.show{
+    top: -200px;
+    opacity: 1;
+}
+
+#arches li.done{
+    transition: box-shadow 1.5s, top 1s, opacity 3s;
+    top: -200px;
+    opacity: 1;
+}
+
+#arches li.done:hover{
+    box-shadow: 0px 0px 30px black;
     top: -210px;
 }
 
@@ -184,6 +189,7 @@ a{
     bottom: 300px;
     font-size: 30px;
     text-align: center;
+    letter-spacing: 1px;
 }
 
 #transition{
@@ -201,76 +207,42 @@ a{
     object-position: bottom;
 }
 
-#gallery-peek{
+
+#my-work{
     width: 100%;
+    background-color: #d0a58c;
+    border-top: 6px solid white;
 }
 
-
-
-#footer{
-    background-color: #A17A64;
-    height: auto;
-    border-top: 4px solid white;
-    z-index: 4;
-    font-family: sans-serif;
-    padding: 10px;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 20px;
-}
-
-#nav{
-    display: flex;
-    margin-bottom: 10px;
-    letter-spacing: 1px;
-}
-
-#nav div{
-    margin-right: 40px;
-}
-
-#nav h2{
-    display: block;
-    padding-bottom: 10px;
-}
-
-#nav li{
-    display: block;
-    margin-bottom: 3px;
-}
-
-#socials li{
-    display: inline-block;
-}
-
-#socials img{
-    width: 35px;
-    margin-right: 10px;
-}
-
-#contact-info{
+#my-work div{
     display: flex;
 }
 
-#contact-info ul{
-    flex-basis: auto;
+#my-work div h2{
+    flex-basis: 200px;
     margin-left: auto;
     margin-right: auto;
+    padding: 18px;
+    border: 5px solid white;
+    border-top: 0;
+    background-color: white;
+    text-align: center;
+    border-radius: 0 0 70px 70px;
+    color: black;
+    font-size: 34px;
+    font-family: antically-regular;
+    z-index: 2;
 }
 
-#contact-info li{
-    font-size: 15px;
-    font-family: alta;
-    letter-spacing: 1px;
-    padding: 2px;
+#pictures{
+    display: grid;
 }
 
-#footer h3{
-    display: block;
-    color: white;
-    font-size: 11px;
-    font-weight: normal;
-    padding: 5px;
-    padding-left: 0;
-    margin: 0;
+
+#about-me{
+    width: 100%;
+    /*height: 800px;*/
 }
+
+
+

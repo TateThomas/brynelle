@@ -1,0 +1,60 @@
+
+#header{
+    position: fixed;
+    width: 100%;
+    height: 46px;
+    z-index: 5;
+    transition: background-color .75s;
+}
+
+#header div:first-child{
+    height: 46px;
+    position: absolute;
+    width: 0;
+    border-bottom: 3px solid white;
+    transition: width 1.3s;
+}
+
+#header.show div:first-child{
+    width: 100%;
+}
+
+#header.show{
+    background-color: #e6d2c6;
+}
+
+#header h1{
+    float: left;
+    display: inline-block;
+    padding: 10px;
+    margin-left: 16px;
+    font-size: 26px;
+    transition: background-color .5s;
+    border-radius: 30px;
+}
+
+#header.hidden h1:hover{
+    background-color: rgba(0, 0, 0, .2);
+}
+
+#links{
+    float: right;
+    display: inline-block;
+    position: relative;
+}
+
+#links ul{
+    padding-right: 14px;
+}
+
+#links li{
+    padding: 12px;
+    font-size: 22px;
+    letter-spacing: 1px;
+    border-radius: 30px;
+    transition: background-color .5s;
+}
+
+#header.hidden ul li:hover{
+    background-color: rgba(0, 0, 0, .2);
+}
