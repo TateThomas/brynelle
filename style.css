@@ -56,8 +56,8 @@ a{
 }
 
 #top-page{
-    --height: 1130px;
-    height: var(--height);
+    --top_page_height: 1130px;
+    height: var(--top_page_height);
     position: relative;
     display: flex;
     flex-direction: column;
@@ -73,7 +73,7 @@ a{
     display: block;
     position: absolute;
     object-fit: cover;
-    height: calc(var(--height) + 80px);
+    height: calc(var(--top_page_height) + 80px);
     width: 100%;
     top: -80px;
     transition: opacity 2.5s;
@@ -128,25 +128,28 @@ a{
 
 
 #mid-page{
+    --mid-page-height: 600px;
+    --arches-height: 500px;
+    --arches-border-width: 5px;
+    --arches-offset: -200px;
     position: relative;
     display: flex;
-    width: 100%;
-    height: 600px;
     flex-direction: column;
 }
 
 #arches{
-    flex-basis: 1200px;
+    width: 1200px;
+    height: calc(var(--arches-height) + (2 * var(--arches-border-width)) + var(--arches-offset));
     display: flex;
-    height: 300px;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #arches li{
     display: inline-block;
     position: relative;
     flex-basis: 300px;
-    height: 500px;
+    height: var(--arches-height);
     margin: 0;
     margin-left: auto;
     margin-right: auto;
@@ -156,13 +159,13 @@ a{
     top: -100px;
     z-index: 3;
     border-radius: 1000px;
-    border: 5px solid white;
+    border: var(--arches-border-width) solid white;
     opacity: 0;
     transition: box-shadow 1.5s, top 2s, opacity 3s;
 }
 
 #arches li.show{
-    top: -200px;
+    top: var(--arches-offset);
     opacity: 1;
 }
 
@@ -179,7 +182,7 @@ a{
 
 #arches img{
     width: 300px;
-    height: 500px;
+    height: var(--arches-height);
     object-fit: cover;
 }
 
@@ -193,55 +196,25 @@ a{
 }
 
 #transition{
+    --transition-height: 1000px;
     width: 100%;
-    height: 200px;
+    height: var(--transition-height);
     position: relative;
 }
 
 #transition img{
+    --transition-img-height: 450px;
     width: 100%;
-    height: 440px;
+    height: var(--transition-img-height);
     object-fit: cover;
     position: absolute;
-    top: -354px;
+    top: calc(var(--transition-height) - var(--transition-img-height));
     object-position: bottom;
-}
-
-
-#my-work{
-    width: 100%;
-    background-color: #d0a58c;
-    border-top: 6px solid white;
-}
-
-#my-work div{
-    display: flex;
-}
-
-#my-work div h2{
-    flex-basis: 200px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 18px;
-    border: 5px solid white;
-    border-top: 0;
-    background-color: white;
-    text-align: center;
-    border-radius: 0 0 70px 70px;
-    color: black;
-    font-size: 34px;
-    font-family: antically-regular;
-    z-index: 2;
-}
-
-#pictures{
-    display: grid;
 }
 
 
 #about-me{
     width: 100%;
-    /*height: 800px;*/
 }
 
 

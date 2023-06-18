@@ -1,8 +1,10 @@
 
 #header{
+    --header-height: 46px;
+    --header-color: #e6d2c6;
     position: fixed;
     width: 100%;
-    height: 46px;
+    height: var(--header-height);
     z-index: 5;
     transition: background-color .75s;
 }
@@ -20,7 +22,7 @@
 }
 
 #header.show{
-    background-color: #e6d2c6;
+    background-color: var(--header-color);
 }
 
 #header h1{
@@ -29,6 +31,7 @@
     padding: 10px;
     margin-left: 16px;
     font-size: 26px;
+    height: 26px;
     transition: background-color .5s;
     border-radius: 30px;
 }
@@ -44,17 +47,103 @@
 }
 
 #links ul{
-    padding-right: 14px;
+    margin-right: 14px;
+    height: var(--header-height);
 }
 
 #links li{
+    position: relative;
     padding: 12px;
     font-size: 22px;
+    width: max-content;
+    height: 22px;
+    text-align: center;
     letter-spacing: 1px;
     border-radius: 30px;
-    transition: background-color .5s;
+    transition: background-color .5s, width .5s, height .5s;
 }
 
 #header.hidden ul li:hover{
     background-color: rgba(0, 0, 0, .2);
+}
+
+#links > ul > li:nth-child(3){
+    width: 115.312px;
+}
+
+#links > ul > li:nth-child(4){
+    width: 72.25px;
+}
+
+#links li ul{
+    display: block;
+    position: absolute;
+    height: 0px;
+    width: 240px;
+    margin: 0;
+    overflow: hidden;
+    border-radius: 0 0 30px 30px;
+    top: var(--header-height);
+    transition: background-color .5s, border .5s, height 1s;
+
+}
+
+#links li ul li{
+    display: block;
+    height: 0;
+    width: 196px;
+    margin: 0;
+    text-align: center;
+}
+
+#links > ul > li:nth-child(3):hover{
+    width: 170px;
+    height: calc(var(--header-height) * 7);
+    padding: 12px;
+    padding-bottom: 0;
+}
+
+#links > ul > li:nth-child(3) ul{
+    width: 170px;
+}
+
+#links > ul > li:nth-child(3) li{
+    width: 146px;
+}
+
+#links > ul > li:nth-child(4):hover{
+    width: 220px;
+    height: calc(var(--header-height) * 4);
+    padding: 12px;
+    padding-bottom: 0;
+}
+
+#links > ul > li:nth-child(4) > ul{
+    width: 220px;
+}
+
+#links > ul > li:nth-child(4) > li{
+    width: 196px;
+}
+
+#links li:hover ul{
+    height: auto;
+}
+
+#links li:hover ul li{
+    height: 22px;
+}
+
+#header.show ul li:hover ul{
+    background-color: #ddc2b1;
+    border: 3px solid white;
+    border-top: 0;
+}
+
+#header.show li ul li{
+    border-radius: 0;
+}
+
+#header.show li:hover ul li:hover{
+    background-color: #d5b39f;
 }
