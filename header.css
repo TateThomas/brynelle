@@ -5,16 +5,18 @@
     position: fixed;
     width: 100%;
     height: var(--header-height);
-    z-index: 5;
+    z-index: 10;
     transition: background-color .75s;
 }
 
 #header div:first-child{
-    height: 46px;
     position: absolute;
+    top: var(--header-height);
     width: 0;
     border-bottom: 3px solid white;
-    transition: width 1.3s;
+    z-index: 8;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .1);
+    transition: width 1.3s, box-shadow 2s;
 }
 
 #header.show div:first-child{
@@ -49,6 +51,7 @@
 #links ul{
     margin-right: 14px;
     height: var(--header-height);
+    z-index: 10;
 }
 
 #links li{
@@ -82,10 +85,10 @@
     width: 240px;
     margin: 0;
     overflow: hidden;
-    border-radius: 0 0 30px 30px;
+    border-radius: 0;
     top: var(--header-height);
-    transition: background-color .5s, border .5s, height 1s;
-
+    z-index: 9;
+    transition: background-color .5s, border .25s, border-radius .5s, height 1s;
 }
 
 #links li ul li{
@@ -93,7 +96,9 @@
     height: 0;
     width: 196px;
     margin: 0;
+    opacity: 0;
     text-align: center;
+    transition: background-color .5s, border .25s, border-radius .75s, height .6s, opacity .6s;
 }
 
 #links > ul > li:nth-child(3):hover{
@@ -132,6 +137,12 @@
 
 #links li:hover ul li{
     height: 22px;
+    opacity: 1;
+}
+
+#header.show ul li ul{
+    border-radius: 0 0 30px 30px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, .1);
 }
 
 #header.show ul li:hover ul{

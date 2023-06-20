@@ -59,13 +59,13 @@ let appHeader = `
                     </ul>
                 </li>
                 <li>
+                    <a href="https://www.brynelle.com/clients">Clients</a>
+                </li>
+                <li>
                     <a href="https://www.brynelle.com/about_me">About Me</a>
                 </li>
                 <li>
                     <a href="https://www.brynelle.com/contact">Contact</a>
-                </li>
-                <li>
-                    <a href="https://www.brynelle.com/help">Help</a>
                 </li>
             </ul>
         </nav>

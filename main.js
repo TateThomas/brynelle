@@ -26,7 +26,7 @@ window.onload = function() {
 }
 
 window.onscroll = function() {
-    if (document.getElementById("arches").getElementsByTagName("li")[0].className != "done" && (document.body.scrollTop >= 200 || document.documentElement.scrollTop >= 200)) {
+    if (document.getElementById("arches").getElementsByTagName("li")[0].className != "done" && (document.body.scrollTop >= 370 || document.documentElement.scrollTop >= 370)) {
         document.getElementById("arches").getElementsByTagName("li")[0].className = "show";
         setTimeout(function() {
             document.getElementById("arches").getElementsByTagName("li")[1].className = "show";
@@ -40,11 +40,23 @@ window.onscroll = function() {
             }, 200);
         }, 200);
     }
-    if (document.body.scrollTop >= 800 || document.documentElement.scrollTop >= 800) {
+    
+    if (document.body.scrollTop >= 850 || document.documentElement.scrollTop >= 850) {
         document.getElementById("header").className = "show";
     }
     else {
         document.getElementById("header").className = "hidden";
+    }
+    
+    if (document.body.scrollTop >= 900 || document.documentElement.scrollTop >= 900) {
+        document.getElementById("break").className = "show";
+    }
+    
+    if (document.body.scrollTop >= 2800 || document.documentElement.scrollTop >= 2800) {
+        document.getElementById("lower-page-gradient").className = "hidden";
+    }
+    else {
+        document.getElementById("lower-page-gradient").className = "";
     }
 }
 
