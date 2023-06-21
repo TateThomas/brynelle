@@ -256,7 +256,7 @@ a{
 #lower-page{
     display: flex;
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 100px;
     z-index: 1;
 }
 
@@ -411,10 +411,164 @@ a{
 }
 
 #my-work-content{
-    height: calc(var(--about-me-height) + 50px);
+    position: relative;
+    height: calc(var(--about-me-height) + 202px);
     width: calc(100% + var(--lower-page-padding) + var(--lower-page-radius));
-    margin-top: var(--lower-page-padding);
+    border-top-left-radius: calc(var(--lower-page-padding) + var(--lower-page-radius));
+    padding-right: 50px;
+    overflow: hidden;
     z-index: 3;
+}
+
+#my-work-content div.content{
+    width: 100%;
+    height: calc(100% - 60px);
+    padding: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(4, .8fr);
+    grid-template-rows: repeat(20, 1fr);
+    grid-column-gap: 40px;
+    grid-row-gap: 20px;
+    z-index: 3;
+}
+
+#my-work-content button.shadow-scroll{
+    float: left;
+    position: absolute;
+    width: calc(var(--lower-page-padding) + var(--lower-page-radius) + 50px);
+    height: 100%;
+    top: 0;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    background-image: linear-gradient(90deg, rgb(0, 0, 0, .1), transparent);
+    border-top-left-radius: calc(var(--lower-page-padding) + var(--lower-page-radius));
+    overflow: hidden;
+    opacity: 0;
+    z-index: 4;
+    transition: opacity 1s;
+}
+
+#my-work-content button.shadow-scroll div.arrow{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 46%;
+    left: 30px;
+    border-left: 10px solid rgba(255, 255, 255, .7);
+    border-top: 10px solid rgba(255, 255, 255, .7);
+    transform: rotate(-45deg);
+    z-index: 5;
+}
+
+#my-work-content button.shadow-scroll div.mouse-shadow{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    mask-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+}
+
+#my-work-content button.shadow-scroll div.mouse-shadow::after{
+    content: '';
+    position: absolute;
+    width: 800px;
+    height: 800px;
+    top: calc((var(--y, 0) * 1px) - 400px);
+    left: calc((var(--x, 0) * 1px) - 400px);
+    opacity: .6;
+    background: radial-gradient(rgba(0, 0, 0, .5), transparent 70%);
+}
+
+#my-work-content button.shadow-scroll:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+#my-work-content button.shadow-scroll:last-child{
+    left: calc(100% - var(--lower-page-padding) - var(--lower-page-radius) - 50px);
+    border-radius: 0;
+    background-image: linear-gradient(-90deg, rgb(0, 0, 0, .1), transparent);
+}
+
+#my-work-content button.shadow-scroll:last-child div.arrow{
+    transform: rotate(135deg);
+    left: calc(var(--lower-page-padding) + var(--lower-page-radius) - 30px)
+}
+
+#my-work-content button.shadow-scroll:last-child div.mouse-shadow{
+    -webkit-mask-image: linear-gradient(to left, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    mask-image: linear-gradient(to left, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+}
+
+#my-work-content button.shadow-scroll:last-child div.mouse-shadow::after{
+    content: '';
+    position: absolute;
+    width: 800px;
+    height: 800px;
+    top: calc((var(--y, 0) * 1px) - 400px);
+    left: calc((var(--x, 0) * 1px) - 400px);
+}
+
+#my-work-content div.content div{
+    overflow: hidden;
+    border: 20px solid white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    z-index: 3;
+    transition: box-shadow .75s;
+}
+
+#my-work-content > div.content > div:hover{
+    box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+}
+
+#my-work-content > div.content > div:nth-child(8n + 1){
+    grid-column: 1 / 2;
+    grid-row: 3 / 14;
+}
+
+#my-work-content > div.content > div:nth-child(8n + 2){
+    grid-column: 2 / 3;
+    grid-row: 1 / 9;
+}
+
+#my-work-content > div.content > div:nth-child(8n + 3){
+    grid-column: 3 / 4;
+    grid-row: 2 / 13;
+}
+
+#my-work-content > div.content > div:nth-child(8n + 4){
+    grid-column: 4 / 5;
+    grid-row: 3 / 10;
+}
+
+#my-work-content > div.content > div:nth-child(8n + 5){
+    grid-column: 1 / 2;
+    grid-row: 14 / 21;
+}
+
+#my-work-content > div.content > div:nth-child(8n + 6){
+    grid-column: 2 / 3;
+    grid-row: 9 / 21;
+}
+
+#my-work-content > div.content > div:nth-child(8n + 7){
+    grid-column: 3 / 4;
+    grid-row: 13 / 20;
+}
+
+#my-work-content > div.content > div:nth-child(8n){
+    grid-column: 4 / 5;
+    grid-row: 10 / 21;
+}
+
+#my-work-content img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 
 #my-work-explore{
@@ -423,8 +577,7 @@ a{
     display: flex;
     width: calc(100% + var(--lower-page-padding) + var(--lower-page-radius));
     height: max-content;
-    margin-top: 0;
-    top: -50px;
+    margin-top: 10px;
     z-index: 3;
 }
 
@@ -470,11 +623,11 @@ a{
 
 
 #transition{
-    --transition-height: 450px;
+    --transition-height: 600px;
     width: 100%;
     height: var(--transition-height);
     position: relative;
-    z-index: 3;
+    z-index: 2;
 }
 
 #transition img{

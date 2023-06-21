@@ -60,4 +60,18 @@ window.onscroll = function() {
     }
 }
 
+const button1 = document.querySelectorAll(".shadow-scroll")[0];
+button1.addEventListener("mousemove", (e) => {
+    const { x, y } = button1.getBoundingClientRect();
+    button1.style.setProperty("--x", e.clientX - x);
+    button1.style.setProperty("--y", e.clientY - y);
+});
+
+const button2 = document.querySelectorAll(".shadow-scroll")[1];
+button2.addEventListener("mousemove", (e) => {
+    const { x, y } = button2.getBoundingClientRect();
+    button2.style.setProperty("--x", e.clientX - x);
+    button2.style.setProperty("--y", e.clientY - y);
+});
+
 setInterval(changeImage, 5000);
