@@ -2,14 +2,18 @@
 #header{
     --header-height: 46px;
     --header-color: #e6d2c6;
+    --header-radius: 30px;
+    --shadow-color: rgba(0, 0, 0, .2);
+    
     position: fixed;
+    display: flex;
     width: 100%;
     height: var(--header-height);
     z-index: 10;
     transition: background-color .75s;
 }
 
-#header div:first-child{
+#header div.border{
     position: absolute;
     top: var(--header-height);
     width: 0;
@@ -19,7 +23,7 @@
     transition: width 1.3s, box-shadow 2s;
 }
 
-#header.show div:first-child{
+#header.show div.border{
     width: 100%;
 }
 
@@ -28,24 +32,26 @@
 }
 
 #header h1{
-    float: left;
+    --brand-font-size: 26px;
+    
     display: inline-block;
-    padding: 10px;
+    margin-right: auto;
+    padding: calc((var(--header-height) - var(--brand-font-size)) / 2);
     margin-left: 16px;
-    font-size: 26px;
-    height: 26px;
+    font-size: var(--brand-font-size);
+    height: var(--brand-font-size);
     transition: background-color .5s;
-    border-radius: 30px;
+    border-radius: var(--header-radius);
 }
 
 #header.hidden h1:hover{
-    background-color: rgba(0, 0, 0, .2);
+    background-color: var(--shadow-color);
 }
 
 #links{
-    float: right;
     display: inline-block;
     position: relative;
+    margin-left: auto;
 }
 
 #links ul{
@@ -55,34 +61,36 @@
 }
 
 #links li{
+    --links-font-size: 22px;
+    
     position: relative;
-    padding: 12px;
-    font-size: 22px;
+    padding: calc((var(--header-height) - var(--links-font-size)) / 2);
+    font-size: var(--links-font-size);
     width: max-content;
-    height: 22px;
+    height: var(--links-font-size);
     text-align: center;
     letter-spacing: 1px;
-    border-radius: 30px;
+    border-radius: var(--header-radius);
     transition: background-color .5s, width .5s, height .5s;
 }
 
 #header.hidden ul li:hover{
-    background-color: rgba(0, 0, 0, .2);
+    background-color: var(--shadow-color);
 }
 
-#links > ul > li:nth-child(3){
-    width: 115.312px;
-}
-
-#links > ul > li:nth-child(4){
-    width: 72.25px;
+#links > ul > li.portfolio{
+    --portfolio-word-width: 115.312px;
+    
+    width: var(--portfolio-word-width);
 }
 
 #links li ul{
+    --default-sublist-width: 240px;
+    
     display: block;
     position: absolute;
-    height: 0px;
-    width: 240px;
+    height: 0;
+    width: var(--default-sublist-width);
     margin: 0;
     overflow: hidden;
     border-radius: 0;
@@ -92,56 +100,69 @@
 }
 
 #links li ul li{
+    --default-subvalue-width: 196px;
+    
     display: block;
     height: 0;
-    width: 196px;
+    width: var(--default-subvalue-width);
     margin: 0;
     opacity: 0;
     text-align: center;
     transition: background-color .5s, border .25s, border-radius .75s, height .6s, opacity .6s;
 }
 
-#links > ul > li:nth-child(3):hover{
-    width: 170px;
-    height: calc(var(--header-height) * 7);
-    padding: 12px;
+#links > ul > li.portfolio:hover{
+    --portfolio-sublist-width: 170px;
+    --total-elements: 7;
+    
+    width: var(--portfolio-sublist-width);
+    height: calc(var(--header-height) * var(--total-elements));
+    padding: calc((var(--header-height) - var(--links-font-size)) / 2);
     padding-bottom: 0;
 }
 
-#links > ul > li:nth-child(3) ul{
-    width: 170px;
+#links > ul > li.portfolio ul{
+    width: var(--portfolio-sublist-width);
 }
 
-#links > ul > li:nth-child(3) li{
-    width: 146px;
+#links > ul > li.portfolio li{
+    width: calc(var(--portfolio-sublist-width) - (var(--header-height) - var(--links-font-size)));
 }
 
-#links > ul > li:nth-child(4):hover{
+/*
+#links > ul > li.events{
+    --events-word-width: 72.25px;
+    
+    width: var(--events-word-width);
+}
+
+#links > ul > li.events:hover{
     width: 220px;
     height: calc(var(--header-height) * 4);
-    padding: 12px;
+    padding: calc((var(--header-height) - var(--links-font-size)) / 2);
     padding-bottom: 0;
 }
 
-#links > ul > li:nth-child(4) > ul{
+#links > ul > li.events > ul{
     width: 220px;
 }
 
-#links > ul > li:nth-child(4) > li{
+#links > ul > li.events > li{
     width: 196px;
 }
+*/
 
 #links li:hover ul{
     height: auto;
 }
 
 #links li:hover ul li{
-    height: 22px;
+    height: var(--links-font-size);
     opacity: 1;
 }
 
 #header.show ul li ul{
-    border-radius: 0 0 30px 30px;
+    border-radius: 0 0 var(--header-radius) var(--header-radius);
     box-shadow: 0 2px 6px rgba(0, 0, 0, .1);
 }
 

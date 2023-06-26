@@ -1,7 +1,7 @@
 let appHeader = `
     <div id="header" class="hidden">
 
-        <div></div>
+        <div class="border"></div>
 
         <a href="https://www.brynelle.com">
             <h1>Brynelle Photo</h1>
@@ -21,7 +21,7 @@ let appHeader = `
                 <li>
                     <a href="https://www.brynelle.com/travel">Travel</a>
                 </li>
-                <li>
+                <li class="portfolio">
                     <a href="https://www.brynelle.com/portfolio">Portfolio</a>
                     <ul>
                         <li>
@@ -44,7 +44,7 @@ let appHeader = `
                         </li>
                     </ul>
                 </li>
-                <li>
+                <!--<li class="events">
                     <a href="https://www.brynelle.com/events">Events</a>
                     <ul>
                         <li>
@@ -57,12 +57,15 @@ let appHeader = `
                             <a href="https://www.brynelle.com/events/content_retreats">Content Retreats</a>
                         </li>
                     </ul>
-                </li>
-                <li>
+                </li>-->
+                <!--<li>
                     <a href="https://www.brynelle.com/clients">Clients</a>
-                </li>
+                </li>-->
                 <li>
                     <a href="https://www.brynelle.com/about_me">About Me</a>
+                </li>
+                <li>
+                    <a href="https://www.brynelle.com/info">Info</a>
                 </li>
                 <li>
                     <a href="https://www.brynelle.com/contact">Contact</a>

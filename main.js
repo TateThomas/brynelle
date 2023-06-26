@@ -1,77 +1,138 @@
 /* eslint-env browser */
 /*jslint devel: true */
 
-var getImage = document.getElementById("top-page").getElementsByTagName("img");
+
+const topPageImages = document.getElementById("top-page").getElementsByTagName("img");
+const archesAnimationValues = {
+    "height": 370,
+    "delay": 2400
+}
+const headerAnimationHeight = 850;
+const breakAnimationHeight = 950;
+const myWorkAnimationHeight = 2200;
+const lineAnimationHeights = {
+    "show": 1600,
+    "more": 2000,
+    "hidden": 3100
+}
+const buttonLeft = document.querySelectorAll(".shadow-scroll")[0];
+const buttonRight = document.querySelectorAll(".shadow-scroll")[1];
 var counter = 0;
 
+
 function changeImage() {
-    "use strict";
-    if (counter > (getImage.length - 1)) {
-        counter = 0;
-    }
     
-    getImage[counter].className = "hidden";
-    if (counter === (getImage.length - 1)) {
-        getImage[0].className = "show";
-    } else {
-        getImage[counter + 1].className = "show";
-    }
+    "use strict";
+    
+    topPageImages[counter % topPageImages.length].className = "hidden";
+    topPageImages[(counter + 1) % topPageImages.length].className = "show";
 
     counter += 1;
+    
 }
 
-window.onload = function() {
-    document.getElementById("top-page").getElementsByTagName("h2")[0].className = "loaded";
-    document.getElementById("top-page").getElementsByTagName("h2")[1].className = "loaded";
-}
 
-window.onscroll = function() {
-    if (document.getElementById("arches").getElementsByTagName("li")[0].className != "done" && (document.body.scrollTop >= 370 || document.documentElement.scrollTop >= 370)) {
-        document.getElementById("arches").getElementsByTagName("li")[0].className = "show";
+function archesAnimation(animationExecuteHeight, delayTimer) {
+    
+    const arches = document.getElementById("arches");
+    if ((arches.className != "done") && (window.scrollY >= animationExecuteHeight)) {
+        
+        arches.className = "show";
+        
         setTimeout(function() {
-            document.getElementById("arches").getElementsByTagName("li")[1].className = "show";
-            setTimeout(function() {
-                document.getElementById("arches").getElementsByTagName("li")[2].className = "show";
-                setTimeout(function() {
-                    document.getElementById("arches").getElementsByTagName("li")[0].className = "done";
-                    document.getElementById("arches").getElementsByTagName("li")[1].className = "done";
-                    document.getElementById("arches").getElementsByTagName("li")[2].className = "done";
-                }, 2000);
-            }, 200);
-        }, 200);
+            arches.className = "done";
+        }, delayTimer);
+        
     }
     
-    if (document.body.scrollTop >= 850 || document.documentElement.scrollTop >= 850) {
-        document.getElementById("header").className = "show";
+}
+
+
+function headerAnimation(animationExecuteHeight) {
+    
+    const header = document.getElementById("header");
+    if (window.scrollY >= animationExecuteHeight) {
+        header.className = "show";
     }
     else {
-        document.getElementById("header").className = "hidden";
+        header.className = "hidden";
     }
     
-    if (document.body.scrollTop >= 900 || document.documentElement.scrollTop >= 900) {
+}
+
+
+function breakAnimation(animationExecuteHeight) {
+    
+    if (window.scrollY >= animationExecuteHeight) {
         document.getElementById("break").className = "show";
     }
     
-    if (document.body.scrollTop >= 2800 || document.documentElement.scrollTop >= 2800) {
-        document.getElementById("lower-page-gradient").className = "hidden";
-    }
-    else {
-        document.getElementById("lower-page-gradient").className = "";
-    }
 }
 
-const button1 = document.querySelectorAll(".shadow-scroll")[0];
-button1.addEventListener("mousemove", (e) => {
-    const { x, y } = button1.getBoundingClientRect();
-    button1.style.setProperty("--x", e.clientX - x);
-    button1.style.setProperty("--y", e.clientY - y);
+
+function myWorkAnimation(animationExecuteHeight) {
+    
+    if (window.scrollY >= animationExecuteHeight) {
+        document.getElementById("my-work").getElementsByTagName("h2")[0].className = "show";
+    }
+    
+}
+
+
+function lowerLineAnimation(showHeight, moreHeight, hiddenHeight) {
+    
+    const lowerGradient = document.getElementById("lower-page-gradient");
+    if (window.scrollY < showHeight) {
+        lowerGradient.className = "";
+    }
+    else if ((window.scrollY >= showHeight) && (window.scrollY < moreHeight)) {
+        lowerGradient.className = "show";
+    }
+    else if ((window.scrollY >= moreHeight) && (window.scrollY < hiddenHeight)) {
+        lowerGradient.className = "more";
+    }
+    else {
+        lowerGradient.className = "hidden";
+    }
+    
+}
+
+
+window.onload = function() {
+    
+    document.getElementById("top-page").getElementsByTagName("h2")[0].className = "loaded";
+    document.getElementById("top-page").getElementsByTagName("h2")[1].className = "loaded";
+    
+}
+
+
+window.onscroll = function() {
+    
+    archesAnimation(archesAnimationValues.height, archesAnimationValues.delay);
+    headerAnimation(headerAnimationHeight);
+    breakAnimation(breakAnimationHeight);
+    myWorkAnimation(myWorkAnimationHeight);
+    lowerLineAnimation(lineAnimationHeights.show, lineAnimationHeights.more, lineAnimationHeights.hidden);
+    
+}
+
+
+buttonLeft.addEventListener("mousemove", (e) => {
+    
+    const { x, y } = buttonLeft.getBoundingClientRect();
+    buttonLeft.style.setProperty("--x", e.clientX - x);
+    buttonLeft.style.setProperty("--y", e.clientY - y);
+    
 });
 
-const button2 = document.querySelectorAll(".shadow-scroll")[1];
-button2.addEventListener("mousemove", (e) => {
-    const { x, y } = button2.getBoundingClientRect();
-    button2.style.setProperty("--x", e.clientX - x);
-    button2.style.setProperty("--y", e.clientY - y);
+buttonRight.addEventListener("mousemove", (e) => {
+    
+    const { x, y } = buttonRight.getBoundingClientRect();
+    buttonRight.style.setProperty("--x", e.clientX - x);
+    buttonRight.style.setProperty("--y", e.clientY - y);
+    
 });
+
 
 setInterval(changeImage, 5000);
+

@@ -8,25 +8,23 @@
 }
 
 @font-face{
-    src: url(fonts/alta-light.otf);
-    font-family: alta-light;
-}
-
-@font-face{
     src: url(fonts/AnticallyRegular-OVox8.ttf);
-    font-family: antically-regular;
+    font-family: antically;
 }
 
 @font-face{
     src: url(fonts/DarlingtonDemo-z8xjG.ttf);
-    font-family: halimun;
+    font-family: darlington;
 }
 
 
+/****************** All ******************/
+
 body{
     --light-black: #404040;
+    --lower-gradient-z: 2;
+    
     background-color: white;
-    padding: 0;
     margin: 0;
 }
 
@@ -50,19 +48,22 @@ a{
     text-decoration: none;
 }
 
-
 #content{
     overflow-x: hidden;
     width: 100%;
 }
 
+
+/****************** Top Page ******************/
+
 #top-page{
     --top_page_height: 1130px;
+    
     height: var(--top_page_height);
     position: relative;
     display: flex;
     flex-direction: column;
-    z-index: 3;
+    z-index: calc(var(--lower-gradient-z) + 1);
 }
 
 #images{
@@ -70,14 +71,14 @@ a{
     display: block;
 }
 
-#top-page img{
-    margin: 0;
-    display: block;
+#images img{
+    --image-height-offset: 80px;
+    
     position: absolute;
     object-fit: cover;
-    height: calc(var(--top_page_height) + 80px);
+    height: calc(var(--top_page_height) + var(--image-height-offset));
     width: 100%;
-    top: -80px;
+    top: calc(-1 * var(--image-height-offset));
     transition: opacity 2.5s;
 }
 
@@ -90,126 +91,175 @@ a{
 }
 
 #top-page h2{
-    opacity: 0;
+    --left-transition: 3.5s;
+    --opacity-transition: 4.5s;
+    
     position: relative;
-    float: left;
-    top: 650px;
+    top: 600px;
     left: -400px;
-    font-family: halimun;
+    font-family: darlington;
     font-size: 75px;
-    color: #404040;
-    z-index: 5;
-    /*text-shadow: 0 0px 10px white;*/
+    color: var(--light-black);
+    z-index: calc(var(--lower-gradient-z) + 3);
     word-spacing: 2px;
-    transition: left 3.5s, opacity 4.5s;
+    opacity: 0;
+    transition: left var(--left-transition), opacity var(--opacity-transition);
 }
 
 #top-page h2:nth-child(3){
+    --animation-extend: .25s;
+    
     left: -525px;
-    transition: left 3.75s, opacity 4.75s;
+    transition: left calc(var(--left-transition) + var(--animation-extend)), opacity calc(var(--opacity-transition) + var(--animation-extend));
+}
+
+#top-page h2.loaded{
+    opacity: 1;
 }
 
 #top-page h2.loaded:nth-child(2){
     left: 50px;
-    opacity: 1;
 }
 
 #top-page h2.loaded:nth-child(3){
     left: 150px;
-    opacity: 1;
 }
 
 #gradient{
-    width: 100%;
     height: 700px;
-    position: relative;
     background-image: linear-gradient(transparent, white);
-    z-index: 4;
+    z-index: calc(var(--lower-gradient-z) + 2);
     margin-top: auto;
 }
 
 
+/****************** Mid Page ******************/
+
 #mid-page{
     --mid-page-height: 600px;
+    --arches-width: 300px;
     --arches-height: 500px;
     --arches-border-width: 5px;
     --arches-offset: -100px;
+    --desired-base-margin: 50px;
+    --total-arches-on-row: 3;
+    
     position: relative;
     display: flex;
     flex-direction: column;
-    padding-bottom: 50px;
+    padding-bottom: 100px;
 }
 
 #arches{
-    width: 1200px;
+    max-width: calc((var(--arches-width) + (2 * var(--desired-base-margin))) * var(--total-arches-on-row));
     height: calc(var(--arches-height) + (2 * var(--arches-border-width)) + var(--arches-offset));
     display: flex;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
 }
 
 #arches li{
-    display: inline-block;
+    --shadow-animation: 1.5s;
+    --opacity-animation: 3s;
+    --animation-delay: .2s;
+    
     position: relative;
-    flex-basis: 300px;
+    flex-basis: var(--arches-width);
     height: var(--arches-height);
-    margin: 0;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0;
+    margin: auto;
     overflow: hidden;
-    /*top: -200px;*/
-    top: calc(var(--arches-offset) + 100px);
-    z-index: 6;
+    top: 0;
+    z-index: calc(var(--lower-gradient-z) + 4);
     border-radius: 1000px;
     border: var(--arches-border-width) solid white;
     opacity: 0;
-    transition: box-shadow 1.5s, top 2s, opacity 3s;
+    transition: box-shadow var(--shadow-animation), opacity var(--opacity-animation), top 2s;
 }
 
-#arches li.show{
+#arches.show li, #arches.done li{
     top: var(--arches-offset);
     opacity: 1;
 }
 
-#arches li.done{
-    transition: box-shadow 1.5s, top .75s, opacity 3s;
-    top: var(--arches-offset);
-    opacity: 1;
+#arches.done li{
+    transition: box-shadow var(--shadow-animation), opacity var(--opacity-animation), top .75s;
 }
 
-#arches li.done:hover{
+#arches.done li:hover{
     box-shadow: 0px 0px 30px rgba(0, 0, 0, .5);
     top: calc(var(--arches-offset) - 10px);
 }
 
+#arches.show li:nth-child(2){
+    transition-delay: var(--animation-delay);
+}
+
+#arches.show li:nth-child(3){
+    transition-delay: calc(2 * var(--animation-delay));
+}
+
 #arches img{
-    width: 300px;
+    width: var(--arches-width);
     height: var(--arches-height);
     object-fit: cover;
 }
 
 #arches h2{
     width: 100%;
-    height: 0;
-    bottom: 300px;
+    bottom: 60%;
     font-size: 30px;
     text-align: center;
     letter-spacing: 1px;
 }
 
+/*
+#arches li:last-child{
+    position: absolute;
+    overflow: hidden;
+    left: 95%;
+    z-index: 7;
+    border-radius: 0;
+    border: 0;
+    height: calc(100% + 100px);
+    top: -50px;
+}
+
+#arches li h3{
+    position: relative;
+    color: var(--light-black);
+    font-family: alta;
+    letter-spacing: 1px;
+    transform: rotate(90deg);
+    margin: 0;
+    width: max-content;
+    top: -250px;
+    transition: top 2.5s, opacity 3s;
+}
+
+#arches.show li:last-child h3, #arches.done li:last-child h3{
+    top: 50px;
+}
+
+#arches.show li:nth-child(4){
+    transition-delay: .6s;
+}
+*/
+
+
+/****************** Break ******************/
 
 #break{
+    --text-width: 321px;
+    
     position: relative;
+    display: flex;
+    width: var(--text-width);
     height: 1px;
-    width: 321px;
     margin: 100px;
     margin-left: auto;
     margin-right: auto;
-    background-color: var(--light-black);
     align-items: center;
-    display: flex;
-    z-index: 3;
+    background-color: var(--light-black);
+    z-index: calc(var(--lower-gradient-z) + 1);
     transition: width 1s;
 }
 
@@ -220,7 +270,6 @@ a{
 #break h2{
     color: var(--light-black);
     background-color: white;
-    text-align: center;
     margin-left: auto;
     margin-right: auto;
     padding: 10px;
@@ -228,36 +277,85 @@ a{
 }
 
 
+/****************** Lower Page Gradient ******************/
+
 #lower-page-gradient{
     position: fixed;
     width: 100%;
-    height: 10vh;
-    margin-top: 90vh;
-    z-index: 2;
+    height: 100vh;
+    z-index: var(--lower-gradient-z);
 }
 
-#lower-page-gradient div:first-child{
-    height: 7vh;
+#lower-page-gradient div{
+    --start-gradient-height: 30vh;
+    --start-solid-height: 60vh;
+    
+    transition: height 1.5s, margin-top 1.5s;
+}
+
+#lower-page-gradient > div:nth-child(1){
+    height: var(--start-gradient-height);
+    margin-top: calc(100vh - var(--start-gradient-height) - var(--start-solid-height));
     background-image: linear-gradient(transparent, white);
-    z-index: 2;
 }
 
-#lower-page-gradient div:last-child{
-    height: 3vh;
+#lower-page-gradient > div:nth-child(2){
+    height: var(--start-solid-height);
     background-color: white;
-    z-index: 2;
+}
+
+#lower-page-gradient.show{
+    --gradient-height: 10vh;
+    --solid-height: 35vh;
+}
+
+#lower-page-gradient.show > div:nth-child(1){
+    height: var(--gradient-height);
+    margin-top: calc(100vh - var(--gradient-height) - var(--solid-height));
+}
+
+#lower-page-gradient.show > div:nth-child(2){
+    height: var(--solid-height);
+}
+
+#lower-page-gradient.more div{
+    --gradient-height: 7vh;
+    --solid-height: 3vh;
+    
+    transition: height 2s, margin-top 2s;
+}
+
+#lower-page-gradient.more > div:nth-child(1){
+    height: var(--gradient-height);
+    margin-top: calc(100vh - var(--gradient-height) - var(--solid-height));
+}
+
+#lower-page-gradient.more > div:nth-child(2){
+    height: var(--solid-height);
 }
 
 #lower-page-gradient.hidden{
-    opacity: 0;
+    --hidden-transition: .1s;
+    
+    height: 0;
+    transition: height var(--hidden-transition), margin-top var(--hidden-transition);
+}
+
+#lower-page-gradient.hidden div:nth-child(1){
+    height: 0;
+    margin-top: 100vh;
+    transition: height var(--hidden-transition), margin-top var(--hidden-transition);
 }
 
 
+/****************** Lower Page ******************/
+
 #lower-page{
     display: flex;
-    padding-top: 50px;
-    padding-bottom: 100px;
-    z-index: 1;
+    padding: 100px;
+    padding-left: 0;
+    padding-right: 0;
+    z-index: calc(var(--lower-gradient-z) - 1);
 }
 
 #lower-page > div{
@@ -265,22 +363,25 @@ a{
     --lower-page-padding: 100px;
     --lower-page-border-thickness: 2px;
     --about-me-height: 600px;
-    margin-left: auto;
-    margin-right: auto;
+    
+    margin: auto;
 }
 
-#lower-page > div > div:first-child > div:first-child{
-    display: inline-block;
-    width: calc(var(--lower-page-padding) + var(--lower-page-radius) + var(--lower-page-border-thickness));
-    height: calc(var(--about-me-height) + var(--lower-page-border-thickness) + var(--lower-page-padding) + 40px);
-}
+
+/****************** Lower Page: About Me ******************/
+
 
 #about-me{
+    --name-offset-top: 40px;
+    --name-offset-left: 70px;
+    --about-me-color: #e6d2c6;
+    
     display: inline-block;
     float: right;
     padding: var(--lower-page-padding);
     padding-left: 0;
-    padding-top: 40px;
+    padding-top: var(--name-offset-top);
+    margin-left: calc(var(--lower-page-padding) + var(--lower-page-radius) + var(--lower-page-border-thickness));
     border: var(--lower-page-border-thickness) solid var(--light-black);
     border-top: 0;
     border-left: 0;
@@ -292,27 +393,23 @@ a{
     display: flex;
     width: calc(100% + var(--lower-page-padding) + var(--lower-page-radius));
     left: calc(-1 * (var(--lower-page-padding) + var(--lower-page-radius)));
-    z-index: 3;
+    z-index: calc(var(--lower-gradient-z) + 1);
 }
 
 #about-me-container{
-    background-color: red;
     height: var(--about-me-height);
 }
 
 #about-me-pictures{
-    min-width: 600px;
     height: var(--about-me-height);
     overflow: hidden;
-    margin-right: auto;
-    margin-left: auto;
+    margin: auto;
 }
 
 #about-me-pictures img{
     width: 300px;
     height: 500px;
     object-fit: cover;
-    object-position: center;
 }
 
 #about-me-pictures img:nth-child(2){
@@ -320,26 +417,24 @@ a{
 }
 
 #about-me-desc{
-    --about-me-color: #e6d2c6;
     position: relative;
-    float: right;
     background-color: var(--about-me-color);
     min-width: 400px;
     height: calc(var(--about-me-height) - 100px);
-    margin-left: 70px;
+    margin-left: var(--name-offset-left);
     padding: 40px;
     padding-top: 60px;
-    border-bottom-right-radius: 40px;
+    border-bottom-right-radius: var(--lower-page-radius);
 }
 
 #about-me-desc h2{
-    font-family: antically-regular;
+    font-family: antically;
     padding: 20px;
     background-color: white;
     color: var(--light-black);
     position: absolute;
-    top: -40px;
-    left: -70px;
+    top: calc(-1 * var(--name-offset-top));
+    left: calc(-1 * var(--name-offset-left));
     border: 3px solid var(--light-black);
     border-bottom: 0;
     border-right: 0;
@@ -351,7 +446,7 @@ a{
     font-size: 20px;
 }
 
-#about-me-desc h3{
+#about-me-desc-more h3{
     width: max-content;
     font-family: alta;
     font-weight: normal;
@@ -369,8 +464,7 @@ a{
 
 #about-me-desc-more div{
     width: 0;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
     border-bottom: 1px solid white;
     transition: width .5s;
 }
@@ -380,18 +474,22 @@ a{
 }
 
 
+/****************** Lower Page: My Work ******************/
+
 #lower-page > div > div:last-child{
     position: relative;
     display: flex;
-    top: -6px;
+    top: calc(-1 * var(--lower-page-border-thickness));
     width: 100%;
 }
 
 #my-work{
+    --content-padding: 50px;
+    
     position: relative;
     display: inline-block;
-    width: calc(100% - 50px);
-    height: calc(var(--about-me-height) + var(--lower-page-border-thickness) + (2 * var(--lower-page-padding)));
+    height: calc(var(--about-me-height) + var(--lower-page-border-thickness) + (2 * var(--lower-page-padding)) + var(--content-padding));
+    margin-right: calc(var(--lower-page-padding) + var(--lower-page-radius) + var(--lower-page-border-thickness));
     border: var(--lower-page-border-thickness) solid var(--light-black);
     border-right: 0;
     border-bottom: 0;
@@ -404,28 +502,36 @@ a{
     color: var(--light-black);
     transform: rotate(-90deg);
     left: calc((-1 * var(--lower-page-padding)) + 23px);
-    top: 300px;
+    top: 200px;
     font-size: 22px;
     letter-spacing: 1px;
-    z-index: 3;
+    z-index: calc(var(--lower-gradient-z) + 1);
+    transition: top 1.5s;
+}
+
+#my-work h2.show{
+    top: 300px;
 }
 
 #my-work-content{
     position: relative;
-    height: calc(var(--about-me-height) + 202px);
+    height: calc(var(--about-me-height) +  var(--lower-page-border-thickness) + (2 * var(--lower-page-padding)));
     width: calc(100% + var(--lower-page-padding) + var(--lower-page-radius));
     border-top-left-radius: calc(var(--lower-page-padding) + var(--lower-page-radius));
-    padding-right: 50px;
+    padding-right: var(--content-padding);
+    padding-bottom: var(--content-padding);
     overflow: hidden;
-    z-index: 3;
+    z-index: calc(var(--lower-gradient-z) + 1);
 }
 
 #my-work-content div.content{
+    --picture-padding: 30px;
+    
     width: 100%;
-    height: calc(100% - 60px);
-    padding: 30px;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    height: calc(100% - var(--content-padding));
+    padding: var(--picture-padding);
+    padding-top: var(--content-padding);
+    padding-bottom: var(--content-padding);
     overflow: hidden;
     display: grid;
     grid-template-columns: repeat(4, .8fr);
@@ -436,32 +542,41 @@ a{
 }
 
 #my-work-content button.shadow-scroll{
+    --light-button-shadow: rgb(0, 0, 0, .1);
+    --extra-width: 50px;
+    --cursor-shadow-size: 600px;
+    --cursor-shadow: rgba(0, 0, 0, .3);
+    --arrow-color: rgba(255, 255, 255, .7);
+    
     float: left;
     position: absolute;
-    width: calc(var(--lower-page-padding) + var(--lower-page-radius) + 50px);
+    width: calc(var(--lower-page-padding) + var(--lower-page-radius) + var(--extra-width));
     height: 100%;
     top: 0;
     padding: 0;
     border: 0;
     background: transparent;
-    background-image: linear-gradient(90deg, rgb(0, 0, 0, .1), transparent);
+    background-image: linear-gradient(90deg, var(--light-button-shadow), transparent);
     border-top-left-radius: calc(var(--lower-page-padding) + var(--lower-page-radius));
     overflow: hidden;
     opacity: 0;
-    z-index: 4;
+    z-index: calc(var(--lower-gradient-z) + 2);
     transition: opacity 1s;
 }
 
 #my-work-content button.shadow-scroll div.arrow{
+    --arrow-size: 40px;
+    --arrow-left-offset: 30px;
+    
     position: absolute;
-    width: 40px;
-    height: 40px;
+    width: var(--arrow-size);
+    height: var(--arrow-size);
     top: 46%;
-    left: 30px;
-    border-left: 10px solid rgba(255, 255, 255, .7);
-    border-top: 10px solid rgba(255, 255, 255, .7);
+    left: var(--arrow-left-offset);
+    border-left: 10px solid var(--arrow-color);
+    border-top: 10px solid var(--arrow-color);
     transform: rotate(-45deg);
-    z-index: 5;
+    z-index: calc(var(--lower-gradient-z) + 3);
 }
 
 #my-work-content button.shadow-scroll div.mouse-shadow{
@@ -475,12 +590,11 @@ a{
 #my-work-content button.shadow-scroll div.mouse-shadow::after{
     content: '';
     position: absolute;
-    width: 800px;
-    height: 800px;
-    top: calc((var(--y, 0) * 1px) - 400px);
-    left: calc((var(--x, 0) * 1px) - 400px);
-    opacity: .6;
-    background: radial-gradient(rgba(0, 0, 0, .5), transparent 70%);
+    width: var(--cursor-shadow-size);
+    height: var(--cursor-shadow-size);
+    top: calc((var(--y, 0) * 1px) - (var(--cursor-shadow-size) / 2));
+    left: calc((var(--x, 0) * 1px) - (var(--cursor-shadow-size) / 2));
+    background: radial-gradient(var(--cursor-shadow), transparent 70%);
 }
 
 #my-work-content button.shadow-scroll:hover{
@@ -489,14 +603,14 @@ a{
 }
 
 #my-work-content button.shadow-scroll:last-child{
-    left: calc(100% - var(--lower-page-padding) - var(--lower-page-radius) - 50px);
+    left: calc(100% - var(--lower-page-padding) - var(--lower-page-radius) - var(--extra-width));
     border-radius: 0;
-    background-image: linear-gradient(-90deg, rgb(0, 0, 0, .1), transparent);
+    background-image: linear-gradient(-90deg, var(--light-button-shadow), transparent);
 }
 
 #my-work-content button.shadow-scroll:last-child div.arrow{
     transform: rotate(135deg);
-    left: calc(var(--lower-page-padding) + var(--lower-page-radius) - 30px)
+    left: calc(var(--lower-page-padding) + var(--lower-page-radius) - var(--arrow-left-offset))
 }
 
 #my-work-content button.shadow-scroll:last-child div.mouse-shadow{
@@ -504,20 +618,12 @@ a{
     mask-image: linear-gradient(to left, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
 }
 
-#my-work-content button.shadow-scroll:last-child div.mouse-shadow::after{
-    content: '';
-    position: absolute;
-    width: 800px;
-    height: 800px;
-    top: calc((var(--y, 0) * 1px) - 400px);
-    left: calc((var(--x, 0) * 1px) - 400px);
-}
-
 #my-work-content div.content div{
+    position: relative;
     overflow: hidden;
     border: 20px solid white;
     box-shadow: 0 0 10px rgba(0, 0, 0, .1);
-    z-index: 3;
+    z-index: calc(var(--lower-gradient-z) + 1);
     transition: box-shadow .75s;
 }
 
@@ -573,29 +679,30 @@ a{
 
 #my-work-explore{
     --explore-font-size: 40px;
+    
     position: relative;
     display: flex;
     width: calc(100% + var(--lower-page-padding) + var(--lower-page-radius));
     height: max-content;
-    margin-top: 10px;
-    z-index: 3;
+    top: -50px;
+    z-index: calc(var(--lower-gradient-z) + 1);
 }
 
 #my-work-explore > div{
     width: max-content;
-    height: calc(var(--explore-font-size) + 44px);
+    height: calc(var(--explore-font-size) + var(--explore-font-size) + 4px);
     margin: 0;
     margin-left: auto;
-    margin-right: 100px;
+    margin-right: 200px;
     display: flex;
     flex-direction: column;
 }
 
 #my-work-explore h3{
     color: var(--light-black);
-    font-family: antically-regular;
+    font-family: antically;
     font-weight: normal;
-    font-size: 40px;
+    font-size: var(--explore-font-size);
     margin: 0;
 }
 
@@ -615,23 +722,25 @@ a{
     width: 100%;
 }
 
-#lower-page > div > div:last-child > div:last-child{
-    display: inline-block;
-    width: calc(var(--lower-page-padding) + var(--lower-page-radius) + var(--lower-page-border-thickness));
-    height: calc(var(--about-me-height) + var(--lower-page-border-thickness) + (2 * var(--lower-page-padding)));
+
+/****************** Bottom Page ******************/
+
+#bottom-page{
+    
 }
 
 
 #transition{
     --transition-height: 600px;
-    width: 100%;
+    
     height: var(--transition-height);
     position: relative;
-    z-index: 2;
+    z-index: calc(var(--lower-gradient-z) + 1);
 }
 
 #transition img{
     --transition-img-height: 450px;
+    
     width: 100%;
     height: var(--transition-img-height);
     object-fit: cover;
