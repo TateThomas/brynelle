@@ -17,6 +17,9 @@ const lineAnimationHeights = {
 }
 const buttonLeft = document.querySelectorAll(".shadow-scroll")[0];
 const buttonRight = document.querySelectorAll(".shadow-scroll")[1];
+const travelAnimationHeight = 3000;
+const travelLocations = document.getElementById("travel").getElementsByTagName("ul")[0].children;
+const travelImages = document.getElementById("travel").querySelectorAll(".pictures")[0].getElementsByTagName("div");
 var counter = 0;
 
 
@@ -98,6 +101,37 @@ function lowerLineAnimation(showHeight, moreHeight, hiddenHeight) {
 }
 
 
+function travelAnimation(animationExecuteHeight) {
+    
+    if (window.scrollY >= animationExecuteHeight) {
+        document.getElementById("bottom-page").getElementsByTagName("h2")[0].className = "show";
+    }
+    
+}
+
+
+function travelLocationListener(elem) {
+    
+    elem.addEventListener('click', function() {
+        
+        let elemIndex = parseInt(elem.className[0]);
+        for (let i = 0; i < travelLocations.length; i++) {
+            if (travelLocations[i].className[2] == 's') {
+                var currentIndex = parseInt(travelLocations[i].className[0]);
+            }
+        }
+        
+        travelLocations[currentIndex].className = currentIndex + " hidden";
+        travelImages[currentIndex].className = currentIndex + " hidden";
+        
+        elem.className = elemIndex + " show";
+        travelImages[elemIndex].className = elemIndex + " show" 
+        
+    });
+    
+}
+
+
 window.onload = function() {
     
     document.getElementById("top-page").getElementsByTagName("h2")[0].className = "loaded";
@@ -113,6 +147,7 @@ window.onscroll = function() {
     breakAnimation(breakAnimationHeight);
     myWorkAnimation(myWorkAnimationHeight);
     lowerLineAnimation(lineAnimationHeights.show, lineAnimationHeights.more, lineAnimationHeights.hidden);
+    travelAnimation(travelAnimationHeight);
     
 }
 
@@ -132,6 +167,10 @@ buttonRight.addEventListener("mousemove", (e) => {
     buttonRight.style.setProperty("--y", e.clientY - y);
     
 });
+
+for (let i = 0; i < travelLocations.length; i++) {
+    travelLocationListener(travelLocations[i]);
+}
 
 
 setInterval(changeImage, 5000);
