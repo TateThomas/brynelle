@@ -1,0 +1,76 @@
+@import "/header.css";
+@import "/footer.css";
+
+
+@font-face{
+    src: url(/fonts/alta-regular.otf);
+    font-family: alta;
+}
+
+
+/****************** All ******************/
+
+body{
+    --light-black: #404040;
+    --lower-gradient-z: 2;
+    
+    background-color: white;
+    margin: 0;
+}
+
+#content{
+    color: white;
+}
+
+h1, h2, ul, li{
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    position: relative;
+    font-family: alta;
+    font-weight: normal;
+    text-decoration: none;
+    color: white;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+#content{
+    overflow-x: hidden;
+    width: 100%;
+}
+
+
+/****************** Portfolio ******************/
+
+#portfolio{
+    display: flex;
+    padding: 200px;
+}
+
+#filters{
+    padding: 10px;
+    border-right: 1px solid var(--light-black);
+}
+
+#filters h2, #filters li{
+    color: var(--light-black);
+    font-family: sans-serif;
+}
+
+#filters ul, #filters li, #filters select{
+    display: block;
+}
+
+#filters > ul > li, #filters > ul > li h2{
+    padding: 10px;
+    padding-left: 0;
+}
+
+#filters > ul > li li{
+    padding-bottom: 4px;
+    padding-left: 25px;
+}

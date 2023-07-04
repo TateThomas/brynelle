@@ -1,0 +1,14 @@
+[
+    {
+        "id": 0,
+        "picture": 0,
+        "date": 0,
+        "photoshoot": 0,
+        "priority": "low",
+        "type": "wedding",
+        "location": {
+            "moab": true
+        },
+        "lighting": "full-sun"
+    }
+]
