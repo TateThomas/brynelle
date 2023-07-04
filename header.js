@@ -40,6 +40,9 @@ let appHeader = `
                             <a href="https://www.brynelle.com/portfolio/portraits">Portraits</a>
                         </li>
                         <li>
+                            <a href="https://www.brynelle.com/portfolio/locations">Locations</a>
+                        </li>
+                        <li>
                             <a href="https://www.brynelle.com/portfolio/other">Other</a>
                         </li>
                     </ul>

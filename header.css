@@ -113,7 +113,7 @@
 
 #links > ul > li.portfolio:hover{
     --portfolio-sublist-width: 170px;
-    --total-elements: 7;
+    --total-elements: 8;
     
     width: var(--portfolio-sublist-width);
     height: calc(var(--header-height) * var(--total-elements));
