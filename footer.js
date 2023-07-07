@@ -7,7 +7,7 @@ let appFooter = `
                 <ul>
                     <li><a href="https://www.brynelle.com/pricing">Pricing</a></li>
                     <li><a href="https://www.brynelle.com/travel">Travel</a></li>
-                    <li><a href="https://www.brynelle.com/portfolio">Portfolio</a></li>
+                    <li><a href="https://www.brynelle.com/gallery">Gallery</a></li>
                     <!--<li><a href="https://www.brynelle.com/events">Events</a></li>
                     <li><a href="https://www.brynelle.com/clients">Clients</a></li>-->
                     <li><a href="https://www.brynelle.com/about_me">About Me</a></li>
@@ -31,6 +31,11 @@ let appFooter = `
                     <li><a><img src="/images/socials/facebook.png"></a></li>
                 </ul>
             </div>
+
+            <div id="inclusive">
+                <h2>LGBTQIA+</h2>
+                <h2> friendly</h2>
+            </div>
         </div>
 
         <div id="contact-info">
@@ -43,7 +48,12 @@ let appFooter = `
             </ul>
         </div>
 
-        <h3>© Brynelle Photo 2023</h3>
+        <div>
+
+            <h3>© Brynelle Photo 2023</h3>
+            <h3>Custom made by Tate Thomas</h3>
+
+        </div>
 
     </div>
 `;

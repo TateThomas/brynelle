@@ -21,29 +21,29 @@ let appHeader = `
                 <li>
                     <a href="https://www.brynelle.com/travel">Travel</a>
                 </li>
-                <li class="portfolio">
-                    <a href="https://www.brynelle.com/portfolio">Portfolio</a>
+                <li class="gallery">
+                    <a href="https://www.brynelle.com/gallery">Gallery</a>
                     <ul>
                         <li>
-                            <a href="https://www.brynelle.com/portfolio/weddings">Weddings</a>
+                            <a href='https://www.brynelle.com/gallery/explore?filterType="type"&filterSpecifier="weddings"'>Weddings</a>
                         </li>
                         <li>
-                            <a href="https://www.brynelle.com/portfolio/engagements">Engagements</a>
+                            <a href='https://www.brynelle.com/gallery/explore?filterType="type"&filterSpecifier="engagements"'>Engagements</a>
                         </li>
                         <li>
-                            <a href="https://www.brynelle.com/portfolio/couples">Couples</a>
+                            <a href='https://www.brynelle.com/gallery/explore?filterType="type"&filterSpecifier="bridals"'>Bridals</a>
                         </li>
                         <li>
-                            <a href="https://www.brynelle.com/portfolio/families">Families</a>
+                            <a href='https://www.brynelle.com/gallery/explore?filterType="type"&filterSpecifier="couples"'>Couples</a>
                         </li>
                         <li>
-                            <a href="https://www.brynelle.com/portfolio/portraits">Portraits</a>
+                            <a href='https://www.brynelle.com/gallery/explore?filterType="type"&filterSpecifier="couples"'>Families</a>
                         </li>
                         <li>
-                            <a href="https://www.brynelle.com/portfolio/locations">Locations</a>
+                            <a href='https://www.brynelle.com/gallery/explore?filterType="type"&filterSpecifier="portraits"'>Portraits</a>
                         </li>
                         <li>
-                            <a href="https://www.brynelle.com/portfolio/other">Other</a>
+                            <a href='https://www.brynelle.com/gallery/explore'>All</a>
                         </li>
                     </ul>
                 </li>

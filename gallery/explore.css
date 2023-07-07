@@ -1,0 +1,312 @@
+@import "/header.css";
+@import "/footer.css";
+
+
+@font-face{
+    src: url(/fonts/alta-regular.otf);
+    font-family: alta;
+}
+
+
+/****************** All ******************/
+
+body{
+    --light-black: #404040;
+    --lower-gradient-z: 2;
+    
+    background-color: white;
+    margin: 0;
+}
+
+#content{
+    color: white;
+}
+
+h1, h2, ul, li{
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    position: relative;
+    font-family: alta;
+    font-weight: normal;
+    text-decoration: none;
+    color: white;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+#content{
+    display: flex;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+
+/****************** gallery ******************/
+
+#content > div{
+    padding: 125px 0 200px 0;
+    margin: auto;
+}
+
+#content > div > h2{
+    color: var(--light-black);
+    font-size: 40px;
+    padding-bottom: 15px;
+}
+
+#gallery{
+    display: flex;
+}
+
+#filters{
+    height: max-content;
+    padding: 10px;
+    border-right: 1px solid var(--light-black);
+}
+
+#filters div:first-child{
+    position: relative;
+    width: 22px;
+    height: 13px;
+    padding: 0 !important;
+    margin: 0 !important;
+    left: calc(100% - 30px);
+}
+
+#filters img{
+    position: absolute;
+    width: 22px;
+    height: 13px;
+    transform: rotate(180deg);
+    cursor: pointer;
+    transition: transform 1s, margin-left 1s;
+}
+
+#filters h2, #filters li{
+    color: var(--light-black);
+    font-family: sans-serif;
+}
+
+#filters ul, #filters li, #filters select{
+    display: block;
+}
+
+#filters select:hover, #filters input:hover, #filters label:hover{
+    cursor: pointer;
+}
+
+#filters > ul > li, #filters > ul > li h2{
+    width: max-content;
+    padding: 10px;
+    padding-left: 0;
+}
+
+#filters > ul > li li{
+    padding-bottom: 4px;
+    padding-left: 25px;
+}
+
+#filters > ul > li:first-child{
+    padding-top: 0;
+}
+
+#type li:last-child{
+    width: 150px;
+    overflow: visible;
+}
+
+#filters > ul {
+    width: 200px;
+    margin-left: auto;
+    overflow: hidden;
+    transition: width 1s;
+}
+
+#filters.hidden > ul {
+    width: 0;
+}
+
+#filters.hidden img{
+    transform: rotate(360deg);
+}
+
+
+#photos{
+    display: grid;
+    grid-template-columns: repeat(4, 300px);
+    grid-gap: 20px;
+    grid-auto-flow: row dense;
+    height: max-content;
+    padding: 20px;
+    padding-top: 0;
+}
+
+#photos h4{
+    grid-column: span 4;
+    height: 11px;
+    margin: 0;
+    font-size: 11px;
+    color: #D0D0D0;
+    font-weight: normal;
+    font-family: sans-serif;
+    text-align: right;
+}
+
+#photos h2{
+    color: black;
+    font-family: sans-serif;
+    font-size: 15px;
+    padding: 30px;
+}
+
+#photos div{
+    position: relative;
+    width: 100%;
+    height: 500px;
+    margin: 6px 0 6px 0;
+}
+
+#photos > div > div{
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    top: -25px;
+    overflow: hidden;
+}
+
+#photos h3{
+    position: absolute;
+    width: calc(100% - 10px);
+    padding: 5px;
+    margin: 0;
+    top: 30px;
+    font-size: 20px;
+    font-family: alta;
+    font-weight: normal;
+    letter-spacing: 1px;
+    color: var(--light-black);
+    transition: top .75s;
+}
+
+#photos > div > div:last-child{
+    top: calc(100% + 5px);
+}
+
+#photos > div > div:last-child h3{
+    top: -25px;
+    text-align: right;
+    transition-delay: 0s;
+}
+
+#photos > div:hover > div:first-child h3{
+    top: -5px;
+}
+
+#photos > div:hover > div:last-child h3{
+    top: -7px;
+    transition-delay: .7s;
+}
+
+#photos img{
+    width: 100%;
+    height: 100%;
+    padding: 5px 0 5px 0;
+    object-fit: cover;
+}
+
+#photos div.hidden, #photos div.hidden img{
+    position: absolute;
+    width: 0;
+    height: 0;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+}
+
+#photos img:hover{
+    cursor: pointer;
+}
+
+#photos div.img1, #photos div.img11, #photos div.img17, #photos div.img26, #photos div.img29, #photos div.img31, #photos div.img35, #photos div.img56, #photos div.img61, #photos div.img62{
+    grid-column: span 2;
+}
+
+#photos div.img15, #photos div.img24, #photos div.img59, #photos div.img69{
+    grid-column: span 3;
+}
+
+#photos div.img56 img, #photos div.img57 img{
+    object-position: bottom;
+}
+
+#photos div.expanded{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: -6px;
+    left: 0;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 11;
+}
+
+#photos div.expanded img{
+    display: block;
+    height: 86vh;
+    width: auto;
+    padding: 0;
+    margin: auto;
+    margin-top: 7vh;
+    box-shadow: 0 0 100px black;
+}
+
+#photos div.expanded > div{
+    width: 100%;
+    height: 25px;
+    overflow: visible;
+}
+
+#photos div.expanded > div:first-child{
+    top: 2vh;
+}
+
+#photos div.expanded > div:last-child{
+    top: 94vh;
+}
+
+#photos > div.expanded > div:last-child h3{
+    top: -7px;
+    transition: 0;
+}
+
+#photos div.expanded > div h3{
+    top: -5px;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    transition: top 0s;
+    transition-delay: 0s !important;
+}
+
+#photos div.expanded > div:first-child::after{
+    content: 'x';
+    display: block;
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    padding: 0;
+    top: -15px;
+    right: 50px;
+    font-family: sans-serif;
+    font-size: 50px;
+    line-height: 45px;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+}
+
+#photos div.expanded > div:first-child:hover::after{
+    cursor: pointer;
+}

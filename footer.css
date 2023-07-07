@@ -32,6 +32,23 @@
     margin-bottom: 3px;
 }
 
+#inclusive{
+    margin-left: auto;
+}
+
+#inclusive h2{
+    display: inline-block;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+#inclusive h2:first-child{
+    font-weight: bold;
+    background: linear-gradient(90deg, #f00000, #f00000, #ff8000, #ff8000, #ffff00, #ffff00, #007940, #007940 , #4040ff, #4040ff, #a000c0, #a000c0) ;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 #socials li{
     display: inline-block;
 }
@@ -60,6 +77,10 @@
     padding: 2px;
 }
 
+#footer > div:last-child{
+    display: flex;
+}
+
 #footer h3{
     display: block;
     color: white;
@@ -68,4 +89,8 @@
     padding: 5px;
     padding-left: 0;
     margin: 0;
+}
+
+#footer h3:last-child{
+    margin-left: auto;
 }

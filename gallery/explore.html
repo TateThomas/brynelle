@@ -1,0 +1,93 @@
+<!DOCType HTML>
+<html>
+    
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0"/>
+        <title>Gallery - Brynelle Photo</title>
+        <link rel="stylesheet" type="text/css" href="explore.css">
+        <!--<script src="/frameworks/jquery-3.7.0.js"></script>-->
+        <script src="/frameworks/jquery-3.7.0.min.js"></script>
+        <script src="/frameworks/exif.js"></script>
+    </head>
+    
+    <body>
+    
+        <header id="app-header"></header>
+        <script async src="/header.js"></script>
+        
+        <div id="content">
+            
+            <div>
+                
+                <h2>Gallery</h2>
+        
+                <div id="gallery">
+
+                    <div id="filters" class="show">
+
+                        <div>
+                            <img src="/images/gallery/arrow.png">
+                        </div>
+                        
+                        <ul>
+
+                            <li id="sort-by">
+                                <h2>Sort By</h2>
+                                <select name="sort-by">
+
+                                    <option value="featured" selected="selected">Featured</option>
+                                    <option value="most-recent">Most Recent</option>
+                                    <option value="least-recent">Least Recent</option>
+                                    <option value="photoshoot">Photoshoot</option>
+
+                                </select>
+                            </li>
+
+                            <li id="type">
+                                <h2>Type</h2>
+                                <ul>
+
+                                </ul>
+                            </li>
+
+                            <li id="location">
+                                <h2>Location</h2>
+                                <ul>
+
+                                </ul>
+                            </li>
+
+                            <li id="lighting">
+                                <h2>Lighting</h2>
+                                <ul>
+
+                                </ul>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                    <div id="photos">
+                        
+                        <h4>Loading photos...</h4>
+
+                    </div>
+
+                </div>
+            
+            </div>
+            
+        </div>
+        
+        <footer id="app-footer"></footer>
+        <script async src="/footer.js"></script>
+        
+        <script src="explore.js"></script>
+        <script src="data/database.js"></script>
+        <!--<script src="data/init_photos.js"></script>-->
+    
+    </body>
+    
+</html>
