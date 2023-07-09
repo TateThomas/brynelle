@@ -37,7 +37,7 @@ let appHeader = `
                             <a href='https://www.brynelle.com/gallery/explore?filterType="type"&filterSpecifier="couples"'>Couples</a>
                         </li>
                         <li>
-                            <a href='https://www.brynelle.com/gallery/explore?filterType="type"&filterSpecifier="couples"'>Families</a>
+                            <a href='https://www.brynelle.com/gallery/explore?filterType="type"&filterSpecifier="families"'>Families</a>
                         </li>
                         <li>
                             <a href='https://www.brynelle.com/gallery/explore?filterType="type"&filterSpecifier="portraits"'>Portraits</a>
