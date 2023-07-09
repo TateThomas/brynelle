@@ -492,7 +492,7 @@ class Database {
             
         }
         else {
-            photos.innerHTML = '<h2>An error occurred, please refresh.</h2>';
+            //photos.innerHTML = '<h2>An error occurred, please refresh.</h2>';
             return;
         }
         
