@@ -53,7 +53,6 @@ function initializeList(listId, filterArray, sortBool) {
 
 function toggleFilters() {
     
-    console.log('clicked');
     let filterElement = document.getElementById("filters");
     
     if (filterElement.className == "show") {
