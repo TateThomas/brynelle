@@ -10,7 +10,7 @@
                 },
                 "lighting": false
             },
-            "html": "\n                <div class='img0 show normal'>\n                    <div>\n                        <h3>goblin valley</h3>\n                    </div>\n                    <img src='/images/gallery/0.jpg'>\n                    <div>\n                        <h3>Sun Nov 21 2021</h3>\n                    </div>\n                </div>\n                "
+            "html": "\n                <div class='img0 show normal'>\n                    <div>\n                        <h3>goblin valley</h3>\n                    </div>\n                    <img src='/images/gallery/0.JPG'>\n                    <div>\n                        <h3>Sun Nov 21 2021</h3>\n                    </div>\n                </div>\n                "
         },
         "id": 0,
         "picture": 0,
@@ -36,7 +36,7 @@
                 },
                 "lighting": false
             },
-            "html": "\n                <div class='img1 show normal'>\n                    <div>\n                        <h3>sand dunes</h3>\n                    </div>\n                    <img src='/images/gallery/1.jpg'>\n                    <div>\n                        <h3>Sat Apr 09 2022</h3>\n                    </div>\n                </div>\n                "
+            "html": "\n                <div class='img1 show normal'>\n                    <div>\n                        <h3>sand dunes</h3>\n                    </div>\n                    <img src='/images/gallery/1.JPG'>\n                    <div>\n                        <h3>Sat Apr 09 2022</h3>\n                    </div>\n                </div>\n                "
         },
         "id": 1,
         "picture": 1,
@@ -60,7 +60,7 @@
                 },
                 "lighting": false
             },
-            "html": "\n                <div class='img2 show normal'>\n                    <div>\n                        <h3>antelope island</h3>\n                    </div>\n                    <img src='/images/gallery/2.jpg'>\n                    <div>\n                        <h3>Mon May 02 2022</h3>\n                    </div>\n                </div>\n                "
+            "html": "\n                <div class='img2 show normal'>\n                    <div>\n                        <h3>antelope island</h3>\n                    </div>\n                    <img src='/images/gallery/2.JPG'>\n                    <div>\n                        <h3>Mon May 02 2022</h3>\n                    </div>\n                </div>\n                "
         },
         "id": 2,
         "picture": 2,
@@ -84,7 +84,7 @@
                 },
                 "lighting": false
             },
-            "html": "\n                <div class='img3 show normal'>\n                    <div>\n                        <h3>mountains</h3>\n                    </div>\n                    <img src='/images/gallery/3.jpg'>\n                    <div>\n                        <h3>Sun Oct 16 2022</h3>\n                    </div>\n                </div>\n                "
+            "html": "\n                <div class='img3 show normal'>\n                    <div>\n                        <h3>mountains</h3>\n                    </div>\n                    <img src='/images/gallery/3.JPG'>\n                    <div>\n                        <h3>Sun Oct 16 2022</h3>\n                    </div>\n                </div>\n                "
         },
         "id": 3,
         "picture": 3,
@@ -108,7 +108,7 @@
                 },
                 "lighting": false
             },
-            "html": "\n                <div class='img4 show normal'>\n                    <div>\n                        <h3>salt lake</h3>\n                    </div>\n                    <img src='/images/gallery/4.jpg'>\n                    <div>\n                        <h3>Sat Apr 15 2023</h3>\n                    </div>\n                </div>\n                "
+            "html": "\n                <div class='img4 show normal'>\n                    <div>\n                        <h3>salt lake</h3>\n                    </div>\n                    <img src='/images/gallery/4.JPG'>\n                    <div>\n                        <h3>Sat Apr 15 2023</h3>\n                    </div>\n                </div>\n                "
         },
         "id": 4,
         "picture": 4,
@@ -131,7 +131,7 @@
                 },
                 "lighting": false
             },
-            "html": "\n                <div class='img5 show normal'>\n                    <div>\n                        <h3>antelope island</h3>\n                    </div>\n                    <img src='/images/gallery/5.jpg'>\n                    <div>\n                        <h3>Mon May 02 2022</h3>\n                    </div>\n                </div>\n                "
+            "html": "\n                <div class='img5 show normal'>\n                    <div>\n                        <h3>antelope island</h3>\n                    </div>\n                    <img src='/images/gallery/5.JPG'>\n                    <div>\n                        <h3>Mon May 02 2022</h3>\n                    </div>\n                </div>\n                "
         },
         "id": 5,
         "picture": 5,
@@ -156,7 +156,7 @@
                 },
                 "lighting": false
             },
-            "html": "\n                <div class='img6 show normal'>\n                    <div>\n                        <h3>goblin valley</h3>\n                    </div>\n                    <img src='/images/gallery/6.jpg'>\n                    <div>\n                        <h3>Sun Nov 21 2021</h3>\n                    </div>\n                </div>\n                "
+            "html": "\n                <div class='img6 show normal'>\n                    <div>\n                        <h3>goblin valley</h3>\n                    </div>\n                    <img src='/images/gallery/6.JPG'>\n                    <div>\n                        <h3>Sun Nov 21 2021</h3>\n                    </div>\n                </div>\n                "
         },
         "id": 6,
         "picture": 6,
@@ -183,7 +183,7 @@
                 },
                 "lighting": false
             },
-            "html": "\n                <div class='img7 show normal'>\n                    <div>\n                        <h3>goblin valley</h3>\n                    </div>\n                    <img src='/images/gallery/7.jpg'>\n                    <div>\n                        <h3>Sun Nov 21 2021</h3>\n                    </div>\n                </div>\n                "
+            "html": "\n                <div class='img7 show normal'>\n                    <div>\n                        <h3>goblin valley</h3>\n                    </div>\n                    <img src='/images/gallery/7.JPG'>\n                    <div>\n                        <h3>Sun Nov 21 2021</h3>\n                    </div>\n                </div>\n                "
         },
         "id": 7,
         "picture": 7,
@@ -210,7 +210,7 @@
                 },
                 "lighting": false
             },
-            "html": "\n                <div class='img8 show normal'>\n                    <div>\n                        <h3>little white-chapel</h3>\n                    </div>\n                    <img src='/images/gallery/8.jpg'>\n                    <div>\n                        <h3>Thu Jun 23 2022</h3>\n                    </div>\n                </div>\n                "
+            "html": "\n                <div class='img8 show normal'>\n                    <div>\n                        <h3>little white-chapel</h3>\n                    </div>\n                    <img src='/images/gallery/8.JPG'>\n                    <div>\n                        <h3>Thu Jun 23 2022</h3>\n                    </div>\n                </div>\n                "
         },
         "id": 8,
         "picture": 8,
@@ -236,7 +236,7 @@
                 },
                 "lighting": false
             },
-            "html": "\n                <div class='img9 show normal'>\n                    <div>\n                        <h3>antelope island</h3>\n                    </div>\n                    <img src='/images/gallery/9.jpg'>\n                    <div>\n                        <h3>Fri Apr 21 2023</h3>\n                    </div>\n                </div>\n                "
+            "html": "\n                <div class='img9 show normal'>\n                    <div>\n                        <h3>antelope island</h3>\n                    </div>\n                    <img src='/images/gallery/9.JPG'>\n                    <div>\n                        <h3>Fri Apr 21 2023</h3>\n                    </div>\n                </div>\n                "
         },
         "id": 9,
         "picture": 9,
@@ -261,7 +261,7 @@
                 },
                 "lighting": false
             },
-            "html": "\n                <div class='img10 show normal'>\n                    <div>\n                        <h3>las vegas</h3>\n                    </div>\n                    <img src='/images/gallery/10.jpg'>\n                    <div>\n                        <h3>Thu Jun 23 2022</h3>\n                    </div>\n                </div>\n                "
+            "html": "\n                <div class='img10 show normal'>\n                    <div>\n                        <h3>las vegas</h3>\n                    </div>\n                    <img src='/images/gallery/10.JPG'>\n                    <div>\n                        <h3>Thu Jun 23 2022</h3>\n                    </div>\n                </div>\n                "
         },
         "id": 10,
         "picture": 10,
@@ -286,7 +286,7 @@
                 },
                 "lighting": false
             },
-            "html": "\n                <div class='img11 show normal'>\n                    <div>\n                        <h3>las vegas</h3>\n                    </div>\n                    <img src='/images/gallery/11.jpg'>\n                    <div>\n                        <h3>Thu Jun 23 2022</h3>\n                    </div>\n                </div>\n                "
+            "html": "\n                <div class='img11 show normal'>\n                    <div>\n                        <h3>las vegas</h3>\n                    </div>\n                    <img src='/images/gallery/11.JPG'>\n                    <div>\n                        <h3>Thu Jun 23 2022</h3>\n                    </div>\n                </div>\n                "
         },
         "id": 11,
         "picture": 11,
@@ -311,7 +311,7 @@
                 },
                 "lighting": false
             },
-            "html": "\n                <div class='img12 show normal'>\n                    <div>\n                        <h3>antelope island</h3>\n                    </div>\n                    <img src='/images/gallery/12.jpg'>\n                    <div>\n                        <h3>Fri Apr 21 2023</h3>\n                    </div>\n                </div>\n                "
+            "html": "\n                <div class='img12 show normal'>\n                    <div>\n                        <h3>antelope island</h3>\n                    </div>\n                    <img src='/images/gallery/12.JPG'>\n                    <div>\n                        <h3>Fri Apr 21 2023</h3>\n                    </div>\n                </div>\n                "
         },
         "id": 12,
         "picture": 12,
@@ -336,7 +336,7 @@
                 },
                 "lighting": false
             },
-            "html": "\n                <div class='img13 show normal'>\n                    <div>\n                        <h3>salt lake</h3>\n                    </div>\n                    <img src='/images/gallery/13.jpg'>\n                    <div>\n                        <h3>Fri Feb 04 2022</h3>\n                    </div>\n                </div>\n                "
+            "html": "\n                <div class='img13 show normal'>\n                    <div>\n                        <h3>salt lake</h3>\n                    </div>\n                    <img src='/images/gallery/13.JPG'>\n                    <div>\n                        <h3>Fri Feb 04 2022</h3>\n                    </div>\n                </div>\n                "
         },
         "id": 13,
         "picture": 13,
@@ -361,7 +361,7 @@
                 },
                 "lighting": false
             },
-            "html": "\n                <div class='img14 show normal'>\n                    <div>\n                        <h3>salt lake</h3>\n                    </div>\n                    <img src='/images/gallery/14.jpg'>\n                    <div>\n                        <h3>Fri Feb 04 2022</h3>\n                    </div>\n                </div>\n                "
+            "html": "\n                <div class='img14 show normal'>\n                    <div>\n                        <h3>salt lake</h3>\n                    </div>\n                    <img src='/images/gallery/14.JPG'>\n                    <div>\n                        <h3>Fri Feb 04 2022</h3>\n                    </div>\n                </div>\n                "
         },
         "id": 14,
         "picture": 14,
@@ -386,7 +386,7 @@
                 },
                 "lighting": false
             },
-            "html": "\n                <div class='img15 show normal'>\n                    <div>\n                        <h3>salt lake</h3>\n                    </div>\n                    <img src='/images/gallery/15.jpg'>\n                    <div>\n                        <h3>Fri Feb 04 2022</h3>\n                    </div>\n                </div>\n                "
+            "html": "\n                <div class='img15 show normal'>\n                    <div>\n                        <h3>salt lake</h3>\n                    </div>\n                    <img src='/images/gallery/15.JPG'>\n                    <div>\n                        <h3>Fri Feb 04 2022</h3>\n                    </div>\n                </div>\n                "
         },
         "id": 15,
         "picture": 15,
@@ -411,7 +411,7 @@
                 },
                 "lighting": false
             },
-            "html": "\n                <div class='img16 show normal'>\n                    <div>\n                        <h3>salt lake</h3>\n                    </div>\n                    <img src='/images/gallery/16.jpg'>\n                    <div>\n                        <h3>Fri Feb 04 2022</h3>\n                    </div>\n                </div>\n                "
+            "html": "\n                <div class='img16 show normal'>\n                    <div>\n                        <h3>salt lake</h3>\n                    </div>\n                    <img src='/images/gallery/16.JPG'>\n                    <div>\n                        <h3>Fri Feb 04 2022</h3>\n                    </div>\n                </div>\n                "
         },
         "id": 16,
         "picture": 16,
@@ -436,7 +436,7 @@
                 },
                 "lighting": false
             },
-            "html": "\n                <div class='img17 show normal'>\n                    <div>\n                        <h3>salt lake</h3>\n                    </div>\n                    <img src='/images/gallery/17.jpg'>\n                    <div>\n                        <h3>Fri Feb 04 2022</h3>\n                    </div>\n                </div>\n                "
+            "html": "\n                <div class='img17 show normal'>\n                    <div>\n                        <h3>salt lake</h3>\n                    </div>\n                    <img src='/images/gallery/17.JPG'>\n                    <div>\n                        <h3>Fri Feb 04 2022</h3>\n                    </div>\n                </div>\n                "
         },
         "id": 17,
         "picture": 17,
@@ -460,7 +460,7 @@
                 },
                 "lighting": false
             },
-            "html": "\n                <div class='img18 show normal'>\n                    <div>\n                        <h3>parks</h3>\n                    </div>\n                    <img src='/images/gallery/18.jpg'>\n                    <div>\n                        <h3>Fri Feb 04 2022</h3>\n                    </div>\n                </div>\n                "
+            "html": "\n                <div class='img18 show normal'>\n                    <div>\n                        <h3>parks</h3>\n                    </div>\n                    <img src='/images/gallery/18.JPG'>\n                    <div>\n                        <h3>Fri Feb 04 2022</h3>\n                    </div>\n                </div>\n                "
         },
         "id": 18,
         "picture": 18,
@@ -485,7 +485,7 @@
                 },
                 "lighting": false
             },
-            "html": "\n                <div class='img19 show normal'>\n                    <div>\n                        <h3>mountains</h3>\n                    </div>\n                    <img src='/images/gallery/19.jpg'>\n                    <div>\n                        <h3>Fri Feb 04 2022</h3>\n                    </div>\n                </div>\n                "
+            "html": "\n                <div class='img19 show normal'>\n                    <div>\n                        <h3>mountains</h3>\n                    </div>\n                    <img src='/images/gallery/19.JPG'>\n                    <div>\n                        <h3>Fri Feb 04 2022</h3>\n                    </div>\n                </div>\n                "
         },
         "id": 19,
         "picture": 19,
@@ -512,7 +512,7 @@
                 },
                 "lighting": false
             },
-            "html": "\n                <div class='img20 show normal'>\n                    <div>\n                        <h3>mountains</h3>\n                    </div>\n                    <img src='/images/gallery/20.jpg'>\n                    <div>\n                        <h3>Fri Feb 04 2022</h3>\n                    </div>\n                </div>\n                "
+            "html": "\n                <div class='img20 show normal'>\n                    <div>\n                        <h3>mountains</h3>\n                    </div>\n                    <img src='/images/gallery/20.JPG'>\n                    <div>\n                        <h3>Fri Feb 04 2022</h3>\n                    </div>\n                </div>\n                "
         },
         "id": 20,
         "picture": 20,
@@ -539,7 +539,7 @@
                 },
                 "lighting": false
             },
-            "html": "\n                <div class='img21 show normal'>\n                    <div>\n                        <h3>mountains</h3>\n                    </div>\n                    <img src='/images/gallery/21.jpg'>\n                    <div>\n                        <h3>Fri Feb 04 2022</h3>\n                    </div>\n                </div>\n                "
+            "html": "\n                <div class='img21 show normal'>\n                    <div>\n                        <h3>mountains</h3>\n                    </div>\n                    <img src='/images/gallery/21.JPG'>\n                    <div>\n                        <h3>Fri Feb 04 2022</h3>\n                    </div>\n                </div>\n                "
         },
         "id": 21,
         "picture": 21,
@@ -566,7 +566,7 @@
                 },
                 "lighting": false
             },
-            "html": "\n                <div class='img22 show normal'>\n                    <div>\n                        <h3>mountains</h3>\n                    </div>\n                    <img src='/images/gallery/22.jpg'>\n                    <div>\n                        <h3>Fri Feb 04 2022</h3>\n                    </div>\n                </div>\n                "
+            "html": "\n                <div class='img22 show normal'>\n                    <div>\n                        <h3>mountains</h3>\n                    </div>\n                    <img src='/images/gallery/22.JPG'>\n                    <div>\n                        <h3>Fri Feb 04 2022</h3>\n                    </div>\n                </div>\n                "
         },
         "id": 22,
         "picture": 22,
@@ -593,7 +593,7 @@
                 },
                 "lighting": false
             },
-            "html": "\n                <div class='img23 show normal'>\n                    <div>\n                        <h3>mountains</h3>\n                    </div>\n                    <img src='/images/gallery/23.jpg'>\n                    <div>\n                        <h3>Fri Feb 04 2022</h3>\n                    </div>\n                </div>\n                "
+            "html": "\n                <div class='img23 show normal'>\n                    <div>\n                        <h3>mountains</h3>\n                    </div>\n                    <img src='/images/gallery/23.JPG'>\n                    <div>\n                        <h3>Fri Feb 04 2022</h3>\n                    </div>\n                </div>\n                "
         },
         "id": 23,
         "picture": 23,
@@ -619,7 +619,7 @@
                 },
                 "lighting": false
             },
-            "html": "\n                <div class='img24 show normal'>\n                    <div>\n                        <h3>salt flats</h3>\n                    </div>\n                    <img src='/images/gallery/24.jpg'>\n                    <div>\n                        <h3>Fri Feb 04 2022</h3>\n                    </div>\n                </div>\n                "
+            "html": "\n                <div class='img24 show normal'>\n                    <div>\n                        <h3>salt flats</h3>\n                    </div>\n                    <img src='/images/gallery/24.JPG'>\n                    <div>\n                        <h3>Fri Feb 04 2022</h3>\n                    </div>\n                </div>\n                "
         },
         "id": 24,
         "picture": 24,
@@ -644,7 +644,7 @@
                 },
                 "lighting": false
             },
-            "html": "\n                <div class='img25 show normal'>\n                    <div>\n                        <h3>salt flats</h3>\n                    </div>\n                    <img src='/images/gallery/25.jpg'>\n                    <div>\n                        <h3>Fri Feb 04 2022</h3>\n                    </div>\n                </div>\n                "
+            "html": "\n                <div class='img25 show normal'>\n                    <div>\n                        <h3>salt flats</h3>\n                    </div>\n                    <img src='/images/gallery/25.JPG'>\n                    <div>\n                        <h3>Fri Feb 04 2022</h3>\n                    </div>\n                </div>\n                "
         },
         "id": 25,
         "picture": 25,
@@ -669,7 +669,7 @@
                 },
                 "lighting": false
             },
-            "html": "\n                <div class='img26 show normal'>\n                    <div>\n                        <h3>salt flats</h3>\n                    </div>\n                    <img src='/images/gallery/26.jpg'>\n                    <div>\n                        <h3>Fri Feb 04 2022</h3>\n                    </div>\n                </div>\n                "
+            "html": "\n                <div class='img26 show normal'>\n                    <div>\n                        <h3>salt flats</h3>\n                    </div>\n                    <img src='/images/gallery/26.JPG'>\n                    <div>\n                        <h3>Fri Feb 04 2022</h3>\n                    </div>\n                </div>\n                "
         },
         "id": 26,
         "picture": 26,
@@ -694,7 +694,7 @@
                 },
                 "lighting": false
             },
-            "html": "\n                <div class='img27 show normal'>\n                    <div>\n                        <h3>salt flats</h3>\n                    </div>\n                    <img src='/images/gallery/27.jpg'>\n                    <div>\n                        <h3>Fri Feb 04 2022</h3>\n                    </div>\n                </div>\n                "
+            "html": "\n                <div class='img27 show normal'>\n                    <div>\n                        <h3>salt flats</h3>\n                    </div>\n                    <img src='/images/gallery/27.JPG'>\n                    <div>\n                        <h3>Fri Feb 04 2022</h3>\n                    </div>\n                </div>\n                "
         },
         "id": 27,
         "picture": 27,
@@ -719,7 +719,7 @@
                 },
                 "lighting": false
             },
-            "html": "\n                <div class='img28 show normal'>\n                    <div>\n                        <h3>salt flats</h3>\n                    </div>\n                    <img src='/images/gallery/28.jpg'>\n                    <div>\n                        <h3>Fri Feb 04 2022</h3>\n                    </div>\n                </div>\n                "
+            "html": "\n                <div class='img28 show normal'>\n                    <div>\n                        <h3>salt flats</h3>\n                    </div>\n                    <img src='/images/gallery/28.JPG'>\n                    <div>\n                        <h3>Fri Feb 04 2022</h3>\n                    </div>\n                </div>\n                "
         },
         "id": 28,
         "picture": 28,
@@ -744,7 +744,7 @@
                 },
                 "lighting": false
             },
-            "html": "\n                <div class='img29 show normal'>\n                    <div>\n                        <h3>salt flats</h3>\n                    </div>\n                    <img src='/images/gallery/29.jpg'>\n                    <div>\n                        <h3>Fri Feb 04 2022</h3>\n                    </div>\n                </div>\n                "
+            "html": "\n                <div class='img29 show normal'>\n                    <div>\n                        <h3>salt flats</h3>\n                    </div>\n                    <img src='/images/gallery/29.JPG'>\n                    <div>\n                        <h3>Fri Feb 04 2022</h3>\n                    </div>\n                </div>\n                "
         },
         "id": 29,
         "picture": 29,
@@ -769,7 +769,7 @@
                 },
                 "lighting": false
             },
-            "html": "\n                <div class='img30 show normal'>\n                    <div>\n                        <h3>utah lake</h3>\n                    </div>\n                    <img src='/images/gallery/30.jpg'>\n                    <div>\n                        <h3>Sat Oct 01 2022</h3>\n                    </div>\n                </div>\n                "
+            "html": "\n                <div class='img30 show normal'>\n                    <div>\n                        <h3>utah lake</h3>\n                    </div>\n                    <img src='/images/gallery/30.JPG'>\n                    <div>\n                        <h3>Sat Oct 01 2022</h3>\n                    </div>\n                </div>\n                "
         },
         "id": 30,
         "picture": 30,
@@ -794,7 +794,7 @@
                 },
                 "lighting": false
             },
-            "html": "\n                <div class='img31 show normal'>\n                    <div>\n                        <h3>utah lake</h3>\n                    </div>\n                    <img src='/images/gallery/31.jpg'>\n                    <div>\n                        <h3>Sat Oct 01 2022</h3>\n                    </div>\n                </div>\n                "
+            "html": "\n                <div class='img31 show normal'>\n                    <div>\n                        <h3>utah lake</h3>\n                    </div>\n                    <img src='/images/gallery/31.JPG'>\n                    <div>\n                        <h3>Sat Oct 01 2022</h3>\n                    </div>\n                </div>\n                "
         },
         "id": 31,
         "picture": 31,
@@ -819,7 +819,7 @@
                 },
                 "lighting": false
             },
-            "html": "\n                <div class='img32 show normal'>\n                    <div>\n                        <h3>limousine</h3>\n                    </div>\n                    <img src='/images/gallery/32.jpg'>\n                    <div>\n                        <h3>Fri Feb 04 2022</h3>\n                    </div>\n                </div>\n                "
+            "html": "\n                <div class='img32 show normal'>\n                    <div>\n                        <h3>limousine</h3>\n                    </div>\n                    <img src='/images/gallery/32.JPG'>\n                    <div>\n                        <h3>Fri Feb 04 2022</h3>\n                    </div>\n                </div>\n                "
         },
         "id": 32,
         "picture": 32,
@@ -844,7 +844,7 @@
                 },
                 "lighting": false
             },
-            "html": "\n                <div class='img33 show normal'>\n                    <div>\n                        <h3>limousine</h3>\n                    </div>\n                    <img src='/images/gallery/33.jpg'>\n                    <div>\n                        <h3>Fri Feb 04 2022</h3>\n                    </div>\n                </div>\n                "
+            "html": "\n                <div class='img33 show normal'>\n                    <div>\n                        <h3>limousine</h3>\n                    </div>\n                    <img src='/images/gallery/33.JPG'>\n                    <div>\n                        <h3>Fri Feb 04 2022</h3>\n                    </div>\n                </div>\n                "
         },
         "id": 33,
         "picture": 33,
@@ -869,7 +869,7 @@
                 },
                 "lighting": false
             },
-            "html": "\n                <div class='img34 show normal'>\n                    <div>\n                        <h3>salt flats</h3>\n                    </div>\n                    <img src='/images/gallery/34.jpg'>\n                    <div>\n                        <h3>Fri Feb 04 2022</h3>\n                    </div>\n                </div>\n                "
+            "html": "\n                <div class='img34 show normal'>\n                    <div>\n                        <h3>salt flats</h3>\n                    </div>\n                    <img src='/images/gallery/34.JPG'>\n                    <div>\n                        <h3>Fri Feb 04 2022</h3>\n                    </div>\n                </div>\n                "
         },
         "id": 34,
         "picture": 34,
@@ -894,7 +894,7 @@
                 },
                 "lighting": false
             },
-            "html": "\n                <div class='img35 show normal'>\n                    <div>\n                        <h3>salt flats</h3>\n                    </div>\n                    <img src='/images/gallery/35.jpg'>\n                    <div>\n                        <h3>Fri Feb 04 2022</h3>\n                    </div>\n                </div>\n                "
+            "html": "\n                <div class='img35 show normal'>\n                    <div>\n                        <h3>salt flats</h3>\n                    </div>\n                    <img src='/images/gallery/35.JPG'>\n                    <div>\n                        <h3>Fri Feb 04 2022</h3>\n                    </div>\n                </div>\n                "
         },
         "id": 35,
         "picture": 35,
@@ -919,7 +919,7 @@
                 },
                 "lighting": false
             },
-            "html": "\n                <div class='img36 show normal'>\n                    <div>\n                        <h3>salt flats</h3>\n                    </div>\n                    <img src='/images/gallery/36.jpg'>\n                    <div>\n                        <h3>Fri Feb 04 2022</h3>\n                    </div>\n                </div>\n                "
+            "html": "\n                <div class='img36 show normal'>\n                    <div>\n                        <h3>salt flats</h3>\n                    </div>\n                    <img src='/images/gallery/36.JPG'>\n                    <div>\n                        <h3>Fri Feb 04 2022</h3>\n                    </div>\n                </div>\n                "
         },
         "id": 36,
         "picture": 36,
@@ -944,7 +944,7 @@
                 },
                 "lighting": false
             },
-            "html": "\n                <div class='img37 show normal'>\n                    <div>\n                        <h3>salt flats</h3>\n                    </div>\n                    <img src='/images/gallery/37.jpg'>\n                    <div>\n                        <h3>Fri Feb 04 2022</h3>\n                    </div>\n                </div>\n                "
+            "html": "\n                <div class='img37 show normal'>\n                    <div>\n                        <h3>salt flats</h3>\n                    </div>\n                    <img src='/images/gallery/37.JPG'>\n                    <div>\n                        <h3>Fri Feb 04 2022</h3>\n                    </div>\n                </div>\n                "
         },
         "id": 37,
         "picture": 37,
@@ -970,7 +970,7 @@
                 },
                 "lighting": false
             },
-            "html": "\n                <div class='img38 show normal'>\n                    <div>\n                        <h3>fall trees</h3>\n                    </div>\n                    <img src='/images/gallery/38.jpg'>\n                    <div>\n                        <h3>Sat Oct 08 2022</h3>\n                    </div>\n                </div>\n                "
+            "html": "\n                <div class='img38 show normal'>\n                    <div>\n                        <h3>fall trees</h3>\n                    </div>\n                    <img src='/images/gallery/38.JPG'>\n                    <div>\n                        <h3>Sat Oct 08 2022</h3>\n                    </div>\n                </div>\n                "
         },
         "id": 38,
         "picture": 38,
@@ -995,7 +995,7 @@
                 },
                 "lighting": false
             },
-            "html": "\n                <div class='img39 show normal'>\n                    <div>\n                        <h3>studio</h3>\n                    </div>\n                    <img src='/images/gallery/39.jpg'>\n                    <div>\n                        <h3>Sat Mar 05 2022</h3>\n                    </div>\n                </div>\n                "
+            "html": "\n                <div class='img39 show normal'>\n                    <div>\n                        <h3>studio</h3>\n                    </div>\n                    <img src='/images/gallery/39.JPG'>\n                    <div>\n                        <h3>Sat Mar 05 2022</h3>\n                    </div>\n                </div>\n                "
         },
         "id": 39,
         "picture": 39,
@@ -1020,7 +1020,7 @@
                 },
                 "lighting": false
             },
-            "html": "\n                <div class='img40 show normal'>\n                    <div>\n                        <h3>fall trees</h3>\n                    </div>\n                    <img src='/images/gallery/40.jpg'>\n                    <div>\n                        <h3>Sat Oct 08 2022</h3>\n                    </div>\n                </div>\n                "
+            "html": "\n                <div class='img40 show normal'>\n                    <div>\n                        <h3>fall trees</h3>\n                    </div>\n                    <img src='/images/gallery/40.JPG'>\n                    <div>\n                        <h3>Sat Oct 08 2022</h3>\n                    </div>\n                </div>\n                "
         },
         "id": 40,
         "picture": 40,
@@ -1046,7 +1046,7 @@
                 },
                 "lighting": false
             },
-            "html": "\n                <div class='img41 show normal'>\n                    <div>\n                        <h3>sand dunes</h3>\n                    </div>\n                    <img src='/images/gallery/41.jpg'>\n                    <div>\n                        <h3>Sat Apr 09 2022</h3>\n                    </div>\n                </div>\n                "
+            "html": "\n                <div class='img41 show normal'>\n                    <div>\n                        <h3>sand dunes</h3>\n                    </div>\n                    <img src='/images/gallery/41.JPG'>\n                    <div>\n                        <h3>Sat Apr 09 2022</h3>\n                    </div>\n                </div>\n                "
         },
         "id": 41,
         "picture": 41,
@@ -1071,7 +1071,7 @@
                 },
                 "lighting": false
             },
-            "html": "\n                <div class='img42 show normal'>\n                    <div>\n                        <h3>sand dunes</h3>\n                    </div>\n                    <img src='/images/gallery/42.jpg'>\n                    <div>\n                        <h3>Sat Apr 09 2022</h3>\n                    </div>\n                </div>\n                "
+            "html": "\n                <div class='img42 show normal'>\n                    <div>\n                        <h3>sand dunes</h3>\n                    </div>\n                    <img src='/images/gallery/42.JPG'>\n                    <div>\n                        <h3>Sat Apr 09 2022</h3>\n                    </div>\n                </div>\n                "
         },
         "id": 42,
         "picture": 42,
@@ -1096,7 +1096,7 @@
                 },
                 "lighting": false
             },
-            "html": "\n                <div class='img43 show normal'>\n                    <div>\n                        <h3>sand dunes</h3>\n                    </div>\n                    <img src='/images/gallery/43.jpg'>\n                    <div>\n                        <h3>Sat Apr 09 2022</h3>\n                    </div>\n                </div>\n                "
+            "html": "\n                <div class='img43 show normal'>\n                    <div>\n                        <h3>sand dunes</h3>\n                    </div>\n                    <img src='/images/gallery/43.JPG'>\n                    <div>\n                        <h3>Sat Apr 09 2022</h3>\n                    </div>\n                </div>\n                "
         },
         "id": 43,
         "picture": 43,
@@ -1122,7 +1122,7 @@
                 },
                 "lighting": false
             },
-            "html": "\n                <div class='img44 show normal'>\n                    <div>\n                        <h3>goblin valley</h3>\n                    </div>\n                    <img src='/images/gallery/44.jpg'>\n                    <div>\n                        <h3>Thu May 25 2023</h3>\n                    </div>\n                </div>\n                "
+            "html": "\n                <div class='img44 show normal'>\n                    <div>\n                        <h3>goblin valley</h3>\n                    </div>\n                    <img src='/images/gallery/44.JPG'>\n                    <div>\n                        <h3>Thu May 25 2023</h3>\n                    </div>\n                </div>\n                "
         },
         "id": 44,
         "picture": 44,
@@ -1149,7 +1149,7 @@
                 },
                 "lighting": false
             },
-            "html": "\n                <div class='img45 show normal'>\n                    <div>\n                        <h3>goblin valley</h3>\n                    </div>\n                    <img src='/images/gallery/45.jpg'>\n                    <div>\n                        <h3>Thu May 25 2023</h3>\n                    </div>\n                </div>\n                "
+            "html": "\n                <div class='img45 show normal'>\n                    <div>\n                        <h3>goblin valley</h3>\n                    </div>\n                    <img src='/images/gallery/45.JPG'>\n                    <div>\n                        <h3>Thu May 25 2023</h3>\n                    </div>\n                </div>\n                "
         },
         "id": 45,
         "picture": 45,
@@ -1176,7 +1176,7 @@
                 },
                 "lighting": false
             },
-            "html": "\n                <div class='img46 show normal'>\n                    <div>\n                        <h3>goblin valley</h3>\n                    </div>\n                    <img src='/images/gallery/46.jpg'>\n                    <div>\n                        <h3>Thu May 25 2023</h3>\n                    </div>\n                </div>\n                "
+            "html": "\n                <div class='img46 show normal'>\n                    <div>\n                        <h3>goblin valley</h3>\n                    </div>\n                    <img src='/images/gallery/46.JPG'>\n                    <div>\n                        <h3>Thu May 25 2023</h3>\n                    </div>\n                </div>\n                "
         },
         "id": 46,
         "picture": 46,
@@ -1203,7 +1203,7 @@
                 },
                 "lighting": false
             },
-            "html": "\n                <div class='img47 show normal'>\n                    <div>\n                        <h3>arches</h3>\n                    </div>\n                    <img src='/images/gallery/47.jpg'>\n                    <div>\n                        <h3>Fri May 26 2023</h3>\n                    </div>\n                </div>\n                "
+            "html": "\n                <div class='img47 show normal'>\n                    <div>\n                        <h3>arches</h3>\n                    </div>\n                    <img src='/images/gallery/47.JPG'>\n                    <div>\n                        <h3>Fri May 26 2023</h3>\n                    </div>\n                </div>\n                "
         },
         "id": 47,
         "picture": 47,
@@ -1230,7 +1230,7 @@
                 },
                 "lighting": false
             },
-            "html": "\n                <div class='img48 show normal'>\n                    <div>\n                        <h3>arches</h3>\n                    </div>\n                    <img src='/images/gallery/48.jpg'>\n                    <div>\n                        <h3>Fri May 26 2023</h3>\n                    </div>\n                </div>\n                "
+            "html": "\n                <div class='img48 show normal'>\n                    <div>\n                        <h3>arches</h3>\n                    </div>\n                    <img src='/images/gallery/48.JPG'>\n                    <div>\n                        <h3>Fri May 26 2023</h3>\n                    </div>\n                </div>\n                "
         },
         "id": 48,
         "picture": 48,
@@ -1257,7 +1257,7 @@
                 },
                 "lighting": false
             },
-            "html": "\n                <div class='img49 show normal'>\n                    <div>\n                        <h3>arches</h3>\n                    </div>\n                    <img src='/images/gallery/49.jpg'>\n                    <div>\n                        <h3>Fri May 26 2023</h3>\n                    </div>\n                </div>\n                "
+            "html": "\n                <div class='img49 show normal'>\n                    <div>\n                        <h3>arches</h3>\n                    </div>\n                    <img src='/images/gallery/49.JPG'>\n                    <div>\n                        <h3>Fri May 26 2023</h3>\n                    </div>\n                </div>\n                "
         },
         "id": 49,
         "picture": 49,
@@ -1284,7 +1284,7 @@
                 },
                 "lighting": false
             },
-            "html": "\n                <div class='img50 show normal'>\n                    <div>\n                        <h3>arches</h3>\n                    </div>\n                    <img src='/images/gallery/50.jpg'>\n                    <div>\n                        <h3>Fri May 26 2023</h3>\n                    </div>\n                </div>\n                "
+            "html": "\n                <div class='img50 show normal'>\n                    <div>\n                        <h3>arches</h3>\n                    </div>\n                    <img src='/images/gallery/50.JPG'>\n                    <div>\n                        <h3>Fri May 26 2023</h3>\n                    </div>\n                </div>\n                "
         },
         "id": 50,
         "picture": 50,
@@ -1311,7 +1311,7 @@
                 },
                 "lighting": false
             },
-            "html": "\n                <div class='img51 show normal'>\n                    <div>\n                        <h3>arches</h3>\n                    </div>\n                    <img src='/images/gallery/51.jpg'>\n                    <div>\n                        <h3>Fri May 26 2023</h3>\n                    </div>\n                </div>\n                "
+            "html": "\n                <div class='img51 show normal'>\n                    <div>\n                        <h3>arches</h3>\n                    </div>\n                    <img src='/images/gallery/51.JPG'>\n                    <div>\n                        <h3>Fri May 26 2023</h3>\n                    </div>\n                </div>\n                "
         },
         "id": 51,
         "picture": 51,
@@ -1338,7 +1338,7 @@
                 },
                 "lighting": false
             },
-            "html": "\n                <div class='img52 show normal'>\n                    <div>\n                        <h3>arches</h3>\n                    </div>\n                    <img src='/images/gallery/52.jpg'>\n                    <div>\n                        <h3>Fri May 26 2023</h3>\n                    </div>\n                </div>\n                "
+            "html": "\n                <div class='img52 show normal'>\n                    <div>\n                        <h3>arches</h3>\n                    </div>\n                    <img src='/images/gallery/52.JPG'>\n                    <div>\n                        <h3>Fri May 26 2023</h3>\n                    </div>\n                </div>\n                "
         },
         "id": 52,
         "picture": 52,
@@ -1365,7 +1365,7 @@
                 },
                 "lighting": false
             },
-            "html": "\n                <div class='img53 show normal'>\n                    <div>\n                        <h3>arches</h3>\n                    </div>\n                    <img src='/images/gallery/53.jpg'>\n                    <div>\n                        <h3>Fri May 26 2023</h3>\n                    </div>\n                </div>\n                "
+            "html": "\n                <div class='img53 show normal'>\n                    <div>\n                        <h3>arches</h3>\n                    </div>\n                    <img src='/images/gallery/53.JPG'>\n                    <div>\n                        <h3>Fri May 26 2023</h3>\n                    </div>\n                </div>\n                "
         },
         "id": 53,
         "picture": 53,
@@ -1392,7 +1392,7 @@
                 },
                 "lighting": false
             },
-            "html": "\n                <div class='img54 show normal'>\n                    <div>\n                        <h3>arches</h3>\n                    </div>\n                    <img src='/images/gallery/54.jpg'>\n                    <div>\n                        <h3>Fri May 26 2023</h3>\n                    </div>\n                </div>\n                "
+            "html": "\n                <div class='img54 show normal'>\n                    <div>\n                        <h3>arches</h3>\n                    </div>\n                    <img src='/images/gallery/54.JPG'>\n                    <div>\n                        <h3>Fri May 26 2023</h3>\n                    </div>\n                </div>\n                "
         },
         "id": 54,
         "picture": 54,
@@ -1419,7 +1419,7 @@
                 },
                 "lighting": false
             },
-            "html": "\n                <div class='img55 show normal'>\n                    <div>\n                        <h3>dead horse</h3>\n                    </div>\n                    <img src='/images/gallery/55.jpg'>\n                    <div>\n                        <h3>Fri May 26 2023</h3>\n                    </div>\n                </div>\n                "
+            "html": "\n                <div class='img55 show normal'>\n                    <div>\n                        <h3>dead horse</h3>\n                    </div>\n                    <img src='/images/gallery/55.JPG'>\n                    <div>\n                        <h3>Fri May 26 2023</h3>\n                    </div>\n                </div>\n                "
         },
         "id": 55,
         "picture": 55,
@@ -1446,7 +1446,7 @@
                 },
                 "lighting": false
             },
-            "html": "\n                <div class='img56 show normal'>\n                    <div>\n                        <h3>dead horse</h3>\n                    </div>\n                    <img src='/images/gallery/56.jpg'>\n                    <div>\n                        <h3>Fri May 26 2023</h3>\n                    </div>\n                </div>\n                "
+            "html": "\n                <div class='img56 show normal'>\n                    <div>\n                        <h3>dead horse</h3>\n                    </div>\n                    <img src='/images/gallery/56.JPG'>\n                    <div>\n                        <h3>Fri May 26 2023</h3>\n                    </div>\n                </div>\n                "
         },
         "id": 56,
         "picture": 56,
@@ -1473,7 +1473,7 @@
                 },
                 "lighting": false
             },
-            "html": "\n                <div class='img57 show normal'>\n                    <div>\n                        <h3>dead horse</h3>\n                    </div>\n                    <img src='/images/gallery/57.jpg'>\n                    <div>\n                        <h3>Fri May 26 2023</h3>\n                    </div>\n                </div>\n                "
+            "html": "\n                <div class='img57 show normal'>\n                    <div>\n                        <h3>dead horse</h3>\n                    </div>\n                    <img src='/images/gallery/57.JPG'>\n                    <div>\n                        <h3>Fri May 26 2023</h3>\n                    </div>\n                </div>\n                "
         },
         "id": 57,
         "picture": 57,
@@ -1500,7 +1500,7 @@
                 },
                 "lighting": false
             },
-            "html": "\n                <div class='img58 show normal'>\n                    <div>\n                        <h3>dead horse</h3>\n                    </div>\n                    <img src='/images/gallery/58.jpg'>\n                    <div>\n                        <h3>Fri May 26 2023</h3>\n                    </div>\n                </div>\n                "
+            "html": "\n                <div class='img58 show normal'>\n                    <div>\n                        <h3>dead horse</h3>\n                    </div>\n                    <img src='/images/gallery/58.JPG'>\n                    <div>\n                        <h3>Fri May 26 2023</h3>\n                    </div>\n                </div>\n                "
         },
         "id": 58,
         "picture": 58,
@@ -1525,7 +1525,7 @@
                 },
                 "lighting": false
             },
-            "html": "\n                <div class='img59 show normal'>\n                    <div>\n                        <h3>las vegas</h3>\n                    </div>\n                    <img src='/images/gallery/59.jpg'>\n                    <div>\n                        <h3>Sat May 13 2023</h3>\n                    </div>\n                </div>\n                "
+            "html": "\n                <div class='img59 show normal'>\n                    <div>\n                        <h3>las vegas</h3>\n                    </div>\n                    <img src='/images/gallery/59.JPG'>\n                    <div>\n                        <h3>Sat May 13 2023</h3>\n                    </div>\n                </div>\n                "
         },
         "id": 59,
         "picture": 59,
@@ -1548,7 +1548,7 @@
                 },
                 "lighting": false
             },
-            "html": "\n                <div class='img60 show normal'>\n                    <div>\n                        <h3>las vegas</h3>\n                    </div>\n                    <img src='/images/gallery/60.jpg'>\n                    <div>\n                        <h3>Sat May 13 2023</h3>\n                    </div>\n                </div>\n                "
+            "html": "\n                <div class='img60 show normal'>\n                    <div>\n                        <h3>las vegas</h3>\n                    </div>\n                    <img src='/images/gallery/60.JPG'>\n                    <div>\n                        <h3>Sat May 13 2023</h3>\n                    </div>\n                </div>\n                "
         },
         "id": 60,
         "picture": 60,
@@ -1571,7 +1571,7 @@
                 },
                 "lighting": false
             },
-            "html": "\n                <div class='img61 show normal'>\n                    <div>\n                        <h3>las vegas</h3>\n                    </div>\n                    <img src='/images/gallery/61.jpg'>\n                    <div>\n                        <h3>Sat May 13 2023</h3>\n                    </div>\n                </div>\n                "
+            "html": "\n                <div class='img61 show normal'>\n                    <div>\n                        <h3>las vegas</h3>\n                    </div>\n                    <img src='/images/gallery/61.JPG'>\n                    <div>\n                        <h3>Sat May 13 2023</h3>\n                    </div>\n                </div>\n                "
         },
         "id": 61,
         "picture": 61,
@@ -1594,7 +1594,7 @@
                 },
                 "lighting": false
             },
-            "html": "\n                <div class='img62 show normal'>\n                    <div>\n                        <h3>las vegas</h3>\n                    </div>\n                    <img src='/images/gallery/62.jpg'>\n                    <div>\n                        <h3>Sat May 13 2023</h3>\n                    </div>\n                </div>\n                "
+            "html": "\n                <div class='img62 show normal'>\n                    <div>\n                        <h3>las vegas</h3>\n                    </div>\n                    <img src='/images/gallery/62.JPG'>\n                    <div>\n                        <h3>Sat May 13 2023</h3>\n                    </div>\n                </div>\n                "
         },
         "id": 62,
         "picture": 62,
@@ -1618,7 +1618,7 @@
                 },
                 "lighting": false
             },
-            "html": "\n                <div class='img63 show normal'>\n                    <div>\n                        <h3>las vegas</h3>\n                    </div>\n                    <img src='/images/gallery/63.jpg'>\n                    <div>\n                        <h3>Sat May 13 2023</h3>\n                    </div>\n                </div>\n                "
+            "html": "\n                <div class='img63 show normal'>\n                    <div>\n                        <h3>las vegas</h3>\n                    </div>\n                    <img src='/images/gallery/63.JPG'>\n                    <div>\n                        <h3>Sat May 13 2023</h3>\n                    </div>\n                </div>\n                "
         },
         "id": 63,
         "picture": 63,
@@ -1643,7 +1643,7 @@
                 },
                 "lighting": false
             },
-            "html": "\n                <div class='img64 show normal'>\n                    <div>\n                        <h3>mountains</h3>\n                    </div>\n                    <img src='/images/gallery/64.jpg'>\n                    <div>\n                        <h3>Sat May 20 2023</h3>\n                    </div>\n                </div>\n                "
+            "html": "\n                <div class='img64 show normal'>\n                    <div>\n                        <h3>mountains</h3>\n                    </div>\n                    <img src='/images/gallery/64.JPG'>\n                    <div>\n                        <h3>Sat May 20 2023</h3>\n                    </div>\n                </div>\n                "
         },
         "id": 64,
         "picture": 64,
@@ -1667,7 +1667,7 @@
                 },
                 "lighting": false
             },
-            "html": "\n                <div class=\"img65 show normal\">\n                    <div>\n                        <h3>roadside</h3>\n                    </div>\n                    <img src='/images/gallery/65.jpg'>\n                    <div>\n                        <h3>Sat Oct 02 2021</h3>\n                    </div>\n                </div>\n                "
+            "html": "\n                <div class=\"img65 show normal\">\n                    <div>\n                        <h3>roadside</h3>\n                    </div>\n                    <img src='/images/gallery/65.JPG'>\n                    <div>\n                        <h3>Sat Oct 02 2021</h3>\n                    </div>\n                </div>\n                "
         },
         "id": 65,
         "picture": 65,
@@ -1691,7 +1691,7 @@
                 },
                 "lighting": false
             },
-            "html": "\n                <div class=\"img66 show normal\">\n                    <div>\n                        <h3>fields</h3>\n                    </div>\n                    <img src='/images/gallery/66.jpg'>\n                    <div>\n                        <h3>Thu Oct 14 2021</h3>\n                    </div>\n                </div>\n                "
+            "html": "\n                <div class=\"img66 show normal\">\n                    <div>\n                        <h3>fields</h3>\n                    </div>\n                    <img src='/images/gallery/66.JPG'>\n                    <div>\n                        <h3>Thu Oct 14 2021</h3>\n                    </div>\n                </div>\n                "
         },
         "id": 66,
         "picture": 66,
@@ -1717,7 +1717,7 @@
                 },
                 "lighting": false
             },
-            "html": "\n                <div class=\"img67 show normal\">\n                    <div>\n                        <h3>arches</h3>\n                    </div>\n                    <img src='/images/gallery/67.jpg'>\n                    <div>\n                        <h3>Sat Nov 20 2021</h3>\n                    </div>\n                </div>\n                "
+            "html": "\n                <div class=\"img67 show normal\">\n                    <div>\n                        <h3>arches</h3>\n                    </div>\n                    <img src='/images/gallery/67.JPG'>\n                    <div>\n                        <h3>Sat Nov 20 2021</h3>\n                    </div>\n                </div>\n                "
         },
         "id": 67,
         "picture": 67,
@@ -1742,7 +1742,7 @@
                 },
                 "lighting": false
             },
-            "html": "\n                <div class=\"img68 show normal\">\n                    <div>\n                        <h3>desert</h3>\n                    </div>\n                    <img src='/images/gallery/68.jpg'>\n                    <div>\n                        <h3>Sun Nov 21 2021</h3>\n                    </div>\n                </div>\n                "
+            "html": "\n                <div class=\"img68 show normal\">\n                    <div>\n                        <h3>desert</h3>\n                    </div>\n                    <img src='/images/gallery/68.JPG'>\n                    <div>\n                        <h3>Sun Nov 21 2021</h3>\n                    </div>\n                </div>\n                "
         },
         "id": 68,
         "picture": 68,
@@ -1765,7 +1765,7 @@
                 },
                 "lighting": false
             },
-            "html": "\n                <div class=\"img69 show normal\">\n                    <div>\n                        <h3>desert</h3>\n                    </div>\n                    <img src='/images/gallery/69.jpg'>\n                    <div>\n                        <h3>Sun Nov 21 2021</h3>\n                    </div>\n                </div>\n                "
+            "html": "\n                <div class=\"img69 show normal\">\n                    <div>\n                        <h3>desert</h3>\n                    </div>\n                    <img src='/images/gallery/69.JPG'>\n                    <div>\n                        <h3>Sun Nov 21 2021</h3>\n                    </div>\n                </div>\n                "
         },
         "id": 69,
         "picture": 69,
@@ -1788,7 +1788,7 @@
                 },
                 "lighting": false
             },
-            "html": "\n                <div class=\"img70 show normal\">\n                    <div>\n                        <h3>fields</h3>\n                    </div>\n                    <img src='/images/gallery/70.jpg'>\n                    <div>\n                        <h3>Wed Jul 20 2022</h3>\n                    </div>\n                </div>\n                "
+            "html": "\n                <div class=\"img70 show normal\">\n                    <div>\n                        <h3>fields</h3>\n                    </div>\n                    <img src='/images/gallery/70.JPG'>\n                    <div>\n                        <h3>Wed Jul 20 2022</h3>\n                    </div>\n                </div>\n                "
         },
         "id": 70,
         "picture": 70,
