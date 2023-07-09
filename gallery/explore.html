@@ -1,0 +1,806 @@
+<!DOCType HTML>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0" />
+    <title>Gallery - Brynelle Photo</title>
+    <link rel="stylesheet" type="text/css" href="explore.css">
+    <!--<script src="/frameworks/jquery-3.7.0.js"></script>-->
+    <script src="/frameworks/jquery-3.7.0.min.js"></script>
+    <script src="/frameworks/exif.js"></script>
+</head>
+
+<body>
+
+    <header id="app-header"></header>
+    <script async src="/header.js"></script>
+
+    <div id="content">
+
+        <div>
+
+            <h2>Gallery</h2>
+
+            <div id="gallery">
+
+                <div id="filters" class="show">
+
+                    <div>
+                        <img src="/images/gallery/arrow.png">
+                    </div>
+
+                    <ul>
+
+                        <li id="sort-by">
+                            <h2>Sort By</h2>
+                            <select name="sort-by">
+
+                                <option value="featured" selected="selected">Featured</option>
+                                <option value="most-recent">Most Recent</option>
+                                <option value="least-recent">Least Recent</option>
+                                <option value="photoshoot">Photoshoot</option>
+
+                            </select>
+                        </li>
+
+                        <li id="type">
+                            <h2>Type</h2>
+                            <ul>
+
+                            </ul>
+                        </li>
+
+                        <li id="location">
+                            <h2>Location</h2>
+                            <ul>
+
+                            </ul>
+                        </li>
+
+                        <li id="lighting">
+                            <h2>Lighting</h2>
+                            <ul>
+
+                            </ul>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <div id="photos">
+
+                    <h4>71 photos loaded</h4>
+                    <div class="img59 show normal">
+                        <div>
+                            <h3>las vegas</h3>
+                        </div>
+
+                        <img src="/images/gallery/59.jpg">
+                        <div>
+                            <h3>Sat May 13 2023</h3>
+                        </div>
+
+                    </div>
+
+
+                    <div class="img54 show normal">
+                        <div>
+                            <h3>arches</h3>
+                        </div>
+                        <img src="/images/gallery/54.jpg">
+                        <div>
+                            <h3>Fri May 26 2023</h3>
+                        </div>
+                    </div>
+
+                    <div class="img31 show normal">
+                        <div>
+                            <h3>utah lake</h3>
+                        </div>
+                        <img src="/images/gallery/31.jpg">
+                        <div>
+                            <h3>Sat Oct 01 2022</h3>
+                        </div>
+                    </div>
+
+                    <div class="img58 show normal">
+                        <div>
+                            <h3>dead horse</h3>
+                        </div>
+                        <img src="/images/gallery/58.jpg">
+                        <div>
+                            <h3>Fri May 26 2023</h3>
+                        </div>
+                    </div>
+
+                    <div class="img56 show normal">
+                        <div>
+                            <h3>dead horse</h3>
+                        </div>
+                        <img src="/images/gallery/56.jpg">
+                        <div>
+                            <h3>Fri May 26 2023</h3>
+                        </div>
+                    </div>
+
+                    <div class="img47 show normal">
+                        <div>
+                            <h3>arches</h3>
+                        </div>
+                        <img src="/images/gallery/47.jpg">
+                        <div>
+                            <h3>Fri May 26 2023</h3>
+                        </div>
+                    </div>
+
+                    <div class="img51 show normal">
+                        <div>
+                            <h3>arches</h3>
+                        </div>
+                        <img src="/images/gallery/51.jpg">
+                        <div>
+                            <h3>Fri May 26 2023</h3>
+                        </div>
+                    </div>
+
+                    <div class="img49 show normal">
+                        <div>
+                            <h3>arches</h3>
+                        </div>
+                        <img src="/images/gallery/49.jpg">
+                        <div>
+                            <h3>Fri May 26 2023</h3>
+                        </div>
+                    </div>
+
+                    <div class="img26 show normal">
+                        <div>
+                            <h3>salt flats</h3>
+                        </div>
+                        <img src="/images/gallery/26.jpg">
+                        <div>
+                            <h3>Fri Feb 04 2022</h3>
+                        </div>
+                    </div>
+
+                    <div class="img70 show normal">
+                        <div>
+                            <h3>fields</h3>
+                        </div>
+                        <img src="/images/gallery/70.jpg">
+                        <div>
+                            <h3>Wed Jul 20 2022</h3>
+                        </div>
+                    </div>
+
+                    <div class="img17 show normal">
+                        <div>
+                            <h3>salt lake</h3>
+                        </div>
+                        <img src="/images/gallery/17.jpg">
+                        <div>
+                            <h3>Fri Feb 04 2022</h3>
+                        </div>
+                    </div>
+
+                    <div class="img28 show normal">
+                        <div>
+                            <h3>salt flats</h3>
+                        </div>
+                        <img src="/images/gallery/28.jpg">
+                        <div>
+                            <h3>Fri Feb 04 2022</h3>
+                        </div>
+                    </div>
+
+                    <div class="img64 show normal">
+                        <div>
+                            <h3>mountains</h3>
+                        </div>
+                        <img src="/images/gallery/64.jpg">
+                        <div>
+                            <h3>Sat May 20 2023</h3>
+                        </div>
+                    </div>
+
+                    <div class="img8 show normal">
+                        <div>
+                            <h3>little white-chapel</h3>
+                        </div>
+                        <img src="/images/gallery/8.jpg">
+                        <div>
+                            <h3>Thu Jun 23 2022</h3>
+                        </div>
+                    </div>
+
+                    <div class="img44 show normal">
+                        <div>
+                            <h3>goblin valley</h3>
+                        </div>
+                        <img src="/images/gallery/44.jpg">
+                        <div>
+                            <h3>Thu May 25 2023</h3>
+                        </div>
+                    </div>
+
+                    <div class="img63 show normal">
+                        <div>
+                            <h3>las vegas</h3>
+                        </div>
+                        <img src="/images/gallery/63.jpg">
+                        <div>
+                            <h3>Sat May 13 2023</h3>
+                        </div>
+                    </div>
+
+                    <div class="img62 show normal">
+                        <div>
+                            <h3>las vegas</h3>
+                        </div>
+                        <img src="/images/gallery/62.jpg">
+                        <div>
+                            <h3>Sat May 13 2023</h3>
+                        </div>
+                    </div>
+
+                    <div class="img53 show normal">
+                        <div>
+                            <h3>arches</h3>
+                        </div>
+                        <img src="/images/gallery/53.jpg">
+                        <div>
+                            <h3>Fri May 26 2023</h3>
+                        </div>
+                    </div>
+
+                    <div class="img13 show normal">
+                        <div>
+                            <h3>salt lake</h3>
+                        </div>
+                        <img src="/images/gallery/13.jpg">
+                        <div>
+                            <h3>Fri Feb 04 2022</h3>
+                        </div>
+                    </div>
+
+                    <div class="img7 show normal">
+                        <div>
+                            <h3>goblin valley</h3>
+                        </div>
+                        <img src="/images/gallery/7.jpg">
+                        <div>
+                            <h3>Sun Nov 21 2021</h3>
+                        </div>
+                    </div>
+
+                    <div class="img19 show normal">
+                        <div>
+                            <h3>mountains</h3>
+                        </div>
+                        <img src="/images/gallery/19.jpg">
+                        <div>
+                            <h3>Fri Feb 04 2022</h3>
+                        </div>
+                    </div>
+
+                    <div class="img30 show normal">
+                        <div>
+                            <h3>utah lake</h3>
+                        </div>
+                        <img src="/images/gallery/30.jpg">
+                        <div>
+                            <h3>Sat Oct 01 2022</h3>
+                        </div>
+                    </div>
+
+                    <div class="img42 show normal">
+                        <div>
+                            <h3>sand dunes</h3>
+                        </div>
+                        <img src="/images/gallery/42.jpg">
+                        <div>
+                            <h3>Sat Apr 09 2022</h3>
+                        </div>
+                    </div>
+
+                    <div class="img22 show normal">
+                        <div>
+                            <h3>mountains</h3>
+                        </div>
+                        <img src="/images/gallery/22.jpg">
+                        <div>
+                            <h3>Fri Feb 04 2022</h3>
+                        </div>
+                    </div>
+
+                    <div class="img21 show normal">
+                        <div>
+                            <h3>mountains</h3>
+                        </div>
+                        <img src="/images/gallery/21.jpg">
+                        <div>
+                            <h3>Fri Feb 04 2022</h3>
+                        </div>
+                    </div>
+
+                    <div class="img37 show normal">
+                        <div>
+                            <h3>salt flats</h3>
+                        </div>
+                        <img src="/images/gallery/37.jpg">
+                        <div>
+                            <h3>Fri Feb 04 2022</h3>
+                        </div>
+                    </div>
+
+                    <div class="img29 show normal">
+                        <div>
+                            <h3>salt flats</h3>
+                        </div>
+                        <img src="/images/gallery/29.jpg">
+                        <div>
+                            <h3>Fri Feb 04 2022</h3>
+                        </div>
+                    </div>
+
+                    <div class="img57 show normal">
+                        <div>
+                            <h3>dead horse</h3>
+                        </div>
+                        <img src="/images/gallery/57.jpg">
+                        <div>
+                            <h3>Fri May 26 2023</h3>
+                        </div>
+                    </div>
+
+                    <div class="img69 show normal">
+                        <div>
+                            <h3>desert</h3>
+                        </div>
+                        <img src="/images/gallery/69.jpg">
+                        <div>
+                            <h3>Sun Nov 21 2021</h3>
+                        </div>
+                    </div>
+
+                    <div class="img3 show normal">
+                        <div>
+                            <h3>mountains</h3>
+                        </div>
+                        <img src="/images/gallery/3.jpg">
+                        <div>
+                            <h3>Sun Oct 16 2022</h3>
+                        </div>
+                    </div>
+
+                    <div class="img48 show normal">
+                        <div>
+                            <h3>arches</h3>
+                        </div>
+                        <img src="/images/gallery/48.jpg">
+                        <div>
+                            <h3>Fri May 26 2023</h3>
+                        </div>
+                    </div>
+
+                    <div class="img50 show normal">
+                        <div>
+                            <h3>arches</h3>
+                        </div>
+                        <img src="/images/gallery/50.jpg">
+                        <div>
+                            <h3>Fri May 26 2023</h3>
+                        </div>
+                    </div>
+
+                    <div class="img27 show normal">
+                        <div>
+                            <h3>salt flats</h3>
+                        </div>
+                        <img src="/images/gallery/27.jpg">
+                        <div>
+                            <h3>Fri Feb 04 2022</h3>
+                        </div>
+                    </div>
+
+                    <div class="img24 show normal">
+                        <div>
+                            <h3>salt flats</h3>
+                        </div>
+                        <img src="/images/gallery/24.jpg">
+                        <div>
+                            <h3>Fri Feb 04 2022</h3>
+                        </div>
+                    </div>
+
+                    <div class="img18 show normal">
+                        <div>
+                            <h3>parks</h3>
+                        </div>
+                        <img src="/images/gallery/18.jpg">
+                        <div>
+                            <h3>Fri Feb 04 2022</h3>
+                        </div>
+                    </div>
+
+                    <div class="img40 show normal">
+                        <div>
+                            <h3>fall trees</h3>
+                        </div>
+                        <img src="/images/gallery/40.jpg">
+                        <div>
+                            <h3>Sat Oct 08 2022</h3>
+                        </div>
+                    </div>
+
+                    <div class="img5 show normal">
+                        <div>
+                            <h3>antelope island</h3>
+                        </div>
+                        <img src="/images/gallery/5.jpg">
+                        <div>
+                            <h3>Mon May 02 2022</h3>
+                        </div>
+                    </div>
+
+                    <div class="img2 show normal">
+                        <div>
+                            <h3>antelope island</h3>
+                        </div>
+                        <img src="/images/gallery/2.jpg">
+                        <div>
+                            <h3>Mon May 02 2022</h3>
+                        </div>
+                    </div>
+
+                    <div class="img46 show normal">
+                        <div>
+                            <h3>goblin valley</h3>
+                        </div>
+                        <img src="/images/gallery/46.jpg">
+                        <div>
+                            <h3>Thu May 25 2023</h3>
+                        </div>
+                    </div>
+
+                    <div class="img45 show normal">
+                        <div>
+                            <h3>goblin valley</h3>
+                        </div>
+                        <img src="/images/gallery/45.jpg">
+                        <div>
+                            <h3>Thu May 25 2023</h3>
+                        </div>
+                    </div>
+
+                    <div class="img38 show normal">
+                        <div>
+                            <h3>fall trees</h3>
+                        </div>
+                        <img src="/images/gallery/38.jpg">
+                        <div>
+                            <h3>Sat Oct 08 2022</h3>
+                        </div>
+                    </div>
+
+                    <div class="img61 show normal">
+                        <div>
+                            <h3>las vegas</h3>
+                        </div>
+                        <img src="/images/gallery/61.jpg">
+                        <div>
+                            <h3>Sat May 13 2023</h3>
+                        </div>
+                    </div>
+
+                    <div class="img52 show normal">
+                        <div>
+                            <h3>arches</h3>
+                        </div>
+                        <img src="/images/gallery/52.jpg">
+                        <div>
+                            <h3>Fri May 26 2023</h3>
+                        </div>
+                    </div>
+
+                    <div class="img15 show normal">
+                        <div>
+                            <h3>salt lake</h3>
+                        </div>
+                        <img src="/images/gallery/15.jpg">
+                        <div>
+                            <h3>Fri Feb 04 2022</h3>
+                        </div>
+                    </div>
+
+                    <div class="img14 show normal">
+                        <div>
+                            <h3>salt lake</h3>
+                        </div>
+                        <img src="/images/gallery/14.jpg">
+                        <div>
+                            <h3>Fri Feb 04 2022</h3>
+                        </div>
+                    </div>
+
+                    <div class="img20 show normal">
+                        <div>
+                            <h3>mountains</h3>
+                        </div>
+                        <img src="/images/gallery/20.jpg">
+                        <div>
+                            <h3>Fri Feb 04 2022</h3>
+                        </div>
+                    </div>
+
+                    <div class="img41 show normal">
+                        <div>
+                            <h3>sand dunes</h3>
+                        </div>
+                        <img src="/images/gallery/41.jpg">
+                        <div>
+                            <h3>Sat Apr 09 2022</h3>
+                        </div>
+                    </div>
+
+                    <div class="img1 show normal">
+                        <div>
+                            <h3>sand dunes</h3>
+                        </div>
+                        <img src="/images/gallery/1.jpg">
+                        <div>
+                            <h3>Sat Apr 09 2022</h3>
+                        </div>
+                    </div>
+
+                    <div class="img66 show normal">
+                        <div>
+                            <h3>fields</h3>
+                        </div>
+                        <img src="/images/gallery/66.jpg">
+                        <div>
+                            <h3>Thu Oct 14 2021</h3>
+                        </div>
+                    </div>
+
+                    <div class="img10 show normal">
+                        <div>
+                            <h3>las vegas</h3>
+                        </div>
+                        <img src="/images/gallery/10.jpg">
+                        <div>
+                            <h3>Thu Jun 23 2022</h3>
+                        </div>
+                    </div>
+
+                    <div class="img35 show normal">
+                        <div>
+                            <h3>salt flats</h3>
+                        </div>
+                        <img src="/images/gallery/35.jpg">
+                        <div>
+                            <h3>Fri Feb 04 2022</h3>
+                        </div>
+                    </div>
+
+                    <div class="img32 show normal">
+                        <div>
+                            <h3>limousine</h3>
+                        </div>
+                        <img src="/images/gallery/32.jpg">
+                        <div>
+                            <h3>Fri Feb 04 2022</h3>
+                        </div>
+                    </div>
+
+                    <div class="img55 show normal">
+                        <div>
+                            <h3>dead horse</h3>
+                        </div>
+                        <img src="/images/gallery/55.jpg">
+                        <div>
+                            <h3>Fri May 26 2023</h3>
+                        </div>
+                    </div>
+
+                    <div class="img68 show normal">
+                        <div>
+                            <h3>desert</h3>
+                        </div>
+                        <img src="/images/gallery/68.jpg">
+                        <div>
+                            <h3>Sun Nov 21 2021</h3>
+                        </div>
+                    </div>
+
+                    <div class="img4 show normal">
+                        <div>
+                            <h3>salt lake</h3>
+                        </div>
+                        <img src="/images/gallery/4.jpg">
+                        <div>
+                            <h3>Sat Apr 15 2023</h3>
+                        </div>
+                    </div>
+
+                    <div class="img25 show normal">
+                        <div>
+                            <h3>salt flats</h3>
+                        </div>
+                        <img src="/images/gallery/25.jpg">
+                        <div>
+                            <h3>Fri Feb 04 2022</h3>
+                        </div>
+                    </div>
+
+                    <div class="img12 show normal">
+                        <div>
+                            <h3>antelope island</h3>
+                        </div>
+                        <img src="/images/gallery/12.jpg">
+                        <div>
+                            <h3>Fri Apr 21 2023</h3>
+                        </div>
+                    </div>
+
+                    <div class="img9 show normal">
+                        <div>
+                            <h3>antelope island</h3>
+                        </div>
+                        <img src="/images/gallery/9.jpg">
+                        <div>
+                            <h3>Fri Apr 21 2023</h3>
+                        </div>
+                    </div>
+
+                    <div class="img67 show normal">
+                        <div>
+                            <h3>arches</h3>
+                        </div>
+                        <img src="/images/gallery/67.jpg">
+                        <div>
+                            <h3>Sat Nov 20 2021</h3>
+                        </div>
+                    </div>
+
+                    <div class="img60 show normal">
+                        <div>
+                            <h3>las vegas</h3>
+                        </div>
+                        <img src="/images/gallery/60.jpg">
+                        <div>
+                            <h3>Sat May 13 2023</h3>
+                        </div>
+                    </div>
+
+                    <div class="img16 show normal">
+                        <div>
+                            <h3>salt lake</h3>
+                        </div>
+                        <img src="/images/gallery/16.jpg">
+                        <div>
+                            <h3>Fri Feb 04 2022</h3>
+                        </div>
+                    </div>
+
+                    <div class="img0 show normal">
+                        <div>
+                            <h3>goblin valley</h3>
+                        </div>
+                        <img src="/images/gallery/0.jpg">
+                        <div>
+                            <h3>Sun Nov 21 2021</h3>
+                        </div>
+                    </div>
+
+                    <div class="img43 show normal">
+                        <div>
+                            <h3>sand dunes</h3>
+                        </div>
+                        <img src="/images/gallery/43.jpg">
+                        <div>
+                            <h3>Sat Apr 09 2022</h3>
+                        </div>
+                    </div>
+
+                    <div class="img39 show normal">
+                        <div>
+                            <h3>studio</h3>
+                        </div>
+                        <img src="/images/gallery/39.jpg">
+                        <div>
+                            <h3>Sat Mar 05 2022</h3>
+                        </div>
+                    </div>
+
+                    <div class="img11 show normal">
+                        <div>
+                            <h3>las vegas</h3>
+                        </div>
+                        <img src="/images/gallery/11.jpg">
+                        <div>
+                            <h3>Thu Jun 23 2022</h3>
+                        </div>
+                    </div>
+
+                    <div class="img23 show normal">
+                        <div>
+                            <h3>mountains</h3>
+                        </div>
+                        <img src="/images/gallery/23.jpg">
+                        <div>
+                            <h3>Fri Feb 04 2022</h3>
+                        </div>
+                    </div>
+
+                    <div class="img36 show normal">
+                        <div>
+                            <h3>salt flats</h3>
+                        </div>
+                        <img src="/images/gallery/36.jpg">
+                        <div>
+                            <h3>Fri Feb 04 2022</h3>
+                        </div>
+                    </div>
+
+                    <div class="img34 show normal">
+                        <div>
+                            <h3>salt flats</h3>
+                        </div>
+                        <img src="/images/gallery/34.jpg">
+                        <div>
+                            <h3>Fri Feb 04 2022</h3>
+                        </div>
+                    </div>
+
+                    <div class="img33 show normal">
+                        <div>
+                            <h3>limousine</h3>
+                        </div>
+                        <img src="/images/gallery/33.jpg">
+                        <div>
+                            <h3>Fri Feb 04 2022</h3>
+                        </div>
+                    </div>
+
+                    <div class="img65 show normal">
+                        <div>
+                            <h3>roadside</h3>
+                        </div>
+                        <img src="/images/gallery/65.jpg">
+                        <div>
+                            <h3>Sat Oct 02 2021</h3>
+                        </div>
+                    </div>
+
+                    <div class="img6 show normal">
+                        <div>
+                            <h3>goblin valley</h3>
+                        </div>
+                        <img src="/images/gallery/6.jpg">
+                        <div>
+                            <h3>Sun Nov 21 2021</h3>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer id="app-footer"></footer>
+    <script async src="/footer.js"></script>
+
+    <script src="explore.js"></script>
+    <script src="data/database.js"></script>
+    <!--<script src="data/init_photos.js"></script>-->
+
+</body>
+
+</html>
