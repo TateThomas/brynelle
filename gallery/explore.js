@@ -71,6 +71,13 @@ function showHeader() {
     
 }
 
+function updateScrollY() {
+
+    document.getElementById("photos").style.setProperty('--scroll-y', window.scrollY.toString() + "px");
+
+}
+
+
 document.onreadystatechange = function(e) {
     
     if (document.readyState === 'complete') {
@@ -87,5 +94,9 @@ window.onload = function() {
     showHeader();
     database.updateUserPage();
 };
+
+window.onscroll = function() {
+    updateScrollY();
+}
 
 document.getElementById("filters").getElementsByTagName("div")[0].addEventListener('click', toggleFilters);
