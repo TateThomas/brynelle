@@ -257,7 +257,7 @@ a{
 
 #photos div.expanded img{
     display: block;
-    height: 86vh;
+    height: 80vh;
     width: auto;
     padding: 0;
     margin: 10px auto 10px auto;
@@ -330,6 +330,16 @@ a{
 
 @media screen and (max-width: 1240px) {
 
+    #filters h2{
+        height: 20px;
+        font-size: 20px;
+    }
+    
+    #filters input, #filters label{
+        height: 15px;
+        font-size: 15px;
+    }
+    
     #photos{
         grid-template-columns: repeat(2, 300px);
     }
@@ -345,7 +355,7 @@ a{
     #photos div.expanded img{
         max-width: 94vw;
         height: auto;
-        max-height: 86vh;
+        max-height: 80vh;
     }
 
 }
@@ -394,7 +404,7 @@ a{
     #filters > ul{
         display: inline-block;
         width: 100%;
-        height: 620px;
+        height: 560px;
         transition: height 1s;
     }
     
@@ -416,6 +426,25 @@ a{
     #filters.hidden > ul{
         height: 0;
         width: auto;
+    }
+    
+    #filters h2{
+        height: 18px;
+        font-size: 18px;
+    }
+    
+    #filters select, #filters option{
+        height: 17px;
+        font-size: 12px;
+    }
+    
+    #filters input, #filters label{
+        height: 13px;
+        font-size: 13px;
+    }
+    
+    #filters ul li ul li{
+        padding-bottom: 2px;
     }
 
 }
@@ -468,6 +497,64 @@ a{
     
     #photos > div:hover div:first-child h3{
         top: 2px;
+    }
+    
+}
+
+@media screen and (max-width: 400px) {
+
+    #filters > ul{
+        display: flex;
+        flex-direction: column;
+        height: 1030px;
+    }
+    
+    #filters > ul > li{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    #filters > ul > li:nth-child(3){
+        grid-column: 1 / 2;
+        grid-row: auto;
+    }
+    
+    #filters > ul > li > h2{
+        margin: auto;
+    }
+    
+    #filters > ul > li > ul{
+        margin-left: 40px;
+    }
+    
+    #filters select{
+        width: 100px;
+        margin: auto;
+    }
+
+}
+
+@media screen and (max-width: 340px) {
+    
+    #photos{
+        grid-template-columns: repeat(1, 175px);
+    }
+    
+    #photos h4{
+        grid-column: span 1;
+    }
+    
+    #photos div{
+        height: 250px;
+    }
+    
+    #photos div.img1, #photos div.img11, #photos div.img17, #photos div.img26, #photos div.img29, #photos div.img31, #photos div.img35, #photos div.img56, #photos div.img61, #photos div.img62{
+        grid-column: span 1;
+    }
+    
+    #photos div.img15, #photos div.img24, #photos div.img59, #photos div.img69{
+        grid-column: span 1;
     }
     
 }

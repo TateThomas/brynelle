@@ -68,17 +68,24 @@ function toggleFilters() {
 function showHeader() {
     
     $("#header").attr("class", "show");
+    
 }
 
+document.onreadystatechange = function(e) {
+    
+    if (document.readyState === 'complete') {
+        showHeader();
+    }
+    
+}
 
 initializeList("type", typeFilters, true);
 initializeList("location", locationFilters, true);
 initializeList("lighting", lightingFilters, false);
 
-//document.getElementById("header").className = "show";
-//$("#header").attr("class", "show")
 window.onload = function() {
     showHeader();
+    database.updateUserPage();
 };
 
 document.getElementById("filters").getElementsByTagName("div")[0].addEventListener('click', toggleFilters);
