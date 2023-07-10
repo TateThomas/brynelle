@@ -7,13 +7,13 @@ let appHeader = `
             <h1>Brynelle Photo</h1>
         </a>
 
-        <div id="burger">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-
         <nav id="links">
+
+            <div id="burger">
+                <span></span>
+                <span></span>
+            </div>
+
             <ul>
                 <li>
                     <a href="https://www.brynelle.com/pricing">Pricing</a>
@@ -79,3 +79,22 @@ let appHeader = `
     </div>
 `;
 document.getElementById("app-header").innerHTML = appHeader;
+
+function burgerClick() {
+    
+    let burger = document.getElementById("burger");
+    let links = document.getElementById("links");
+    if (burger.className == "show") {
+        burger.className = "";
+        links.className = "";
+    }
+    else {
+        burger.className = "show";
+        links.className = "show";
+    }
+    
+}
+
+document.getElementById("burger").addEventListener('click', function() {
+   burgerClick(); 
+});

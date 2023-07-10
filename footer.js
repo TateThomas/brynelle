@@ -25,7 +25,7 @@ let appFooter = `
             </div>
 
             <div id="socials">
-                <h2>Follow Me</h2>
+                <h2>Socials</h2>
                 <ul>
                     <li><a href="https://www.instagram.com/brynellephoto/"><img src="/images/socials/insta.png"></a></li>
                     <li><a><img src="/images/socials/facebook.png"></a></li>
@@ -41,8 +41,6 @@ let appFooter = `
         <div id="contact-info">
             <ul>
                 <li>Brynelle Smith</li>
-                <li>•</li>
-                <li><a href="tel:3853898089">385-389-8089</a></li>
                 <li>•</li>
                 <li><a href="mailto:brynelle@hotmail.com">brynelle@hotmail.com</a></li>
             </ul>

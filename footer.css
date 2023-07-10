@@ -25,20 +25,23 @@
 #nav h2{
     display: block;
     padding-bottom: 10px;
+    font-size: 18px;
 }
 
 #nav li{
     display: block;
     margin-bottom: 3px;
+    font-size: 14px;
 }
 
 #inclusive{
     margin-left: auto;
+    margin-right: 0 !important;
 }
 
 #inclusive h2{
     display: inline-block;
-    font-size: 18px;
+    font-size: 15px;
     letter-spacing: 2px;
 }
 
@@ -54,7 +57,7 @@
 }
 
 #socials img{
-    --social-img-size: 35px;
+    --social-img-size: 30px;
     
     width: var(--social-img-size);
     height: var(--social-img-size);
@@ -63,6 +66,7 @@
 
 #contact-info{
     display: flex;
+    margin: 10px 0 10px 0;
 }
 
 #contact-info ul{
@@ -71,7 +75,7 @@
 }
 
 #contact-info li{
-    font-size: 15px;
+    font-size: 13px;
     font-family: alta;
     letter-spacing: 1px;
     padding: 2px;
@@ -84,7 +88,7 @@
 #footer h3{
     display: block;
     color: white;
-    font-size: 11px;
+    font-size: 9px;
     font-weight: normal;
     padding: 5px;
     padding-left: 0;
@@ -93,4 +97,263 @@
 
 #footer h3:last-child{
     margin-left: auto;
+}
+
+@media screen and (max-width: 765px) {
+    
+    #nav{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 10px;
+    }
+    
+    #nav div{
+        margin: 0;
+    }
+    
+    #nav h2, #nav ul{
+        width: 100%;
+        text-align: center;
+    }
+    
+    #socials ul{
+        display: flex;
+    }
+    
+    #socials li:first-child{
+        margin: 0 5px 0 auto;
+    }
+    
+    #socials li:last-child{
+        margin: 0 auto 0 5px;
+    }
+    
+    #socials img{
+        margin: 0;
+    }
+    
+    #inclusive{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #inclusive h2{
+        padding-bottom: 5px;
+    }
+    
+    #inclusive h2:first-child{
+        font-weight: bold;
+        background: linear-gradient(90deg, #f00000 15%, #f00000, #ff8000, #ff8000, #ffff00, #ffff00, #007940, #007940 , #4040ff, #4040ff, #a000c0, #a000c0 85%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    
+}
+
+@media screen and (max-width: 665px) {
+
+    #nav{
+        margin-bottom: 10px;
+    }
+    
+    #nav h2{
+        font-size: 18px;
+    }
+    
+    #inclusive h2{
+        font-size: 14px;
+        padding: 0 0 5px 0;
+    }
+    
+    #nav li{
+        font-size: 14px;
+    }
+    
+    #socials img{
+        --social-img-size: 30px;
+    }
+    
+    #contact-info li{
+        font-size: 12px;
+    }
+    
+    #footer h3{
+        font-size: 9px;
+    }
+    
+}
+
+@media screen and (max-width: 570px) {
+    
+    #footer{
+        padding: 30px 20px 25px 20px;
+    }
+    
+    #nav h2{
+        font-size: 15px;
+    }
+    
+    #inclusive{
+        padding: 0;
+    }
+    
+    #inclusive h2{
+        font-size: 12px;
+        padding-bottom: 5px;
+    }
+    
+    #nav li{
+        font-size: 12px;
+    }
+    
+    #socials li:first-child{
+        margin: 0 4px 0 auto;
+    }
+    
+    #socials li:last-child{
+        margin: 0 auto 0 4px;
+    }
+    
+    #socials img{
+        --social-img-size: 25px;
+    }
+    
+    #contact-info{
+        margin: 20px 0 20px 0;
+    }
+    
+    #contact-info li{
+        font-size: 11px;
+    }
+    
+    #footer h3{
+        font-size: 8px;
+    }
+
+}
+
+@media screen and (max-width: 420px) {
+    
+    #nav h2{
+        font-size: 12px;
+    }
+    
+    #inclusive h2{
+        font-size: 10px;
+    }
+    
+    #nav li{
+        font-size: 10px;
+    }
+    
+    #socials li:first-child{
+        margin: 0 3px 0 auto;
+    }
+    
+    #socials li:last-child{
+        margin: 0 auto 0 3px;
+    }
+    
+    #socials img{
+        --social-img-size: 20px;
+    }
+    
+    #inclusive h2:first-child{
+        font-weight: bold;
+        background: linear-gradient(90deg, #f00000 10%, #f00000, #ff8000, #ff8000, #ffff00, #ffff00, #007940, #007940 , #4040ff, #4040ff, #a000c0, #a000c0 90%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    
+    #contact-info{
+        margin: 20px 0 20px 0;
+    }
+    
+    #contact-info li{
+        font-size: 9px;
+    }
+    
+    #footer h3{
+        font-size: 6px;
+    }
+    
+}
+
+@media screen and (max-width: 320px) {
+    
+    #nav{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    #nav > div{
+        margin: 10px;
+    }
+    
+    #nav h2{
+        font-size: 15px;
+    }
+    
+    #inclusive h2{
+        font-size: 13px;
+    }
+    
+    #nav li{
+        font-size: 12px;
+        margin-bottom: 5px;
+    }
+    
+    #socials li:first-child{
+        margin: 0 5px 0 auto;
+    }
+    
+    #socials li:last-child{
+        margin: 0 auto 0 5px;
+    }
+    
+    #socials img{
+        --social-img-size: 24px;
+    }
+    
+    #inclusive h2:first-child{
+        font-weight: bold;
+        background: linear-gradient(90deg, #f00000 35%, #f00000, #ff8000, #ff8000, #ffff00, #ffff00, #007940, #007940 , #4040ff, #4040ff, #a000c0, #a000c0 65%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    
+    #contact-info{
+        margin: 20px 0 30px 0;
+    }
+    
+    #contact-info ul{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #contact-info li{
+        margin: 3px;
+        font-size: 10px;
+        text-align: center;
+    }
+    
+    #contact-info li:nth-child(2){
+        position: absolute;
+        opacity: 0;
+    }
+    
+    #footer h3{
+        font-size: 7px;
+    }
+    
+}
+
+@media screen and (max-width: 280px) {
+
+    #inclusive h2:first-child{
+        font-weight: bold;
+        background: linear-gradient(90deg, #f00000 28%, #f00000, #ff8000, #ff8000, #ffff00, #ffff00, #007940, #007940 , #4040ff, #4040ff, #a000c0, #a000c0 72%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
 }
