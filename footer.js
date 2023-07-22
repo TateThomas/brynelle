@@ -27,8 +27,8 @@ let appFooter = `
             <div id="socials">
                 <h2>Socials</h2>
                 <ul>
-                    <li><a href="https://www.instagram.com/brynellephoto/"><img src="/images/socials/insta.png"></a></li>
-                    <li><a><img src="/images/socials/facebook.png"></a></li>
+                    <li><a href="https://www.instagram.com/brynellephoto/"><img src="/images/socials/insta.png" loading="lazy"></a></li>
+                    <li><a><img src="/images/socials/facebook.png" loading="lazy"></a></li>
                 </ul>
             </div>
 

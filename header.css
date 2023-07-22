@@ -9,6 +9,7 @@
     display: flex;
     width: 100%;
     height: var(--header-height);
+    color: white;
     z-index: 10;
     transition: background-color .75s;
 }
@@ -42,10 +43,15 @@
     height: var(--brand-font-size);
     transition: background-color .5s;
     border-radius: var(--header-radius);
+    transition: background-color .5s, color .5s;
 }
 
 #header.hidden h1:hover{
     background-color: var(--shadow-color);
+}
+
+#header.show h1:hover{
+    color: #ca9e85;
 }
 
 #links{
@@ -108,7 +114,7 @@
     margin: 0;
     opacity: 0;
     text-align: center;
-    transition: background-color .5s, border .25s, border-radius .75s, height .6s, opacity .6s;
+    transition: background-color .5s, color .5s, border .25s, border-radius .75s, height .6s, opacity .6s;
 }
 
 #links > ul > li.gallery:hover{
@@ -161,6 +167,14 @@
     opacity: 1;
 }
 
+#header.show li a{
+    transition: color .5s;
+}
+
+#header.show li a:hover{
+    color: #ca9e85;
+}
+
 #header.show ul li ul{
     border-radius: 0 0 var(--header-radius) var(--header-radius);
     box-shadow: 0 2px 6px rgba(0, 0, 0, .1);
@@ -178,6 +192,10 @@
 
 #header.show li:hover ul li:hover{
     background-color: #d5b39f;
+}
+
+#header.show li:hover ul li a:hover{
+    color: #b37651;
 }
 
 
@@ -270,7 +288,7 @@
         border: 2px solid white;
         border-bottom: 0;
         border-radius: 15px 15px 0 0;
-        transition: height .75s, width .75s, margin-top .75s, margin-left .75s;
+        transition: height .5s, width .5s, margin-top .5s, margin-left .5s;
     }
     
     #burger span:last-child{

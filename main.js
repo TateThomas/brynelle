@@ -3,30 +3,18 @@
 
 
 const topPageImages = document.getElementById("top-page").getElementsByTagName("img");
-const archesAnimationValues = {
-    "height": 370,
-    "delay": 2400
-};
-const headerAnimationHeight = 850;
-const breakAnimationHeight = 1000;
-const myWorkAnimationHeight = 2300;
-const lineAnimationHeights = {
-    "show": 1700,
-    "more": 2100,
-    "hidden": 3200
-};
+
+const archesAnimationDelay = 2400;
 const buttonLeft = document.querySelectorAll(".shadow-scroll")[0];
 const buttonRight = document.querySelectorAll(".shadow-scroll")[1];
-const travelAnimationHeight = 3250;
-const travelPictureAnimationHeight= 3750;
+var timeOut = 0;
+const buttonSpeed = 4;
+const slider = document.getElementById("my-work-content").querySelector(".content");
+let mouseDown = false;
+let startX, scrollLeft;
 const travelLocations = document.getElementById("travel").getElementsByTagName("ul")[0].children;
 const travelImages = document.getElementById("travel").querySelectorAll(".pictures")[0].getElementsByTagName("div");
-const moreTravelBackgroundImage = document.getElementById("more-travel").getElementsByTagName("img")[0];
-const moreTravelAnimationValues = {
-    "start": 4000,
-    "end": 5300,
-    "factor": .2
-};
+const moreTravelFactor = .2;
 
 var currentY = 0;
 var counter = 0;
@@ -44,10 +32,12 @@ function changeImage() {
 }
 
 
-function archesAnimation(animationExecuteHeight, delayTimer) {
+function archesAnimation(delayTimer) {
     
     const arches = document.getElementById("arches");
-    if ((arches.className != "done") && (window.scrollY >= animationExecuteHeight)) {
+    let distanceFromBottom = arches.getBoundingClientRect().y - window.innerHeight + arches.clientHeight;  // distance of bottom of arches to bottom of screen
+    
+    if ((arches.className != "done") && (distanceFromBottom <= 0)) {
         
         arches.className = "show";
         
@@ -60,10 +50,14 @@ function archesAnimation(animationExecuteHeight, delayTimer) {
 }
 
 
-function headerAnimation(animationExecuteHeight) {
+function headerAnimation() {
     
     const header = document.getElementById("header");
-    if (window.scrollY >= animationExecuteHeight) {
+    const arches = document.getElementById("arches").getElementsByTagName("li")[0];
+    let distanceFromArches = arches.getBoundingClientRect().y - header.clientHeight;
+    let extraDistance = 100;
+    
+    if ((distanceFromArches - extraDistance) <= 0) {
         header.className = "show";
     }
     else {
@@ -73,15 +67,19 @@ function headerAnimation(animationExecuteHeight) {
 }
 
 
-function breakAnimation(animationExecuteHeight) {
+function breakAnimation() {
     
-    if (window.scrollY >= animationExecuteHeight) {
-        document.getElementById("break").className = "show";
+    const breakElem = document.getElementById("break");
+    let distanceFromBottom = breakElem.getBoundingClientRect().y - window.innerHeight;
+    let extraDistance = 300;
+    
+    if ((distanceFromBottom + extraDistance) <= 0) {
+        breakElem.className = "show";
     }
     
 }
 
-
+/*
 function myWorkAnimation(animationExecuteHeight) {
     
     if (window.scrollY >= animationExecuteHeight) {
@@ -89,12 +87,12 @@ function myWorkAnimation(animationExecuteHeight) {
     }
     
 }
+*/
 
 
 function shadowButtonScrollFix() {
     
     buttonLeft.style.setProperty("--y", parseInt(buttonLeft.style.getPropertyValue("--y")) + (window.scrollY - currentY));
-    
     buttonRight.style.setProperty("--y", parseInt(buttonRight.style.getPropertyValue("--y")) + (window.scrollY - currentY));
     
     currentY = window.scrollY;
@@ -102,44 +100,89 @@ function shadowButtonScrollFix() {
 }
 
 
-function lowerLineAnimation(showHeight, moreHeight, hiddenHeight) {
+function lowerLineAnimation() {
+    
     
     const lowerGradient = document.getElementById("lower-page-gradient");
-    if (window.scrollY < showHeight) {
-        lowerGradient.className = "";
+    const aboutMe = document.getElementById("about-me");
+    const myWork = document.getElementById("my-work");
+    const lowerPage = document.getElementById("lower-page").getElementsByTagName("div")[0];
+    const paddingSize = parseInt(window.getComputedStyle(lowerPage).getPropertyValue("--lower-page-padding"));
+    
+    let aboutMeY= aboutMe.getBoundingClientRect().y;
+    let myWorkY = myWork.getBoundingClientRect().y;
+    let lowerPageY = lowerPage.getBoundingClientRect().y;
+    let gradientSolidY = lowerGradient.querySelector(".solid").getBoundingClientRect().y;
+    
+    let aboutMeDistance = aboutMeY - window.innerHeight;
+    let gradientDistance = gradientSolidY - window.innerHeight;
+    let myWorkDistance = myWorkY - window.innerHeight;
+    let bottomDistance = lowerPageY + lowerPage.clientHeight - window.innerHeight;
+    
+    const extraDistance1 = parseInt(aboutMe.clientHeight * .65);
+    const extraDistance2 = parseInt(myWork.clientHeight * .3);
+    const gradientDistanceAboutMe = gradientDistance - (aboutMeDistance + aboutMe.clientHeight - paddingSize);
+    const extraBottomDistance = 200;
+    
+    let invisibleWidth = parseInt(window.getComputedStyle(lowerGradient).getPropertyValue("--invisible-width"));
+    
+    if ((gradientDistanceAboutMe <= 0) && ((aboutMeDistance + extraDistance1) <= 0) && (invisibleWidth == 0)) {
+        
+        lowerGradient.style.setProperty("--invisible-height", `${parseInt(.3 * aboutMe.clientHeight)}px`);
+        lowerGradient.style.setProperty("--invisible-height-two", `${-1 * (aboutMeDistance + extraDistance1)}px`);
+        
     }
-    else if ((window.scrollY >= showHeight) && (window.scrollY < moreHeight)) {
-        lowerGradient.className = "show";
+    else if (((myWorkDistance + extraDistance2) > 0) && (gradientDistanceAboutMe > 0) && (invisibleWidth == 0)) {
+        
+        lowerGradient.style.setProperty("--invisible-height", `${parseInt(.3 * aboutMe.clientHeight)}px`);
+        lowerGradient.style.setProperty("--invisible-width", `${lowerPage.clientWidth - 2}px`);
+        
     }
-    else if ((window.scrollY >= moreHeight) && (window.scrollY < hiddenHeight)) {
-        lowerGradient.className = "more";
+    else if (((bottomDistance + extraBottomDistance) > 0) && ((myWorkDistance + extraDistance2) <= 0) && (window.getComputedStyle(lowerGradient).getPropertyValue("opacity") != "0")) {
+        
+        lowerGradient.style.setProperty("--invisible-height", `${parseInt(.5 * aboutMe.clientHeight)}px`);
+        lowerGradient.style.setProperty("--invisible-width", `${lowerPage.clientWidth - 2}px`);
+        lowerGradient.style.setProperty("--invisible-height-two", `${-1 * (aboutMeDistance + extraDistance1)}px`);
+        
     }
-    else {
-        lowerGradient.className = "hidden";
+    else if ((bottomDistance + extraBottomDistance) <= 0){
+        
+        lowerGradient.style.setProperty("--invisible-height-two", `${lowerPage.clientHeight}px`);
+        lowerGradient.style.setProperty("--invisible-width", `${lowerPage.clientWidth - 2}px`);
+        lowerGradient.style.setProperty("opacity", 0);
+        
     }
     
 }
 
 
-function travelAnimation(animationExecuteHeight) {
+function travelAnimation() {
     
-    if (window.scrollY >= animationExecuteHeight) {
-        document.getElementById("bottom-page").getElementsByTagName("h2")[0].className = "show";
+    const travelElem = document.getElementById("bottom-page");
+    let distanceFromBottom = travelElem.getBoundingClientRect().y - window.innerHeight;
+    let extraDistance = parseInt(travelElem.clientHeight * .25);
+    
+    if ((distanceFromBottom + extraDistance) <= 0) {
+        travelElem.getElementsByTagName("h2")[0].className = "show";
     }
     
 }
 
 
-function travelPictureAnimation(animationExecuteHeight) {
+function travelPictureAnimation() {
     
-        if ((window.scrollY >= animationExecuteHeight) && (travelLocations[0].className == "0")) {
-            travelLocations[0].className = "0 show";
-            travelImages[0].className = "0 show";
-            
-            for (let i = 0; i < travelLocations.length; i++) {
-                travelLocationListener(travelLocations[i]);
-            }
+    const travelElem = document.getElementById("bottom-page");
+    let distanceFromBottom = travelElem.getBoundingClientRect().y - window.innerHeight;
+    let extraDistance = parseInt(travelElem.clientHeight * .75);
+    
+    if (((distanceFromBottom + extraDistance) <= 0) && (travelLocations[0].className == "0")) {
+        travelLocations[0].className = "0 show";
+        travelImages[0].className = "0 show";
+
+        for (let i = 0; i < travelLocations.length; i++) {
+            travelLocationListener(travelLocations[i]);
         }
+    }
     
 }
 
@@ -166,13 +209,31 @@ function travelLocationListener(elem) {
 }
 
 
-function moreTravelBackgroundAnimation(animationStartHeight, animationEndHeight, factor) {
+function moreTravelBackgroundAnimation(factor) {
     
-    if ((window.scrollY >= animationStartHeight) && (window.scrollY < animationEndHeight)) {
+    const moreTravelElem = document.getElementById("more-travel");
+    let distanceFromBottom = moreTravelElem.getBoundingClientRect().y - window.innerHeight;
+    let distanceFromTop = moreTravelElem.getBoundingClientRect().y + moreTravelElem.clientHeight;
+    
+    if ((distanceFromBottom <= 0) && (distanceFromTop >= 0)) {
         
-        moreTravelBackgroundImage.style.top = (factor * (window.scrollY - animationStartHeight)) + "px";
+        moreTravelElem.getElementsByTagName("img")[0].style.top = (factor * -1 * distanceFromBottom) + "px";
         
     }
+    
+}
+
+function scrollFunctions() {
+    
+    archesAnimation(archesAnimationDelay);
+    headerAnimation();
+    breakAnimation();
+//    myWorkAnimation(myWorkAnimationHeight);
+    shadowButtonScrollFix();
+    lowerLineAnimation();
+    travelAnimation();
+    travelPictureAnimation();
+    moreTravelBackgroundAnimation(moreTravelFactor);
     
 }
 
@@ -182,22 +243,12 @@ window.onload = function() {
     document.getElementById("top-page").getElementsByTagName("h2")[0].className = "loaded";
     document.getElementById("top-page").getElementsByTagName("h2")[1].className = "loaded";
     
+    scrollFunctions();
+    
 }
 
 
-window.onscroll = function() {
-    
-    archesAnimation(archesAnimationValues.height, archesAnimationValues.delay);
-    headerAnimation(headerAnimationHeight);
-    breakAnimation(breakAnimationHeight);
-    myWorkAnimation(myWorkAnimationHeight);
-    shadowButtonScrollFix();
-    lowerLineAnimation(lineAnimationHeights.show, lineAnimationHeights.more, lineAnimationHeights.hidden);
-    travelAnimation(travelAnimationHeight);
-    travelPictureAnimation(travelPictureAnimationHeight);
-    moreTravelBackgroundAnimation(moreTravelAnimationValues.start, moreTravelAnimationValues.end, moreTravelAnimationValues.factor);
-    
-}
+window.onscroll = scrollFunctions;
 
 
 buttonLeft.addEventListener("mousemove", (e) => {
@@ -217,6 +268,79 @@ buttonRight.addEventListener("mousemove", (e) => {
     currentY = window.scrollY;
     
 });
+
+let scrollFun = function(e) {
+
+    let obj = this;
+    
+    if (e.type == "mousedown") {
+        
+        timeOut = setInterval(function() {
+            if (obj.id == "button-1") {
+                slider.scrollLeft -= buttonSpeed;
+            }
+            else {
+                slider.scrollLeft += buttonSpeed;
+            }
+        }, 1);
+        
+    }
+
+    if ((e.type == "mouseup") || (e.type == "mouseleave")) {
+        clearInterval(timeOut);
+    }
+    
+};
+
+$("#my-work-content button.shadow-scroll").bind('touchstart mousedown', scrollFun)
+                                          .bind('touchend mouseup', scrollFun)
+                                          .bind('mouseleave', scrollFun);
+
+
+// scrollbar from https://stackoverflow.com/questions/28576636/mouse-click-and-drag-instead-of-horizontal-scroll-bar-to-view-full-content-of-c
+let startDragging = function(e) {
+    
+    mouseDown = true;
+    startX = e.pageX - slider.offsetLeft;
+    scrollLeft = slider.scrollLeft;
+    
+    buttonLeft.style.setProperty("width", 0);
+    buttonRight.style.setProperty("width", 0);
+    buttonRight.style.setProperty("margin-left", 'var(--button-width)');
+    
+};
+
+let stopDragging = function(e) {
+    
+    mouseDown = false;
+    
+    if (buttonLeft.style.getPropertyValue('width') == '0px') {
+    
+        buttonLeft.style.setProperty("width", 'var(--button-width)');
+        buttonRight.style.setProperty("width", 'var(--button-width)');
+        buttonRight.style.setProperty("margin-left", 0);
+    
+    }
+    
+};
+
+let currentlyDragging = function(e) {
+   
+    e.preventDefault();
+    
+    if (!mouseDown) {
+        return;
+    }
+    
+    const x = e.pageX - slider.offsetLeft;
+    const scroll = x - startX;
+    slider.scrollLeft = scrollLeft - scroll;
+    
+};
+
+$("#my-work-content div.content").bind('touchmove mousemove', currentlyDragging)
+                                 .bind('touchstart mousedown', startDragging)
+                                 .bind('touchend mouseup mouseleave', stopDragging);
 
 
 setInterval(changeImage, 5000);

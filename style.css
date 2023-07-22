@@ -28,10 +28,6 @@ body{
     margin: 0;
 }
 
-#content{
-    color: white;
-}
-
 h1, h2, ul, li{
     padding: 0;
     margin: 0;
@@ -49,6 +45,7 @@ a{
 }
 
 #content{
+    color: white;
     overflow-x: hidden;
     width: 100%;
 }
@@ -279,6 +276,7 @@ a{
 
 /****************** Lower Page Gradient ******************/
 
+/*
 #lower-page-gradient{
     position: fixed;
     width: 100%;
@@ -346,6 +344,8 @@ a{
     margin-top: 100vh;
     transition: height var(--hidden-transition), margin-top var(--hidden-transition);
 }
+*/
+
 
 
 /****************** Lower Page ******************/
@@ -355,6 +355,7 @@ a{
     padding: 100px;
     padding-left: 0;
     padding-right: 0;
+    overflow: hidden;
     z-index: calc(var(--lower-gradient-z) - 1);
 }
 
@@ -363,8 +364,67 @@ a{
     --lower-page-padding: 100px;
     --lower-page-border-thickness: 2px;
     --about-me-height: 600px;
+    --my-work-height: 600px;
     
+    position: relative;
     margin: auto;
+}
+
+
+/****************** Lower Page: Line Gradient ******************/
+
+#lower-page-gradient{
+    --invisible-height: 0px;
+    --invisible-height-two: 0px;
+    --invisible-width: 0px;
+    --gradient-size: 100px;
+    
+    position: absolute;
+    width: 100%;
+    height: calc(100% + var(--gradient-size));
+    top: calc(-1 * var(--gradient-size));
+    top: calc((-1 * var(--gradient-size)) + var(--invisible-height-two));
+    overflow: hidden;
+    z-index: var(--lower-gradient-z);
+    transition: grid-template-columns 1s;
+}
+
+#lower-page-gradient > div{
+    display: grid;
+    grid-template-columns: calc(100% - var(--invisible-width)) var(--gradient-size) var(--invisible-width);
+    grid-template-rows: minmax(min-content, max-content) auto;
+    grid-template-areas:
+        "three four ."
+        "six five .";
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: var(--invisible-height);
+    transition: 1s;
+}
+
+#lower-page-gradient div.gradient-one{
+    grid-area: three;
+    height: var(--gradient-size);
+    background-image: linear-gradient(transparent, white);
+}
+
+#lower-page-gradient div.gradient-two{
+    grid-area: four;
+    height: var(--gradient-size);
+    background-image: radial-gradient(circle at left bottom, white, transparent 70%);
+}
+
+#lower-page-gradient div.gradient-three{
+    grid-area: five;
+    height: 100%;
+    background-image: linear-gradient(to right, white, transparent);
+}
+
+#lower-page-gradient div.solid{
+    grid-area: six;
+    height: 100%;
+    background-color: white;
 }
 
 
@@ -392,12 +452,8 @@ a{
     position: relative;
     display: flex;
     width: calc(100% + var(--lower-page-padding) + var(--lower-page-radius));
-    left: calc(-1 * (var(--lower-page-padding) + var(--lower-page-radius)));
+    left: calc(-1 * (var(--lower-page-padding) + var(--lower-page-radius) + var(--lower-page-border-thickness)));
     z-index: calc(var(--lower-gradient-z) + 1);
-}
-
-#about-me-container{
-    height: var(--about-me-height);
 }
 
 #about-me-pictures{
@@ -419,7 +475,7 @@ a{
 #about-me-desc{
     position: relative;
     background-color: var(--about-me-color);
-    min-width: 400px;
+    width: 400px;
     height: calc(var(--about-me-height) - 100px);
     margin-left: var(--name-offset-left);
     padding: 40px;
@@ -446,6 +502,13 @@ a{
     font-size: 20px;
 }
 
+#about-me-desc-more{
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
 #about-me-desc-more h3{
     width: max-content;
     font-family: alta;
@@ -453,13 +516,6 @@ a{
     letter-spacing: 1px;
     margin: 0;
     font-size: 23px;
-}
-
-#about-me-desc-more{
-    width: max-content;
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
 }
 
 #about-me-desc-more div{
@@ -485,10 +541,13 @@ a{
 
 #my-work{
     --content-padding: 50px;
+    --my-work-width: 1256px;
+    --content-width: 1398px;
     
     position: relative;
     display: inline-block;
-    height: calc(var(--about-me-height) + var(--lower-page-border-thickness) + (2 * var(--lower-page-padding)) + var(--content-padding));
+    width: var(--my-work-width);
+    height: calc(var(--my-work-height) + var(--lower-page-border-thickness) + (2 * var(--lower-page-padding)) + var(--content-padding));
     margin-right: calc(var(--lower-page-padding) + var(--lower-page-radius) + var(--lower-page-border-thickness));
     border: var(--lower-page-border-thickness) solid var(--light-black);
     border-right: 0;
@@ -513,12 +572,17 @@ a{
     top: 300px;
 }
 
+#my-work h2:hover{
+    cursor: vertical-text;
+}
+
 #my-work-content{
     position: relative;
-    height: calc(var(--about-me-height) +  var(--lower-page-border-thickness) + (2 * var(--lower-page-padding)));
+    height: calc(var(--my-work-height) +  var(--lower-page-border-thickness) + (2 * var(--lower-page-padding)));
     width: calc(100% + var(--lower-page-padding) + var(--lower-page-radius));
+    width: var(--content-width);
     border-top-left-radius: calc(var(--lower-page-padding) + var(--lower-page-radius));
-    padding-right: var(--content-padding);
+    /*padding-right: var(--content-padding);*/
     padding-bottom: var(--content-padding);
     overflow: hidden;
     z-index: calc(var(--lower-gradient-z) + 1);
@@ -532,13 +596,19 @@ a{
     padding: var(--picture-padding);
     padding-top: var(--content-padding);
     padding-bottom: var(--content-padding);
-    overflow: hidden;
     display: grid;
-    grid-template-columns: repeat(4, .8fr);
+    /*grid-template-columns: repeat(4, .8fr);*/
+    grid-template-columns: auto;
     grid-template-rows: repeat(20, 1fr);
     grid-column-gap: 40px;
     grid-row-gap: 20px;
+    overflow-x: hidden;
     z-index: 3;
+    cursor: grab;
+}
+
+#my-work-content div.content:active{
+    cursor: grabbing;
 }
 
 #my-work-content button.shadow-scroll{
@@ -547,21 +617,22 @@ a{
     --cursor-shadow-size: 600px;
     --cursor-shadow: rgba(0, 0, 0, .3);
     --arrow-color: rgba(255, 255, 255, .7);
+    --button-width: calc(var(--lower-page-padding) + var(--lower-page-radius) + var(--extra-width));
     
     float: left;
     position: absolute;
-    width: calc(var(--lower-page-padding) + var(--lower-page-radius) + var(--extra-width));
+    width: var(--button-width);
     height: 100%;
     top: 0;
     padding: 0;
     border: 0;
     background: transparent;
     background-image: linear-gradient(90deg, var(--light-button-shadow), transparent);
-    border-top-left-radius: calc(var(--lower-page-padding) + var(--lower-page-radius));
+    /*border-top-left-radius: calc(var(--lower-page-padding) + var(--lower-page-radius));*/
     overflow: hidden;
     opacity: 0;
     z-index: calc(var(--lower-gradient-z) + 2);
-    transition: opacity 1s;
+    transition: opacity 1s, width .75s, margin-left .75s;
 }
 
 #my-work-content button.shadow-scroll div.arrow{
@@ -583,8 +654,8 @@ a{
     width: 100%;
     height: 100%;
     position: relative;
-    -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
-    mask-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 1) 20%, rgba(0, 0, 0, 0));
+    mask-image: linear-gradient(to right, rgba(0, 0, 0, 1) 20%, rgba(0, 0, 0, 0));
 }
 
 #my-work-content button.shadow-scroll div.mouse-shadow::after{
@@ -599,7 +670,6 @@ a{
 
 #my-work-content button.shadow-scroll:hover{
     opacity: 1;
-    cursor: pointer;
 }
 
 #my-work-content button.shadow-scroll:last-child{
@@ -610,17 +680,18 @@ a{
 
 #my-work-content button.shadow-scroll:last-child div.arrow{
     transform: rotate(135deg);
-    left: calc(var(--lower-page-padding) + var(--lower-page-radius) - var(--arrow-left-offset))
+    left: calc(var(--lower-page-padding) + var(--lower-page-radius) - var(--arrow-left-offset));
 }
 
 #my-work-content button.shadow-scroll:last-child div.mouse-shadow{
-    -webkit-mask-image: linear-gradient(to left, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
-    mask-image: linear-gradient(to left, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    -webkit-mask-image: linear-gradient(to left, rgba(0, 0, 0, 1) 20%, rgba(0, 0, 0, 0));
+    mask-image: linear-gradient(to left, rgba(0, 0, 0, 1) 20%, rgba(0, 0, 0, 0));
 }
 
 #my-work-content div.content div{
     position: relative;
     overflow: hidden;
+    width: 275px;
     border: 20px solid white;
     box-shadow: 0 0 10px rgba(0, 0, 0, .1);
     z-index: calc(var(--lower-gradient-z) + 1);
@@ -669,6 +740,15 @@ a{
 #my-work-content > div.content > div:nth-child(8n){
     grid-column: 4 / 5;
     grid-row: 10 / 21;
+}
+
+#my-work-content > div.content > div:last-child{
+    width: 25px;
+    grid-column: 5 / 6;
+    grid-row: 1 / 21;
+    padding: 0;
+    border: 0;
+    box-shadow: none;
 }
 
 #my-work-content img {
@@ -812,22 +892,7 @@ a{
     height: 270px;
     top: calc(100% - 272px);
     left: calc(100% - 520px);
-    z-index: 2;
-}
-
-#travel div.arch:nth-child(3) {
-    --arch-width: 30px;
-    --line-thickness: 3px;
-    --line-spacing: 6px;
-    
-    height: 30px;
-    top: -33px;
-    left: 100px;
-    z-index: 2;
-}
-
-#travel div.arch:nth-child(3) div{
-    border-color: var(--bottom-color);
+    z-index: 4;
 }
 
 #travel div.content{
@@ -851,7 +916,7 @@ a{
     background-color: white;
     letter-spacing: 1px;
     /*border-radius: 20px;*/
-    z-index: 3;
+    z-index: 5;
 }
 
 #travel div.info > h2{
@@ -910,6 +975,7 @@ a{
     width: 550px;
     height: 700px;
     margin-left: auto;
+    z-index: 3;
 }
 
 #travel div.pictures div{
@@ -932,10 +998,18 @@ a{
 }
 
 #travel div.pictures div:nth-child(2) img{
-    bottom: 0;
-    right: 0;
     top: 20px;
     left: 20px;
+}
+
+#travel div.pictures div:nth-child(3) img{
+    bottom: 20px;
+    left: 20px;
+}
+
+#travel div.pictures div:nth-child(5) img{
+    top: 20px;
+    right: 20px;
 }
 
 #travel div.pictures div.show{
@@ -952,8 +1026,9 @@ a{
 #more-travel > div:first-child{
     display: flex;
     position: relative;
-    top: -1100px;
     width: 100%;
+    height: max-content;
+    top: calc(100% - 100vh);
     justify-content: center;
     transition: filter 1s;
 }
@@ -965,14 +1040,15 @@ a{
 
 #more-travel > div:first-child img{
     position: absolute;
-    width: calc(100% + 300px);
+    width: 110%;
+    height: 100vh;
     object-fit: cover;
     object-position: bottom;
     transition: width 1s;
 }
 
 #more-travel:hover > div:first-child img{
-    width: calc(100% + 325px);
+    width: 112%;
 }
 
 #more-travel h2{
@@ -1063,11 +1139,12 @@ a{
     height: var(--transition-height);
     position: relative;
     background-color: transparent;
+    overflow-x: hidden;
     z-index: calc(var(--lower-gradient-z) + 1);
 }
 
 #transition img{
-    --transition-img-height: 450px;
+    --transition-img-height: 610px;
     
     width: 100%;
     height: var(--transition-img-height);
@@ -1075,4 +1152,1066 @@ a{
     position: absolute;
     top: calc(var(--transition-height) - var(--transition-img-height));
     object-position: bottom;
+}
+
+
+@media screen and (max-width: 1600px) {
+    
+    #top-page h2{
+        font-size: 70px;
+    }
+    
+    #mid-page{
+        --arches-width: 250px;
+        --arches-height: 415px;
+    }
+    
+    #arches h2{
+        font-size: 25px;
+    }
+    
+    #break{
+        --text-width: 298px;
+    }
+    
+    #break.show{
+        width: 1050px;
+    }
+    
+    #break h2{
+        font-size: 22px;
+    }
+    
+    #lower-page > div{
+        --about-me-height: 550px;
+    }
+    
+    #about-me-pictures img{
+        width: 250px;
+        height: 450px;
+    }
+    
+    #about-me-desc{
+        width: 280px;
+    }
+    
+    #about-me-desc h2{
+        font-size: 20px;
+        border: 2px solid var(--light-black);
+        border-bottom: 0;
+        border-right: 0;
+    }
+    
+    #about-me-desc p{
+        font-size: 17px;
+    }
+    
+    #about-me-desc-more h3{
+        font-size: 20px;
+    }
+    
+    #my-work{
+        --my-work-width: 1036px;
+        --content-width: 1178px;
+    }
+    
+    #my-work-explore{
+        --explore-font-size: 35px;
+    }
+    
+    #my-work-explore > div > div{
+        top: -29px;
+    }
+    
+    #bottom-page > h2{
+        font-size: 35px;
+        height: 50px;
+    }
+    
+    #travel div.arch:nth-child(1){
+        --arch-width: 400px;
+        
+        height: 750px;
+        top: calc(100% - 752px);
+        left: 150px;
+    }
+    
+    #travel div.arch:nth-child(2) {
+        --arch-width: 300px;
+        --line-spacing: 25px;
+
+        height: 270px;
+        top: calc(100% - 272px);
+        left: calc(100% - 420px);
+    }
+    
+    #travel div.content > div{
+        width: 1000px;
+    }
+    
+    #travel div.info{
+        width: 400px;
+    }
+    
+    #travel div.info > h2{
+        font-size: 22px;
+        padding-bottom: 15px;
+    }
+    
+    #travel div.info ul li{
+        margin-top: 13px;
+        margin-bottom: 13px;
+    }
+    
+    #travel div.info ul h2{
+        padding: 5px;
+        font-size: 19px;
+    }
+    
+    #travel div.pictures{
+        width: 450px;
+        height: 600px;
+    }
+    
+    #more-travel{
+        height: 250px;
+    }
+    
+    #more-travel h2{
+        line-height: 250px;
+        font-size: 50px;
+    }
+    
+    #more-travel > div:last-child{
+        top: 150px;
+    }
+    
+    #more-travel > div:last-child > div h3{
+        font-size: 35px;
+    }
+    
+    #book-now > div{
+        width: 1000px;
+    }
+    
+}
+
+@media screen and (max-width: 1400px) {
+    
+    #top-page h2{
+        font-size: 65px;
+    }
+    
+    #mid-page{
+        --arches-width: 225px;
+        --arches-height: 375px;
+        --arches-border-width: 4px;
+    }
+    
+    #arches h2{
+        font-size: 22px;
+    }
+    
+    #break.show{
+        width: 950px;
+    }
+    
+    #lower-page > div{
+        --about-me-height: 450px;
+        --my-work-height: 500px;
+    }
+    
+    #about-me-pictures img{
+        width: 200px;
+        height: 400px;
+    }
+    
+    #about-me-desc{
+        width: 230px;
+    }
+    
+    #about-me-desc h2{
+        font-size: 18px;
+    }
+    
+    #about-me-desc p{
+        font-size: 16px;
+    }
+    
+    #about-me-desc-more h3{
+        font-size: 18px;
+    }
+    
+    #my-work{
+        --my-work-width: 886px;
+        --content-width: 1028px;
+    }
+    
+    #my-work > h2{
+        font-size: 20px;
+    }
+    
+    #my-work-content button.shadow-scroll div.arrow{
+        --arrow-size: 35px;
+    }
+    
+    #my-work-content div.content div{
+        width: 250px;
+    }
+    
+    #my-work-explore{
+        --explore-font-size: 32px;
+    }
+    
+    #my-work-explore > div{
+        margin-right: 150px;
+    }
+    
+    #my-work-explore > div > div{
+        border-bottom: 1px solid var(--light-black);
+        top: -25px;
+    }
+    
+    #bottom-page > h2{
+        font-size: 32px;
+        height: 45px;
+    }
+    
+    #travel div.arch:nth-child(1){
+        height: 730px;
+        top: calc(100% - 732px);
+    }
+    
+    #travel div.arch:nth-child(2) {
+        height: 250px;
+        top: calc(100% - 252px);
+    }
+    
+    #travel div.content > div{
+        width: 800px;
+    }
+    
+    #travel div.content{
+        margin-right: 0;
+    }
+    
+    #travel div.pictures{
+        width: 400px;
+        height: 550px;
+        margin-left: 0;
+    }
+    
+    #more-travel{
+        height: 225px;
+    }
+    
+    #more-travel > div:first-child{
+        width: 100%;
+        top: calc(100% - 1000px);
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    #more-travel > div:first-child img{
+        width: 1500px;
+        height: 1000px;
+    }
+    
+    #more-travel:hover > div:first-child img{
+        width: 1520px;
+    }
+    
+    #more-travel h2{
+        line-height: 225px;
+        font-size: 42px;
+    }
+    
+    #more-travel > div:last-child{
+        top: 130px;
+    }
+    
+    #more-travel > div:last-child > div h3{
+        font-size: 30px;
+    }
+    
+    #more-travel > div:last-child > div div{
+        border-bottom: 1px solid white;
+    }
+    
+    #book-now > div{
+        width: 800px;
+    }
+    
+    #transition img{
+        width: 1400px;
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+    
+}
+
+@media screen and (max-width: 1180px) {
+    
+    #top-page h2{
+        font-size: 58px;
+    }
+    
+    #arches{
+        max-width: calc((var(--arches-width) + (2 * var(--desired-base-margin))) * var(--total-arches-on-row) - 125px);
+    }
+    
+    #break.show{
+        width: 875px;
+    }
+    
+    #lower-page > div{
+        --about-me-height: 425px;
+        --my-work-height: 475px;
+        --lower-page-padding: 75px;
+    }
+    
+    #about-me-pictures{
+        margin-right: 10px;
+    }
+    
+    #about-me-desc{
+        width: 200px;
+        margin-left: 10px;
+    }
+    
+    #my-work{
+        --my-work-width: 783px;
+        --content-width: 900px;
+    }
+    
+    #my-work > h2{
+        font-size: 20px;
+        left: calc((-1 * var(--lower-page-padding)) + 12px);
+        top: 100px;
+    }
+    
+    #my-work h2.show{
+        top: 200px;
+    }
+    
+    #my-work-content button.shadow-scroll{
+        --extra-width: 25px;
+    }
+    
+    #my-work-content button.shadow-scroll div.arrow{
+        --arrow-size: 30px;
+        --arrow-left-offset: 25px;
+        
+        border-left: 8px solid var(--arrow-color);
+        border-top: 8px solid var(--arrow-color);
+    }
+    
+    #my-work-content button.shadow-scroll:last-child div.arrow{
+        left: calc(var(--lower-page-padding) + var(--lower-page-radius) - var(--arrow-left-offset) - 15px);
+    }
+    
+    #my-work-content div.content div{
+        width: 220px;
+    }
+    
+    #my-work-explore > div{
+        margin-right: 125px;
+    }
+    
+    #travel div.arch:nth-child(1){
+        left: 50px;
+    }
+    
+    #travel div.arch:nth-child(2) {
+        left: calc(100% - 350px);
+    }
+    
+    #more-travel h2{
+        font-size: 40px;
+    }
+    
+    #more-travel > div:last-child > div h3{
+        font-size: 28px;
+    }
+    
+}
+
+@media screen and (max-width: 1000px) {
+    
+    #top-page h2{
+        font-size: 50px;
+    }
+    
+    #mid-page{
+        --arches-width: 170px;
+        --arches-height: 285px;
+    }
+    
+    #arches h2{
+        font-size: 17px;
+    }
+    
+    #break{
+        --text-width: 262.7px;
+    }
+    
+    #break.show{
+        width: 700px;
+    }
+    
+    #break h2{
+        font-size: 19px;
+    }
+    
+    #lower-page > div{
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+    
+    #about-me{
+        width: calc(100% - 80px - var(--lower-page-padding) - var(--lower-page-radius) - var(--lower-page-border-thickness));
+    }
+    
+    #about-me > div{
+        flex-direction: column;
+        width: calc(100% + var(--lower-page-padding) + var(--lower-page-radius) + var(--lower-page-border-thickness));
+    }
+    
+    #about-me-pictures{
+        display: flex;
+        width: 100%;
+        margin-left: 0;
+        margin-right: auto;
+        padding-right: 0;
+    }
+    
+    #about-me-pictures img{
+        width: max(35%, 200px);
+        height: var(--about-me-height);
+    }
+    
+    #about-me-pictures img:first-child{
+        margin-right: 10px;
+    }
+    
+    #about-me-desc{
+        width: max(40%, 180px);
+        margin: calc(var(--name-offset-top) + 40px) 0 0 auto;
+    }
+    
+    #my-work{
+        --my-work-width: calc(100vw - var(--lower-page-padding) - var(--lower-page-radius) - 80px - 20px);
+        --content-width: calc(100vw - 80px - 18px);
+    }
+    
+    #bottom-page{
+        padding-top: 200px;
+    }
+    
+    #bottom-page > h2{
+        font-size: 28px;
+        height: 42px;
+        left: calc(100% - 200px);
+    }
+    
+    #travel div.arch:nth-child(1){
+        --arch-width: 350px;
+        
+        height: 710px;
+        top: calc(100% - 712px);
+        left: 25px;
+    }
+    
+    #travel div.arch:nth-child(2) {
+        --arch-width: 275px;
+        
+        height: 200px;
+        top: calc(100% - 202px);
+        left: calc(100% - 300px);
+    }
+    
+    #travel div.content > div{
+        width: max-content;
+    }
+    
+    #travel div.info{
+        width: 325px;
+        margin-right: 0;
+    }
+    
+    #travel div.info > h2{
+        font-size: 20px;
+        height: 20px;
+    }
+    
+    #travel div.info ul{
+        width: calc(100% - 40px);
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    #travel div.info ul li{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    
+    #travel div.info ul li h2{
+        font-size: 17px;
+        height: 17px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+    }
+    
+    #travel div.pictures{
+        width: 350px;
+        height: 480px;
+    }
+    
+    #more-travel{
+        height: 200px;
+    }
+    
+    #more-travel h2{
+        line-height: 200px;
+        font-size: 33px;
+    }
+    
+    #more-travel > div:last-child{
+        top: 115px;
+    }
+    
+    #more-travel > div:last-child > div{
+        margin-right: 40px;
+    }
+    
+    #more-travel > div:last-child > div h3{
+        font-size: 24px;
+    }
+    
+    #book-now > div{
+        width: 500px;
+        height: 500px;
+    }
+    
+    #book-now > div h2{
+        width: calc(100% - 40px);
+        padding: 20px;
+        font-size: 25px;
+    }
+    
+}
+
+@media screen and (max-width: 750px) {
+    
+    #top-page h2{
+        font-size: 44px;
+    }
+    
+    #mid-page{
+        --arches-width: 120px;
+        --arches-height: 200px;
+        --arches-border-width: 3px;
+    }
+    
+    #arches{
+        max-width: calc((var(--arches-width) + (2 * var(--desired-base-margin))) * var(--total-arches-on-row) - 185px);
+    }
+    
+    #arches h2{
+        font-size: 13px;
+    }
+    
+    #break{
+        --text-width: 216.3px;
+        
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+    
+    #break.show{
+        width: 480px;
+    }
+    
+    #break h2{
+        font-size: 15px;
+    }
+    
+    #lower-page > div{
+        --my-work-height: 450px;
+    }
+    
+    #about-me{
+        --name-offset-left: 50px;
+    }
+    
+    #about-me-desc h2{
+        font-size: 16px;
+    }
+    
+    #about-me-desc p{
+        font-size: 12px;
+    }
+    
+    #about-me-desc-more h3{
+        font-size: 14px;
+    }
+    
+    #my-work-content button.shadow-scroll{
+        --extra-width: 0px;
+    }
+    
+    #my-work-content button.shadow-scroll div.arrow{
+        --arrow-size: 30px;
+        --arrow-left-offset: 25px;
+        
+        border-left: 7px solid var(--arrow-color);
+        border-top: 7px solid var(--arrow-color);
+    }
+    
+    #my-work-content button.shadow-scroll:last-child div.arrow{
+        left: calc(var(--lower-page-padding) + var(--lower-page-radius) - var(--arrow-left-offset) - 40px);
+    }
+    
+    #my-work-content div.content div{
+        width: 200px;
+    }
+    
+    #my-work-explore > div{
+        margin-right: 100px;
+    }
+    
+    #travel div.arch:nth-child(1){
+        --arch-width: 380px;
+        --line-spacing: 30px;
+        
+        height: 1000px;
+        top: calc(100% - 1002px);
+    }
+    
+    #travel div.arch:nth-child(1) div{
+        border: var(--line-thickness) solid #bc7e5b;
+    }
+    
+    #travel div.arch:nth-child(2){
+        --arch-width: 300px;
+        
+        left: calc(100% - 330px);
+    }
+    
+    #travel div.content > div{
+        flex-direction: column;
+        width: max-content;
+    }
+    
+    #travel div.info{
+        position: relative;
+        margin: 0 0 50px 0;
+        left: -50px;
+    }
+    
+    #more-travel{
+        height: 150px;
+    }
+    
+    #more-travel h2{
+        line-height: 150px;
+        font-size: 22px;
+    }
+    
+    #more-travel > div:last-child{
+        top: 80px;
+    }
+    
+    #more-travel > div:last-child > div{
+        margin-right: 20px;
+    }
+    
+    #more-travel > div:last-child > div h3{
+        font-size: 18px;
+    }
+    
+}
+
+@media screen and (max-width: 550px) {
+    
+    #top-page h2{
+        font-size: 38px;
+    }
+    
+    #top-page h2.loaded:nth-child(2){
+        left: 30px;
+    }
+    
+    #top-page h2.loaded:nth-child(3){
+        left: 80px;
+    }
+    
+    #mid-page{
+        --arches-width: 100px;
+        --arches-height: 165px;
+        --arches-offset: -130px;
+    }
+    
+    #arches{
+        max-width: calc((var(--arches-width) + (2 * var(--desired-base-margin))) * var(--total-arches-on-row) - 220px);
+    }
+    
+    #arches h2{
+        font-size: 11px;
+    }
+    
+    #arches.done li:hover{
+        box-shadow: 0px 0px 18px rgba(0, 0, 0, .3);
+        top: calc(var(--arches-offset) - 7px);
+    }
+    
+    #break{
+        --text-width: 193px;
+    }
+    
+    #break.show{
+        width: 390px;
+    }
+    
+    #break h2{
+        font-size: 13px;
+    }
+    
+    #lower-page > div{
+        --about-me-height: 350px;
+        --lower-page-padding: 50px;
+    }
+    
+    #about-me{
+        --name-offset-left: -20px;
+        --name-offset-top: 40px;
+        
+        width: calc(100% - 52px - var(--lower-page-padding) - var(--lower-page-radius) - var(--lower-page-border-thickness));
+    }
+    
+    #about-me-pictures img{
+        width: calc(50% - 5px);
+    }
+    
+    #about-me-desc{
+        width: calc(75% - var(--lower-page-padding) - 10px);
+        padding: 30px;
+    }
+    
+    #about-me-desc h2{
+        padding: 10px;
+    }
+    
+    #my-work > h2{
+        left: calc((-1 * var(--lower-page-padding)) - 15px);
+        top: 100px;
+    }
+    
+    #my-work > h2.show{
+        top: 170px;
+    }
+    
+    #my-work-content div.content div{
+        width: 175px;
+    }
+    
+    #my-work-explore{
+        --explore-font-size: 28px;
+    }
+    
+    #my-work-explore > div{
+        margin-right: 65px;
+    }
+    
+    #my-work-explore > div > div{
+        top: -21px;
+    }
+    
+    #bottom-page{
+        padding-top: 150px;
+        padding-bottom: 75px;
+    }
+    
+    #bottom-page > h2{
+        font-size: 25px;
+        height: 38px;
+        left: calc(100% - 150px);
+    }
+    
+    #travel div.arch:nth-child(1){
+        --arch-width: 225px;
+        --line-spacing: 17px;
+        
+        height: 750px;
+        top: calc(100% - 752px);
+    }
+    
+    #travel div.arch:nth-child(2) {
+        --arch-width: 240px;
+        --line-spacing: 20px;
+        
+        height: 180px;
+        top: calc(100% - 182px);
+        left: calc(100% - 260px);
+    }
+    
+    #travel div.info{
+        width: 260px;
+        margin-right: 0;
+        left: -30px;
+    }
+    
+    #travel div.info > h2{
+        font-size: 16px;
+        height: 16px;
+    }
+    
+    #travel div.info ul{
+        width: calc(100% - 40px);
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    #travel div.info ul li{
+        margin-top: 7px;
+        margin-bottom: 7px;
+    }
+    
+    #travel div.info ul li h2{
+        font-size: 13px;
+        height: 13px;
+        padding-top: 1px;
+        padding-bottom: 1px;
+    }
+    
+    #travel div.pictures{
+        width: 260px;
+        height: 340px;
+    }
+    
+    #more-travel h2{
+        font-size: 17px;
+    }
+    
+    #more-travel > div:last-child > div h3{
+        font-size: 14px;
+    }
+    
+    #book-now > div{
+        width: 300px;
+        height: 300px;
+    }
+    
+    #book-now > div h2{
+        font-size: 18px;
+        margin-top: 20px;
+    }
+    
+}
+
+@media screen and (max-width: 440px) {
+    
+    #top-page h2{
+        font-size: 34px;
+    }
+    
+    #top-page h2.loaded:nth-child(2){
+        left: 20px;
+    }
+    
+    #top-page h2.loaded:nth-child(3){
+        left: 40px;
+    }
+    
+    #mid-page{
+        --arches-width: 70px;
+        --arches-height: 115px;
+        --arches-offset: -110px;
+        --arches-border-width: 2px;
+    }
+    
+    #arches{
+        max-width: calc((var(--arches-width) + (2 * var(--desired-base-margin))) * var(--total-arches-on-row) - 250px);
+    }
+    
+    #arches h2{
+        font-size: 9px;
+    }
+    
+    #arches.done li:hover{
+        box-shadow: 0px 0px 13px rgba(0, 0, 0, .3);
+    }
+    
+    #break{
+        --text-width: 159.8px;
+    }
+    
+    #break.show{
+        width: 270px;
+    }
+    
+    #break h2{
+        font-size: 11px;
+        padding: 5px;
+    }
+    
+    #lower-page > div{
+        --about-me-height: 300px;
+        --my-work-height: 400px;
+    }
+    
+    #about-me{
+        min-width: none;
+    }
+    
+    #about-me > div{
+    }
+    
+    #about-me-pictures{
+        height: auto;
+        flex-direction: column;
+    }
+    
+    #about-me-pictures img{
+        width: 100%;
+    }
+    
+    #about-me-pictures img:first-child{
+        margin: 0 0 10px 0;
+    }
+    
+    #about-me-desc{
+        width: calc(100% - var(--lower-page-padding) + 10px);
+        padding: 20px;
+        margin-left: 0;
+        border-bottom-left-radius: var(--lower-page-radius);
+    }
+    
+    #about-me-desc h2{
+        width: max-content;
+        font-size: 13px;
+    }
+    
+    #about-me-desc p{
+        font-size: 10px;
+        word-break: break-all;
+    }
+    
+    #about-me-desc-more{
+        position: absolute;
+    }
+    
+    #about-me-desc-more h3{
+        font-size: 11px;
+    }
+    
+    #my-work-content button.shadow-scroll{
+        --extra-width: -30px;
+    }
+    
+    #my-work-content button.shadow-scroll div.arrow{
+        --arrow-left-offset: 15px;
+        --arrow-size: 25px;
+        
+        top: 47%;
+    }
+    
+    #my-work-content button.shadow-scroll:last-child div.arrow{
+        left: calc(var(--lower-page-padding) + var(--lower-page-radius) + var(--extra-width) - var(--arrow-left-offset) - 35px);
+    }
+    
+    #my-work-content div.content div{
+        width: 140px;
+    }
+    
+    #my-work-explore > div{
+        margin-right: 40px;
+    }
+    
+    #bottom-page{
+        padding-top: 100px;
+        padding-bottom: 75px;
+        margin-top: 200px;
+    }
+    
+    #bottom-page > h2{
+        font-size: 20px;
+        height: 26px;
+        padding: 12px 20px 20px 20px;
+        left: calc(100% - 120px);
+    }
+    
+    #travel div.arch:nth-child(1){
+        --arch-width: 200px;
+        --line-spacing: 15px;
+        
+        height: 615px;
+        top: calc(100% - 617px);
+        left: 15px;
+    }
+    
+    #travel div.arch:nth-child(2) {
+        --arch-width: 180px;
+        --line-spacing: 19px;
+        
+        height: 150px;
+        top: calc(100% - 152px);
+        left: calc(100% - 195px);
+    }
+    
+    #travel div.info{
+        width: 200px;
+        left: 0px;
+    }
+    
+    #travel div.info > h2{
+        font-size: 13px;
+        height: 13px;
+        padding: 15px 0 10px 0;
+    }
+    
+    #travel div.info ul{
+        width: calc(100% - 30px);
+        padding: 0 15px 10px 15px;
+    }
+    
+    #travel div.info ul li{
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    
+    #travel div.info ul li h2{
+        font-size: 11px;
+        height: 11px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    
+    #travel div.pictures{
+        width: 200px;
+        height: 270px;
+    }
+    
+    #more-travel{
+        height: 125px;
+    }
+    
+    #more-travel h2{
+        font-size: 13px;
+        line-height: 125px;
+    }
+    
+    #more-travel > div:last-child{
+        top: 60px;
+    }
+    
+    #more-travel > div:last-child > div h3{
+        font-size: 11px;
+    }
+    
+    #book-now > div{
+        width: 250px;
+        height: 250px;
+    }
+    
 }

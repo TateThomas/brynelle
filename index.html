@@ -6,17 +6,15 @@
         <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0"/>
         <title>Brynelle Photo</title>
         <link rel="stylesheet" type="text/css" href="style.css">
+        <!--<script src="/frameworks/jquery-3.7.0.js"></script>-->
+        <script src="/frameworks/jquery-3.7.0.min.js">
+        </script>
     </head>
 
     <body>
 
-        <header id="app-header"></header>
+        <header id="header" class="hidden"></header>
         <script async src="header.js"></script>
-        
-        <div id="lower-page-gradient">
-            <div></div>
-            <div></div>
-        </div>
 
         <div id="content">
             
@@ -39,9 +37,9 @@
             <div id="mid-page">
                 
                 <ul id="arches">
-                    <li><a href="https://www.brynelle.com/packages"><img src="images/arches/couple_sitting.jpg" onContextMenu="return false;"><h2>Pricing</h2></a></li>
+                    <li><a href="https://www.brynelle.com/pricing"><img src="images/arches/couple_sitting.jpg" onContextMenu="return false;"><h2>Pricing</h2></a></li>
                     <li><a href="https://www.brynelle.com/travel"><img src="images/arches/under_arch.jpg" onContextMenu="return false;"><h2>travel</h2></a></li>
-                    <li><a href="https://www.brynelle.com/portfolio"><img src="images/arches/holding_baby.jpg" onContextMenu="return false;"><h2>portfolio</h2></a></li>
+                    <li><a href="https://www.brynelle.com/gallery"><img src="images/arches/holding_baby.jpg" onContextMenu="return false;"><h2>gallery</h2></a></li>
                     <!--<li><h3>Quick Links</h3></li>-->
                 </ul>
                 
@@ -56,6 +54,15 @@
                 
                 <div>
                     
+                    <div id="lower-page-gradient">
+                        <div>
+                            <div class="gradient-one"></div>
+                            <div class="gradient-two"></div>
+                            <div class="gradient-three"></div>
+                            <div class="solid"></div>
+                        </div>
+                    </div>
+                    
                     <div>
                         
                         <div id="about-me">
@@ -63,8 +70,8 @@
                             <div>
 
                                 <div id="about-me-pictures">
-                                    <img src="images/about_me/salt_flats_kick.jpg">
-                                    <img src="images/about_me/IMG_E3420.JPG">
+                                    <img src="images/about_me/salt_flats_kick.jpg" loading="lazy">
+                                    <img src="images/about_me/IMG_E3420.JPG" loading="lazy">
                                 </div>
 
                                 <div id="about-me-desc">
@@ -86,7 +93,7 @@
                         
                         <div id="my-work">
                             
-                            <h2>my work</h2>
+                            <h2 class="show">my work</h2>
                             
                             <div id="my-work-content">
                                 
@@ -98,29 +105,31 @@
                                 <div class="content">
                                     
                                     <div>
-                                        <img src="images/my_work/slide_0/red_rock_wedding_flowers.jpg">
+                                        <img src="images/my_work/slide_0/red_rock_wedding_flowers.jpg" loading="lazy">
                                     </div>
                                     <div>
-                                        <img src="images/my_work/slide_0/fancy_hotel_in_bed.jpg">
+                                        <img src="images/my_work/slide_0/fancy_hotel_in_bed.jpg" loading="lazy">
                                     </div>
                                     <div>
-                                        <img src="images/my_work/slide_0/salt_flats_wedding_running.jpg">
+                                        <img src="images/my_work/slide_0/salt_flats_wedding_running.jpg" loading="lazy">
                                     </div>
                                     <div>
-                                        <img src="images/my_work/slide_0/sand_dunes_hugging.jpg">
+                                        <img src="images/my_work/slide_0/sand_dunes_hugging.jpg" loading="lazy">
                                     </div>
                                     <div>
-                                        <img src="images/my_work/slide_0/hands_in_pockets_kiss.jpg">
+                                        <img src="images/my_work/slide_0/hands_in_pockets_kiss.jpg" loading="lazy">
                                     </div>
                                     <div>
-                                        <img src="images/my_work/slide_0/dead_horse_point_scenic_wedding.jpg">
+                                        <img src="images/my_work/slide_0/dead_horse_point_scenic_wedding.jpg" loading="lazy">
                                     </div>
                                     <div>
-                                        <img src="images/my_work/slide_0/forest_spiderman_kiss.jpg">
+                                        <img src="images/my_work/slide_0/forest_spiderman_kiss.jpg" loading="lazy">
                                     </div>
                                     <div>
-                                        <img src="images/my_work/slide_0/goblin_valley_wedding_holding_hand.jpg">
+                                        <img src="images/my_work/slide_0/goblin_valley_wedding_holding_hand.jpg" loading="lazy">
                                     </div>
+                                    
+                                    <div></div>
                             
                                 </div>
                                 
@@ -133,13 +142,12 @@
                             
                             <div id="my-work-explore">
                                 <div>
-                                    <a href="https://www.brynelle.com/portfolio/explore"><h3>explore...</h3></a>
+                                    <a href="https://www.brynelle.com/gallery/explore"><h3>explore...</h3></a>
                                     <div></div>
                                 </div>
                             </div>
 
                         </div>
-                        <div></div>
                         
                     </div>
                     
@@ -207,22 +215,22 @@
                             
                             <div class="pictures">
                                 <div class="0">
-                                    <img src="images/travel/moab.jpg">
+                                    <img src="images/gallery/45.JPG" loading="lazy">
                                 </div>
                                 <div class="1 hidden">
-                                    <img src="images/travel/new_york.jpg">
+                                    <img src="images/gallery/53.JPG" loading="lazy">
                                 </div>
                                 <div class="2 hidden">
-                                    <img src="images/travel/moab.jpg">
+                                    <img src="images/gallery/58.JPG" loading="lazy">
                                 </div>
                                 <div class="3 hidden">
-                                    <img src="images/travel/moab.jpg">
+                                    <img src="images/gallery/28.JPG" loading="lazy">
                                 </div>
                                 <div class="4 hidden">
-                                    <img src="images/travel/moab.jpg">
+                                    <img src="images/gallery/63.JPG" loading="lazy">
                                 </div>
                                 <div class="5 hidden">
-                                    <img src="images/travel/moab.jpg">
+                                    <img src="images/gallery/8.JPG" loading="lazy">
                                 </div>
                             </div>
                             
@@ -237,7 +245,7 @@
             <div id="more-travel">
                 
                 <div>
-                    <img src="images/front_page/arches.jpg">
+                    <img src="images/front_page/arches.jpg" loading="lazy">
                 </div>
                 
                 <h2>Want me to travel to you? I'd love to!</h2>
@@ -263,7 +271,7 @@
                 </div>
                 
                 <div id="transition">
-                    <img src="images/goblin_valley_transition.jpg" onContextMenu="return false;">
+                    <img src="images/goblin_valley_transition.jpg" onContextMenu="return false;" loading="lazy">
                 </div>
                 
             </div>
