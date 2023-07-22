@@ -85,12 +85,17 @@ initializeList("type", typeFilters, true);
 initializeList("location", locationFilters, true);
 initializeList("lighting", lightingFilters, false);
 
-window.onload = function() {
-    setTimeout(function() {
-        database.updateUserPage();
-    }, 50);
-};
-
 window.onscroll = loadMorePhotos;
 
 document.getElementById("filters").getElementsByTagName("div")[0].addEventListener('click', toggleFilters);
+
+var myInterval = setInterval(function() {
+    
+    if (document.getElementById("photos").className == "not-loaded") {
+        database.updateUserPage();
+    }
+    else {
+        clearInterval(myInterval);
+    }
+    
+}, 50);
