@@ -65,38 +65,32 @@ function toggleFilters() {
 }
 
 
-function showHeader() {
+function loadMorePhotos() {
     
-    $("#header").attr("class", "show");
+    const photosElem = document.getElementById("photos");
+    let distanceFromBottom = photosElem.getBoundingClientRect().y + photosElem.clientHeight - window.innerHeight;
+    const imageHeight = parseInt(window.getComputedStyle(photosElem).getPropertyValue("--image-height"));
+    const totalRows = parseInt(window.getComputedStyle(photosElem).getPropertyValue("--total-rows"));
     
-}
-
-function updateScrollY() {
-
-    document.getElementById("photos").style.setProperty('--scroll-y', window.scrollY.toString() + "px");
-
-}
-
-
-document.onreadystatechange = function(e) {
-    
-    if (document.readyState === 'complete') {
-        showHeader();
+    if ((distanceFromBottom - imageHeight) <= 0) {
+        
+        photosElem.style.setProperty("--total-rows", totalRows + 4);
+        
     }
     
 }
+
 
 initializeList("type", typeFilters, true);
 initializeList("location", locationFilters, true);
 initializeList("lighting", lightingFilters, false);
 
 window.onload = function() {
-    showHeader();
-    database.updateUserPage();
+    setTimeout(function() {
+        database.updateUserPage();
+    }, 50);
 };
 
-window.onscroll = function() {
-    updateScrollY();
-}
+window.onscroll = loadMorePhotos;
 
 document.getElementById("filters").getElementsByTagName("div")[0].addEventListener('click', toggleFilters);

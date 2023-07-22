@@ -371,7 +371,7 @@ class Database {
             
         }
         
-        document.getElementById("photos").getElementsByTagName("h4")[0].innerHTML = `${this.totalPhotosCurrentlyVisible} photo${(this.totalPhotosCurrentlyVisible > 1) ? "s" : ""} loaded`;
+        document.getElementById("photos").getElementsByTagName("h4")[0].innerHTML = `${this.totalPhotosCurrentlyVisible} photo${(this.totalPhotosCurrentlyVisible > 1) ? "s" : ""}`;
         //this.updateUserPage();
         
     }
@@ -380,9 +380,11 @@ class Database {
     setUpFiltersSelector() {
         
         let boxes = document.getElementById("filters").getElementsByTagName("input");
+        
         for (let i = 0; i < boxes.length; i++) {
             boxes[i].addEventListener('change', (event) => {
                 this.updateFilters(event.currentTarget.className, event.currentTarget.id, event.currentTarget.checked);
+                document.getElementById("photos").style.setProperty("--total-rows", 5);
             });
         }
         
@@ -427,6 +429,8 @@ class Database {
         
         obj.currentPictures = newList;
         obj.updateUserPage();
+        
+        document.getElementById("photos").style.setProperty("--total-rows", 5);
         
     }
     
@@ -476,7 +480,7 @@ class Database {
         }
         
         let photos = document.getElementById("photos");
-        let newHTML = `<h4>${this.totalPhotosCurrentlyVisible} photo${(this.totalPhotosCurrentlyVisible > 1) ? "s" : ""} loaded</h4>`;
+        let newHTML = `<h4>${this.totalPhotosCurrentlyVisible} photo${(this.totalPhotosCurrentlyVisible > 1) ? "s" : ""}</h4>`;
         
         if (this.currentPictures.length > 0) {
             

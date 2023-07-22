@@ -41,8 +41,21 @@ a{
     width: 100%;
 }
 
+#links li.gallery{
+    background-color: #ddc2bf;
+}
 
-/****************** gallery ******************/
+#links li.gallery:hover{
+    height: var(--links-font-size) !important;
+    padding-bottom: calc((var(--header-height) - var(--links-font-size)) / 2) !important;
+}
+
+#links li.gallery > a:hover{
+    color: #c89c97 !important;
+}
+
+
+/****************** Gallery ******************/
 
 #content > div{
     padding: 125px 0 200px 0;
@@ -136,13 +149,18 @@ a{
 
 
 #photos{
+    --total-rows: 5;
+    --image-height: 500px;
+    
     display: grid;
     grid-template-columns: repeat(4, 300px);
+    grid-auto-rows: minmax(min-content, max-content);
     grid-gap: 20px;
     grid-auto-flow: row dense;
-    height: max-content;
+    max-height: calc((var(--total-rows) * (var(--image-height) + 40px)) - 20px);
     padding: 20px;
     padding-top: 0;
+    overflow: hidden;
 }
 
 #photos h4{
@@ -166,7 +184,7 @@ a{
 #photos div{
     position: relative;
     width: 100%;
-    height: 500px;
+    height: var(--image-height);
     margin: 6px 0 6px 0;
 }
 
@@ -452,12 +470,10 @@ a{
 @media screen and (max-width: 700px) {
 
     #photos{
+        --image-height: 300px;
+        
         grid-template-columns: repeat(2, 200px);
         margin: auto;
-    }
-    
-    #photos > div{
-        height: 300px;
     }
 
 }
@@ -484,11 +500,9 @@ a{
 @media screen and (max-width: 500px) {
 
     #photos{
+        --image-height: 200px;
+        
         grid-template-columns: repeat(2, 125px);
-    }
-    
-    #photos > div{
-        height: 200px;
     }
     
     #photos h3{
@@ -538,15 +552,13 @@ a{
 @media screen and (max-width: 340px) {
     
     #photos{
+        --image-height: 250px;
+        
         grid-template-columns: repeat(1, 175px);
     }
     
     #photos h4{
         grid-column: span 1;
-    }
-    
-    #photos div{
-        height: 250px;
     }
     
     #photos div.img1, #photos div.img11, #photos div.img17, #photos div.img26, #photos div.img29, #photos div.img31, #photos div.img35, #photos div.img56, #photos div.img61, #photos div.img62{
