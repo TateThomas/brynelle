@@ -494,6 +494,8 @@ class Database {
                 images[i].addEventListener('click', expandImage);
             }
             
+            document.getElementById("photos").className = "loaded";
+            
         }
         else {
             //photos.innerHTML = '<h2>An error occurred, please refresh.</h2>';
