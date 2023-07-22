@@ -5,14 +5,14 @@ let appFooter = `
             <div id="site-nav">
                 <h2>Navigate</h2>
                 <ul>
-                    <li><a href="https://www.brynelle.com/pricing">Pricing</a></li>
-                    <li><a href="https://www.brynelle.com/travel">Travel</a></li>
-                    <li><a href="https://www.brynelle.com/gallery">Gallery</a></li>
-                    <!--<li><a href="https://www.brynelle.com/events">Events</a></li>
-                    <li><a href="https://www.brynelle.com/clients">Clients</a></li>-->
-                    <li><a href="https://www.brynelle.com/about_me">About Me</a></li>
-                    <li><a href="https://www.brynelle.com/info">Info</a></li>
-                    <li><a href="https://www.brynelle.com/contact">Contact</a></li>
+                    <li><a href="https://brynelle.com/pricing">Pricing</a></li>
+                    <li><a href="https://brynelle.com/travel">Travel</a></li>
+                    <li><a href="https://brynelle.com/gallery">Gallery</a></li>
+                    <!--<li><a href="https://brynelle.com/events">Events</a></li>
+                    <li><a href="https://brynelle.com/clients">Clients</a></li>-->
+                    <li><a href="https://brynelle.com/about_me">About Me</a></li>
+                    <li><a href="https://brynelle.com/info">Info</a></li>
+                    <li><a href="https://brynelle.com/contact">Contact</a></li>
                 </ul>
             </div>
 
