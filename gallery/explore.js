@@ -92,6 +92,7 @@ document.getElementById("filters").getElementsByTagName("div")[0].addEventListen
 var myInterval = setInterval(function() {
     
     if (document.getElementById("photos").className == "not-loaded") {
+        database.changeSortingMethod();
         database.updateUserPage();
     }
     else {
