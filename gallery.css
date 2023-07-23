@@ -1,0 +1,481 @@
+@import "header.css";
+@import "footer.css";
+
+
+@font-face{
+    src: url(fonts/alta-regular.otf);
+    font-family: alta;
+}
+
+@font-face{
+    src: url(fonts/AnticallyRegular-OVox8.ttf);
+    font-family: antically;
+}
+
+@font-face{
+    src: url(fonts/DarlingtonDemo-z8xjG.ttf);
+    font-family: darlington;
+}
+
+
+/****************** All ******************/
+
+body{
+    --light-black: #404040;
+    
+    background-color: white;
+    margin: 0;
+}
+
+h1, h2, ul, li{
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    position: relative;
+    font-family: alta;
+    font-weight: normal;
+    text-decoration: none;
+    color: white;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+#content{
+    color: white;
+    overflow-x: hidden;
+    width: 100%;
+    z-index: 1;
+}
+
+#header.show #links li.gallery{
+    background-color: #ddc2bf;
+}
+
+#header.show #links li.gallery:hover{
+    height: var(--links-font-size) !important;
+    padding-bottom: calc((var(--header-height) - var(--links-font-size)) / 2) !important;
+}
+
+#header.show #links li.gallery > a:hover{
+    color: #c89c97 !important;
+}
+
+
+/****************** Top Page ******************/
+
+#top-page{
+    width: 100%;
+    padding; 100px;
+    overflow: hidden;
+}
+
+#top-page div.picture{
+    position: relative;
+    height: 800px;
+    z-index: 2;
+}
+
+#top-page div.picture::after{
+    /*
+        Credit to Fabien Snauwaert from Stack Overflow for writing the code for the curve, I only made minor adjustments: https://stackoverflow.com/questions/17202548/wavy-shape-with-css
+    */
+    content: "";
+    position: absolute;
+    bottom: 0;
+    display: block;
+    height: 175px;
+    width: 100vw;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 70 500 60' preserveAspectRatio='none'%3E%3Crect x='0' y='0' width='500' height='500' style='stroke: none; fill: transparent;' /%3E%3Cpath d='M0,100 C150,200 350,0 500,100 L500,00 L0,0 Z' style='stroke: none; fill: white;'%3E%3C/path%3E%3C/svg%3E");
+    background-size: 100% 100%;
+    transform: scaleY(-1);
+    z-index: 3;
+}
+
+#top-page div.picture img{
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#top-page div.picture h2{
+    position: absolute;
+    bottom: 200px;
+    left: 100px;
+    font-size: 60px;
+    font-family: antically;
+    z-index: 4;
+}
+
+#top-page div.info{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 150px;
+    background-color: white;
+    z-index: 4
+}
+
+div.button{
+    width: max-content;
+    margin: auto;
+    border: 2px solid var(--light-black);
+    border-radius: 30px;
+    transition: box-shadow 1s, background-color 1s;
+}
+
+div.button h3{
+    padding: 10px 15px 10px 15px;
+    margin: 0;
+    color: var(--light-black);
+    font-family: alta;
+    font-size: 30px;
+    font-weight: normal;
+}
+
+div.button:hover{
+    background-color: rgba(0, 0, 0, .03);
+    box-shadow: 0 0 15px rgba(0, 0, 0, .2);
+}
+
+
+/****************** Icons ******************/
+
+#icons{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    padding: 100px 0 100px 0;
+}
+
+#icons h1{
+    grid-column: span 2;
+    color: var(--light-black);
+    text-align: center;
+    font-size: 40px;
+    padding: 100px 0 100px 0;
+}
+
+#icons a > div{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 800px;
+    overflow: hidden;
+}
+
+#icons div div{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(circle, transparent, rgba(0, 0, 0, .35));
+    opacity: 0;
+    transition: opacity .75s;
+    z-index: 3;
+}
+
+#icons img{
+    position: absolute;
+    height: 105%;
+    width: 105%;
+    object-fit: cover;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    transition: filter .75s;
+    z-index: 2;
+}
+
+#icons a > div:hover img{
+    -webkit-filter: blur(3px);
+    filter: blur(3px);
+}
+
+#icons h2{
+    margin: auto;
+    font-size: 40px;
+    line-height: 100%;
+    z-index: 4;
+}
+
+#icons a > div:hover{
+    cursor: pointer;
+}
+
+#icons a > div:hover div{
+    opacity: 1;
+}
+
+.bottom{
+    object-position: bottom;
+}
+
+#icons a:last-child img{
+    object-position: left;
+}
+
+
+/****************** Instagram ******************/
+
+#ig{
+    display: flex;
+    padding: 0 100px 100px 100px;
+    margin: 100px 0 100px 0;
+}
+
+#ig h2{
+    width: 100%;
+    color: var(--light-black);
+    text-align: center;
+    font-size: 40px;
+    margin-top: auto;
+}
+
+#ig h3{
+    width: 100%;
+    text-align: center;
+    color: var(--light-black);
+    font-family: alta;
+    font-weight: normal;
+    margin-bottom: auto;
+}
+
+#ig div:first-child{
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    margin-left: auto;
+}
+
+#ig div:last-child{
+    width: 600px;
+    margin-right: auto;
+}
+
+/****************** Book ******************/
+
+#book div{
+    background-color: white;
+}
+
+
+#transition{
+    --transition-height: 650px;
+    
+    height: var(--transition-height);
+    position: relative;
+    background-color: transparent;
+    z-index: -1;
+}
+
+#transition img{
+    --transition-img-height: 610px;
+    
+    width: 100%;
+    height: var(--transition-img-height);
+    object-fit: cover;
+    position: absolute;
+    top: calc(var(--transition-height) - var(--transition-img-height));
+    object-position: bottom;
+}
+
+@media screen and (max-width: 1400px) {
+    
+    #top-page div.picture h2{
+        left: 75px;
+        font-size: 55px;
+    }
+    
+    #top-page div.picture::after{
+        height: 150px;
+    }
+    
+    #transition img{
+        width: 1400px;
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+    
+}
+
+@media screen and (max-width: 1000px) {
+    
+    #top-page div.picture h2{
+        bottom: 150px;
+        left: 50px;
+        font-size: 50px;
+    }
+    
+    #top-page div.picture::after{
+        height: 125px;
+    }
+    
+    div.button h3{
+        font-size: 25px;
+    }
+    
+    #icons a > div{
+        height: 600px;
+    }
+    
+    #icons h2{
+        font-size: 35px;
+    }
+
+    #ig h2{
+        font-size: 35px;
+    }
+
+    #ig h3{
+        font-size: 18px;
+    }
+    
+    #ig div:last-child{
+        width: auto;
+    }
+    
+}
+
+@media screen and (max-width: 800px) {
+    
+    #top-page div.picture h2{
+        left: 25px;
+        font-size: 40px;
+    }
+    
+    #top-page div.picture::after{
+        height: 100px;
+    }
+    
+    #icons h1{
+        font-size: 35px;
+    }
+    
+    #ig{
+        flex-direction: column;
+    }
+    
+    #ig h2{
+        font-size: 30px;
+    }
+
+    #ig h3{
+        font-size: 15px;
+    }
+    
+    #ig div:first-child{
+        margin: auto;
+    }
+    
+    #ig div:last-child{
+        margin: auto;
+    }
+    
+}
+
+@media screen and (max-width: 640px) {
+    
+    #top-page div.picture h2{
+        bottom: 125px;
+        font-size: 30px;
+    }
+    
+    #top-page div.picture::after{
+        height: 75px;
+    }
+    
+    div.button h3{
+        font-size: 20px;
+    }
+    
+    #icons a > div{
+        height: 450px;
+    }
+    
+    #icons h2{
+        font-size: 25px;
+    }
+    
+    #ig{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #ig h3{
+        font-size: 18px;
+    }
+    
+    #ig div:last-child{
+        width: 100%;
+    }
+    
+}
+
+@media screen and (max-width: 480px) {
+    
+    #top-page div.picture h2{
+        font-size: 25px;
+    }
+    
+    #top-page div.picture::after{
+        height: 50px;
+    }
+    
+    div.button h3{
+        padding: 10px 15px 10px 15px;
+        font-size: 16px;
+    }
+    
+    #icons{
+        grid-template-columns: 1fr;
+    }
+    
+    #icons h1{
+        grid-column: span 1;
+    }
+    
+    #icons a > div{
+        height: 600px;
+    }
+    
+    #icons h2{
+        font-size: 35px;
+    }
+    
+}
+
+@media screen and (max-width: 420px) {
+    
+    #top-page div.picture h2{
+        left: 15px;
+        font-size: 20px;
+    }
+    
+    #top-page div.picture::after{
+        height: 40px;
+    }
+    
+    #icons a > div{
+        height: 500px;
+    }
+    
+    #icons h2{
+        font-size: 30px;
+    }
+    
+    #ig{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
+    #ig h2{
+        font-size: 25px;
+    }
+
+    #ig h3{
+        font-size: 15px;
+    }
+    
+}
