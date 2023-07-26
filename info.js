@@ -234,7 +234,7 @@ function contentsFollow() {
     else if (computedDistance1 > 0) {
         contents.style.top = "0px";
     }
-    else if (((contents.getBoundingClientRect().y + extraDistance) > 0) || ((distanceFromBottomContents < distanceFromBottomInfo) && (computedDistance1 <= 0))) {
+    else if (((contents.getBoundingClientRect().y - extraDistance) > 0) || ((distanceFromBottomContents < distanceFromBottomInfo) && (computedDistance1 <= 0))) {
         contents.style.top = `${-1 * computedDistance1}px`;
     }
     else {
