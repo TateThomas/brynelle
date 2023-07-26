@@ -225,10 +225,16 @@ function contentsFollow() {
     
     let computedDistance1 = infoElem.getBoundingClientRect().y - extraDistance;
     
-    if (computedDistance1 > 0) {
+    if ((allInfoElem.getBoundingClientRect().y + extraDistance) > 0) {
+        const contentLists = contents.querySelectorAll(".show");
+        for (let i = 0; i < contentLists.length; i++) {
+            contentLists[i].className = "hidden";
+        }
+    }
+    else if (computedDistance1 > 0) {
         contents.style.top = "0px";
     }
-    else if (((contents.getBoundingClientRect().y - extraDistance) > 0) || ((distanceFromBottomContents < distanceFromBottomInfo) && (computedDistance1 <= 0))) {
+    else if (((contents.getBoundingClientRect().y + extraDistance) > 0) || ((distanceFromBottomContents < distanceFromBottomInfo) && (computedDistance1 <= 0))) {
         contents.style.top = `${-1 * computedDistance1}px`;
     }
     else {
