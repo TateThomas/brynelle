@@ -2,6 +2,7 @@
 #footer{
     --side-padding: 50px;
     
+    position: relative;
     background-color: #A17A64;
     border-top: 4px solid white;
     font-family: sans-serif;

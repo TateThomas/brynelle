@@ -42,7 +42,9 @@ let appFooter = `
             <ul>
                 <li>Brynelle Smith</li>
                 <li>•</li>
-                <li><a href="mailto:brynelle@hotmail.com">brynelle@hotmail.com</a></li>
+                <li><a href="tel:3853898089">(385) 389-8089</a></li>
+                <li>•</li>
+                <li><a href="mailto:brynellephoto@gmail.com">brynellephoto@gmail.com</a></li>
             </ul>
         </div>
 

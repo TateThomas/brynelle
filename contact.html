@@ -5,15 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0" />
     <title>Contact - Brynelle Photo</title>
-    <link rel="stylesheet" type="text/css" href="construction.css">
-    <style>
-        #links li.contact{
-            background-color: #ddc2bf;
-        }
-        #links li.contact > a:hover{
-            color: #c89c97 !important;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="contact.css">
 </head>
 
 <body>
@@ -21,12 +13,142 @@
     <header id="header" class="show"></header>
     <script async src="header.js"></script>
 
+    <div id="background-photo">
+        <img src="images/contact/goblin_valley.jpg">
+    </div>
+    
     <div id="content">
+        
+        <div id="form">
+        
+            <iframe name="hiddenConfirm" id="hiddenConfirm" style="display: none" onload="if(submitted){window.location='contact/success.html';}"></iframe>
+            <form action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSffOqFmF31uSwLqpY1u2azJ3-zLo0mdqa3BK_PqS8-T7sh7oA/formResponse" method="POST" target="hiddenConfirm" onsubmit="submitted=true">
+            
+                <div class="title">
+                    <h1>Request a booking</h1>
+                </div>
+                
+                <div class="multiple-answer">
+                    <h2>Name <span>*</span></h2>
+                    <div class="short-answer">
+                        <input class=" valid" type="text" name="entry.1103758896" placeholder="First name" required>
+                    </div>
+                    <div class="short-answer">
+                        <input class=" valid" type="text" name="entry.546681571" placeholder="Last name" required>
+                    </div>
+                </div>
+                
+                <div class="single-answer">
+                    <h2>Email <span>*</span></h2>
+                    <div class="short-answer">
+                        <input class=" valid" type="email" name="entry.1109865922" placeholder="example@email.com" required>
+                    </div>
+                </div>
+                
+                <div class="single-answer">
+                    <h2>Phone number (optional)</h2>
+                    <div class="short-answer">
+                        <input class="valid" type="text" name="entry.1954152825" placeholder="Your phone number" maxlength="17">
+                    </div>
+                </div>
+                
+                <div class="multiple-answer">
+                    <h2>Select session type <span>*</span></h2>
+                    <div class="dropdown">
+                        <select type="text" name="entry.382074405" required>
+                            <option value="" disabled selected>Choose your session</option>
+                            <option value="Wedding">Wedding</option>
+                            <option value="Elopement">Elopement</option>
+                            <option value="Couples">Couples</option>
+                            <option value="Family">Family</option>
+                            <option value="Maternity">Maternity</option>
+                            <option value="Newborn">Newborn</option>
+                            <option value="Portrait">Portrait</option>
+                            <option value="Graduation">Graduation</option>
+                            <option value="Branding">Branding</option>
+                            <option value="Interior">Interior</option>
+                            <option value="Fashion">Fashion</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                    <div class="short-answer">
+                        <input class="hidden valid" type="text" name="entry.1820133147" placeholder="Please specify">
+                    </div>
+                </div>
+                
+                <div class="multiple-answer">
+                    <h2>Date <span>*</span></h2>
+                    <div class="single-choice valid">
+                        <label for="i25">
+                            <input type="radio" name="entry.843492475" value="I'm flexible" required>
+                            <span>I'm flexible</span>
+                        </label>
+                        <label for="i29">
+                            <input type="radio" name="entry.843492475" value="I have a specific date in mind" required>
+                            <span>I have a specific date in mind</span>
+                        </label>
+                    </div>
+                    <div class="choose-date hidden">
+                        <label for="explain">Date</label>
+                        <input name="entry.165224862" type="date">
+                    </div>
+                    <div class="choose-time hidden">
+                        <label for="explain">Time (optional)</label>
+                        <input name="entry.1034218897" type="time">
+                    </div>
+                </div>
+                
+                <div class="single-answer">
+                    <h2>Do you have a location in mind? (optional)</h2>
+                    <div class="short-answer">
+                        <input class=" valid" type="text" name="entry.22383239" placeholder="Your location">
+                    </div>
+                </div>
+                
+                <div class="single-answer centered">
+                    <h2>Tell me more about you and what your dream photoshoot session looks like:</h2>
+                    <div class="long-answer">
+                        <textarea name="entry.1005791265" placeholder="Help me make this the best experience for you :)"></textarea>
+                    </div>
+                </div>
+                
+                <div class="submit-button">
+                    <button type="submit">Submit</button>
+                </div>
+                
+            </form>
+        
+        </div>
+        
+        <div id="contact">
+        
+            <h2>If you have any questions, don't hesitate to reach out!</h2>
+            <h2>I'm available through:</h2>
+            
+            <ul>
+            
+                <li>
+                    <h2>Text/Call: <a href="tel:3853898089">(385) 389-8089</a></h2>
+                </li>
+                
+                <li>
+                    <h2>Email: <a href="mailto:brynellephoto@gmail.com">brynellephoto@gmail.com</a></h2>
+                </li>
+                
+                <li>
+                    <h2><a href="https://instagram.com/brynellephoto/">Instagram</a></h2>
+                </li>
+            
+            </ul>
+        
+        </div>
         
     </div>
     
     <footer id="app-footer"></footer>
     <script async src="footer.js"></script>
+    
+    <script src="contact.js"></script>
     
 </body>
 
