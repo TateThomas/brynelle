@@ -90,14 +90,14 @@ class Database {
         
         const obj = this;
         const dataProperties = [
-            ["ids", "./data/json/ids.json", []],
-            ["pictures", "./data/json/pictures.json", []],
-            ["dates", "./data/json/dates.json", []],
-            ["photoshoots", "./data/json/photoshoots.json", []],
-            ["priorities", "./data/json/priorities.json", {}],
-            ["types", "./data/json/types.json", {}],
-            ["locations", "./data/json/locations.json", {}],
-            ["lightings", "./data/json/lightings.json", {}]
+            ["ids", "../js/database/json/ids.json", []],
+            ["pictures", "../js/database/json/pictures.json", []],
+            ["dates", "../js/database/json/dates.json", []],
+            ["photoshoots", "../js/database/json/photoshoots.json", []],
+            ["priorities", "../js/database/json/priorities.json", {}],
+            ["types", "../js/database/json/types.json", {}],
+            ["locations", "../js/database/json/locations.json", {}],
+            ["lightings", "../js/database/json/lightings.json", {}]
         ];
         
         loadImages();

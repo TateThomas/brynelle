@@ -33,7 +33,9 @@ let appFooter = `
             </div>
 
             <div id="inclusive">
-                <h2>LGBTQIA+</h2>
+                <div>
+                    <h2>LGBTQIA+</h2>
+                </div>
                 <h2> friendly</h2>
             </div>
         </div>
