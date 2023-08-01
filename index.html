@@ -5,26 +5,51 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0"/>
         <title>Brynelle Photo</title>
-        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
         <!--<script src="/frameworks/jquery-3.7.0.js"></script>-->
-        <script src="/frameworks/jquery-3.7.0.min.js">
+        <script src="frameworks/jquery-3.7.0.min.js">
         </script>
     </head>
 
     <body>
 
         <header id="header" class="hidden"></header>
-        <script async src="header.js"></script>
+        <script async src="js/header.js"></script>
 
         <div id="content">
             
             <div id="top-page">
                 
                 <div id="images">
-                    <img class="show" src="images/main/top_page/arches.jpg" onContextMenu="return false;">
-                    <img class="hidden" src="images/main/top_page/goblin_valley.jpg" onContextMenu="return false;">
-                    <img class="hidden" src="images/main/top_page/salt_flats.jpg" onContextMenu="return false;">
-                    <img class="hidden" src="images/main/top_page/salt_lake.jpg" onContextMenu="return false;">
+                    
+                    <picture>
+                        <source type="image/avif" srcset="./images/main/arches.avif">
+                        <source type="image/webp" srcset="./images/main/arches.webp">
+                        <source type="image/jpg" srcset="./images/main/arches.jpg">
+                        <img class="show" src="./images/main/arches.avif" alt="Couple holding hands under moab arch" onContextMenu="return false;">
+                    </picture>
+                    
+                    <picture>
+                        <source type="image/avif" srcset="./images/main/goblin_valley.avif">
+                        <source type="image/webp" srcset="./images/main/goblin_valley.webp">
+                        <source type="image/jpg" srcset="./images/main/goblin_valley.jpg">
+                        <img class="hidden" src="./images/main/goblin_valley.avif" alt="Bridals at goblin valley" onContextMenu="return false;">
+                    </picture>
+                    
+                    <picture>
+                        <source type="image/avif" srcset="./images/main/salt_flats.avif">
+                        <source type="image/webp" srcset="./images/main/salt_flats.webp">
+                        <source type="image/jpg" srcset="./images/main/salt_flats.jpg">
+                        <img class="hidden" src="./images/main/salt_flats.avif" alt="Boy carrying girl at sunset at the utah salt flats" onContextMenu="return false;">
+                    </picture>
+                    
+                    <picture>
+                        <source type="image/avif" srcset="./images/main/salt_lake.avif">
+                        <source type="image/webp" srcset="./images/main/salt_lake.webp">
+                        <source type="image/jpg" srcset="./images/main/salt_lake.jpg">
+                        <img class="hidden" src="./images/main/salt_lake.avif" alt="Bridals in downtown salt lake" onContextMenu="return false;">
+                    </picture>
+                    
                 </div>
                 
                 <h2>Capturing the Beauty</h2>
@@ -37,16 +62,62 @@
             <div id="mid-page">
                 
                 <ul id="arches">
-                    <li><a href="https://brynelle.com/pricing"><img src="images/main/arches/couple_sitting.jpg" onContextMenu="return false;"><h2>Pricing</h2></a></li>
-                    <li><a href="https://brynelle.com/travel"><img src="images/main/arches/under_arch.jpg" onContextMenu="return false;"><h2>travel</h2></a></li>
-                    <li><a href="https://brynelle.com/gallery"><img src="images/main/arches/holding_baby.jpg" onContextMenu="return false;"><h2>gallery</h2></a></li>
+                    
+                    <li>
+                        <a href="https://brynelle.com/pricing">
+                            
+                            <picture>
+                                <source type="image/avif" srcset="./images/main/couple_sitting.avif">
+                                <source type="image/webp" srcset="./images/main/couple_sitting.webp">
+                                <source type="image/jpg" srcset="./images/main/couple_sitting.jpg">
+                                <img src="./images/main/couple_sitting.avif" alt="Girl resting head on shoulder at the utah salt flats">
+                            </picture>
+                            
+                            <h2>pricing</h2>
+                            
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="https://brynelle.com/travel">
+                            
+                            <picture>
+                                <source type="image/avif" srcset="./images/main/under_arch.avif">
+                                <source type="image/webp" srcset="./images/main/under_arch.webp">
+                                <source type="image/jpg" srcset="./images/main/under_arch.jpg">
+                                <img src="./images/main/under_arch.avif" alt="Couple admiring each other under a moab arch">
+                            </picture>
+                            
+                            <h2>travel</h2>
+                            
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="https://brynelle.com/gallery">
+                            
+                            <picture>
+                                <source type="image/avif" srcset="./images/main/holding_baby.avif">
+                                <source type="image/webp" srcset="./images/main/holding_baby.webp">
+                                <source type="image/jpg" srcset="./images/main/holding_baby.jpg">
+                                <img src="./images/main/holding_baby.avif" alt="Husband and wife admire their newborn baby">
+                            </picture>
+                            
+                            <h2>gallery</h2>
+                            
+                        </a>
+                    </li>
+                    
                     <!--<li><h3>Quick Links</h3></li>-->
+                    
                 </ul>
                 
             </div>
             
             <div id="break">
-                <h2>Meet your photographer</h2>
+                <div>
+                    <h2>Meet your photographer</h2>
+                </div>
             </div>
             
             <div id="lower-page">
@@ -70,8 +141,8 @@
                             <div>
 
                                 <div id="about-me-pictures">
-                                    <img src="images/main/about_me/salt_flats_kick.jpg" loading="lazy">
-                                    <img src="images/main/about_me/IMG_E3420.JPG" loading="lazy">
+                                    <img src="images/main/salt_flats_kick.jpg" loading="lazy">
+                                    <img src="images/main/IMG_E3420.JPG" loading="lazy">
                                 </div>
 
                                 <div id="about-me-desc">
@@ -105,28 +176,75 @@
                                 <div class="content">
                                     
                                     <div>
-                                        <img src="images/main/my_work/slide_0/red_rock_wedding_flowers.jpg" loading="lazy">
+                                        <picture>
+                                            <source type="image/avif" srcset="./images/main/red_rock_wedding_flowers.avif">
+                                            <source type="image/webp" srcset="./images/main/red_rock_wedding_flowers.webp">
+                                            <source type="image/jpg" srcset="./images/main/red_rock_wedding_flowers.jpg">
+                                            <img src="./images/main/red_rock_wedding_flowers.avif" alt="Couple posing for bridals at goblin valley" loading="lazy">
+                                        </picture>
                                     </div>
+                                    
                                     <div>
-                                        <img src="images/main/my_work/slide_0/fancy_hotel_in_bed.jpg" loading="lazy">
+                                        <picture>
+                                            <source type="image/avif" srcset="./images/main/fancy_hotel_in_bed.avif">
+                                            <source type="image/webp" srcset="./images/main/fancy_hotel_in_bed.webp">
+                                            <source type="image/jpg" srcset="./images/main/fancy_hotel_in_bed.jpg">
+                                            <img src="./images/main/fancy_hotel_in_bed.avif" alt="Bride kissing groom on las vegas hotel bed" loading="lazy">
+                                        </picture>
                                     </div>
+                                    
                                     <div>
-                                        <img src="images/main/my_work/slide_0/salt_flats_wedding_running.jpg" loading="lazy">
+                                        <picture>
+                                            <source type="image/avif" srcset="./images/main/salt_flats_wedding_running.avif">
+                                            <source type="image/webp" srcset="./images/main/salt_flats_wedding_running.webp">
+                                            <source type="image/jpg" srcset="./images/main/salt_flats_wedding_running.jpg">
+                                            <img src="./images/main/salt_flats_wedding_running.avif" alt="Couple holding hands and running away for their bridals at the utah salt flats" loading="lazy">
+                                        </picture>
                                     </div>
+                                    
                                     <div>
-                                        <img src="images/main/my_work/slide_0/sand_dunes_hugging.jpg" loading="lazy">
+                                        <picture>
+                                            <source type="image/avif" srcset="./images/main/sand_dunes_hugging.avif">
+                                            <source type="image/webp" srcset="./images/main/sand_dunes_hugging.webp">
+                                            <source type="image/jpg" srcset="./images/main/sand_dunes_hugging.jpg">
+                                            <img src="./images/main/sand_dunes_hugging.avif" alt="Couple sitting and hugging at the sand dunes for their engagements" loading="lazy">
+                                        </picture>
                                     </div>
+                                    
                                     <div>
-                                        <img src="images/main/my_work/slide_0/hands_in_pockets_kiss.jpg" loading="lazy">
+                                        <picture>
+                                            <source type="image/avif" srcset="./images/main/hands_in_pockets_kiss.avif">
+                                            <source type="image/webp" srcset="./images/main/hands_in_pockets_kiss.webp">
+                                            <source type="image/jpg" srcset="./images/main/hands_in_pockets_kiss.jpg">
+                                            <img src="./images/main/hands_in_pockets_kiss.avif" alt="Couple kissing with hands down back pockets at the utah salt flats" loading="lazy">
+                                        </picture>
                                     </div>
+                                    
                                     <div>
-                                        <img src="images/main/my_work/slide_0/dead_horse_point_scenic_wedding.jpg" loading="lazy">
+                                        <picture>
+                                            <source type="image/avif" srcset="./images/main/dead_horse_point_scenic_wedding.avif">
+                                            <source type="image/webp" srcset="./images/main/dead_horse_point_scenic_wedding.webp">
+                                            <source type="image/jpg" srcset="./images/main/dead_horse_point_scenic_wedding.jpg">
+                                            <img src="./images/main/dead_horse_point_scenic_wedding.avif" alt="Scenic shot of couple doing their bridals at dead horse point" loading="lazy">
+                                        </picture>
                                     </div>
+                                    
                                     <div>
-                                        <img src="images/main/my_work/slide_0/forest_spiderman_kiss.jpg" loading="lazy">
+                                        <picture>
+                                            <source type="image/avif" srcset="./images/main/forest_spiderman_kiss.avif">
+                                            <source type="image/webp" srcset="./images/main/forest_spiderman_kiss.webp">
+                                            <source type="image/jpg" srcset="./images/main/forest_spiderman_kiss.jpg">
+                                            <img src="./images/main/forest_spiderman_kiss.avif" alt="Guy kisses girl upside down while sitting at a park" loading="lazy">
+                                        </picture>
                                     </div>
+                                    
                                     <div>
-                                        <img src="images/main/my_work/slide_0/goblin_valley_wedding_holding_hand.jpg" loading="lazy">
+                                        <picture>
+                                            <source type="image/avif" srcset="./images/main/goblin_valley_wedding_holding_hand.avif">
+                                            <source type="image/webp" srcset="./images/main/goblin_valley_wedding_holding_hand.webp">
+                                            <source type="image/jpg" srcset="./images/main/goblin_valley_wedding_holding_hand.jpg">
+                                            <img src="./images/main/goblin_valley_wedding_holding_hand.avif" alt="Couple holding hands for their bridals at goblin valley" loading="lazy">
+                                        </picture>
                                     </div>
                                     
                                     <div></div>
@@ -245,7 +363,7 @@
             <div id="more-travel">
                 
                 <div>
-                    <img src="images/main/top_page/arches.jpg" loading="lazy">
+                    <img src="images/main/arches.jpg" loading="lazy">
                 </div>
                 
                 <h2>Want me to travel to you? I'd love to!</h2>
@@ -271,7 +389,12 @@
                 </div>
                 
                 <div id="transition">
-                    <img src="images/goblin_valley_transition.jpg" onContextMenu="return false;" loading="lazy">
+                    <picture>
+                        <source type="image/avif" srcset="./images/goblin_valley_transition.avif">
+                        <source type="image/webp" srcset="./images/goblin_valley_transition.webp">
+                        <source type="image/jpg" srcset="./images/goblin_valley_transition.jpg">
+                        <img src="./images/goblin_valley_transition.avif" alt="Couple kissing in goblin valley" loading="lazy">
+                    </picture>
                 </div>
                 
             </div>
@@ -279,9 +402,9 @@
         </div>
         
         <footer id="app-footer"></footer>
-        <script async src="footer.js"></script>
+        <script async src="js/footer.js"></script>
         
-        <script src="main.js"></script>
+        <script src="js/main.js"></script>
     
     </body>
     
