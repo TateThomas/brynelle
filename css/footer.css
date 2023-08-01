@@ -46,7 +46,15 @@
     letter-spacing: 2px;
 }
 
+#inclusive div{
+    display: inline-block;
+    padding: 10px;
+    margin: 0;
+    border-radius: 10px;
+}
+
 #inclusive h2:first-child{
+    padding-bottom: 0;
     font-weight: bold;
     background: linear-gradient(90deg, #f00000, #f00000, #ff8000, #ff8000, #ffff00, #ffff00, #007940, #007940 , #4040ff, #4040ff, #a000c0, #a000c0) ;
     -webkit-background-clip: text;

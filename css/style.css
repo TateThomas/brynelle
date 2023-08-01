@@ -1,19 +1,19 @@
-@import "header.css";
-@import "footer.css";
+@import "/css/header.css";
+@import "/css/footer.css";
 
 
 @font-face{
-    src: url(fonts/alta-regular.otf);
+    src: url(/fonts/title/alta-regular.otf);
     font-family: alta;
 }
 
 @font-face{
-    src: url(fonts/AnticallyRegular-OVox8.ttf);
+    src: url(/fonts/cursive/AnticallyRegular-OVox8.ttf);
     font-family: antically;
 }
 
 @font-face{
-    src: url(fonts/DarlingtonDemo-z8xjG.ttf);
+    src: url(/fonts/cursive/DarlingtonDemo-z8xjG.ttf);
     font-family: darlington;
 }
 
@@ -22,9 +22,18 @@
 
 body{
     --light-black: #404040;
+    --cream: #fff6f0;
+    --dusty-rose: #ebd2c5;
+    --peachy: #ffdfd5;
+    --oatmeal: #f2dac8;
+    --toasted-marshmallow: #d9c0a4;
+    --terracotta: #d8a489;
+    --copper: #cd8662;
+    --dove: #f2eae4;
+    --apricot: #ffe3cd;
+    --sand: #e8bc8c;
     --lower-gradient-z: 2;
     
-    background-color: white;
     margin: 0;
 }
 
@@ -145,6 +154,7 @@ a{
     display: flex;
     flex-direction: column;
     padding-bottom: 100px;
+    margin-bottom: 100px;
 }
 
 #arches{
@@ -167,7 +177,7 @@ a{
     top: 0;
     z-index: calc(var(--lower-gradient-z) + 4);
     border-radius: 1000px;
-    border: var(--arches-border-width) solid white;
+    border: var(--arches-border-width) solid var(--cream);
     opacity: 0;
     transition: box-shadow var(--shadow-animation), opacity var(--opacity-animation), top 2s;
 }
@@ -182,7 +192,7 @@ a{
 }
 
 #arches.done li:hover{
-    box-shadow: 0px 0px 30px rgba(0, 0, 0, .5);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .2);
     top: calc(var(--arches-offset) - 10px);
 }
 
@@ -201,6 +211,7 @@ a{
 }
 
 #arches h2{
+    color: var(--cream);
     width: 100%;
     bottom: 60%;
     font-size: 30px;
@@ -245,6 +256,12 @@ a{
 /****************** Break ******************/
 
 #break{
+    display: flex;
+    width: 100%;
+    height: 301px;
+}
+
+#break > div{
     --text-width: 321px;
     
     position: relative;
@@ -260,7 +277,7 @@ a{
     transition: width 1s;
 }
 
-#break.show{
+#break.show > div{
     width: 1200px;
 }
 

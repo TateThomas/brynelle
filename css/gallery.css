@@ -1,19 +1,19 @@
-@import "header.css";
-@import "footer.css";
+@import "/css/header.css";
+@import "/css/footer.css";
 
 
 @font-face{
-    src: url(fonts/alta-regular.otf);
+    src: url(/fonts/title/alta-regular.otf);
     font-family: alta;
 }
 
 @font-face{
-    src: url(fonts/AnticallyRegular-OVox8.ttf);
+    src: url(/fonts/cursive/AnticallyRegular-OVox8.ttf);
     font-family: antically;
 }
 
 @font-face{
-    src: url(fonts/DarlingtonDemo-z8xjG.ttf);
+    src: url(/fonts/cursive/DarlingtonDemo-z8xjG.ttf);
     font-family: darlington;
 }
 
