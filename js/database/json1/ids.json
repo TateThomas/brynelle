@@ -1,0 +1,1805 @@
+[
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "goblin-valley": false,
+                    "moab": false,
+                    "desert": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class='img0 show normal'>\n                    <div>\n                        <h3>goblin valley</h3>\n                    </div>\n                    <img src='/images/gallery/0.JPG' loading='lazy'>\n                    <div>\n                        <h3>Sun Nov 21 2021</h3>\n                    </div>\n                </div>\n                "
+        },
+        "id": 0,
+        "picture": 0,
+        "date": 3,
+        "photoshoot": 40,
+        "priority": "d",
+        "priorityId": 7,
+        "type": "weddings",
+        "location": {
+            "goblin-valley": 0,
+            "moab": 0,
+            "desert": 0
+        },
+        "lighting": "flash"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "sand-dunes": false,
+                    "desert": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class='img1 show normal'>\n                    <div>\n                        <h3>sand dunes</h3>\n                    </div>\n                    <img src='/images/gallery/1.JPG' loading='lazy'>\n                    <div>\n                        <h3>Sat Apr 09 2022</h3>\n                    </div>\n                </div>\n                "
+        },
+        "id": 1,
+        "picture": 1,
+        "date": 35,
+        "photoshoot": 50,
+        "priority": "c",
+        "priorityId": 18,
+        "type": "engagements",
+        "location": {
+            "sand-dunes": 0,
+            "desert": 1
+        },
+        "lighting": "full-sun"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "antelope-island": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class='img2 show normal'>\n                    <div>\n                        <h3>antelope island</h3>\n                    </div>\n                    <img src='/images/gallery/2.JPG' loading='lazy'>\n                    <div>\n                        <h3>Mon May 02 2022</h3>\n                    </div>\n                </div>\n                "
+        },
+        "id": 2,
+        "picture": 2,
+        "date": 36,
+        "photoshoot": 19,
+        "priority": "c",
+        "priorityId": 8,
+        "type": "bridals",
+        "location": {
+            "antelope-island": 0
+        },
+        "lighting": "full-sun"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "mountains": false,
+                    "roadside": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class='img3 show normal'>\n                    <div>\n                        <h3>mountains</h3>\n                    </div>\n                    <img src='/images/gallery/3.JPG' loading='lazy'>\n                    <div>\n                        <h3>Sun Oct 16 2022</h3>\n                    </div>\n                </div>\n                "
+        },
+        "id": 3,
+        "picture": 3,
+        "date": 46,
+        "photoshoot": 0,
+        "priority": "c",
+        "priorityId": 0,
+        "type": "couples",
+        "location": {
+            "mountains": 0,
+            "roadside": 0
+        },
+        "lighting": "full-sun"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "salt-lake": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class='img4 show normal'>\n                    <div>\n                        <h3>salt lake</h3>\n                    </div>\n                    <img src='/images/gallery/4.JPG' loading='lazy'>\n                    <div>\n                        <h3>Sat Apr 15 2023</h3>\n                    </div>\n                </div>\n                "
+        },
+        "id": 4,
+        "picture": 4,
+        "date": 47,
+        "photoshoot": 6,
+        "priority": "d",
+        "priorityId": 0,
+        "type": "friends",
+        "location": {
+            "salt-lake": 0
+        },
+        "lighting": "full-sun"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "antelope-island": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class='img5 show normal'>\n                    <div>\n                        <h3>antelope island</h3>\n                    </div>\n                    <img src='/images/gallery/5.JPG' loading='lazy'>\n                    <div>\n                        <h3>Mon May 02 2022</h3>\n                    </div>\n                </div>\n                "
+        },
+        "id": 5,
+        "picture": 5,
+        "date": 37,
+        "photoshoot": 18,
+        "priority": "c",
+        "priorityId": 7,
+        "type": "bridals",
+        "location": {
+            "antelope-island": 1
+        },
+        "lighting": "full-sun"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "goblin-valley": false,
+                    "moab": false,
+                    "desert": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class='img6 show normal'>\n                    <div>\n                        <h3>goblin valley</h3>\n                    </div>\n                    <img src='/images/gallery/6.JPG' loading='lazy'>\n                    <div>\n                        <h3>Sun Nov 21 2021</h3>\n                    </div>\n                </div>\n                "
+        },
+        "id": 6,
+        "picture": 6,
+        "date": 6,
+        "photoshoot": 42,
+        "priority": "e",
+        "priorityId": 1,
+        "type": "couples",
+        "location": {
+            "goblin-valley": 1,
+            "moab": 1,
+            "desert": 2
+        },
+        "lighting": "full-sun"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "goblin-valley": false,
+                    "moab": false,
+                    "desert": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class='img7 show normal'>\n                    <div>\n                        <h3>goblin valley</h3>\n                    </div>\n                    <img src='/images/gallery/7.JPG' loading='lazy'>\n                    <div>\n                        <h3>Sun Nov 21 2021</h3>\n                    </div>\n                </div>\n                "
+        },
+        "id": 7,
+        "picture": 7,
+        "date": 7,
+        "photoshoot": 41,
+        "priority": "b",
+        "priorityId": 14,
+        "type": "couples",
+        "location": {
+            "goblin-valley": 2,
+            "moab": 2,
+            "desert": 3
+        },
+        "lighting": "golden-hour"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "little-white-chapel": false,
+                    "las-vegas": false,
+                    "roadside": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class='img8 show normal'>\n                    <div>\n                        <h3>little white-chapel</h3>\n                    </div>\n                    <img src='/images/gallery/8.JPG' loading='lazy'>\n                    <div>\n                        <h3>Thu Jun 23 2022</h3>\n                    </div>\n                </div>\n                "
+        },
+        "id": 8,
+        "picture": 8,
+        "date": 38,
+        "photoshoot": 22,
+        "priority": "b",
+        "priorityId": 8,
+        "type": "weddings",
+        "location": {
+            "little-white-chapel": 0,
+            "las-vegas": 0,
+            "roadside": 1
+        },
+        "lighting": "full-sun"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "antelope-island": false,
+                    "roadside": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class='img9 show normal'>\n                    <div>\n                        <h3>antelope island</h3>\n                    </div>\n                    <img src='/images/gallery/9.JPG' loading='lazy'>\n                    <div>\n                        <h3>Fri Apr 21 2023</h3>\n                    </div>\n                </div>\n                "
+        },
+        "id": 9,
+        "picture": 9,
+        "date": 48,
+        "photoshoot": 16,
+        "priority": "d",
+        "priorityId": 3,
+        "type": "portraits",
+        "location": {
+            "antelope-island": 2,
+            "roadside": 2
+        },
+        "lighting": "full-sun"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "las-vegas": false,
+                    "studio": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class='img10 show normal'>\n                    <div>\n                        <h3>las vegas</h3>\n                    </div>\n                    <img src='/images/gallery/10.JPG' loading='lazy'>\n                    <div>\n                        <h3>Thu Jun 23 2022</h3>\n                    </div>\n                </div>\n                "
+        },
+        "id": 10,
+        "picture": 10,
+        "date": 39,
+        "photoshoot": 54,
+        "priority": "c",
+        "priorityId": 20,
+        "type": "couples",
+        "location": {
+            "las-vegas": 1,
+            "studio": 0
+        },
+        "lighting": "indoor"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "las-vegas": false,
+                    "studio": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class='img11 show normal'>\n                    <div>\n                        <h3>las vegas</h3>\n                    </div>\n                    <img src='/images/gallery/11.JPG' loading='lazy'>\n                    <div>\n                        <h3>Thu Jun 23 2022</h3>\n                    </div>\n                </div>\n                "
+        },
+        "id": 11,
+        "picture": 11,
+        "date": 40,
+        "photoshoot": 53,
+        "priority": "d",
+        "priorityId": 10,
+        "type": "couples",
+        "location": {
+            "las-vegas": 2,
+            "studio": 1
+        },
+        "lighting": "indoor"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "antelope-island": false,
+                    "roadside": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class='img12 show normal'>\n                    <div>\n                        <h3>antelope island</h3>\n                    </div>\n                    <img src='/images/gallery/12.JPG' loading='lazy'>\n                    <div>\n                        <h3>Fri Apr 21 2023</h3>\n                    </div>\n                </div>\n                "
+        },
+        "id": 12,
+        "picture": 12,
+        "date": 49,
+        "photoshoot": 15,
+        "priority": "d",
+        "priorityId": 2,
+        "type": "portraits",
+        "location": {
+            "antelope-island": 3,
+            "roadside": 3
+        },
+        "lighting": "full-sun"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "salt-lake": false,
+                    "downtown": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class='img13 show normal'>\n                    <div>\n                        <h3>salt lake</h3>\n                    </div>\n                    <img src='/images/gallery/13.JPG' loading='lazy'>\n                    <div>\n                        <h3>Fri Feb 04 2022</h3>\n                    </div>\n                </div>\n                "
+        },
+        "id": 13,
+        "picture": 13,
+        "date": 8,
+        "photoshoot": 39,
+        "priority": "b",
+        "priorityId": 13,
+        "type": "bridals",
+        "location": {
+            "salt-lake": 1,
+            "downtown": 0
+        },
+        "lighting": "full-sun"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "salt-lake": false,
+                    "downtown": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class='img14 show normal'>\n                    <div>\n                        <h3>salt lake</h3>\n                    </div>\n                    <img src='/images/gallery/14.JPG' loading='lazy'>\n                    <div>\n                        <h3>Fri Feb 04 2022</h3>\n                    </div>\n                </div>\n                "
+        },
+        "id": 14,
+        "picture": 14,
+        "date": 9,
+        "photoshoot": 38,
+        "priority": "c",
+        "priorityId": 15,
+        "type": "bridals",
+        "location": {
+            "salt-lake": 2,
+            "downtown": 1
+        },
+        "lighting": "blue-hour"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "salt-lake": false,
+                    "downtown": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class='img15 show normal'>\n                    <div>\n                        <h3>salt lake</h3>\n                    </div>\n                    <img src='/images/gallery/15.JPG' loading='lazy'>\n                    <div>\n                        <h3>Fri Feb 04 2022</h3>\n                    </div>\n                </div>\n                "
+        },
+        "id": 15,
+        "picture": 15,
+        "date": 10,
+        "photoshoot": 37,
+        "priority": "c",
+        "priorityId": 14,
+        "type": "bridals",
+        "location": {
+            "salt-lake": 3,
+            "downtown": 2
+        },
+        "lighting": "blue-hour"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "salt-lake": false,
+                    "downtown": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class='img16 show normal'>\n                    <div>\n                        <h3>salt lake</h3>\n                    </div>\n                    <img src='/images/gallery/16.JPG' loading='lazy'>\n                    <div>\n                        <h3>Fri Feb 04 2022</h3>\n                    </div>\n                </div>\n                "
+        },
+        "id": 16,
+        "picture": 16,
+        "date": 11,
+        "photoshoot": 36,
+        "priority": "d",
+        "priorityId": 6,
+        "type": "bridals",
+        "location": {
+            "salt-lake": 4,
+            "downtown": 3
+        },
+        "lighting": "full-sun"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "salt-lake": false,
+                    "downtown": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class='img17 show normal'>\n                    <div>\n                        <h3>salt lake</h3>\n                    </div>\n                    <img src='/images/gallery/17.JPG' loading='lazy'>\n                    <div>\n                        <h3>Fri Feb 04 2022</h3>\n                    </div>\n                </div>\n                "
+        },
+        "id": 17,
+        "picture": 17,
+        "date": 12,
+        "photoshoot": 17,
+        "priority": "b",
+        "priorityId": 5,
+        "type": "couples",
+        "location": {
+            "salt-lake": 5,
+            "downtown": 4
+        },
+        "lighting": "sunrise"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "parks": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class='img18 show normal'>\n                    <div>\n                        <h3>parks</h3>\n                    </div>\n                    <img src='/images/gallery/18.JPG' loading='lazy'>\n                    <div>\n                        <h3>Fri Feb 04 2022</h3>\n                    </div>\n                </div>\n                "
+        },
+        "id": 18,
+        "picture": 18,
+        "date": 13,
+        "photoshoot": 11,
+        "priority": "c",
+        "priorityId": 5,
+        "type": "couples",
+        "location": {
+            "parks": 0
+        },
+        "lighting": "sunrise"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "mountains": false,
+                    "forest": false,
+                    "snow": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class='img19 show normal'>\n                    <div>\n                        <h3>mountains</h3>\n                    </div>\n                    <img src='/images/gallery/19.JPG' loading='lazy'>\n                    <div>\n                        <h3>Fri Feb 04 2022</h3>\n                    </div>\n                </div>\n                "
+        },
+        "id": 19,
+        "picture": 19,
+        "date": 14,
+        "photoshoot": 44,
+        "priority": "b",
+        "priorityId": 15,
+        "type": "bridals",
+        "location": {
+            "mountains": 1,
+            "forest": 0,
+            "snow": 0
+        },
+        "lighting": "full-sun"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "mountains": false,
+                    "forest": false,
+                    "snow": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class='img20 show normal'>\n                    <div>\n                        <h3>mountains</h3>\n                    </div>\n                    <img src='/images/gallery/20.JPG' loading='lazy'>\n                    <div>\n                        <h3>Fri Feb 04 2022</h3>\n                    </div>\n                </div>\n                "
+        },
+        "id": 20,
+        "picture": 20,
+        "date": 15,
+        "photoshoot": 43,
+        "priority": "c",
+        "priorityId": 16,
+        "type": "bridals",
+        "location": {
+            "mountains": 2,
+            "forest": 1,
+            "snow": 1
+        },
+        "lighting": "full-sun"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "mountains": false,
+                    "forest": false,
+                    "snow": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class='img21 show normal'>\n                    <div>\n                        <h3>mountains</h3>\n                    </div>\n                    <img src='/images/gallery/21.JPG' loading='lazy'>\n                    <div>\n                        <h3>Fri Feb 04 2022</h3>\n                    </div>\n                </div>\n                "
+        },
+        "id": 21,
+        "picture": 21,
+        "date": 16,
+        "photoshoot": 57,
+        "priority": "b",
+        "priorityId": 19,
+        "type": "couples",
+        "location": {
+            "mountains": 3,
+            "forest": 2,
+            "snow": 2
+        },
+        "lighting": "sunrise"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "mountains": false,
+                    "forest": false,
+                    "snow": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class='img22 show normal'>\n                    <div>\n                        <h3>mountains</h3>\n                    </div>\n                    <img src='/images/gallery/22.JPG' loading='lazy'>\n                    <div>\n                        <h3>Fri Feb 04 2022</h3>\n                    </div>\n                </div>\n                "
+        },
+        "id": 22,
+        "picture": 22,
+        "date": 17,
+        "photoshoot": 56,
+        "priority": "b",
+        "priorityId": 18,
+        "type": "couples",
+        "location": {
+            "mountains": 4,
+            "forest": 3,
+            "snow": 3
+        },
+        "lighting": "sunrise"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "mountains": false,
+                    "forest": false,
+                    "snow": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class='img23 show normal'>\n                    <div>\n                        <h3>mountains</h3>\n                    </div>\n                    <img src='/images/gallery/23.JPG' loading='lazy'>\n                    <div>\n                        <h3>Fri Feb 04 2022</h3>\n                    </div>\n                </div>\n                "
+        },
+        "id": 23,
+        "picture": 23,
+        "date": 18,
+        "photoshoot": 55,
+        "priority": "d",
+        "priorityId": 11,
+        "type": "couples",
+        "location": {
+            "mountains": 5,
+            "forest": 4,
+            "snow": 4
+        },
+        "lighting": "sunrise"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "salt-flats": false,
+                    "salt-lake": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class='img24 show normal'>\n                    <div>\n                        <h3>salt flats</h3>\n                    </div>\n                    <img src='/images/gallery/24.JPG' loading='lazy'>\n                    <div>\n                        <h3>Fri Feb 04 2022</h3>\n                    </div>\n                </div>\n                "
+        },
+        "id": 24,
+        "picture": 24,
+        "date": 19,
+        "photoshoot": 10,
+        "priority": "c",
+        "priorityId": 4,
+        "type": "couples",
+        "location": {
+            "salt-flats": 0,
+            "salt-lake": 6
+        },
+        "lighting": "golden-hour"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "salt-flats": false,
+                    "salt-lake": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class='img25 show normal'>\n                    <div>\n                        <h3>salt flats</h3>\n                    </div>\n                    <img src='/images/gallery/25.JPG' loading='lazy'>\n                    <div>\n                        <h3>Fri Feb 04 2022</h3>\n                    </div>\n                </div>\n                "
+        },
+        "id": 25,
+        "picture": 25,
+        "date": 20,
+        "photoshoot": 9,
+        "priority": "d",
+        "priorityId": 1,
+        "type": "couples",
+        "location": {
+            "salt-flats": 1,
+            "salt-lake": 7
+        },
+        "lighting": "golden-hour"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "salt-flats": false,
+                    "salt-lake": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class='img26 show normal'>\n                    <div>\n                        <h3>salt flats</h3>\n                    </div>\n                    <img src='/images/gallery/26.JPG' loading='lazy'>\n                    <div>\n                        <h3>Fri Feb 04 2022</h3>\n                    </div>\n                </div>\n                "
+        },
+        "id": 26,
+        "picture": 26,
+        "date": 21,
+        "photoshoot": 8,
+        "priority": "b",
+        "priorityId": 3,
+        "type": "couples",
+        "location": {
+            "salt-flats": 2,
+            "salt-lake": 8
+        },
+        "lighting": "golden-hour"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "salt-flats": false,
+                    "salt-lake": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class='img27 show normal'>\n                    <div>\n                        <h3>salt flats</h3>\n                    </div>\n                    <img src='/images/gallery/27.JPG' loading='lazy'>\n                    <div>\n                        <h3>Fri Feb 04 2022</h3>\n                    </div>\n                </div>\n                "
+        },
+        "id": 27,
+        "picture": 27,
+        "date": 22,
+        "photoshoot": 7,
+        "priority": "c",
+        "priorityId": 3,
+        "type": "couples",
+        "location": {
+            "salt-flats": 3,
+            "salt-lake": 9
+        },
+        "lighting": "golden-hour"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "salt-flats": false,
+                    "salt-lake": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class='img28 show normal'>\n                    <div>\n                        <h3>salt flats</h3>\n                    </div>\n                    <img src='/images/gallery/28.JPG' loading='lazy'>\n                    <div>\n                        <h3>Fri Feb 04 2022</h3>\n                    </div>\n                </div>\n                "
+        },
+        "id": 28,
+        "picture": 28,
+        "date": 23,
+        "photoshoot": 20,
+        "priority": "b",
+        "priorityId": 6,
+        "type": "bridals",
+        "location": {
+            "salt-flats": 4,
+            "salt-lake": 10
+        },
+        "lighting": "sunset"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "salt-flats": false,
+                    "salt-lake": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class='img29 show normal'>\n                    <div>\n                        <h3>salt flats</h3>\n                    </div>\n                    <img src='/images/gallery/29.JPG' loading='lazy'>\n                    <div>\n                        <h3>Fri Feb 04 2022</h3>\n                    </div>\n                </div>\n                "
+        },
+        "id": 29,
+        "picture": 29,
+        "date": 24,
+        "photoshoot": 64,
+        "priority": "b",
+        "priorityId": 21,
+        "type": "bridals",
+        "location": {
+            "salt-flats": 5,
+            "salt-lake": 11
+        },
+        "lighting": "blue-hour"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "utah-lake": false,
+                    "lakes": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class='img30 show normal'>\n                    <div>\n                        <h3>utah lake</h3>\n                    </div>\n                    <img src='/images/gallery/30.JPG' loading='lazy'>\n                    <div>\n                        <h3>Sat Oct 01 2022</h3>\n                    </div>\n                </div>\n                "
+        },
+        "id": 30,
+        "picture": 30,
+        "date": 42,
+        "photoshoot": 46,
+        "priority": "b",
+        "priorityId": 16,
+        "type": "bridals",
+        "location": {
+            "utah-lake": 0,
+            "lakes": 0
+        },
+        "lighting": "sunset"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "utah-lake": false,
+                    "lakes": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class='img31 show normal'>\n                    <div>\n                        <h3>utah lake</h3>\n                    </div>\n                    <img src='/images/gallery/31.JPG' loading='lazy'>\n                    <div>\n                        <h3>Sat Oct 01 2022</h3>\n                    </div>\n                </div>\n                "
+        },
+        "id": 31,
+        "picture": 31,
+        "date": 43,
+        "photoshoot": 45,
+        "priority": "a",
+        "priorityId": 2,
+        "type": "bridals",
+        "location": {
+            "utah-lake": 1,
+            "lakes": 1
+        },
+        "lighting": "sunset"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "limousine": false,
+                    "salt-lake": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class='img32 show normal'>\n                    <div>\n                        <h3>limousine</h3>\n                    </div>\n                    <img src='/images/gallery/32.JPG' loading='lazy'>\n                    <div>\n                        <h3>Fri Feb 04 2022</h3>\n                    </div>\n                </div>\n                "
+        },
+        "id": 32,
+        "picture": 32,
+        "date": 25,
+        "photoshoot": 63,
+        "priority": "c",
+        "priorityId": 22,
+        "type": "bridals",
+        "location": {
+            "limousine": 0,
+            "salt-lake": 12
+        },
+        "lighting": "flash"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "limousine": false,
+                    "salt-lake": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class='img33 show normal'>\n                    <div>\n                        <h3>limousine</h3>\n                    </div>\n                    <img src='/images/gallery/33.JPG' loading='lazy'>\n                    <div>\n                        <h3>Fri Feb 04 2022</h3>\n                    </div>\n                </div>\n                "
+        },
+        "id": 33,
+        "picture": 33,
+        "date": 26,
+        "photoshoot": 62,
+        "priority": "d",
+        "priorityId": 14,
+        "type": "bridals",
+        "location": {
+            "limousine": 1,
+            "salt-lake": 13
+        },
+        "lighting": "flash"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "salt-flats": false,
+                    "salt-lake": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class='img34 show normal'>\n                    <div>\n                        <h3>salt flats</h3>\n                    </div>\n                    <img src='/images/gallery/34.JPG' loading='lazy'>\n                    <div>\n                        <h3>Fri Feb 04 2022</h3>\n                    </div>\n                </div>\n                "
+        },
+        "id": 34,
+        "picture": 34,
+        "date": 27,
+        "photoshoot": 61,
+        "priority": "d",
+        "priorityId": 13,
+        "type": "weddings",
+        "location": {
+            "salt-flats": 6,
+            "salt-lake": 14
+        },
+        "lighting": "flash"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "salt-flats": false,
+                    "salt-lake": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class='img35 show normal'>\n                    <div>\n                        <h3>salt flats</h3>\n                    </div>\n                    <img src='/images/gallery/35.JPG' loading='lazy'>\n                    <div>\n                        <h3>Fri Feb 04 2022</h3>\n                    </div>\n                </div>\n                "
+        },
+        "id": 35,
+        "picture": 35,
+        "date": 28,
+        "photoshoot": 60,
+        "priority": "c",
+        "priorityId": 21,
+        "type": "weddings",
+        "location": {
+            "salt-flats": 7,
+            "salt-lake": 15
+        },
+        "lighting": "flash"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "salt-flats": false,
+                    "salt-lake": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class='img36 show normal'>\n                    <div>\n                        <h3>salt flats</h3>\n                    </div>\n                    <img src='/images/gallery/36.JPG' loading='lazy'>\n                    <div>\n                        <h3>Fri Feb 04 2022</h3>\n                    </div>\n                </div>\n                "
+        },
+        "id": 36,
+        "picture": 36,
+        "date": 29,
+        "photoshoot": 59,
+        "priority": "d",
+        "priorityId": 12,
+        "type": "weddings",
+        "location": {
+            "salt-flats": 8,
+            "salt-lake": 16
+        },
+        "lighting": "flash"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "salt-flats": false,
+                    "salt-lake": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class='img37 show normal'>\n                    <div>\n                        <h3>salt flats</h3>\n                    </div>\n                    <img src='/images/gallery/37.JPG' loading='lazy'>\n                    <div>\n                        <h3>Fri Feb 04 2022</h3>\n                    </div>\n                </div>\n                "
+        },
+        "id": 37,
+        "picture": 37,
+        "date": 30,
+        "photoshoot": 58,
+        "priority": "b",
+        "priorityId": 20,
+        "type": "weddings",
+        "location": {
+            "salt-flats": 9,
+            "salt-lake": 17
+        },
+        "lighting": "flash"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "fall-trees": false,
+                    "forest": false,
+                    "mountains": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class='img38 show normal'>\n                    <div>\n                        <h3>fall trees</h3>\n                    </div>\n                    <img src='/images/gallery/38.JPG' loading='lazy'>\n                    <div>\n                        <h3>Sat Oct 08 2022</h3>\n                    </div>\n                </div>\n                "
+        },
+        "id": 38,
+        "picture": 38,
+        "date": 44,
+        "photoshoot": 27,
+        "priority": "c",
+        "priorityId": 11,
+        "type": "couples",
+        "location": {
+            "fall-trees": 0,
+            "forest": 5,
+            "mountains": 6
+        },
+        "lighting": "full-sun"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "studio": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class='img39 show normal'>\n                    <div>\n                        <h3>studio</h3>\n                    </div>\n                    <img src='/images/gallery/39.JPG' loading='lazy'>\n                    <div>\n                        <h3>Sat Mar 05 2022</h3>\n                    </div>\n                </div>\n                "
+        },
+        "id": 39,
+        "picture": 39,
+        "date": 31,
+        "photoshoot": 52,
+        "priority": "d",
+        "priorityId": 9,
+        "type": "families",
+        "location": {
+            "studio": 2
+        },
+        "lighting": "indoor"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "fall-trees": false,
+                    "forest": false,
+                    "mountains": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class='img40 show normal'>\n                    <div>\n                        <h3>fall trees</h3>\n                    </div>\n                    <img src='/images/gallery/40.JPG' loading='lazy'>\n                    <div>\n                        <h3>Sat Oct 08 2022</h3>\n                    </div>\n                </div>\n                "
+        },
+        "id": 40,
+        "picture": 40,
+        "date": 45,
+        "photoshoot": 13,
+        "priority": "c",
+        "priorityId": 6,
+        "type": "couples",
+        "location": {
+            "fall-trees": 1,
+            "forest": 6,
+            "mountains": 7
+        },
+        "lighting": "full-sun"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "sand-dunes": false,
+                    "desert": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class='img41 show normal'>\n                    <div>\n                        <h3>sand dunes</h3>\n                    </div>\n                    <img src='/images/gallery/41.JPG' loading='lazy'>\n                    <div>\n                        <h3>Sat Apr 09 2022</h3>\n                    </div>\n                </div>\n                "
+        },
+        "id": 41,
+        "picture": 41,
+        "date": 32,
+        "photoshoot": 49,
+        "priority": "c",
+        "priorityId": 17,
+        "type": "engagements",
+        "location": {
+            "sand-dunes": 1,
+            "desert": 4
+        },
+        "lighting": "sunset"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "sand-dunes": false,
+                    "desert": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class='img42 show normal'>\n                    <div>\n                        <h3>sand dunes</h3>\n                    </div>\n                    <img src='/images/gallery/42.JPG' loading='lazy'>\n                    <div>\n                        <h3>Sat Apr 09 2022</h3>\n                    </div>\n                </div>\n                "
+        },
+        "id": 42,
+        "picture": 42,
+        "date": 33,
+        "photoshoot": 48,
+        "priority": "b",
+        "priorityId": 17,
+        "type": "engagements",
+        "location": {
+            "sand-dunes": 2,
+            "desert": 5
+        },
+        "lighting": "full-sun"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "sand-dunes": false,
+                    "desert": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class='img43 show normal'>\n                    <div>\n                        <h3>sand dunes</h3>\n                    </div>\n                    <img src='/images/gallery/43.JPG' loading='lazy'>\n                    <div>\n                        <h3>Sat Apr 09 2022</h3>\n                    </div>\n                </div>\n                "
+        },
+        "id": 43,
+        "picture": 43,
+        "date": 34,
+        "photoshoot": 47,
+        "priority": "d",
+        "priorityId": 8,
+        "type": "engagements",
+        "location": {
+            "sand-dunes": 3,
+            "desert": 6
+        },
+        "lighting": "full-sun"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "goblin-valley": false,
+                    "moab": false,
+                    "desert": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class='img44 show normal'>\n                    <div>\n                        <h3>goblin valley</h3>\n                    </div>\n                    <img src='/images/gallery/44.JPG' loading='lazy'>\n                    <div>\n                        <h3>Thu May 25 2023</h3>\n                    </div>\n                </div>\n                "
+        },
+        "id": 44,
+        "picture": 44,
+        "date": 56,
+        "photoshoot": 26,
+        "priority": "b",
+        "priorityId": 9,
+        "type": "weddings",
+        "location": {
+            "goblin-valley": 3,
+            "moab": 3,
+            "desert": 7
+        },
+        "lighting": "full-sun"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "goblin-valley": false,
+                    "moab": false,
+                    "desert": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class='img45 show normal'>\n                    <div>\n                        <h3>goblin valley</h3>\n                    </div>\n                    <img src='/images/gallery/45.JPG' loading='lazy'>\n                    <div>\n                        <h3>Thu May 25 2023</h3>\n                    </div>\n                </div>\n                "
+        },
+        "id": 45,
+        "picture": 45,
+        "date": 57,
+        "photoshoot": 25,
+        "priority": "c",
+        "priorityId": 10,
+        "type": "weddings",
+        "location": {
+            "goblin-valley": 4,
+            "moab": 4,
+            "desert": 8
+        },
+        "lighting": "full-sun"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "goblin-valley": false,
+                    "moab": false,
+                    "desert": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class='img46 show normal'>\n                    <div>\n                        <h3>goblin valley</h3>\n                    </div>\n                    <img src='/images/gallery/46.JPG' loading='lazy'>\n                    <div>\n                        <h3>Thu May 25 2023</h3>\n                    </div>\n                </div>\n                "
+        },
+        "id": 46,
+        "picture": 46,
+        "date": 58,
+        "photoshoot": 24,
+        "priority": "c",
+        "priorityId": 9,
+        "type": "weddings",
+        "location": {
+            "goblin-valley": 5,
+            "moab": 5,
+            "desert": 9
+        },
+        "lighting": "full-sun"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "arches": false,
+                    "moab": false,
+                    "desert": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class='img47 show normal'>\n                    <div>\n                        <h3>arches</h3>\n                    </div>\n                    <img src='/images/gallery/47.JPG' loading='lazy'>\n                    <div>\n                        <h3>Fri May 26 2023</h3>\n                    </div>\n                </div>\n                "
+        },
+        "id": 47,
+        "picture": 47,
+        "date": 59,
+        "photoshoot": 2,
+        "priority": "b",
+        "priorityId": 0,
+        "type": "couples",
+        "location": {
+            "arches": 0,
+            "moab": 6,
+            "desert": 10
+        },
+        "lighting": "full-sun"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "arches": false,
+                    "moab": false,
+                    "desert": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class='img48 show normal'>\n                    <div>\n                        <h3>arches</h3>\n                    </div>\n                    <img src='/images/gallery/48.JPG' loading='lazy'>\n                    <div>\n                        <h3>Fri May 26 2023</h3>\n                    </div>\n                </div>\n                "
+        },
+        "id": 48,
+        "picture": 48,
+        "date": 60,
+        "photoshoot": 1,
+        "priority": "c",
+        "priorityId": 1,
+        "type": "couples",
+        "location": {
+            "arches": 1,
+            "moab": 7,
+            "desert": 11
+        },
+        "lighting": "full-sun"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "arches": false,
+                    "moab": false,
+                    "desert": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class='img49 show normal'>\n                    <div>\n                        <h3>arches</h3>\n                    </div>\n                    <img src='/images/gallery/49.JPG' loading='lazy'>\n                    <div>\n                        <h3>Fri May 26 2023</h3>\n                    </div>\n                </div>\n                "
+        },
+        "id": 49,
+        "picture": 49,
+        "date": 61,
+        "photoshoot": 5,
+        "priority": "b",
+        "priorityId": 2,
+        "type": "weddings",
+        "location": {
+            "arches": 2,
+            "moab": 8,
+            "desert": 12
+        },
+        "lighting": "full-sun"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "arches": false,
+                    "moab": false,
+                    "desert": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class='img50 show normal'>\n                    <div>\n                        <h3>arches</h3>\n                    </div>\n                    <img src='/images/gallery/50.JPG' loading='lazy'>\n                    <div>\n                        <h3>Fri May 26 2023</h3>\n                    </div>\n                </div>\n                "
+        },
+        "id": 50,
+        "picture": 50,
+        "date": 62,
+        "photoshoot": 4,
+        "priority": "c",
+        "priorityId": 2,
+        "type": "weddings",
+        "location": {
+            "arches": 3,
+            "moab": 9,
+            "desert": 13
+        },
+        "lighting": "full-sun"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "arches": false,
+                    "moab": false,
+                    "desert": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class='img51 show normal'>\n                    <div>\n                        <h3>arches</h3>\n                    </div>\n                    <img src='/images/gallery/51.JPG' loading='lazy'>\n                    <div>\n                        <h3>Fri May 26 2023</h3>\n                    </div>\n                </div>\n                "
+        },
+        "id": 51,
+        "picture": 51,
+        "date": 63,
+        "photoshoot": 3,
+        "priority": "b",
+        "priorityId": 1,
+        "type": "weddings",
+        "location": {
+            "arches": 4,
+            "moab": 10,
+            "desert": 14
+        },
+        "lighting": "full-sun"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "arches": false,
+                    "moab": false,
+                    "desert": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class='img52 show normal'>\n                    <div>\n                        <h3>arches</h3>\n                    </div>\n                    <img src='/images/gallery/52.JPG' loading='lazy'>\n                    <div>\n                        <h3>Fri May 26 2023</h3>\n                    </div>\n                </div>\n                "
+        },
+        "id": 52,
+        "picture": 52,
+        "date": 64,
+        "photoshoot": 35,
+        "priority": "c",
+        "priorityId": 13,
+        "type": "bridals",
+        "location": {
+            "arches": 5,
+            "moab": 11,
+            "desert": 15
+        },
+        "lighting": "full-sun"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "arches": false,
+                    "moab": false,
+                    "desert": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class='img53 show normal'>\n                    <div>\n                        <h3>arches</h3>\n                    </div>\n                    <img src='/images/gallery/53.JPG' loading='lazy'>\n                    <div>\n                        <h3>Fri May 26 2023</h3>\n                    </div>\n                </div>\n                "
+        },
+        "id": 53,
+        "picture": 53,
+        "date": 65,
+        "photoshoot": 34,
+        "priority": "b",
+        "priorityId": 12,
+        "type": "bridals",
+        "location": {
+            "arches": 6,
+            "moab": 12,
+            "desert": 16
+        },
+        "lighting": "full-sun"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "arches": false,
+                    "moab": false,
+                    "desert": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class='img54 show normal'>\n                    <div>\n                        <h3>arches</h3>\n                    </div>\n                    <img src='/images/gallery/54.JPG' loading='lazy'>\n                    <div>\n                        <h3>Fri May 26 2023</h3>\n                    </div>\n                </div>\n                "
+        },
+        "id": 54,
+        "picture": 54,
+        "date": 66,
+        "photoshoot": 33,
+        "priority": "a",
+        "priorityId": 1,
+        "type": "bridals",
+        "location": {
+            "arches": 7,
+            "moab": 13,
+            "desert": 17
+        },
+        "lighting": "full-sun"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "dead-horse": false,
+                    "moab": false,
+                    "desert": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class='img55 show normal'>\n                    <div>\n                        <h3>dead horse</h3>\n                    </div>\n                    <img src='/images/gallery/55.JPG' loading='lazy'>\n                    <div>\n                        <h3>Fri May 26 2023</h3>\n                    </div>\n                </div>\n                "
+        },
+        "id": 55,
+        "picture": 55,
+        "date": 67,
+        "photoshoot": 68,
+        "priority": "c",
+        "priorityId": 23,
+        "type": "bridals",
+        "location": {
+            "dead-horse": 0,
+            "moab": 14,
+            "desert": 18
+        },
+        "lighting": "sunrise"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "dead-horse": false,
+                    "moab": false,
+                    "desert": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class='img56 show normal'>\n                    <div>\n                        <h3>dead horse</h3>\n                    </div>\n                    <img src='/images/gallery/56.JPG' loading='lazy'>\n                    <div>\n                        <h3>Fri May 26 2023</h3>\n                    </div>\n                </div>\n                "
+        },
+        "id": 56,
+        "picture": 56,
+        "date": 68,
+        "photoshoot": 67,
+        "priority": "a",
+        "priorityId": 4,
+        "type": "bridals",
+        "location": {
+            "dead-horse": 1,
+            "moab": 15,
+            "desert": 19
+        },
+        "lighting": "sunrise"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "dead-horse": false,
+                    "moab": false,
+                    "desert": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class='img57 show normal'>\n                    <div>\n                        <h3>dead horse</h3>\n                    </div>\n                    <img src='/images/gallery/57.JPG' loading='lazy'>\n                    <div>\n                        <h3>Fri May 26 2023</h3>\n                    </div>\n                </div>\n                "
+        },
+        "id": 57,
+        "picture": 57,
+        "date": 69,
+        "photoshoot": 66,
+        "priority": "b",
+        "priorityId": 22,
+        "type": "bridals",
+        "location": {
+            "dead-horse": 2,
+            "moab": 16,
+            "desert": 20
+        },
+        "lighting": "sunrise"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "dead-horse": false,
+                    "moab": false,
+                    "desert": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class='img58 show normal'>\n                    <div>\n                        <h3>dead horse</h3>\n                    </div>\n                    <img src='/images/gallery/58.JPG' loading='lazy'>\n                    <div>\n                        <h3>Fri May 26 2023</h3>\n                    </div>\n                </div>\n                "
+        },
+        "id": 58,
+        "picture": 58,
+        "date": 70,
+        "photoshoot": 65,
+        "priority": "a",
+        "priorityId": 3,
+        "type": "bridals",
+        "location": {
+            "dead-horse": 3,
+            "moab": 17,
+            "desert": 21
+        },
+        "lighting": "sunrise"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "las-vegas": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class='img59 show normal'>\n                    <div>\n                        <h3>las vegas</h3>\n                    </div>\n                    <img src='/images/gallery/59.JPG' loading='lazy'>\n                    <div>\n                        <h3>Sat May 13 2023</h3>\n                    </div>\n                </div>\n                "
+        },
+        "id": 59,
+        "picture": 59,
+        "date": 50,
+        "photoshoot": 32,
+        "priority": "a",
+        "priorityId": 0,
+        "type": "weddings",
+        "location": {
+            "las-vegas": 3
+        },
+        "lighting": "full-sun"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "las-vegas": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class='img60 show normal'>\n                    <div>\n                        <h3>las vegas</h3>\n                    </div>\n                    <img src='/images/gallery/60.JPG' loading='lazy'>\n                    <div>\n                        <h3>Sat May 13 2023</h3>\n                    </div>\n                </div>\n                "
+        },
+        "id": 60,
+        "picture": 60,
+        "date": 51,
+        "photoshoot": 31,
+        "priority": "d",
+        "priorityId": 5,
+        "type": "weddings",
+        "location": {
+            "las-vegas": 4
+        },
+        "lighting": "full-sun"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "las-vegas": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class='img61 show normal'>\n                    <div>\n                        <h3>las vegas</h3>\n                    </div>\n                    <img src='/images/gallery/61.JPG' loading='lazy'>\n                    <div>\n                        <h3>Sat May 13 2023</h3>\n                    </div>\n                </div>\n                "
+        },
+        "id": 61,
+        "picture": 61,
+        "date": 52,
+        "photoshoot": 30,
+        "priority": "c",
+        "priorityId": 12,
+        "type": "weddings",
+        "location": {
+            "las-vegas": 5
+        },
+        "lighting": "full-sun"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "las-vegas": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class='img62 show normal'>\n                    <div>\n                        <h3>las vegas</h3>\n                    </div>\n                    <img src='/images/gallery/62.JPG' loading='lazy'>\n                    <div>\n                        <h3>Sat May 13 2023</h3>\n                    </div>\n                </div>\n                "
+        },
+        "id": 62,
+        "picture": 62,
+        "date": 53,
+        "photoshoot": 29,
+        "priority": "b",
+        "priorityId": 11,
+        "type": "weddings",
+        "location": {
+            "las-vegas": 6
+        },
+        "lighting": "full-sun"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "las-vegas": false,
+                    "mansion": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class='img63 show normal'>\n                    <div>\n                        <h3>las vegas</h3>\n                    </div>\n                    <img src='/images/gallery/63.JPG' loading='lazy'>\n                    <div>\n                        <h3>Sat May 13 2023</h3>\n                    </div>\n                </div>\n                "
+        },
+        "id": 63,
+        "picture": 63,
+        "date": 54,
+        "photoshoot": 28,
+        "priority": "b",
+        "priorityId": 10,
+        "type": "weddings",
+        "location": {
+            "las-vegas": 7,
+            "mansion": 0
+        },
+        "lighting": "full-sun"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "mountains": false,
+                    "forest": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class='img64 show normal'>\n                    <div>\n                        <h3>mountains</h3>\n                    </div>\n                    <img src='/images/gallery/64.JPG' loading='lazy'>\n                    <div>\n                        <h3>Sat May 20 2023</h3>\n                    </div>\n                </div>\n                "
+        },
+        "id": 64,
+        "picture": 64,
+        "date": 55,
+        "photoshoot": 21,
+        "priority": "b",
+        "priorityId": 7,
+        "type": "engagements",
+        "location": {
+            "mountains": 8,
+            "forest": 7
+        },
+        "lighting": "full-sun"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "roadside": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class=\"img65 show normal\">\n                    <div>\n                        <h3>roadside</h3>\n                    </div>\n                    <img src='/images/gallery/65.JPG' loading='lazy'>\n                    <div>\n                        <h3>Sat Oct 02 2021</h3>\n                    </div>\n                </div>\n                "
+        },
+        "id": 65,
+        "picture": 65,
+        "date": 0,
+        "photoshoot": 12,
+        "priority": "e",
+        "priorityId": 0,
+        "type": "portraits",
+        "location": {
+            "roadside": 4
+        },
+        "lighting": "full-sun"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "fields": false,
+                    "fall-trees": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class=\"img66 show normal\">\n                    <div>\n                        <h3>fields</h3>\n                    </div>\n                    <img src='/images/gallery/66.JPG' loading='lazy'>\n                    <div>\n                        <h3>Thu Oct 14 2021</h3>\n                    </div>\n                </div>\n                "
+        },
+        "id": 66,
+        "picture": 66,
+        "date": 1,
+        "photoshoot": 51,
+        "priority": "c",
+        "priorityId": 19,
+        "type": "weddings",
+        "location": {
+            "fields": 0,
+            "fall-trees": 2
+        },
+        "lighting": "full-sun"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "arches": false,
+                    "moab": false,
+                    "desert": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class=\"img67 show normal\">\n                    <div>\n                        <h3>arches</h3>\n                    </div>\n                    <img src='/images/gallery/67.JPG' loading='lazy'>\n                    <div>\n                        <h3>Sat Nov 20 2021</h3>\n                    </div>\n                </div>\n                "
+        },
+        "id": 67,
+        "picture": 67,
+        "date": 2,
+        "photoshoot": 23,
+        "priority": "d",
+        "priorityId": 4,
+        "type": "couples",
+        "location": {
+            "arches": 8,
+            "moab": 18,
+            "desert": 22
+        },
+        "lighting": "full-sun"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "desert": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class=\"img68 show normal\">\n                    <div>\n                        <h3>desert</h3>\n                    </div>\n                    <img src='/images/gallery/68.JPG' loading='lazy'>\n                    <div>\n                        <h3>Sun Nov 21 2021</h3>\n                    </div>\n                </div>\n                "
+        },
+        "id": 68,
+        "picture": 68,
+        "date": 5,
+        "photoshoot": 70,
+        "priority": "c",
+        "priorityId": 24,
+        "type": "couples",
+        "location": {
+            "desert": 23
+        },
+        "lighting": "full-sun"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "desert": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class=\"img69 show normal\">\n                    <div>\n                        <h3>desert</h3>\n                    </div>\n                    <img src='/images/gallery/69.JPG' loading='lazy'>\n                    <div>\n                        <h3>Sun Nov 21 2021</h3>\n                    </div>\n                </div>\n                "
+        },
+        "id": 69,
+        "picture": 69,
+        "date": 4,
+        "photoshoot": 69,
+        "priority": "b",
+        "priorityId": 23,
+        "type": "couples",
+        "location": {
+            "desert": 24
+        },
+        "lighting": "full-sun"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "fields": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class=\"img70 show normal\">\n                    <div>\n                        <h3>fields</h3>\n                    </div>\n                    <img src='/images/gallery/70.JPG' loading='lazy'>\n                    <div>\n                        <h3>Wed Jul 20 2022</h3>\n                    </div>\n                </div>\n                "
+        },
+        "id": 70,
+        "picture": 70,
+        "date": 41,
+        "photoshoot": 14,
+        "priority": "b",
+        "priorityId": 4,
+        "type": "couples",
+        "location": {
+            "fields": 1
+        },
+        "lighting": "full-sun"
+    }
+]

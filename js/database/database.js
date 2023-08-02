@@ -1,9 +1,10 @@
 
-function Photo(imageObject, objId, dateIndex, photoshootIndex, priorityString, priorityInt, typeString, locationObject, lightingString) {
+function Photo(imageObject, objId, dateIndex, photoshootIndex, altText, priorityString, priorityInt, typeString, locationObject, lightingString) {
     
     this.image = imageObject;
     this.id = objId;
     this.picture = objId;
+    this.altText = altText;
     this.date = dateIndex;
     this.photoshoot = photoshootIndex;
     this.priority = priorityString;
@@ -143,17 +144,19 @@ class Database {
     }
     
     
+    /*
     parseDate(dateString) {
-        /* Algorithm from https://stackoverflow.com/questions/43083993/javascript-how-to-convert-exif-date-time-data-    to-timestamp
-        */
+         Algorithm from https://stackoverflow.com/questions/43083993/javascript-how-to-convert-exif-date-time-data-    to-timestamp
+        
         
         let dateArray = dateString.split(/\D/);
         return new Date(dateArray[0], dateArray[1] - 1, dateArray[2], dateArray[3], dateArray[4], dateArray[5]);
         
     }
+    */
     
     
-    newEntry(imagePath, photoshootName, priorityLevel, photoType, locationsArray, photoLighting) {
+    newEntry(imagePath, photoDateInfo, photoshootName, altInfo, priorityLevel, photoType, locationsArray, photoLighting) {
         
         function initPropertyArrayIf(thisObj, property, key) {
             
@@ -163,6 +166,7 @@ class Database {
             
         }
         
+        /*
         function finishSetUp(obj, objId, photoshootId, priority, priorityId, type, location, locationFilters, lighting) {
             
             function waitFor(resolve, reject) {
@@ -200,13 +204,14 @@ class Database {
                 });
             }
             
+            
             let photoElement = new Image();
-            photoElement.src = imagePath;
+            photoElement.src = imagePath + ".JPG";
             
             ensurePhotoIsLoaded().then(function() {
                 
                 ensureExifIsDone(photoElement).then(function(datesId) {
-                    let photoObject = obj.createImage(imagePath, newId, locationFilters, locationsArray[0], obj.dates[datesId].date.toDateString());
+                    let photoObject = obj.createImage(imagePath, photoshootName, newId, locationFilters, locationsArray[0], obj.dates[datesId].date.toDateString());
                     obj.ids.push(new Photo(photoObject, objId, datesId, photoshootId, priority, priorityId, type, location, lighting));
                     obj.totalPhotosCurrentlyVisible += 1;
                     obj.changeSortingMethod();
@@ -214,10 +219,20 @@ class Database {
             });
             
         }
+        */
         
         var newId = this.ids.length;
         
         this.pictures.push(imagePath);
+        
+        let dateInfoArray = photoDateInfo.split(",");
+        let dateObj = new Date(dateInfoArray[0], parseInt(dateInfoArray[1]) - 1, dateInfoArray[2], dateInfoArray[3], dateInfoArray[4], dateInfoArray[5]);
+        let datesId = this.pushToSortedArray(this.dates,
+                                                        { "date": dateObj,
+                                                          "dateUTC": dateObj.getTime(),
+                                                          "parentId": newId },
+                                                        "dateUTC",
+                                                        "date");
         
         let photoshootsId = this.pushToSortedArray(this.photoshoots,
                                                    { "shoot": photoshootName,
@@ -247,7 +262,14 @@ class Database {
         initPropertyArrayIf(this, "lightings", photoLighting);
         this.lightings[photoLighting].push(newId);
         
-        finishSetUp(this, newId, photoshootsId, priorityLevel, priorityId, photoType, locationsObject, locationsFilterObject, photoLighting);
+//        finishSetUp(this, newId, photoshootsId, priorityLevel, priorityId, photoType, locationsObject, locationsFilterObject, photoLighting);
+     
+        let photoObject = this.createImage(imagePath, altInfo, newId, locationsFilterObject, locationsArray[0], this.dates[datesId].date.toDateString());
+        
+        this.ids.push(new Photo(photoObject, newId, datesId, photoshootsId, altInfo, priorityLevel, priorityId, photoType, locationsObject, photoLighting));
+        
+        this.totalPhotosCurrentlyVisible += 1;
+        this.changeSortingMethod();
         
     }
     
@@ -371,8 +393,43 @@ class Database {
             
         }
         
-        document.getElementById("photos").getElementsByTagName("h4")[0].innerHTML = `${this.totalPhotosCurrentlyVisible} photo${(this.totalPhotosCurrentlyVisible > 1) ? "s" : ""}`;
+        document.getElementById("photos").getElementsByTagName("h4")[0].innerHTML = `${this.totalPhotosCurrentlyVisible} photo${(this.totalPhotosCurrentlyVisible != 1) ? "s" : ""}`;
         //this.updateUserPage();
+        
+        const filterKeys = Object.keys(this.currentFilters);
+        const tabElem = document.getElementById("tab");
+        const amountElem = document.querySelector(`.amount.${filterType}`);
+        const topDistance = parseInt(getComputedStyle(tabElem).getPropertyValue("--starting-top"));
+        let offset = 31;
+        let secondOffset = 10;
+        const filterCount = this.currentFilters[filterType].length;
+        
+        for (let i = 0; i < filterKeys.length; i++) {
+            if ((filterKeys[i] != filterType) && (this.currentFilters[filterKeys[i]].length > 0)) {
+                offset -= 1;
+            }
+        }
+
+        if (filterCount == 0) {
+            amountElem.className = amountElem.className.replace("show", "hidden");
+            tabElem.style.setProperty("--starting-top", `${topDistance - offset}px`);
+        }
+        else if ((filterCount == 1) && checked) {
+            amountElem.className = amountElem.className.replace("hidden", "show");
+            tabElem.style.setProperty("--starting-top", `${topDistance + offset}px`);
+        }
+        else if ((filterCount == 10) && checked){
+            tabElem.style.setProperty("--starting-top", `${topDistance + secondOffset}px`);
+            amountElem.className = amountElem.className.replace("hidden", "show");
+        }
+        else if ((filterCount == 9) && !checked){
+            tabElem.style.setProperty("--starting-top", `${topDistance - secondOffset}px`);
+            amountElem.className = amountElem.className.replace("hidden", "show");
+        }
+        else {
+            amountElem.className = amountElem.className.replace("hidden", "show");
+        }
+        amountElem.querySelector(".number").innerHTML = filterCount.toString();
         
     }
     
@@ -383,8 +440,11 @@ class Database {
         
         for (let i = 0; i < boxes.length; i++) {
             boxes[i].addEventListener('change', (event) => {
+                
                 this.updateFilters(event.currentTarget.className, event.currentTarget.id, event.currentTarget.checked);
-                document.getElementById("photos").style.setProperty("--total-rows", 5);
+                
+                document.getElementById("photos").style.setProperty("--total-rows", 10);
+                
             });
         }
         
@@ -430,7 +490,7 @@ class Database {
         obj.currentPictures = newList;
         obj.updateUserPage();
         
-        document.getElementById("photos").style.setProperty("--total-rows", 5);
+        document.getElementById("photos").style.setProperty("--total-rows", 10);
         
     }
     
@@ -442,7 +502,9 @@ class Database {
     }
     
     
-    createImage(imagePath, imageId, locationObject, location, date) {
+    createImage(imagePath, altText, imageId, locationObject, location, date) {
+        
+        let dateArray = date.split(" ");
         
         return {
             "filters": {
@@ -452,12 +514,19 @@ class Database {
             },
             "html": `
                 <div class="img${imageId} show normal">
-                    <div>
-                        <h3>${location.replace("-", " ")}</h3>
-                    </div>
-                    <img src='${imagePath}'>
-                    <div>
-                        <h3>${date}</h3>
+                    <div class="container" style="left: 0px; top: 0px;">
+                        <div>
+                            <h3>${location.replace("-", " ")}</h3>
+                        </div>
+                        <picture>
+                            <source type="image/avif" srcset="${imagePath}.avif">
+                            <source type="image/webp" srcset="${imagePath}.webp">
+                            <source type="image/jpg" srcset="${imagePath}.jpg">
+                            <img src='${imagePath}.avif' alt="${altText}" loading="lazy">
+                        </picture>
+                        <div>
+                            <h3>${dateArray[0]} ${dateArray[1]} ${parseInt(dateArray[2])} ${dateArray[3]}</h3>
+                        </div>
                     </div>
                 </div>
                 `
@@ -470,17 +539,40 @@ class Database {
         
         function expandImage() {
             
-            if (this.classList[2] == "expanded") {
-                this.className = this.className.replace("expanded", "normal");
+            let { x, y } = this.getBoundingClientRect();
+            
+            if (this.parentElement.classList[2] == "expanded") {
+                
+                this.parentElement.className = this.parentElement.className.replace("expanded", "normal");
+                
+                this.style.setProperty("left", "0px");
+                this.style.setProperty("top", "0px");
+                this.style.setProperty("--transition-time", ".45s");
+                
             }
             else {
-                this.className = this.className.replace("normal", "expanded");
+                
+                this.parentElement.className = this.parentElement.className.replace("normal", "expanded");
+                
+                this.style.setProperty("left", `${-1 * x}px`);
+                this.style.setProperty("top", `${-1 * y}px`);
+                let obj = this;
+                setTimeout(function() {
+                    obj.style.setProperty("--transition-time", "0s");
+                }, 445);
+                
             }
             
         }
         
+        function scrollImage() {
+            
+            console.log("scroll");
+            
+        }
+        
         let photos = document.getElementById("photos");
-        let newHTML = `<h4>${this.totalPhotosCurrentlyVisible} photo${(this.totalPhotosCurrentlyVisible > 1) ? "s" : ""}</h4>`;
+        let newHTML = `<h4>${this.totalPhotosCurrentlyVisible} photo${(this.totalPhotosCurrentlyVisible != 1) ? "s" : ""}</h4>`;
         
         if (this.currentPictures.length > 0) {
             
@@ -489,17 +581,13 @@ class Database {
             }
             photos.innerHTML = newHTML;
             
-            let images = document.getElementById("photos").getElementsByTagName("div");
+            let images = document.querySelectorAll("#photos div.container");
             for (let i = 0; i < images.length; i++) {
                 images[i].addEventListener('click', expandImage);
             }
             
             document.getElementById("photos").className = "loaded";
             
-        }
-        else {
-            //photos.innerHTML = '<h2>An error occurred, please refresh.</h2>';
-            return;
         }
         
     }
@@ -508,4 +596,4 @@ class Database {
 }
 
 
-var database = new Database();
+//var database = new Database();
