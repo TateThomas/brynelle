@@ -37,7 +37,7 @@ a{
 #content{
     color: white;
     display: flex;
-    overflow-x: hidden;
+    overflow: hidden;
     width: 100%;
 }
 
@@ -72,31 +72,138 @@ a{
     display: flex;
 }
 
+
+/****************** Filters ******************/
+
 #filters{
     height: max-content;
     padding: 10px;
     border-right: 1px solid var(--light-black);
+    transition: padding-left 1s;
 }
 
-#filters div:first-child{
+#filters > div:first-child{
     position: relative;
-    width: 22px;
+    width: 0;
     height: 13px;
     padding: 0 !important;
     margin: 0 !important;
     left: calc(100% - 30px);
-}
-
-#filters div:first-child:hover{
-    cursor: pointer;
+    z-index: 5;
 }
 
 #filters img{
     position: absolute;
     width: 22px;
     height: 13px;
+    padding: 10px;
+    left: -2px;
     transform: rotate(180deg);
-    transition: transform 1s, margin-left 1s;
+    transition: transform .75s;
+}
+
+#filters div:first-child img:hover{
+    cursor: pointer;
+}
+
+#tab{
+    --starting-top: 119px;
+    --follow-distance: 0px;
+    
+    position: absolute;
+    width: 30px;
+    top: calc(var(--starting-top) + var(--follow-distance));
+    right: -40px;
+    z-index: 3;
+}
+
+#tab > div{
+    width: max-content;
+    height: 20px;
+    padding: 5px 10px 5px 10px;
+    border-radius: 10px 10px 0 0;
+    background-color: white;
+    transform: rotate(-90deg);
+    transform-origin: top left;
+}
+
+#tab > div > div{
+    display: inline-block;
+    height: 20px;
+}
+
+#tab > div > div:has(div.amount.show){
+    margin-left: 5px;
+}
+
+#filters div:first-child > div h2{
+    font-family: alta;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 1px;
+}
+
+#tab > div:not(div:has(div.amount.show)) > h2{
+    top: -4px;
+}
+
+#filters div:first-child > div div.amount{
+    display: inline-block;
+    position: relative;
+    background-color: var(--light-black);
+    height: 18px;
+    padding: 1px 8px 1px 8px;
+    top: -1px;
+    border-radius: 10px;
+}
+
+#filters div:first-child > div div.amount h2{
+    font-family: sans-serif;
+    width: max-content;
+    height: 18px;
+    font-size: 14px;
+    line-height: 18px;
+    color: white;
+}
+
+#filters div:first-child > div div.amount h2.x{
+    position: absolute;
+    font-family: sans-serif;
+    font-size: 13px;
+    line-height: 20px;
+    margin-left: 1px;
+    top: -2px;
+    opacity: 0;
+}
+
+#filters div:first-child > div h2:not(div.amount h2):hover{
+    cursor: default;
+}
+
+#filters div:first-child > div:has(div.amount.show:hover){
+    top: calc(var(--starting-top) + var(--follow-distance) + 12px)
+}
+
+#filters div:first-child > div div.amount:hover{
+    cursor: pointer;
+    box-shadow: 0 0 4px rgba(0, 0, 0, .2);
+}
+
+#filters div:first-child > div div.amount:hover h2.x{
+    position: relative;
+    opacity: 1;
+}
+
+#filters div:first-child> div div.amount.hidden{
+    position: absolute;
+    width: 0;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+}
+
+#filters div:first-child > div div.amount.hidden:hover{
+    cursor: default;
 }
 
 #filters h2, #filters li{
@@ -106,6 +213,14 @@ a{
 
 #filters ul, #filters li, #filters select{
     display: block;
+}
+
+#filters > ul {
+    width: 200px;
+    padding-right: 15px;
+    margin-left: auto;
+    overflow: hidden;
+    transition: width 1s, padding-right 1s;
 }
 
 #filters select:hover, #filters input:hover, #filters label:hover{
@@ -132,15 +247,13 @@ a{
     overflow: visible;
 }
 
-#filters > ul {
-    width: 200px;
-    margin-left: auto;
-    overflow: hidden;
-    transition: width 1s;
+#filters.hidden{
+    padding-left: 32px;
 }
 
 #filters.hidden > ul {
     width: 0;
+    padding-right: 0;
 }
 
 #filters.hidden img{
@@ -148,19 +261,23 @@ a{
 }
 
 
+/****************** Photos ******************/
+
 #photos{
-    --total-rows: 5;
+    --total-rows: 10;
     --image-height: 500px;
+    --image-width: 300px;
+    --column-gap: 20px;
     
     display: grid;
-    grid-template-columns: repeat(4, 300px);
+    grid-template-columns: repeat(4, var(--image-width));
     grid-auto-rows: minmax(min-content, max-content);
-    grid-gap: 20px;
+    grid-column-gap: var(--column-gap);
+    grid-row-gap: 25px;
     grid-auto-flow: row dense;
-    max-height: calc((var(--total-rows) * (var(--image-height) + 40px)) - 20px);
+    max-height: calc((var(--total-rows) * (var(--image-height) + 50px)) - 25px);
     padding: 20px;
     padding-top: 0;
-    overflow: hidden;
 }
 
 #photos h4{
@@ -181,25 +298,46 @@ a{
     padding: 30px;
 }
 
-#photos div{
+#photos > div{
+    --img-span: 1;
+    
+    grid-column: span var(--img-span);
     position: relative;
     width: 100%;
     height: var(--image-height);
     margin: 6px 0 6px 0;
+    background-image: radial-gradient(ellipse, transparent, rgba(0, 0, 0, .04));
 }
 
-#photos > div > div{
+#photos div.container{
+    --transition-time: .45s;
+    
+    display: flex;
+    flex-direction: column;
     position: absolute;
-    width: 100%;
+    left: 0;
+    right: 0;
+    width: inherit;
+    height: 100%;
+    background-color: transparent;
+    z-index: 9;
+    transition: left var(--transition-time), top var(--transition-time), width var(--transition-time), height var(--transition-time), min-height var(--transition-time), background-color var(--transition-time), z-index 0s;
+    transition-delay: 0s, 0s, 0s, 0s, 0s, 0s, var(--transition-time);
+}
+
+#photos div.container > div{
+    position: absolute;
+    width: max-content;
     height: 20px;
     top: -25px;
     overflow: hidden;
 }
 
 #photos h3{
-    position: absolute;
+    position: relative;
     width: calc(100% - 10px);
-    padding: 5px;
+    height: 20px;
+    padding: 0 5px 0 5px;
     margin: 0;
     top: 30px;
     font-size: 20px;
@@ -207,33 +345,51 @@ a{
     font-weight: normal;
     letter-spacing: 1px;
     color: var(--light-black);
-    transition: top .75s;
+    transition: top .75s, margin var(--transition-time);
 }
 
-#photos > div > div:last-child{
+#photos div.container > div:last-child{
     top: calc(100% + 5px);
+    right: 0;
 }
 
-#photos > div > div:last-child h3{
-    top: -25px;
+#photos div.container > div:last-child h3{
+    top: -35px;
     text-align: right;
     transition-delay: 0s;
 }
 
-#photos > div:hover > div:first-child h3{
-    top: -5px;
+#photos div.container:hover > div h3{
+    top: 0;
 }
 
-#photos > div:hover > div:last-child h3{
-    top: -7px;
+#photos div.container:hover > div:last-child h3{
     transition-delay: .7s;
 }
 
+#photos picture{
+    display: flex;
+    min-height: var(--image-height);
+    max-height: 100%;
+    min-width: calc(var(--image-width) + ((var(--img-span) - 1) * (var(--image-width) + var(--column-gap))));
+    margin: auto;
+    transition: height var(--transition-time), max-height var(--transition-time), width var(--transition-time), max-width var(--transition-time);
+}
+
 #photos img{
+    /*
     width: 100%;
-    height: 100%;
-    padding: 5px 0 5px 0;
+    max-width: calc(var(--image-width) + ((var(--img-span) - 1) * (var(--image-width) + var(--column-gap))));
+    max-height: 100%;
+    */
+    min-width: calc(var(--image-width) + ((var(--img-span) - 1) * (var(--image-width) + var(--column-gap))));
+    max-width: 100%;
+    min-height: var(--image-height);
+    max-height: 100%;
+    margin: auto;
     object-fit: cover;
+    transition: max-width var(--transition-time), height var(--transition-time), margin var(--transition-time), box-shadow var(--transition-time);
+    transition-delay: 0s, 0s, 0s, 0s;
 }
 
 #photos div.hidden, #photos div.hidden img{
@@ -250,76 +406,81 @@ a{
 }
 
 #photos div.img1, #photos div.img11, #photos div.img17, #photos div.img26, #photos div.img29, #photos div.img31, #photos div.img35, #photos div.img56, #photos div.img61, #photos div.img62{
-    grid-column: span 2;
+    --img-span: 2;
 }
 
 #photos div.img15, #photos div.img24, #photos div.img59, #photos div.img69{
-    grid-column: span 3;
+    --img-span: 3;
 }
 
 #photos div.img56 img, #photos div.img57 img{
     object-position: bottom;
 }
 
+/*
 #photos div.expanded{
-    display: flex;
-    flex-direction: column;
-    position: fixed;
-    width: 100%;
+    background-image: radial-gradient(ellipse, transparent, rgba(0, 0, 0, .04));
+}
+*/
+
+#photos div.expanded div.container{
+    width: 100vw;
     height: 100vh;
     left: 0;
-    top: -6px;
+    top: 0;
     background-color: rgba(0, 0, 0, .5);
     z-index: 11;
+    transition: left var(--transition-time), top var(--transition-time), width var(--transition-time), height var(--transition-time), min-height var(--transition-time), background-color var(-=transition-time), z-index 0s;
+    transition-delay: 0s, 0s, 0s, 0s, 0s, calc(var(--transition-time) / 2), 0s;
+}
+
+#photos div.expanded picture{
+    max-height: 85vh;
+    width: 100%;
+    transition: height var(--transition-time), max-height var(--transition-time), width var(--transition-time), max-width var(--transition-time), margin var(--transition-time);
 }
 
 #photos div.expanded img{
-    display: block;
-    height: 80vh;
-    width: auto;
-    padding: 0;
-    margin: 10px auto 10px auto;
+    /*max-width: 90vw;*/
     box-shadow: 0 0 100px black;
-    z-index: 1;
+    transition: max-width var(--transition-time), height calc(var(--transition-time) / 2), margin var(--transition-time), box-shadow var(--transition-time);
+    transition-delay: 0s, 0s, 0s, calc(var(--transition-time) / 2);
 }
 
-#photos div.expanded > div{
-    position: static;
+#photos div.expanded div.container > div{
     width: 100%;
     height: 25px;
     overflow: visible;
-    z-index: 2;
+    top: calc(7.5vh - 35px);
 }
 
-#photos div.expanded > div:first-child{
+#photos div.expanded div.container > div:first-child{
     margin-top: auto;
 }
 
-#photos div.expanded > div:last-child{
+#photos div.expanded div.container > div:last-child{
     margin-bottom: auto;
+    top: calc(92.5vh + 10px);
 }
 
-#photos > div.expanded > div:last-child h3{
-    top: -7px;
-    transition: 0;
-}
-
-#photos div.expanded div h3{
+#photos div.expanded div.container div h3{
     position: static;
     color: white;
+    padding: 0;
+    top: 0;
     font-size: 25px;
     line-height: 25px;
     text-align: center;
 }
 
-#photos div.expanded > div:first-child::after{
+#photos div.expanded div.container > div:first-child::after{
     content: 'x';
     display: block;
     position: absolute;
     height: 50px;
     width: 50px;
     padding: 0;
-    top: 0;
+    top: -30px;
     right: 50px;
     font-family: sans-serif;
     font-size: 50px;
@@ -329,15 +490,15 @@ a{
     z-index: 2;
 }
 
-#photos div.expanded > div:first-child:hover::after{
+#photos div.expanded div.container > div:first-child:hover::after{
     cursor: pointer;
 }
 
 
-@media screen and (max-width: 1560px) {
+@media screen and (max-width: 1575px) {
     
     #photos{
-        grid-template-columns: repeat(3, 300px);
+        grid-template-columns: repeat(3, var(--image-width));
     }
     
     #photos h4{
@@ -346,7 +507,7 @@ a{
     
 }
 
-@media screen and (max-width: 1240px) {
+@media screen and (max-width: 1255px) {
 
     #filters h2{
         height: 20px;
@@ -359,7 +520,7 @@ a{
     }
     
     #photos{
-        grid-template-columns: repeat(2, 300px);
+        grid-template-columns: repeat(2, var(--image-width));
     }
     
     #photos h4{
@@ -367,18 +528,20 @@ a{
     }
     
     #photos div.img15, #photos div.img24, #photos div.img59, #photos div.img69{
-        grid-column: span 2;
+        --img-span: 2;
     }
     
+    /*
     #photos div.expanded img{
         max-width: 94vw;
         height: auto;
         max-height: 80vh;
     }
+    */
 
 }
 
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 935px) {
 
     #content > div{
         padding-top: 80px;
@@ -389,19 +552,25 @@ a{
     }
     
     #content > div > h2{
-        padding-bottom: 30px;
+        padding-bottom: 20px;
     }
     
     #filters{
         position: relative;
         border-right: 0;
         border-bottom: 1px solid var(--light-black);
-        margin-bottom: 20px;
+        margin-bottom: 30px;
+        padding-top: 10px;
+        padding-bottom: 40px;
+        transition: padding-top 1s;
+    }
+    
+    #filters.hidden{
+        padding-left: 10px;
         padding-top: 0;
     }
     
-    #filters div:first-child{
-        content: '  ';
+    #filters > div:first-child{
         position: absolute;
         bottom: 10px;
         left: 5px;
@@ -410,8 +579,8 @@ a{
     }
     
     #filters div:first-child img{
-        top: 5px;
-        left: -4px;
+        top: -5px;
+        left: 0px;
         transform: rotate(-90deg);
     }
     
@@ -419,10 +588,28 @@ a{
         transform: rotate(90deg);
     }
     
+    #tab{
+        width: max-content;
+        right: auto;
+        left: 35px;
+        top: 0px;
+    }
+    
+    #tab > div{
+        transform: rotate(0);
+    }
+    
+    #filters div:first-child > div:has(div.amount.show:hover){
+        top: 0px;
+    }
+    
     #filters > ul{
         display: inline-block;
         width: 100%;
-        height: 560px;
+        height: max-content;
+        height: 810px;
+        padding-right: 0;
+        overflow: hidden;
         transition: height 1s;
     }
     
@@ -430,7 +617,7 @@ a{
         display: inline-block;
         float: left;
         padding-top: 0;
-        padding-bottom: 20px
+        padding-bottom: 20px;
     }
     
     #filters > ul > li h2{
@@ -471,8 +658,8 @@ a{
 
     #photos{
         --image-height: 300px;
+        --image-width: 200px;
         
-        grid-template-columns: repeat(2, 200px);
         margin: auto;
     }
 
@@ -483,7 +670,6 @@ a{
     #filters > ul{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(5, 1fr);
     }
     
     #filters > ul > li{
@@ -501,16 +687,17 @@ a{
 
     #photos{
         --image-height: 200px;
-        
-        grid-template-columns: repeat(2, 125px);
+        --image-width: 125px;
+    }
+    
+    #photos div.container > div{
+        height: 14px;
+        top: -19px
     }
     
     #photos h3{
         font-size: 14px;
-    }
-    
-    #photos > div:hover div:first-child h3{
-        top: 2px;
+        height: 14px;
     }
     
 }
@@ -520,7 +707,7 @@ a{
     #filters > ul{
         display: flex;
         flex-direction: column;
-        height: 1030px;
+        height: 1295px;
     }
     
     #filters > ul > li{
@@ -553,8 +740,9 @@ a{
     
     #photos{
         --image-height: 250px;
+        --image-width: 175px;
         
-        grid-template-columns: repeat(1, 175px);
+        grid-template-columns: repeat(1, var(--image-width));
     }
     
     #photos h4{
@@ -562,11 +750,11 @@ a{
     }
     
     #photos div.img1, #photos div.img11, #photos div.img17, #photos div.img26, #photos div.img29, #photos div.img31, #photos div.img35, #photos div.img56, #photos div.img61, #photos div.img62{
-        grid-column: span 1;
+        --img-span: 1;
     }
     
     #photos div.img15, #photos div.img24, #photos div.img59, #photos div.img69{
-        grid-column: span 1;
+        --img-span: 1;
     }
     
 }

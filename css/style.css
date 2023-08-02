@@ -177,7 +177,7 @@ a{
     top: 0;
     z-index: calc(var(--lower-gradient-z) + 4);
     border-radius: 1000px;
-    border: var(--arches-border-width) solid var(--cream);
+    border: var(--arches-border-width) solid white;
     opacity: 0;
     transition: box-shadow var(--shadow-animation), opacity var(--opacity-animation), top 2s;
 }
