@@ -174,7 +174,7 @@ var myInterval = setInterval(function() {
     
     if (document.getElementById("photos").className == "not-loaded") {
         console.log("here");
-        database.loadData();
+        database.updateUserPage();
     }
     else {
         clearInterval(myInterval);
