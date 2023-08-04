@@ -1,0 +1,1938 @@
+[
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "goblin-valley": false,
+                    "moab": false,
+                    "desert": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class=\"img0 show normal\">\n                    <div class=\"container\" style=\"left: 0px; top: 0px;\">\n                        <div>\n                            <h3>goblin valley</h3>\n                        </div>\n                        <picture>\n                            <source type=\"image/avif\" srcset=\"/images/gallery/0.avif\">\n                            <source type=\"image/webp\" srcset=\"/images/gallery/0.webp\">\n                            <source type=\"image/jpg\" srcset=\"/images/gallery/0.jpg\">\n                            <img src='/images/gallery/0.avif' alt=\"Groom spinning bride in goblin valley flash shoot\" loading=\"lazy\">\n                        </picture>\n                        <div>\n                            <h3>Sun Nov 21 2021</h3>\n                        </div>\n                    </div>\n                </div>\n                "
+        },
+        "id": 0,
+        "picture": 0,
+        "altText": "Groom spinning bride in goblin valley flash shoot",
+        "date": 3,
+        "photoshoot": 24,
+        "priority": "d",
+        "priorityId": 4,
+        "type": "elopements",
+        "location": {
+            "goblin-valley": 0,
+            "moab": 0,
+            "desert": 0
+        },
+        "lighting": "flash"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "sand-dunes": false,
+                    "desert": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class=\"img1 show normal\">\n                    <div class=\"container\" style=\"left: 0px; top: 0px;\">\n                        <div>\n                            <h3>sand dunes</h3>\n                        </div>\n                        <picture>\n                            <source type=\"image/avif\" srcset=\"/images/gallery/1.avif\">\n                            <source type=\"image/webp\" srcset=\"/images/gallery/1.webp\">\n                            <source type=\"image/jpg\" srcset=\"/images/gallery/1.jpg\">\n                            <img src='/images/gallery/1.avif' alt=\"Couple holding hands walking down sand dunes\" loading=\"lazy\">\n                        </picture>\n                        <div>\n                            <h3>Sat Apr 9 2022</h3>\n                        </div>\n                    </div>\n                </div>\n                "
+        },
+        "id": 1,
+        "picture": 1,
+        "altText": "Couple holding hands walking down sand dunes",
+        "date": 35,
+        "photoshoot": 50,
+        "priority": "c",
+        "priorityId": 19,
+        "type": "engagements",
+        "location": {
+            "sand-dunes": 0,
+            "desert": 1
+        },
+        "lighting": "sunset"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "antelope-island": false,
+                    "layton": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class=\"img2 show normal\">\n                    <div class=\"container\" style=\"left: 0px; top: 0px;\">\n                        <div>\n                            <h3>antelope island</h3>\n                        </div>\n                        <picture>\n                            <source type=\"image/avif\" srcset=\"/images/gallery/2.avif\">\n                            <source type=\"image/webp\" srcset=\"/images/gallery/2.webp\">\n                            <source type=\"image/jpg\" srcset=\"/images/gallery/2.jpg\">\n                            <img src='/images/gallery/2.avif' alt=\"Bride and groom hugging\" loading=\"lazy\">\n                        </picture>\n                        <div>\n                            <h3>Mon May 2 2022</h3>\n                        </div>\n                    </div>\n                </div>\n                "
+        },
+        "id": 2,
+        "picture": 2,
+        "altText": "Bride and groom hugging",
+        "date": 36,
+        "photoshoot": 43,
+        "priority": "c",
+        "priorityId": 16,
+        "type": "bridals",
+        "location": {
+            "antelope-island": 0,
+            "layton": 0
+        },
+        "lighting": "sunset"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "utah-mountains": false,
+                    "roadside": false,
+                    "fall-trees": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class=\"img3 show normal\">\n                    <div class=\"container\" style=\"left: 0px; top: 0px;\">\n                        <div>\n                            <h3>utah mountains</h3>\n                        </div>\n                        <picture>\n                            <source type=\"image/avif\" srcset=\"/images/gallery/3.avif\">\n                            <source type=\"image/webp\" srcset=\"/images/gallery/3.webp\">\n                            <source type=\"image/jpg\" srcset=\"/images/gallery/3.jpg\">\n                            <img src='/images/gallery/3.avif' alt=\"Couple dancing on hiking trail\" loading=\"lazy\">\n                        </picture>\n                        <div>\n                            <h3>Sun Oct 16 2022</h3>\n                        </div>\n                    </div>\n                </div>\n                "
+        },
+        "id": 3,
+        "picture": 3,
+        "altText": "Couple dancing on hiking trail",
+        "date": 46,
+        "photoshoot": 25,
+        "priority": "c",
+        "priorityId": 9,
+        "type": "couples",
+        "location": {
+            "utah-mountains": 0,
+            "roadside": 0,
+            "fall-trees": 0
+        },
+        "lighting": "cloudy"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "salt-lake": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class=\"img4 show normal\">\n                    <div class=\"container\" style=\"left: 0px; top: 0px;\">\n                        <div>\n                            <h3>salt lake</h3>\n                        </div>\n                        <picture>\n                            <source type=\"image/avif\" srcset=\"/images/gallery/4.avif\">\n                            <source type=\"image/webp\" srcset=\"/images/gallery/4.webp\">\n                            <source type=\"image/jpg\" srcset=\"/images/gallery/4.jpg\">\n                            <img src='/images/gallery/4.avif' alt=\"Girls running and laughing on a rooftop\" loading=\"lazy\">\n                        </picture>\n                        <div>\n                            <h3>Sat Apr 15 2023</h3>\n                        </div>\n                    </div>\n                </div>\n                "
+        },
+        "id": 4,
+        "picture": 4,
+        "altText": "Girls running and laughing on a rooftop",
+        "date": 47,
+        "photoshoot": 13,
+        "priority": "d",
+        "priorityId": 1,
+        "type": "friends",
+        "location": {
+            "salt-lake": 0
+        },
+        "lighting": "full-sun"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "antelope-island": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class=\"img5 show normal\">\n                    <div class=\"container\" style=\"left: 0px; top: 0px;\">\n                        <div>\n                            <h3>antelope island</h3>\n                        </div>\n                        <picture>\n                            <source type=\"image/avif\" srcset=\"/images/gallery/5.avif\">\n                            <source type=\"image/webp\" srcset=\"/images/gallery/5.webp\">\n                            <source type=\"image/jpg\" srcset=\"/images/gallery/5.jpg\">\n                            <img src='/images/gallery/5.avif' alt=\"Groom helping bride down rock\" loading=\"lazy\">\n                        </picture>\n                        <div>\n                            <h3>Mon May 2 2022</h3>\n                        </div>\n                    </div>\n                </div>\n                "
+        },
+        "id": 5,
+        "picture": 5,
+        "altText": "Groom helping bride down rock",
+        "date": 37,
+        "photoshoot": 49,
+        "priority": "c",
+        "priorityId": 18,
+        "type": "engagements",
+        "location": {
+            "antelope-island": 1
+        },
+        "lighting": "blue-hour"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "goblin-valley": false,
+                    "moab": false,
+                    "desert": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class=\"img6 show normal\">\n                    <div class=\"container\" style=\"left: 0px; top: 0px;\">\n                        <div>\n                            <h3>goblin valley</h3>\n                        </div>\n                        <picture>\n                            <source type=\"image/avif\" srcset=\"/images/gallery/6.avif\">\n                            <source type=\"image/webp\" srcset=\"/images/gallery/6.webp\">\n                            <source type=\"image/jpg\" srcset=\"/images/gallery/6.jpg\">\n                            <img src='/images/gallery/6.avif' alt=\"Groom holding bride\" loading=\"lazy\">\n                        </picture>\n                        <div>\n                            <h3>Sun Nov 21 2021</h3>\n                        </div>\n                    </div>\n                </div>\n                "
+        },
+        "id": 6,
+        "picture": 6,
+        "altText": "Groom holding bride",
+        "date": 6,
+        "photoshoot": 23,
+        "priority": "e",
+        "priorityId": 0,
+        "type": "bridals",
+        "location": {
+            "goblin-valley": 1,
+            "moab": 1,
+            "desert": 2
+        },
+        "lighting": "blue-hour"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "goblin-valley": false,
+                    "moab": false,
+                    "desert": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class=\"img7 show normal\">\n                    <div class=\"container\" style=\"left: 0px; top: 0px;\">\n                        <div>\n                            <h3>goblin valley</h3>\n                        </div>\n                        <picture>\n                            <source type=\"image/avif\" srcset=\"/images/gallery/7.avif\">\n                            <source type=\"image/webp\" srcset=\"/images/gallery/7.webp\">\n                            <source type=\"image/jpg\" srcset=\"/images/gallery/7.jpg\">\n                            <img src='/images/gallery/7.avif' alt=\"Groom kissing brides forehead\" loading=\"lazy\">\n                        </picture>\n                        <div>\n                            <h3>Sun Nov 21 2021</h3>\n                        </div>\n                    </div>\n                </div>\n                "
+        },
+        "id": 7,
+        "picture": 7,
+        "altText": "Groom kissing brides forehead",
+        "date": 7,
+        "photoshoot": 22,
+        "priority": "b",
+        "priorityId": 8,
+        "type": "bridals",
+        "location": {
+            "goblin-valley": 2,
+            "moab": 2,
+            "desert": 3
+        },
+        "lighting": "blue-hour"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "little-white-chapel": false,
+                    "las-vegas": false,
+                    "roadside": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class=\"img8 show normal\">\n                    <div class=\"container\" style=\"left: 0px; top: 0px;\">\n                        <div>\n                            <h3>little white-chapel</h3>\n                        </div>\n                        <picture>\n                            <source type=\"image/avif\" srcset=\"/images/gallery/8.avif\">\n                            <source type=\"image/webp\" srcset=\"/images/gallery/8.webp\">\n                            <source type=\"image/jpg\" srcset=\"/images/gallery/8.jpg\">\n                            <img src='/images/gallery/8.avif' alt=\"Couple dancing in downtown\" loading=\"lazy\">\n                        </picture>\n                        <div>\n                            <h3>Thu Jun 23 2022</h3>\n                        </div>\n                    </div>\n                </div>\n                "
+        },
+        "id": 8,
+        "picture": 8,
+        "altText": "Couple dancing in downtown",
+        "date": 38,
+        "photoshoot": 31,
+        "priority": "b",
+        "priorityId": 10,
+        "type": "elopements",
+        "location": {
+            "little-white-chapel": 0,
+            "las-vegas": 0,
+            "roadside": 1
+        },
+        "lighting": "full-sun"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "antelope-island": false,
+                    "roadside": false,
+                    "layton": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class=\"img9 show normal\">\n                    <div class=\"container\" style=\"left: 0px; top: 0px;\">\n                        <div>\n                            <h3>antelope island</h3>\n                        </div>\n                        <picture>\n                            <source type=\"image/avif\" srcset=\"/images/gallery/9.avif\">\n                            <source type=\"image/webp\" srcset=\"/images/gallery/9.webp\">\n                            <source type=\"image/jpg\" srcset=\"/images/gallery/9.jpg\">\n                            <img src='/images/gallery/9.avif' alt=\"Girl laughing in the road\" loading=\"lazy\">\n                        </picture>\n                        <div>\n                            <h3>Fri Apr 21 2023</h3>\n                        </div>\n                    </div>\n                </div>\n                "
+        },
+        "id": 9,
+        "picture": 9,
+        "altText": "Girl laughing in the road",
+        "date": 48,
+        "photoshoot": 33,
+        "priority": "d",
+        "priorityId": 7,
+        "type": "portraits",
+        "location": {
+            "antelope-island": 2,
+            "roadside": 2,
+            "layton": 1
+        },
+        "lighting": "cloudy"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "las-vegas": false,
+                    "studio": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class=\"img10 show normal\">\n                    <div class=\"container\" style=\"left: 0px; top: 0px;\">\n                        <div>\n                            <h3>las vegas</h3>\n                        </div>\n                        <picture>\n                            <source type=\"image/avif\" srcset=\"/images/gallery/10.avif\">\n                            <source type=\"image/webp\" srcset=\"/images/gallery/10.webp\">\n                            <source type=\"image/jpg\" srcset=\"/images/gallery/10.jpg\">\n                            <img src='/images/gallery/10.avif' alt=\"Groom kissing bride against wall\" loading=\"lazy\">\n                        </picture>\n                        <div>\n                            <h3>Thu Jun 23 2022</h3>\n                        </div>\n                    </div>\n                </div>\n                "
+        },
+        "id": 10,
+        "picture": 10,
+        "altText": "Groom kissing bride against wall",
+        "date": 39,
+        "photoshoot": 16,
+        "priority": "c",
+        "priorityId": 7,
+        "type": "bridals",
+        "location": {
+            "las-vegas": 1,
+            "studio": 0
+        },
+        "lighting": "indoor"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "las-vegas": false,
+                    "studio": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class=\"img11 show normal\">\n                    <div class=\"container\" style=\"left: 0px; top: 0px;\">\n                        <div>\n                            <h3>las vegas</h3>\n                        </div>\n                        <picture>\n                            <source type=\"image/avif\" srcset=\"/images/gallery/11.avif\">\n                            <source type=\"image/webp\" srcset=\"/images/gallery/11.webp\">\n                            <source type=\"image/jpg\" srcset=\"/images/gallery/11.jpg\">\n                            <img src='/images/gallery/11.avif' alt=\"Blurry couple walking away from each other\" loading=\"lazy\">\n                        </picture>\n                        <div>\n                            <h3>Thu Jun 23 2022</h3>\n                        </div>\n                    </div>\n                </div>\n                "
+        },
+        "id": 11,
+        "picture": 11,
+        "altText": "Blurry couple walking away from each other",
+        "date": 40,
+        "photoshoot": 15,
+        "priority": "d",
+        "priorityId": 2,
+        "type": "bridals",
+        "location": {
+            "las-vegas": 2,
+            "studio": 1
+        },
+        "lighting": "indoor"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "antelope-island": false,
+                    "roadside": false,
+                    "layton": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class=\"img12 show normal\">\n                    <div class=\"container\" style=\"left: 0px; top: 0px;\">\n                        <div>\n                            <h3>antelope island</h3>\n                        </div>\n                        <picture>\n                            <source type=\"image/avif\" srcset=\"/images/gallery/12.avif\">\n                            <source type=\"image/webp\" srcset=\"/images/gallery/12.webp\">\n                            <source type=\"image/jpg\" srcset=\"/images/gallery/12.jpg\">\n                            <img src='/images/gallery/12.avif' alt=\"Girl squatting with a soft smile\" loading=\"lazy\">\n                        </picture>\n                        <div>\n                            <h3>Fri Apr 21 2023</h3>\n                        </div>\n                    </div>\n                </div>\n                "
+        },
+        "id": 12,
+        "picture": 12,
+        "altText": "Girl squatting with a soft smile",
+        "date": 49,
+        "photoshoot": 32,
+        "priority": "d",
+        "priorityId": 6,
+        "type": "portraits",
+        "location": {
+            "antelope-island": 3,
+            "roadside": 3,
+            "layton": 2
+        },
+        "lighting": "blue-hour"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "salt-lake": false,
+                    "downtown": false,
+                    "new-york-rooftop": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class=\"img13 show normal\">\n                    <div class=\"container\" style=\"left: 0px; top: 0px;\">\n                        <div>\n                            <h3>salt lake</h3>\n                        </div>\n                        <picture>\n                            <source type=\"image/avif\" srcset=\"/images/gallery/13.avif\">\n                            <source type=\"image/webp\" srcset=\"/images/gallery/13.webp\">\n                            <source type=\"image/jpg\" srcset=\"/images/gallery/13.jpg\">\n                            <img src='/images/gallery/13.avif' alt=\"Groom lifting bride in the air\" loading=\"lazy\">\n                        </picture>\n                        <div>\n                            <h3>Fri Feb 4 2022</h3>\n                        </div>\n                    </div>\n                </div>\n                "
+        },
+        "id": 13,
+        "picture": 13,
+        "altText": "Groom lifting bride in the air",
+        "date": 8,
+        "photoshoot": 12,
+        "priority": "b",
+        "priorityId": 4,
+        "type": "bridals",
+        "location": {
+            "salt-lake": 1,
+            "downtown": 0,
+            "new-york-rooftop": 0
+        },
+        "lighting": "sunrise"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "salt-lake": false,
+                    "downtown": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class=\"img14 show normal\">\n                    <div class=\"container\" style=\"left: 0px; top: 0px;\">\n                        <div>\n                            <h3>salt lake</h3>\n                        </div>\n                        <picture>\n                            <source type=\"image/avif\" srcset=\"/images/gallery/14.avif\">\n                            <source type=\"image/webp\" srcset=\"/images/gallery/14.webp\">\n                            <source type=\"image/jpg\" srcset=\"/images/gallery/14.jpg\">\n                            <img src='/images/gallery/14.avif' alt=\"Bride jumping on groom and swinging\" loading=\"lazy\">\n                        </picture>\n                        <div>\n                            <h3>Fri Feb 4 2022</h3>\n                        </div>\n                    </div>\n                </div>\n                "
+        },
+        "id": 14,
+        "picture": 14,
+        "altText": "Bride jumping on groom and swinging",
+        "date": 9,
+        "photoshoot": 11,
+        "priority": "c",
+        "priorityId": 6,
+        "type": "bridals",
+        "location": {
+            "salt-lake": 2,
+            "downtown": 1
+        },
+        "lighting": "sunrise"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "salt-lake": false,
+                    "downtown": false,
+                    "new-york-rooftop": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class=\"img15 show normal\">\n                    <div class=\"container\" style=\"left: 0px; top: 0px;\">\n                        <div>\n                            <h3>salt lake</h3>\n                        </div>\n                        <picture>\n                            <source type=\"image/avif\" srcset=\"/images/gallery/15.avif\">\n                            <source type=\"image/webp\" srcset=\"/images/gallery/15.webp\">\n                            <source type=\"image/jpg\" srcset=\"/images/gallery/15.jpg\">\n                            <img src='/images/gallery/15.avif' alt=\"Couple holding hands looking opposite directions\" loading=\"lazy\">\n                        </picture>\n                        <div>\n                            <h3>Fri Feb 4 2022</h3>\n                        </div>\n                    </div>\n                </div>\n                "
+        },
+        "id": 15,
+        "picture": 15,
+        "altText": "Couple holding hands looking opposite directions",
+        "date": 10,
+        "photoshoot": 10,
+        "priority": "c",
+        "priorityId": 5,
+        "type": "bridals",
+        "location": {
+            "salt-lake": 3,
+            "downtown": 2,
+            "new-york-rooftop": 1
+        },
+        "lighting": "sunrise"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "salt-lake": false,
+                    "downtown": false,
+                    "new-york-rooftop": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class=\"img16 show normal\">\n                    <div class=\"container\" style=\"left: 0px; top: 0px;\">\n                        <div>\n                            <h3>salt lake</h3>\n                        </div>\n                        <picture>\n                            <source type=\"image/avif\" srcset=\"/images/gallery/16.avif\">\n                            <source type=\"image/webp\" srcset=\"/images/gallery/16.webp\">\n                            <source type=\"image/jpg\" srcset=\"/images/gallery/16.jpg\">\n                            <img src='/images/gallery/16.avif' alt=\"Bride and groom putting their heads and noses together\" loading=\"lazy\">\n                        </picture>\n                        <div>\n                            <h3>Fri Feb 4 2022</h3>\n                        </div>\n                    </div>\n                </div>\n                "
+        },
+        "id": 16,
+        "picture": 16,
+        "altText": "Bride and groom putting their heads and noses together",
+        "date": 11,
+        "photoshoot": 9,
+        "priority": "d",
+        "priorityId": 0,
+        "type": "bridals",
+        "location": {
+            "salt-lake": 4,
+            "downtown": 3,
+            "new-york-rooftop": 2
+        },
+        "lighting": "sunrise"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "salt-lake": false,
+                    "downtown": false,
+                    "england": false,
+                    "london": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class=\"img17 show normal\">\n                    <div class=\"container\" style=\"left: 0px; top: 0px;\">\n                        <div>\n                            <h3>salt lake</h3>\n                        </div>\n                        <picture>\n                            <source type=\"image/avif\" srcset=\"/images/gallery/17.avif\">\n                            <source type=\"image/webp\" srcset=\"/images/gallery/17.webp\">\n                            <source type=\"image/jpg\" srcset=\"/images/gallery/17.jpg\">\n                            <img src='/images/gallery/17.avif' alt=\"Couple holding hands and looking at each other\" loading=\"lazy\">\n                        </picture>\n                        <div>\n                            <h3>Fri Feb 4 2022</h3>\n                        </div>\n                    </div>\n                </div>\n                "
+        },
+        "id": 17,
+        "picture": 17,
+        "altText": "Couple holding hands and looking at each other",
+        "date": 12,
+        "photoshoot": 35,
+        "priority": "b",
+        "priorityId": 11,
+        "type": "couples",
+        "location": {
+            "salt-lake": 5,
+            "downtown": 4,
+            "england": 0,
+            "london": 0
+        },
+        "lighting": "sunrise"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "salt-lake": false,
+                    "new-york": false,
+                    "seattle": false,
+                    "parks": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class=\"img18 show normal\">\n                    <div class=\"container\" style=\"left: 0px; top: 0px;\">\n                        <div>\n                            <h3>salt lake</h3>\n                        </div>\n                        <picture>\n                            <source type=\"image/avif\" srcset=\"/images/gallery/18.avif\">\n                            <source type=\"image/webp\" srcset=\"/images/gallery/18.webp\">\n                            <source type=\"image/jpg\" srcset=\"/images/gallery/18.jpg\">\n                            <img src='/images/gallery/18.avif' alt=\"Guy leaning over girl to kiss her\" loading=\"lazy\">\n                        </picture>\n                        <div>\n                            <h3>Fri Feb 4 2022</h3>\n                        </div>\n                    </div>\n                </div>\n                "
+        },
+        "id": 18,
+        "picture": 18,
+        "altText": "Guy leaning over girl to kiss her",
+        "date": 13,
+        "photoshoot": 34,
+        "priority": "c",
+        "priorityId": 13,
+        "type": "couples",
+        "location": {
+            "salt-lake": 6,
+            "new-york": 0,
+            "seattle": 0,
+            "parks": 0
+        },
+        "lighting": "sunrise"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "salt-lake": false,
+                    "utah-mountains": false,
+                    "forest": false,
+                    "snow": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class=\"img19 show normal\">\n                    <div class=\"container\" style=\"left: 0px; top: 0px;\">\n                        <div>\n                            <h3>salt lake</h3>\n                        </div>\n                        <picture>\n                            <source type=\"image/avif\" srcset=\"/images/gallery/19.avif\">\n                            <source type=\"image/webp\" srcset=\"/images/gallery/19.webp\">\n                            <source type=\"image/jpg\" srcset=\"/images/gallery/19.jpg\">\n                            <img src='/images/gallery/19.avif' alt=\"Couple walking in the snow on the mountain\" loading=\"lazy\">\n                        </picture>\n                        <div>\n                            <h3>Fri Feb 4 2022</h3>\n                        </div>\n                    </div>\n                </div>\n                "
+        },
+        "id": 19,
+        "picture": 19,
+        "altText": "Couple walking in the snow on the mountain",
+        "date": 14,
+        "photoshoot": 63,
+        "priority": "b",
+        "priorityId": 20,
+        "type": "bridals",
+        "location": {
+            "salt-lake": 7,
+            "utah-mountains": 1,
+            "forest": 0,
+            "snow": 0
+        },
+        "lighting": "full-sun"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "salt-lake": false,
+                    "utah-mountains": false,
+                    "forest": false,
+                    "snow": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class=\"img20 show normal\">\n                    <div class=\"container\" style=\"left: 0px; top: 0px;\">\n                        <div>\n                            <h3>salt lake</h3>\n                        </div>\n                        <picture>\n                            <source type=\"image/avif\" srcset=\"/images/gallery/20.avif\">\n                            <source type=\"image/webp\" srcset=\"/images/gallery/20.webp\">\n                            <source type=\"image/jpg\" srcset=\"/images/gallery/20.jpg\">\n                            <img src='/images/gallery/20.avif' alt=\"Groom lifting bride in the forest\" loading=\"lazy\">\n                        </picture>\n                        <div>\n                            <h3>Fri Feb 4 2022</h3>\n                        </div>\n                    </div>\n                </div>\n                "
+        },
+        "id": 20,
+        "picture": 20,
+        "altText": "Groom lifting bride in the forest",
+        "date": 15,
+        "photoshoot": 62,
+        "priority": "c",
+        "priorityId": 23,
+        "type": "bridals",
+        "location": {
+            "salt-lake": 8,
+            "utah-mountains": 2,
+            "forest": 1,
+            "snow": 1
+        },
+        "lighting": "full-sun"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "salt-lake": false,
+                    "utah-mountains": false,
+                    "forest": false,
+                    "snow": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class=\"img21 show normal\">\n                    <div class=\"container\" style=\"left: 0px; top: 0px;\">\n                        <div>\n                            <h3>salt lake</h3>\n                        </div>\n                        <picture>\n                            <source type=\"image/avif\" srcset=\"/images/gallery/21.avif\">\n                            <source type=\"image/webp\" srcset=\"/images/gallery/21.webp\">\n                            <source type=\"image/jpg\" srcset=\"/images/gallery/21.jpg\">\n                            <img src='/images/gallery/21.avif' alt=\"Couple playing in the snow\" loading=\"lazy\">\n                        </picture>\n                        <div>\n                            <h3>Fri Feb 4 2022</h3>\n                        </div>\n                    </div>\n                </div>\n                "
+        },
+        "id": 21,
+        "picture": 21,
+        "altText": "Couple playing in the snow",
+        "date": 16,
+        "photoshoot": 66,
+        "priority": "b",
+        "priorityId": 22,
+        "type": "engagements",
+        "location": {
+            "salt-lake": 9,
+            "utah-mountains": 3,
+            "forest": 2,
+            "snow": 2
+        },
+        "lighting": "full-sun"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "salt-lake": false,
+                    "utah-mountains": false,
+                    "forest": false,
+                    "snow": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class=\"img22 show normal\">\n                    <div class=\"container\" style=\"left: 0px; top: 0px;\">\n                        <div>\n                            <h3>salt lake</h3>\n                        </div>\n                        <picture>\n                            <source type=\"image/avif\" srcset=\"/images/gallery/22.avif\">\n                            <source type=\"image/webp\" srcset=\"/images/gallery/22.webp\">\n                            <source type=\"image/jpg\" srcset=\"/images/gallery/22.jpg\">\n                            <img src='/images/gallery/22.avif' alt=\"Couple playing in the snow\" loading=\"lazy\">\n                        </picture>\n                        <div>\n                            <h3>Fri Feb 4 2022</h3>\n                        </div>\n                    </div>\n                </div>\n                "
+        },
+        "id": 22,
+        "picture": 22,
+        "altText": "Couple playing in the snow",
+        "date": 17,
+        "photoshoot": 65,
+        "priority": "b",
+        "priorityId": 21,
+        "type": "engagements",
+        "location": {
+            "salt-lake": 10,
+            "utah-mountains": 4,
+            "forest": 3,
+            "snow": 3
+        },
+        "lighting": "full-sun"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "salt-lake": false,
+                    "utah-mountains": false,
+                    "forest": false,
+                    "snow": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class=\"img23 show normal\">\n                    <div class=\"container\" style=\"left: 0px; top: 0px;\">\n                        <div>\n                            <h3>salt lake</h3>\n                        </div>\n                        <picture>\n                            <source type=\"image/avif\" srcset=\"/images/gallery/23.avif\">\n                            <source type=\"image/webp\" srcset=\"/images/gallery/23.webp\">\n                            <source type=\"image/jpg\" srcset=\"/images/gallery/23.jpg\">\n                            <img src='/images/gallery/23.avif' alt=\"Couple in the snow lifting girl up\" loading=\"lazy\">\n                        </picture>\n                        <div>\n                            <h3>Fri Feb 4 2022</h3>\n                        </div>\n                    </div>\n                </div>\n                "
+        },
+        "id": 23,
+        "picture": 23,
+        "altText": "Couple in the snow lifting girl up",
+        "date": 18,
+        "photoshoot": 64,
+        "priority": "d",
+        "priorityId": 14,
+        "type": "engagements",
+        "location": {
+            "salt-lake": 11,
+            "utah-mountains": 5,
+            "forest": 4,
+            "snow": 4
+        },
+        "lighting": "full-sun"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "salt-flats": false,
+                    "salt-lake": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class=\"img24 show normal\">\n                    <div class=\"container\" style=\"left: 0px; top: 0px;\">\n                        <div>\n                            <h3>salt flats</h3>\n                        </div>\n                        <picture>\n                            <source type=\"image/avif\" srcset=\"/images/gallery/24.avif\">\n                            <source type=\"image/webp\" srcset=\"/images/gallery/24.webp\">\n                            <source type=\"image/jpg\" srcset=\"/images/gallery/24.jpg\">\n                            <img src='/images/gallery/24.avif' alt=\"Couple sitting and looking at each other\" loading=\"lazy\">\n                        </picture>\n                        <div>\n                            <h3>Fri Feb 4 2022</h3>\n                        </div>\n                    </div>\n                </div>\n                "
+        },
+        "id": 24,
+        "picture": 24,
+        "altText": "Couple sitting and looking at each other",
+        "date": 19,
+        "photoshoot": 30,
+        "priority": "c",
+        "priorityId": 12,
+        "type": "engagements",
+        "location": {
+            "salt-flats": 0,
+            "salt-lake": 12
+        },
+        "lighting": "sunset"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "salt-flats": false,
+                    "salt-lake": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class=\"img25 show normal\">\n                    <div class=\"container\" style=\"left: 0px; top: 0px;\">\n                        <div>\n                            <h3>salt flats</h3>\n                        </div>\n                        <picture>\n                            <source type=\"image/avif\" srcset=\"/images/gallery/25.avif\">\n                            <source type=\"image/webp\" srcset=\"/images/gallery/25.webp\">\n                            <source type=\"image/jpg\" srcset=\"/images/gallery/25.jpg\">\n                            <img src='/images/gallery/25.avif' alt=\"Couple sitting back to back and looking at each other\" loading=\"lazy\">\n                        </picture>\n                        <div>\n                            <h3>Fri Feb 4 2022</h3>\n                        </div>\n                    </div>\n                </div>\n                "
+        },
+        "id": 25,
+        "picture": 25,
+        "altText": "Couple sitting back to back and looking at each other",
+        "date": 20,
+        "photoshoot": 29,
+        "priority": "d",
+        "priorityId": 5,
+        "type": "engagements",
+        "location": {
+            "salt-flats": 1,
+            "salt-lake": 13
+        },
+        "lighting": "sunset"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "salt-flats": false,
+                    "salt-lake": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class=\"img26 show normal\">\n                    <div class=\"container\" style=\"left: 0px; top: 0px;\">\n                        <div>\n                            <h3>salt flats</h3>\n                        </div>\n                        <picture>\n                            <source type=\"image/avif\" srcset=\"/images/gallery/26.avif\">\n                            <source type=\"image/webp\" srcset=\"/images/gallery/26.webp\">\n                            <source type=\"image/jpg\" srcset=\"/images/gallery/26.jpg\">\n                            <img src='/images/gallery/26.avif' alt=\"Couple sitting on the ground holding hands\" loading=\"lazy\">\n                        </picture>\n                        <div>\n                            <h3>Fri Feb 4 2022</h3>\n                        </div>\n                    </div>\n                </div>\n                "
+        },
+        "id": 26,
+        "picture": 26,
+        "altText": "Couple sitting on the ground holding hands",
+        "date": 21,
+        "photoshoot": 28,
+        "priority": "b",
+        "priorityId": 9,
+        "type": "engagements",
+        "location": {
+            "salt-flats": 2,
+            "salt-lake": 14
+        },
+        "lighting": "sunset"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "salt-flats": false,
+                    "salt-lake": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class=\"img27 show normal\">\n                    <div class=\"container\" style=\"left: 0px; top: 0px;\">\n                        <div>\n                            <h3>salt flats</h3>\n                        </div>\n                        <picture>\n                            <source type=\"image/avif\" srcset=\"/images/gallery/27.avif\">\n                            <source type=\"image/webp\" srcset=\"/images/gallery/27.webp\">\n                            <source type=\"image/jpg\" srcset=\"/images/gallery/27.jpg\">\n                            <img src='/images/gallery/27.avif' alt=\"Girl hugging from behind looking at each other\" loading=\"lazy\">\n                        </picture>\n                        <div>\n                            <h3>Fri Feb 4 2022</h3>\n                        </div>\n                    </div>\n                </div>\n                "
+        },
+        "id": 27,
+        "picture": 27,
+        "altText": "Girl hugging from behind looking at each other",
+        "date": 22,
+        "photoshoot": 27,
+        "priority": "c",
+        "priorityId": 11,
+        "type": "engagements",
+        "location": {
+            "salt-flats": 3,
+            "salt-lake": 15
+        },
+        "lighting": "sunset"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "salt-flats": false,
+                    "salt-lake": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class=\"img28 show normal\">\n                    <div class=\"container\" style=\"left: 0px; top: 0px;\">\n                        <div>\n                            <h3>salt flats</h3>\n                        </div>\n                        <picture>\n                            <source type=\"image/avif\" srcset=\"/images/gallery/28.avif\">\n                            <source type=\"image/webp\" srcset=\"/images/gallery/28.webp\">\n                            <source type=\"image/jpg\" srcset=\"/images/gallery/28.jpg\">\n                            <img src='/images/gallery/28.avif' alt=\"Groom lifting bride for a kiss\" loading=\"lazy\">\n                        </picture>\n                        <div>\n                            <h3>Fri Feb 4 2022</h3>\n                        </div>\n                    </div>\n                </div>\n                "
+        },
+        "id": 28,
+        "picture": 28,
+        "altText": "Groom lifting bride for a kiss",
+        "date": 23,
+        "photoshoot": 57,
+        "priority": "b",
+        "priorityId": 18,
+        "type": "bridals",
+        "location": {
+            "salt-flats": 4,
+            "salt-lake": 16
+        },
+        "lighting": "sunset"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "salt-flats": false,
+                    "salt-lake": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class=\"img29 show normal\">\n                    <div class=\"container\" style=\"left: 0px; top: 0px;\">\n                        <div>\n                            <h3>salt flats</h3>\n                        </div>\n                        <picture>\n                            <source type=\"image/avif\" srcset=\"/images/gallery/29.avif\">\n                            <source type=\"image/webp\" srcset=\"/images/gallery/29.webp\">\n                            <source type=\"image/jpg\" srcset=\"/images/gallery/29.jpg\">\n                            <img src='/images/gallery/29.avif' alt=\"Groom kissing brides head\" loading=\"lazy\">\n                        </picture>\n                        <div>\n                            <h3>Fri Feb 4 2022</h3>\n                        </div>\n                    </div>\n                </div>\n                "
+        },
+        "id": 29,
+        "picture": 29,
+        "altText": "Groom kissing brides head",
+        "date": 24,
+        "photoshoot": 41,
+        "priority": "b",
+        "priorityId": 13,
+        "type": "bridals",
+        "location": {
+            "salt-flats": 5,
+            "salt-lake": 17
+        },
+        "lighting": "blue-hour"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "utah-lake": false,
+                    "lakes": false,
+                    "utah-county": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class=\"img30 show normal\">\n                    <div class=\"container\" style=\"left: 0px; top: 0px;\">\n                        <div>\n                            <h3>utah lake</h3>\n                        </div>\n                        <picture>\n                            <source type=\"image/avif\" srcset=\"/images/gallery/30.avif\">\n                            <source type=\"image/webp\" srcset=\"/images/gallery/30.webp\">\n                            <source type=\"image/jpg\" srcset=\"/images/gallery/30.jpg\">\n                            <img src='/images/gallery/30.avif' alt=\"Bridal couple doing first look by the lake\" loading=\"lazy\">\n                        </picture>\n                        <div>\n                            <h3>Sat Oct 1 2022</h3>\n                        </div>\n                    </div>\n                </div>\n                "
+        },
+        "id": 30,
+        "picture": 30,
+        "altText": "Bridal couple doing first look by the lake",
+        "date": 42,
+        "photoshoot": 45,
+        "priority": "b",
+        "priorityId": 14,
+        "type": "bridals",
+        "location": {
+            "utah-lake": 0,
+            "lakes": 0,
+            "utah-county": 0
+        },
+        "lighting": "blue-hour"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "utah-lake": false,
+                    "lakes": false,
+                    "utah-county": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class=\"img31 show normal\">\n                    <div class=\"container\" style=\"left: 0px; top: 0px;\">\n                        <div>\n                            <h3>utah lake</h3>\n                        </div>\n                        <picture>\n                            <source type=\"image/avif\" srcset=\"/images/gallery/31.avif\">\n                            <source type=\"image/webp\" srcset=\"/images/gallery/31.webp\">\n                            <source type=\"image/jpg\" srcset=\"/images/gallery/31.jpg\">\n                            <img src='/images/gallery/31.avif' alt=\"Bride and groom hugging\" loading=\"lazy\">\n                        </picture>\n                        <div>\n                            <h3>Sat Oct 1 2022</h3>\n                        </div>\n                    </div>\n                </div>\n                "
+        },
+        "id": 31,
+        "picture": 31,
+        "altText": "Bride and groom hugging",
+        "date": 43,
+        "photoshoot": 44,
+        "priority": "a",
+        "priorityId": 2,
+        "type": "bridals",
+        "location": {
+            "utah-lake": 1,
+            "lakes": 1,
+            "utah-county": 1
+        },
+        "lighting": "blue-hour"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "salt-lake": false,
+                    "limousine": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class=\"img32 show normal\">\n                    <div class=\"container\" style=\"left: 0px; top: 0px;\">\n                        <div>\n                            <h3>salt lake</h3>\n                        </div>\n                        <picture>\n                            <source type=\"image/avif\" srcset=\"/images/gallery/32.avif\">\n                            <source type=\"image/webp\" srcset=\"/images/gallery/32.webp\">\n                            <source type=\"image/jpg\" srcset=\"/images/gallery/32.jpg\">\n                            <img src='/images/gallery/32.avif' alt=\"Couple in limo drinking champagne\" loading=\"lazy\">\n                        </picture>\n                        <div>\n                            <h3>Fri Feb 4 2022</h3>\n                        </div>\n                    </div>\n                </div>\n                "
+        },
+        "id": 32,
+        "picture": 32,
+        "altText": "Couple in limo drinking champagne",
+        "date": 25,
+        "photoshoot": 40,
+        "priority": "c",
+        "priorityId": 15,
+        "type": "bridals",
+        "location": {
+            "salt-lake": 18,
+            "limousine": 0
+        },
+        "lighting": "flash"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "salt-lake": false,
+                    "limousine": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class=\"img33 show normal\">\n                    <div class=\"container\" style=\"left: 0px; top: 0px;\">\n                        <div>\n                            <h3>salt lake</h3>\n                        </div>\n                        <picture>\n                            <source type=\"image/avif\" srcset=\"/images/gallery/33.avif\">\n                            <source type=\"image/webp\" srcset=\"/images/gallery/33.webp\">\n                            <source type=\"image/jpg\" srcset=\"/images/gallery/33.jpg\">\n                            <img src='/images/gallery/33.avif' alt=\"Couple gazing into each others eyes\" loading=\"lazy\">\n                        </picture>\n                        <div>\n                            <h3>Fri Feb 4 2022</h3>\n                        </div>\n                    </div>\n                </div>\n                "
+        },
+        "id": 33,
+        "picture": 33,
+        "altText": "Couple gazing into each others eyes",
+        "date": 26,
+        "photoshoot": 39,
+        "priority": "d",
+        "priorityId": 8,
+        "type": "bridals",
+        "location": {
+            "salt-lake": 19,
+            "limousine": 1
+        },
+        "lighting": "flash"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "salt-flats": false,
+                    "salt-lake": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class=\"img34 show normal\">\n                    <div class=\"container\" style=\"left: 0px; top: 0px;\">\n                        <div>\n                            <h3>salt flats</h3>\n                        </div>\n                        <picture>\n                            <source type=\"image/avif\" srcset=\"/images/gallery/34.avif\">\n                            <source type=\"image/webp\" srcset=\"/images/gallery/34.webp\">\n                            <source type=\"image/jpg\" srcset=\"/images/gallery/34.jpg\">\n                            <img src='/images/gallery/34.avif' alt=\"Bridal couple running to their getaway car with sparklers\" loading=\"lazy\">\n                        </picture>\n                        <div>\n                            <h3>Fri Feb 4 2022</h3>\n                        </div>\n                    </div>\n                </div>\n                "
+        },
+        "id": 34,
+        "picture": 34,
+        "altText": "Bridal couple running to their getaway car with sparklers",
+        "date": 27,
+        "photoshoot": 61,
+        "priority": "d",
+        "priorityId": 13,
+        "type": "weddings",
+        "location": {
+            "salt-flats": 6,
+            "salt-lake": 20
+        },
+        "lighting": "flash"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "salt-flats": false,
+                    "salt-lake": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class=\"img35 show normal\">\n                    <div class=\"container\" style=\"left: 0px; top: 0px;\">\n                        <div>\n                            <h3>salt flats</h3>\n                        </div>\n                        <picture>\n                            <source type=\"image/avif\" srcset=\"/images/gallery/35.avif\">\n                            <source type=\"image/webp\" srcset=\"/images/gallery/35.webp\">\n                            <source type=\"image/jpg\" srcset=\"/images/gallery/35.jpg\">\n                            <img src='/images/gallery/35.avif' alt=\"Bridal couple hugging with sparklers\" loading=\"lazy\">\n                        </picture>\n                        <div>\n                            <h3>Fri Feb 4 2022</h3>\n                        </div>\n                    </div>\n                </div>\n                "
+        },
+        "id": 35,
+        "picture": 35,
+        "altText": "Bridal couple hugging with sparklers",
+        "date": 28,
+        "photoshoot": 60,
+        "priority": "c",
+        "priorityId": 22,
+        "type": "weddings",
+        "location": {
+            "salt-flats": 7,
+            "salt-lake": 21
+        },
+        "lighting": "flash"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "salt-flats": false,
+                    "salt-lake": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class=\"img36 show normal\">\n                    <div class=\"container\" style=\"left: 0px; top: 0px;\">\n                        <div>\n                            <h3>salt flats</h3>\n                        </div>\n                        <picture>\n                            <source type=\"image/avif\" srcset=\"/images/gallery/36.avif\">\n                            <source type=\"image/webp\" srcset=\"/images/gallery/36.webp\">\n                            <source type=\"image/jpg\" srcset=\"/images/gallery/36.jpg\">\n                            <img src='/images/gallery/36.avif' alt=\"Groom leaning in to kiss the bride\" loading=\"lazy\">\n                        </picture>\n                        <div>\n                            <h3>Fri Feb 4 2022</h3>\n                        </div>\n                    </div>\n                </div>\n                "
+        },
+        "id": 36,
+        "picture": 36,
+        "altText": "Groom leaning in to kiss the bride",
+        "date": 29,
+        "photoshoot": 59,
+        "priority": "d",
+        "priorityId": 12,
+        "type": "weddings",
+        "location": {
+            "salt-flats": 8,
+            "salt-lake": 22
+        },
+        "lighting": "flash"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "salt-flats": false,
+                    "salt-lake": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class=\"img37 show normal\">\n                    <div class=\"container\" style=\"left: 0px; top: 0px;\">\n                        <div>\n                            <h3>salt flats</h3>\n                        </div>\n                        <picture>\n                            <source type=\"image/avif\" srcset=\"/images/gallery/37.avif\">\n                            <source type=\"image/webp\" srcset=\"/images/gallery/37.webp\">\n                            <source type=\"image/jpg\" srcset=\"/images/gallery/37.jpg\">\n                            <img src='/images/gallery/37.avif' alt=\"Groom and bride laughing\" loading=\"lazy\">\n                        </picture>\n                        <div>\n                            <h3>Fri Feb 4 2022</h3>\n                        </div>\n                    </div>\n                </div>\n                "
+        },
+        "id": 37,
+        "picture": 37,
+        "altText": "Groom and bride laughing",
+        "date": 30,
+        "photoshoot": 58,
+        "priority": "b",
+        "priorityId": 19,
+        "type": "weddings",
+        "location": {
+            "salt-flats": 9,
+            "salt-lake": 23
+        },
+        "lighting": "flash"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "utah-mountains": false,
+                    "fall-trees": false,
+                    "forest": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class=\"img38 show normal\">\n                    <div class=\"container\" style=\"left: 0px; top: 0px;\">\n                        <div>\n                            <h3>utah mountains</h3>\n                        </div>\n                        <picture>\n                            <source type=\"image/avif\" srcset=\"/images/gallery/38.avif\">\n                            <source type=\"image/webp\" srcset=\"/images/gallery/38.webp\">\n                            <source type=\"image/jpg\" srcset=\"/images/gallery/38.jpg\">\n                            <img src='/images/gallery/38.avif' alt=\"Boy holding hand and leading girl\" loading=\"lazy\">\n                        </picture>\n                        <div>\n                            <h3>Sat Oct 8 2022</h3>\n                        </div>\n                    </div>\n                </div>\n                "
+        },
+        "id": 38,
+        "picture": 38,
+        "altText": "Boy holding hand and leading girl",
+        "date": 44,
+        "photoshoot": 26,
+        "priority": "c",
+        "priorityId": 10,
+        "type": "couples",
+        "location": {
+            "utah-mountains": 6,
+            "fall-trees": 1,
+            "forest": 5
+        },
+        "lighting": "cloudy"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "studio": false,
+                    "layton": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class=\"img39 show normal\">\n                    <div class=\"container\" style=\"left: 0px; top: 0px;\">\n                        <div>\n                            <h3>studio</h3>\n                        </div>\n                        <picture>\n                            <source type=\"image/avif\" srcset=\"/images/gallery/39.avif\">\n                            <source type=\"image/webp\" srcset=\"/images/gallery/39.webp\">\n                            <source type=\"image/jpg\" srcset=\"/images/gallery/39.jpg\">\n                            <img src='/images/gallery/39.avif' alt=\"Couple holding baby and admiring him\" loading=\"lazy\">\n                        </picture>\n                        <div>\n                            <h3>Sat Mar 5 2022</h3>\n                        </div>\n                    </div>\n                </div>\n                "
+        },
+        "id": 39,
+        "picture": 39,
+        "altText": "Couple holding baby and admiring him",
+        "date": 31,
+        "photoshoot": 52,
+        "priority": "d",
+        "priorityId": 11,
+        "type": "families",
+        "location": {
+            "studio": 2,
+            "layton": 3
+        },
+        "lighting": "indoor"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "utah-mountains": false,
+                    "fall-trees": false,
+                    "forest": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class=\"img40 show normal\">\n                    <div class=\"container\" style=\"left: 0px; top: 0px;\">\n                        <div>\n                            <h3>utah mountains</h3>\n                        </div>\n                        <picture>\n                            <source type=\"image/avif\" srcset=\"/images/gallery/40.avif\">\n                            <source type=\"image/webp\" srcset=\"/images/gallery/40.webp\">\n                            <source type=\"image/jpg\" srcset=\"/images/gallery/40.jpg\">\n                            <img src='/images/gallery/40.avif' alt=\"Couple sitting down and holding each other and gazing into each others eyes\" loading=\"lazy\">\n                        </picture>\n                        <div>\n                            <h3>Sat Oct 8 2022</h3>\n                        </div>\n                    </div>\n                </div>\n                "
+        },
+        "id": 40,
+        "picture": 40,
+        "altText": "Couple sitting down and holding each other and gazing into each others eyes",
+        "date": 45,
+        "photoshoot": 7,
+        "priority": "c",
+        "priorityId": 4,
+        "type": "couples",
+        "location": {
+            "utah-mountains": 7,
+            "fall-trees": 2,
+            "forest": 6
+        },
+        "lighting": "cloudy"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "sand-dunes": false,
+                    "desert": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class=\"img41 show normal\">\n                    <div class=\"container\" style=\"left: 0px; top: 0px;\">\n                        <div>\n                            <h3>sand dunes</h3>\n                        </div>\n                        <picture>\n                            <source type=\"image/avif\" srcset=\"/images/gallery/41.avif\">\n                            <source type=\"image/webp\" srcset=\"/images/gallery/41.webp\">\n                            <source type=\"image/jpg\" srcset=\"/images/gallery/41.jpg\">\n                            <img src='/images/gallery/41.avif' alt=\"Couple sitting and hugging\" loading=\"lazy\">\n                        </picture>\n                        <div>\n                            <h3>Sat Apr 9 2022</h3>\n                        </div>\n                    </div>\n                </div>\n                "
+        },
+        "id": 41,
+        "picture": 41,
+        "altText": "Couple sitting and hugging",
+        "date": 32,
+        "photoshoot": 48,
+        "priority": "c",
+        "priorityId": 17,
+        "type": "engagements",
+        "location": {
+            "sand-dunes": 1,
+            "desert": 4
+        },
+        "lighting": "sunset"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "sand-dunes": false,
+                    "desert": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class=\"img42 show normal\">\n                    <div class=\"container\" style=\"left: 0px; top: 0px;\">\n                        <div>\n                            <h3>sand dunes</h3>\n                        </div>\n                        <picture>\n                            <source type=\"image/avif\" srcset=\"/images/gallery/42.avif\">\n                            <source type=\"image/webp\" srcset=\"/images/gallery/42.webp\">\n                            <source type=\"image/jpg\" srcset=\"/images/gallery/42.jpg\">\n                            <img src='/images/gallery/42.avif' alt=\"Guy hugging girl from behind and swaying\" loading=\"lazy\">\n                        </picture>\n                        <div>\n                            <h3>Sat Apr 9 2022</h3>\n                        </div>\n                    </div>\n                </div>\n                "
+        },
+        "id": 42,
+        "picture": 42,
+        "altText": "Guy hugging girl from behind and swaying",
+        "date": 33,
+        "photoshoot": 47,
+        "priority": "b",
+        "priorityId": 15,
+        "type": "engagements",
+        "location": {
+            "sand-dunes": 2,
+            "desert": 5
+        },
+        "lighting": "sunset"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "sand-dunes": false,
+                    "desert": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class=\"img43 show normal\">\n                    <div class=\"container\" style=\"left: 0px; top: 0px;\">\n                        <div>\n                            <h3>sand dunes</h3>\n                        </div>\n                        <picture>\n                            <source type=\"image/avif\" srcset=\"/images/gallery/43.avif\">\n                            <source type=\"image/webp\" srcset=\"/images/gallery/43.webp\">\n                            <source type=\"image/jpg\" srcset=\"/images/gallery/43.jpg\">\n                            <img src='/images/gallery/43.avif' alt=\"Girl being lifted up on guys back\" loading=\"lazy\">\n                        </picture>\n                        <div>\n                            <h3>Sat Apr 9 2022</h3>\n                        </div>\n                    </div>\n                </div>\n                "
+        },
+        "id": 43,
+        "picture": 43,
+        "altText": "Girl being lifted up on guys back",
+        "date": 34,
+        "photoshoot": 46,
+        "priority": "d",
+        "priorityId": 10,
+        "type": "engagements",
+        "location": {
+            "sand-dunes": 3,
+            "desert": 6
+        },
+        "lighting": "sunset"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "goblin-valley": false,
+                    "moab": false,
+                    "desert": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class=\"img44 show normal\">\n                    <div class=\"container\" style=\"left: 0px; top: 0px;\">\n                        <div>\n                            <h3>goblin valley</h3>\n                        </div>\n                        <picture>\n                            <source type=\"image/avif\" srcset=\"/images/gallery/44.avif\">\n                            <source type=\"image/webp\" srcset=\"/images/gallery/44.webp\">\n                            <source type=\"image/jpg\" srcset=\"/images/gallery/44.jpg\">\n                            <img src='/images/gallery/44.avif' alt=\"Guy hugging girl from behind\" loading=\"lazy\">\n                        </picture>\n                        <div>\n                            <h3>Thu May 25 2023</h3>\n                        </div>\n                    </div>\n                </div>\n                "
+        },
+        "id": 44,
+        "picture": 44,
+        "altText": "Guy hugging girl from behind",
+        "date": 56,
+        "photoshoot": 6,
+        "priority": "b",
+        "priorityId": 2,
+        "type": "bridals",
+        "location": {
+            "goblin-valley": 3,
+            "moab": 3,
+            "desert": 7
+        },
+        "lighting": "cloudy"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "goblin-valley": false,
+                    "moab": false,
+                    "desert": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class=\"img45 show normal\">\n                    <div class=\"container\" style=\"left: 0px; top: 0px;\">\n                        <div>\n                            <h3>goblin valley</h3>\n                        </div>\n                        <picture>\n                            <source type=\"image/avif\" srcset=\"/images/gallery/45.avif\">\n                            <source type=\"image/webp\" srcset=\"/images/gallery/45.webp\">\n                            <source type=\"image/jpg\" srcset=\"/images/gallery/45.jpg\">\n                            <img src='/images/gallery/45.avif' alt=\"Bride sitting on rock and groom looking in the distance\" loading=\"lazy\">\n                        </picture>\n                        <div>\n                            <h3>Thu May 25 2023</h3>\n                        </div>\n                    </div>\n                </div>\n                "
+        },
+        "id": 45,
+        "picture": 45,
+        "altText": "Bride sitting on rock and groom looking in the distance",
+        "date": 57,
+        "photoshoot": 5,
+        "priority": "c",
+        "priorityId": 3,
+        "type": "bridals",
+        "location": {
+            "goblin-valley": 4,
+            "moab": 4,
+            "desert": 8
+        },
+        "lighting": "cloudy"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "goblin-valley": false,
+                    "moab": false,
+                    "desert": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class=\"img46 show normal\">\n                    <div class=\"container\" style=\"left: 0px; top: 0px;\">\n                        <div>\n                            <h3>goblin valley</h3>\n                        </div>\n                        <picture>\n                            <source type=\"image/avif\" srcset=\"/images/gallery/46.avif\">\n                            <source type=\"image/webp\" srcset=\"/images/gallery/46.webp\">\n                            <source type=\"image/jpg\" srcset=\"/images/gallery/46.jpg\">\n                            <img src='/images/gallery/46.avif' alt=\"Groom lifting Bride while admiring each other\" loading=\"lazy\">\n                        </picture>\n                        <div>\n                            <h3>Thu May 25 2023</h3>\n                        </div>\n                    </div>\n                </div>\n                "
+        },
+        "id": 46,
+        "picture": 46,
+        "altText": "Groom lifting Bride while admiring each other",
+        "date": 58,
+        "photoshoot": 4,
+        "priority": "c",
+        "priorityId": 2,
+        "type": "bridals",
+        "location": {
+            "goblin-valley": 5,
+            "moab": 5,
+            "desert": 9
+        },
+        "lighting": "cloudy"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "arches": false,
+                    "moab": false,
+                    "desert": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class=\"img47 show normal\">\n                    <div class=\"container\" style=\"left: 0px; top: 0px;\">\n                        <div>\n                            <h3>arches</h3>\n                        </div>\n                        <picture>\n                            <source type=\"image/avif\" srcset=\"/images/gallery/47.avif\">\n                            <source type=\"image/webp\" srcset=\"/images/gallery/47.webp\">\n                            <source type=\"image/jpg\" srcset=\"/images/gallery/47.jpg\">\n                            <img src='/images/gallery/47.avif' alt=\"Guy picking girl up while she kicks her legs back\" loading=\"lazy\">\n                        </picture>\n                        <div>\n                            <h3>Fri May 26 2023</h3>\n                        </div>\n                    </div>\n                </div>\n                "
+        },
+        "id": 47,
+        "picture": 47,
+        "altText": "Guy picking girl up while she kicks her legs back",
+        "date": 59,
+        "photoshoot": 1,
+        "priority": "b",
+        "priorityId": 0,
+        "type": "engagements",
+        "location": {
+            "arches": 0,
+            "moab": 6,
+            "desert": 10
+        },
+        "lighting": "full-sun"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "arches": false,
+                    "moab": false,
+                    "desert": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class=\"img48 show normal\">\n                    <div class=\"container\" style=\"left: 0px; top: 0px;\">\n                        <div>\n                            <h3>arches</h3>\n                        </div>\n                        <picture>\n                            <source type=\"image/avif\" srcset=\"/images/gallery/48.avif\">\n                            <source type=\"image/webp\" srcset=\"/images/gallery/48.webp\">\n                            <source type=\"image/jpg\" srcset=\"/images/gallery/48.jpg\">\n                            <img src='/images/gallery/48.avif' alt=\"Girl hugging guy from behind while they look separate ways\" loading=\"lazy\">\n                        </picture>\n                        <div>\n                            <h3>Fri May 26 2023</h3>\n                        </div>\n                    </div>\n                </div>\n                "
+        },
+        "id": 48,
+        "picture": 48,
+        "altText": "Girl hugging guy from behind while they look separate ways",
+        "date": 60,
+        "photoshoot": 0,
+        "priority": "c",
+        "priorityId": 0,
+        "type": "engagements",
+        "location": {
+            "arches": 1,
+            "moab": 7,
+            "desert": 11
+        },
+        "lighting": "full-sun"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "arches": false,
+                    "moab": false,
+                    "desert": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class=\"img49 show normal\">\n                    <div class=\"container\" style=\"left: 0px; top: 0px;\">\n                        <div>\n                            <h3>arches</h3>\n                        </div>\n                        <picture>\n                            <source type=\"image/avif\" srcset=\"/images/gallery/49.avif\">\n                            <source type=\"image/webp\" srcset=\"/images/gallery/49.webp\">\n                            <source type=\"image/jpg\" srcset=\"/images/gallery/49.jpg\">\n                            <img src='/images/gallery/49.avif' alt=\"Couple holding hands and walking while looking down\" loading=\"lazy\">\n                        </picture>\n                        <div>\n                            <h3>Fri May 26 2023</h3>\n                        </div>\n                    </div>\n                </div>\n                "
+        },
+        "id": 49,
+        "picture": 49,
+        "altText": "Couple holding hands and walking while looking down",
+        "date": 61,
+        "photoshoot": 56,
+        "priority": "b",
+        "priorityId": 17,
+        "type": "bridals",
+        "location": {
+            "arches": 2,
+            "moab": 8,
+            "desert": 12
+        },
+        "lighting": "full-sun"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "arches": false,
+                    "moab": false,
+                    "desert": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class=\"img50 show normal\">\n                    <div class=\"container\" style=\"left: 0px; top: 0px;\">\n                        <div>\n                            <h3>arches</h3>\n                        </div>\n                        <picture>\n                            <source type=\"image/avif\" srcset=\"/images/gallery/50.avif\">\n                            <source type=\"image/webp\" srcset=\"/images/gallery/50.webp\">\n                            <source type=\"image/jpg\" srcset=\"/images/gallery/50.jpg\">\n                            <img src='/images/gallery/50.avif' alt=\"Groom kissing side of brides forhead while she looks off into the distance\" loading=\"lazy\">\n                        </picture>\n                        <div>\n                            <h3>Fri May 26 2023</h3>\n                        </div>\n                    </div>\n                </div>\n                "
+        },
+        "id": 50,
+        "picture": 50,
+        "altText": "Groom kissing side of brides forhead while she looks off into the distance",
+        "date": 62,
+        "photoshoot": 55,
+        "priority": "c",
+        "priorityId": 21,
+        "type": "bridals",
+        "location": {
+            "arches": 3,
+            "moab": 9,
+            "desert": 13
+        },
+        "lighting": "full-sun"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "arches": false,
+                    "moab": false,
+                    "desert": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class=\"img51 show normal\">\n                    <div class=\"container\" style=\"left: 0px; top: 0px;\">\n                        <div>\n                            <h3>arches</h3>\n                        </div>\n                        <picture>\n                            <source type=\"image/avif\" srcset=\"/images/gallery/51.avif\">\n                            <source type=\"image/webp\" srcset=\"/images/gallery/51.webp\">\n                            <source type=\"image/jpg\" srcset=\"/images/gallery/51.jpg\">\n                            <img src='/images/gallery/51.avif' alt=\"Groom holding and looking at bride while she holds her bouquet and looks off into the distance\" loading=\"lazy\">\n                        </picture>\n                        <div>\n                            <h3>Fri May 26 2023</h3>\n                        </div>\n                    </div>\n                </div>\n                "
+        },
+        "id": 51,
+        "picture": 51,
+        "altText": "Groom holding and looking at bride while she holds her bouquet and looks off into the distance",
+        "date": 63,
+        "photoshoot": 54,
+        "priority": "b",
+        "priorityId": 16,
+        "type": "bridals",
+        "location": {
+            "arches": 4,
+            "moab": 10,
+            "desert": 14
+        },
+        "lighting": "cloudy"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "arches": false,
+                    "moab": false,
+                    "desert": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class=\"img52 show normal\">\n                    <div class=\"container\" style=\"left: 0px; top: 0px;\">\n                        <div>\n                            <h3>arches</h3>\n                        </div>\n                        <picture>\n                            <source type=\"image/avif\" srcset=\"/images/gallery/52.avif\">\n                            <source type=\"image/webp\" srcset=\"/images/gallery/52.webp\">\n                            <source type=\"image/jpg\" srcset=\"/images/gallery/52.jpg\">\n                            <img src='/images/gallery/52.avif' alt=\"Groom kissing brides cheek while holding bouquet\" loading=\"lazy\">\n                        </picture>\n                        <div>\n                            <h3>Fri May 26 2023</h3>\n                        </div>\n                    </div>\n                </div>\n                "
+        },
+        "id": 52,
+        "picture": 52,
+        "altText": "Groom kissing brides cheek while holding bouquet",
+        "date": 66,
+        "photoshoot": 38,
+        "priority": "c",
+        "priorityId": 14,
+        "type": "bridals",
+        "location": {
+            "arches": 5,
+            "moab": 11,
+            "desert": 15
+        },
+        "lighting": "sunset"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "arches": false,
+                    "moab": false,
+                    "desert": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class=\"img53 show normal\">\n                    <div class=\"container\" style=\"left: 0px; top: 0px;\">\n                        <div>\n                            <h3>arches</h3>\n                        </div>\n                        <picture>\n                            <source type=\"image/avif\" srcset=\"/images/gallery/53.avif\">\n                            <source type=\"image/webp\" srcset=\"/images/gallery/53.webp\">\n                            <source type=\"image/jpg\" srcset=\"/images/gallery/53.jpg\">\n                            <img src='/images/gallery/53.avif' alt=\"Bride and groom hugging while touching each others foreheads together\" loading=\"lazy\">\n                        </picture>\n                        <div>\n                            <h3>Fri May 26 2023</h3>\n                        </div>\n                    </div>\n                </div>\n                "
+        },
+        "id": 53,
+        "picture": 53,
+        "altText": "Bride and groom hugging while touching each others foreheads together",
+        "date": 64,
+        "photoshoot": 37,
+        "priority": "b",
+        "priorityId": 12,
+        "type": "bridals",
+        "location": {
+            "arches": 6,
+            "moab": 12,
+            "desert": 16
+        },
+        "lighting": "sunset"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "arches": false,
+                    "moab": false,
+                    "desert": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class=\"img54 show normal\">\n                    <div class=\"container\" style=\"left: 0px; top: 0px;\">\n                        <div>\n                            <h3>arches</h3>\n                        </div>\n                        <picture>\n                            <source type=\"image/avif\" srcset=\"/images/gallery/54.avif\">\n                            <source type=\"image/webp\" srcset=\"/images/gallery/54.webp\">\n                            <source type=\"image/jpg\" srcset=\"/images/gallery/54.jpg\">\n                            <img src='/images/gallery/54.avif' alt=\"Groom holding brides hand and leading her\" loading=\"lazy\">\n                        </picture>\n                        <div>\n                            <h3>Fri May 26 2023</h3>\n                        </div>\n                    </div>\n                </div>\n                "
+        },
+        "id": 54,
+        "picture": 54,
+        "altText": "Groom holding brides hand and leading her",
+        "date": 65,
+        "photoshoot": 36,
+        "priority": "a",
+        "priorityId": 1,
+        "type": "bridals",
+        "location": {
+            "arches": 7,
+            "moab": 13,
+            "desert": 17
+        },
+        "lighting": "sunset"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "dead-horse": false,
+                    "moab": false,
+                    "desert": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class=\"img55 show normal\">\n                    <div class=\"container\" style=\"left: 0px; top: 0px;\">\n                        <div>\n                            <h3>dead horse</h3>\n                        </div>\n                        <picture>\n                            <source type=\"image/avif\" srcset=\"/images/gallery/55.avif\">\n                            <source type=\"image/webp\" srcset=\"/images/gallery/55.webp\">\n                            <source type=\"image/jpg\" srcset=\"/images/gallery/55.jpg\">\n                            <img src='/images/gallery/55.avif' alt=\"Couple hugging and admiring each other\" loading=\"lazy\">\n                        </picture>\n                        <div>\n                            <h3>Sat May 27 2023</h3>\n                        </div>\n                    </div>\n                </div>\n                "
+        },
+        "id": 55,
+        "picture": 55,
+        "altText": "Couple hugging and admiring each other",
+        "date": 67,
+        "photoshoot": 70,
+        "priority": "c",
+        "priorityId": 24,
+        "type": "bridals",
+        "location": {
+            "dead-horse": 0,
+            "moab": 14,
+            "desert": 18
+        },
+        "lighting": "sunrise"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "dead-horse": false,
+                    "moab": false,
+                    "desert": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class=\"img56 show normal\">\n                    <div class=\"container\" style=\"left: 0px; top: 0px;\">\n                        <div>\n                            <h3>dead horse</h3>\n                        </div>\n                        <picture>\n                            <source type=\"image/avif\" srcset=\"/images/gallery/56.avif\">\n                            <source type=\"image/webp\" srcset=\"/images/gallery/56.webp\">\n                            <source type=\"image/jpg\" srcset=\"/images/gallery/56.jpg\">\n                            <img src='/images/gallery/56.avif' alt=\"Couple holding each others hand with groom looking at bride\" loading=\"lazy\">\n                        </picture>\n                        <div>\n                            <h3>Sat May 27 2023</h3>\n                        </div>\n                    </div>\n                </div>\n                "
+        },
+        "id": 56,
+        "picture": 56,
+        "altText": "Couple holding each others hand with groom looking at bride",
+        "date": 68,
+        "photoshoot": 69,
+        "priority": "a",
+        "priorityId": 4,
+        "type": "bridals",
+        "location": {
+            "dead-horse": 1,
+            "moab": 15,
+            "desert": 19
+        },
+        "lighting": "sunrise"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "dead-horse": false,
+                    "moab": false,
+                    "desert": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class=\"img57 show normal\">\n                    <div class=\"container\" style=\"left: 0px; top: 0px;\">\n                        <div>\n                            <h3>dead horse</h3>\n                        </div>\n                        <picture>\n                            <source type=\"image/avif\" srcset=\"/images/gallery/57.avif\">\n                            <source type=\"image/webp\" srcset=\"/images/gallery/57.webp\">\n                            <source type=\"image/jpg\" srcset=\"/images/gallery/57.jpg\">\n                            <img src='/images/gallery/57.avif' alt=\"Groom touching brides chin with bride smiling\" loading=\"lazy\">\n                        </picture>\n                        <div>\n                            <h3>Sat May 27 2023</h3>\n                        </div>\n                    </div>\n                </div>\n                "
+        },
+        "id": 57,
+        "picture": 57,
+        "altText": "Groom touching brides chin with bride smiling",
+        "date": 69,
+        "photoshoot": 68,
+        "priority": "b",
+        "priorityId": 23,
+        "type": "bridals",
+        "location": {
+            "dead-horse": 2,
+            "moab": 16,
+            "desert": 20
+        },
+        "lighting": "sunrise"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "dead-horse": false,
+                    "moab": false,
+                    "desert": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class=\"img58 show normal\">\n                    <div class=\"container\" style=\"left: 0px; top: 0px;\">\n                        <div>\n                            <h3>dead horse</h3>\n                        </div>\n                        <picture>\n                            <source type=\"image/avif\" srcset=\"/images/gallery/58.avif\">\n                            <source type=\"image/webp\" srcset=\"/images/gallery/58.webp\">\n                            <source type=\"image/jpg\" srcset=\"/images/gallery/58.jpg\">\n                            <img src='/images/gallery/58.avif' alt=\"Bride and groom holding each other and gazing into each others eyes\" loading=\"lazy\">\n                        </picture>\n                        <div>\n                            <h3>Sat May 27 2023</h3>\n                        </div>\n                    </div>\n                </div>\n                "
+        },
+        "id": 58,
+        "picture": 58,
+        "altText": "Bride and groom holding each other and gazing into each others eyes",
+        "date": 70,
+        "photoshoot": 67,
+        "priority": "a",
+        "priorityId": 3,
+        "type": "bridals",
+        "location": {
+            "dead-horse": 3,
+            "moab": 17,
+            "desert": 21
+        },
+        "lighting": "sunrise"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "las-vegas": false,
+                    "luxury-venue": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class=\"img59 show normal\">\n                    <div class=\"container\" style=\"left: 0px; top: 0px;\">\n                        <div>\n                            <h3>las vegas</h3>\n                        </div>\n                        <picture>\n                            <source type=\"image/avif\" srcset=\"/images/gallery/59.avif\">\n                            <source type=\"image/webp\" srcset=\"/images/gallery/59.webp\">\n                            <source type=\"image/jpg\" srcset=\"/images/gallery/59.jpg\">\n                            <img src='/images/gallery/59.avif' alt=\"Bride and groom looking at each other with bridal party cheering\" loading=\"lazy\">\n                        </picture>\n                        <div>\n                            <h3>Sat May 13 2023</h3>\n                        </div>\n                    </div>\n                </div>\n                "
+        },
+        "id": 59,
+        "picture": 59,
+        "altText": "Bride and groom looking at each other with bridal party cheering",
+        "date": 50,
+        "photoshoot": 21,
+        "priority": "a",
+        "priorityId": 0,
+        "type": "weddings",
+        "location": {
+            "las-vegas": 3,
+            "luxury-venue": 0
+        },
+        "lighting": "full-sun"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "las-vegas": false,
+                    "luxury-venue": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class=\"img60 show normal\">\n                    <div class=\"container\" style=\"left: 0px; top: 0px;\">\n                        <div>\n                            <h3>las vegas</h3>\n                        </div>\n                        <picture>\n                            <source type=\"image/avif\" srcset=\"/images/gallery/60.avif\">\n                            <source type=\"image/webp\" srcset=\"/images/gallery/60.webp\">\n                            <source type=\"image/jpg\" srcset=\"/images/gallery/60.jpg\">\n                            <img src='/images/gallery/60.avif' alt=\"Bride and groom forehead to forhead while giggling\" loading=\"lazy\">\n                        </picture>\n                        <div>\n                            <h3>Sat May 13 2023</h3>\n                        </div>\n                    </div>\n                </div>\n                "
+        },
+        "id": 60,
+        "picture": 60,
+        "altText": "Bride and groom forehead to forhead while giggling",
+        "date": 51,
+        "photoshoot": 20,
+        "priority": "d",
+        "priorityId": 3,
+        "type": "weddings",
+        "location": {
+            "las-vegas": 4,
+            "luxury-venue": 1
+        },
+        "lighting": "full-sun"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "las-vegas": false,
+                    "luxury-venue": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class=\"img61 show normal\">\n                    <div class=\"container\" style=\"left: 0px; top: 0px;\">\n                        <div>\n                            <h3>las vegas</h3>\n                        </div>\n                        <picture>\n                            <source type=\"image/avif\" srcset=\"/images/gallery/61.avif\">\n                            <source type=\"image/webp\" srcset=\"/images/gallery/61.webp\">\n                            <source type=\"image/jpg\" srcset=\"/images/gallery/61.jpg\">\n                            <img src='/images/gallery/61.avif' alt=\"Groom kissing brides forhead while bride is smiling\" loading=\"lazy\">\n                        </picture>\n                        <div>\n                            <h3>Sat May 13 2023</h3>\n                        </div>\n                    </div>\n                </div>\n                "
+        },
+        "id": 61,
+        "picture": 61,
+        "altText": "Groom kissing brides forhead while bride is smiling",
+        "date": 52,
+        "photoshoot": 19,
+        "priority": "c",
+        "priorityId": 8,
+        "type": "weddings",
+        "location": {
+            "las-vegas": 5,
+            "luxury-venue": 2
+        },
+        "lighting": "full-sun"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "las-vegas": false,
+                    "luxury-venue": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class=\"img62 show normal\">\n                    <div class=\"container\" style=\"left: 0px; top: 0px;\">\n                        <div>\n                            <h3>las vegas</h3>\n                        </div>\n                        <picture>\n                            <source type=\"image/avif\" srcset=\"/images/gallery/62.avif\">\n                            <source type=\"image/webp\" srcset=\"/images/gallery/62.webp\">\n                            <source type=\"image/jpg\" srcset=\"/images/gallery/62.jpg\">\n                            <img src='/images/gallery/62.avif' alt=\"Bride and groom jumping in and all white bouncy house\" loading=\"lazy\">\n                        </picture>\n                        <div>\n                            <h3>Sat May 13 2023</h3>\n                        </div>\n                    </div>\n                </div>\n                "
+        },
+        "id": 62,
+        "picture": 62,
+        "altText": "Bride and groom jumping in and all white bouncy house",
+        "date": 53,
+        "photoshoot": 18,
+        "priority": "b",
+        "priorityId": 7,
+        "type": "weddings",
+        "location": {
+            "las-vegas": 6,
+            "luxury-venue": 3
+        },
+        "lighting": "full-sun"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "las-vegas": false,
+                    "luxury-venue": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class=\"img63 show normal\">\n                    <div class=\"container\" style=\"left: 0px; top: 0px;\">\n                        <div>\n                            <h3>las vegas</h3>\n                        </div>\n                        <picture>\n                            <source type=\"image/avif\" srcset=\"/images/gallery/63.avif\">\n                            <source type=\"image/webp\" srcset=\"/images/gallery/63.webp\">\n                            <source type=\"image/jpg\" srcset=\"/images/gallery/63.jpg\">\n                            <img src='/images/gallery/63.avif' alt=\"Bride and groom dancing\" loading=\"lazy\">\n                        </picture>\n                        <div>\n                            <h3>Sat May 13 2023</h3>\n                        </div>\n                    </div>\n                </div>\n                "
+        },
+        "id": 63,
+        "picture": 63,
+        "altText": "Bride and groom dancing",
+        "date": 54,
+        "photoshoot": 17,
+        "priority": "b",
+        "priorityId": 6,
+        "type": "weddings",
+        "location": {
+            "las-vegas": 7,
+            "luxury-venue": 4
+        },
+        "lighting": "full-sun"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "utah-mountains": false,
+                    "fields": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class=\"img64 show normal\">\n                    <div class=\"container\" style=\"left: 0px; top: 0px;\">\n                        <div>\n                            <h3>utah mountains</h3>\n                        </div>\n                        <picture>\n                            <source type=\"image/avif\" srcset=\"/images/gallery/64.avif\">\n                            <source type=\"image/webp\" srcset=\"/images/gallery/64.webp\">\n                            <source type=\"image/jpg\" srcset=\"/images/gallery/64.jpg\">\n                            <img src='/images/gallery/64.avif' alt=\"Boy chasing girl\" loading=\"lazy\">\n                        </picture>\n                        <div>\n                            <h3>Sun May 21 2023</h3>\n                        </div>\n                    </div>\n                </div>\n                "
+        },
+        "id": 64,
+        "picture": 64,
+        "altText": "Boy chasing girl",
+        "date": 55,
+        "photoshoot": 14,
+        "priority": "b",
+        "priorityId": 5,
+        "type": "engagements",
+        "location": {
+            "utah-mountains": 8,
+            "fields": 0
+        },
+        "lighting": "full-sun"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "eagle-mountain": false,
+                    "utah-county": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class=\"img65 show normal\">\n                    <div class=\"container\" style=\"left: 0px; top: 0px;\">\n                        <div>\n                            <h3>eagle mountain</h3>\n                        </div>\n                        <picture>\n                            <source type=\"image/avif\" srcset=\"/images/gallery/65.avif\">\n                            <source type=\"image/webp\" srcset=\"/images/gallery/65.webp\">\n                            <source type=\"image/jpg\" srcset=\"/images/gallery/65.jpg\">\n                            <img src='/images/gallery/65.avif' alt=\"Girl holding neck while looking up and smiling\" loading=\"lazy\">\n                        </picture>\n                        <div>\n                            <h3>Sat Oct 2 2021</h3>\n                        </div>\n                    </div>\n                </div>\n                "
+        },
+        "id": 65,
+        "picture": 65,
+        "altText": "Girl holding neck while looking up and smiling",
+        "date": 0,
+        "photoshoot": 51,
+        "priority": "e",
+        "priorityId": 1,
+        "type": "portraits",
+        "location": {
+            "eagle-mountain": 0,
+            "utah-county": 2
+        },
+        "lighting": "full-sun"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "this-is-the-place": false,
+                    "salt-lake": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class=\"img66 show normal\">\n                    <div class=\"container\" style=\"left: 0px; top: 0px;\">\n                        <div>\n                            <h3>this is-the-place</h3>\n                        </div>\n                        <picture>\n                            <source type=\"image/avif\" srcset=\"/images/gallery/66.avif\">\n                            <source type=\"image/webp\" srcset=\"/images/gallery/66.webp\">\n                            <source type=\"image/jpg\" srcset=\"/images/gallery/66.jpg\">\n                            <img src='/images/gallery/66.avif' alt=\"Bride holding bouque while smiling and looking off into the distance\" loading=\"lazy\">\n                        </picture>\n                        <div>\n                            <h3>Thu Oct 14 2021</h3>\n                        </div>\n                    </div>\n                </div>\n                "
+        },
+        "id": 66,
+        "picture": 66,
+        "altText": "Bride holding bouque while smiling and looking off into the distance",
+        "date": 1,
+        "photoshoot": 53,
+        "priority": "c",
+        "priorityId": 20,
+        "type": "weddings",
+        "location": {
+            "this-is-the-place": 0,
+            "salt-lake": 24
+        },
+        "lighting": "cloudy"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "arches": false,
+                    "moab": false,
+                    "desert": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class=\"img67 show normal\">\n                    <div class=\"container\" style=\"left: 0px; top: 0px;\">\n                        <div>\n                            <h3>arches</h3>\n                        </div>\n                        <picture>\n                            <source type=\"image/avif\" srcset=\"/images/gallery/67.avif\">\n                            <source type=\"image/webp\" srcset=\"/images/gallery/67.webp\">\n                            <source type=\"image/jpg\" srcset=\"/images/gallery/67.jpg\">\n                            <img src='/images/gallery/67.avif' alt=\"Couple hugging with boy whispering something funny\" loading=\"lazy\">\n                        </picture>\n                        <div>\n                            <h3>Sat Nov 20 2021</h3>\n                        </div>\n                    </div>\n                </div>\n                "
+        },
+        "id": 67,
+        "picture": 67,
+        "altText": "Couple hugging with boy whispering something funny",
+        "date": 2,
+        "photoshoot": 42,
+        "priority": "d",
+        "priorityId": 9,
+        "type": "engagements",
+        "location": {
+            "arches": 8,
+            "moab": 18,
+            "desert": 22
+        },
+        "lighting": "sunrise"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "moab": false,
+                    "desert": false,
+                    "roadside": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class=\"img68 show normal\">\n                    <div class=\"container\" style=\"left: 0px; top: 0px;\">\n                        <div>\n                            <h3>moab</h3>\n                        </div>\n                        <picture>\n                            <source type=\"image/avif\" srcset=\"/images/gallery/68.avif\">\n                            <source type=\"image/webp\" srcset=\"/images/gallery/68.webp\">\n                            <source type=\"image/jpg\" srcset=\"/images/gallery/68.jpg\">\n                            <img src='/images/gallery/68.avif' alt=\"Guy lifting girl in the air while she lifts her arm up and kicks her leg\" loading=\"lazy\">\n                        </picture>\n                        <div>\n                            <h3>Sun Nov 21 2021</h3>\n                        </div>\n                    </div>\n                </div>\n                "
+        },
+        "id": 68,
+        "picture": 68,
+        "altText": "Guy lifting girl in the air while she lifts her arm up and kicks her leg",
+        "date": 5,
+        "photoshoot": 3,
+        "priority": "c",
+        "priorityId": 1,
+        "type": "engagements",
+        "location": {
+            "moab": 19,
+            "desert": 23,
+            "roadside": 4
+        },
+        "lighting": "sunrise"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "moab": false,
+                    "desert": false,
+                    "roadside": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class=\"img69 show normal\">\n                    <div class=\"container\" style=\"left: 0px; top: 0px;\">\n                        <div>\n                            <h3>moab</h3>\n                        </div>\n                        <picture>\n                            <source type=\"image/avif\" srcset=\"/images/gallery/69.avif\">\n                            <source type=\"image/webp\" srcset=\"/images/gallery/69.webp\">\n                            <source type=\"image/jpg\" srcset=\"/images/gallery/69.jpg\">\n                            <img src='/images/gallery/69.avif' alt=\"Guy lifting girl up while she has her head and arm up\" loading=\"lazy\">\n                        </picture>\n                        <div>\n                            <h3>Sun Nov 21 2021</h3>\n                        </div>\n                    </div>\n                </div>\n                "
+        },
+        "id": 69,
+        "picture": 69,
+        "altText": "Guy lifting girl up while she has her head and arm up",
+        "date": 4,
+        "photoshoot": 2,
+        "priority": "b",
+        "priorityId": 1,
+        "type": "engagements",
+        "location": {
+            "moab": 20,
+            "desert": 24,
+            "roadside": 5
+        },
+        "lighting": "sunrise"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "utah-mountains": false,
+                    "fields": false,
+                    "ogden": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class=\"img70 show normal\">\n                    <div class=\"container\" style=\"left: 0px; top: 0px;\">\n                        <div>\n                            <h3>utah mountains</h3>\n                        </div>\n                        <picture>\n                            <source type=\"image/avif\" srcset=\"/images/gallery/70.avif\">\n                            <source type=\"image/webp\" srcset=\"/images/gallery/70.webp\">\n                            <source type=\"image/jpg\" srcset=\"/images/gallery/70.jpg\">\n                            <img src='/images/gallery/70.avif' alt=\"Couple sitting in grass with boy kissing girls forhead\" loading=\"lazy\">\n                        </picture>\n                        <div>\n                            <h3>Wed Jul 20 2022</h3>\n                        </div>\n                    </div>\n                </div>\n                "
+        },
+        "id": 70,
+        "picture": 70,
+        "altText": "Couple sitting in grass with boy kissing girls forhead",
+        "date": 41,
+        "photoshoot": 8,
+        "priority": "b",
+        "priorityId": 3,
+        "type": "couples",
+        "location": {
+            "utah-mountains": 9,
+            "fields": 1,
+            "ogden": 0
+        },
+        "lighting": "sunrise"
+    }
+]
