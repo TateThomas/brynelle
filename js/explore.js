@@ -170,14 +170,14 @@ window.onload = function() {
     
 }
 
-//var myInterval = setInterval(function() {
-//    
-//    if (document.getElementById("photos").className == "not-loaded") {
-//        database.changeSortingMethod();
-//        database.updateUserPage();
-//    }
-//    else {
-//        clearInterval(myInterval);
-//    }
-//    
-//}, 50);
+var myInterval = setInterval(function() {
+    
+    if (document.getElementById("photos").className == "not-loaded") {
+        console.log("here");
+        database.loadData();
+    }
+    else {
+        clearInterval(myInterval);
+    }
+    
+}, 50);
