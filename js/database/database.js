@@ -75,11 +75,11 @@ class Database {
                 
             }
             
-            obj.changeSortingMethod();
-            obj.setUpSortingSelector();
-            obj.setUpFiltersSelector();
+            await obj.changeSortingMethod();
+            await obj.setUpSortingSelector();
+            await obj.setUpFiltersSelector();
             obj.totalPhotosCurrentlyVisible = obj.ids.length;
-            obj.updateUserPage();
+            await obj.updateUserPage();
             
             let searchParameters = new URLSearchParams(window.location.search);
             if (searchParameters.get("filterType") != undefined) {
