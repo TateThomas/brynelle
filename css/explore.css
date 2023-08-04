@@ -113,7 +113,7 @@ a{
     position: absolute;
     width: 30px;
     top: calc(var(--starting-top) + var(--follow-distance));
-    right: -40px;
+    right: -39px;
     z-index: 3;
 }
 
