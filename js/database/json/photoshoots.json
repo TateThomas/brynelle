@@ -17,6 +17,10 @@
     },
     {
         "shoot": "A and K Goblin Valley Bridals",
+        "parentId": 78
+    },
+    {
+        "shoot": "A and K Goblin Valley Bridals",
         "parentId": 46
     },
     {
@@ -34,6 +38,18 @@
     {
         "shoot": "B and S Couples Session",
         "parentId": 70
+    },
+    {
+        "shoot": "Bellagio Fountain Bridals",
+        "parentId": 73
+    },
+    {
+        "shoot": "Casper Family",
+        "parentId": 82
+    },
+    {
+        "shoot": "City Bridals 2022",
+        "parentId": 76
     },
     {
         "shoot": "City Bridals 2022",
@@ -58,6 +74,10 @@
     {
         "shoot": "E and R Engagements",
         "parentId": 64
+    },
+    {
+        "shoot": "Fremont Street Bridals",
+        "parentId": 74
     },
     {
         "shoot": "Fremont Street Bridals",
@@ -96,8 +116,12 @@
         "parentId": 6
     },
     {
-        "shoot": "Goblin Valley Flash",
+        "shoot": "Goblin Valley Bridals 2021",
         "parentId": 0
+    },
+    {
+        "shoot": "H and A Couples Session",
+        "parentId": 71
     },
     {
         "shoot": "H and A Couples Session",
@@ -125,6 +149,10 @@
     },
     {
         "shoot": "Little White Chapel Elopement",
+        "parentId": 72
+    },
+    {
+        "shoot": "Little White Chapel Elopement",
         "parentId": 8
     },
     {
@@ -137,11 +165,19 @@
     },
     {
         "shoot": "M and E Couple Session",
+        "parentId": 75
+    },
+    {
+        "shoot": "M and E Couple Session",
         "parentId": 18
     },
     {
         "shoot": "M and E Couple Session",
         "parentId": 17
+    },
+    {
+        "shoot": "M and L Arches Bridals",
+        "parentId": 80
     },
     {
         "shoot": "M and L Arches Bridals",
@@ -166,6 +202,14 @@
     {
         "shoot": "M and T Exit",
         "parentId": 29
+    },
+    {
+        "shoot": "Moab Cozy Engagements 2021",
+        "parentId": 85
+    },
+    {
+        "shoot": "Moab Cozy Engagements 2021",
+        "parentId": 84
     },
     {
         "shoot": "Moab Cozy Engagements 2021",
@@ -214,6 +258,10 @@
     {
         "shoot": "S Wedding Day",
         "parentId": 66
+    },
+    {
+        "shoot": "S and C Arches Bridals",
+        "parentId": 79
     },
     {
         "shoot": "S and C Arches Bridals",
@@ -269,6 +317,10 @@
     },
     {
         "shoot": "T and L Dead Horse Bridals",
+        "parentId": 81
+    },
+    {
+        "shoot": "T and L Dead Horse Bridals",
         "parentId": 58
     },
     {
@@ -282,5 +334,13 @@
     {
         "shoot": "T and L Dead Horse Bridals",
         "parentId": 55
+    },
+    {
+        "shoot": "Tibble Fork Paddleboard Lovers",
+        "parentId": 77
+    },
+    {
+        "shoot": "Utah Lake Family 2023",
+        "parentId": 83
     }
 ]

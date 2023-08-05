@@ -6,7 +6,9 @@
                 "location": {
                     "goblin-valley": false,
                     "moab": false,
-                    "desert": false
+                    "desert": false,
+                    "utah": false,
+                    "arizona": false
                 },
                 "lighting": false
             },
@@ -15,15 +17,17 @@
         "id": 0,
         "picture": 0,
         "altText": "Groom spinning bride in goblin valley flash shoot",
-        "date": 3,
-        "photoshoot": 24,
+        "date": 5,
+        "photoshoot": 29,
         "priority": "d",
-        "priorityId": 4,
-        "type": "elopements",
+        "priorityId": 5,
+        "type": "bridals",
         "location": {
             "goblin-valley": 0,
             "moab": 0,
-            "desert": 0
+            "desert": 0,
+            "utah": 0,
+            "arizona": 0
         },
         "lighting": "flash"
     },
@@ -33,7 +37,9 @@
                 "type": false,
                 "location": {
                     "sand-dunes": false,
-                    "desert": false
+                    "desert": false,
+                    "utah": false,
+                    "california": false
                 },
                 "lighting": false
             },
@@ -42,14 +48,16 @@
         "id": 1,
         "picture": 1,
         "altText": "Couple holding hands walking down sand dunes",
-        "date": 35,
-        "photoshoot": 50,
+        "date": 39,
+        "photoshoot": 61,
         "priority": "c",
-        "priorityId": 19,
+        "priorityId": 22,
         "type": "engagements",
         "location": {
             "sand-dunes": 0,
-            "desert": 1
+            "desert": 1,
+            "utah": 1,
+            "california": 0
         },
         "lighting": "sunset"
     },
@@ -59,7 +67,8 @@
                 "type": false,
                 "location": {
                     "antelope-island": false,
-                    "layton": false
+                    "layton": false,
+                    "utah": false
                 },
                 "lighting": false
             },
@@ -68,14 +77,15 @@
         "id": 2,
         "picture": 2,
         "altText": "Bride and groom hugging",
-        "date": 36,
-        "photoshoot": 43,
+        "date": 40,
+        "photoshoot": 54,
         "priority": "c",
-        "priorityId": 16,
+        "priorityId": 19,
         "type": "bridals",
         "location": {
             "antelope-island": 0,
-            "layton": 0
+            "layton": 0,
+            "utah": 2
         },
         "lighting": "sunset"
     },
@@ -86,7 +96,8 @@
                 "location": {
                     "utah-mountains": false,
                     "roadside": false,
-                    "fall-trees": false
+                    "fall-trees": false,
+                    "utah": false
                 },
                 "lighting": false
             },
@@ -95,15 +106,16 @@
         "id": 3,
         "picture": 3,
         "altText": "Couple dancing on hiking trail",
-        "date": 46,
-        "photoshoot": 25,
+        "date": 55,
+        "photoshoot": 31,
         "priority": "c",
-        "priorityId": 9,
+        "priorityId": 10,
         "type": "couples",
         "location": {
             "utah-mountains": 0,
             "roadside": 0,
-            "fall-trees": 0
+            "fall-trees": 0,
+            "utah": 3
         },
         "lighting": "cloudy"
     },
@@ -112,7 +124,8 @@
             "filters": {
                 "type": false,
                 "location": {
-                    "salt-lake": false
+                    "salt-lake": false,
+                    "utah": false
                 },
                 "lighting": false
             },
@@ -121,13 +134,14 @@
         "id": 4,
         "picture": 4,
         "altText": "Girls running and laughing on a rooftop",
-        "date": 47,
-        "photoshoot": 13,
+        "date": 56,
+        "photoshoot": 17,
         "priority": "d",
-        "priorityId": 1,
+        "priorityId": 2,
         "type": "friends",
         "location": {
-            "salt-lake": 0
+            "salt-lake": 0,
+            "utah": 4
         },
         "lighting": "full-sun"
     },
@@ -136,7 +150,9 @@
             "filters": {
                 "type": false,
                 "location": {
-                    "antelope-island": false
+                    "antelope-island": false,
+                    "layton": false,
+                    "utah": false
                 },
                 "lighting": false
             },
@@ -145,13 +161,15 @@
         "id": 5,
         "picture": 5,
         "altText": "Groom helping bride down rock",
-        "date": 37,
-        "photoshoot": 49,
+        "date": 41,
+        "photoshoot": 60,
         "priority": "c",
-        "priorityId": 18,
+        "priorityId": 21,
         "type": "engagements",
         "location": {
-            "antelope-island": 1
+            "antelope-island": 1,
+            "layton": 1,
+            "utah": 5
         },
         "lighting": "blue-hour"
     },
@@ -162,7 +180,9 @@
                 "location": {
                     "goblin-valley": false,
                     "moab": false,
-                    "desert": false
+                    "desert": false,
+                    "utah": false,
+                    "arizona": false
                 },
                 "lighting": false
             },
@@ -171,15 +191,17 @@
         "id": 6,
         "picture": 6,
         "altText": "Groom holding bride",
-        "date": 6,
-        "photoshoot": 23,
+        "date": 8,
+        "photoshoot": 28,
         "priority": "e",
-        "priorityId": 0,
+        "priorityId": 1,
         "type": "bridals",
         "location": {
             "goblin-valley": 1,
             "moab": 1,
-            "desert": 2
+            "desert": 2,
+            "utah": 6,
+            "arizona": 1
         },
         "lighting": "blue-hour"
     },
@@ -190,7 +212,9 @@
                 "location": {
                     "goblin-valley": false,
                     "moab": false,
-                    "desert": false
+                    "desert": false,
+                    "utah": false,
+                    "arizona": false
                 },
                 "lighting": false
             },
@@ -199,15 +223,17 @@
         "id": 7,
         "picture": 7,
         "altText": "Groom kissing brides forehead",
-        "date": 7,
-        "photoshoot": 22,
+        "date": 9,
+        "photoshoot": 27,
         "priority": "b",
-        "priorityId": 8,
+        "priorityId": 10,
         "type": "bridals",
         "location": {
             "goblin-valley": 2,
             "moab": 2,
-            "desert": 3
+            "desert": 3,
+            "utah": 7,
+            "arizona": 2
         },
         "lighting": "blue-hour"
     },
@@ -218,23 +244,25 @@
                 "location": {
                     "little-white-chapel": false,
                     "las-vegas": false,
+                    "nevada": false,
                     "roadside": false
                 },
                 "lighting": false
             },
-            "html": "\n                <div class=\"img8 show normal\">\n                    <div class=\"container\" style=\"left: 0px; top: 0px;\">\n                        <div>\n                            <h3>little white-chapel</h3>\n                        </div>\n                        <picture>\n                            <source type=\"image/avif\" srcset=\"/images/gallery/8.avif\">\n                            <source type=\"image/webp\" srcset=\"/images/gallery/8.webp\">\n                            <source type=\"image/jpg\" srcset=\"/images/gallery/8.jpg\">\n                            <img src='/images/gallery/8.avif' alt=\"Couple dancing in downtown\" loading=\"lazy\">\n                        </picture>\n                        <div>\n                            <h3>Thu Jun 23 2022</h3>\n                        </div>\n                    </div>\n                </div>\n                "
+            "html": "\n                <div class=\"img8 show normal\">\n                    <div class=\"container\" style=\"left: 0px; top: 0px;\">\n                        <div>\n                            <h3>little white chapel</h3>\n                        </div>\n                        <picture>\n                            <source type=\"image/avif\" srcset=\"/images/gallery/8.avif\">\n                            <source type=\"image/webp\" srcset=\"/images/gallery/8.webp\">\n                            <source type=\"image/jpg\" srcset=\"/images/gallery/8.jpg\">\n                            <img src='/images/gallery/8.avif' alt=\"Couple dancing in downtown\" loading=\"lazy\">\n                        </picture>\n                        <div>\n                            <h3>Thu Jun 23 2022</h3>\n                        </div>\n                    </div>\n                </div>\n                "
         },
         "id": 8,
         "picture": 8,
         "altText": "Couple dancing in downtown",
-        "date": 38,
-        "photoshoot": 31,
+        "date": 44,
+        "photoshoot": 38,
         "priority": "b",
-        "priorityId": 10,
+        "priorityId": 12,
         "type": "elopements",
         "location": {
             "little-white-chapel": 0,
             "las-vegas": 0,
+            "nevada": 0,
             "roadside": 1
         },
         "lighting": "full-sun"
@@ -246,7 +274,8 @@
                 "location": {
                     "antelope-island": false,
                     "roadside": false,
-                    "layton": false
+                    "layton": false,
+                    "utah": false
                 },
                 "lighting": false
             },
@@ -255,15 +284,16 @@
         "id": 9,
         "picture": 9,
         "altText": "Girl laughing in the road",
-        "date": 48,
-        "photoshoot": 33,
+        "date": 57,
+        "photoshoot": 40,
         "priority": "d",
-        "priorityId": 7,
+        "priorityId": 9,
         "type": "portraits",
         "location": {
             "antelope-island": 2,
             "roadside": 2,
-            "layton": 1
+            "layton": 2,
+            "utah": 8
         },
         "lighting": "cloudy"
     },
@@ -273,6 +303,7 @@
                 "type": false,
                 "location": {
                     "las-vegas": false,
+                    "nevada": false,
                     "studio": false
                 },
                 "lighting": false
@@ -282,13 +313,14 @@
         "id": 10,
         "picture": 10,
         "altText": "Groom kissing bride against wall",
-        "date": 39,
-        "photoshoot": 16,
+        "date": 46,
+        "photoshoot": 21,
         "priority": "c",
-        "priorityId": 7,
+        "priorityId": 8,
         "type": "bridals",
         "location": {
             "las-vegas": 1,
+            "nevada": 1,
             "studio": 0
         },
         "lighting": "indoor"
@@ -299,6 +331,7 @@
                 "type": false,
                 "location": {
                     "las-vegas": false,
+                    "nevada": false,
                     "studio": false
                 },
                 "lighting": false
@@ -308,13 +341,14 @@
         "id": 11,
         "picture": 11,
         "altText": "Blurry couple walking away from each other",
-        "date": 40,
-        "photoshoot": 15,
+        "date": 48,
+        "photoshoot": 20,
         "priority": "d",
-        "priorityId": 2,
+        "priorityId": 3,
         "type": "bridals",
         "location": {
             "las-vegas": 2,
+            "nevada": 2,
             "studio": 1
         },
         "lighting": "indoor"
@@ -326,7 +360,8 @@
                 "location": {
                     "antelope-island": false,
                     "roadside": false,
-                    "layton": false
+                    "layton": false,
+                    "utah": false
                 },
                 "lighting": false
             },
@@ -335,15 +370,16 @@
         "id": 12,
         "picture": 12,
         "altText": "Girl squatting with a soft smile",
-        "date": 49,
-        "photoshoot": 32,
+        "date": 58,
+        "photoshoot": 39,
         "priority": "d",
-        "priorityId": 6,
+        "priorityId": 8,
         "type": "portraits",
         "location": {
             "antelope-island": 3,
             "roadside": 3,
-            "layton": 2
+            "layton": 3,
+            "utah": 9
         },
         "lighting": "blue-hour"
     },
@@ -354,7 +390,10 @@
                 "location": {
                     "salt-lake": false,
                     "downtown": false,
-                    "new-york-rooftop": false
+                    "new-york-rooftop": false,
+                    "new-york-city": false,
+                    "seattle": false,
+                    "utah": false
                 },
                 "lighting": false
             },
@@ -363,15 +402,18 @@
         "id": 13,
         "picture": 13,
         "altText": "Groom lifting bride in the air",
-        "date": 8,
-        "photoshoot": 12,
+        "date": 10,
+        "photoshoot": 16,
         "priority": "b",
-        "priorityId": 4,
+        "priorityId": 6,
         "type": "bridals",
         "location": {
             "salt-lake": 1,
             "downtown": 0,
-            "new-york-rooftop": 0
+            "new-york-rooftop": 0,
+            "new-york-city": 0,
+            "seattle": 0,
+            "utah": 10
         },
         "lighting": "sunrise"
     },
@@ -381,7 +423,11 @@
                 "type": false,
                 "location": {
                     "salt-lake": false,
-                    "downtown": false
+                    "downtown": false,
+                    "new-york-rooftop": false,
+                    "new-york-city": false,
+                    "seattle": false,
+                    "utah": false
                 },
                 "lighting": false
             },
@@ -390,14 +436,18 @@
         "id": 14,
         "picture": 14,
         "altText": "Bride jumping on groom and swinging",
-        "date": 9,
-        "photoshoot": 11,
+        "date": 11,
+        "photoshoot": 15,
         "priority": "c",
-        "priorityId": 6,
+        "priorityId": 7,
         "type": "bridals",
         "location": {
             "salt-lake": 2,
-            "downtown": 1
+            "downtown": 1,
+            "new-york-rooftop": 1,
+            "new-york-city": 1,
+            "seattle": 1,
+            "utah": 11
         },
         "lighting": "sunrise"
     },
@@ -408,7 +458,10 @@
                 "location": {
                     "salt-lake": false,
                     "downtown": false,
-                    "new-york-rooftop": false
+                    "new-york-rooftop": false,
+                    "new-york-city": false,
+                    "seattle": false,
+                    "utah": false
                 },
                 "lighting": false
             },
@@ -417,15 +470,18 @@
         "id": 15,
         "picture": 15,
         "altText": "Couple holding hands looking opposite directions",
-        "date": 10,
-        "photoshoot": 10,
+        "date": 12,
+        "photoshoot": 14,
         "priority": "c",
-        "priorityId": 5,
+        "priorityId": 6,
         "type": "bridals",
         "location": {
             "salt-lake": 3,
             "downtown": 2,
-            "new-york-rooftop": 1
+            "new-york-rooftop": 2,
+            "new-york-city": 2,
+            "seattle": 2,
+            "utah": 12
         },
         "lighting": "sunrise"
     },
@@ -436,7 +492,10 @@
                 "location": {
                     "salt-lake": false,
                     "downtown": false,
-                    "new-york-rooftop": false
+                    "new-york-rooftop": false,
+                    "new-york-city": false,
+                    "seattle": false,
+                    "utah": false
                 },
                 "lighting": false
             },
@@ -445,15 +504,18 @@
         "id": 16,
         "picture": 16,
         "altText": "Bride and groom putting their heads and noses together",
-        "date": 11,
-        "photoshoot": 9,
+        "date": 13,
+        "photoshoot": 13,
         "priority": "d",
-        "priorityId": 0,
+        "priorityId": 1,
         "type": "bridals",
         "location": {
             "salt-lake": 4,
             "downtown": 3,
-            "new-york-rooftop": 2
+            "new-york-rooftop": 3,
+            "new-york-city": 3,
+            "seattle": 3,
+            "utah": 13
         },
         "lighting": "sunrise"
     },
@@ -465,7 +527,8 @@
                     "salt-lake": false,
                     "downtown": false,
                     "england": false,
-                    "london": false
+                    "london": false,
+                    "utah": false
                 },
                 "lighting": false
             },
@@ -474,16 +537,17 @@
         "id": 17,
         "picture": 17,
         "altText": "Couple holding hands and looking at each other",
-        "date": 12,
-        "photoshoot": 35,
+        "date": 15,
+        "photoshoot": 43,
         "priority": "b",
-        "priorityId": 11,
+        "priorityId": 14,
         "type": "couples",
         "location": {
             "salt-lake": 5,
             "downtown": 4,
             "england": 0,
-            "london": 0
+            "london": 0,
+            "utah": 14
         },
         "lighting": "sunrise"
     },
@@ -495,7 +559,8 @@
                     "salt-lake": false,
                     "new-york": false,
                     "seattle": false,
-                    "parks": false
+                    "parks": false,
+                    "utah": false
                 },
                 "lighting": false
             },
@@ -504,16 +569,17 @@
         "id": 18,
         "picture": 18,
         "altText": "Guy leaning over girl to kiss her",
-        "date": 13,
-        "photoshoot": 34,
+        "date": 17,
+        "photoshoot": 42,
         "priority": "c",
-        "priorityId": 13,
+        "priorityId": 15,
         "type": "couples",
         "location": {
             "salt-lake": 6,
             "new-york": 0,
-            "seattle": 0,
-            "parks": 0
+            "seattle": 4,
+            "parks": 0,
+            "utah": 15
         },
         "lighting": "sunrise"
     },
@@ -525,7 +591,8 @@
                     "salt-lake": false,
                     "utah-mountains": false,
                     "forest": false,
-                    "snow": false
+                    "snow": false,
+                    "utah": false
                 },
                 "lighting": false
             },
@@ -534,16 +601,17 @@
         "id": 19,
         "picture": 19,
         "altText": "Couple walking in the snow on the mountain",
-        "date": 14,
-        "photoshoot": 63,
+        "date": 18,
+        "photoshoot": 75,
         "priority": "b",
-        "priorityId": 20,
+        "priorityId": 23,
         "type": "bridals",
         "location": {
             "salt-lake": 7,
             "utah-mountains": 1,
             "forest": 0,
-            "snow": 0
+            "snow": 0,
+            "utah": 16
         },
         "lighting": "full-sun"
     },
@@ -555,7 +623,8 @@
                     "salt-lake": false,
                     "utah-mountains": false,
                     "forest": false,
-                    "snow": false
+                    "snow": false,
+                    "utah": false
                 },
                 "lighting": false
             },
@@ -564,18 +633,19 @@
         "id": 20,
         "picture": 20,
         "altText": "Groom lifting bride in the forest",
-        "date": 15,
-        "photoshoot": 62,
+        "date": 19,
+        "photoshoot": 74,
         "priority": "c",
-        "priorityId": 23,
+        "priorityId": 27,
         "type": "bridals",
         "location": {
             "salt-lake": 8,
             "utah-mountains": 2,
             "forest": 1,
-            "snow": 1
+            "snow": 1,
+            "utah": 17
         },
-        "lighting": "full-sun"
+        "lighting": "shaded"
     },
     {
         "image": {
@@ -585,7 +655,8 @@
                     "salt-lake": false,
                     "utah-mountains": false,
                     "forest": false,
-                    "snow": false
+                    "snow": false,
+                    "utah": false
                 },
                 "lighting": false
             },
@@ -594,16 +665,17 @@
         "id": 21,
         "picture": 21,
         "altText": "Couple playing in the snow",
-        "date": 16,
-        "photoshoot": 66,
+        "date": 20,
+        "photoshoot": 78,
         "priority": "b",
-        "priorityId": 22,
+        "priorityId": 25,
         "type": "engagements",
         "location": {
             "salt-lake": 9,
             "utah-mountains": 3,
             "forest": 2,
-            "snow": 2
+            "snow": 2,
+            "utah": 18
         },
         "lighting": "full-sun"
     },
@@ -615,7 +687,8 @@
                     "salt-lake": false,
                     "utah-mountains": false,
                     "forest": false,
-                    "snow": false
+                    "snow": false,
+                    "utah": false
                 },
                 "lighting": false
             },
@@ -624,16 +697,17 @@
         "id": 22,
         "picture": 22,
         "altText": "Couple playing in the snow",
-        "date": 17,
-        "photoshoot": 65,
+        "date": 21,
+        "photoshoot": 77,
         "priority": "b",
-        "priorityId": 21,
+        "priorityId": 24,
         "type": "engagements",
         "location": {
             "salt-lake": 10,
             "utah-mountains": 4,
             "forest": 3,
-            "snow": 3
+            "snow": 3,
+            "utah": 19
         },
         "lighting": "full-sun"
     },
@@ -645,7 +719,8 @@
                     "salt-lake": false,
                     "utah-mountains": false,
                     "forest": false,
-                    "snow": false
+                    "snow": false,
+                    "utah": false
                 },
                 "lighting": false
             },
@@ -654,16 +729,17 @@
         "id": 23,
         "picture": 23,
         "altText": "Couple in the snow lifting girl up",
-        "date": 18,
-        "photoshoot": 64,
+        "date": 22,
+        "photoshoot": 76,
         "priority": "d",
-        "priorityId": 14,
+        "priorityId": 18,
         "type": "engagements",
         "location": {
             "salt-lake": 11,
             "utah-mountains": 5,
             "forest": 4,
-            "snow": 4
+            "snow": 4,
+            "utah": 20
         },
         "lighting": "full-sun"
     },
@@ -673,7 +749,8 @@
                 "type": false,
                 "location": {
                     "salt-flats": false,
-                    "salt-lake": false
+                    "salt-lake": false,
+                    "utah": false
                 },
                 "lighting": false
             },
@@ -682,14 +759,15 @@
         "id": 24,
         "picture": 24,
         "altText": "Couple sitting and looking at each other",
-        "date": 19,
-        "photoshoot": 30,
+        "date": 23,
+        "photoshoot": 36,
         "priority": "c",
-        "priorityId": 12,
+        "priorityId": 13,
         "type": "engagements",
         "location": {
             "salt-flats": 0,
-            "salt-lake": 12
+            "salt-lake": 12,
+            "utah": 21
         },
         "lighting": "sunset"
     },
@@ -699,7 +777,8 @@
                 "type": false,
                 "location": {
                     "salt-flats": false,
-                    "salt-lake": false
+                    "salt-lake": false,
+                    "utah": false
                 },
                 "lighting": false
             },
@@ -708,14 +787,15 @@
         "id": 25,
         "picture": 25,
         "altText": "Couple sitting back to back and looking at each other",
-        "date": 20,
-        "photoshoot": 29,
+        "date": 24,
+        "photoshoot": 35,
         "priority": "d",
-        "priorityId": 5,
+        "priorityId": 7,
         "type": "engagements",
         "location": {
             "salt-flats": 1,
-            "salt-lake": 13
+            "salt-lake": 13,
+            "utah": 22
         },
         "lighting": "sunset"
     },
@@ -725,7 +805,8 @@
                 "type": false,
                 "location": {
                     "salt-flats": false,
-                    "salt-lake": false
+                    "salt-lake": false,
+                    "utah": false
                 },
                 "lighting": false
             },
@@ -734,14 +815,15 @@
         "id": 26,
         "picture": 26,
         "altText": "Couple sitting on the ground holding hands",
-        "date": 21,
-        "photoshoot": 28,
+        "date": 25,
+        "photoshoot": 34,
         "priority": "b",
-        "priorityId": 9,
+        "priorityId": 11,
         "type": "engagements",
         "location": {
             "salt-flats": 2,
-            "salt-lake": 14
+            "salt-lake": 14,
+            "utah": 23
         },
         "lighting": "sunset"
     },
@@ -751,7 +833,8 @@
                 "type": false,
                 "location": {
                     "salt-flats": false,
-                    "salt-lake": false
+                    "salt-lake": false,
+                    "utah": false
                 },
                 "lighting": false
             },
@@ -760,14 +843,15 @@
         "id": 27,
         "picture": 27,
         "altText": "Girl hugging from behind looking at each other",
-        "date": 22,
-        "photoshoot": 27,
+        "date": 26,
+        "photoshoot": 33,
         "priority": "c",
-        "priorityId": 11,
+        "priorityId": 12,
         "type": "engagements",
         "location": {
             "salt-flats": 3,
-            "salt-lake": 15
+            "salt-lake": 15,
+            "utah": 24
         },
         "lighting": "sunset"
     },
@@ -777,7 +861,8 @@
                 "type": false,
                 "location": {
                     "salt-flats": false,
-                    "salt-lake": false
+                    "salt-lake": false,
+                    "utah": false
                 },
                 "lighting": false
             },
@@ -786,14 +871,15 @@
         "id": 28,
         "picture": 28,
         "altText": "Groom lifting bride for a kiss",
-        "date": 23,
-        "photoshoot": 57,
+        "date": 27,
+        "photoshoot": 69,
         "priority": "b",
-        "priorityId": 18,
+        "priorityId": 21,
         "type": "bridals",
         "location": {
             "salt-flats": 4,
-            "salt-lake": 16
+            "salt-lake": 16,
+            "utah": 25
         },
         "lighting": "sunset"
     },
@@ -803,7 +889,8 @@
                 "type": false,
                 "location": {
                     "salt-flats": false,
-                    "salt-lake": false
+                    "salt-lake": false,
+                    "utah": false
                 },
                 "lighting": false
             },
@@ -812,14 +899,15 @@
         "id": 29,
         "picture": 29,
         "altText": "Groom kissing brides head",
-        "date": 24,
-        "photoshoot": 41,
+        "date": 28,
+        "photoshoot": 50,
         "priority": "b",
-        "priorityId": 13,
+        "priorityId": 16,
         "type": "bridals",
         "location": {
             "salt-flats": 5,
-            "salt-lake": 17
+            "salt-lake": 17,
+            "utah": 26
         },
         "lighting": "blue-hour"
     },
@@ -830,7 +918,8 @@
                 "location": {
                     "utah-lake": false,
                     "lakes": false,
-                    "utah-county": false
+                    "utah-county": false,
+                    "utah": false
                 },
                 "lighting": false
             },
@@ -839,15 +928,16 @@
         "id": 30,
         "picture": 30,
         "altText": "Bridal couple doing first look by the lake",
-        "date": 42,
-        "photoshoot": 45,
+        "date": 50,
+        "photoshoot": 56,
         "priority": "b",
-        "priorityId": 14,
+        "priorityId": 17,
         "type": "bridals",
         "location": {
             "utah-lake": 0,
             "lakes": 0,
-            "utah-county": 0
+            "utah-county": 0,
+            "utah": 27
         },
         "lighting": "blue-hour"
     },
@@ -858,7 +948,8 @@
                 "location": {
                     "utah-lake": false,
                     "lakes": false,
-                    "utah-county": false
+                    "utah-county": false,
+                    "utah": false
                 },
                 "lighting": false
             },
@@ -867,15 +958,16 @@
         "id": 31,
         "picture": 31,
         "altText": "Bride and groom hugging",
-        "date": 43,
-        "photoshoot": 44,
+        "date": 51,
+        "photoshoot": 55,
         "priority": "a",
         "priorityId": 2,
         "type": "bridals",
         "location": {
             "utah-lake": 1,
             "lakes": 1,
-            "utah-county": 1
+            "utah-county": 1,
+            "utah": 28
         },
         "lighting": "blue-hour"
     },
@@ -885,7 +977,8 @@
                 "type": false,
                 "location": {
                     "salt-lake": false,
-                    "limousine": false
+                    "limousine": false,
+                    "utah": false
                 },
                 "lighting": false
             },
@@ -894,14 +987,15 @@
         "id": 32,
         "picture": 32,
         "altText": "Couple in limo drinking champagne",
-        "date": 25,
-        "photoshoot": 40,
+        "date": 29,
+        "photoshoot": 49,
         "priority": "c",
-        "priorityId": 15,
+        "priorityId": 17,
         "type": "bridals",
         "location": {
             "salt-lake": 18,
-            "limousine": 0
+            "limousine": 0,
+            "utah": 29
         },
         "lighting": "flash"
     },
@@ -911,7 +1005,8 @@
                 "type": false,
                 "location": {
                     "salt-lake": false,
-                    "limousine": false
+                    "limousine": false,
+                    "utah": false
                 },
                 "lighting": false
             },
@@ -920,14 +1015,15 @@
         "id": 33,
         "picture": 33,
         "altText": "Couple gazing into each others eyes",
-        "date": 26,
-        "photoshoot": 39,
+        "date": 30,
+        "photoshoot": 48,
         "priority": "d",
-        "priorityId": 8,
+        "priorityId": 11,
         "type": "bridals",
         "location": {
             "salt-lake": 19,
-            "limousine": 1
+            "limousine": 1,
+            "utah": 30
         },
         "lighting": "flash"
     },
@@ -937,7 +1033,8 @@
                 "type": false,
                 "location": {
                     "salt-flats": false,
-                    "salt-lake": false
+                    "salt-lake": false,
+                    "utah": false
                 },
                 "lighting": false
             },
@@ -946,14 +1043,15 @@
         "id": 34,
         "picture": 34,
         "altText": "Bridal couple running to their getaway car with sparklers",
-        "date": 27,
-        "photoshoot": 61,
+        "date": 31,
+        "photoshoot": 73,
         "priority": "d",
-        "priorityId": 13,
+        "priorityId": 17,
         "type": "weddings",
         "location": {
             "salt-flats": 6,
-            "salt-lake": 20
+            "salt-lake": 20,
+            "utah": 31
         },
         "lighting": "flash"
     },
@@ -963,7 +1061,8 @@
                 "type": false,
                 "location": {
                     "salt-flats": false,
-                    "salt-lake": false
+                    "salt-lake": false,
+                    "utah": false
                 },
                 "lighting": false
             },
@@ -972,14 +1071,15 @@
         "id": 35,
         "picture": 35,
         "altText": "Bridal couple hugging with sparklers",
-        "date": 28,
-        "photoshoot": 60,
+        "date": 32,
+        "photoshoot": 72,
         "priority": "c",
-        "priorityId": 22,
+        "priorityId": 26,
         "type": "weddings",
         "location": {
             "salt-flats": 7,
-            "salt-lake": 21
+            "salt-lake": 21,
+            "utah": 32
         },
         "lighting": "flash"
     },
@@ -989,7 +1089,8 @@
                 "type": false,
                 "location": {
                     "salt-flats": false,
-                    "salt-lake": false
+                    "salt-lake": false,
+                    "utah": false
                 },
                 "lighting": false
             },
@@ -998,14 +1099,15 @@
         "id": 36,
         "picture": 36,
         "altText": "Groom leaning in to kiss the bride",
-        "date": 29,
-        "photoshoot": 59,
+        "date": 33,
+        "photoshoot": 71,
         "priority": "d",
-        "priorityId": 12,
+        "priorityId": 16,
         "type": "weddings",
         "location": {
             "salt-flats": 8,
-            "salt-lake": 22
+            "salt-lake": 22,
+            "utah": 33
         },
         "lighting": "flash"
     },
@@ -1024,10 +1126,10 @@
         "id": 37,
         "picture": 37,
         "altText": "Groom and bride laughing",
-        "date": 30,
-        "photoshoot": 58,
+        "date": 34,
+        "photoshoot": 70,
         "priority": "b",
-        "priorityId": 19,
+        "priorityId": 22,
         "type": "weddings",
         "location": {
             "salt-flats": 9,
@@ -1042,7 +1144,8 @@
                 "location": {
                     "utah-mountains": false,
                     "fall-trees": false,
-                    "forest": false
+                    "forest": false,
+                    "utah": false
                 },
                 "lighting": false
             },
@@ -1051,15 +1154,16 @@
         "id": 38,
         "picture": 38,
         "altText": "Boy holding hand and leading girl",
-        "date": 44,
-        "photoshoot": 26,
+        "date": 52,
+        "photoshoot": 32,
         "priority": "c",
-        "priorityId": 10,
+        "priorityId": 11,
         "type": "couples",
         "location": {
             "utah-mountains": 6,
             "fall-trees": 1,
-            "forest": 5
+            "forest": 5,
+            "utah": 34
         },
         "lighting": "cloudy"
     },
@@ -1069,7 +1173,8 @@
                 "type": false,
                 "location": {
                     "studio": false,
-                    "layton": false
+                    "layton": false,
+                    "utah": false
                 },
                 "lighting": false
             },
@@ -1078,14 +1183,15 @@
         "id": 39,
         "picture": 39,
         "altText": "Couple holding baby and admiring him",
-        "date": 31,
-        "photoshoot": 52,
+        "date": 35,
+        "photoshoot": 63,
         "priority": "d",
-        "priorityId": 11,
+        "priorityId": 15,
         "type": "families",
         "location": {
             "studio": 2,
-            "layton": 3
+            "layton": 4,
+            "utah": 35
         },
         "lighting": "indoor"
     },
@@ -1096,7 +1202,8 @@
                 "location": {
                     "utah-mountains": false,
                     "fall-trees": false,
-                    "forest": false
+                    "forest": false,
+                    "utah": false
                 },
                 "lighting": false
             },
@@ -1105,15 +1212,16 @@
         "id": 40,
         "picture": 40,
         "altText": "Couple sitting down and holding each other and gazing into each others eyes",
-        "date": 45,
-        "photoshoot": 7,
+        "date": 53,
+        "photoshoot": 8,
         "priority": "c",
         "priorityId": 4,
         "type": "couples",
         "location": {
             "utah-mountains": 7,
             "fall-trees": 2,
-            "forest": 6
+            "forest": 6,
+            "utah": 36
         },
         "lighting": "cloudy"
     },
@@ -1123,7 +1231,8 @@
                 "type": false,
                 "location": {
                     "sand-dunes": false,
-                    "desert": false
+                    "desert": false,
+                    "utah": false
                 },
                 "lighting": false
             },
@@ -1132,14 +1241,15 @@
         "id": 41,
         "picture": 41,
         "altText": "Couple sitting and hugging",
-        "date": 32,
-        "photoshoot": 48,
+        "date": 36,
+        "photoshoot": 59,
         "priority": "c",
-        "priorityId": 17,
+        "priorityId": 20,
         "type": "engagements",
         "location": {
             "sand-dunes": 1,
-            "desert": 4
+            "desert": 4,
+            "utah": 37
         },
         "lighting": "sunset"
     },
@@ -1149,7 +1259,8 @@
                 "type": false,
                 "location": {
                     "sand-dunes": false,
-                    "desert": false
+                    "desert": false,
+                    "utah": false
                 },
                 "lighting": false
             },
@@ -1158,14 +1269,15 @@
         "id": 42,
         "picture": 42,
         "altText": "Guy hugging girl from behind and swaying",
-        "date": 33,
-        "photoshoot": 47,
+        "date": 37,
+        "photoshoot": 58,
         "priority": "b",
-        "priorityId": 15,
+        "priorityId": 18,
         "type": "engagements",
         "location": {
             "sand-dunes": 2,
-            "desert": 5
+            "desert": 5,
+            "utah": 38
         },
         "lighting": "sunset"
     },
@@ -1175,7 +1287,8 @@
                 "type": false,
                 "location": {
                     "sand-dunes": false,
-                    "desert": false
+                    "desert": false,
+                    "utah": false
                 },
                 "lighting": false
             },
@@ -1184,14 +1297,15 @@
         "id": 43,
         "picture": 43,
         "altText": "Girl being lifted up on guys back",
-        "date": 34,
-        "photoshoot": 46,
+        "date": 38,
+        "photoshoot": 57,
         "priority": "d",
-        "priorityId": 10,
+        "priorityId": 14,
         "type": "engagements",
         "location": {
             "sand-dunes": 3,
-            "desert": 6
+            "desert": 6,
+            "utah": 39
         },
         "lighting": "sunset"
     },
@@ -1202,7 +1316,8 @@
                 "location": {
                     "goblin-valley": false,
                     "moab": false,
-                    "desert": false
+                    "desert": false,
+                    "utah": false
                 },
                 "lighting": false
             },
@@ -1211,15 +1326,16 @@
         "id": 44,
         "picture": 44,
         "altText": "Guy hugging girl from behind",
-        "date": 56,
-        "photoshoot": 6,
+        "date": 65,
+        "photoshoot": 7,
         "priority": "b",
-        "priorityId": 2,
+        "priorityId": 3,
         "type": "bridals",
         "location": {
             "goblin-valley": 3,
             "moab": 3,
-            "desert": 7
+            "desert": 7,
+            "utah": 40
         },
         "lighting": "cloudy"
     },
@@ -1230,7 +1346,8 @@
                 "location": {
                     "goblin-valley": false,
                     "moab": false,
-                    "desert": false
+                    "desert": false,
+                    "utah": false
                 },
                 "lighting": false
             },
@@ -1239,15 +1356,16 @@
         "id": 45,
         "picture": 45,
         "altText": "Bride sitting on rock and groom looking in the distance",
-        "date": 57,
-        "photoshoot": 5,
+        "date": 66,
+        "photoshoot": 6,
         "priority": "c",
         "priorityId": 3,
         "type": "bridals",
         "location": {
             "goblin-valley": 4,
             "moab": 4,
-            "desert": 8
+            "desert": 8,
+            "utah": 41
         },
         "lighting": "cloudy"
     },
@@ -1258,7 +1376,8 @@
                 "location": {
                     "goblin-valley": false,
                     "moab": false,
-                    "desert": false
+                    "desert": false,
+                    "utah": false
                 },
                 "lighting": false
             },
@@ -1267,15 +1386,16 @@
         "id": 46,
         "picture": 46,
         "altText": "Groom lifting Bride while admiring each other",
-        "date": 58,
-        "photoshoot": 4,
+        "date": 68,
+        "photoshoot": 5,
         "priority": "c",
         "priorityId": 2,
         "type": "bridals",
         "location": {
             "goblin-valley": 5,
             "moab": 5,
-            "desert": 9
+            "desert": 9,
+            "utah": 42
         },
         "lighting": "cloudy"
     },
@@ -1286,7 +1406,8 @@
                 "location": {
                     "arches": false,
                     "moab": false,
-                    "desert": false
+                    "desert": false,
+                    "utah": false
                 },
                 "lighting": false
             },
@@ -1295,7 +1416,7 @@
         "id": 47,
         "picture": 47,
         "altText": "Guy picking girl up while she kicks her legs back",
-        "date": 59,
+        "date": 69,
         "photoshoot": 1,
         "priority": "b",
         "priorityId": 0,
@@ -1303,7 +1424,8 @@
         "location": {
             "arches": 0,
             "moab": 6,
-            "desert": 10
+            "desert": 10,
+            "utah": 43
         },
         "lighting": "full-sun"
     },
@@ -1314,7 +1436,8 @@
                 "location": {
                     "arches": false,
                     "moab": false,
-                    "desert": false
+                    "desert": false,
+                    "utah": false
                 },
                 "lighting": false
             },
@@ -1323,7 +1446,7 @@
         "id": 48,
         "picture": 48,
         "altText": "Girl hugging guy from behind while they look separate ways",
-        "date": 60,
+        "date": 70,
         "photoshoot": 0,
         "priority": "c",
         "priorityId": 0,
@@ -1331,7 +1454,8 @@
         "location": {
             "arches": 1,
             "moab": 7,
-            "desert": 11
+            "desert": 11,
+            "utah": 44
         },
         "lighting": "full-sun"
     },
@@ -1342,7 +1466,8 @@
                 "location": {
                     "arches": false,
                     "moab": false,
-                    "desert": false
+                    "desert": false,
+                    "utah": false
                 },
                 "lighting": false
             },
@@ -1351,15 +1476,16 @@
         "id": 49,
         "picture": 49,
         "altText": "Couple holding hands and walking while looking down",
-        "date": 61,
-        "photoshoot": 56,
+        "date": 71,
+        "photoshoot": 68,
         "priority": "b",
-        "priorityId": 17,
+        "priorityId": 20,
         "type": "bridals",
         "location": {
             "arches": 2,
             "moab": 8,
-            "desert": 12
+            "desert": 12,
+            "utah": 45
         },
         "lighting": "full-sun"
     },
@@ -1370,7 +1496,8 @@
                 "location": {
                     "arches": false,
                     "moab": false,
-                    "desert": false
+                    "desert": false,
+                    "utah": false
                 },
                 "lighting": false
             },
@@ -1379,17 +1506,18 @@
         "id": 50,
         "picture": 50,
         "altText": "Groom kissing side of brides forhead while she looks off into the distance",
-        "date": 62,
-        "photoshoot": 55,
+        "date": 73,
+        "photoshoot": 67,
         "priority": "c",
-        "priorityId": 21,
+        "priorityId": 25,
         "type": "bridals",
         "location": {
             "arches": 3,
             "moab": 9,
-            "desert": 13
+            "desert": 13,
+            "utah": 46
         },
-        "lighting": "full-sun"
+        "lighting": "shaded"
     },
     {
         "image": {
@@ -1398,7 +1526,8 @@
                 "location": {
                     "arches": false,
                     "moab": false,
-                    "desert": false
+                    "desert": false,
+                    "utah": false
                 },
                 "lighting": false
             },
@@ -1407,17 +1536,18 @@
         "id": 51,
         "picture": 51,
         "altText": "Groom holding and looking at bride while she holds her bouquet and looks off into the distance",
-        "date": 63,
-        "photoshoot": 54,
+        "date": 74,
+        "photoshoot": 66,
         "priority": "b",
-        "priorityId": 16,
+        "priorityId": 19,
         "type": "bridals",
         "location": {
             "arches": 4,
             "moab": 10,
-            "desert": 14
+            "desert": 14,
+            "utah": 47
         },
-        "lighting": "cloudy"
+        "lighting": "shaded"
     },
     {
         "image": {
@@ -1426,7 +1556,8 @@
                 "location": {
                     "arches": false,
                     "moab": false,
-                    "desert": false
+                    "desert": false,
+                    "utah": false
                 },
                 "lighting": false
             },
@@ -1435,15 +1566,16 @@
         "id": 52,
         "picture": 52,
         "altText": "Groom kissing brides cheek while holding bouquet",
-        "date": 66,
-        "photoshoot": 38,
+        "date": 78,
+        "photoshoot": 47,
         "priority": "c",
-        "priorityId": 14,
+        "priorityId": 16,
         "type": "bridals",
         "location": {
             "arches": 5,
             "moab": 11,
-            "desert": 15
+            "desert": 15,
+            "utah": 48
         },
         "lighting": "sunset"
     },
@@ -1454,7 +1586,8 @@
                 "location": {
                     "arches": false,
                     "moab": false,
-                    "desert": false
+                    "desert": false,
+                    "utah": false
                 },
                 "lighting": false
             },
@@ -1463,17 +1596,18 @@
         "id": 53,
         "picture": 53,
         "altText": "Bride and groom hugging while touching each others foreheads together",
-        "date": 64,
-        "photoshoot": 37,
+        "date": 76,
+        "photoshoot": 46,
         "priority": "b",
-        "priorityId": 12,
+        "priorityId": 15,
         "type": "bridals",
         "location": {
             "arches": 6,
             "moab": 12,
-            "desert": 16
+            "desert": 16,
+            "utah": 49
         },
-        "lighting": "sunset"
+        "lighting": "shaded"
     },
     {
         "image": {
@@ -1482,7 +1616,8 @@
                 "location": {
                     "arches": false,
                     "moab": false,
-                    "desert": false
+                    "desert": false,
+                    "utah": false
                 },
                 "lighting": false
             },
@@ -1491,17 +1626,18 @@
         "id": 54,
         "picture": 54,
         "altText": "Groom holding brides hand and leading her",
-        "date": 65,
-        "photoshoot": 36,
+        "date": 77,
+        "photoshoot": 45,
         "priority": "a",
         "priorityId": 1,
         "type": "bridals",
         "location": {
             "arches": 7,
             "moab": 13,
-            "desert": 17
+            "desert": 17,
+            "utah": 50
         },
-        "lighting": "sunset"
+        "lighting": "shaded"
     },
     {
         "image": {
@@ -1510,7 +1646,8 @@
                 "location": {
                     "dead-horse": false,
                     "moab": false,
-                    "desert": false
+                    "desert": false,
+                    "utah": false
                 },
                 "lighting": false
             },
@@ -1519,15 +1656,16 @@
         "id": 55,
         "picture": 55,
         "altText": "Couple hugging and admiring each other",
-        "date": 67,
-        "photoshoot": 70,
+        "date": 79,
+        "photoshoot": 83,
         "priority": "c",
-        "priorityId": 24,
+        "priorityId": 28,
         "type": "bridals",
         "location": {
             "dead-horse": 0,
             "moab": 14,
-            "desert": 18
+            "desert": 18,
+            "utah": 51
         },
         "lighting": "sunrise"
     },
@@ -1538,7 +1676,8 @@
                 "location": {
                     "dead-horse": false,
                     "moab": false,
-                    "desert": false
+                    "desert": false,
+                    "utah": false
                 },
                 "lighting": false
             },
@@ -1547,15 +1686,16 @@
         "id": 56,
         "picture": 56,
         "altText": "Couple holding each others hand with groom looking at bride",
-        "date": 68,
-        "photoshoot": 69,
+        "date": 81,
+        "photoshoot": 82,
         "priority": "a",
-        "priorityId": 4,
+        "priorityId": 5,
         "type": "bridals",
         "location": {
             "dead-horse": 1,
             "moab": 15,
-            "desert": 19
+            "desert": 19,
+            "utah": 52
         },
         "lighting": "sunrise"
     },
@@ -1566,7 +1706,8 @@
                 "location": {
                     "dead-horse": false,
                     "moab": false,
-                    "desert": false
+                    "desert": false,
+                    "utah": false
                 },
                 "lighting": false
             },
@@ -1575,15 +1716,16 @@
         "id": 57,
         "picture": 57,
         "altText": "Groom touching brides chin with bride smiling",
-        "date": 69,
-        "photoshoot": 68,
+        "date": 82,
+        "photoshoot": 81,
         "priority": "b",
-        "priorityId": 23,
+        "priorityId": 26,
         "type": "bridals",
         "location": {
             "dead-horse": 2,
             "moab": 16,
-            "desert": 20
+            "desert": 20,
+            "utah": 53
         },
         "lighting": "sunrise"
     },
@@ -1594,7 +1736,8 @@
                 "location": {
                     "dead-horse": false,
                     "moab": false,
-                    "desert": false
+                    "desert": false,
+                    "utah": false
                 },
                 "lighting": false
             },
@@ -1603,15 +1746,16 @@
         "id": 58,
         "picture": 58,
         "altText": "Bride and groom holding each other and gazing into each others eyes",
-        "date": 70,
-        "photoshoot": 67,
+        "date": 83,
+        "photoshoot": 80,
         "priority": "a",
-        "priorityId": 3,
+        "priorityId": 4,
         "type": "bridals",
         "location": {
             "dead-horse": 3,
             "moab": 17,
-            "desert": 21
+            "desert": 21,
+            "utah": 54
         },
         "lighting": "sunrise"
     },
@@ -1621,7 +1765,8 @@
                 "type": false,
                 "location": {
                     "las-vegas": false,
-                    "luxury-venue": false
+                    "luxury-venue": false,
+                    "nevada": false
                 },
                 "lighting": false
             },
@@ -1630,16 +1775,17 @@
         "id": 59,
         "picture": 59,
         "altText": "Bride and groom looking at each other with bridal party cheering",
-        "date": 50,
-        "photoshoot": 21,
+        "date": 59,
+        "photoshoot": 26,
         "priority": "a",
         "priorityId": 0,
         "type": "weddings",
         "location": {
             "las-vegas": 3,
-            "luxury-venue": 0
+            "luxury-venue": 0,
+            "nevada": 3
         },
-        "lighting": "full-sun"
+        "lighting": "shaded"
     },
     {
         "image": {
@@ -1647,7 +1793,8 @@
                 "type": false,
                 "location": {
                     "las-vegas": false,
-                    "luxury-venue": false
+                    "luxury-venue": false,
+                    "nevada": false
                 },
                 "lighting": false
             },
@@ -1656,16 +1803,17 @@
         "id": 60,
         "picture": 60,
         "altText": "Bride and groom forehead to forhead while giggling",
-        "date": 51,
-        "photoshoot": 20,
+        "date": 60,
+        "photoshoot": 25,
         "priority": "d",
-        "priorityId": 3,
+        "priorityId": 4,
         "type": "weddings",
         "location": {
             "las-vegas": 4,
-            "luxury-venue": 1
+            "luxury-venue": 1,
+            "nevada": 4
         },
-        "lighting": "full-sun"
+        "lighting": "shaded"
     },
     {
         "image": {
@@ -1673,7 +1821,8 @@
                 "type": false,
                 "location": {
                     "las-vegas": false,
-                    "luxury-venue": false
+                    "luxury-venue": false,
+                    "nevada": false
                 },
                 "lighting": false
             },
@@ -1682,16 +1831,17 @@
         "id": 61,
         "picture": 61,
         "altText": "Groom kissing brides forhead while bride is smiling",
-        "date": 52,
-        "photoshoot": 19,
+        "date": 61,
+        "photoshoot": 24,
         "priority": "c",
-        "priorityId": 8,
+        "priorityId": 9,
         "type": "weddings",
         "location": {
             "las-vegas": 5,
-            "luxury-venue": 2
+            "luxury-venue": 2,
+            "nevada": 5
         },
-        "lighting": "full-sun"
+        "lighting": "shaded"
     },
     {
         "image": {
@@ -1699,7 +1849,8 @@
                 "type": false,
                 "location": {
                     "las-vegas": false,
-                    "luxury-venue": false
+                    "luxury-venue": false,
+                    "nevada": false
                 },
                 "lighting": false
             },
@@ -1708,14 +1859,15 @@
         "id": 62,
         "picture": 62,
         "altText": "Bride and groom jumping in and all white bouncy house",
-        "date": 53,
-        "photoshoot": 18,
+        "date": 62,
+        "photoshoot": 23,
         "priority": "b",
-        "priorityId": 7,
+        "priorityId": 9,
         "type": "weddings",
         "location": {
             "las-vegas": 6,
-            "luxury-venue": 3
+            "luxury-venue": 3,
+            "nevada": 6
         },
         "lighting": "full-sun"
     },
@@ -1725,7 +1877,8 @@
                 "type": false,
                 "location": {
                     "las-vegas": false,
-                    "luxury-venue": false
+                    "luxury-venue": false,
+                    "nevada": false
                 },
                 "lighting": false
             },
@@ -1734,14 +1887,15 @@
         "id": 63,
         "picture": 63,
         "altText": "Bride and groom dancing",
-        "date": 54,
-        "photoshoot": 17,
+        "date": 63,
+        "photoshoot": 22,
         "priority": "b",
-        "priorityId": 6,
+        "priorityId": 8,
         "type": "weddings",
         "location": {
             "las-vegas": 7,
-            "luxury-venue": 4
+            "luxury-venue": 4,
+            "nevada": 7
         },
         "lighting": "full-sun"
     },
@@ -1751,7 +1905,8 @@
                 "type": false,
                 "location": {
                     "utah-mountains": false,
-                    "fields": false
+                    "fields": false,
+                    "utah": false
                 },
                 "lighting": false
             },
@@ -1760,14 +1915,15 @@
         "id": 64,
         "picture": 64,
         "altText": "Boy chasing girl",
-        "date": 55,
-        "photoshoot": 14,
+        "date": 64,
+        "photoshoot": 18,
         "priority": "b",
-        "priorityId": 5,
+        "priorityId": 7,
         "type": "engagements",
         "location": {
             "utah-mountains": 8,
-            "fields": 0
+            "fields": 0,
+            "utah": 55
         },
         "lighting": "full-sun"
     },
@@ -1777,7 +1933,8 @@
                 "type": false,
                 "location": {
                     "eagle-mountain": false,
-                    "utah-county": false
+                    "utah-county": false,
+                    "utah": false
                 },
                 "lighting": false
             },
@@ -1787,15 +1944,16 @@
         "picture": 65,
         "altText": "Girl holding neck while looking up and smiling",
         "date": 0,
-        "photoshoot": 51,
+        "photoshoot": 62,
         "priority": "e",
-        "priorityId": 1,
+        "priorityId": 2,
         "type": "portraits",
         "location": {
             "eagle-mountain": 0,
-            "utah-county": 2
+            "utah-county": 2,
+            "utah": 56
         },
-        "lighting": "full-sun"
+        "lighting": "shaded"
     },
     {
         "image": {
@@ -1803,23 +1961,25 @@
                 "type": false,
                 "location": {
                     "this-is-the-place": false,
-                    "salt-lake": false
+                    "salt-lake": false,
+                    "utah": false
                 },
                 "lighting": false
             },
-            "html": "\n                <div class=\"img66 show normal\">\n                    <div class=\"container\" style=\"left: 0px; top: 0px;\">\n                        <div>\n                            <h3>this is-the-place</h3>\n                        </div>\n                        <picture>\n                            <source type=\"image/avif\" srcset=\"/images/gallery/66.avif\">\n                            <source type=\"image/webp\" srcset=\"/images/gallery/66.webp\">\n                            <source type=\"image/jpg\" srcset=\"/images/gallery/66.jpg\">\n                            <img src='/images/gallery/66.avif' alt=\"Bride holding bouque while smiling and looking off into the distance\" loading=\"lazy\">\n                        </picture>\n                        <div>\n                            <h3>Thu Oct 14 2021</h3>\n                        </div>\n                    </div>\n                </div>\n                "
+            "html": "\n                <div class=\"img66 show normal\">\n                    <div class=\"container\" style=\"left: 0px; top: 0px;\">\n                        <div>\n                            <h3>this is the place</h3>\n                        </div>\n                        <picture>\n                            <source type=\"image/avif\" srcset=\"/images/gallery/66.avif\">\n                            <source type=\"image/webp\" srcset=\"/images/gallery/66.webp\">\n                            <source type=\"image/jpg\" srcset=\"/images/gallery/66.jpg\">\n                            <img src='/images/gallery/66.avif' alt=\"Bride holding bouque while smiling and looking off into the distance\" loading=\"lazy\">\n                        </picture>\n                        <div>\n                            <h3>Thu Oct 14 2021</h3>\n                        </div>\n                    </div>\n                </div>\n                "
         },
         "id": 66,
         "picture": 66,
         "altText": "Bride holding bouque while smiling and looking off into the distance",
         "date": 1,
-        "photoshoot": 53,
+        "photoshoot": 64,
         "priority": "c",
-        "priorityId": 20,
+        "priorityId": 23,
         "type": "weddings",
         "location": {
             "this-is-the-place": 0,
-            "salt-lake": 24
+            "salt-lake": 24,
+            "utah": 57
         },
         "lighting": "cloudy"
     },
@@ -1830,7 +1990,8 @@
                 "location": {
                     "arches": false,
                     "moab": false,
-                    "desert": false
+                    "desert": false,
+                    "utah": false
                 },
                 "lighting": false
             },
@@ -1839,17 +2000,18 @@
         "id": 67,
         "picture": 67,
         "altText": "Couple hugging with boy whispering something funny",
-        "date": 2,
-        "photoshoot": 42,
+        "date": 4,
+        "photoshoot": 53,
         "priority": "d",
-        "priorityId": 9,
+        "priorityId": 13,
         "type": "engagements",
         "location": {
             "arches": 8,
             "moab": 18,
-            "desert": 22
+            "desert": 22,
+            "utah": 58
         },
-        "lighting": "sunrise"
+        "lighting": "shaded"
     },
     {
         "image": {
@@ -1858,7 +2020,8 @@
                 "location": {
                     "moab": false,
                     "desert": false,
-                    "roadside": false
+                    "roadside": false,
+                    "utah": false
                 },
                 "lighting": false
             },
@@ -1867,7 +2030,7 @@
         "id": 68,
         "picture": 68,
         "altText": "Guy lifting girl in the air while she lifts her arm up and kicks her leg",
-        "date": 5,
+        "date": 7,
         "photoshoot": 3,
         "priority": "c",
         "priorityId": 1,
@@ -1875,7 +2038,8 @@
         "location": {
             "moab": 19,
             "desert": 23,
-            "roadside": 4
+            "roadside": 4,
+            "utah": 59
         },
         "lighting": "sunrise"
     },
@@ -1886,7 +2050,8 @@
                 "location": {
                     "moab": false,
                     "desert": false,
-                    "roadside": false
+                    "roadside": false,
+                    "utah": false
                 },
                 "lighting": false
             },
@@ -1895,7 +2060,7 @@
         "id": 69,
         "picture": 69,
         "altText": "Guy lifting girl up while she has her head and arm up",
-        "date": 4,
+        "date": 6,
         "photoshoot": 2,
         "priority": "b",
         "priorityId": 1,
@@ -1903,7 +2068,8 @@
         "location": {
             "moab": 20,
             "desert": 24,
-            "roadside": 5
+            "roadside": 5,
+            "utah": 60
         },
         "lighting": "sunrise"
     },
@@ -1914,7 +2080,8 @@
                 "location": {
                     "utah-mountains": false,
                     "fields": false,
-                    "ogden": false
+                    "ogden": false,
+                    "utah": false
                 },
                 "lighting": false
             },
@@ -1923,16 +2090,473 @@
         "id": 70,
         "picture": 70,
         "altText": "Couple sitting in grass with boy kissing girls forhead",
-        "date": 41,
-        "photoshoot": 8,
+        "date": 49,
+        "photoshoot": 9,
         "priority": "b",
-        "priorityId": 3,
+        "priorityId": 4,
         "type": "couples",
         "location": {
             "utah-mountains": 9,
             "fields": 1,
-            "ogden": 0
+            "ogden": 0,
+            "utah": 61
         },
         "lighting": "sunrise"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "utah-mountains": false,
+                    "roadside": false,
+                    "fall-trees": false,
+                    "utah": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class=\"img71 show normal\">\n                    <div class=\"container\" style=\"left: 0px; top: 0px;\">\n                        <div>\n                            <h3>utah mountains</h3>\n                        </div>\n                        <picture>\n                            <source type=\"image/avif\" srcset=\"/images/gallery/71.avif\">\n                            <source type=\"image/webp\" srcset=\"/images/gallery/71.webp\">\n                            <source type=\"image/jpg\" srcset=\"/images/gallery/71.jpg\">\n                            <img src='/images/gallery/71.avif' alt=\"Couple sitting with girls legs on guys legs, while they're holding hands and giggling\" loading=\"lazy\">\n                        </picture>\n                        <div>\n                            <h3>Sun Oct 16 2022</h3>\n                        </div>\n                    </div>\n                </div>\n                "
+        },
+        "id": 71,
+        "picture": 71,
+        "altText": "Couple sitting with girls legs on guys legs, while they're holding hands and giggling",
+        "date": 54,
+        "photoshoot": 30,
+        "priority": "d",
+        "priorityId": 6,
+        "type": "couples",
+        "location": {
+            "utah-mountains": 10,
+            "roadside": 6,
+            "fall-trees": 3,
+            "utah": 62
+        },
+        "lighting": "sunset"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "little-white-chapel": false,
+                    "las-vegas": false,
+                    "roadside": false,
+                    "nevada": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class=\"img72 show normal\">\n                    <div class=\"container\" style=\"left: 0px; top: 0px;\">\n                        <div>\n                            <h3>little white chapel</h3>\n                        </div>\n                        <picture>\n                            <source type=\"image/avif\" srcset=\"/images/gallery/72.avif\">\n                            <source type=\"image/webp\" srcset=\"/images/gallery/72.webp\">\n                            <source type=\"image/jpg\" srcset=\"/images/gallery/72.jpg\">\n                            <img src='/images/gallery/72.avif' alt=\"Bride and groom turning towards each other and admiring\" loading=\"lazy\">\n                        </picture>\n                        <div>\n                            <h3>Thu Jun 23 2022</h3>\n                        </div>\n                    </div>\n                </div>\n                "
+        },
+        "id": 72,
+        "picture": 72,
+        "altText": "Bride and groom turning towards each other and admiring",
+        "date": 43,
+        "photoshoot": 37,
+        "priority": "c",
+        "priorityId": 14,
+        "type": "elopements",
+        "location": {
+            "little-white-chapel": 1,
+            "las-vegas": 8,
+            "roadside": 7,
+            "nevada": 8
+        },
+        "lighting": "full-sun"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "the-bellagio-hotel": false,
+                    "las-vegas": false,
+                    "italy": false,
+                    "greece": false,
+                    "nevada": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class=\"img73 show normal\">\n                    <div class=\"container\" style=\"left: 0px; top: 0px;\">\n                        <div>\n                            <h3>the bellagio hotel</h3>\n                        </div>\n                        <picture>\n                            <source type=\"image/avif\" srcset=\"/images/gallery/73.avif\">\n                            <source type=\"image/webp\" srcset=\"/images/gallery/73.webp\">\n                            <source type=\"image/jpg\" srcset=\"/images/gallery/73.jpg\">\n                            <img src='/images/gallery/73.avif' alt=\"Couple sitting on the side of a fountain, brides legs are on grooms leg, while they're turned toward each other\" loading=\"lazy\">\n                        </picture>\n                        <div>\n                            <h3>Thu Jun 23 2022</h3>\n                        </div>\n                    </div>\n                </div>\n                "
+        },
+        "id": 73,
+        "picture": 73,
+        "altText": "Couple sitting on the side of a fountain, brides legs are on grooms leg, while they're turned toward each other",
+        "date": 45,
+        "photoshoot": 10,
+        "priority": "c",
+        "priorityId": 5,
+        "type": "bridals",
+        "location": {
+            "the-bellagio-hotel": 0,
+            "las-vegas": 9,
+            "italy": 0,
+            "greece": 0,
+            "nevada": 9
+        },
+        "lighting": "sunset"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "las-vegas": false,
+                    "studio": false,
+                    "nevada": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class=\"img74 show normal\">\n                    <div class=\"container\" style=\"left: 0px; top: 0px;\">\n                        <div>\n                            <h3>las vegas</h3>\n                        </div>\n                        <picture>\n                            <source type=\"image/avif\" srcset=\"/images/gallery/74.avif\">\n                            <source type=\"image/webp\" srcset=\"/images/gallery/74.webp\">\n                            <source type=\"image/jpg\" srcset=\"/images/gallery/74.jpg\">\n                            <img src='/images/gallery/74.avif' alt=\"Groom picking up bride with bride kicking leg back\" loading=\"lazy\">\n                        </picture>\n                        <div>\n                            <h3>Thu Jun 23 2022</h3>\n                        </div>\n                    </div>\n                </div>\n                "
+        },
+        "id": 74,
+        "picture": 74,
+        "altText": "Groom picking up bride with bride kicking leg back",
+        "date": 47,
+        "photoshoot": 19,
+        "priority": "e",
+        "priorityId": 0,
+        "type": "bridals",
+        "location": {
+            "las-vegas": 10,
+            "studio": 3,
+            "nevada": 10
+        },
+        "lighting": "indoor"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "salt-lake": false,
+                    "downtown": false,
+                    "new-york-rooftop": false,
+                    "utah": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class=\"img75 show normal\">\n                    <div class=\"container\" style=\"left: 0px; top: 0px;\">\n                        <div>\n                            <h3>salt lake</h3>\n                        </div>\n                        <picture>\n                            <source type=\"image/avif\" srcset=\"/images/gallery/75.avif\">\n                            <source type=\"image/webp\" srcset=\"/images/gallery/75.webp\">\n                            <source type=\"image/jpg\" srcset=\"/images/gallery/75.jpg\">\n                            <img src='/images/gallery/75.avif' alt=\"Girl standing on skateboard and kissing boy\" loading=\"lazy\">\n                        </picture>\n                        <div>\n                            <h3>Fri Feb 4 2022</h3>\n                        </div>\n                    </div>\n                </div>\n                "
+        },
+        "id": 75,
+        "picture": 75,
+        "altText": "Girl standing on skateboard and kissing boy",
+        "date": 14,
+        "photoshoot": 41,
+        "priority": "b",
+        "priorityId": 13,
+        "type": "couples",
+        "location": {
+            "salt-lake": 25,
+            "downtown": 5,
+            "new-york-rooftop": 4,
+            "utah": 63
+        },
+        "lighting": "sunrise"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "salt-lake": false,
+                    "downtown": false,
+                    "roadside": false,
+                    "utah": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class=\"img76 show normal\">\n                    <div class=\"container\" style=\"left: 0px; top: 0px;\">\n                        <div>\n                            <h3>salt lake</h3>\n                        </div>\n                        <picture>\n                            <source type=\"image/avif\" srcset=\"/images/gallery/76.avif\">\n                            <source type=\"image/webp\" srcset=\"/images/gallery/76.webp\">\n                            <source type=\"image/jpg\" srcset=\"/images/gallery/76.jpg\">\n                            <img src='/images/gallery/76.avif' alt=\"Bride leading groom across the street while they stare at each other\" loading=\"lazy\">\n                        </picture>\n                        <div>\n                            <h3>Fri Feb 4 2022</h3>\n                        </div>\n                    </div>\n                </div>\n                "
+        },
+        "id": 76,
+        "picture": 76,
+        "altText": "Bride leading groom across the street while they stare at each other",
+        "date": 16,
+        "photoshoot": 12,
+        "priority": "d",
+        "priorityId": 0,
+        "type": "bridals",
+        "location": {
+            "salt-lake": 26,
+            "downtown": 6,
+            "roadside": 8,
+            "utah": 64
+        },
+        "lighting": "shaded"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "tibble-fork": false,
+                    "utah-county": false,
+                    "lakes": false,
+                    "utah-mountains": false,
+                    "hawaii": false,
+                    "utah": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class=\"img77 show normal\">\n                    <div class=\"container\" style=\"left: 0px; top: 0px;\">\n                        <div>\n                            <h3>tibble fork</h3>\n                        </div>\n                        <picture>\n                            <source type=\"image/avif\" srcset=\"/images/gallery/77.avif\">\n                            <source type=\"image/webp\" srcset=\"/images/gallery/77.webp\">\n                            <source type=\"image/jpg\" srcset=\"/images/gallery/77.jpg\">\n                            <img src='/images/gallery/77.avif' alt=\"Guy on back of paddleboard paddling while girl sits infront of him and stares at him\" loading=\"lazy\">\n                        </picture>\n                        <div>\n                            <h3>Wed Jun 8 2022</h3>\n                        </div>\n                    </div>\n                </div>\n                "
+        },
+        "id": 77,
+        "picture": 77,
+        "altText": "Guy on back of paddleboard paddling while girl sits infront of him and stares at him",
+        "date": 42,
+        "photoshoot": 84,
+        "priority": "e",
+        "priorityId": 3,
+        "type": "couples",
+        "location": {
+            "tibble-fork": 0,
+            "utah-county": 3,
+            "lakes": 2,
+            "utah-mountains": 11,
+            "hawaii": 0,
+            "utah": 65
+        },
+        "lighting": "cloudy"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "goblin-valley": false,
+                    "moab": false,
+                    "desert": false,
+                    "utah": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class=\"img78 show normal\">\n                    <div class=\"container\" style=\"left: 0px; top: 0px;\">\n                        <div>\n                            <h3>goblin valley</h3>\n                        </div>\n                        <picture>\n                            <source type=\"image/avif\" srcset=\"/images/gallery/78.avif\">\n                            <source type=\"image/webp\" srcset=\"/images/gallery/78.webp\">\n                            <source type=\"image/jpg\" srcset=\"/images/gallery/78.jpg\">\n                            <img src='/images/gallery/78.avif' alt=\"Groom kissing brides forehead with a veil covering both of their heads\" loading=\"lazy\">\n                        </picture>\n                        <div>\n                            <h3>Thu May 25 2023</h3>\n                        </div>\n                    </div>\n                </div>\n                "
+        },
+        "id": 78,
+        "picture": 78,
+        "altText": "Groom kissing brides forehead with a veil covering both of their heads",
+        "date": 67,
+        "photoshoot": 4,
+        "priority": "b",
+        "priorityId": 2,
+        "type": "bridals",
+        "location": {
+            "goblin-valley": 6,
+            "moab": 21,
+            "desert": 25,
+            "utah": 66
+        },
+        "lighting": "cloudy"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "arches": false,
+                    "moab": false,
+                    "desert": false,
+                    "utah": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class=\"img79 show normal\">\n                    <div class=\"container\" style=\"left: 0px; top: 0px;\">\n                        <div>\n                            <h3>arches</h3>\n                        </div>\n                        <picture>\n                            <source type=\"image/avif\" srcset=\"/images/gallery/79.avif\">\n                            <source type=\"image/webp\" srcset=\"/images/gallery/79.webp\">\n                            <source type=\"image/jpg\" srcset=\"/images/gallery/79.jpg\">\n                            <img src='/images/gallery/79.avif' alt=\"Groom pulling bride in while holding bouque down at his side\" loading=\"lazy\">\n                        </picture>\n                        <div>\n                            <h3>Fri May 26 2023</h3>\n                        </div>\n                    </div>\n                </div>\n                "
+        },
+        "id": 79,
+        "picture": 79,
+        "altText": "Groom pulling bride in while holding bouque down at his side",
+        "date": 72,
+        "photoshoot": 65,
+        "priority": "c",
+        "priorityId": 24,
+        "type": "bridals",
+        "location": {
+            "arches": 9,
+            "moab": 22,
+            "desert": 26,
+            "utah": 67
+        },
+        "lighting": "shaded"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "arches": false,
+                    "moab": false,
+                    "desert": false,
+                    "utah": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class=\"img80 show normal\">\n                    <div class=\"container\" style=\"left: 0px; top: 0px;\">\n                        <div>\n                            <h3>arches</h3>\n                        </div>\n                        <picture>\n                            <source type=\"image/avif\" srcset=\"/images/gallery/80.avif\">\n                            <source type=\"image/webp\" srcset=\"/images/gallery/80.webp\">\n                            <source type=\"image/jpg\" srcset=\"/images/gallery/80.jpg\">\n                            <img src='/images/gallery/80.avif' alt=\"Bride and grooms fingertips touching as they pull away from each other\" loading=\"lazy\">\n                        </picture>\n                        <div>\n                            <h3>Fri May 26 2023</h3>\n                        </div>\n                    </div>\n                </div>\n                "
+        },
+        "id": 80,
+        "picture": 80,
+        "altText": "Bride and grooms fingertips touching as they pull away from each other",
+        "date": 75,
+        "photoshoot": 44,
+        "priority": "d",
+        "priorityId": 10,
+        "type": "bridals",
+        "location": {
+            "arches": 10,
+            "moab": 23,
+            "desert": 27,
+            "utah": 68
+        },
+        "lighting": "sunset"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "dead-horse": false,
+                    "moab": false,
+                    "desert": false,
+                    "utah": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class=\"img81 show normal\">\n                    <div class=\"container\" style=\"left: 0px; top: 0px;\">\n                        <div>\n                            <h3>dead horse</h3>\n                        </div>\n                        <picture>\n                            <source type=\"image/avif\" srcset=\"/images/gallery/81.avif\">\n                            <source type=\"image/webp\" srcset=\"/images/gallery/81.webp\">\n                            <source type=\"image/jpg\" srcset=\"/images/gallery/81.jpg\">\n                            <img src='/images/gallery/81.avif' alt=\"Groom holding bride close while she looks off into the distance\" loading=\"lazy\">\n                        </picture>\n                        <div>\n                            <h3>Sat May 27 2023</h3>\n                        </div>\n                    </div>\n                </div>\n                "
+        },
+        "id": 81,
+        "picture": 81,
+        "altText": "Groom holding bride close while she looks off into the distance",
+        "date": 80,
+        "photoshoot": 79,
+        "priority": "a",
+        "priorityId": 3,
+        "type": "bridals",
+        "location": {
+            "dead-horse": 4,
+            "moab": 24,
+            "desert": 28,
+            "utah": 69
+        },
+        "lighting": "sunrise"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "utah-mountains": false,
+                    "utah-county": false,
+                    "utah": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class=\"img82 show normal\">\n                    <div class=\"container\" style=\"left: 0px; top: 0px;\">\n                        <div>\n                            <h3>utah mountains</h3>\n                        </div>\n                        <picture>\n                            <source type=\"image/avif\" srcset=\"/images/gallery/82.avif\">\n                            <source type=\"image/webp\" srcset=\"/images/gallery/82.webp\">\n                            <source type=\"image/jpg\" srcset=\"/images/gallery/82.jpg\">\n                            <img src='/images/gallery/82.avif' alt=\"Family walking together and looking at each other\" loading=\"lazy\">\n                        </picture>\n                        <div>\n                            <h3>Fri Jun 16 2023</h3>\n                        </div>\n                    </div>\n                </div>\n                "
+        },
+        "id": 82,
+        "picture": 82,
+        "altText": "Family walking together and looking at each other",
+        "date": 84,
+        "photoshoot": 11,
+        "priority": "b",
+        "priorityId": 5,
+        "type": "families",
+        "location": {
+            "utah-mountains": 12,
+            "utah-county": 4,
+            "utah": 70
+        },
+        "lighting": "full-sun"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "utah-lake": false,
+                    "utah-county": false,
+                    "lakes": false,
+                    "utah": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class=\"img83 show normal\">\n                    <div class=\"container\" style=\"left: 0px; top: 0px;\">\n                        <div>\n                            <h3>utah lake</h3>\n                        </div>\n                        <picture>\n                            <source type=\"image/avif\" srcset=\"/images/gallery/83.avif\">\n                            <source type=\"image/webp\" srcset=\"/images/gallery/83.webp\">\n                            <source type=\"image/jpg\" srcset=\"/images/gallery/83.jpg\">\n                            <img src='/images/gallery/83.avif' alt=\"Couple holding hands with girl also using her other hand to hold his arm\" loading=\"lazy\">\n                        </picture>\n                        <div>\n                            <h3>Sun Jun 25 2023</h3>\n                        </div>\n                    </div>\n                </div>\n                "
+        },
+        "id": 83,
+        "picture": 83,
+        "altText": "Couple holding hands with girl also using her other hand to hold his arm",
+        "date": 85,
+        "photoshoot": 85,
+        "priority": "b",
+        "priorityId": 27,
+        "type": "couples",
+        "location": {
+            "utah-lake": 2,
+            "utah-county": 5,
+            "lakes": 3,
+            "utah": 71
+        },
+        "lighting": "sunset"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "arches": false,
+                    "moab": false,
+                    "desert": false,
+                    "utah": false,
+                    "arizona": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class=\"img84 show normal\">\n                    <div class=\"container\" style=\"left: 0px; top: 0px;\">\n                        <div>\n                            <h3>arches</h3>\n                        </div>\n                        <picture>\n                            <source type=\"image/avif\" srcset=\"/images/gallery/84.avif\">\n                            <source type=\"image/webp\" srcset=\"/images/gallery/84.webp\">\n                            <source type=\"image/jpg\" srcset=\"/images/gallery/84.jpg\">\n                            <img src='/images/gallery/84.avif' alt=\"Couple running and holding hands\" loading=\"lazy\">\n                        </picture>\n                        <div>\n                            <h3>Sat Nov 20 2021</h3>\n                        </div>\n                    </div>\n                </div>\n                "
+        },
+        "id": 84,
+        "picture": 84,
+        "altText": "Couple running and holding hands",
+        "date": 2,
+        "photoshoot": 52,
+        "priority": "c",
+        "priorityId": 18,
+        "type": "engagements",
+        "location": {
+            "arches": 11,
+            "moab": 25,
+            "desert": 29,
+            "utah": 72,
+            "arizona": 3
+        },
+        "lighting": "cloudy"
+    },
+    {
+        "image": {
+            "filters": {
+                "type": false,
+                "location": {
+                    "arches": false,
+                    "moab": false,
+                    "desert": false,
+                    "utah": false,
+                    "arizona": false
+                },
+                "lighting": false
+            },
+            "html": "\n                <div class=\"img85 show normal\">\n                    <div class=\"container\" style=\"left: 0px; top: 0px;\">\n                        <div>\n                            <h3>arches</h3>\n                        </div>\n                        <picture>\n                            <source type=\"image/avif\" srcset=\"/images/gallery/85.avif\">\n                            <source type=\"image/webp\" srcset=\"/images/gallery/85.webp\">\n                            <source type=\"image/jpg\" srcset=\"/images/gallery/85.jpg\">\n                            <img src='/images/gallery/85.avif' alt=\"Guy hugging girl from behind while they nuzzle into each other\" loading=\"lazy\">\n                        </picture>\n                        <div>\n                            <h3>Sat Nov 20 2021</h3>\n                        </div>\n                    </div>\n                </div>\n                "
+        },
+        "id": 85,
+        "picture": 85,
+        "altText": "Guy hugging girl from behind while they nuzzle into each other",
+        "date": 3,
+        "photoshoot": 51,
+        "priority": "d",
+        "priorityId": 12,
+        "type": "engagements",
+        "location": {
+            "arches": 12,
+            "moab": 26,
+            "desert": 30,
+            "utah": 73,
+            "arizona": 4
+        },
+        "lighting": "shaded"
     }
 ]

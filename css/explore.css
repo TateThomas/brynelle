@@ -405,11 +405,11 @@ a{
     cursor: pointer;
 }
 
-#photos div.img1, #photos div.img11, #photos div.img17, #photos div.img26, #photos div.img29, #photos div.img31, #photos div.img35, #photos div.img56, #photos div.img61, #photos div.img62{
+#photos div.img1, #photos div.img11, #photos div.img17, #photos div.img26, #photos div.img29, #photos div.img35, #photos div.img56, #photos div.img61, #photos div.img62, #photos div.img80{
     --img-span: 2;
 }
 
-#photos div.img15, #photos div.img24, #photos div.img59, #photos div.img69{
+#photos div.img15, #photos div.img24, #photos div.img31, #photos div.img59, #photos div.img69, #photos div.img76, #photos div.img83{
     --img-span: 3;
 }
 
@@ -527,7 +527,7 @@ a{
         grid-column: span 2;
     }
     
-    #photos div.img15, #photos div.img24, #photos div.img59, #photos div.img69{
+    #photos div.img15, #photos div.img24, #photos div.img31, #photos div.img59, #photos div.img69, #photos div.img76, #photos div.img83{
         --img-span: 2;
     }
     
@@ -607,7 +607,7 @@ a{
         display: inline-block;
         width: 100%;
         height: max-content;
-        height: 810px;
+        height: 610px;
         padding-right: 0;
         overflow: hidden;
         transition: height 1s;
@@ -707,7 +707,7 @@ a{
     #filters > ul{
         display: flex;
         flex-direction: column;
-        height: 1295px;
+        height: 1130px;
     }
     
     #filters > ul > li{
@@ -749,11 +749,11 @@ a{
         grid-column: span 1;
     }
     
-    #photos div.img1, #photos div.img11, #photos div.img17, #photos div.img26, #photos div.img29, #photos div.img31, #photos div.img35, #photos div.img56, #photos div.img61, #photos div.img62{
+    #photos div.img1, #photos div.img11, #photos div.img17, #photos div.img26, #photos div.img29, #photos div.img35, #photos div.img56, #photos div.img61, #photos div.img62, #photos div.img80{
         --img-span: 1;
     }
     
-    #photos div.img15, #photos div.img24, #photos div.img59, #photos div.img69{
+    #photos div.img15, #photos div.img24, #photos div.img31, #photos div.img59, #photos div.img69, #photos div.img76, #photos div.img83{
         --img-span: 1;
     }
     

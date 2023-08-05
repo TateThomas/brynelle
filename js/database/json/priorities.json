@@ -2,6 +2,10 @@
     "d": [
         {
             "photoshoot": "City Bridals 2022",
+            "parentId": 76
+        },
+        {
+            "photoshoot": "City Bridals 2022",
             "parentId": 16
         },
         {
@@ -17,8 +21,12 @@
             "parentId": 60
         },
         {
-            "photoshoot": "Goblin Valley Flash",
+            "photoshoot": "Goblin Valley Bridals 2021",
             "parentId": 0
+        },
+        {
+            "photoshoot": "H and A Couples Session",
+            "parentId": 71
         },
         {
             "photoshoot": "L and M Engagements",
@@ -33,8 +41,16 @@
             "parentId": 9
         },
         {
+            "photoshoot": "M and L Arches Bridals",
+            "parentId": 80
+        },
+        {
             "photoshoot": "M and T Exit",
             "parentId": 33
+        },
+        {
+            "photoshoot": "Moab Cozy Engagements 2021",
+            "parentId": 85
         },
         {
             "photoshoot": "Moab Cozy Engagements 2021",
@@ -83,6 +99,10 @@
             "parentId": 40
         },
         {
+            "photoshoot": "Bellagio Fountain Bridals",
+            "parentId": 73
+        },
+        {
             "photoshoot": "City Bridals 2022",
             "parentId": 15
         },
@@ -115,6 +135,10 @@
             "parentId": 24
         },
         {
+            "photoshoot": "Little White Chapel Elopement",
+            "parentId": 72
+        },
+        {
             "photoshoot": "M and E Couple Session",
             "parentId": 18
         },
@@ -125,6 +149,10 @@
         {
             "photoshoot": "M and T Exit",
             "parentId": 32
+        },
+        {
+            "photoshoot": "Moab Cozy Engagements 2021",
+            "parentId": 84
         },
         {
             "photoshoot": "P and A Bridals",
@@ -148,6 +176,10 @@
         },
         {
             "photoshoot": "S and C Arches Bridals",
+            "parentId": 79
+        },
+        {
+            "photoshoot": "S and C Arches Bridals",
             "parentId": 50
         },
         {
@@ -165,12 +197,20 @@
     ],
     "e": [
         {
+            "photoshoot": "Fremont Street Bridals",
+            "parentId": 74
+        },
+        {
             "photoshoot": "Goblin Valley Bridals 2021",
             "parentId": 6
         },
         {
             "photoshoot": "R Portrait Session 2021",
             "parentId": 65
+        },
+        {
+            "photoshoot": "Tibble Fork Paddleboard Lovers",
+            "parentId": 77
         }
     ],
     "b": [
@@ -184,11 +224,19 @@
         },
         {
             "photoshoot": "A and K Goblin Valley Bridals",
+            "parentId": 78
+        },
+        {
+            "photoshoot": "A and K Goblin Valley Bridals",
             "parentId": 44
         },
         {
             "photoshoot": "B and S Couples Session",
             "parentId": 70
+        },
+        {
+            "photoshoot": "Casper Family",
+            "parentId": 82
         },
         {
             "photoshoot": "City Bridals 2022",
@@ -217,6 +265,10 @@
         {
             "photoshoot": "Little White Chapel Elopement",
             "parentId": 8
+        },
+        {
+            "photoshoot": "M and E Couple Session",
+            "parentId": 75
         },
         {
             "photoshoot": "M and E Couple Session",
@@ -269,6 +321,10 @@
         {
             "photoshoot": "T and L Dead Horse Bridals",
             "parentId": 57
+        },
+        {
+            "photoshoot": "Utah Lake Family 2023",
+            "parentId": 83
         }
     ],
     "a": [
@@ -283,6 +339,10 @@
         {
             "photoshoot": "P and M Bridals",
             "parentId": 31
+        },
+        {
+            "photoshoot": "T and L Dead Horse Bridals",
+            "parentId": 81
         },
         {
             "photoshoot": "T and L Dead Horse Bridals",

@@ -516,7 +516,7 @@ class Database {
                 <div class="img${imageId} show normal">
                     <div class="container" style="left: 0px; top: 0px;">
                         <div>
-                            <h3>${location.replace("-", " ")}</h3>
+                            <h3>${location.replaceAll("-", " ")}</h3>
                         </div>
                         <picture>
                             <source type="image/avif" srcset="${imagePath}.avif">

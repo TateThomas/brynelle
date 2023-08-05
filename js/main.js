@@ -9,9 +9,10 @@ const buttonLeft = document.querySelectorAll(".shadow-scroll")[0];
 const buttonRight = document.querySelectorAll(".shadow-scroll")[1];
 var timeOut = 0;
 const buttonSpeed = 4;
-const slider = document.getElementById("my-work-content").querySelector(".content");
-let mouseDown = false;
-let startX, scrollLeft;
+const slider = document.querySelector("#my-work-content div.content");
+var sliderInterval;
+//let mouseDown = false;
+//let startX, scrollLeft, scrollX, scrollVelocity, scrollTime;
 const travelLocations = document.getElementById("travel").getElementsByTagName("ul")[0].children;
 const travelImages = document.getElementById("travel").querySelectorAll(".pictures")[0].getElementsByTagName("div");
 const moreTravelFactor = .2;
@@ -156,6 +157,15 @@ function lowerLineAnimation() {
 }
 
 
+function setAutoScrollInterval() {
+    
+    sliderInterval = setInterval(function() {
+        mySiema.next();
+    }, 5000);
+    
+}
+
+
 function travelAnimation() {
     
     const travelElem = document.getElementById("bottom-page");
@@ -244,6 +254,7 @@ window.onload = function() {
     document.getElementById("top-page").getElementsByTagName("h2")[1].className = "loaded";
     
     scrollFunctions();
+    setAutoScrollInterval();
     
 }
 
@@ -269,50 +280,38 @@ buttonRight.addEventListener("mousemove", (e) => {
     
 });
 
-let scrollFun = function(e) {
-
-    let obj = this;
+buttonLeft.addEventListener("click", function() {
+   
+    mySiema.prev();
+    clearInterval(sliderInterval);
     
-    if (e.type == "mousedown") {
-        
-        timeOut = setInterval(function() {
-            if (obj.id == "button-1") {
-                slider.scrollLeft -= buttonSpeed;
-            }
-            else {
-                slider.scrollLeft += buttonSpeed;
-            }
-        }, 1);
-        
-    }
-
-    if ((e.type == "mouseup") || (e.type == "mouseleave")) {
-        clearInterval(timeOut);
-    }
+    setTimeout(setAutoScrollInterval(), 5000);
     
-};
+});
 
-$("#my-work-content button.shadow-scroll").bind('touchstart mousedown', scrollFun)
-                                          .bind('touchend mouseup', scrollFun)
-                                          .bind('mouseleave', scrollFun);
-
-
-// scrollbar from https://stackoverflow.com/questions/28576636/mouse-click-and-drag-instead-of-horizontal-scroll-bar-to-view-full-content-of-c
-let startDragging = function(e) {
+buttonRight.addEventListener("click", function() {
+   
+    mySiema.next();
+    clearInterval(sliderInterval);
     
-    mouseDown = true;
-    startX = e.pageX - slider.offsetLeft;
-    scrollLeft = slider.scrollLeft;
+    setTimeout(setAutoScrollInterval(), 5000);
+    
+});
+
+$("#my-work-content div.content").bind('mousedown touchstart', function() {
+    
+    clearInterval(sliderInterval);
     
     buttonLeft.style.setProperty("width", 0);
     buttonRight.style.setProperty("width", 0);
     buttonRight.style.setProperty("margin-left", 'var(--button-width)');
     
-};
+});
 
-let stopDragging = function(e) {
+$("#my-work-content div.content").bind('mouseup mouseleave touchend', function() {
     
-    mouseDown = false;
+    clearInterval(sliderInterval);
+    setAutoScrollInterval();
     
     if (buttonLeft.style.getPropertyValue('width') == '0px') {
     
@@ -321,26 +320,8 @@ let stopDragging = function(e) {
         buttonRight.style.setProperty("margin-left", 0);
     
     }
-    
-};
-
-let currentlyDragging = function(e) {
-   
-    e.preventDefault();
-    
-    if (!mouseDown) {
-        return;
-    }
-    
-    const x = e.pageX - slider.offsetLeft;
-    const scroll = x - startX;
-    slider.scrollLeft = scrollLeft - scroll;
-    
-};
-
-$("#my-work-content div.content").bind('touchmove mousemove', currentlyDragging)
-                                 .bind('touchstart mousedown', startDragging)
-                                 .bind('touchend mouseup mouseleave', stopDragging);
+        
+});
 
 
 setInterval(changeImage, 5000);

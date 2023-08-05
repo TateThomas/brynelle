@@ -384,7 +384,7 @@ a{
     --lower-page-padding: 100px;
     --lower-page-border-thickness: 2px;
     --about-me-height: 600px;
-    --my-work-height: 600px;
+    --my-work-height: 700px;
     
     position: relative;
     margin: auto;
@@ -617,12 +617,14 @@ a{
     padding: var(--picture-padding);
     padding-top: var(--content-padding);
     padding-bottom: var(--content-padding);
+    /*
     display: grid;
-    /*grid-template-columns: repeat(4, .8fr);*/
+    //grid-template-columns: repeat(4, .8fr);
     grid-template-columns: auto;
     grid-template-rows: repeat(20, 1fr);
     grid-column-gap: 40px;
     grid-row-gap: 20px;
+    */
     overflow-x: hidden;
     z-index: 3;
     cursor: grab;
@@ -709,73 +711,112 @@ a{
     mask-image: linear-gradient(to left, rgba(0, 0, 0, 1) 20%, rgba(0, 0, 0, 0));
 }
 
-#my-work-content div.content div{
+#my-work-content div.container{
+    display: flex;
+    flex-direction: column;
+    height: calc(var(--my-work-height) + var(--content-padding) + var(--lower-page-border-thickness) + 100px);
+    margin: 0 35px 0 35px;
+}
+
+#my-work-content div.container div{
     position: relative;
     overflow: hidden;
-    width: 275px;
-    border: 20px solid white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
-    z-index: calc(var(--lower-gradient-z) + 1);
-    transition: box-shadow .75s;
-}
-
-#my-work-content > div.content > div:hover{
-    box-shadow: 0 0 10px rgba(0, 0, 0, .3);
-}
-
-#my-work-content > div.content > div:nth-child(8n + 1){
-    grid-column: 1 / 2;
-    grid-row: 3 / 14;
-}
-
-#my-work-content > div.content > div:nth-child(8n + 2){
-    grid-column: 2 / 3;
-    grid-row: 1 / 9;
-}
-
-#my-work-content > div.content > div:nth-child(8n + 3){
-    grid-column: 3 / 4;
-    grid-row: 2 / 13;
-}
-
-#my-work-content > div.content > div:nth-child(8n + 4){
-    grid-column: 4 / 5;
-    grid-row: 3 / 10;
-}
-
-#my-work-content > div.content > div:nth-child(8n + 5){
-    grid-column: 1 / 2;
-    grid-row: 14 / 21;
-}
-
-#my-work-content > div.content > div:nth-child(8n + 6){
-    grid-column: 2 / 3;
-    grid-row: 9 / 21;
-}
-
-#my-work-content > div.content > div:nth-child(8n + 7){
-    grid-column: 3 / 4;
-    grid-row: 13 / 20;
-}
-
-#my-work-content > div.content > div:nth-child(8n){
-    grid-column: 4 / 5;
-    grid-row: 10 / 21;
-}
-
-#my-work-content > div.content > div:last-child{
-    width: 25px;
-    grid-column: 5 / 6;
-    grid-row: 1 / 21;
-    padding: 0;
-    border: 0;
-    box-shadow: none;
-}
-
-#my-work-content img {
-    height: 100%;
     width: 100%;
+    box-shadow: 0 0 7px rgba(0, 0, 0, .15);
+}
+
+#my-work-content div.container div:first-child{
+    margin-bottom: 50px;
+}
+
+#my-work-content div.container div img{
+    width: 100%;
+    height: 100%;
     object-fit: cover;
+    z-index: 4;
+}
+
+#my-work-content div.a div:first-child{
+    height: 65%;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+#my-work-content div.b div:first-child{
+    margin-bottom: 55px;
+}
+
+#my-work-content div.b div:last-child{
+    height: 80%;
+}
+
+#my-work-content div.c div:first-child{
+    margin-top: 25px;
+}
+
+#my-work-content div.c div:last-child{
+    margin-bottom: 40px;
+}
+
+#my-work-content div.d div:first-child{
+    margin-top: 75px;
+    margin-bottom: 70px;
+}
+
+#my-work-content div.d div:last-child{
+    height: 80%;
+}
+
+#my-work-content div.e div:first-child{
+    margin-top: 10px;
+    height: 60%;
+}
+
+#my-work-content div.f div:first-child{
+    height: 40%;
+}
+
+#my-work-content div.f div:last-child{
+    margin-bottom: 10px;
+}
+
+#my-work-content div.g div:first-child{
+    height: 60%;
+}
+
+#my-work-content div.g div:last-child{
+    margin-bottom: 40px;
+}
+
+#my-work-content div.h div:first-child{
+    height: 30%;
+    margin-top: 30px;
+}
+
+#my-work-content div.h div:last-child{
+    height: 60%;
+}
+
+#my-work-content div.i div:first-child{
+    margin-top: 10px;
+}
+
+#my-work-content div.i div:last-child{
+    margin-bottom: 20px;
+}
+
+#my-work-content div.j div:first-child{
+    height: 35%;
+    margin-top: 50px
+}
+
+#my-work-content div.k div:first-child{
+    height: 65%;
+}
+
+#my-work-content div.l div:first-child{
+    height: 35%;
+    margin-top: 30px;
 }
 
 #my-work-explore{
@@ -1205,6 +1246,7 @@ a{
     
     #lower-page > div{
         --about-me-height: 550px;
+        --my-work-height: 500px;
     }
     
     #about-me-pictures img{
@@ -1339,7 +1381,7 @@ a{
     
     #lower-page > div{
         --about-me-height: 450px;
-        --my-work-height: 500px;
+        --my-work-height: 475px;
     }
     
     #about-me-pictures img{
@@ -1374,10 +1416,6 @@ a{
     
     #my-work-content button.shadow-scroll div.arrow{
         --arrow-size: 35px;
-    }
-    
-    #my-work-content div.content div{
-        width: 250px;
     }
     
     #my-work-explore{
@@ -1487,7 +1525,7 @@ a{
     
     #lower-page > div{
         --about-me-height: 425px;
-        --my-work-height: 475px;
+        --my-work-height: 425px;
         --lower-page-padding: 75px;
     }
     
@@ -1531,8 +1569,8 @@ a{
         left: calc(var(--lower-page-padding) + var(--lower-page-radius) - var(--arrow-left-offset) - 15px);
     }
     
-    #my-work-content div.content div{
-        width: 220px;
+    #my-work-content div.container{
+        height: calc(var(--my-work-height) + var(--content-padding) + var(--lower-page-border-thickness) + 50px);
     }
     
     #my-work-explore > div{
@@ -1793,10 +1831,6 @@ a{
         left: calc(var(--lower-page-padding) + var(--lower-page-radius) - var(--arrow-left-offset) - 40px);
     }
     
-    #my-work-content div.content div{
-        width: 200px;
-    }
-    
     #my-work-explore > div{
         margin-right: 100px;
     }
@@ -1932,8 +1966,8 @@ a{
         top: 170px;
     }
     
-    #my-work-content div.content div{
-        width: 175px;
+    #my-work-content div.container{
+       height: calc(var(--my-work-height) + var(--content-padding) + var(--lower-page-border-thickness) + 0px); 
     }
     
     #my-work-explore{
@@ -2078,7 +2112,7 @@ a{
     
     #lower-page > div{
         --about-me-height: 300px;
-        --my-work-height: 400px;
+        --my-work-height: 700px;
     }
     
     #about-me{
@@ -2141,8 +2175,8 @@ a{
         left: calc(var(--lower-page-padding) + var(--lower-page-radius) + var(--extra-width) - var(--arrow-left-offset) - 35px);
     }
     
-    #my-work-content div.content div{
-        width: 140px;
+    #my-work-content div.container{
+        margin: 0 30px 0 30px;
     }
     
     #my-work-explore > div{

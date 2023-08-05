@@ -263,6 +263,9 @@
     }
     
     #burger{
+        --arch-radius: 20px;
+        --line-spacing: 5px;
+        
         position: relative;
         margin-left: auto;
         margin-right: 35px;
@@ -278,21 +281,24 @@
     }
     
     #burger span{
+        --margin-top: 14px;
+        
         position: absolute;
         display: block;
         width: 30px;
         height: 0;
         left: 3px;
         margin: 7px;
-        margin-top: 14px;
+        margin-top: var(--margin-top);
         border: 2px solid white;
         border-bottom: 0;
-        border-radius: 15px 15px 0 0;
-        transition: height .5s, width .5s, margin-top .5s, margin-left .5s;
+        border-radius: var(--arch-radius) var(--arch-radius) 0 0;
+        transition: height .4s, width .4s, margin-top .4s, margin-left .4s;
     }
     
     #burger span:last-child{
-        margin-top: 19px;
+        margin-top: calc(var(--margin-top) + var(--line-spacing));
+        border-radius: calc(var(--arch-radius) - var(--line-spacing)) calc(var(--arch-radius) - var(--line-spacing)) 0 0;
     }
     
     #burger.show:hover{
@@ -348,6 +354,10 @@
     
     #links.show:hover{
         background-color: var(--shadow-color);
+    }
+    
+    #header.show #links > ul > li{
+        width: 109.48px;
     }
     
     #links.show > ul > li{

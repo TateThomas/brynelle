@@ -4,9 +4,9 @@
 
 const filters = ["type", "location", "lighting"];
 
-var typeFilters = ["weddings", "engagements", "couples", "families", "portraits", "bridals", "friends", "elopements"];
-var locationFilters = ["utah-mountains", "lakes", "downtown", "salt-flats", "salt-lake", "antelope-island", "fields", "sand-dunes", "roadside", "studio", "moab", "las-vegas", "goblin-valley", "desert", "little-white-chapel", "parks", "snow", "forest", "utah-lake", "limousine", "fall-trees", "arches", "dead-horse", "luxury-venue", "england", "layton", "london", "new-york", "new-york-rooftop", "seattle", "utah-county", "eagle-mountain", "this-is-the-place", "ogden"];
-var lightingFilters = ["sunrise", "full-sun", "cloudy", "sunset", "blue-hour", "flash", "indoor"];
+var typeFilters = ['elopements', 'engagements', 'bridals', 'couples', 'friends', 'portraits', 'weddings', 'families'];
+var locationFilters = ['goblin-valley', 'moab', 'sand-dunes', 'antelope-island', 'utah-mountains', 'roadside', 'fall-trees', 'little-white-chapel', 'las-vegas', 'studio', 'downtown', 'parks', 'forest', 'snow', 'salt-flats', 'utah-lake', 'lakes', 'utah-county', 'arches', 'dead-horse', 'luxury-venue', 'fields', 'eagle-mountain', 'tibble-fork', 'salt-lake'];
+var lightingFilters = ["sunrise", "full-sun", "cloudy", "shaded", "sunset", "blue-hour", "flash", "indoor"];
 var database = new Database();
 
 
