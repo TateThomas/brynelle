@@ -292,8 +292,8 @@
         margin-top: var(--margin-top);
         border: 2px solid white;
         border-bottom: 0;
-        border-radius: var(--arch-radius) var(--arch-radius) 0 0;
-        transition: height .4s, width .4s, margin-top .4s, margin-left .4s;
+        border-radius: 0;
+        transition: height .4s, width .4s, margin-top .4s, margin-left .4s, border-radius .4s;
     }
     
     #burger span:last-child{
@@ -308,6 +308,7 @@
     #burger.show span{
         height: 20px;
         margin-top: 7px;
+        border-radius: var(--arch-radius) var(--arch-radius) 0 0;
     }
     
     #burger.show span:last-child{

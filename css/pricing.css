@@ -1,0 +1,842 @@
+@import "/css/header.css";
+@import "/css/footer.css";
+@import "/css/book-now.css";
+@import "/css/steps.css";
+
+
+@font-face{
+    src: url(/fonts/title/alta-regular.otf);
+    font-family: alta;
+}
+
+@font-face{
+    src: url(/fonts/title/goodfish/goodfish.regular.otf);
+    font-family: a;
+}
+
+@font-face{
+    src: url(/fonts/title/RomilePersonalUse-x3Xdr.otf);
+    font-family: b;
+}
+
+@font-face{
+    src: url(/fonts/title/VioletyDreams-WyEOA.otf);
+    font-family: c;
+}
+
+@font-face{
+    src: url(/fonts/title/black-aroug/BlackArougDemoVersionRegular-jE6ly.otf);
+    font-family: d;
+}
+
+@font-face{
+    src: url(/fonts/title/ranille/RanilleNormalRegular-axEpm.otf);
+    font-family: e;
+}
+
+@font-face{
+    src: url(/fonts/title/VtksTatuage2-3GzL.ttf);
+    font-family: f;
+}
+
+@font-face{
+    src: url(/fonts/title/TypographyTimes-RgRW.ttf);
+    font-family: g;
+}
+
+@font-face{
+    src: url(/fonts/paragraph/coco-gothic/coco-gothic.light.ttf);
+    font-family: pa;
+}
+
+@font-face{
+    src: url(/fonts/paragraph/coco-gothic/coco-gothic.light-italic.ttf);
+    font-family: pai;
+}
+
+@font-face{
+    src: url(/fonts/paragraph/josefin-sans/josefin-sans.regular.ttf);
+    font-family: pb;
+}
+
+@font-face{
+    src: url(/fonts/paragraph/josefin-sans/josefin-sans.bold.ttf);
+    font-family: pbb;
+}
+
+@font-face{
+    src: url(/fonts/paragraph/josefin-sans/josefin-sans.semibold.ttf);
+    font-family: pbsb;
+}
+
+@font-face{
+    src: url(/fonts/paragraph/josefin-sans/josefin-sans.italic.ttf);
+    font-family: pbi;
+}
+
+@font-face{
+    src: url(/fonts/paragraph/source-sans-pro/source-sans-pro.regular.ttf);
+    font-family: pc;
+}
+
+@font-face{
+    src: url(/fonts/paragraph/source-sans-pro/source-sans-pro.light.ttf);
+    font-family: pcl;
+}
+
+@font-face{
+    src: url(/fonts/paragraph/source-sans-pro/source-sans-pro.semibold.ttf);
+    font-family: pcsb;
+}
+
+@font-face{
+    src: url(/fonts/paragraph/roboto-condensed/roboto-condensed.regular.ttf);
+    font-family: pd;
+}
+
+@font-face{
+    src: url(/fonts/cursive/holland/Holland-JRGaj.ttf);
+    font-family: ca;
+}
+
+@font-face{
+    src: url(/fonts/cursive/holland/HollandMonolineClean-VGEqZ.ttf);
+    font-family: cac;
+}
+
+
+/****************** All ******************/
+
+body{
+    --light-black: #404040;
+    --lower-gradient-z: 2;
+    
+    background-color: white;
+    margin: 0;
+}
+
+h1, h2, ul, li{
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    position: relative;
+    font-family: alta;
+    font-weight: normal;
+    text-decoration: none;
+    color: white;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+#content{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+#links li.pricing{
+    background-color: #ddc2bf;
+}
+
+#links li.pricing > a:hover{
+    color: #c89c97 !important;
+}
+
+
+/****************** Investment ******************/
+
+#investment{
+    --invest-height: 450px;
+    
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: var(--invest-height);
+/*    border-bottom: 10px solid white;*/
+    overflow: hidden;
+}
+
+#investment div.image{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#investment div.image img{
+    position: absolute;
+    width: 4000px;
+    min-width: 100%;
+    height: 2000px;
+    margin-left: 80%;
+    transform: translateX(-70%);
+    top: -1150px;
+    object-fit: cover;
+    object-position: right;
+}
+
+#investment div.text{
+    margin: auto;
+}
+
+#investment div.text h1{
+    font-size: 110px;
+    font-family: b;
+    letter-spacing: 5px;
+    color: #876d46;
+    color: white;
+}
+
+
+/****************** Weddings ******************/
+
+#weddings{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #f6eddf;
+    overflow: hidden;
+}
+
+#weddings div.title{
+    padding: 30px 25px 50px 50px;
+    margin: 50px auto 50px auto;
+    border-bottom: 1px solid #7a6d4e;
+}
+
+#weddings div.title h2{
+    color: #7a6d4e;
+    font-size: 45px;
+    letter-spacing: 3px;
+    font-family: d;
+}
+
+#weddings div.title img{
+    position: relative;
+    height: 50px;
+    margin-left: 15px;
+    top: 7px;
+}
+
+#weddings ul{
+    display: flex;
+    margin: auto;
+}
+
+#weddings li{
+    display: flex;
+    flex-direction: column;
+    width: 375px;
+    margin: 50px;
+}
+
+#weddings div.image{
+    height: 500px;
+    overflow: hidden;
+}
+
+#weddings div.image img{
+    width: 100%;
+    object-fit: cover;
+}
+
+#weddings div.text-container, #families div.text-container{
+    display: flex;
+    width: 100%;
+    height: max-content;
+    padding: 10px 0 10px 0;
+    margin: 35px 0 35px 0;
+}
+
+#weddings li h2, #families div.container.b h2{
+    color: #3f331f;
+    font-family: pb;
+    font-size: 24px;
+}
+
+#weddings li h3, #split div.arch h3, #shoots h3, #families div.container.b h3{
+    color: #ad8d58;
+    font-weight: normal;
+    font-family: cac;
+    font-size: 28px;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+}
+
+#weddings div.duration, #families div.size{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding-right: 25px;
+    margin: 0 25px 0 auto;
+    border-right: 1px solid #77603a;
+}
+
+#weddings div.duration h2, #families div.size h2{
+    width: max-content;
+    margin: auto;
+}
+
+#weddings div.price, #families div.price{
+    padding-bottom: 10px;
+    margin-right: auto;
+}
+
+#weddings div.price h2, #families div.price h2{
+    font-family: pbsb;
+    font-size: 35px;
+}
+
+#weddings div.price h2 span, #split div.arch h2 span, #split li h2 span, #shoots li h2 span, #families div.price h2 span{
+    position: relative;
+    color: #77603a;
+    font-size: 20px;
+    margin-right: 4px;
+    top: -4px;
+}
+
+
+/****************** Split ******************/
+
+#split{
+    --container-proportion: 42.5%;
+    
+    display: flex;
+    width: 100%;
+    height: 800px;
+}
+
+#split div.container{
+    display: flex;
+}
+
+#split div.container.a{
+    position: relative;
+    width: var(--container-proportion);
+    overflow: hidden;
+    background-color: white;
+}
+
+#split div.container.b{
+    width: calc(100% - var(--container-proportion));
+    overflow: hidden;
+    background-color: #e6d9c6;
+}
+
+#split div.container > div{
+    padding: 30px;
+}
+
+#split div.add-ons{
+    display: flex;
+    margin-left: auto;
+}
+
+#split div.vertical-text{
+    --vertical-font-size: 50px;
+    --line-thickness: 2px;
+    
+    display: flex;
+    width: var(--vertical-font-size);
+    height: 100%;
+    z-index: 3;
+}
+
+#split div.vertical-text div{
+    position: relative;
+    width: var(--line-thickness);
+    height: 100%;
+    margin: auto;
+    background-color: #876d46;
+}
+
+#split div.vertical-text h2{
+    position: absolute;
+    color: #876d46;
+    font-family: b;
+    font-size: var(--vertical-font-size);
+    letter-spacing: 8px;
+    transform: rotate(-90deg);
+    transform-origin: right top;
+    width: max-content;
+    height: var(--vertical-font-size);
+    line-height: var(--vertical-font-size);
+    padding: 0 10px 0 15px;
+    right: calc(((var(--vertical-font-size) - var(--line-thickness)) / 2) + var(--line-thickness));
+    top: -2px;
+    background-color: white;
+}
+
+#split ul{
+    display: flex;
+    flex-direction: column;
+    padding: 150px 75px 150px 75px;
+    z-index: 3;
+}
+
+#split li{
+    margin: auto;
+}
+
+#split li h2{
+    display: block;
+    color: #42433e;
+    font-family: f;
+    text-align: center;
+    font-size: 23px;
+    margin: 10px;
+}
+
+#split li h2:last-child{
+    font-family: pbsb;
+    font-size: 30px;
+}
+
+#split li h2 span{
+    font-size: 17px;
+}
+
+#split div.container.a div.image{
+    position: absolute;
+    width: 550px;
+    height: auto;
+    padding: 0;
+    top: -30px;
+    right: -270px;
+    z-index: 1;
+}
+
+#split div.a div.image img{
+    width: 100%;
+    height: 100%;
+    transform: rotate(180deg);
+}
+
+#split div.elopements{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 800px;
+    padding-left: 50px !important;
+    margin-right: auto;
+}
+
+#split div.elopements > h2{
+    color: #42433e;
+    font-family: b;
+    font-size: 50px;
+    letter-spacing: 16px;
+    width: 100%;
+}
+
+#split div.elopements div.content{
+    display: flex;
+    width: 100%;
+    margin: auto;
+}
+
+#split div.text-container, #split div.image{
+    margin: auto;
+}
+
+#split div.text-container{
+    width: min-content;
+    padding: 40px;
+    border-radius: 12px;
+    background-color: #f6eddf;
+    z-index: 3;
+}
+
+#split div.arch{
+    width: max-content;
+    padding: 90px 60px 80px 60px;
+    border-radius: 95px 95px 0 0;
+    background-color: #fff8ee;
+}
+
+#split div.arch h3{
+    color: #ad8d58;
+}
+
+#split div.arch h2{
+    color: #3f331f;
+    font-family: pbsb;
+    font-size: 30px;
+}
+
+#split div.arch h2 span{
+    font-size: 17px;
+}
+
+#split div.text-container p{
+    color: #3f331f;
+    font-family: pbsb;
+    font-size: 16px;
+    text-align: center;
+}
+
+#split div.button{
+    display: flex;
+    width: 100%;
+    margin-top: 30px;
+}
+
+#split div.button a{
+    margin: auto;
+    border: 1px solid #3f331f;
+    border-radius: 30px;
+    transition: background-color .1s;
+}
+
+#split div.button h3{
+    color: #3f331f;
+    font-weight: normal;
+    font-family: pbsb;
+    font-size: 16px;
+    padding: 6px 15px 6px 15px;
+    margin: 0;
+    transition: color .1s;
+}
+
+#split div.button a:hover{
+    background-color: #3f331f;
+}
+
+#split div.button a:hover h3{
+    color: #f6eddf;
+}
+
+#split div.content div.image{
+    width: 300px;
+    height: 600px;
+    border-radius: 50%;
+    overflow: hidden;
+    z-index: 3;
+}
+
+#split div.content div.image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#split div.elopements > div.image{
+    position: absolute;
+    width: 500px;
+    bottom: -35px;
+    right: -175px;
+    z-index: 1;
+}
+
+#split div.elopements > div.image img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    bottom: -20px;
+    transform: rotate(-8deg);
+}
+
+
+/****************** Shoots ******************/
+
+#shoots{
+    display: flex;
+    flex-direction: column;
+    padding: 40px 0 130px 0;
+    background-color: #ffeae0;
+}
+
+#shoots ul{
+    display: flex;
+    margin: 50px auto 0 auto;
+}
+
+#shoots li{
+    width: 330px;
+    padding: 50px;
+}
+
+#shoots ul.icons li h2{
+    color: #b97c5d;
+    font-family: b;
+    font-family: d;
+    font-size: 40px;
+    letter-spacing: 3px;
+    width: 100%;
+    margin: 10px 0 40px 0;
+    text-align: center;
+}
+
+#shoots li img{
+    width: 100%;
+    height: 375px;
+    border: 2px solid #88553b;
+    border-radius: 165px 165px 0 0;
+    object-fit: cover;
+}
+
+#shoots ul.text{
+    display: flex;
+    width: 100%;
+    padding: 30px 0 30px 0;
+    margin: 10px 0 10px 0;
+    background-color: #ffe0d2;
+}
+
+#shoots ul.text li{
+    padding: 40px 50px 40px 50px;
+}
+
+#shoots ul.text li:first-child{
+    margin-left: auto;
+}
+
+#shoots ul.text li:nth-child(2){
+    border-left: 1px solid #d5b09e;
+    border-right: 1px solid #d5b09e;
+}
+
+#shoots ul.text li:last-child{
+    margin-right: auto;
+}
+
+#shoots div.price{
+    display: flex;
+}
+
+#shoots div.price h3{
+    color: #d5b09e;
+    font-size: 37px;
+    line-height: 37px;
+    width: max-content;
+    margin: 0 25px 0 auto;
+}
+
+#shoots div.price h2{
+    color: #b97c5d;
+    font-family: pbsb;
+    font-size: 37px;
+    line-height: 37px;
+    margin-right: auto;
+}
+
+#shoots div.price h2 span{
+    color: #c7967d;
+    font-size: 20px;
+}
+
+
+/****************** Families ******************/
+
+#families{
+    width: 100%;
+    background-color: #e6d9c6;
+}
+
+#families div.title{
+    --title-size: 55px;
+    --line-thickness: 3px;
+    --title-padding: 15px;
+    
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    height: var(--title-size);
+    padding: var(--title-padding) 0 var(--title-padding) 0;
+    background-color: #b97c5d;
+    background-color: #fffcf7;
+}
+
+#families div.title div{
+    display: flex;
+    width: 100%;
+    height: var(--line-thickness);
+    margin: auto;
+    background-color: white;
+    background-color: #b97c5d;
+}
+
+#families div.title h2{
+    position: absolute;
+    color: white;
+    color: #b97c5d;
+    font-family: f;
+    font-size: var(--title-size);
+    line-height: calc(var(--title-size) + (var(--title-padding) * 2));
+    letter-spacing: 15px;
+    padding: 0 30px 0 25px;
+    right: 0;
+    top: 0;
+    background-color: #b97c5d;
+    background-color: #fffcf7;
+}
+
+#families div.content{
+    --a-proportion: 40%;
+    --b-proportion: 35%;
+    
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+}
+
+#families div.container{
+    display: flex;
+}
+
+#families div.container.a{
+    width: var(--a-proportion);
+    padding: 75px 0 75px 0;
+}
+
+#families div.container.b{
+    flex-direction: column;
+    position: relative;
+    width: var(--b-proportion);
+    min-width: max-content;
+    padding: 150px 0 150px 0;
+}
+
+#families div.container.c{
+    position: relative;
+    width: calc(100% - var(--a-proportion) - var(--b-proportion));
+    background-color: #f6eddf;
+}
+
+#families div.photo-reel{
+    --photo-size: 250px;
+    --reel-padding: 15px;
+    --photo-spacing: 9px;
+    
+    height: max-content;
+    margin: auto 50px auto auto;
+}
+
+#families div.photo-reel > div{
+    display: flex;
+    height: calc((2 * var(--photo-size) + var(--photo-spacing)));
+    padding: var(--reel-padding) 0 var(--reel-padding) 0;
+    background-color: #fdf3e5;
+    transform: rotate(-5deg);
+    transform-origin: center;
+}
+
+#families div.text{
+    position: relative;
+    width: var(--reel-padding);
+    height: calc((2 * var(--photo-size) + var(--photo-spacing)));
+}
+
+#families div.text div{
+    display: flex;
+    position: absolute;
+    width: calc((2 * var(--photo-size) + var(--photo-spacing)));
+    height: var(--reel-padding);
+}
+
+#families div.text.a div{
+    transform: rotate(90deg);
+    transform-origin: left top;
+    top: 0;
+    left: var(--reel-padding);
+}
+
+#families div.text.b div{
+    transform: rotate(-90deg);
+    transform-origin: right top;
+    top: 0;
+    right: var(--reel-padding);
+}
+
+#families div.text p{
+    color: #7a6d4e;
+    font-family: pd;
+    font-weight: bold;
+    font-size: 6px;
+    letter-spacing: 1px;
+    line-height: var(--reel-padding);
+    margin: 0 auto 0 auto;
+}
+
+#families div.text.a p:first-child{
+    margin-left: 20px;
+}
+
+#families div.text.a p:last-child{
+    margin-right: 20px;
+}
+
+#families div.text.b p:first-child{
+    margin-left: 30px;
+}
+
+#families div.text.b p:last-child{
+    margin-right: 30px;
+}
+
+#families div.photos{
+    display: flex;
+    flex-direction: column;
+}
+
+#families div.photos img{
+    width: var(--photo-size);
+    height: var(--photo-size);
+    object-fit: cover;
+}
+
+#families div.photos img:first-child{
+    margin-bottom: var(--photo-spacing);
+}
+
+#families div.text-container{
+    width: max-content;
+    padding: 15px 80px 15px 80px;
+    margin: auto auto auto 0;
+/*    border: 1px solid var(--light-black);*/
+/*    background-color: #f6ecdc;*/
+    z-index: 3;
+}
+
+#families div.size{
+    width: 205px;
+    padding-right: 0px;
+    margin-right: 50px;
+}
+
+#families div.size h2{
+    margin: 0;
+}
+
+#families div.size h2:first-child{
+    margin-top: auto
+}
+
+#families div.size h2:last-child{
+    margin-bottom: auto
+}
+
+#families div.price h2{
+    font-family: pbsb !important;
+    font-size: 35px !important;
+}
+
+#families div.price h2 span{
+    color: #b97c5d !important;
+}
+
+#families div.image{
+    width: 200px;
+    margin: auto auto 0 auto;
+    z-index: 1;
+}
+
+#families div.image img{
+    width: 100%;
+}

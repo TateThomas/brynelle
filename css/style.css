@@ -1,5 +1,7 @@
 @import "/css/header.css";
 @import "/css/footer.css";
+@import "/css/steps.css";
+@import "/css/book-now.css";
 
 
 @font-face{
@@ -20,6 +22,26 @@
 @font-face{
     src: url(/fonts/paragraph/coco-gothic/coco-gothic.light.ttf);
     font-family: testing;
+}
+
+@font-face{
+    src: url(/fonts/title/RomilePersonalUse-x3Xdr.otf);
+    font-family: b;
+}
+
+@font-face{
+    src: url(/fonts/title/black-aroug/BlackArougDemoVersionRegular-jE6ly.otf);
+    font-family: d;
+}
+
+@font-face{
+    src: url(/fonts/paragraph/josefin-sans/josefin-sans.semibold.ttf);
+    font-family: pbsb;
+}
+
+@font-face{
+    src: url(/fonts/paragraph/josefin-sans/josefin-sans.italic.ttf);
+    font-family: pbi;
 }
 
 
@@ -59,6 +81,8 @@ a{
 }
 
 #content{
+    --arches-offset: -100px;
+    
     color: white;
     overflow-x: hidden;
     width: 100%;
@@ -68,9 +92,10 @@ a{
 /****************** Top Page ******************/
 
 #top-page{
-    --top_page_height: 1130px;
+    --top-page-height: 122.4vh;
     
-    height: var(--top_page_height);
+    height: var(--top-page-height);
+    min-height: calc(100vh - var(--arches-offset) + 50px);
     position: relative;
     display: flex;
     flex-direction: column;
@@ -87,7 +112,7 @@ a{
     
     position: absolute;
     object-fit: cover;
-    height: calc(var(--top_page_height) + var(--image-height-offset));
+    height: calc(max(var(--top-page-height), 100vh - var(--arches-offset) + 50px) + var(--image-height-offset));
     width: 100%;
     top: calc(-1 * var(--image-height-offset));
     transition: opacity 2.5s;
@@ -106,7 +131,7 @@ a{
     --opacity-transition: 4.5s;
     
     position: relative;
-    top: 600px;
+    top: 62vh;
     left: -400px;
     font-family: darlington;
     font-size: 75px;
@@ -137,7 +162,7 @@ a{
 }
 
 #gradient{
-    height: 700px;
+    height: 75.8vh;
     background-image: linear-gradient(transparent, white);
     z-index: calc(var(--lower-gradient-z) + 2);
     margin-top: auto;
@@ -151,7 +176,6 @@ a{
     --arches-width: 300px;
     --arches-height: 500px;
     --arches-border-width: 5px;
-    --arches-offset: -100px;
     --desired-base-margin: 50px;
     --total-arches-on-row: 3;
     
@@ -1169,54 +1193,6 @@ a{
 }
 
 
-/****************** End Page ******************/
-
-#book-now{
-    display: flex;
-    /*padding-top: 400px;*/
-}
-
-#book-now > div{
-    width: 1200px;
-    height: 1200px;
-    margin: auto;
-    margin-top: 200px;
-    background-color: #e6d2c6;
-    /*box-shadow: 0 0 40px rgba(0, 0, 0, .1);*/
-    border-radius: 0 0 100% 100%;
-    z-index: calc(var(--lower-gradient-z) + 2);
-}
-
-#book-now > div h2{
-    width: 100%;
-    text-align: center;
-    padding: 40px;
-    margin-top: 100px;
-    font-size: 50px;
-}
-
-#transition{
-    --transition-height: 900px;
-    
-    height: var(--transition-height);
-    position: relative;
-    background-color: transparent;
-    overflow-x: hidden;
-    z-index: calc(var(--lower-gradient-z) + 1);
-}
-
-#transition img{
-    --transition-img-height: 610px;
-    
-    width: 100%;
-    height: var(--transition-img-height);
-    object-fit: cover;
-    position: absolute;
-    top: calc(var(--transition-height) - var(--transition-img-height));
-    object-position: bottom;
-}
-
-
 @media screen and (max-width: 1600px) {
     
     #top-page h2{
@@ -1351,10 +1327,6 @@ a{
     
     #more-travel > div:last-child > div h3{
         font-size: 35px;
-    }
-    
-    #book-now > div{
-        width: 1000px;
     }
     
 }
@@ -1495,16 +1467,6 @@ a{
     
     #more-travel > div:last-child > div div{
         border-bottom: 1px solid white;
-    }
-    
-    #book-now > div{
-        width: 800px;
-    }
-    
-    #transition img{
-        width: 1400px;
-        margin-left: 50%;
-        transform: translateX(-50%);
     }
     
 }
@@ -1745,17 +1707,6 @@ a{
     
     #more-travel > div:last-child > div h3{
         font-size: 24px;
-    }
-    
-    #book-now > div{
-        width: 500px;
-        height: 500px;
-    }
-    
-    #book-now > div h2{
-        width: calc(100% - 40px);
-        padding: 20px;
-        font-size: 25px;
     }
     
 }
@@ -2052,16 +2003,6 @@ a{
         font-size: 14px;
     }
     
-    #book-now > div{
-        width: 300px;
-        height: 300px;
-    }
-    
-    #book-now > div h2{
-        font-size: 18px;
-        margin-top: 20px;
-    }
-    
 }
 
 @media screen and (max-width: 440px) {
@@ -2262,11 +2203,6 @@ a{
     
     #more-travel > div:last-child > div h3{
         font-size: 11px;
-    }
-    
-    #book-now > div{
-        width: 250px;
-        height: 250px;
     }
     
 }

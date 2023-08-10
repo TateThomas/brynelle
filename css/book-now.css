@@ -1,0 +1,224 @@
+
+/****************** Book Now ******************/
+
+#book-now{
+    --book-now-height: 950px;
+    
+    display: flex;
+    flex-direction: column;
+    height: var(--book-now-height);
+    position: relative;
+    background-color: transparent;
+    z-index: calc(var(--lower-gradient-z) + 1);
+}
+
+#book-now > div{
+    --line-height: 250px;
+    
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: calc(var(--line-height) / 2) auto 0 auto;
+    top: calc(-1 * var(--line-height));
+    z-index: 3;
+}
+
+#book-now span{
+    width: 2px;
+    height: var(--line-height);
+    margin: auto;
+    background-color: var(--light-black);
+}
+
+#book-now div div:nth-child(2){
+    margin: 35px 0 25px 0;
+}
+
+#book-now h1{
+    color: var(--light-black);
+    font-family: b;
+    font-size: 44px;
+}
+
+#book-now p{
+    color: var(--light-black);
+    font-family: pbsb;
+    text-align: center;
+    font-size: 21px;
+    margin: 10px 0 10px 0;
+}
+
+#book-now a{
+    margin: 10px auto 0 auto;
+    border-radius: 50px;
+}
+
+#book-now a div{
+    width: max-content;
+    padding: 15px 50px 15px 50px;
+    border: 1px solid var(--light-black);
+    border-radius: 50px;
+    background-color: white;
+    transition: background-color .1s;
+}
+
+#book-now h2{
+    color: var(--light-black);
+    font-family: d;
+    letter-spacing: 1px;
+    font-size: 30px;
+    transition: color .1s;
+}
+
+#book-now a:hover div{
+    background-color: var(--light-black);
+}
+
+#book-now a:hover h2{
+    color: white;
+}
+
+#book-now img{
+    --book-now-img-height: 750px;
+    
+    width: 100%;
+    height: var(--book-now-img-height);
+    object-fit: cover;
+    position: absolute;
+    top: calc(var(--book-now-height) - var(--book-now-img-height));
+    object-position: bottom;
+}
+
+
+@media screen and (max-width: 2000px) {
+
+    #book-now{
+        --book-now-height: 875px;
+    }
+    
+}
+
+@media screen and (max-width: 1550px) {
+    
+    #book-now{
+        --book-now-height: 775px;
+    }
+
+    #book-now img{
+        --book-now-img-height: 400px;
+        
+        width: 1550px;
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+
+}
+
+@media screen and (max-width: 1400px) {
+    
+    #book-now img{
+        width: 1400px;
+    }
+    
+}
+
+@media screen and (max-width: 800px) {
+    
+    #book-now{
+        --book-now-height: 750px;
+    }
+    
+    #book-now h1{
+        font-size: 38px;
+    }
+    
+    #book-now p{
+        font-size: 19px;
+    }
+    
+    #book-now a div{
+        padding: 10px 35px 10px 35px;
+    }
+    
+    #book-now h2{
+        font-size: 26px;
+    }
+    
+}
+
+@media screen and (max-width: 650px) {
+    
+    #book-now{
+        --book-now-height: 675px;
+    }
+    
+    #book-now div div:nth-child(2){
+        margin: 25px 0 10px 0;
+    }
+    
+    #book-now h1{
+        font-size: 32px;
+    }
+    
+    #book-now p{
+        font-size: 16px;
+        margin-top: 5px;
+    }
+    
+    #book-now a div{
+        padding: 6px 25px 6px 25px;
+    }
+    
+    #book-now h2{
+        font-size: 22px;
+    }
+    
+}
+
+@media screen and (max-width: 525px) {
+    
+    #book-now{
+        --book-now-height: 660px;
+    }
+    
+    #book-now > div{
+        --line-height: 200px;
+    }
+    
+    #book-now div div:nth-child(2){
+        margin: 20px 0 12px 0;
+    }
+    
+    #book-now h1{
+        width: 275px;
+        line-height: 36px;
+        text-align: center;
+    }
+    
+    #book-now p{
+        margin-top: 10px;
+    }
+    
+}
+
+@media screen and (max-width: 350px) {
+    
+    #book-now h1{
+        width: 250px;
+        font-size: 28px;
+        line-height: 33px;
+    }
+    
+    #book-now p{
+        font-size: 14px;
+    }
+    
+    #book-now a div{
+        padding: 5px 18px 5px 18px;
+    }
+    
+    #book-now h2{
+        font-size: 18px;
+    }
+    
+}
