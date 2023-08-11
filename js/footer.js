@@ -32,12 +32,12 @@ let appFooter = `
                 </ul>
             </div>
 
-            <div id="inclusive">
+            <!--<div id="inclusive">
                 <div>
                     <h2>LGBTQIA+</h2>
                 </div>
                 <h2> friendly</h2>
-            </div>
+            </div>-->
         </div>
 
         <div id="contact-info">

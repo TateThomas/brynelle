@@ -298,7 +298,7 @@
     
     #burger span:last-child{
         margin-top: calc(var(--margin-top) + var(--line-spacing));
-        border-radius: calc(var(--arch-radius) - var(--line-spacing)) calc(var(--arch-radius) - var(--line-spacing)) 0 0;
+        
     }
     
     #burger.show:hover{
@@ -316,6 +316,7 @@
         height: 15px;
         margin-top: 12px;
         margin-left: 12px;
+        border-radius: calc(var(--arch-radius) - var(--line-spacing)) calc(var(--arch-radius) - var(--line-spacing)) 0 0;
     }
     
     #links{
