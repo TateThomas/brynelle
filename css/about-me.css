@@ -1,0 +1,786 @@
+@import "/css/header.css";
+@import "/css/footer.css";
+@import "/css/steps.css";
+@import "/css/book-now.css";
+
+
+@font-face{
+    src: url(/fonts/title/alta-regular.otf);
+    font-family: alta;
+}
+
+@font-face{
+    src: url(/fonts/cursive/AnticallyRegular-OVox8.ttf);
+    font-family: antically;
+}
+
+@font-face{
+    src: url(/fonts/cursive/DarlingtonDemo-z8xjG.ttf);
+    font-family: darlington;
+}
+
+@font-face{
+    src: url(/fonts/title/goodfish/goodfish.regular.otf);
+    font-family: a;
+}
+
+@font-face{
+    src: url(/fonts/title/RomilePersonalUse-x3Xdr.otf);
+    font-family: b;
+}
+
+@font-face{
+    src: url(/fonts/title/VioletyDreams-WyEOA.otf);
+    font-family: c;
+}
+
+@font-face{
+    src: url(/fonts/title/black-aroug/BlackArougDemoVersionRegular-GOpRA.ttf);
+    font-family: d;
+}
+
+@font-face{
+    src: url(/fonts/title/ranille/RanilleNormalRegular-axEpm.otf);
+    font-family: e;
+}
+
+@font-face{
+    src: url(/fonts/title/VtksTatuage2-3GzL.ttf);
+    font-family: f;
+}
+
+@font-face{
+    src: url(/fonts/title/TypographyTimes-RgRW.ttf);
+    font-family: g;
+}
+
+@font-face{
+    src: url(/fonts/paragraph/coco-gothic/coco-gothic.light.ttf);
+    font-family: pa;
+}
+
+@font-face{
+    src: url(/fonts/paragraph/coco-gothic/coco-gothic.light-italic.ttf);
+    font-family: pai;
+}
+
+@font-face{
+    src: url(/fonts/paragraph/josefin-sans/josefin-sans.regular.ttf);
+    font-family: pb;
+}
+
+@font-face{
+    src: url(/fonts/paragraph/josefin-sans/josefin-sans.bold.ttf);
+    font-family: pbb;
+}
+
+@font-face{
+    src: url(/fonts/paragraph/josefin-sans/josefin-sans.semibold.ttf);
+    font-family: pbsb;
+}
+
+@font-face{
+    src: url(/fonts/paragraph/josefin-sans/josefin-sans.italic.ttf);
+    font-family: pbi;
+}
+
+@font-face{
+    src: url(/fonts/paragraph/source-sans-pro/source-sans-pro.regular.ttf);
+    font-family: pc;
+}
+
+@font-face{
+    src: url(/fonts/paragraph/source-sans-pro/source-sans-pro.light.ttf);
+    font-family: pcl;
+}
+
+@font-face{
+    src: url(/fonts/paragraph/source-sans-pro/source-sans-pro.semibold.ttf);
+    font-family: pcsb;
+}
+
+@font-face{
+    src: url(/fonts/paragraph/roboto-condensed/roboto-condensed.regular.ttf);
+    font-family: pd;
+}
+
+@font-face{
+    src: url(/fonts/cursive/holland/Holland-JRGaj.ttf);
+    font-family: ca;
+}
+
+@font-face{
+    src: url(/fonts/cursive/holland/HollandMonolineClean-VGEqZ.ttf);
+    font-family: cac;
+}
+
+@font-face{
+    src: url(/fonts/cursive/Themysion.ttf);
+    font-family: cb;
+}
+
+
+/****************** All ******************/
+
+body{
+    --light-black: #404040;
+    --lower-gradient-z: 2;
+    
+    background-color: white;
+    margin: 0;
+}
+
+h1, h2, ul, li{
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    position: relative;
+    font-family: alta;
+    font-weight: normal;
+    text-decoration: none;
+    color: white;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+#content{
+    --background-color: #fff4ea;
+    
+    color: white;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    width: 100%;
+    background-color: var(--background-color);
+}
+
+#links li.about-me{
+    background-color: #ddc2bf;
+}
+
+#links li.about-me > a:hover{
+    color: #c89c97 !important;
+}
+
+
+/****************** Top Page ******************/
+
+#top-page{    
+    display: flex;
+    width: 100%;
+    padding-bottom: 200px;
+    overflow: hidden;
+}
+
+#top-page div.container{
+    display: flex;
+    margin: 75px auto 0 auto;
+}
+
+#top-page div.left{
+    display: flex;
+    flex-direction: column;
+}
+
+#top-page div.pictures{
+    --grid-width: 275px;
+    --grid-height: 205px;
+    
+    display: grid;
+    grid-template-columns: repeat(3, var(--grid-width));
+    grid-template-rows: repeat(3, var(--grid-height));
+}
+
+#top-page div.pictures div.image{
+    position: relative;
+    width: 100%;
+}
+
+#top-page div.pictures div.a{
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+#top-page div.pictures div.b{
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+}
+
+#top-page div.pictures div.c{
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+#top-page div.pictures div.d{
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+}
+
+#top-page div.pictures div.e{
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
+}
+
+#top-page div.pictures img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#top-page div.pictures div.a img{
+    --image-size: 255px;
+    
+    width: var(--image-size);
+    height: var(--image-size);
+    left: 140px;
+    border: 10px solid var(--background-color);
+    border-radius: 50%;
+    z-index: 3;
+}
+
+#top-page div.pictures div.b img{
+    --image-width: 340px;
+    --image-height: 280px;
+    
+    width: var(--image-width);
+    height: var(--image-height);
+    right: 30px;
+    z-index: 3;
+}
+
+#top-page div.pictures div.b::after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 300px;
+    height: 250px;
+    bottom: -85px;
+    right: 10px;
+    background-color: #ffeadf;
+    z-index: 2;
+}
+
+#top-page div.pictures div.c img{
+    --image-size: 180px;
+    
+    width: var(--image-size);
+    height: var(--image-size);
+    left: 60px;
+    left: 50px;
+    padding: 0 0 10px 10px;
+    padding: 10px;
+    border: 2px solid white;
+    border-top: 0;
+    border-right: 0;
+    z-index: 4;
+}
+
+#top-page div.pictures div.d img{
+    --image-width: 365px;
+    --image-height: 400px;
+    --image-radius: calc(var(--image-width) / 2);
+    
+    width: var(--image-width);
+    height: var(--image-height);
+    bottom: 10px;
+    left: 20px;
+    border-radius: var(--image-radius) var(--image-radius) 0 0;
+}
+
+#top-page div.pictures div.e img{
+    --image-width: 245px;
+    --image-height: 250px;
+    
+    width: var(--image-width);
+    height: var(--image-height);
+    bottom: 50px;
+    right: 70px;
+    border: 10px solid var(--background-color);
+    z-index: 5;
+}
+
+#top-page div.text{
+    --font-size: 120px;
+    --line-height: 125px;
+    --text-padding: 75px;
+    --text-margin: 20px;
+    
+    display: flex;
+    flex-direction: column;
+}
+
+#top-page div.text h1{
+    color: #ddac96;
+    width: max-content;
+    font-family: d;
+    font-weight: bold;
+    letter-spacing: 15px;
+    font-size: var(--font-size);
+    line-height: var(--line-height);
+    z-index: 2;
+}
+
+#top-page div.text h1:first-child{
+    margin: var(--text-margin) auto 0 var(--text-padding);
+}
+
+#top-page div.text h1:nth-child(2){
+    margin: 0 var(--text-padding) var(--text-margin) auto;
+}
+
+#top-page div.text span{
+    position: absolute;
+    width: 100%;
+    height: calc((var(--line-height) + var(--text-margin)) * 2);
+    left: 0;
+    background-color: #ffede4;
+    z-index: 1;
+}
+
+#top-page div.right{
+    z-index: 3;
+}
+
+#top-page div.right div.image{
+    --margin-top: 30px;
+    
+    height: calc(100% - var(--margin-top));
+    margin-top: var(--margin-top);
+}
+
+#top-page div.right img{
+    --image-width: 435px;
+    --image-radius: calc(var(--image-width) / 2);
+    
+    width: var(--image-width);
+    height: 100%;
+    border-radius: var(--image-radius) var(--image-radius) 0 0;
+    object-fit: cover;
+}
+
+
+/****************** About ******************/
+
+#about{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-bottom: 100px;
+    background-color: #EFD9C4;
+}
+
+#about div.title{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 0 10px 10px 10px;
+    margin: auto;
+    top: -25px;
+    border-bottom: 1px solid var(--light-black);
+}
+
+#about div.title h1{
+    color: var(--light-black);
+    font-family: cb;
+    font-size: 100px;
+    line-height: 80px;
+    margin: auto;
+}
+
+#about div.title h2{
+    color: var(--light-black);
+    font-family: d;
+    text-transform: uppercase;
+    font-size: 40px;
+    line-height: 40px;
+}
+
+#about div.text{
+    width: 750px;
+    margin: auto;
+}
+
+#about div.text p{
+    color: #84542A;
+    font-family: pb;
+    font-size: 24px;
+    text-align: center;
+}
+
+
+/****************** Favs ******************/
+
+#favs{
+    --theme-color: #25251f;
+    
+    display: flex;
+    width: 100%;
+    margin: 250px 0 250px 0;
+    background-color: var(--theme-color);
+}
+
+#favs div.container{
+    display: flex;
+    margin: auto;
+}
+
+#favs div.content{
+    --content-height: 650px;
+    --transition-time: .5s;
+    
+    display: flex;
+    height: var(--content-height);
+    background-color: #fffbf5;
+    overflow: hidden;
+}
+
+#favs div.pictures{
+    margin: 0 0 0 100px;
+}
+
+#favs div.pictures ul{
+    --image-width: 300px;
+    --image-height: 425px;
+    --image-margin: 15px;
+    --current-picture: 2;
+    --element-height: calc(var(--image-height) + (var(--image-margin) * 2));
+    --negative-height: calc(-1 * var(--element-height));
+    --offset: calc(((var(--content-height) - var(--element-height)) / 2) - (var(--current-picture) * var(--element-height)));
+    
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: var(--offset);
+    transition: top var(--transition-time);
+}
+
+#favs div.pictures li{
+    width: var(--image-width);
+    height: var(--image-height);
+    margin: var(--image-margin) 0 var(--image-margin) 0;
+    overflow: hidden;
+}
+
+#favs div.pictures img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#favs ul.desc{
+    position: relative;
+    width: 400px;
+    height: var(--content-height);
+    margin: 0 75px 0 75px;
+}
+
+#favs ul.desc > li{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    transition: opacity calc(var(--transition-time) * 2);
+}
+
+#favs ul.desc > li.hidden{
+    width: 0;
+    height: 0;
+    opacity: 0;
+}
+
+#favs ul.desc h2{
+    color: var(--theme-color);
+    font-family: b;
+    letter-spacing: 1px;
+    font-size: 55px;
+    line-height: 60px;
+    text-align: center;
+    margin: auto auto 50px auto;
+}
+
+#favs ul.text{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: auto;
+}
+
+#favs ul.text li{
+    display: flex;
+    margin: 5px auto 5px auto;
+}
+
+#favs ul.desc h3{
+    color: var(--theme-color);
+    font-weight: normal;
+    font-family: pbsb;
+    font-size: 24px;
+    margin: 0;
+}
+
+#favs ul.desc span{
+    width: 10px;
+    height: 1px;
+    margin: auto 10px 12px 10px;
+    background-color: var(--theme-color);
+}
+
+#favs ul.desc p{
+    color: var(--theme-color);
+    font-family: pb;
+    font-size: 24px;
+    margin: 0;
+}
+
+#favs div.arrows{
+    --font-size: 18px;
+    --button-padding: 5px;
+    
+    position: relative;
+    width: calc(var(--font-size) + (var(--button-padding) * 2));
+    margin-right: 15px;
+}
+
+#favs div.arrows div.rotate{
+    display: flex;
+    position: absolute;
+    width: var(--content-height);
+    transform: rotate(90deg);
+    transform-origin: top left;
+    left: calc(var(--font-size) + 10px);
+}
+
+#favs div.arrows div.rotate > div{
+    display: flex;
+    padding: var(--button-padding) 0 var(--button-padding) 0
+}
+
+#favs div.arrows div.rotate > div:first-child{
+    margin-right: auto;
+}
+
+#favs div.arrows div.rotate > div:hover{
+    cursor: pointer;
+}
+
+#favs div.prev{
+    margin-left: 10px;
+}
+
+#favs div.next{
+    margin-right: 10px;
+}
+
+#favs div.arrows h4{
+    color: var(--theme-color);
+    font-weight: normal;
+    font-family: pai;
+    font-size: var(--font-size);
+    line-height: var(--font-size);
+    margin: 0;
+}
+
+#favs div.prev h4{
+    margin-right: 10px;
+}
+
+#favs div.next h4{
+    margin-left: 10px;
+}
+
+#favs div.arrows img{
+    width: 20px;
+    height: 8px;
+    margin: auto 10px auto 10px;
+}
+
+#favs div.prev img{
+    transform: rotate(180deg)
+}
+
+#favs div.title{
+    --font-size: 140px;
+    --line-height: 130px;
+    --title-margin: 25px;
+    
+    width: calc(var(--line-height) * 2);
+    height: calc(var(--content-height) - var(--title-margin));
+    margin: var(--title-margin) 0 0 50px;
+}
+
+#favs div.title div.rotate{
+    transform: rotate(90deg);
+}
+
+#favs div.rotate h1{
+    color: var(--background-color);
+    font-family: g;
+    font-size: var(--font-size);
+    line-height: var(--line-height);
+}
+
+
+/****************** Life ******************/
+
+#life{
+    --background-color: #ffe9de;
+    
+    display: flex;
+    width: 100%;
+    background-color: #ffe9de;
+}
+
+#life > div{
+    display: flex;
+    flex-direction: column;
+}
+
+#life div.left{
+    --image-width: 525px;
+    
+    position: relative;
+    top: -20px;
+    margin: 0 50px 0 auto;
+}
+
+#life div.title{
+    display: flex;
+    flex-direction: column;
+    width: var(--image-width);
+}
+
+#life div.title h1{
+    color: #84542a;
+    font-family: cb;
+    font-size: 140px;
+    line-height: 90px;
+    width: 100%;
+    border-bottom: 1px solid #84542a;
+}
+
+#life div.title h2{
+    color: #84542a;
+    font-family: cb;
+    font-family: b;
+    font-size: 45px;
+    letter-spacing: 1px;
+    width: 100%;
+    margin: 10px 0 15px 0;
+    text-align: right;
+    right: -50px;
+}
+
+#life div.pictures{
+    position: relative;
+    margin-bottom: 25px;
+}
+
+#life div.pictures div.image{
+    overflow: hidden;
+}
+
+#life div.pictures div.image:first-child{
+    width: var(--image-width);
+    height: 550px;
+    margin: 0 175px 150px 0;
+}
+
+#life div.pictures div.image:last-child{
+    position: absolute;
+    width: 325px;
+    height: 400px;
+    bottom: 0;
+    right: 0;
+    border: 10px solid var(--background-color);
+    border-radius: 50%;
+}
+
+#life div.pictures img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#life div.pictures div.image:first-child img{
+    object-position: bottom;
+}
+
+#life div.right{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    padding: 45px 0 100px 0;
+    margin-right: auto;
+}
+
+#life div.right p{
+    color: #84542a;
+    font-family: pb;
+    font-size: 21px;
+    text-indent: 35px;
+}
+
+#life div.right p:first-child{
+    margin: auto 0 10px 0;
+}
+
+#life div.right p:last-child{
+    margin: 10px 0 auto 0;
+}
+
+
+/****************** Love ******************/
+
+#love{
+    display: flex;
+    margin: 100px 0 100px 0;
+}
+
+#love div.text{
+    width: 300px;
+/*    width: 350px;*/
+    margin: auto 200px auto auto;
+}
+
+#love div.text p{
+    color: #84542a;
+    font-family: pbi;
+    font-size: 21px;
+    text-align: center;
+}
+
+#love div.title{
+    position: relative;
+    margin: auto auto auto 0;
+}
+
+#love div.title img{
+    --img-height: 60px;
+    
+    position: absolute;
+    height: var(--img-height);
+    top: calc(-1 * var(--img-height));
+    right: 25px;
+}
+
+#love div.title h1{
+    color: var(--light-black);
+    font-family: b;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+/*    font-weight: bold;*/
+    font-size: 80px;
+    line-height: 100px;
+}
+
+
+/****************** Love ******************/
+
+#book-now{
+    background-color: white;
+}
