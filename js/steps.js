@@ -1,6 +1,6 @@
 let steps = `
             <div class="image">
-                <img src="/images/pricing/sun.png">
+                <img src="/images/pricing/sun.png" alt="Sun line art">
             </div>
             
             <div class="title">

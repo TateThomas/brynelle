@@ -23,8 +23,9 @@ function changePicture(direction) {
     pictures.style.setProperty("--current-picture", offsetPicture);
     descArray[currentPicture].className = descArray[currentPicture].className.replace("hidden", "show");
     
-    if ((currentPicture == 8) && (direction == -1)) {
+    if ((currentPicture == (totalPictures - 1)) && (direction == -1)) {
     
+        console.log("here");
         transform -= 1;
         
         if (transform < 0) {

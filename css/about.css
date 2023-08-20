@@ -520,6 +520,7 @@ a{
     font-family: pbsb;
     font-size: 24px;
     margin: 0;
+    text-align: center;
 }
 
 #favs ul.desc span{
@@ -534,6 +535,11 @@ a{
     font-family: pb;
     font-size: 24px;
     margin: 0;
+    text-align: center;
+}
+
+#favs li.e ul.text li:last-child{
+    flex-direction: column;
 }
 
 #favs div.arrows{
@@ -1147,6 +1153,17 @@ a{
         --line-height: 90px;
 
         margin: var(--title-margin) 0 0 25px;
+    }
+    
+    #favs li.e ul.text li:nth-child(2){
+        flex-direction: column;
+        padding: 5px 0 5px 0;
+    }
+    
+    #favs li.e ul.text li:nth-child(2) span{
+        position: absolute;
+        width: 0;
+        height: 0;
     }
     
 }
@@ -2093,6 +2110,10 @@ a{
         margin: var(--title-margin) 0 0 12px;
     }
     
+    #favs li.d ul.text li:first-child{
+        padding: 5px 0 5px 0;
+    }
+    
 }
 
 @media screen and (max-width: 500px) {
@@ -2432,6 +2453,10 @@ a{
     
     #favs div.title div.rotate{
         top: -35px;
+    }
+    
+    #favs li.e ul.text li:nth-child(2){
+        padding: 7px 0 7px 0;
     }
     
     #love div.text{
