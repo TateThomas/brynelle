@@ -63,7 +63,7 @@ let appHeader = `
                 <a href="https://brynelle.com/clients">Clients</a>
             </li>-->
             <li class="about-me">
-                <a href="https://brynelle.com/about_me">About Me</a>
+                <a href="https://brynelle.com/about">About</a>
             </li>
             <li class="info">
                 <a href="https://brynelle.com/info">Info</a>

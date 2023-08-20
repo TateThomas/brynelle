@@ -1,5 +1,6 @@
 @import "/css/header.css";
 @import "/css/footer.css";
+@import "/css/book-now.css";
 
 
 @font-face{
@@ -15,6 +16,21 @@
 @font-face{
     src: url(/fonts/cursive/DarlingtonDemo-z8xjG.ttf);
     font-family: darlington;
+}
+
+@font-face{
+    src: url(/fonts/title/RomilePersonalUse-x3Xdr.otf);
+    font-family: b;
+}
+
+@font-face{
+    src: url(/fonts/title/black-aroug/BlackArougDemoVersionRegular-GOpRA.ttf);
+    font-family: d;
+}
+
+@font-face{
+    src: url(/fonts/paragraph/josefin-sans/josefin-sans.semibold.ttf);
+    font-family: pbsb;
 }
 
 
@@ -254,32 +270,6 @@ div.button:hover{
     margin-right: auto;
 }
 
-/****************** Book ******************/
-
-#book div{
-    background-color: white;
-}
-
-
-#transition{
-    --transition-height: 650px;
-    
-    height: var(--transition-height);
-    position: relative;
-    background-color: transparent;
-    z-index: -1;
-}
-
-#transition img{
-    --transition-img-height: 610px;
-    
-    width: 100%;
-    height: var(--transition-img-height);
-    object-fit: cover;
-    position: absolute;
-    top: calc(var(--transition-height) - var(--transition-img-height));
-    object-position: bottom;
-}
 
 @media screen and (max-width: 1400px) {
     
@@ -290,12 +280,6 @@ div.button:hover{
     
     #top-page div.picture::after{
         height: 150px;
-    }
-    
-    #transition img{
-        width: 1400px;
-        margin-left: 50%;
-        transform: translateX(-50%);
     }
     
 }

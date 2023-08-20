@@ -10,7 +10,7 @@ let appFooter = `
                     <li><a href="https://brynelle.com/gallery">Gallery</a></li>
                     <!--<li><a href="https://brynelle.com/events">Events</a></li>
                     <li><a href="https://brynelle.com/clients">Clients</a></li>-->
-                    <li><a href="https://brynelle.com/about_me">About Me</a></li>
+                    <li><a href="https://brynelle.com/about">About</a></li>
                     <li><a href="https://brynelle.com/info">Info</a></li>
                     <li><a href="https://brynelle.com/contact">Contact</a></li>
                 </ul>
@@ -19,8 +19,8 @@ let appFooter = `
             <div id="book">
                 <h2>Book Here</h2>
                 <ul>
-                    <li><a>Link</a></li>
-                    <li><a>Help</a></li>
+                    <li><a href="https://brynelle.com/contact">Link</a></li>
+                    <!--<li><a>Help</a></li>-->
                 </ul>
             </div>
 
