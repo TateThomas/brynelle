@@ -14,18 +14,25 @@
     <script async src="js/header.js"></script>
 
     <div id="background-photo">
-        <img src="images/contact/goblin_valley.jpg">
+        
+        <picture>
+            <source type="image/avif" srcset="./images/contact/dead-horse-point.avif">
+            <source type="image/webp" srcset="./images/contact/dead-horse-point.webp">
+            <source type="image/jpg" srcset="./images/contact/dead-horse-point.jpg">
+            <img src="./images/contact/dead-horse-point.avif" alt="Photo of the view from Dead Horse Point">
+        </picture>
+        
     </div>
     
     <div id="content">
         
-        <div id="form">
+        <div id="form" class="">
         
             <iframe name="hiddenConfirm" id="hiddenConfirm" style="display: none" onload="if(submitted){window.location='contact/success.html';}"></iframe>
             <form action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSffOqFmF31uSwLqpY1u2azJ3-zLo0mdqa3BK_PqS8-T7sh7oA/formResponse" method="POST" target="hiddenConfirm" onsubmit="submitted=true">
             
                 <div class="title">
-                    <h1>Request a booking</h1>
+                    <h1>Submit an Inquiry</h1>
                 </div>
                 
                 <div class="multiple-answer">
@@ -122,24 +129,33 @@
         
         <div id="contact">
         
-            <h2>If you have any questions, don't hesitate to reach out!</h2>
-            <h2>I'm available through:</h2>
+            <div class="title">
+                <h1>Have a question?</h1>
+                <div>
+                    <h2 class="curved">Let's chat</h2>
+                </div>
+                <span></span>
+            </div>
             
             <ul>
             
                 <li>
-                    <h2>Text/Call: <a href="tel:3853898089">(385) 389-8089</a></h2>
+                    <h2>text/call: <a href="tel:3853898089">(385) 389-8089</a></h2>
                 </li>
                 
                 <li>
-                    <h2>Email: <a href="mailto:brynellephoto@gmail.com">brynellephoto@gmail.com</a></h2>
+                    <h2>dm: <a href="https://instagram.com/brynellephoto/">@brynellephoto</a></h2>
                 </li>
                 
                 <li>
-                    <h2><a href="https://instagram.com/brynellephoto/">Instagram</a></h2>
+                    <h2>email: <a href="mailto:brynellephoto@gmail.com">brynellephoto@gmail.com</a></h2>
                 </li>
             
             </ul>
+            
+            <div class="image">
+                <img src="/images/contact/palm-trees.png">
+            </div>
         
         </div>
         
@@ -148,6 +164,7 @@
     <footer id="app-footer"></footer>
     <script async src="js/footer.js"></script>
     
+    <script src="/frameworks/circletype.min.js"></script>
     <script src="js/contact.js"></script>
     
 </body>

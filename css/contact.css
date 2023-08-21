@@ -7,6 +7,131 @@
     font-family: alta;
 }
 
+@font-face{
+    src: url(/fonts/cursive/AnticallyRegular-OVox8.ttf);
+    font-family: antically;
+}
+
+@font-face{
+    src: url(/fonts/cursive/DarlingtonDemo-z8xjG.ttf);
+    font-family: darlington;
+}
+
+@font-face{
+    src: url(/fonts/title/goodfish/goodfish.regular.otf);
+    font-family: a;
+}
+
+@font-face{
+    src: url(/fonts/title/RomilePersonalUse-x3Xdr.otf);
+    font-family: b;
+}
+
+@font-face{
+    src: url(/fonts/title/VioletyDreams-WyEOA.otf);
+    font-family: c;
+}
+
+@font-face{
+    src: url(/fonts/title/black-aroug/BlackArougDemoVersionRegular-GOpRA.ttf);
+    font-family: d;
+}
+
+@font-face{
+    src: url(/fonts/title/ranille/RanilleNormalRegular-axEpm.otf);
+    font-family: e;
+}
+
+@font-face{
+    src: url(/fonts/title/VtksTatuage2-3GzL.ttf);
+    font-family: f;
+}
+
+@font-face{
+    src: url(/fonts/title/TypographyTimes-RgRW.ttf);
+    font-family: g;
+}
+
+@font-face{
+    src: url(/fonts/paragraph/coco-gothic/coco-gothic.light.ttf);
+    font-family: pa;
+}
+
+@font-face{
+    src: url(/fonts/paragraph/coco-gothic/coco-gothic.light-italic.ttf);
+    font-family: pai;
+}
+
+@font-face{
+    src: url(/fonts/paragraph/josefin-sans/josefin-sans.regular.ttf);
+    font-family: pb;
+}
+
+@font-face{
+    src: url(/fonts/paragraph/josefin-sans/josefin-sans.bold.ttf);
+    font-family: pbb;
+}
+
+@font-face{
+    src: url(/fonts/paragraph/josefin-sans/josefin-sans.semibold-italic.ttf);
+    font-family: pbsbi;
+}
+
+@font-face{
+    src: url(/fonts/paragraph/josefin-sans/josefin-sans.semibold.ttf);
+    font-family: pbsb;
+}
+
+@font-face{
+    src: url(/fonts/paragraph/josefin-sans/josefin-sans.italic.ttf);
+    font-family: pbi;
+}
+
+@font-face{
+    src: url(/fonts/paragraph/source-sans-pro/source-sans-pro.regular.ttf);
+    font-family: pc;
+}
+
+@font-face{
+    src: url(/fonts/paragraph/source-sans-pro/source-sans-pro.light.ttf);
+    font-family: pcl;
+}
+
+@font-face{
+    src: url(/fonts/paragraph/source-sans-pro/source-sans-pro.semibold.ttf);
+    font-family: pcsb;
+}
+
+@font-face{
+    src: url(/fonts/paragraph/source-sans-pro/source-sans-pro.italic.ttf);
+    font-family: pci;
+}
+
+@font-face{
+    src: url(/fonts/paragraph/source-sans-pro/source-sans-pro.light-italic.ttf);
+    font-family: pcli;
+}
+
+@font-face{
+    src: url(/fonts/paragraph/roboto-condensed/roboto-condensed.regular.ttf);
+    font-family: pd;
+}
+
+@font-face{
+    src: url(/fonts/cursive/holland/Holland-JRGaj.ttf);
+    font-family: ca;
+}
+
+@font-face{
+    src: url(/fonts/cursive/holland/HollandMonolineClean-VGEqZ.ttf);
+    font-family: cac;
+}
+
+@font-face{
+    src: url(/fonts/cursive/Themysion.ttf);
+    font-family: cb;
+}
+
 
 /****************** All ******************/
 
@@ -79,61 +204,91 @@ a{
     z-index: 2;
 }
 
-#form, #success, #contact{
+#form{
     --theme-color: #d2a995;
     --required-red: #d93025;
     --req-red-dim: rgba(217, 48, 37, .09);
     --req-red-dimmer: rgba(217, 48, 37, .05);
     --req-red-dark: #d73025;
-    --form-font: sans-serif;
+    --form-font: pcli;
     
+    width: 625px;
+    max-height: 2500px;
     padding: 75px;
-    margin: 150px auto 200px auto;
-    border-radius: 30px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, .1);
-    background-color: white;
+    margin: 150px auto 175px auto;
+    border-radius: 20px;
+    box-shadow: 0 0 7px rgba(0, 0, 0, .05);
+    background-color: #fffaf7;
+    overflow: hidden;
     z-index: 2;
+    transition: max-height 1.25s;
 }
 
-form h1, form h2, #success h1, #contact h2, #contact a{
+#form.complete{
+    max-height: 60px;
+}
+
+body:has(#form.complete){
+    cursor: wait;
+}
+
+form h1, form h2{
     display: block;
     padding: 5px 0 5px 0;
     margin: 5px 0 5px 0;
     color: var(--light-black);
 }
 
-div.title{
+form div.title{
     display: flex;
     flex-direction: column;
     position: relative;
     width: 100%;
 }
 
-div.title h1{
+form div.title h1{
     width: max-content;
+    font-family: d;
+    letter-spacing: 1px;
+    text-transform: uppercase;
     font-size: 40px;
-    padding: 0 15px 15px 15px;
+    padding: 0 15px 10px 15px;
     margin: 5px auto 0 auto;
     border-bottom: 3px solid var(--theme-color);
 }
 
-div.title::after{
+form div.title::after{
+    --shadow-width: 200px;
+    
     content: '';
     position: absolute;
     width: 100%;
-    height: 20px;
+    height: 16px;
     margin: auto;
-    bottom: -20px;
-    background-image: radial-gradient(ellipse at center top, rgba(0, 0, 0, .05), transparent 200px);
+    bottom: -16px;
+    background-image: radial-gradient(ellipse at center top, rgba(0, 0, 0, .05), transparent var(--shadow-width));
+}
+
+form input, form select, form textarea{
+    background-color: #faf3ec;
+    font-family: pcli;
+    font-size: 15px !important;
+}
+
+div.single-choice label:hover{
+    background-color: #faf3ec;
 }
 
 form h2{
     font-family: var(--form-font);
-    font-size: 21px;
+    font-family: pa;
+    font-size: 17px;
 }
 
 form h2 span{
+    position: relative;
     color: var(--required-red);
+    top: -5px;
 }
 
 form > div:not(div.title, div.submit-button){
@@ -156,7 +311,7 @@ div.single-answer div{
 }
 
 div.single-answer div.short-answer input{
-    width: 300px;
+    min-width: 300px;
 }
 
 div.short-answer input, select, div.choose-date input, div.choose-time input, div.long-answer textarea{
@@ -174,21 +329,25 @@ div.short-answer input, select, div.choose-date input, div.choose-time input, di
 }
 
 select{
-    width: 300px;
+    min-width: 300px;
     height: auto;
     padding: 10px;
 }
 
-div.short-answer input:hover, select:hover, textarea:hover, div.choose-date input:hover, div.choose-time input:hover{
+div.short-answer input:hover, select:hover, textarea:hover, div.single-choice label:active, div.choose-date input:hover, div.choose-time input:hover{
     background-color: rgba(0, 0, 0, .01);
+    background-color: #f9eee2;
 }
 
-div.short-answer input:focus, textarea:focus, div.single-choice label:active, div.choose-date input:focus, div.choose-time input:focus{
+div.short-answer input:focus, textarea:focus, div.choose-date input:focus, div.choose-time input:focus{
     background-color: rgba(0, 0, 0, .03);
+    background-color: #f2e3d4;
+    
 }
 
 div.short-answer input:active, textarea:active, div.choose-date input:active, div.choose-time input:active{
     background-color: rgba(0, 0, 0, .05);
+    background-color: #eddfd0;
 }
 
 div.short-answer::after, div.long-answer::after, div.choose-date::after, div.choose-time::after{
@@ -235,11 +394,11 @@ div.single-choice{
 div.single-choice input{
     width: 14px;
     height: 14px;
-    margin-right: 5px;
+    margin: auto 10px auto 0;
     appearance: none;
     -webkit-appearance: none;
     border-radius: 50%;
-    border: 3px solid white;
+    border: 3px solid #fffaf7;
     outline: 1px solid var(--light-black);
     transition: outline .2s, background .2s;
 }
@@ -255,12 +414,19 @@ div.single-choice input:checked{
 
 div.single-choice label{
     position: relative;
-    display: block;
+    display: flex;
+    font-family: pci;
+    font-size: 16px;
     width: max-content;
     padding: 5px 8px 5px 5px;
     margin: 5px 0 5px 0;
     border-radius: 5px;
     transition: background-color .2s;
+}
+
+div.single-choice label span{
+    display: inline-block;
+    line-height: 20px;
 }
 
 div.choose-date{
@@ -280,8 +446,8 @@ div.choose-date input, div.choose-time input{
 div.choose-date label, div.choose-time label{
     display: block;
     color: darkgray;
-    font-family: var(--form-font);
-    font-size: 12px;
+    font-family: pa;
+    font-size: 11px;
     margin-bottom: 5px;
 }
 
@@ -322,15 +488,17 @@ div.long-answer textarea{
 div.submit-button{
     display: flex;
     width: 100%;
-    margin: 125px 0 40px 0;
+    margin: 120px 0 45px 0;
 }
 
 div.submit-button button{
     color: var(--light-black);
-    font-size: 20px;
+    font-family: b;
+    letter-spacing: 1px;
+    font-size: 25px;
     padding: 10px 30px 10px 30px;
     margin: auto;
-    border: 2px solid var(--light-black);
+    border: 1px solid var(--light-black);
     border-radius: 30px;
     background-color: transparent;
     transition: background-color .1s, color .1s, border .1s;
@@ -339,7 +507,7 @@ div.submit-button button{
 div.submit-button button:hover{
     color: white;
     background-color: var(--theme-color);
-    border: 2px solid var(--theme-color);
+    border: 1px solid var(--theme-color);
     cursor: pointer;
 }
 
@@ -383,7 +551,8 @@ div.choose-date:has(input:invalid)::before, div.choose-time:has(input:invalid)::
     position: absolute;
     width: max-content;
     bottom: -17px;
-    font-size: 12px;
+    font-family: pci !important;
+    font-size: 11px;
     font-family: sans-serif;
 }
 
@@ -395,45 +564,823 @@ div.single-choice.invalid label:last-child::before{
 /****************** Contact ******************/
 
 #contact{
-    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 475px;
+    padding: 0 50px 75px 50px;
+    margin: 0 auto 175px auto;
+    border-radius: 20px;
+    background-color: #f6e0d0;
+    box-shadow: 0 0 7px rgba(0, 0, 0, .05);
+    overflow: hidden;
+    z-index: 2;
 }
 
-#contact h2{
-    font-family: sans-serif;
-    font-size: 20px;
+#contact div.title{
+    --title-width: 310px;
+    
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: var(--title-width);
+    height: 140px;
+    margin: auto;
+    text-align: center;
 }
 
-#contact h2:nth-child(2){
-    margin-top: 25px;
+#contact div.title > span{
+    --arch-padding: 80px;
+    
+    content: '';
+    display: block;
+    position: absolute;
+    width: calc(var(--title-width) + (2 * var(--arch-padding)));
+    height: 400px;
+    top: -260px;
+    left: calc(-1 * var(--arch-padding));
+    border-radius: 0 0 50% 50%;
+    background-color: #fff2e8;
+    z-index: 3;
+}
+
+#contact div.title h1{
+    color: var(--light-black);
+    font-family: d;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 36px;
+    width: 100%;
+    margin-top: 30px;
+    text-align: center;
+    z-index: 4;
+}
+
+#contact div.title > div{
+    width: max-content;
+    margin: auto;
+}
+
+#contact div.title h2{
+    position: relative;
+    color: var(--light-black);
+    font-family: d;
+    font-size: 23px;
+    width: max-content;
+    margin: auto;
+    bottom: -15px;
+    z-index: 4;
 }
 
 #contact ul{
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    margin-top: 30px;
+    z-index: 3;
 }
 
 #contact li{
-    display: block;
-    padding-left: 30px;
+    width: max-content;
+    margin: 7px 0 7px 0;
 }
 
-#contact li h2{
-    padding: 0;
-    margin: 0;
+#contact ul h2{
+    display: flex;
+    color: #af917c;
+    font-family: d;
+    letter-spacing: 1px;
+    font-size: 25px;
+    line-height: 25px;
 }
 
-#contact li a{
-    color: var(--theme-color);
-    display: inline-block;
-    text-decoration: underline;
-    text-decoration-thickness: 1px;
-    text-underline-offset: 3px;
-    padding-left: 5px;
-    padding-right: 5px;
-    border-radius: 5px;
-    transition: background-color .25s;
+#contact ul a{
+    color: #af917c;
+    font-family: pbi;
+    letter-spacing: 0;
+    font-size: 20px;
+    margin-left: 10px;
 }
 
-#contact li a:hover{
-    background-color: rgba(0, 0, 0, .04);
+#contact div.image{
+    position: absolute;
+    height: 330px;
+    bottom: -30px;
+    right: -5px;
+    z-index: 2;
 }
 
+#contact img{
+    width: 100%;
+    height: 100%;
+}
+
+
+@media screen and (max-width: 900px) {
+    
+    #form{
+        width: 550px;
+    }
+    
+    div.multiple-answer:has(div.dropdown) div.short-answer{
+        margin-top: 5px;
+    }
+    
+    div.centered h2{
+        width: 500px !important;
+        text-align: center;
+    }
+    
+    form div.title::after{
+        --shadow-width: 175px;
+        
+        height: 15px;
+        bottom: -15px;
+    }
+    
+}
+
+@media screen and (max-width: 800px) {
+    
+    #form{
+        width: 475px;
+        padding: 60px;
+    }
+    
+    form div.title h1{
+        font-size: 38px;
+    }
+    
+    form div.title::after{
+        --shadow-width: 150px;
+        
+        height: 14px;
+        bottom: -14px;
+    }
+    
+    div.single-answer div.short-answer input{
+        min-width: 250px;
+    }
+    
+    select{
+        min-width: 240px;
+    }
+    
+    div.short-answer input, div.long-answer textarea{
+        min-width: 175px;
+    }
+    
+    div.multiple-answer:has(div.dropdown) div.short-answer input.show{
+        min-width: 190px;
+    }
+    
+    div.centered h2{
+        width: 450px !important;
+    }
+    
+    div.long-answer textarea{
+        width: 400px;
+    }
+    
+    #contact{
+        width: 425px;
+        padding: 0 40px 60px 40px;
+    }
+    
+    #contact div.title{
+        --title-width: 280px;
+        
+        height: 120px;
+    }
+    
+    #contact div.title > span{
+        --arch-padding: 70px;
+        
+        height: 355px;
+        top: -235px;
+    }
+    
+    #contact div.title h1{
+        font-size: 34px;
+        margin-top: 20px;
+    }
+    
+    #contact div.title h2{
+        font-size: 21px;
+        bottom: -13px;
+    }
+    
+    #contact ul{
+        margin-top: 25px;
+    }
+    
+    #contact li{
+        margin: 6px 0 6px 0;
+    }
+    
+    #contact ul h2{
+        font-size: 22px;
+        line-height: 22px;
+    }
+    
+    #contact ul a{
+        font-size: 17px;
+        margin-left: 8px;
+    }
+    
+    #contact div.image{
+        height: 290px;
+        bottom: -25px;
+        right: -4px;
+    }
+    
+}
+
+@media screen and (max-width: 700px) {
+    
+    #form{
+        --form-margin: 25px;
+        --form-padding: 50px;
+        
+        width: calc(100% - (2 * (var(--form-margin) + var(--form-padding))));
+        padding: var(--form-padding);
+        margin-top: 100px;
+    }
+    
+    form div.title h1{
+        font-size: 36px;
+        padding: 0 10px 5px 10px;
+    }
+    
+    form div.title::after{
+        --shadow-width: 135px;
+        
+        height: 13px;
+        bottom: -13px;
+    }
+    
+    div.multiple-answer:nth-child(2), div.multiple-answer:has(div.dropdown){
+        --answer-margin: 20px;
+    }
+    
+    div.multiple-answer:nth-child(2) div.short-answer, div.multiple-answer:has(div.dropdown) div.short-answer:has(input.show){
+        width: calc((100% - var(--answer-margin) - 5px) / 2);
+        margin-right: var(--answer-margin);
+    }
+    
+    div.multiple-answer:nth-child(2) div.short-answer:nth-child(3){
+        margin-right: 0;
+    }
+    
+    div.multiple-answer:nth-child(2) div.short-answer input, div.multiple-answer:has(div.dropdown) div.short-answer input.show{
+        width: calc(100% - 20px);
+        min-width: 0;
+    }
+    
+    div.dropdown{
+        width: 60%;
+        min-width: 0;
+    }
+    
+    select{
+        width: calc(100% - 20px);
+        min-width: max-content;
+    }
+    
+    div.single-answer div.short-answer{
+        width: 50%;
+    }
+    
+    div.single-answer div.short-answer input{
+        width: calc(100% - 20px);
+        min-width: max-content;
+    }
+    
+    div.multiple-answer div{
+        margin-right: 20px;
+    }
+
+    div.centered h2{
+        width: 100% !important;
+    }
+    
+    div.long-answer{
+        width: 90%;
+    }
+    
+    div.long-answer textarea{
+        width: calc(100% - 20px);
+        min-width: 0;
+    }
+    
+}
+
+@media screen and (max-width: 650px) {
+    
+    #contact{
+        width: 375px;
+        padding: 0 35px 50px 35px;
+    }
+    
+    #contact div.title{
+        --title-width: 255px;
+        
+        height: 110px;
+    }
+    
+    #contact div.title > span{
+        --arch-padding: 55px;
+        
+        height: 330px;
+        top: -220px;
+    }
+    
+    #contact div.title h1{
+        font-size: 32px;
+        margin-top: 15px;
+    }
+    
+    #contact div.title h2{
+        font-size: 19px;
+        bottom: -16px;
+    }
+    
+    #contact ul{
+        margin-top: 25px;
+    }
+    
+    #contact li{
+        margin: 5px 0 6px 0;
+    }
+    
+    #contact ul h2{
+        font-size: 21px;
+        line-height: 21px;
+    }
+    
+    #contact ul a{
+        margin-left: 7px;
+    }
+    
+    #contact div.image{
+        height: 260px;
+        right: -3px;
+    }
+    
+}
+
+@media screen and (max-width: 550px) {
+    
+    #form{
+        --form-margin: 15px;
+        --form-padding: 40px;
+        
+        margin-top: 90px;
+    }
+    
+    form > div:not(div.title, div.submit-button){
+        margin: 70px 0 70px 0;
+    }
+    
+    form div.title h1{
+        font-size: 34px;
+        padding: 0 9px 5px 9px;
+    }
+    
+    form div.title::after{
+        --shadow-width: 120px;
+        
+        height: 12px;
+        bottom: -12px;
+    }
+    
+    form input, form select, form textarea{
+        font-size: 14px !important;
+    }
+    
+    div.single-choice label{
+        font-size: 15px;
+    }
+    
+    form h2{
+        font-size: 16px;
+    }
+    
+    div.multiple-answer:nth-child(2), div.multiple-answer:has(div.dropdown){
+        --answer-margin: 10px;
+    }
+    
+    div.dropdown{
+        width: 65%;
+    }
+    
+    div.single-answer div.short-answer{
+        width: 60%;
+    }
+    
+    div.multiple-answer div{
+        margin-right: 15px;
+    }
+    
+    div.choose-time:has(input:invalid)::before{
+        width: 170px;
+        bottom: -30px;
+    }
+    
+    div.long-answer{
+        width: 95%;
+    }
+    
+    div.submit-button{
+        margin: 100px 0 60px 0;
+    }
+    
+    div.submit-button button{
+        font-size: 23px;
+    }
+    
+}
+
+@media screen and (max-width: 500px) {
+    
+    #contact{
+        width: 325px;
+        padding: 0 30px 45px 30px;
+    }
+    
+    #contact div.title{
+        --title-width: 235px;
+        
+        height: 100px;
+    }
+    
+    #contact div.title > span{
+        --arch-padding: 40px;
+        
+        height: 270px;
+        top: -170px;
+    }
+    
+    #contact div.title h1{
+        font-size: 29px;
+        margin-top: 14px;
+    }
+    
+    #contact div.title h2{
+        font-size: 17px;
+        bottom: -15px;
+    }
+    
+    #contact li{
+        margin: 5px 0 5px 0;
+    }
+    
+    #contact ul h2{
+        font-size: 20px;
+        line-height: 20px;
+    }
+    
+    #contact ul a{
+        font-size: 15px;
+        margin-left: 6px;
+    }
+    
+    #contact div.image{
+        height: 250px;
+        bottom: -23px;
+    }
+    
+}
+
+@media screen and (max-width: 450px) {
+    
+    #form{
+        --form-margin: 10px;
+        --form-padding: 25px;
+        
+        margin-top: 85px;
+        margin-bottom: 150px;
+    }
+    
+    #form.complete{
+        max-height: 80px;
+    }
+    
+    form > div:not(div.title, div.submit-button){
+        margin: 64px 0 64px 0;
+    }
+    
+    form div.title h1{
+        font-size: 32px;
+        padding: 0 8px 4px 8px;
+        margin: 15px auto 0 auto;
+    }
+    
+    form div.title::after{
+        --shadow-width: 100px;
+        
+        height: 11px;
+        bottom: -11px;
+    }
+    
+    form input, form select, form textarea{
+        font-size: 13px !important;
+    }
+    
+    div.single-choice label{
+        font-size: 14px;
+        margin: 1px 0 1px 0;
+    }
+    
+    form h2{
+        font-size: 15px;
+    }
+    
+    div.short-answer input, select, div.choose-date input, div.choose-time input, div.long-answer textarea{
+        height: 28px;
+        padding: 4px 8px 4px 8px;
+    }
+    
+    div.multiple-answer:nth-child(2) div.short-answer input, div.multiple-answer:has(div.dropdown) div.short-answer input.show, select, div.single-answer div.short-answer input, div.long-answer textarea{
+        width: calc(100% - 16px);
+    }
+    
+    div.multiple-answer:nth-child(2), div.multiple-answer:has(div.dropdown){
+        --answer-margin: 4px;
+    }
+    
+    div.dropdown{
+        width: 70%;
+    }
+    
+    select{
+        height: 37px;
+    }
+    
+    div.single-answer div.short-answer{
+        width: 65%;
+    }
+    
+    div.multiple-answer div{
+        margin-right: 10px;
+    }
+    
+    div.single-choice input{
+        width: 13px;
+        height: 13px;
+    }
+    
+    div.choose-date label, div.choose-time label{
+        font-size: 10px;
+    }
+    
+    div.long-answer{
+        width: 100%;
+    }
+    
+    div.submit-button{
+        margin: 85px 0 65px 0;
+    }
+    
+    div.submit-button button{
+        font-size: 22px;
+    }
+    
+    div.choose-date:has(input:invalid)::before, div.choose-time:has(input:invalid)::before, div.short-answer:has(input.invalid)::before, div.dropdown:has(select.invalid)::before, div.single-choice.invalid label:last-child::before{
+        font-size: 10px;
+        bottom: -16px;
+    }
+    
+    div.choose-time:has(input:invalid)::before{
+        width: 160px;
+        bottom: -29px;
+    }
+    
+    #contact{
+        width: 270px;
+        padding: 0 25px 40px 25px;
+        margin-bottom: 150px;
+    }
+    
+    #contact div.title{
+        --title-width: 205px;
+        
+        height: 80px;
+    }
+    
+    #contact div.title > span{
+        --arch-padding: 30px;
+        
+        height: 190px;
+        top: -110px;
+    }
+    
+    #contact div.title h1{
+        font-size: 25px;
+        margin-top: 12px;
+    }
+    
+    #contact div.title h2{
+        font-size: 15px;
+        bottom: -10px;
+    }
+    
+    #contact ul{
+        margin-top: 20px;
+    }
+    
+    #contact li{
+        margin: 4px 0 4px 0;
+    }
+    
+    #contact ul h2{
+        font-size: 18px;
+        line-height: 18px;
+    }
+    
+    #contact ul a{
+        font-size: 15px;
+    }
+    
+    #contact div.image{
+        height: 205px;
+        bottom: -20px;
+    }
+    
+}
+
+@media screen and (max-width: 400px) {
+    
+    #form{
+        --form-padding: 20px;
+        
+        margin-top: 80px;
+    }
+    
+    #form.complete{
+        max-height: 90px;
+    }
+    
+    form > div:not(div.title, div.submit-button){
+        margin: 61px 0 61px 0;
+    }
+    
+    form div.title h1{
+        font-size: 30px;
+        margin: 25px auto 0 auto;
+    }
+    
+    form div.title::after{
+        --shadow-width: 80px;
+        
+        height: 10px;
+        bottom: -10px;
+    }
+    
+    form input, form select, form textarea{
+        font-size: 12px !important;
+    }
+    
+    div.multiple-answer:has(div.dropdown) div.short-answer:has(input.show){
+        width: 55%;
+    }
+    
+    div.single-choice label{
+        font-size: 13px;
+        padding: 4px 7px 4px 4px;
+        margin: 1px 0 1px 0;
+    }
+    
+    div.choose-date label, div.choose-time label{
+        margin-bottom: 6px;
+    }
+    
+    form h2{
+        font-size: 14px;
+    }
+    
+    div.multiple-answer div{
+        margin-right: 7px;
+    }
+    
+    div.single-choice input{
+        width: 12px;
+        height: 12px;
+        margin-right: 9px;
+    }
+    
+    div.choose-date{
+        margin-left: 8px;
+    }
+    
+    div.submit-button{
+        margin: 80px 0 70px 0;
+    }
+    
+    div.submit-button button{
+        font-size: 20px;
+        padding: 9px 27px 9px 27px;
+    }
+    
+    div.choose-time:has(input:invalid)::before{
+        width: 150px;
+    }
+    
+}
+
+@media screen and (max-width: 375px) {
+    
+    #form.complete{
+        max-height: 80px;
+    }
+    
+    form div.title h1{
+        font-size: 27px;
+        padding: 0 7px 3px 7px;
+        margin: 23px auto 0 auto;
+        border-bottom: 2px solid var(--theme-color);
+    }
+    
+    form div.title::after{
+        --shadow-width: 60px;
+        
+        height: 9px;
+        bottom: -9px;
+    }
+    
+    form h2{
+        font-size: 13px;
+    }
+    
+    div.short-answer input, select, div.choose-date input, div.choose-time input, div.long-answer textarea{
+        height: 26px;
+    }
+    
+    select{
+        height: 35px;
+    }
+    
+    div.single-choice label{
+        font-size: 12px;
+        margin: 0;
+    }
+    
+    div.single-choice label span{
+        line-height: 18px;
+    }
+    
+    div.choose-date label, div.choose-time label{
+        font-size: 9px;
+    }
+    
+    div.submit-button button{
+        font-size: 19px;
+    }
+    
+    div.choose-time:has(input:invalid)::before{
+        width: 100px;
+    }
+    
+    #contact{
+        width: 230px;
+        padding: 0 20px 30px 20px;
+    }
+    
+    #contact div.title{
+        --title-width: 180px;
+        
+        height: 70px;
+    }
+    
+    #contact div.title > span{
+        --arch-padding: 22px;
+        
+        height: 150px;
+        top: -80px;
+    }
+    
+    #contact div.title h1{
+        font-size: 22px;
+        margin-top: 7px;
+    }
+    
+    #contact div.title h2{
+        font-size: 14px;
+        bottom: -11px;
+    }
+    
+    #contact ul h2{
+        font-size: 17px;
+        line-height: 17px;
+    }
+    
+    #contact ul a{
+        font-size: 14px;
+    }
+    
+    #contact div.image{
+        height: 180px;
+        bottom: -16px;
+    }
+    
+}

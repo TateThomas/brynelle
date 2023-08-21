@@ -1,82 +1,637 @@
+@import "/css/header.css";
+@import "/css/footer.css";
 
-/****************** Success ******************/
 
-#content > div.container{
-    display: flex;
-    min-height: 100vh;
-    width: 100%;
+@font-face{
+    src: url(/fonts/title/alta-regular.otf);
+    font-family: alta;
 }
 
-#success{
-    width: max-content;
+@font-face{
+    src: url(/fonts/cursive/AnticallyRegular-OVox8.ttf);
+    font-family: antically;
 }
 
-div.title, #info{
-    display: flex;
-    width: 100%;
+@font-face{
+    src: url(/fonts/cursive/DarlingtonDemo-z8xjG.ttf);
+    font-family: darlington;
 }
 
-div.title h1{
-    padding: 15px !important;
-    padding-top: 0 !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
+@font-face{
+    src: url(/fonts/title/goodfish/goodfish.regular.otf);
+    font-family: a;
 }
 
-div.title::after{
-    bottom: -15px;
-    background-image: radial-gradient(ellipse at center top, rgba(0, 0, 0, .05), transparent 75px);
+@font-face{
+    src: url(/fonts/title/RomilePersonalUse-x3Xdr.otf);
+    font-family: b;
 }
 
-#info{
-    margin-top: 25px;
+@font-face{
+    src: url(/fonts/title/VioletyDreams-WyEOA.otf);
+    font-family: c;
 }
 
-#info div.content{
-    display: flex;
-    flex-direction: column;
-    width: max-content;
-    margin-left: auto;
-    margin-right: auto;
+@font-face{
+    src: url(/fonts/title/black-aroug/BlackArougDemoVersionRegular-GOpRA.ttf);
+    font-family: d;
 }
 
-#info div.content h2, #info div.content h3, #info a, #info div.content h4{
-    color: var(--light-black);
-    font-family: sans-serif;
-    font-size: 18px;
-    padding: 2px;
-    margin-left: auto;
-    margin-right: auto;
+@font-face{
+    src: url(/fonts/title/ranille/RanilleNormalRegular-axEpm.otf);
+    font-family: e;
 }
 
-#info div.content h3{
-    font-weight: normal;
-    margin-top: 50px;
-    margin-bottom: 0;
+@font-face{
+    src: url(/fonts/title/VtksTatuage2-3GzL.ttf);
+    font-family: f;
 }
 
-#info a{
-    padding-left: 0;
-    padding-right: 0;
-    text-decoration: underline;
-    text-underline-offset: 3px;
-    border-radius: 5px
+@font-face{
+    src: url(/fonts/title/TypographyTimes-RgRW.ttf);
+    font-family: g;
 }
 
-#info a:hover{
-    background-color: rgba(0, 0, 0, .05);
+@font-face{
+    src: url(/fonts/paragraph/coco-gothic/coco-gothic.light.ttf);
+    font-family: pa;
 }
 
-#info div.content h4{
-    font-weight: normal;
-    margin-top: 200px;
+@font-face{
+    src: url(/fonts/paragraph/coco-gothic/coco-gothic.light-italic.ttf);
+    font-family: pai;
 }
 
-#info div.content p{
+@font-face{
+    src: url(/fonts/paragraph/josefin-sans/josefin-sans.regular.ttf);
+    font-family: pb;
+}
+
+@font-face{
+    src: url(/fonts/paragraph/josefin-sans/josefin-sans.bold.ttf);
+    font-family: pbb;
+}
+
+@font-face{
+    src: url(/fonts/paragraph/josefin-sans/josefin-sans.semibold-italic.ttf);
+    font-family: pbsbi;
+}
+
+@font-face{
+    src: url(/fonts/paragraph/josefin-sans/josefin-sans.semibold.ttf);
+    font-family: pbsb;
+}
+
+@font-face{
+    src: url(/fonts/paragraph/josefin-sans/josefin-sans.italic.ttf);
+    font-family: pbi;
+}
+
+@font-face{
+    src: url(/fonts/paragraph/source-sans-pro/source-sans-pro.regular.ttf);
+    font-family: pc;
+}
+
+@font-face{
+    src: url(/fonts/paragraph/source-sans-pro/source-sans-pro.light.ttf);
+    font-family: pcl;
+}
+
+@font-face{
+    src: url(/fonts/paragraph/source-sans-pro/source-sans-pro.semibold.ttf);
+    font-family: pcsb;
+}
+
+@font-face{
+    src: url(/fonts/paragraph/source-sans-pro/source-sans-pro.italic.ttf);
+    font-family: pci;
+}
+
+@font-face{
+    src: url(/fonts/paragraph/source-sans-pro/source-sans-pro.light-italic.ttf);
+    font-family: pcli;
+}
+
+@font-face{
+    src: url(/fonts/paragraph/roboto-condensed/roboto-condensed.regular.ttf);
+    font-family: pd;
+}
+
+@font-face{
+    src: url(/fonts/cursive/holland/Holland-JRGaj.ttf);
+    font-family: ca;
+}
+
+@font-face{
+    src: url(/fonts/cursive/holland/HollandMonolineClean-VGEqZ.ttf);
+    font-family: cac;
+}
+
+@font-face{
+    src: url(/fonts/cursive/Themysion.ttf);
+    font-family: cb;
+}
+
+
+/****************** All ******************/
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    --light-black: #404040;
+    --lower-gradient-z: 2;
+    
+    background-color: white;
     margin: 0;
 }
 
-#info div.content p a{
-    font-size: 13px;
-    color: darkgray;
+h1, h2, ul, li{
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    position: relative;
+    font-family: alta;
+    font-weight: normal;
+    text-decoration: none;
+    color: white;
 }
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+#content{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    width: 100%;
+}
+
+#links li.contact{
+    background-color: #ddc2bf;
+}
+
+#links li.contact > a:hover{
+    color: #c89c97 !important;
+}
+
+
+/****************** Content ******************/
+
+#background-photo{
+    position: relative;
+    width: 100%;
+    height: 0px;
+}
+
+#background-photo img{
+    position: fixed;
+    width: 105%;
+    height: 105vh;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    object-fit: cover;
+    -webkit-filter: blur(5px);
+    filter: blur(5px);
+    z-index: 1;
+}
+
+#footer{
+    z-index: 2;
+}
+
+#content > div.container{
+    display: flex;
+    min-height: 90vh;
+    width: 100%;
+    z-index: 2;
+}
+
+
+/****************** Success ******************/
+
+
+#success{
+    --theme-color: #d2a995;
+    
+    width: 650px;
+    height: max-content;
+    padding: 35px 75px 60px 75px;
+    margin: 100px auto 150px auto;
+    box-shadow: 0 0 7px rgba(0, 0, 0, .05);
+    border-radius: 20px;
+    background-color: #fff8ee;
+}
+
+#success h1{
+    display: block;
+    padding: 5px 0 5px 0;
+    margin: 5px 0 5px 0;
+    color: var(--light-black);
+}
+
+#success div.title{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    margin-bottom: 70px;
+}
+
+#success div.title h1{
+    width: max-content;
+    font-family: d;
+    letter-spacing: 1px;
+    font-size: 40px;
+    padding: 0 15px 10px 15px;
+    margin: 5px auto 0 auto;
+    border-bottom: 3px solid var(--theme-color);
+}
+
+#success div.title::after{
+    --shadow-width: 70px;
+    
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 16px;
+    margin: auto;
+    bottom: -16px;
+    background-image: radial-gradient(ellipse at center top, rgba(0, 0, 0, .05), transparent var(--shadow-width));
+}
+
+#success div.content{
+    display: flex;
+    flex-direction: column;
+}
+
+#success div.group{
+    display: flex;
+    background-color: #faf0e6;
+    padding: 15px 25px 15px 25px;
+}
+
+#success h2{
+    color: var(--light-black);
+    font-family: d;
+    letter-spacing: 1px;
+    font-size: 26px;
+    text-align: center;
+}
+
+#success div.group h2{
+    padding-right: 25px;
+    margin: auto 25px auto auto;
+    border-right: 1px solid #999999;
+}
+
+#success h2 span{
+    display: block;
+    color: var(--theme-color);
+    font-size: 34px;
+    text-transform: uppercase;
+}
+
+#success h3{
+    color: var(--light-black);
+    font-weight: normal;
+    font-family: pb;
+    font-size: 16px;
+    width: 175px;
+    margin: auto auto auto 0;
+    text-align: center;
+}
+
+#success div.content > h2{
+    font-family: pbi;
+    font-size: 21px;
+    width: 300px;
+    margin: 30px auto 160px auto;
+}
+
+#success h2 a{
+    color: var(--light-black);
+    font-family: pbsbi;
+    padding: 3px 0 3px 0;
+}
+
+#success h2 a:hover{
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 2px;
+}
+
+#success div.line{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 1px;
+    background-color: var(--light-black);
+}
+
+#success h4{
+    color: var(--light-black);
+    font-weight: normal;
+    font-family: b;
+    font-size: 30px;
+    letter-spacing: 1px;
+    width: 300px;
+    padding: 0 3px 0 3px;
+    margin: auto;
+    text-align: center;
+    background-color: #fff8ee;
+}
+
+#success h4 span{
+    font-family: ca;
+    font-size: 48px;
+    line-height: 32px;
+    margin-left: 7px;
+}
+
+#success div.end{
+    display: flex;
+    flex-direction: column;
+    margin-top: 85px;
+}
+
+#success div.end img{
+    width: 200px;
+    margin: auto;
+}
+
+#success p{
+    margin: 5px auto 0 auto;
+}
+
+#success p a{
+    color: #707070;
+    font-family: pb;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    font-size: 16px;
+    padding: 5px;
+}
+
+
+@media screen and (max-width: 975px) {
+    
+    #success{
+        width: 550px;
+    }
+    
+}
+
+@media screen and (max-width: 825px) {
+    
+    #success{
+        width: max-content;
+    }
+    
+}
+
+@media screen and (max-width: 775px) {
+    
+    #success div.title{
+        margin-bottom: 60px;
+    }
+    
+    #success div.group{
+        padding: 15px;
+    }
+    
+    #success div.group h2{
+        font-size: 23px;
+        padding-right: 20px;
+        margin: auto 10px auto auto;
+    }
+    
+    #success div.group h2 span{
+        font-size: 31px;
+    }
+    
+    #success div.content > h2{
+        font-size: 19px;
+    }
+    
+}
+
+@media screen and (max-width: 675px) {
+    
+    #success{
+        --success-margin: 25px;
+        --side-padding: 50px;
+        
+        width: calc(100% - (2 * (var(--success-margin) + var(--side-padding))));
+        padding: 35px var(--side-padding) 60px var(--side-padding);
+        margin-top: 90px;
+    }
+    
+}
+
+@media screen and (max-width: 550px) {
+    
+    #success{
+        --success-margin: 20px;
+        --side-padding: 40px;
+        
+        padding-top: 25px;
+        padding-bottom: 50px;
+    }
+    
+    #success div.title{
+        margin-bottom: 50px;
+    }
+    
+    #success div.title h1{
+        font-size: 37px;
+        padding: 0 12px 8px 12px;
+    }
+    
+    #success div.group h2{
+        font-size: 19px;
+        padding-right: 15px;
+        margin: auto 15px auto auto;
+    }
+    
+    #success div.group h2 span{
+        font-size: 29px;
+    }
+    
+    #success h3{
+        font-size: 14px;
+        width: 125px;
+    }
+    
+    #success div.content > h2{
+        font-size: 16px;
+        width: 250px;
+        margin-bottom: 150px;
+    }
+    
+    #success h4{
+        font-size: 27px;
+        width: 275px;
+    }
+    
+    #success h4 span{
+        font-size: 44px;
+        line-height: 30px;
+    }
+    
+    #success div.end{
+        margin-top: 75px;
+    }
+    
+    #success div.end img{
+        width: 150px;
+    }
+    
+    #success p a{
+        font-size: 14px;
+    }
+    
+}
+
+@media screen and (max-width: 475px) {
+    
+    #success{
+        --success-margin: 15px;
+        --side-padding: 30px;
+        
+        padding-bottom: 40px;
+    }
+    
+    #success div.title{
+        margin-bottom: 45px;
+    }
+    
+    #success div.title h1{
+        font-size: 35px;
+        padding: 0 10px 5px 10px;
+    }
+    
+    #success div.group{
+        padding: 10px;
+    }
+    
+    #success div.group h2{
+        font-size: 17px;
+        padding-right: 10px;
+        margin: auto 12px auto auto;
+    }
+    
+    #success div.group h2 span{
+        font-size: 25px;
+    }
+    
+    #success h3{
+        font-size: 13px;
+        width: 110px;
+    }
+    
+    #success div.content > h2{
+        font-size: 14px;
+        width: 225px;
+        margin-top: 25px;
+        margin-bottom: 130px;
+    }
+    
+    #success h4{
+        font-size: 23px;
+        width: 230px;
+    }
+    
+    #success h4 span{
+        font-size: 36px;
+        line-height: 29px;
+    }
+    
+    #success div.end{
+        margin-top: 65px;
+    }
+    
+    #success div.end img{
+        width: 125px;
+    }
+    
+    #success p a{
+        font-size: 13px;
+    }
+    
+}
+
+@media screen and (max-width: 425px) {
+    
+    #success{
+        --success-margin: 10px;
+        --side-padding: 20px;
+        
+        padding-top: 20px;
+        padding-bottom: 35px;
+    }
+    
+    #success div.title{
+        margin-bottom: 40px;
+    }
+    
+    #success div.title h1{
+        font-size: 32px;
+        padding: 0 8px 4px 8px;
+    }
+    
+    #success div.group{
+        padding: 10px 7px 10px 7px;
+    }
+    
+    #success div.group h2{
+        font-size: 15px;
+    }
+    
+    #success div.group h2 span{
+        font-size: 23px;
+    }
+    
+    #success h3{
+        font-size: 11px;
+        width: 95px;
+    }
+    
+    #success div.content > h2{
+        font-size: 13px;
+        width: 195px;
+        margin-bottom: 115px;
+    }
+    
+    #success h4{
+        font-size: 21px;
+        width: 205px;
+    }
+    
+    #success h4 span{
+        font-size: 32px;
+        line-height: 27px;
+    }
+    
+    #success div.end{
+        margin-top: 55px;
+    }
+    
+    #success div.end img{
+        width: 120px;
+    }
+    
+    #success p{
+        margin-top: 0px;
+    }
+    
+    #success p a{
+        font-size: 11px;
+    }
+    
+}
+

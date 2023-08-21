@@ -627,6 +627,10 @@ function setSubmitValidation() {
         if (!checkFormValidity()) {
             e.preventDefault();
         }
+        else {
+            document.getElementById("form").className = "complete";
+            window.scrollTo(0, 0);
+        }
         
     });
     submitButton.addEventListener('click', function(e) {
@@ -636,6 +640,11 @@ function setSubmitValidation() {
     });
     
 }
+
+
+let archWidth = document.querySelector(".title span").clientWidth;
+const circleType = new CircleType(document.querySelector(".curved"));
+circleType.radius(archWidth / 2).dir(-1);
 
 
 window.onload = function() {
