@@ -664,6 +664,7 @@ div.single-choice.invalid label:last-child::before{
 
 #contact div.image{
     position: absolute;
+    width: auto;
     height: 330px;
     bottom: -30px;
     right: -5px;
@@ -671,7 +672,7 @@ div.single-choice.invalid label:last-child::before{
 }
 
 #contact img{
-    width: 100%;
+    width: auto;
     height: 100%;
 }
 

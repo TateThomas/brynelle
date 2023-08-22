@@ -239,14 +239,15 @@ a{
     flex-direction: column;
     position: relative;
     width: 100%;
-    margin-bottom: 70px;
+    margin-bottom: 40px;
 }
 
 #success div.title h1{
     width: max-content;
     font-family: d;
     letter-spacing: 1px;
-    font-size: 40px;
+    font-size: 45px;
+    letter-spacing: 4px;
     padding: 0 15px 10px 15px;
     margin: 5px auto 0 auto;
     border-bottom: 3px solid var(--theme-color);
@@ -271,7 +272,7 @@ a{
 
 #success div.group{
     display: flex;
-    background-color: #faf0e6;
+    background-color: #ffefe8;
     padding: 15px 25px 15px 25px;
 }
 
@@ -284,9 +285,22 @@ a{
 }
 
 #success div.group h2{
-    padding-right: 25px;
-    margin: auto 25px auto auto;
-    border-right: 1px solid #999999;
+    margin: 0 0 auto auto;
+    text-align: right;
+    right: 30px;
+/*    border-right: 1px solid #999999;*/
+}
+
+#success div.group h2::after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 1px;
+    height: 228%;
+    background-color: #999999;
+    right: -20px;
+    top: -20px;
+    transform: rotate(45deg);
 }
 
 #success h2 span{
@@ -301,16 +315,22 @@ a{
     font-weight: normal;
     font-family: pb;
     font-size: 16px;
-    width: 175px;
+    width: 150px;
     margin: auto auto auto 0;
-    text-align: center;
+    text-align: left;
+}
+
+#success div.group h3{
+    position: relative;
+    margin-top: 80px;
+    left: -15px;
 }
 
 #success div.content > h2{
     font-family: pbi;
     font-size: 21px;
     width: 300px;
-    margin: 30px auto 160px auto;
+    margin: 40px auto 160px auto;
 }
 
 #success h2 a{
@@ -392,6 +412,14 @@ a{
         width: max-content;
     }
     
+    #success div.group h2{
+        right: 10px;
+    }
+    
+    #success div.group h3{
+        left: 5px;
+    }
+    
 }
 
 @media screen and (max-width: 775px) {
@@ -406,8 +434,16 @@ a{
     
     #success div.group h2{
         font-size: 23px;
-        padding-right: 20px;
-        margin: auto 10px auto auto;
+        right: 0;
+    }
+    
+    #success div.group h2::after{
+        height: 245%;
+        right: -10px;
+    }
+    
+    #success div.group h3{
+        margin-top: 75px;
     }
     
     #success div.group h2 span{
@@ -433,7 +469,7 @@ a{
     
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 555px) {
     
     #success{
         --success-margin: 20px;
@@ -454,8 +490,6 @@ a{
     
     #success div.group h2{
         font-size: 19px;
-        padding-right: 15px;
-        margin: auto 15px auto auto;
     }
     
     #success div.group h2 span{
@@ -465,6 +499,10 @@ a{
     #success h3{
         font-size: 14px;
         width: 125px;
+    }
+    
+    #success div.group h3{
+        margin-top: 65px;
     }
     
     #success div.content > h2{
@@ -521,17 +559,25 @@ a{
     
     #success div.group h2{
         font-size: 17px;
-        padding-right: 10px;
-        margin: auto 12px auto auto;
     }
     
     #success div.group h2 span{
         font-size: 25px;
     }
     
+    #success div.group h2::after{
+        height: 250%;
+        right: -8px;
+    }
+    
     #success h3{
         font-size: 13px;
         width: 110px;
+    }
+    
+    #success div.group h3{
+        margin-top: 55px;
+        left: 2px;
     }
     
     #success div.content > h2{
@@ -601,6 +647,10 @@ a{
         width: 95px;
     }
     
+    #success div.group h3{
+        margin-top: 50px;
+    }
+    
     #success div.content > h2{
         font-size: 13px;
         width: 195px;
@@ -631,6 +681,33 @@ a{
     
     #success p a{
         font-size: 11px;
+    }
+    
+}
+
+@media screen and (max-width: 340px) {
+    
+    #success div.group h2{
+        font-size: 12px;
+    }
+    
+    #success div.group h2 span{
+        font-size: 19px;
+    }
+    
+    #success div.group h2::after{
+        height: 262%;
+        top: -15px;
+        right: -2px;
+    }
+    
+    #success h3{
+        font-size: 10px;
+    }
+    
+    #success div.group h3{
+        margin-top: 39px;
+        left: 0;
     }
     
 }

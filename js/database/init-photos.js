@@ -112,6 +112,7 @@ var pictureArray = [
     ["/images/gallery/83", "2023,6,25,20,0,33", "Utah Lake Family 2023", "Couple holding hands with girl also using her other hand to hold his arm", "b", "couples", ["utah-lake", "utah-county", "lakes", "utah"], "sunset"],
     ["/images/gallery/84", "2021,11,20,8,35,56", "Moab Cozy Engagements 2021", "Couple running and holding hands", "c", "engagements", ["arches", "moab", "desert", "utah", "arizona"], "cloudy"],
     ["/images/gallery/85", "2021,11,20,8,47,31", "Moab Cozy Engagements 2021", "Guy hugging girl from behind while they nuzzle into each other", "d", "engagements", ["arches", "moab", "desert", "utah", "arizona"], "shaded"]
+    ["/images/gallery", "date", "title", "alt", "priority", "type", ["location"], "lighting"],
 ];
 
 // ["/images/gallery/", "date", "name", "alt", "priority", "type", ["locations"], "lighting"]

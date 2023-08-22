@@ -15,7 +15,7 @@ var sliderInterval;
 //let startX, scrollLeft, scrollX, scrollVelocity, scrollTime;
 const travelLocations = document.getElementById("travel").getElementsByTagName("ul")[0].children;
 const travelImages = document.getElementById("travel").querySelectorAll(".pictures")[0].getElementsByTagName("div");
-const moreTravelFactor = .2;
+const moreTravelFactor = .35;
 
 var currentY = 0;
 var counter = 0;
