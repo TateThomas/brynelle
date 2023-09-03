@@ -4,137 +4,137 @@
 @import "/css/book-now.css";
 
 
-@font-face{
+@font-face {
     src: url(/fonts/title/alta-regular.otf);
     font-family: alta;
 }
 
-@font-face{
+@font-face {
     src: url(/fonts/cursive/AnticallyRegular-OVox8.ttf);
     font-family: antically;
 }
 
-@font-face{
+@font-face {
     src: url(/fonts/cursive/DarlingtonDemo-z8xjG.ttf);
     font-family: darlington;
 }
 
-@font-face{
+@font-face {
     src: url(/fonts/title/goodfish/goodfish.regular.otf);
     font-family: a;
 }
 
-@font-face{
+@font-face {
     src: url(/fonts/title/RomilePersonalUse-x3Xdr.otf);
     font-family: b;
 }
 
-@font-face{
+@font-face {
     src: url(/fonts/title/VioletyDreams-WyEOA.otf);
     font-family: c;
 }
 
-@font-face{
+@font-face {
     src: url(/fonts/title/black-aroug/BlackArougDemoVersionRegular-GOpRA.ttf);
     font-family: d;
 }
 
-@font-face{
+@font-face {
     src: url(/fonts/title/ranille/RanilleNormalRegular-axEpm.otf);
     font-family: e;
 }
 
-@font-face{
+@font-face {
     src: url(/fonts/title/VtksTatuage2-3GzL.ttf);
     font-family: f;
 }
 
-@font-face{
+@font-face {
     src: url(/fonts/title/TypographyTimes-RgRW.ttf);
     font-family: g;
 }
 
-@font-face{
+@font-face {
     src: url(/fonts/paragraph/coco-gothic/coco-gothic.light.ttf);
     font-family: pa;
 }
 
-@font-face{
+@font-face {
     src: url(/fonts/paragraph/coco-gothic/coco-gothic.light-italic.ttf);
     font-family: pai;
 }
 
-@font-face{
+@font-face {
     src: url(/fonts/paragraph/josefin-sans/josefin-sans.regular.ttf);
     font-family: pb;
 }
 
-@font-face{
+@font-face {
     src: url(/fonts/paragraph/josefin-sans/josefin-sans.bold.ttf);
     font-family: pbb;
 }
 
-@font-face{
+@font-face {
     src: url(/fonts/paragraph/josefin-sans/josefin-sans.semibold-italic.ttf);
     font-family: pbsbi;
 }
 
-@font-face{
+@font-face {
     src: url(/fonts/paragraph/josefin-sans/josefin-sans.semibold.ttf);
     font-family: pbsb;
 }
 
-@font-face{
+@font-face {
     src: url(/fonts/paragraph/josefin-sans/josefin-sans.italic.ttf);
     font-family: pbi;
 }
 
-@font-face{
+@font-face {
     src: url(/fonts/paragraph/source-sans-pro/source-sans-pro.regular.ttf);
     font-family: pc;
 }
 
-@font-face{
+@font-face {
     src: url(/fonts/paragraph/source-sans-pro/source-sans-pro.light.ttf);
     font-family: pcl;
 }
 
-@font-face{
+@font-face {
     src: url(/fonts/paragraph/source-sans-pro/source-sans-pro.semibold.ttf);
     font-family: pcsb;
 }
 
-@font-face{
+@font-face {
     src: url(/fonts/paragraph/source-sans-pro/source-sans-pro.italic.ttf);
     font-family: pci;
 }
 
-@font-face{
+@font-face {
     src: url(/fonts/paragraph/source-sans-pro/source-sans-pro.light-italic.ttf);
     font-family: pcli;
 }
 
-@font-face{
+@font-face {
     src: url(/fonts/paragraph/roboto-condensed/roboto-condensed.regular.ttf);
     font-family: pd;
 }
 
-@font-face{
+@font-face {
     src: url(/fonts/cursive/holland/Holland-JRGaj.ttf);
     font-family: ca;
 }
 
-@font-face{
+@font-face {
     src: url(/fonts/cursive/holland/HollandMonolineClean-VGEqZ.ttf);
     font-family: cac;
 }
 
-@font-face{
+@font-face {
     src: url(/fonts/cursive/Themysion.ttf);
     font-family: cb;
 }
 
-@font-face{
+@font-face {
     src: url(/fonts/cursive/BrittanySignature.ttf);
     font-family: cc;
 }
@@ -142,15 +142,18 @@
 
 /****************** All ******************/
 
-body{
+body {
     --light-black: #404040;
     --lower-gradient-z: 2;
-    
+
     margin: 0;
     background-color: #fffbf5;
 }
 
-h1, h2, ul, li{
+h1,
+h2,
+ul,
+li {
     padding: 0;
     margin: 0;
     display: inline-block;
@@ -161,14 +164,14 @@ h1, h2, ul, li{
     color: white;
 }
 
-a{
+a {
     color: white;
     text-decoration: none;
 }
 
-#content{
+#content {
     --arches-offset: -100px;
-    
+
     color: white;
     overflow-x: hidden;
     width: 100%;
@@ -177,9 +180,9 @@ a{
 
 /****************** Top Page ******************/
 
-#top-page{
+#top-page {
     --top-page-height: 122.4vh;
-    
+
     position: relative;
     height: var(--top-page-height);
     min-height: calc(100vh - var(--arches-offset) + 50px);
@@ -188,34 +191,35 @@ a{
     z-index: calc(var(--lower-gradient-z) + 1);
 }
 
-#images{
+#images {
     position: relative;
     display: block;
 }
 
-#images img{
+#images img {
     --image-height-offset: 80px;
-    
+
     position: absolute;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     height: calc(max(var(--top-page-height), 100vh - var(--arches-offset) + 50px) + var(--image-height-offset));
     width: 100%;
     top: calc(-1 * var(--image-height-offset));
     transition: opacity 2.5s;
 }
 
-#top-page img.show{
+#top-page img.show {
     opacity: 1;
 }
 
-#top-page img.hidden{
+#top-page img.hidden {
     opacity: 0;
 }
 
-#top-page h2{
+#top-page h2 {
     --left-transition: 3.5s;
     --opacity-transition: 4.5s;
-    
+
     position: relative;
     top: 62vh;
     left: -400px;
@@ -228,26 +232,26 @@ a{
     transition: left var(--left-transition), opacity var(--opacity-transition);
 }
 
-#top-page h2:nth-child(3){
+#top-page h2:nth-child(3) {
     --animation-extend: .25s;
-    
+
     left: -525px;
     transition: left calc(var(--left-transition) + var(--animation-extend)), opacity calc(var(--opacity-transition) + var(--animation-extend));
 }
 
-#top-page h2.loaded{
+#top-page h2.loaded {
     opacity: 1;
 }
 
-#top-page h2.loaded:nth-child(2){
+#top-page h2.loaded:nth-child(2) {
     left: 50px;
 }
 
-#top-page h2.loaded:nth-child(3){
+#top-page h2.loaded:nth-child(3) {
     left: 150px;
 }
 
-#gradient{
+#gradient {
     position: absolute;
     width: 100%;
     height: 40vh;
@@ -259,14 +263,14 @@ a{
 
 /****************** Mid Page ******************/
 
-#mid-page{
+#mid-page {
     --mid-page-height: 600px;
     --arches-width: 325px;
     --arches-height: 450px;
     --arches-border-width: 5px;
     --desired-base-margin: 50px;
     --total-arches-on-row: 3;
-    
+
     position: relative;
     display: flex;
     flex-direction: column;
@@ -274,18 +278,18 @@ a{
     margin-bottom: 100px;
 }
 
-#arches{
+#arches {
     max-width: calc((var(--arches-width) + (2 * var(--desired-base-margin))) * var(--total-arches-on-row));
     height: calc(var(--arches-height) + (2 * var(--arches-border-width)) + var(--arches-offset));
     display: flex;
     margin: auto;
 }
 
-#arches li{
+#arches li {
     --shadow-animation: 1.5s;
     --opacity-animation: 3s;
     --animation-delay: .2s;
-    
+
     position: relative;
     flex-basis: var(--arches-width);
     height: var(--arches-height);
@@ -300,35 +304,37 @@ a{
     transition: box-shadow var(--shadow-animation), opacity var(--opacity-animation), top 2s;
 }
 
-#arches.show li, #arches.done li{
+#arches.show li,
+#arches.done li {
     top: var(--arches-offset);
     opacity: 1;
 }
 
-#arches.done li{
+#arches.done li {
     transition: box-shadow var(--shadow-animation), opacity var(--opacity-animation), top .75s;
 }
 
-#arches.done li:hover{
+#arches.done li:hover {
     box-shadow: 0px 0px 15px rgba(0, 0, 0, .05);
     top: calc(var(--arches-offset) - 10px);
 }
 
-#arches.show li:nth-child(2){
+#arches.show li:nth-child(2) {
     transition-delay: var(--animation-delay);
 }
 
-#arches.show li:nth-child(3){
+#arches.show li:nth-child(3) {
     transition-delay: calc(2 * var(--animation-delay));
 }
 
-#arches img{
+#arches img {
     width: var(--arches-width);
     height: var(--arches-height);
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
 }
 
-#arches h2{
+#arches h2 {
     color: #fffbf5;
     font-family: d;
     width: 100%;
@@ -374,16 +380,20 @@ a{
 
 /****************** Break ******************/
 
-#break{
+#break {
     display: flex;
     width: 100%;
-/*    height: 301px;*/
+    /*    height: 301px;*/
+    height: -webkit-max-content;
+    height: -moz-max-content;
     height: max-content;
 }
 
-#break > div{
+#break>div {
     position: relative;
     display: flex;
+    width: -webkit-max-content;
+    width: -moz-max-content;
     width: max-content;
     min-width: 0;
     height: 1px;
@@ -394,11 +404,11 @@ a{
     transition: min-width 1s;
 }
 
-#break.show > div{
+#break.show>div {
     min-width: 1280px;
 }
 
-#break h2{
+#break h2 {
     color: var(--light-black);
     font-family: b;
     text-transform: uppercase;
@@ -488,7 +498,7 @@ a{
 
 /****************** Lower Page ******************/
 
-#lower-page{
+#lower-page {
     display: flex;
     padding: 100px;
     padding-left: 0;
@@ -497,13 +507,13 @@ a{
     z-index: calc(var(--lower-gradient-z) - 1);
 }
 
-#lower-page > div{
+#lower-page>div {
     --lower-page-radius: 40px;
     --lower-page-padding: 100px;
     --lower-page-border-thickness: 2px;
     --about-me-height: 575px;
     --my-work-height: 700px;
-    
+
     position: relative;
     margin: auto;
 }
@@ -511,12 +521,12 @@ a{
 
 /****************** Lower Page: Line Gradient ******************/
 
-#lower-page-gradient{
+#lower-page-gradient {
     --invisible-height: 0px;
     --invisible-height-two: 0px;
     --invisible-width: 0px;
     --gradient-size: 100px;
-    
+
     position: absolute;
     width: 100%;
     height: calc(100% + var(--gradient-size));
@@ -525,11 +535,13 @@ a{
     overflow: hidden;
     z-index: var(--lower-gradient-z);
     transition: grid-template-columns 1s;
+    transition: grid-template-columns 1s, -ms-grid-columns 1s;
 }
 
-#lower-page-gradient > div{
+#lower-page-gradient>div {
     display: grid;
     grid-template-columns: calc(100% - var(--invisible-width)) var(--gradient-size) var(--invisible-width);
+    grid-template-rows: minmax(-webkit-min-content, -webkit-max-content) auto;
     grid-template-rows: minmax(min-content, max-content) auto;
     grid-template-areas:
         "three four ."
@@ -541,25 +553,25 @@ a{
     transition: 1s;
 }
 
-#lower-page-gradient div.gradient-one{
+#lower-page-gradient div.gradient-one {
     grid-area: three;
     height: var(--gradient-size);
     background-image: linear-gradient(transparent, #fffbf5);
 }
 
-#lower-page-gradient div.gradient-two{
+#lower-page-gradient div.gradient-two {
     grid-area: four;
     height: var(--gradient-size);
     background-image: radial-gradient(circle at left bottom, #fffbf5, transparent 70%);
 }
 
-#lower-page-gradient div.gradient-three{
+#lower-page-gradient div.gradient-three {
     grid-area: five;
     height: 100%;
     background-image: linear-gradient(to right, #fffbf5, transparent);
 }
 
-#lower-page-gradient div.solid{
+#lower-page-gradient div.solid {
     grid-area: six;
     height: 100%;
     background-color: #fffbf5;
@@ -569,11 +581,11 @@ a{
 /****************** Lower Page: About Me ******************/
 
 
-#about-me{
+#about-me {
     --name-offset-top: 25px;
     --name-offset-left: 70px;
     --about-me-color: #fae8d7;
-    
+
     display: inline-block;
     padding: var(--lower-page-padding);
     padding-left: 0;
@@ -585,7 +597,7 @@ a{
     border-bottom-right-radius: calc(var(--lower-page-padding) + var(--lower-page-radius));
 }
 
-#about-me > div{
+#about-me>div {
     position: relative;
     display: flex;
     width: calc(100% + var(--lower-page-padding) + var(--lower-page-radius));
@@ -593,7 +605,7 @@ a{
     z-index: calc(var(--lower-gradient-z) + 1);
 }
 
-#about-me-pictures{
+#about-me-pictures {
     display: flex;
     position: relative;
     width: 600px;
@@ -601,7 +613,7 @@ a{
     margin: auto;
 }
 
-#about-me-pictures h2{
+#about-me-pictures h2 {
     font-family: cc;
     font-size: 55px;
     line-height: 63px;
@@ -616,13 +628,13 @@ a{
     z-index: 7;
 }
 
-#about-me-pictures div.image{
+#about-me-pictures div.image {
     position: absolute;
     padding: 25px 27px 75px 27px;
     box-shadow: 0 0 10px rgba(0, 0, 0, .05);
 }
 
-#about-me-pictures div.a{
+#about-me-pictures div.a {
     width: 300px;
     height: 425px;
     left: 0;
@@ -631,7 +643,7 @@ a{
     z-index: 5;
 }
 
-#about-me-pictures div.b{
+#about-me-pictures div.b {
     width: 260px;
     height: 260px;
     top: 30px;
@@ -641,19 +653,21 @@ a{
     z-index: 6;
 }
 
-#about-me-pictures img{
+#about-me-pictures img {
     width: calc(100% - 22px);
     height: calc(100% - 22px);
     padding: 10px;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     border: 1px solid white;
 }
 
-#about-me-pictures img:nth-child(2){
-    object-position: left;
+#about-me-pictures img:nth-child(2) {
+    -o-object-position: left;
+       object-position: left;
 }
 
-#about-me-desc{
+#about-me-desc {
     position: relative;
     background-color: var(--about-me-color);
     width: 400px;
@@ -663,17 +677,19 @@ a{
     border-bottom-right-radius: var(--lower-page-radius);
 }
 
-#about-me-desc h3{
+#about-me-desc h3 {
     color: var(--light-black);
     font-weight: normal;
     font-family: b;
     letter-spacing: 1px;
     font-size: 37px;
+    width: -webkit-max-content;
+    width: -moz-max-content;
     width: max-content;
     margin: 0 auto 25px auto;
 }
 
-#about-me-desc p{
+#about-me-desc p {
     color: var(--light-black);
     font-family: pb;
     font-size: 21px;
@@ -681,19 +697,23 @@ a{
     margin: 15px 0 15px 0;
 }
 
-#about-me-desc-more{
+#about-me-desc-more {
+    width: -webkit-max-content;
+    width: -moz-max-content;
     width: max-content;
     display: flex;
     flex-direction: column;
     margin-left: auto;
 }
 
-#about-me-desc-more a{
+#about-me-desc-more a {
     padding: 4px 4px 1px 4px;
 }
 
-#about-me-desc-more h3{
+#about-me-desc-more h3 {
     color: var(--light-black);
+    width: -webkit-max-content;
+    width: -moz-max-content;
     width: max-content;
     font-family: d;
     font-weight: normal;
@@ -703,32 +723,32 @@ a{
     line-height: 27px;
 }
 
-#about-me-desc-more div{
+#about-me-desc-more div {
     width: 0;
     margin: auto;
     border-bottom: 1px solid var(--light-black);
     transition: width .3s;
 }
 
-#about-me-desc-more:hover div{
+#about-me-desc-more:hover div {
     width: 100%;
 }
 
 
 /****************** Lower Page: My Work ******************/
 
-#lower-page > div > div:last-child{
+#lower-page>div>div:last-child {
     position: relative;
     display: flex;
     top: calc(-1 * var(--lower-page-border-thickness));
     width: 100%;
 }
 
-#my-work{
+#my-work {
     --content-padding: 50px;
     --my-work-width: 1272px;
     --content-width: 1416px;
-    
+
     position: relative;
     display: inline-block;
     width: var(--my-work-width);
@@ -740,8 +760,10 @@ a{
     border-top-left-radius: calc(var(--lower-page-padding) + var(--lower-page-radius));
 }
 
-#my-work h2{
+#my-work h2 {
     position: absolute;
+    width: -webkit-max-content;
+    width: -moz-max-content;
     width: max-content;
     color: var(--light-black);
     transform: rotate(-90deg);
@@ -759,13 +781,13 @@ a{
 }
 */
 
-#my-work h2:hover{
+#my-work h2:hover {
     cursor: vertical-text;
 }
 
-#my-work-content{
+#my-work-content {
     position: relative;
-    height: calc(var(--my-work-height) +  var(--lower-page-border-thickness) + (2 * var(--lower-page-padding)));
+    height: calc(var(--my-work-height) + var(--lower-page-border-thickness) + (2 * var(--lower-page-padding)));
     width: calc(100% + var(--lower-page-padding) + var(--lower-page-radius));
     width: var(--content-width);
     border-top-left-radius: calc(var(--lower-page-padding) + var(--lower-page-radius));
@@ -775,9 +797,9 @@ a{
     z-index: calc(var(--lower-gradient-z) + 1);
 }
 
-#my-work-content div.content{
+#my-work-content div.content {
     --picture-padding: 30px;
-    
+
     width: 100%;
     height: calc(100% - var(--content-padding));
     padding: var(--picture-padding);
@@ -793,21 +815,23 @@ a{
     */
     overflow-x: hidden;
     z-index: 3;
+    cursor: -webkit-grab;
     cursor: grab;
 }
 
-#my-work-content div.content:active{
+#my-work-content div.content:active {
+    cursor: -webkit-grabbing;
     cursor: grabbing;
 }
 
-#my-work-content button.shadow-scroll{
+#my-work-content button.shadow-scroll {
     --light-button-shadow: rgb(0, 0, 0, .1);
     --extra-width: 50px;
     --cursor-shadow-size: 600px;
     --cursor-shadow: rgba(0, 0, 0, .3);
     --arrow-color: rgba(255, 255, 255, .7);
     --button-width: calc(var(--lower-page-padding) + var(--lower-page-radius) + var(--extra-width));
-    
+
     float: left;
     position: absolute;
     width: var(--button-width);
@@ -824,10 +848,10 @@ a{
     transition: opacity 1s, width .75s, margin-left .75s;
 }
 
-#my-work-content button.shadow-scroll div.arrow{
+#my-work-content button.shadow-scroll div.arrow {
     --arrow-size: 40px;
     --arrow-left-offset: 30px;
-    
+
     position: absolute;
     width: var(--arrow-size);
     height: var(--arrow-size);
@@ -839,7 +863,7 @@ a{
     z-index: calc(var(--lower-gradient-z) + 3);
 }
 
-#my-work-content button.shadow-scroll div.mouse-shadow{
+#my-work-content button.shadow-scroll div.mouse-shadow {
     width: 100%;
     height: 100%;
     position: relative;
@@ -847,7 +871,7 @@ a{
     mask-image: linear-gradient(to right, rgba(0, 0, 0, 1) 20%, rgba(0, 0, 0, 0));
 }
 
-#my-work-content button.shadow-scroll div.mouse-shadow::after{
+#my-work-content button.shadow-scroll div.mouse-shadow::after {
     content: '';
     position: absolute;
     width: var(--cursor-shadow-size);
@@ -857,152 +881,157 @@ a{
     background: radial-gradient(var(--cursor-shadow), transparent 70%);
 }
 
-#my-work-content button.shadow-scroll:hover{
+#my-work-content button.shadow-scroll:hover {
     opacity: 1;
 }
 
-#my-work-content button.shadow-scroll:last-child{
+#my-work-content button.shadow-scroll:last-child {
     left: calc(100% - var(--lower-page-padding) - var(--lower-page-radius) - var(--extra-width));
     border-radius: 0;
     background-image: linear-gradient(-90deg, var(--light-button-shadow), transparent);
 }
 
-#my-work-content button.shadow-scroll:last-child div.arrow{
+#my-work-content button.shadow-scroll:last-child div.arrow {
     transform: rotate(135deg);
     left: calc(var(--lower-page-padding) + var(--lower-page-radius) - var(--arrow-left-offset));
 }
 
-#my-work-content button.shadow-scroll:last-child div.mouse-shadow{
+#my-work-content button.shadow-scroll:last-child div.mouse-shadow {
     -webkit-mask-image: linear-gradient(to left, rgba(0, 0, 0, 1) 20%, rgba(0, 0, 0, 0));
     mask-image: linear-gradient(to left, rgba(0, 0, 0, 1) 20%, rgba(0, 0, 0, 0));
 }
 
-#my-work-content div.content{
+#my-work-content div.content {
     position: relative;
     left: -45px;
 }
 
-#my-work-content div.container{
+#my-work-content div.container {
     display: flex;
     flex-direction: column;
     height: calc(var(--my-work-height) + var(--content-padding) + var(--lower-page-border-thickness) + 100px);
     margin: 0 20px 0 20px;
 }
 
-#my-work-content div.container div{
+#my-work-content div.container div {
     position: relative;
     overflow: hidden;
     width: 100%;
     padding: 15px;
-/*    box-shadow: 0 0 7px rgba(0, 0, 0, .15);*/
+    /*    box-shadow: 0 0 7px rgba(0, 0, 0, .15);*/
 }
 
-#my-work-content div.container div:first-child{
+#my-work-content div.container div:first-child {
     margin-bottom: 50px;
 }
 
-#my-work-content div.container div img{
+#my-work-content div.container div img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     z-index: 4;
 }
 
-#my-work-content div.a div:first-child{
+#my-work-content div.a div:first-child {
     height: 65%;
     margin-top: 60px;
     margin-bottom: 40px;
 }
 
-#my-work-content div.b div:first-child{
+#my-work-content div.b div:first-child {
     margin-bottom: 35px;
 }
 
-#my-work-content div.b div:last-child{
+#my-work-content div.b div:last-child {
     height: 80%;
 }
 
-#my-work-content div.c div:first-child{
+#my-work-content div.c div:first-child {
     margin-top: 25px;
 }
 
-#my-work-content div.c div:last-child{
+#my-work-content div.c div:last-child {
     margin-bottom: 40px;
 }
 
-#my-work-content div.d div:first-child{
+#my-work-content div.d div:first-child {
     margin-top: 75px;
     margin-bottom: 50px;
 }
 
-#my-work-content div.d div:last-child{
+#my-work-content div.d div:last-child {
     height: 80%;
 }
 
-#my-work-content div.e div:first-child{
+#my-work-content div.e div:first-child {
     margin-top: 10px;
     height: 60%;
 }
 
-#my-work-content div.f div:first-child{
+#my-work-content div.f div:first-child {
     height: 40%;
 }
 
-#my-work-content div.f div:last-child{
+#my-work-content div.f div:last-child {
     margin-bottom: 10px;
 }
 
-#my-work-content div.g div:first-child{
+#my-work-content div.g div:first-child {
     height: 60%;
 }
 
-#my-work-content div.g div:last-child{
+#my-work-content div.g div:last-child {
     margin-bottom: 40px;
 }
 
-#my-work-content div.h div:first-child{
+#my-work-content div.h div:first-child {
     height: 30%;
     margin-top: 30px;
 }
 
-#my-work-content div.h div:last-child{
+#my-work-content div.h div:last-child {
     height: 60%;
 }
 
-#my-work-content div.i div:first-child{
+#my-work-content div.i div:first-child {
     margin-top: 10px;
 }
 
-#my-work-content div.i div:last-child{
+#my-work-content div.i div:last-child {
     margin-bottom: 20px;
 }
 
-#my-work-content div.j div:first-child{
+#my-work-content div.j div:first-child {
     height: 35%;
     margin-top: 50px;
 }
 
-#my-work-content div.k div:first-child{
+#my-work-content div.k div:first-child {
     height: 65%;
 }
 
-#my-work-content div.l div:first-child{
+#my-work-content div.l div:first-child {
     height: 35%;
     margin-top: 30px;
 }
 
-#my-work-explore{
+#my-work-explore {
     --explore-font-size: 40px;
-    
+
     position: relative;
     display: flex;
     width: calc(100% + var(--lower-page-padding) + var(--lower-page-radius));
+    height: -webkit-max-content;
+    height: -moz-max-content;
     height: max-content;
     top: -50px;
     z-index: calc(var(--lower-gradient-z) + 1);
 }
 
-#my-work-explore > div{
+#my-work-explore>div {
+    width: -webkit-max-content;
+    width: -moz-max-content;
     width: max-content;
     height: calc(var(--explore-font-size) + var(--explore-font-size) + 4px);
     margin: 0;
@@ -1012,7 +1041,7 @@ a{
     flex-direction: column;
 }
 
-#my-work-explore h3{
+#my-work-explore h3 {
     color: var(--light-black);
     font-family: antically;
     font-weight: normal;
@@ -1020,7 +1049,7 @@ a{
     margin: 0;
 }
 
-#my-work-explore > div > div{
+#my-work-explore>div>div {
     position: relative;
     width: 0;
     height: 0;
@@ -1032,16 +1061,16 @@ a{
     transition: width .3s;
 }
 
-#my-work-explore > div:hover div{
+#my-work-explore>div:hover div {
     width: 100%;
 }
 
 
 /****************** Bottom Page ******************/
 
-#bottom-page{
+#bottom-page {
     --bottom-color: #f1dcc7;
-    
+
     position: relative;
     background-color: var(--bottom-color);
     margin-top: 250px;
@@ -1051,30 +1080,30 @@ a{
     z-index: calc(var(--lower-gradient-z) + 5);
 }
 
-#bottom-page > h2{
+#bottom-page>h2 {
     --travel-padding: 30px;
     --top-padding: 15px;
-    
+
     position: absolute;
     padding: var(--travel-padding);
     padding-top: var(--top-padding);
     top: -100px;
     font-family: d;
     text-transform: lowercase;
-/*    font-weight: bold;*/
+    /*    font-weight: bold;*/
     letter-spacing: 2px;
     font-size: 55px;
     line-height: 50px;
     color: var(--light-black);
-/*    left: calc(100% - 250px);*/
+    /*    left: calc(100% - 250px);*/
     right: 150px;
     /*border: 2px solid var(--bottom-color);*/
     transition: top 1s;
 }
 
-#bottom-page > h2::after{
+#bottom-page>h2::after {
     --extra-width: 40%;
-    
+
     content: '';
     display: block;
     position: absolute;
@@ -1087,31 +1116,31 @@ a{
     z-index: -1;
 }
 
-#bottom-page > h2.show{
+#bottom-page>h2.show {
     top: 0;
 }
 
-#travel{
+#travel {
     z-index: calc(var(--lower-gradient-z) + 8);
 }
 
-#travel h2{
+#travel h2 {
     z-index: calc(var(--lower-gradient-z) + 8);
 }
 
-#travel div.arch{
+#travel div.arch {
     --arch-width: 300px;
     --line-thickness: 6px;
     --line-spacing: 20px;
-    
+
     position: absolute;
     width: var(--arch-width);
     height: 500px;
 }
 
-#travel div.arch div{
+#travel div.arch div {
     --nth-line: 0;
-    
+
     position: absolute;
     width: calc(var(--arch-width) - (var(--nth-line) * 2 * (var(--line-thickness) + var(--line-spacing))));
     height: calc(100% - (var(--nth-line) * (var(--line-thickness) + var(--line-spacing))));
@@ -1144,10 +1173,10 @@ a{
 #travel div.arch:nth-child(1) {
     --arch-width: 450px;
     --line-spacing: 25px;
-    
+
     height: 760px;
     top: calc(100% - 762px);
-/*    left: 150px;*/
+    /*    left: 150px;*/
     left: 8.5%;
     z-index: 2;
 }
@@ -1155,28 +1184,28 @@ a{
 #travel div.arch:nth-child(2) {
     --arch-width: 350px;
     --line-spacing: 30px;
-    
+
     height: 270px;
     top: calc(100% - 272px);
-/*    left: calc(100% - 520px);*/
+    /*    left: calc(100% - 520px);*/
     right: 10%;
     z-index: 4;
 }
 
-#travel div.content{
+#travel div.content {
     display: flex;
     width: 100%;
     height: calc(100% - 100px);
     top: 50px;
 }
 
-#travel div.content > div{
+#travel div.content>div {
     display: flex;
     margin: auto;
     width: 1025px;
 }
 
-#travel div.info{
+#travel div.info {
     width: 450px;
     margin-right: auto;
     margin-top: auto;
@@ -1187,7 +1216,7 @@ a{
     z-index: 5;
 }
 
-#travel div.info > h2{
+#travel div.info>h2 {
     font-family: b;
     width: 100%;
     padding-top: 20px;
@@ -1197,20 +1226,20 @@ a{
     text-align: center;
 }
 
-#travel div.info ul{
+#travel div.info ul {
     width: calc(100% - 60px);
     padding: 30px;
     padding-top: 0;
     padding-bottom: 20px;
 }
 
-#travel div.info ul li{
+#travel div.info ul li {
     width: 100%;
     margin-top: 15px;
     margin-bottom: 15px;
 }
 
-#travel div.info li div{
+#travel div.info li div {
     position: relative;
     display: flex;
     width: 0;
@@ -1220,8 +1249,10 @@ a{
     transition: width .5s;
 }
 
-#travel div.info ul h2{
+#travel div.info ul h2 {
     position: absolute;
+    width: -webkit-max-content;
+    width: -moz-max-content;
     width: max-content;
     padding: 8px;
     font-family: pbi;
@@ -1233,15 +1264,15 @@ a{
     transition: padding-left 1s;
 }
 
-#travel div.info ul li.show div{
+#travel div.info ul li.show div {
     width: 100%;
 }
 
-#travel div.info ul li.show h2{
+#travel div.info ul li.show h2 {
     padding-left: 35px;
 }
 
-#travel div.pictures{
+#travel div.pictures {
     position: relative;
     width: 400px;
     height: 575px;
@@ -1249,7 +1280,7 @@ a{
     z-index: 3;
 }
 
-#travel div.pictures div{
+#travel div.pictures div {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -1259,80 +1290,87 @@ a{
     transition: opacity 1s, left 1s;
 }
 
-#travel div.pictures div img{
+#travel div.pictures div img {
     --offset: 20px;
-    
+
     position: relative;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     bottom: var(--offset);
     right: var(--offset);
 }
 
-#travel div.pictures div:nth-child(2) img{
+#travel div.pictures div:nth-child(2) img {
     top: var(--offset);
     left: var(--offset);
 }
 
-#travel div.pictures div:nth-child(3) img{
+#travel div.pictures div:nth-child(3) img {
     bottom: var(--offset);
     left: var(--offset);
 }
 
-#travel div.pictures div:nth-child(5) img{
+#travel div.pictures div:nth-child(5) img {
     top: var(--offset);
     right: var(--offset);
 }
 
-#travel div.pictures div.show{
+#travel div.pictures div.show {
     opacity: 1;
     left: 0;
 }
 
-#more-travel{
+#more-travel {
     position: relative;
     height: 450px;
     overflow: hidden;
 }
 
-#more-travel > div:first-child{
+#more-travel>div:first-child {
     display: flex;
     position: relative;
     width: 100%;
+    height: -webkit-max-content;
+    height: -moz-max-content;
     height: max-content;
     top: calc(100% - 100vh);
+    transition: -webkit-filter 1s;
     transition: filter 1s;
+    transition: filter 1s, -webkit-filter 1s;
 }
 
-#more-travel:hover > div:first-child{
+#more-travel:hover>div:first-child {
     -webkit-filter: blur(5px);
     filter: blur(5px);
 }
 
-#more-travel picture{
+#more-travel picture {
     width: 100%;
     height: 100%;
 }
 
-#more-travel > div:first-child img{
+#more-travel>div:first-child img {
     position: absolute;
     width: 102%;
     height: 100vh;
-    object-fit: cover;
-    object-position: bottom;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: bottom;
+       object-position: bottom;
     margin-left: 50%;
     transform: translateX(-50%);
     transition: width 1s;
 }
 
-#more-travel:hover > div:first-child img{
+#more-travel:hover>div:first-child img {
     width: 104%;
 }
 
-#more-travel h2{
+#more-travel h2 {
     color: #fffbf5;
-/*    color: var(--light-black);*/
+    /*    color: var(--light-black);*/
     width: 100%;
     height: 100%;
     text-align: center;
@@ -1344,26 +1382,28 @@ a{
     transition: text-shadow 1s;
 }
 
-#more-travel:hover h2{
+#more-travel:hover h2 {
     text-shadow: 0 0 30px rgba(0, 0, 0, .3);
 }
 
-#more-travel > div:last-child{
+#more-travel>div:last-child {
     display: flex;
     position: absolute;
     width: 100%;
     top: 340px;
 }
 
-#more-travel > div:last-child > div{
+#more-travel>div:last-child>div {
     display: flex;
     flex-direction: column;
+    height: -webkit-max-content;
+    height: -moz-max-content;
     height: max-content;
     margin-left: auto;
     margin-right: 100px;
 }
 
-#more-travel > div:last-child > div h3{
+#more-travel>div:last-child>div h3 {
     color: #fffbf5;
     margin: 0;
     font-size: 40px;
@@ -1374,84 +1414,84 @@ a{
     transition: text-shadow 1s;
 }
 
-#more-travel > div:last-child > div div{
+#more-travel>div:last-child>div div {
     width: 0;
     margin-left: auto;
     border-bottom: 2px solid #fffbf5;
     transition: width .4s;
 }
 
-#more-travel > div:last-child > div:hover div{
+#more-travel>div:last-child>div:hover div {
     width: 100%;
 }
 
-#more-travel:hover > div:last-child > div h3{
+#more-travel:hover>div:last-child>div h3 {
     text-shadow: 0 0 30px rgba(0, 0, 0, .3);
 }
 
 
 /****************** Bottom Page ******************/
 
-#book-now{
+#book-now {
     background-color: white;
 }
 
 
 @media screen and (max-width: 1600px) {
-    
-    #top-page h2{
+
+    #top-page h2 {
         font-size: 70px;
     }
-    
-    #mid-page{
+
+    #mid-page {
         --arches-width: 290px;
         --arches-height: calc(var(--arches-width) * 1.385);
     }
-    
-    #arches h2{
+
+    #arches h2 {
         font-size: 39px;
     }
-    
-    #break.show > div{
+
+    #break.show>div {
         min-width: 1160px;
     }
-    
-    #break h2{
+
+    #break h2 {
         font-size: 38px;
     }
-    
-    #lower-page > div{
+
+    #lower-page>div {
         --about-me-height: 510px;
         --my-work-height: 500px;
     }
-    
-    #about-me-pictures{
+
+    #about-me-pictures {
         width: 500px;
     }
-    
-    #about-me-pictures div.image{
+
+    #about-me-pictures div.image {
         padding: 22px 25px 70px 25px;
     }
-    
-    #about-me-pictures div.a{
+
+    #about-me-pictures div.a {
         width: 275px;
         height: 390px;
         left: -25px;
     }
-    
-    #about-me-pictures div.b{
+
+    #about-me-pictures div.b {
         width: 240px;
         height: 240px;
         top: 35px;
         right: -25px;
     }
-    
-    #about-me-desc{
+
+    #about-me-desc {
         width: 280px;
         margin-left: 50px;
     }
-    
-    #about-me-pictures h2{
+
+    #about-me-pictures h2 {
         font-size: 50px;
         line-height: 58px;
         width: 210px;
@@ -1459,159 +1499,155 @@ a{
         top: -95px;
         left: 260px;
     }
-    
-    #about-me-desc h3{
+
+    #about-me-desc h3 {
         font-size: 32px;
     }
-    
-    #about-me-desc p{
+
+    #about-me-desc p {
         font-size: 16px;
     }
-    
-    #about-me-desc-more h3{
+
+    #about-me-desc-more h3 {
         font-size: 21px;
         line-height: 23px;
     }
-    
-    #my-work{
+
+    #my-work {
         --my-work-width: 1036px;
         --content-width: 1178px;
     }
-    
-    #my-work-explore{
+
+    #my-work-explore {
         --explore-font-size: 35px;
     }
-    
-    #my-work-explore > div > div{
+
+    #my-work-explore>div>div {
         top: -29px;
     }
-    
-    #bottom-page > h2{
+
+    #bottom-page>h2 {
         font-size: 50px;
         line-height: 46px;
     }
-    
-    #travel div.arch:nth-child(1){
+
+    #travel div.arch:nth-child(1) {
         --arch-width: 425px;
-        
+
         height: 725px;
         top: calc(100% - 727px);
-/*        left: 150px;*/
+        /*        left: 150px;*/
         left: 5.5%;
     }
-    
+
     #travel div.arch:nth-child(2) {
         --arch-width: 300px;
         --line-spacing: 25px;
 
         height: 265px;
         top: calc(100% - 267px);
-/*        left: calc(100% - 420px);*/
+        /*        left: calc(100% - 420px);*/
         right: 7.5%;
     }
-    
-    #travel div.content > div{
+
+    #travel div.content>div {
         width: 950px;
     }
-    
-    #travel div.info{
+
+    #travel div.info {
         width: 425px;
     }
-    
-    #travel div.info > h2{
-/*        font-size: 33px;*/
-    }
-    
-    #travel div.info ul li{
+
+    #travel div.info ul li {
         margin-top: 13.5px;
         margin-bottom: 13.5px;
     }
-    
-    #travel div.info ul h2{
+
+    #travel div.info ul h2 {
         padding: 5px;
         font-size: 21px;
     }
-    
-    #travel div.pictures{
+
+    #travel div.pictures {
         width: 375px;
         height: 530px;
     }
-    
-    #more-travel{
+
+    #more-travel {
         height: 425px;
     }
-    
-    #more-travel h2{
+
+    #more-travel h2 {
         line-height: 425px;
         font-size: 80px;
     }
-    
-    #more-travel > div:last-child{
+
+    #more-travel>div:last-child {
         top: 325px;
     }
-    
-    #more-travel > div:last-child > div h3{
+
+    #more-travel>div:last-child>div h3 {
         font-size: 38px;
     }
-    
+
 }
 
 @media screen and (max-width: 1400px) {
-    
-    #top-page h2{
+
+    #top-page h2 {
         font-size: 65px;
     }
-    
-    #mid-page{
+
+    #mid-page {
         --arches-width: 250px;
         --arches-border-width: 4px;
     }
-    
-    #arches h2{
+
+    #arches h2 {
         font-size: 36px;
     }
-    
-    #break.show > div{
+
+    #break.show>div {
         min-width: 1055px;
     }
-    
-    #break h2{
+
+    #break h2 {
         font-size: 36px;
     }
-    
-    #lower-page > div{
+
+    #lower-page>div {
         --about-me-height: 480px;
         --my-work-height: 475px;
     }
-    
-    #about-me-pictures{
+
+    #about-me-pictures {
         width: 375px;
     }
-    
-    #about-me-pictures div.image{
+
+    #about-me-pictures div.image {
         padding: 20px 22px 64px 22px;
     }
-    
-    #about-me-pictures div.a{
+
+    #about-me-pictures div.a {
         width: 250px;
         height: 355px;
         left: -70px;
     }
-    
-    #about-me-pictures div.b{
+
+    #about-me-pictures div.b {
         width: 210px;
         height: 210px;
-/*        top: 35px;*/
+        /*        top: 35px;*/
         right: -40px;
     }
-    
-    #about-me-pictures img{
+
+    #about-me-pictures img {
         width: calc(100% - 18px);
         height: calc(100% - 18px);
         padding: 8px;
     }
-    
-    #about-me-pictures h2{
+
+    #about-me-pictures h2 {
         font-size: 45px;
         line-height: 53px;
         width: 190px;
@@ -1619,184 +1655,184 @@ a{
         top: -88px;
         left: 185px;
     }
-    
-    #about-me-desc{
+
+    #about-me-desc {
         width: 260px;
         height: calc(var(--about-me-height) - 70px);
         padding: 35px;
         margin-left: 25px;
     }
-    
-    #about-me-desc h3{
+
+    #about-me-desc h3 {
         font-size: 29px;
         margin-bottom: 15px;
     }
-    
-    #about-me-desc p{
-/*        font-size: 16px;*/
+
+    #about-me-desc p {
+        /*        font-size: 16px;*/
         margin: 12px 0 12px 0;
     }
-    
-    #about-me-desc-more h3{
+
+    #about-me-desc-more h3 {
         font-size: 19px;
         line-height: 19px;
     }
-    
-    #about-me-desc-more a{
+
+    #about-me-desc-more a {
         height: 20px;
     }
-    
-    #my-work{
+
+    #my-work {
         --my-work-width: 832px;
         --content-width: 976px;
     }
-    
-    #my-work > h2{
+
+    #my-work>h2 {
         font-size: 23px;
         top: 225px;
         left: calc((-1 * var(--lower-page-padding)) + 13px);
     }
-    
-    #my-work-content button.shadow-scroll div.arrow{
+
+    #my-work-content button.shadow-scroll div.arrow {
         --arrow-size: 35px;
     }
-    
-    #my-work-explore{
+
+    #my-work-explore {
         --explore-font-size: 32px;
     }
-    
-    #my-work-explore > div{
+
+    #my-work-explore>div {
         margin-right: 150px;
     }
-    
-    #my-work-explore > div > div{
+
+    #my-work-explore>div>div {
         border-bottom: 1px solid var(--light-black);
         top: -25px;
     }
-    
-    #bottom-page > h2{
+
+    #bottom-page>h2 {
         font-size: 45px;
         line-height: 41px;
     }
-    
-    #travel div.arch:nth-child(1){
+
+    #travel div.arch:nth-child(1) {
         --arch-width: 400px;
-        
+
         height: 700px;
         top: calc(100% - 702px);
         left: 4%;
     }
-    
+
     #travel div.arch:nth-child(2) {
         --arch-width: 285px;
         --line-spacing: 23px;
-        
+
         height: 250px;
         top: calc(100% - 252px);
         right: 5%;
     }
-    
-    #travel div.content{
+
+    #travel div.content {
         margin-right: 0;
     }
-    
-    #travel div.content > div{
+
+    #travel div.content>div {
         width: auto;
     }
-    
-    #travel div.pictures{
+
+    #travel div.pictures {
         width: 355px;
         height: 500px;
         margin-left: 0;
     }
-    
-    #more-travel{
+
+    #more-travel {
         height: 375px;
     }
-    
-    #more-travel > div:first-child{
+
+    #more-travel>div:first-child {
         width: 100%;
         top: calc(100% - 1000px);
         margin-left: 50%;
         transform: translateX(-50%);
     }
-    
-    #more-travel > div:first-child img{
+
+    #more-travel>div:first-child img {
         width: 1500px;
         height: 1000px;
     }
-    
-    #more-travel:hover > div:first-child img{
+
+    #more-travel:hover>div:first-child img {
         width: 1520px;
     }
-    
-    #more-travel h2{
+
+    #more-travel h2 {
         line-height: 375px;
         font-size: 73px;
     }
-    
-    #more-travel > div:last-child{
+
+    #more-travel>div:last-child {
         top: 290px;
     }
-    
-    #more-travel > div:last-child > div h3{
+
+    #more-travel>div:last-child>div h3 {
         font-size: 34px;
     }
-    
-    #more-travel > div:last-child > div div{
+
+    #more-travel>div:last-child>div div {
         border-bottom: 1px solid white;
     }
-    
+
 }
 
 @media screen and (max-width: 1180px) {
-    
-    #top-page h2{
+
+    #top-page h2 {
         font-size: 58px;
     }
-    
-    #arches{
+
+    #arches {
         max-width: calc((var(--arches-width) + (2 * var(--desired-base-margin))) * var(--total-arches-on-row) - 125px);
     }
-    
-    #break.show > div{
+
+    #break.show>div {
         min-width: 930px;
     }
-    
-    #lower-page > div{
+
+    #lower-page>div {
         --about-me-height: 425px;
         --my-work-height: 425px;
         --lower-page-padding: 75px;
     }
-    
-    #about-me-pictures{
+
+    #about-me-pictures {
         width: 350px;
     }
-    
-    #about-me-pictures div.image{
+
+    #about-me-pictures div.image {
         padding: 17px 19px 60px 19px;
     }
-    
-    #about-me-pictures div.a{
+
+    #about-me-pictures div.a {
         width: 225px;
         height: 320px;
         left: -40px;
     }
-    
-    #about-me-pictures div.b{
+
+    #about-me-pictures div.b {
         width: 190px;
         height: 190px;
         top: 30px;
         right: -40px;
     }
-    
-    #about-me-pictures img{
+
+    #about-me-pictures img {
         width: calc(100% - 16px);
         height: calc(100% - 16px);
         padding: 7px;
     }
-    
-    #about-me-pictures h2{
+
+    #about-me-pictures h2 {
         font-size: 40px;
         line-height: 48px;
         width: 170px;
@@ -1804,555 +1840,557 @@ a{
         top: -81px;
         left: 184px;
     }
-    
-    #about-me-desc{
+
+    #about-me-desc {
         width: 230px;
         height: calc(var(--about-me-height) - 60px);
         padding: 30px;
         margin-left: 20px;
     }
-    
-    #about-me-desc h3{
+
+    #about-me-desc h3 {
         font-size: 26px;
         margin-bottom: 10px;
     }
-    
-    #about-me-desc p{
+
+    #about-me-desc p {
         font-size: 14px;
-/*        margin: 12px 0 12px 0;*/
+        /*        margin: 12px 0 12px 0;*/
     }
-    
-    #about-me-desc-more h3{
+
+    #about-me-desc-more h3 {
         font-size: 18px;
         line-height: 18px;
     }
-    
-    #about-me-desc-more a{
+
+    #about-me-desc-more a {
         height: 19px;
     }
-    
-    #my-work{
+
+    #my-work {
         --my-work-width: 737px;
         --content-width: 856px;
     }
-    
-    #my-work > h2{
+
+    #my-work>h2 {
         font-size: 21px;
         top: 180px;
         left: calc((-1 * var(--lower-page-padding)) - 4px);
     }
-    
-    #my-work-content button.shadow-scroll{
+
+    #my-work-content button.shadow-scroll {
         --extra-width: 25px;
     }
-    
-    #my-work-content button.shadow-scroll div.arrow{
+
+    #my-work-content button.shadow-scroll div.arrow {
         --arrow-size: 30px;
         --arrow-left-offset: 25px;
-        
+
         border-left: 8px solid var(--arrow-color);
         border-top: 8px solid var(--arrow-color);
     }
-    
-    #my-work-content button.shadow-scroll:last-child div.arrow{
+
+    #my-work-content button.shadow-scroll:last-child div.arrow {
         left: calc(var(--lower-page-padding) + var(--lower-page-radius) - var(--arrow-left-offset) - 15px);
     }
-    
-    #my-work-content div.container{
+
+    #my-work-content div.container {
         height: calc(var(--my-work-height) + var(--content-padding) + var(--lower-page-border-thickness) + 50px);
     }
-    
-    #my-work-explore > div{
+
+    #my-work-explore>div {
         margin-right: 125px;
     }
-    
-    #travel div.arch:nth-child(1){
+
+    #travel div.arch:nth-child(1) {
         left: 2.5%;
     }
-    
+
     #travel div.arch:nth-child(2) {
         right: 3%
-    }s
-    
-    #more-travel h2{
+    }
+
+    s #more-travel h2 {
         font-size: 68px;
     }
-    
-    #more-travel > div:last-child > div h3{
+
+    #more-travel>div:last-child>div h3 {
         font-size: 31px;
     }
-    
+
 }
 
 @media screen and (max-width: 1000px) {
-    
-    #top-page h2{
+
+    #top-page h2 {
         font-size: 50px;
     }
-    
-    #mid-page{
+
+    #mid-page {
         --arches-width: 180px;
-        
+
         margin-bottom: 50px;
     }
-    
-    #arches h2{
+
+    #arches h2 {
         font-size: 31px;
     }
-    
-    #break{
+
+    #break {
         --text-width: 262.7px;
     }
-    
-    #break.show > div{
+
+    #break.show>div {
         min-width: 720px;
     }
-    
-    #break h2{
+
+    #break h2 {
         font-size: 29px;
     }
-    
-    #lower-page > div{
+
+    #lower-page>div {
         --about-me-height: 405px;
-        
+
         margin-left: 40px;
         margin-right: 40px;
     }
-    
-    #about-me{
+
+    #about-me {
         width: calc(100% - 80px - var(--lower-page-padding) - var(--lower-page-radius) - var(--lower-page-border-thickness));
     }
-    
-    #about-me > div{
+
+    #about-me>div {
         flex-direction: column;
         width: calc(100% + var(--lower-page-padding) + var(--lower-page-radius) + var(--lower-page-border-thickness));
     }
-    
-    #about-me-pictures{
+
+    #about-me-pictures {
         width: 470px;
         height: 325px;
         margin-left: 0;
     }
-    
-    #about-me-pictures div.a{
+
+    #about-me-pictures div.a {
         left: 25px;
     }
-    
-    #about-me-pictures div.b{
+
+    #about-me-pictures div.b {
         right: 0;
     }
-    
-    #about-me-pictures h2{
+
+    #about-me-pictures h2 {
         top: -85px;
         left: 260px;
     }
-    
-    #about-me-desc{
+
+    #about-me-desc {
         display: flex;
         flex-direction: column;
         width: 45%;
         margin-left: auto;
     }
-    
-    #about-me-desc h3{
+
+    #about-me-desc h3 {
         margin-top: auto;
     }
-    
-    #about-me-desc-more{
+
+    #about-me-desc-more {
         margin-bottom: auto;
     }
-    
-    #my-work{
+
+    #my-work {
         --my-work-width: calc(100vw - var(--lower-page-padding) - var(--lower-page-radius) - 80px - 20px);
         --content-width: calc(100vw - 80px - 18px);
     }
-    
-    #bottom-page{
+
+    #bottom-page {
         padding-top: 175px;
     }
-    
-    #bottom-page > h2{
+
+    #bottom-page>h2 {
         font-size: 40px;
         line-height: 35px;
         right: 100px;
     }
-    
-    #travel div.arch:nth-child(1){
+
+    #travel div.arch:nth-child(1) {
         --arch-width: 300px;
-        
+
         height: 665px;
         top: calc(100% - 667px);
-/*        left: 25px;*/
+        /*        left: 25px;*/
     }
-    
+
     #travel div.arch:nth-child(2) {
         --arch-width: 225px;
-        
+
         height: 200px;
         top: calc(100% - 202px);
-/*        left: calc(100% - 300px);*/
+        /*        left: calc(100% - 300px);*/
     }
-    
-    #travel div.arch div:last-child{
+
+    #travel div.arch div:last-child {
         opacity: 0;
     }
-    
-    #travel div.info{
+
+    #travel div.info {
         width: 350px;
         margin-right: 0;
     }
-    
-    #travel div.info > h2{
+
+    #travel div.info>h2 {
         font-size: 31px;
         line-height: 33px;
         padding-bottom: 12px;
     }
-    
-    #travel div.info ul{
+
+    #travel div.info ul {
         width: calc(100% - 40px);
         padding-left: 20px;
         padding-right: 20px;
     }
-    
-    #travel div.info ul li{
+
+    #travel div.info ul li {
         margin-top: 10px;
         margin-bottom: 10px;
     }
-    
-    #travel div.info ul li h2{
+
+    #travel div.info ul li h2 {
         font-size: 19px;
         padding-top: 1px;
         padding-bottom: 3px;
     }
-    
-    #travel div.pictures{
+
+    #travel div.pictures {
         width: 325px;
         height: 445px;
     }
-    
-    #more-travel{
+
+    #more-travel {
         height: 330px;
     }
-    
-    #more-travel h2{
+
+    #more-travel h2 {
         line-height: 330px;
         font-size: 56px;
     }
-    
-    #more-travel > div:last-child{
+
+    #more-travel>div:last-child {
         top: 255px;
     }
-    
-    #more-travel > div:last-child > div{
+
+    #more-travel>div:last-child>div {
         margin-right: 40px;
     }
-    
-    #more-travel > div:last-child > div h3{
+
+    #more-travel>div:last-child>div h3 {
         font-size: 27px;
     }
-    
+
 }
 
 @media screen and (max-width: 775px) {
-    
-    #top-page{
+
+    #top-page {
         --top-page-height: 90vh;
-        
+
         min-height: 0;
     }
-    
-    #images img{
+
+    #images img {
         height: calc(var(--top-page-height) + var(--image-height-offset));
     }
-    
-    #top-page h2{
+
+    #top-page h2 {
         font-size: 44px;
         top: 53vh;
     }
-    
-    #mid-page{
+
+    #mid-page {
         --arches-width: 135px;
         --arches-border-width: 3px;
-        
+
         margin-bottom: 25px;
     }
-    
-    #arches{
+
+    #arches {
         max-width: calc((var(--arches-width) + (2 * var(--desired-base-margin))) * var(--total-arches-on-row) - 185px);
     }
-    
-    #arches h2{
+
+    #arches h2 {
         font-size: 26px;
     }
-    
-    #break{
+
+    #break {
         margin-bottom: 50px;
     }
-    
-    #break.show > div{
+
+    #break.show>div {
         min-width: 525px;
     }
-    
-    #break h2{
+
+    #break h2 {
         font-size: 25px;
     }
-    
-    #lower-page > div{
+
+    #lower-page>div {
         --about-me-height: 395px;
         --my-work-height: 450px;
     }
-    
-    #about-me-pictures{
+
+    #about-me-pictures {
         width: 275px;
         height: 380px;
     }
-    
-    #about-me-pictures div.image{
+
+    #about-me-pictures div.image {
         padding: 15px 16px 53px 16px;
     }
-    
-    #about-me-pictures div.a{
+
+    #about-me-pictures div.a {
         width: 200px;
         height: 285px;
     }
-    
-    #about-me-pictures div.b{
+
+    #about-me-pictures div.b {
         width: 150px;
         height: 150px;
         right: -120px;
     }
-    
-    #about-me-pictures h2{
+
+    #about-me-pictures h2 {
         font-size: 35px;
         line-height: 41px;
         width: 150px;
         top: -78px;
         left: 230px;
     }
-    
-    #about-me-desc{
+
+    #about-me-desc {
         width: 55%;
     }
-    
-    #about-me-desc h3{
+
+    #about-me-desc h3 {
         font-size: 25px;
         margin-bottom: 0px;
     }
-    
-    #about-me-desc p{
+
+    #about-me-desc p {
         font-size: 13px;
     }
-    
-    #about-me-desc-more h3{
+
+    #about-me-desc-more h3 {
         font-size: 17px;
         line-height: 18px;
     }
-    
-    #my-work-content button.shadow-scroll{
+
+    #my-work-content button.shadow-scroll {
         --extra-width: 0px;
     }
-    
-    #my-work-content button.shadow-scroll div.arrow{
+
+    #my-work-content button.shadow-scroll div.arrow {
         --arrow-size: 30px;
         --arrow-left-offset: 25px;
-        
+
         border-left: 7px solid var(--arrow-color);
         border-top: 7px solid var(--arrow-color);
     }
-    
-    #my-work-content button.shadow-scroll:last-child div.arrow{
+
+    #my-work-content button.shadow-scroll:last-child div.arrow {
         left: calc(var(--lower-page-padding) + var(--lower-page-radius) - var(--arrow-left-offset) - 40px);
     }
-    
-    #my-work-explore > div{
+
+    #my-work-explore>div {
         margin-right: 100px;
     }
-    
-    #bottom-page{
+
+    #bottom-page {
         padding-top: 160px;
     }
-    
-    #travel div.arch:nth-child(1){
+
+    #travel div.arch:nth-child(1) {
         --arch-width: 330px;
         --line-thickness: 5px;
-        
+
         height: 910px;
         top: calc(100% - 912px);
     }
-    
-    #travel div.arch:nth-child(1) div{
+
+    #travel div.arch:nth-child(1) div {
         border: var(--line-thickness) solid #d9bda4;
     }
-    
-    #travel div.arch:nth-child(2){
+
+    #travel div.arch:nth-child(2) {
         --arch-width: 275px;
         --line-spacing: 20px;
-        
-/*        left: calc(100% - 330px);*/
+
+        /*        left: calc(100% - 330px);*/
         right: 5%;
     }
-    
-    #travel div.content > div{
+
+    #travel div.content>div {
         flex-direction: column;
+        width: -webkit-max-content;
+        width: -moz-max-content;
         width: max-content;
     }
-    
-    #travel div.info{
+
+    #travel div.info {
         position: relative;
         width: 365px;
         margin: 0 auto 50px auto;
         left: -20px;
     }
-    
-    #travel div.pictures{
+
+    #travel div.pictures {
         width: 300px;
         height: 410px;
         margin: auto;
     }
-    
-    #more-travel{
+
+    #more-travel {
         height: 300px;
     }
-    
-    #more-travel > div:first-child{
+
+    #more-travel>div:first-child {
         top: calc(100% - 850px);
     }
-    
-    #more-travel > div:first-child img{
+
+    #more-travel>div:first-child img {
         width: 900px;
         height: 850px;
         transition: width 1s, height 1s;
     }
-    
-    #more-travel:hover > div:first-child img{
+
+    #more-travel:hover>div:first-child img {
         width: 900px;
         height: 870px;
     }
-    
-    #more-travel h2{
+
+    #more-travel h2 {
         line-height: 300px;
         font-size: 42px;
     }
-    
-    #more-travel > div:last-child{
+
+    #more-travel>div:last-child {
         top: 230px;
     }
-    
-    #more-travel > div:last-child > div{
+
+    #more-travel>div:last-child>div {
         margin-right: 30px;
     }
-    
-    #more-travel > div:last-child > div h3{
+
+    #more-travel>div:last-child>div h3 {
         font-size: 24px;
     }
-    
+
 }
 
 @media screen and (max-width: 575px) {
-    
-    #top-page{
+
+    #top-page {
         --top-page-height: 85vh;
     }
-    
-    #top-page h2{
+
+    #top-page h2 {
         font-size: 38px;
         top: 47vh;
     }
-    
-    #top-page h2.loaded:nth-child(2){
+
+    #top-page h2.loaded:nth-child(2) {
         left: 30px;
     }
-    
-    #top-page h2.loaded:nth-child(3){
+
+    #top-page h2.loaded:nth-child(3) {
         left: 80px;
     }
-    
-    #mid-page{
+
+    #mid-page {
         --arches-width: 25vw;
         --arches-offset: -130px;
-        
+
         margin-bottom: 0;
     }
-    
-    #arches{
-/*        max-width: calc((var(--arches-width) + (2 * var(--desired-base-margin))) * var(--total-arches-on-row) - 220px);*/
+
+    #arches {
+        /*        max-width: calc((var(--arches-width) + (2 * var(--desired-base-margin))) * var(--total-arches-on-row) - 220px);*/
         width: 100%;
         max-width: none;
     }
-    
-    #arches h2{
+
+    #arches h2 {
         font-size: 23px;
     }
-    
-    #arches li{
+
+    #arches li {
         margin: 0 10px 0 10px;
     }
-    
-    #arches li:first-child{
+
+    #arches li:first-child {
         margin-left: auto;
     }
-    
-    #arches li:last-child{
+
+    #arches li:last-child {
         margin-right: auto;
     }
-    
-    #arches.done li:hover{
+
+    #arches.done li:hover {
         box-shadow: 0px 0px 18px rgba(0, 0, 0, .3);
         top: calc(var(--arches-offset) - 7px);
     }
-    
-    #break{
+
+    #break {
         margin-bottom: 25px;
     }
-    
-    #break.show > div{
+
+    #break.show>div {
         min-width: 90%;
     }
-    
-    #break h2{
+
+    #break h2 {
         font-size: 21px;
     }
-    
-    #lower-page > div{
+
+    #lower-page>div {
         --about-me-height: 425px;
         --lower-page-padding: 50px;
     }
-    
-    #about-me{
+
+    #about-me {
         width: calc(100% - 52px - var(--lower-page-padding) - var(--lower-page-radius) - var(--lower-page-border-thickness));
     }
-    
-    #about-me-pictures{
+
+    #about-me-pictures {
         width: 100%;
         height: 310px;
         margin: 0;
     }
-    
-    #about-me-pictures div.image{
+
+    #about-me-pictures div.image {
         padding: 12px 14px 49px 14px;
     }
-    
-    #about-me-pictures div.a{
+
+    #about-me-pictures div.a {
         width: 150px;
         height: 215px;
         left: 3.7%;
     }
-    
-    #about-me-pictures div.b{
+
+    #about-me-pictures div.b {
         width: 150px;
         height: 150px;
         top: 20px;
         right: none;
         left: 48%;
     }
-    
-    #about-me-pictures img{
+
+    #about-me-pictures img {
         width: calc(100% - 14px);
         height: calc(100% - 14px);
         padding: 6px;
     }
-    
-    #about-me-pictures h2{
+
+    #about-me-pictures h2 {
         font-size: 32px;
         line-height: 41px;
         text-indent: -30px;
@@ -2360,210 +2398,210 @@ a{
         top: -79px;
         left: 48.5%;
     }
-    
-    #about-me-desc{
+
+    #about-me-desc {
         width: 60%;
     }
-    
-    #my-work > h2{
+
+    #my-work>h2 {
         left: calc((-1 * var(--lower-page-padding)) - 28px);
         top: 160px;
     }
-    
-    #my-work-content div.container{
-       height: calc(var(--my-work-height) + var(--content-padding) + var(--lower-page-border-thickness) + 0px); 
+
+    #my-work-content div.container {
+        height: calc(var(--my-work-height) + var(--content-padding) + var(--lower-page-border-thickness) + 0px);
     }
-    
-    #my-work-explore{
+
+    #my-work-explore {
         --explore-font-size: 28px;
     }
-    
-    #my-work-explore > div{
+
+    #my-work-explore>div {
         margin-right: 65px;
     }
-    
-    #my-work-explore > div > div{
+
+    #my-work-explore>div>div {
         top: -21px;
     }
-    
-    #bottom-page{
+
+    #bottom-page {
         padding-top: 140px;
         padding-bottom: 75px;
     }
-    
-    #bottom-page > h2{
+
+    #bottom-page>h2 {
         font-size: 35px;
         line-height: 30px;
         right: 65px;
     }
-    
-    #travel div.arch:nth-child(1){
+
+    #travel div.arch:nth-child(1) {
         --arch-width: 250px;
         --line-spacing: 20px;
-        
+
         height: 775px;
         top: calc(100% - 777px);
     }
-    
+
     #travel div.arch:nth-child(2) {
         --arch-width: 210px;
-        
+
         height: 175px;
         top: calc(100% - 177px);
     }
-    
-    #travel div.info{
+
+    #travel div.info {
         width: 320px;
         margin-right: 0;
         left: -15px;
     }
-    
-    #travel div.info > h2{
+
+    #travel div.info>h2 {
         font-size: 28px;
         line-height: 30px;
     }
-    
-    #travel div.info ul{
+
+    #travel div.info ul {
         width: calc(100% - 40px);
         padding-left: 20px;
         padding-right: 20px;
     }
-    
-    #travel div.info ul li{
+
+    #travel div.info ul li {
         margin-top: 9px;
         margin-bottom: 9px;
     }
-    
-    #travel div.info ul li h2{
+
+    #travel div.info ul li h2 {
         font-size: 16px;
         line-height: 16px;
         padding-top: 1px;
         padding-bottom: 1px;
     }
-    
-    #travel div.pictures{
+
+    #travel div.pictures {
         width: 250px;
         height: 325px;
     }
-    
-    #more-travel{
+
+    #more-travel {
         display: flex;
         flex-direction: column;
     }
-    
-    #more-travel > div:first-child{
+
+    #more-travel>div:first-child {
         top: calc(100% - 650px);
     }
-    
-    #more-travel > div:first-child img{
+
+    #more-travel>div:first-child img {
         width: 700px;
         height: 650px;
     }
-    
-    #more-travel:hover > div:first-child img{
+
+    #more-travel:hover>div:first-child img {
         width: 700px;
         height: 670px;
     }
-    
-    #more-travel h2{
+
+    #more-travel h2 {
         width: 400px;
         font-size: 45px;
         line-height: 43px;
         height: auto;
         margin: auto;
     }
-    
-    #more-travel > div:last-child{
+
+    #more-travel>div:last-child {
         top: 235px;
     }
-    
-    #more-travel > div:last-child > div h3{
+
+    #more-travel>div:last-child>div h3 {
         font-size: 22px;
     }
-    
+
 }
 
 @media screen and (max-width: 465px) {
-    
-    #top-page h2{
+
+    #top-page h2 {
         font-size: 34px;
     }
-    
-    #top-page h2.loaded:nth-child(2){
+
+    #top-page h2.loaded:nth-child(2) {
         left: 20px;
     }
-    
-    #top-page h2.loaded:nth-child(3){
+
+    #top-page h2.loaded:nth-child(3) {
         left: 40px;
     }
-    
-    #mid-page{
+
+    #mid-page {
         --arches-offset: -110px;
         --arches-border-width: 2px;
     }
-    
-/*
+
+    /*
     #arches{
         max-width: calc((var(--arches-width) + (2 * var(--desired-base-margin))) * var(--total-arches-on-row) - 250px);
     }
 */
-    
-    #arches h2{
+
+    #arches h2 {
         font-size: 18px;
     }
-    
-    #arches.done li:hover{
+
+    #arches.done li:hover {
         box-shadow: 0px 0px 13px rgba(0, 0, 0, .3);
     }
-    
-    #break{
+
+    #break {
         margin-bottom: 0;
     }
-    
-    #break > div{
+
+    #break>div {
         margin-top: 100px;
         margin-bottom: 100px;
     }
-    
-    #break h2{
+
+    #break h2 {
         font-size: 17px;
         padding: 5px;
     }
-    
-    #lower-page > div{
+
+    #lower-page>div {
         --about-me-height: 360px;
         --my-work-height: 450px;
         --lower-page-padding: 25px;
-        
+
         width: calc(100% - 40px);
         margin-left: 20px;
         margin-right: 20px;
     }
-    
-    #lower-page > div > div:nth-child(2){
+
+    #lower-page>div>div:nth-child(2) {
         height: 817px;
     }
-    
-    #about-me{
+
+    #about-me {
         position: relative;
         width: calc(100% - 27px - var(--lower-page-padding) - var(--lower-page-radius) - var(--lower-page-border-thickness));
         height: 765px;
     }
-    
-    #about-me > div{
+
+    #about-me>div {
         position: absolute;
         width: calc(100% + var(--lower-page-padding) + 18px);
     }
-    
-    #about-me-pictures{
+
+    #about-me-pictures {
         height: 425px;
     }
-    
-    #about-me-pictures div.a{
+
+    #about-me-pictures div.a {
         left: 15px;
     }
-    
-    #about-me-pictures div.b{
+
+    #about-me-pictures div.b {
         width: 140px;
         height: 140px;
         top: auto;
@@ -2572,203 +2610,203 @@ a{
         right: 0px;
         transform: rotate(3deg);
     }
-    
-    #about-me-pictures h2{
+
+    #about-me-pictures h2 {
         top: -20px;
         left: auto;
         right: 0px;
     }
-    
-    #about-me-desc{
+
+    #about-me-desc {
         width: calc(100% - var(--lower-page-padding) - 15px);
         min-width: 0;
         padding: 20px;
-/*        margin-left: 0;*/
+        /*        margin-left: 0;*/
         border-bottom-left-radius: var(--lower-page-radius);
     }
-    
-    #about-me-desc h3{
+
+    #about-me-desc h3 {
         font-size: 23px;
         margin-bottom: 5px;
     }
-    
-    #about-me-desc p{
+
+    #about-me-desc p {
         font-size: 11px;
         margin: 8px 0 8px 0;
     }
-    
-    #about-me-desc-more a{
+
+    #about-me-desc-more a {
         height: 16px;
     }
-    
-    #about-me-desc-more h3{
+
+    #about-me-desc-more h3 {
         font-size: 15px;
         line-height: 16px;
     }
-    
-    #my-work{
+
+    #my-work {
         --my-work-width: calc(100% - var(--lower-page-padding) - 44px);
         --content-width: calc(100% + var(--lower-page-padding) + 44px);
     }
-    
-    #my-work > h2{
+
+    #my-work>h2 {
         left: calc((-1 * var(--lower-page-padding)) - 28px);
         top: 10px;
         left: 75px;
         transform: none;
     }
-    
-    #my-work-content button.shadow-scroll{
+
+    #my-work-content button.shadow-scroll {
         --extra-width: -30px;
     }
-    
-    #my-work-content button.shadow-scroll div.arrow{
+
+    #my-work-content button.shadow-scroll div.arrow {
         --arrow-left-offset: 15px;
         --arrow-size: 25px;
-        
+
         top: 47%;
     }
-    
-    #my-work-content button.shadow-scroll:last-child div.arrow{
+
+    #my-work-content button.shadow-scroll:last-child div.arrow {
         left: calc(var(--lower-page-padding) + var(--lower-page-radius) + var(--extra-width) - var(--arrow-left-offset) - 35px);
     }
-    
-    #my-work-content div.container{
+
+    #my-work-content div.container {
         margin: 0 30px 0 30px;
     }
-    
-    #my-work-content div.container{
+
+    #my-work-content div.container {
         margin: 0 15px 0 15px;
     }
-    
-    #my-work-explore{
+
+    #my-work-explore {
         top: -20px;
     }
-    
-    #my-work-explore > div{
+
+    #my-work-explore>div {
         margin-right: 40px;
     }
-    
-    #bottom-page{
+
+    #bottom-page {
         padding-top: 120px;
         padding-bottom: 60px;
         margin-top: 175px;
     }
-    
-    #bottom-page > h2{
+
+    #bottom-page>h2 {
         --travel-padding: 20px;
         --top-padding: 10px;
-        
+
         font-size: 30px;
         line-height: 27px;
         right: 50px;
         z-index: 5;
     }
-    
-    #travel div.arch:nth-child(1){
+
+    #travel div.arch:nth-child(1) {
         --arch-width: 200px;
         --line-thickness: 4px;
         --line-spacing: 15px;
-        
+
         height: 640px;
         top: calc(100% - 642px);
     }
-    
+
     #travel div.arch:nth-child(2) {
         --arch-width: 180px;
         --line-thickness: 5px;
         --line-spacing: 18px;
-        
+
         height: 140px;
         top: calc(100% - 142px);
         right: 4%;
     }
-    
-    #travel div.info{
+
+    #travel div.info {
         display: flex;
         flex-direction: column;
         width: 250px;
         left: 0px;
     }
-    
-    #travel div.info > h2{
+
+    #travel div.info>h2 {
         width: 225px;
         font-size: 26px;
         line-height: 28px;
         padding: 15px 0 7px 0;
         margin: auto;
     }
-    
-    #travel div.info ul{
+
+    #travel div.info ul {
         width: calc(100% - 30px);
         padding: 0 15px 10px 15px;
     }
-    
-    #travel div.info ul li{
+
+    #travel div.info ul li {
         margin-top: 5px;
         margin-bottom: 5px;
     }
-    
-    #travel div.info ul li h2{
+
+    #travel div.info ul li h2 {
         font-size: 13px;
         line-height: 13px;
     }
-    
-    #travel div.pictures{
+
+    #travel div.pictures {
         width: 210px;
         height: 270px;
     }
-    
-    #travel div.pictures div img{
+
+    #travel div.pictures div img {
         --offset: 15px;
     }
-    
-    #more-travel{
+
+    #more-travel {
         height: 275px;
     }
-    
-    #more-travel h2{
+
+    #more-travel h2 {
         width: 345px;
         font-size: 42px;
         line-height: 40px;
     }
-    
-    #more-travel > div:last-child{
+
+    #more-travel>div:last-child {
         top: 225px;
     }
-    
-    #more-travel > div:last-child > div h3{
+
+    #more-travel>div:last-child>div h3 {
         font-size: 20px;
     }
-    
+
 }
 
 @media screen and (max-width: 400px) {
-    
-    #lower-page > div{
+
+    #lower-page>div {
         --my-work-height: 410px;
     }
-    
-    #travel div.arch:nth-child(2){
+
+    #travel div.arch:nth-child(2) {
         opacity: 0;
     }
-    
-    #more-travel > div:first-child{
+
+    #more-travel>div:first-child {
         top: calc(100% - 600px);
     }
-    
-    #more-travel > div:first-child img{
+
+    #more-travel>div:first-child img {
         width: 500px;
         height: 600px;
     }
-    
-    #more-travel:hover > div:first-child img{
+
+    #more-travel:hover>div:first-child img {
         width: 500px;
         height: 615px;
     }
-    
-    #more-travel h2{
+
+    #more-travel h2 {
         width: 300px;
     }
-    
+
 }
