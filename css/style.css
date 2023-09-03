@@ -201,10 +201,14 @@ a {
 
     position: absolute;
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
     height: calc(max(var(--top-page-height), 100vh - var(--arches-offset) + 50px) + var(--image-height-offset));
     width: 100%;
     top: calc(-1 * var(--image-height-offset));
+    z-index: 1;
+    -webkit-transition: opacity 2.5s;
+    -moz-transition: opacity 2.5s;
+    -o-transition: opacity 2.5s;
     transition: opacity 2.5s;
 }
 
@@ -229,6 +233,9 @@ a {
     z-index: calc(var(--lower-gradient-z) + 3);
     word-spacing: 2px;
     opacity: 0;
+    -webkit-transition: left var(--left-transition), opacity var(--opacity-transition);
+    -moz-transition: left var(--left-transition), opacity var(--opacity-transition);
+    -o-transition: left var(--left-transition), opacity var(--opacity-transition);
     transition: left var(--left-transition), opacity var(--opacity-transition);
 }
 
@@ -236,6 +243,9 @@ a {
     --animation-extend: .25s;
 
     left: -525px;
+    -webkit-transition: left calc(var(--left-transition) + var(--animation-extend)), opacity calc(var(--opacity-transition) + var(--animation-extend));
+    -moz-transition: left calc(var(--left-transition) + var(--animation-extend)), opacity calc(var(--opacity-transition) + var(--animation-extend));
+    -o-transition: left calc(var(--left-transition) + var(--animation-extend)), opacity calc(var(--opacity-transition) + var(--animation-extend));
     transition: left calc(var(--left-transition) + var(--animation-extend)), opacity calc(var(--opacity-transition) + var(--animation-extend));
 }
 
@@ -301,6 +311,9 @@ a {
     border-radius: 50%;
     border: var(--arches-border-width) solid #fffbf5;
     opacity: 0;
+    -webkit-transition: box-shadow var(--shadow-animation), opacity var(--opacity-animation), top 2s;
+    -moz-transition: box-shadow var(--shadow-animation), opacity var(--opacity-animation), top 2s;
+    -o-transition: box-shadow var(--shadow-animation), opacity var(--opacity-animation), top 2s;
     transition: box-shadow var(--shadow-animation), opacity var(--opacity-animation), top 2s;
 }
 
@@ -311,11 +324,14 @@ a {
 }
 
 #arches.done li {
+    -webkit-transition: box-shadow var(--shadow-animation), opacity var(--opacity-animation), top .75s;
+    -moz-transition: box-shadow var(--shadow-animation), opacity var(--opacity-animation), top .75s;
+    -o-transition: box-shadow var(--shadow-animation), opacity var(--opacity-animation), top .75s;
     transition: box-shadow var(--shadow-animation), opacity var(--opacity-animation), top .75s;
 }
 
 #arches.done li:hover {
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, .05);
+    box-shadow: 0 0 15px rgba(0, 0, 0, .05);
     top: calc(var(--arches-offset) - 10px);
 }
 
@@ -331,7 +347,7 @@ a {
     width: var(--arches-width);
     height: var(--arches-height);
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
 }
 
 #arches h2 {
@@ -401,6 +417,9 @@ a {
     align-items: center;
     background-color: var(--light-black);
     z-index: calc(var(--lower-gradient-z) + 1);
+    -webkit-transition: min-width 1s;
+    -moz-transition: min-width 1s;
+    -o-transition: min-width 1s;
     transition: min-width 1s;
 }
 
@@ -550,6 +569,9 @@ a {
     width: 100%;
     height: 100%;
     top: var(--invisible-height);
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -o-transition: 1s;
     transition: 1s;
 }
 
@@ -658,13 +680,13 @@ a {
     height: calc(100% - 22px);
     padding: 10px;
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
     border: 1px solid white;
 }
 
 #about-me-pictures img:nth-child(2) {
     -o-object-position: left;
-       object-position: left;
+    object-position: left;
 }
 
 #about-me-desc {
@@ -727,6 +749,9 @@ a {
     width: 0;
     margin: auto;
     border-bottom: 1px solid var(--light-black);
+    -webkit-transition: width .3s;
+    -moz-transition: width .3s;
+    -o-transition: width .3s;
     transition: width .3s;
 }
 
@@ -772,6 +797,9 @@ a {
     font-family: f;
     font-size: 25px;
     z-index: calc(var(--lower-gradient-z) + 1);
+    -webkit-transition: top 1.5s;
+    -moz-transition: top 1.5s;
+    -o-transition: top 1.5s;
     transition: top 1.5s;
 }
 
@@ -832,7 +860,7 @@ a {
     --arrow-color: rgba(255, 255, 255, .7);
     --button-width: calc(var(--lower-page-padding) + var(--lower-page-radius) + var(--extra-width));
 
-    float: left;
+    /* float: left; */
     position: absolute;
     width: var(--button-width);
     height: 100%;
@@ -845,6 +873,9 @@ a {
     overflow: hidden;
     opacity: 0;
     z-index: calc(var(--lower-gradient-z) + 2);
+    -webkit-transition: opacity 1s, width .75s, margin-left .75s;
+    -moz-transition: opacity 1s, width .75s, margin-left .75s;
+    -o-transition: opacity 1s, width .75s, margin-left .75s;
     transition: opacity 1s, width .75s, margin-left .75s;
 }
 
@@ -929,7 +960,7 @@ a {
     width: 100%;
     height: 100%;
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
     z-index: 4;
 }
 
@@ -1056,12 +1087,16 @@ a {
     margin: 0;
     margin-left: auto;
     margin-right: auto;
-    top: -32px;
+    /* top: -32px; */
+    bottom: 12px;
     border-bottom: 1px solid #b97c5d;
+    -webkit-transition: width .3s;
+    -moz-transition: width .3s;
+    -o-transition: width .3s;
     transition: width .3s;
 }
 
-#my-work-explore>div:hover div {
+#my-work-explore>div:has(a:hover) div {
     width: 100%;
 }
 
@@ -1098,6 +1133,9 @@ a {
     /*    left: calc(100% - 250px);*/
     right: 150px;
     /*border: 2px solid var(--bottom-color);*/
+    -webkit-transition: top 1s;
+    -moz-transition: top 1s;
+    -o-transition: top 1s;
     transition: top 1s;
 }
 
@@ -1246,6 +1284,9 @@ a {
     height: 1px;
     align-items: center;
     background-color: var(--light-black);
+    -webkit-transition: width .5s;
+    -moz-transition: width .5s;
+    -o-transition: width .5s;
     transition: width .5s;
 }
 
@@ -1261,6 +1302,9 @@ a {
     color: var(--light-black);
     background-color: #fffbf5;
     cursor: pointer;
+    -webkit-transition: padding-left 1s;
+    -moz-transition: padding-left 1s;
+    -o-transition: padding-left 1s;
     transition: padding-left 1s;
 }
 
@@ -1287,6 +1331,9 @@ a {
     opacity: 0;
     left: 200px;
     background-color: #fffbf5;
+    -webkit-transition: opacity 1s, left 1s;
+    -moz-transition: opacity 1s, left 1s;
+    -o-transition: opacity 1s, left 1s;
     transition: opacity 1s, left 1s;
 }
 
@@ -1297,7 +1344,7 @@ a {
     width: 100%;
     height: 100%;
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
     bottom: var(--offset);
     right: var(--offset);
 }
@@ -1356,11 +1403,14 @@ a {
     width: 102%;
     height: 100vh;
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
     -o-object-position: bottom;
-       object-position: bottom;
+    object-position: bottom;
     margin-left: 50%;
     transform: translateX(-50%);
+    -webkit-transition: width 1s;
+    -moz-transition: width 1s;
+    -o-transition: width 1s;
     transition: width 1s;
 }
 
@@ -1379,6 +1429,9 @@ a {
     font-family: antically;
     font-family: ca;
     text-shadow: 0 0 30px rgba(0, 0, 0, .1);
+    -webkit-transition: text-shadow 1s;
+    -moz-transition: text-shadow 1s;
+    -o-transition: text-shadow 1s;
     transition: text-shadow 1s;
 }
 
@@ -1411,6 +1464,9 @@ a {
     font-weight: normal;
     padding: 0;
     text-shadow: 0 0 30px rgba(0, 0, 0, .1);
+    -webkit-transition: text-shadow 1s;
+    -moz-transition: text-shadow 1s;
+    -o-transition: text-shadow 1s;
     transition: text-shadow 1s;
 }
 
@@ -1418,6 +1474,9 @@ a {
     width: 0;
     margin-left: auto;
     border-bottom: 2px solid #fffbf5;
+    -webkit-transition: width .4s;
+    -moz-transition: width .4s;
+    -o-transition: width .4s;
     transition: width .4s;
 }
 
@@ -1523,7 +1582,8 @@ a {
     }
 
     #my-work-explore>div>div {
-        top: -29px;
+        /* top: -29px; */
+        bottom: 11px;
     }
 
     #bottom-page>h2 {
@@ -1706,8 +1766,9 @@ a {
     }
 
     #my-work-explore>div>div {
-        border-bottom: 1px solid var(--light-black);
-        top: -25px;
+        border-bottom: 1px solid #b97c5d;
+        /* top: -25px; */
+        bottom: 10px;
     }
 
     #bottom-page>h2 {
@@ -1738,6 +1799,10 @@ a {
 
     #travel div.content>div {
         width: auto;
+    }
+
+    #travel div.info ul li.show h2 {
+        padding-left: 30px;
     }
 
     #travel div.pictures {
@@ -2172,7 +2237,7 @@ a {
 
     #about-me-desc h3 {
         font-size: 25px;
-        margin-bottom: 0px;
+        margin-bottom: 0;
     }
 
     #about-me-desc p {
@@ -2259,6 +2324,9 @@ a {
     #more-travel>div:first-child img {
         width: 900px;
         height: 850px;
+        -webkit-transition: width 1s, height 1s;
+        -moz-transition: width 1s, height 1s;
+        -o-transition: width 1s, height 1s;
         transition: width 1s, height 1s;
     }
 
@@ -2335,7 +2403,7 @@ a {
     }
 
     #arches.done li:hover {
-        box-shadow: 0px 0px 18px rgba(0, 0, 0, .3);
+        box-shadow: 0 0 18px rgba(0, 0, 0, .3);
         top: calc(var(--arches-offset) - 7px);
     }
 
@@ -2421,7 +2489,8 @@ a {
     }
 
     #my-work-explore>div>div {
-        top: -21px;
+        /* top: -21px; */
+        bottom: 9px;
     }
 
     #bottom-page {
@@ -2477,6 +2546,10 @@ a {
         line-height: 16px;
         padding-top: 1px;
         padding-bottom: 1px;
+    }
+
+    #travel div.info ul li.show h2 {
+        padding-left: 25px;
     }
 
     #travel div.pictures {
@@ -2551,7 +2624,7 @@ a {
     }
 
     #arches.done li:hover {
-        box-shadow: 0px 0px 13px rgba(0, 0, 0, .3);
+        box-shadow: 0 0 13px rgba(0, 0, 0, .3);
     }
 
     #break {
@@ -2607,14 +2680,14 @@ a {
         top: auto;
         bottom: 30px;
         left: auto;
-        right: 0px;
+        right: 0;
         transform: rotate(3deg);
     }
 
     #about-me-pictures h2 {
         top: -20px;
         left: auto;
-        right: 0px;
+        right: 0;
     }
 
     #about-me-desc {
@@ -2726,7 +2799,7 @@ a {
         display: flex;
         flex-direction: column;
         width: 250px;
-        left: 0px;
+        left: 0;
     }
 
     #travel div.info>h2 {
@@ -2750,6 +2823,10 @@ a {
     #travel div.info ul li h2 {
         font-size: 13px;
         line-height: 13px;
+    }
+
+    #travel div.info ul li.show h2 {
+        padding-left: 20px;
     }
 
     #travel div.pictures {

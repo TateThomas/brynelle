@@ -77,7 +77,7 @@ let appHeader = `
 document.getElementById("header").innerHTML = appHeader;
 
 function burgerClick() {
-    
+
     let burger = document.getElementById("burger");
     let links = document.getElementById("links");
     if (burger.className == "show") {
@@ -88,9 +88,9 @@ function burgerClick() {
         burger.className = "show";
         links.className = "show";
     }
-    
+
 }
 
-document.getElementById("burger").addEventListener('click', function() {
-   burgerClick(); 
+document.getElementById("burger").addEventListener('click', function () {
+    burgerClick();
 });

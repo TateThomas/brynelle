@@ -3,137 +3,137 @@
 @import "/css/book-now.css";
 
 
-@font-face{
+@font-face {
     src: url(/fonts/title/alta-regular.otf);
     font-family: alta;
 }
 
-@font-face{
+@font-face {
     src: url(/fonts/cursive/AnticallyRegular-OVox8.ttf);
     font-family: antically;
 }
 
-@font-face{
+@font-face {
     src: url(/fonts/cursive/DarlingtonDemo-z8xjG.ttf);
     font-family: darlington;
 }
 
-@font-face{
+@font-face {
     src: url(/fonts/title/goodfish/goodfish.regular.otf);
     font-family: a;
 }
 
-@font-face{
+@font-face {
     src: url(/fonts/title/RomilePersonalUse-x3Xdr.otf);
     font-family: b;
 }
 
-@font-face{
+@font-face {
     src: url(/fonts/title/VioletyDreams-WyEOA.otf);
     font-family: c;
 }
 
-@font-face{
+@font-face {
     src: url(/fonts/title/black-aroug/BlackArougDemoVersionRegular-GOpRA.ttf);
     font-family: d;
 }
 
-@font-face{
+@font-face {
     src: url(/fonts/title/ranille/RanilleNormalRegular-axEpm.otf);
     font-family: e;
 }
 
-@font-face{
+@font-face {
     src: url(/fonts/title/VtksTatuage2-3GzL.ttf);
     font-family: f;
 }
 
-@font-face{
+@font-face {
     src: url(/fonts/title/TypographyTimes-RgRW.ttf);
     font-family: g;
 }
 
-@font-face{
+@font-face {
     src: url(/fonts/paragraph/coco-gothic/coco-gothic.light.ttf);
     font-family: pa;
 }
 
-@font-face{
+@font-face {
     src: url(/fonts/paragraph/coco-gothic/coco-gothic.light-italic.ttf);
     font-family: pai;
 }
 
-@font-face{
+@font-face {
     src: url(/fonts/paragraph/josefin-sans/josefin-sans.regular.ttf);
     font-family: pb;
 }
 
-@font-face{
+@font-face {
     src: url(/fonts/paragraph/josefin-sans/josefin-sans.bold.ttf);
     font-family: pbb;
 }
 
-@font-face{
+@font-face {
     src: url(/fonts/paragraph/josefin-sans/josefin-sans.semibold-italic.ttf);
     font-family: pbsbi;
 }
 
-@font-face{
+@font-face {
     src: url(/fonts/paragraph/josefin-sans/josefin-sans.semibold.ttf);
     font-family: pbsb;
 }
 
-@font-face{
+@font-face {
     src: url(/fonts/paragraph/josefin-sans/josefin-sans.italic.ttf);
     font-family: pbi;
 }
 
-@font-face{
+@font-face {
     src: url(/fonts/paragraph/source-sans-pro/source-sans-pro.regular.ttf);
     font-family: pc;
 }
 
-@font-face{
+@font-face {
     src: url(/fonts/paragraph/source-sans-pro/source-sans-pro.light.ttf);
     font-family: pcl;
 }
 
-@font-face{
+@font-face {
     src: url(/fonts/paragraph/source-sans-pro/source-sans-pro.semibold.ttf);
     font-family: pcsb;
 }
 
-@font-face{
+@font-face {
     src: url(/fonts/paragraph/source-sans-pro/source-sans-pro.italic.ttf);
     font-family: pci;
 }
 
-@font-face{
+@font-face {
     src: url(/fonts/paragraph/source-sans-pro/source-sans-pro.light-italic.ttf);
     font-family: pcli;
 }
 
-@font-face{
+@font-face {
     src: url(/fonts/paragraph/roboto-condensed/roboto-condensed.regular.ttf);
     font-family: pd;
 }
 
-@font-face{
+@font-face {
     src: url(/fonts/cursive/holland/Holland-JRGaj.ttf);
     font-family: ca;
 }
 
-@font-face{
+@font-face {
     src: url(/fonts/cursive/holland/HollandMonolineClean-VGEqZ.ttf);
     font-family: cac;
 }
 
-@font-face{
+@font-face {
     src: url(/fonts/cursive/Themysion.ttf);
     font-family: cb;
 }
 
-@font-face{
+@font-face {
     src: url(/fonts/cursive/BrittanySignature.ttf);
     font-family: cc;
 }
@@ -141,14 +141,17 @@
 
 /****************** All ******************/
 
-body{
+body {
     --light-black: #404040;
-    
+
     background-color: #FFFBF5;
     margin: 0;
 }
 
-h1, h2, ul, li{
+h1,
+h2,
+ul,
+li {
     padding: 0;
     margin: 0;
     display: inline-block;
@@ -159,47 +162,47 @@ h1, h2, ul, li{
     color: white;
 }
 
-a{
+a {
     color: white;
     text-decoration: none;
 }
 
-#content{
+#content {
     color: white;
     overflow-x: hidden;
     width: 100%;
     z-index: 1;
 }
 
-#header.show #links li.gallery{
+#header.show #links li.gallery {
     background-color: #ddc2bf;
 }
 
-#header.show #links li.gallery:hover{
+#header.show #links li.gallery:hover {
     height: var(--links-font-size) !important;
     padding-bottom: calc((var(--header-height) - var(--links-font-size)) / 2) !important;
 }
 
-#header.show #links li.gallery > a:hover{
+#header.show #links li.gallery>a:hover {
     color: #c89c97 !important;
 }
 
 
 /****************** Top Page ******************/
 
-#top-page{
+#top-page {
     width: 100%;
-    padding; 100px;
+    /* padding: 100px; */
     overflow: hidden;
 }
 
-#top-page div.picture{
+#top-page div.picture {
     position: relative;
     height: 700px;
     z-index: 2;
 }
 
-#top-page div.picture::after{
+#top-page div.picture::after {
     /*
         Credit to Fabien Snauwaert from Stack Overflow for writing the code for the curve, I only made minor adjustments: https://stackoverflow.com/questions/17202548/wavy-shape-with-css
     */
@@ -215,15 +218,17 @@ a{
     z-index: 3;
 }
 
-#top-page div.picture img{
+#top-page div.picture img {
     z-index: 2;
     width: 100%;
     height: 100%;
+    -o-object-fit: cover;
     object-fit: cover;
+    -o-object-position: 0 20%;
     object-position: 0 20%;
 }
 
-#top-page div.picture h2{
+#top-page div.picture h2 {
     position: absolute;
     color: #fffbf5;
     width: 100%;
@@ -236,7 +241,7 @@ a{
     z-index: 4;
 }
 
-#top-page div.info{
+#top-page div.info {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -245,9 +250,9 @@ a{
     z-index: 4
 }
 
-div.button{
+div.button {
     --line-thickness: 2px;
-    
+
     display: flex;
     flex-direction: column;
     position: relative;
@@ -259,7 +264,9 @@ div.button{
     background-color: #0e0f0c;
 }
 
-div.button div{
+div.button div {
+    width: -webkit-max-content;
+    width: -moz-max-content;
     width: max-content;
     margin: auto auto auto 15%;
     border: var(--line-thickness) solid #0e0f0c;
@@ -268,7 +275,7 @@ div.button div{
     transition: background-color .3s;
 }
 
-div.button h3{
+div.button h3 {
     padding: 13px 24px 13px 24px;
     margin: 0;
     color: #0e0f0c;
@@ -277,18 +284,18 @@ div.button h3{
     font-size: 36px;
 }
 
-div.button div:hover{
+div.button div:hover {
     background-color: #e5d4bc;
 }
 
-#top-page div.quick{
+#top-page div.quick {
     display: flex;
     width: 100%;
     margin-top: 125px;
     background-color: #ffecdf;
 }
 
-#top-page div.quick h2{
+#top-page div.quick h2 {
     color: #b67354;
     font-family: ca;
     font-size: 75px;
@@ -299,25 +306,25 @@ div.button div:hover{
 
 /****************** Icons ******************/
 
-#icons{
+#icons {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     width: 100%;
     padding: 0 0 100px 0;
 }
 
-#icons h1{
+#icons h1 {
     grid-column: span 2;
     color: var(--light-black);
     text-align: center;
     font-family: d;
-/*    font-weight: bold;*/
+    /*    font-weight: bold;*/
     font-size: 60px;
     letter-spacing: 3px;
     padding: 75px 0 25px 0;
 }
 
-#icons a > div{
+#icons a>div {
     position: relative;
     display: flex;
     width: 100%;
@@ -325,7 +332,7 @@ div.button div:hover{
     overflow: hidden;
 }
 
-#icons div div{
+#icons div div {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -335,55 +342,62 @@ div.button div:hover{
     z-index: 3;
 }
 
-#icons img{
+#icons img {
     position: absolute;
     height: 105%;
     width: 105%;
+    -o-object-fit: cover;
     object-fit: cover;
     margin-left: 50%;
     transform: translateX(-50%);
+    transition: -webkit-filter .75s;
     transition: filter .75s;
+    transition: filter .75s, -webkit-filter .75s;
     z-index: 2;
 }
 
-#icons a > div:hover img{
+#icons a>div:hover img {
     -webkit-filter: blur(3px);
     filter: blur(3px);
 }
 
-#icons h2{
+#icons h2 {
     color: #fffbf5;
     margin: auto;
     font-family: d;
     text-transform: uppercase;
-/*    font-weight: bold;*/
+    /*    font-weight: bold;*/
     letter-spacing: 3px;
     font-size: 65px;
     line-height: 100%;
     z-index: 4;
 }
 
-#icons a > div:hover{
+#icons a>div:hover {
     cursor: pointer;
 }
 
-#icons a > div:hover div{
+#icons a>div:hover div {
     opacity: 1;
 }
 
-.bottom{
+.bottom {
+    -o-object-position: bottom;
     object-position: bottom;
 }
 
-#icons a:last-child img{
+#icons a:last-child img {
+    -o-object-position: left;
     object-position: left;
 }
 
 
 /****************** Instagram ******************/
 
-#ig{
+#ig {
     display: flex;
+    width: -webkit-max-content;
+    width: -moz-max-content;
     width: max-content;
     padding: 55px;
     margin: 100px auto 225px auto;
@@ -391,7 +405,7 @@ div.button div:hover{
     background-color: #f6eddf;
 }
 
-#ig h2{
+#ig h2 {
     width: 100%;
     color: var(--light-black);
     text-align: center;
@@ -399,7 +413,7 @@ div.button div:hover{
     margin-top: auto;
 }
 
-#ig h3{
+#ig h3 {
     width: 100%;
     text-align: center;
     color: var(--light-black);
@@ -409,329 +423,331 @@ div.button div:hover{
     margin: 5px 0 auto 0;
 }
 
-#ig div:first-child{
+#ig div:first-child {
     display: flex;
     flex-direction: column;
     padding: 50px;
     margin-left: auto;
 }
 
-#ig div:last-child{
+#ig div:last-child {
     width: 600px;
     margin-right: auto;
 }
 
 /****************** Book Now ******************/
 
-#book-now{
+#book-now {
     background-color: white;
 }
 
 
 
 @media screen and (max-width: 1400px) {
-    
-    #top-page div.picture{
+
+    #top-page div.picture {
         height: 650px;
     }
-    
-    #top-page div.picture h2{
+
+    #top-page div.picture h2 {
         font-size: 110px;
     }
-    
-    #top-page div.picture::after{
+
+    #top-page div.picture::after {
         height: 150px;
     }
-    
-    #ig div:last-child{
+
+    #ig div:last-child {
         width: 500px;
     }
-    
-    #ig h2{
+
+    #ig h2 {
         width: 200px;
         margin: auto auto 0 auto;
     }
-    
+
 }
 
 @media screen and (max-width: 1000px) {
-    
-    #top-page div.picture{
+
+    #top-page div.picture {
         height: 590px;
     }
-    
-    #top-page div.picture h2{
+
+    #top-page div.picture h2 {
         font-size: 100px;
     }
-    
-    #top-page div.picture::after{
+
+    #top-page div.picture::after {
         height: 125px;
     }
-    
-    div.button h3{
+
+    div.button h3 {
         font-size: 32px;
     }
-    
-    #top-page div.quick h2{
+
+    #top-page div.quick h2 {
         font-size: 65px;
     }
-    
-    #icons a > div{
+
+    #icons a>div {
         height: 600px;
     }
-    
-    #icons h1{
+
+    #icons h1 {
         font-size: 52px;
     }
-    
-    #icons h2{
+
+    #icons h2 {
         font-size: 55px;
     }
 
-    #ig h2{
+    #ig h2 {
         font-size: 35px;
         width: 175px;
     }
 
-    #ig h3{
+    #ig h3 {
         font-size: 18px;
     }
-    
-    #ig div:last-child{
+
+    #ig div:last-child {
         width: auto;
     }
-    
+
 }
 
 @media screen and (max-width: 800px) {
-    
-    #top-page div.picture{
+
+    #top-page div.picture {
         height: 550px;
     }
-    
-    #top-page div.picture h2{
+
+    #top-page div.picture h2 {
         font-size: 90px;
     }
-    
-    #top-page div.picture::after{
+
+    #top-page div.picture::after {
         height: 100px;
     }
-    
-    div.button h3{
+
+    div.button h3 {
         font-size: 30px;
     }
-    
-    #top-page div.quick h2{
+
+    #top-page div.quick h2 {
         font-size: 60px;
     }
-    
-    #icons h1{
+
+    #icons h1 {
         font-size: 47px;
     }
-    
-    #icons h2{
+
+    #icons h2 {
         font-size: 50px;
     }
-    
-    #ig{
+
+    #ig {
         flex-direction: column;
     }
-    
-    #ig h2{
+
+    #ig h2 {
         font-size: 30px;
+        width: -webkit-max-content;
+        width: -moz-max-content;
         width: max-content;
     }
 
-    #ig h3{
+    #ig h3 {
         font-size: 15px;
     }
-    
-    #ig div:first-child{
+
+    #ig div:first-child {
         margin: auto;
     }
-    
-    #ig div:last-child{
+
+    #ig div:last-child {
         margin: auto;
     }
-    
+
 }
 
 @media screen and (max-width: 730px) {
-    
-    #top-page div.picture{
+
+    #top-page div.picture {
         height: 515px;
     }
-    
-    #top-page div.picture h2{
+
+    #top-page div.picture h2 {
         font-size: 80px;
     }
-    
-    #top-page div.picture::after{
+
+    #top-page div.picture::after {
         height: 75px;
     }
-    
-    div.button h3{
+
+    div.button h3 {
         font-size: 28px;
     }
-    
-    #top-page div.quick h2{
+
+    #top-page div.quick h2 {
         font-size: 58px;
     }
-    
-    #icons a > div{
+
+    #icons a>div {
         height: 450px;
     }
-    
-    #icons h1{
+
+    #icons h1 {
         font-size: 45px;
     }
-    
-    #icons h2{
+
+    #icons h2 {
         font-size: 42px;
     }
-    
-    #ig{
+
+    #ig {
         padding-left: 20px;
         padding-right: 20px;
     }
 
-    #ig h3{
+    #ig h3 {
         font-size: 18px;
     }
-    
-    #ig div:last-child{
+
+    #ig div:last-child {
         width: 100%;
     }
-    
+
 }
 
 @media screen and (max-width: 625px) {
-    
-    #top-page div.picture{
+
+    #top-page div.picture {
         height: 480px;
     }
-    
-    #top-page div.picture h2{
+
+    #top-page div.picture h2 {
         font-size: 75px;
     }
-    
-    div.button h3{
+
+    div.button h3 {
         font-size: 26px;
     }
-    
-    #top-page div.quick h2{
+
+    #top-page div.quick h2 {
         font-size: 55px;
     }
-    
-    #icons h1{
+
+    #icons h1 {
         font-size: 42px;
     }
-    
-    #icons h2{
+
+    #icons h2 {
         font-size: 34px;
     }
-    
+
 }
 
 @media screen and (max-width: 525px) {
-    
-    #top-page div.picture{
+
+    #top-page div.picture {
         height: 440px;
     }
-    
-    #top-page div.picture h2{
+
+    #top-page div.picture h2 {
         font-size: 65px;
     }
-    
-    #top-page div.picture::after{
+
+    #top-page div.picture::after {
         height: 50px;
     }
-    
-    div.button div{
+
+    div.button div {
         border-radius: 29px;
     }
-    
-    div.button h3{
+
+    div.button h3 {
         padding: 12px 18px 12px 18px;
         font-size: 25px;
     }
-    
-    #top-page div.quick h2{
+
+    #top-page div.quick h2 {
         font-size: 60px;
     }
-    
-    #icons{
+
+    #icons {
         grid-template-columns: 1fr;
     }
-    
-    #icons h1{
+
+    #icons h1 {
         grid-column: span 1;
         font-size: 47px;
     }
-    
-    #icons a > div{
+
+    #icons a>div {
         height: 600px;
     }
-    
-    #icons h2{
+
+    #icons h2 {
         font-size: 55px;
     }
-    
+
 }
 
 @media screen and (max-width: 420px) {
-    
-    #top-page div.picture{
+
+    #top-page div.picture {
         height: 420px;
     }
-    
-    #top-page div.picture h2{
+
+    #top-page div.picture h2 {
         font-size: 58px;
     }
-    
-    #top-page div.picture::after{
+
+    #top-page div.picture::after {
         height: 40px;
     }
-    
-    div.button div{
+
+    div.button div {
         margin: auto auto auto 10%;
     }
-    
-    div.button h3{
+
+    div.button h3 {
         font-size: 22px;
     }
-    
-    #top-page div.quick h2{
+
+    #top-page div.quick h2 {
         font-size: 52px;
         padding: 35px 0 35px 0;
     }
-    
-    #icons a > div{
+
+    #icons a>div {
         height: 500px;
     }
-    
-    #icons h1{
+
+    #icons h1 {
         font-size: 42px;
     }
-    
-    #icons h2{
+
+    #icons h2 {
         font-size: 42px;
     }
-    
-    #ig{
+
+    #ig {
         width: 100%;
         max-width: 100%;
         padding-left: 0;
         padding-right: 0;
         border-radius: 0;
     }
-    
-    #ig h2{
+
+    #ig h2 {
         font-size: 25px;
     }
 
-    #ig h3{
+    #ig h3 {
         font-size: 15px;
     }
-    
+
 }

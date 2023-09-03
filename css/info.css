@@ -3,142 +3,142 @@
 @import "/css/book-now.css";
 
 
-@font-face{
+@font-face {
     src: url(/fonts/title/alta-regular.otf);
     font-family: alta;
 }
 
-@font-face{
+@font-face {
     src: url(/fonts/cursive/AnticallyRegular-OVox8.ttf);
     font-family: antically;
 }
 
-@font-face{
+@font-face {
     src: url(/fonts/cursive/DarlingtonDemo-z8xjG.ttf);
     font-family: darlington;
 }
 
-@font-face{
+@font-face {
     src: url(/fonts/title/goodfish/goodfish.regular.otf);
     font-family: a;
 }
 
-@font-face{
+@font-face {
     src: url(/fonts/title/RomilePersonalUse-x3Xdr.otf);
     font-family: b;
 }
 
-@font-face{
+@font-face {
     src: url(/fonts/title/VioletyDreams-WyEOA.otf);
     font-family: c;
 }
 
-@font-face{
+@font-face {
     src: url(/fonts/title/black-aroug/BlackArougDemoVersionRegular-GOpRA.ttf);
     font-family: d;
 }
 
-@font-face{
+@font-face {
     src: url(/fonts/title/ranille/RanilleNormalRegular-axEpm.otf);
     font-family: e;
 }
 
-@font-face{
+@font-face {
     src: url(/fonts/title/VtksTatuage2-3GzL.ttf);
     font-family: f;
 }
 
-@font-face{
+@font-face {
     src: url(/fonts/title/TypographyTimes-RgRW.ttf);
     font-family: g;
 }
 
-@font-face{
+@font-face {
     src: url(/fonts/paragraph/coco-gothic/coco-gothic.light.ttf);
     font-family: pa;
 }
 
-@font-face{
+@font-face {
     src: url(/fonts/paragraph/coco-gothic/coco-gothic.light-italic.ttf);
     font-family: pai;
 }
 
-@font-face{
+@font-face {
     src: url(/fonts/paragraph/coco-gothic/coco-gothic.ultralight.ttf);
     font-family: pau;
 }
 
-@font-face{
+@font-face {
     src: url(/fonts/paragraph/josefin-sans/josefin-sans.regular.ttf);
     font-family: pb;
 }
 
-@font-face{
+@font-face {
     src: url(/fonts/paragraph/josefin-sans/josefin-sans.bold.ttf);
     font-family: pbb;
 }
 
-@font-face{
+@font-face {
     src: url(/fonts/paragraph/josefin-sans/josefin-sans.semibold-italic.ttf);
     font-family: pbsbi;
 }
 
-@font-face{
+@font-face {
     src: url(/fonts/paragraph/josefin-sans/josefin-sans.semibold.ttf);
     font-family: pbsb;
 }
 
-@font-face{
+@font-face {
     src: url(/fonts/paragraph/josefin-sans/josefin-sans.italic.ttf);
     font-family: pbi;
 }
 
-@font-face{
+@font-face {
     src: url(/fonts/paragraph/source-sans-pro/source-sans-pro.regular.ttf);
     font-family: pc;
 }
 
-@font-face{
+@font-face {
     src: url(/fonts/paragraph/source-sans-pro/source-sans-pro.light.ttf);
     font-family: pcl;
 }
 
-@font-face{
+@font-face {
     src: url(/fonts/paragraph/source-sans-pro/source-sans-pro.semibold.ttf);
     font-family: pcsb;
 }
 
-@font-face{
+@font-face {
     src: url(/fonts/paragraph/source-sans-pro/source-sans-pro.italic.ttf);
     font-family: pci;
 }
 
-@font-face{
+@font-face {
     src: url(/fonts/paragraph/source-sans-pro/source-sans-pro.light-italic.ttf);
     font-family: pcli;
 }
 
-@font-face{
+@font-face {
     src: url(/fonts/paragraph/roboto-condensed/roboto-condensed.regular.ttf);
     font-family: pd;
 }
 
-@font-face{
+@font-face {
     src: url(/fonts/cursive/holland/Holland-JRGaj.ttf);
     font-family: ca;
 }
 
-@font-face{
+@font-face {
     src: url(/fonts/cursive/holland/HollandMonolineClean-VGEqZ.ttf);
     font-family: cac;
 }
 
-@font-face{
+@font-face {
     src: url(/fonts/cursive/Themysion.ttf);
     font-family: cb;
 }
 
-@font-face{
+@font-face {
     src: url(/fonts/cursive/BrittanySignature.ttf);
     font-family: cc;
 }
@@ -146,21 +146,24 @@
 
 /****************** All ******************/
 
-html{
+html {
     scroll-behavior: smooth;
     overflow-x: hidden;
 }
 
-body{
+body {
     --light-black: #404040;
     --lower-gradient-z: 2;
-    
+
     background-color: white;
     overflow-x: hidden;
     margin: 0;
 }
 
-h1, h2, ul, li{
+h1,
+h2,
+ul,
+li {
     padding: 0;
     margin: 0;
     display: inline-block;
@@ -171,43 +174,44 @@ h1, h2, ul, li{
     color: white;
 }
 
-a{
+a {
     color: white;
     text-decoration: none;
 }
 
-#content{
+#content {
     color: white;
     overflow: hidden;
     width: 100%;
     background-color: #fffbf5;
 }
 
-#links li.info{
+#links li.info {
     background-color: #ddc2bf;
 }
 
-#links li.info > a:hover{
+#links li.info>a:hover {
     color: #c89c97 !important;
 }
 
 
 /****************** Info ******************/
 
-#info{
+#info {
     display: flex;
     flex-direction: column;
     margin: 50px 50px 300px 50px;
 }
 
-#info img{
+#info img {
     height: 225px;
     width: 100%;
     margin: 20px 0 10px 0;
+    -o-object-fit: contain;
     object-fit: contain;
 }
 
-#info > h1{
+#info>h1 {
     color: var(--light-black);
     width: 100%;
     text-align: center;
@@ -218,22 +222,24 @@ a{
     margin-bottom: 125px;
 }
 
-#info > div{
+#info>div {
     display: flex;
 }
 
 
 /****************** Contents ******************/
 
-#contents{
+#contents {
     --list-width: 310px;
-    
+
     position: relative;
+    height: -webkit-max-content;
+    height: -moz-max-content;
     height: max-content;
     padding: 30px;
     margin-left: auto;
-    top: 0px;
-/*    border: 1px solid var(--light-black);*/
+    top: 0;
+    /*    border: 1px solid var(--light-black);*/
     border: 2px solid #fae8d7;
     border-radius: 20px;
     box-shadow: 0 0 7px rgba(0, 0, 0, .05);
@@ -242,7 +248,7 @@ a{
     z-index: 2;
 }
 
-#contents h2{
+#contents h2 {
     display: block;
     color: var(--light-black);
     font-family: b;
@@ -254,23 +260,23 @@ a{
     text-underline-offset: 5px;
 }
 
-#contents ul{
+#contents ul {
     list-style-type: circle;
     list-style-position: inside;
     margin-top: 15px;
 }
 
-#contents li{
+#contents li {
     display: block;
     width: var(--list-width);
     margin: 4px 10px 4px 4px;
 }
 
-#contents > ul > li:last-child{
+#contents>ul>li:last-child {
     margin-bottom: 0;
 }
 
-#contents li h3{
+#contents li h3 {
     display: list-item;
     color: var(--light-black);
     font-weight: normal;
@@ -284,34 +290,34 @@ a{
     transition: background-color .1s;
 }
 
-#contents li li h3{
+#contents li li h3 {
     font-family: pbi;
     font-size: 18px !important;
 }
 
-#contents li h3:hover{
+#contents li h3:hover {
     cursor: pointer;
     background-color: rgba(213, 182, 154, .2);
 }
 
-#contents li h3:active{
+#contents li h3:active {
     background-color: rgba(213, 182, 154, .4);
 }
 
-#contents h3 span{
+#contents h3 span {
     position: relative;
     left: -15px;
 }
 
-#contents li ul{
+#contents li ul {
     --sub-entry-height: 20px;
     --sub-entry-padding: 5px;
     --sub-entry-margin: 0px;
     --sub-entry-amount: 0;
-    
+
     list-style-type: none;
     width: 100%;
-/*    height: 0;*/
+    /*    height: 0;*/
     max-height: 0;
     margin-top: 0;
     margin-left: 5px;
@@ -320,39 +326,40 @@ a{
     transition-delay: .4s;
 }
 
-#contents > ul > li:nth-child(1) > ul{
+#contents>ul>li:nth-child(1)>ul {
     --sub-entry-amount: 2;
 }
 
-#contents > ul > li:nth-child(2) > ul{
+#contents>ul>li:nth-child(2)>ul {
     --sub-entry-amount: 5;
 }
 
-#contents > ul > li:nth-child(3) > ul{
+#contents>ul>li:nth-child(3)>ul {
     --sub-entry-amount: 5;
 }
 
-#contents > ul > li:nth-child(4) > ul{
+#contents>ul>li:nth-child(4)>ul {
     --sub-entry-amount: 3;
 }
 
-#contents li:hover ul, #contents li.show ul{
-/*    height: calc(((var(--sub-entry-height) + var(--sub-entry-margin) + (var(--sub-entry-padding) * 2)) * var(--sub-entry-amount)) + var(--sub-entry-margin));*/
+#contents li:hover ul,
+#contents li.show ul {
+    /*    height: calc(((var(--sub-entry-height) + var(--sub-entry-margin) + (var(--sub-entry-padding) * 2)) * var(--sub-entry-amount)) + var(--sub-entry-margin));*/
     max-height: 400px;
     transition-delay: 0s;
 }
 
-#contents li.show ul{
+#contents li.show ul {
     transition-delay: 0s;
 }
 
-#contents li ul li{
+#contents li ul li {
     margin: var(--sub-entry-margin);
     margin-right: 0;
     width: calc(100% - 5px);
 }
 
-#contents li ul li h3{
+#contents li ul li h3 {
     position: relative;
     font-size: var(--sub-entry-height);
     width: calc(100% - (3 * var(--sub-entry-padding)));
@@ -362,12 +369,12 @@ a{
     padding-left: calc(var(--sub-entry-padding) * 2);
 }
 
-#contents li ul li h3::before{
+#contents li ul li h3::before {
     content: '•';
     position: absolute;
 }
 
-#contents li ul li h3 span{
+#contents li ul li h3 span {
     display: inline-block;
     width: calc(100% - 5px - 12px);
     left: 12px;
@@ -376,14 +383,14 @@ a{
 
 /****************** Groups ******************/
 
-#groups{
+#groups {
     min-width: 1215px;
     width: 88%;
     max-width: 1500px;
     margin: 0 auto 0 60px;
 }
 
-#info div.group{
+#info div.group {
     width: calc(100% - 104px);
     padding: 50px;
     margin-bottom: 100px;
@@ -393,11 +400,11 @@ a{
     scroll-margin-top: 125px;
 }
 
-#info div.group:last-child{
+#info div.group:last-child {
     margin-bottom: 0;
 }
 
-#info div.group > h2{
+#info div.group>h2 {
     color: var(--light-black);
     text-align: center;
     font-family: d;
@@ -409,7 +416,7 @@ a{
     transition: background-color 0s;
 }
 
-#info div.set{
+#info div.set {
     --box-height: 44px;
     --box-margin: 10px;
     --question-size: 24px;
@@ -417,25 +424,25 @@ a{
     --answer-padding: 30px;
     --divider-thickness: 1px;
     --set-amount: 5;
-    
+
     display: flex;
     margin: var(--box-margin) 0 var(--box-margin) 0;
 }
 
-#info div.picture{
+#info div.picture {
     --ratio: .675;
     --picture-height: calc((((var(--box-height) + var(--box-margin)) * 2) + var(--divider-thickness)) * var(--set-amount));
     --picture-margin: calc(var(--box-margin) * 2);
-    
+
     width: calc(var(--picture-height) * var(--ratio));
     height: var(--picture-height);
     margin: auto var(--picture-margin) auto var(--picture-margin);
     z-index: 2;
 }
 
-#info div.picture img{
+#info div.picture img {
     --overflow: 1.0;
-    
+
     position: relative;
     width: calc(var(--picture-height) * var(--ratio) * var(--overflow));
     height: calc(var(--picture-height) * var(--overflow));
@@ -443,28 +450,28 @@ a{
     transform: translateX(-50%);
 }
 
-#info div.questions{
+#info div.questions {
     display: flex;
     flex-direction: column;
     width: 100%;
     z-index: 3;
 }
 
-#info div.dropdown{
+#info div.dropdown {
     width: 100%;
     margin: var(--box-margin) 0 var(--box-margin) 0;
     scroll-margin-top: 225px;
 }
 
-#info div.dropdown:first-child{
+#info div.dropdown:first-child {
     margin-top: auto;
 }
 
-#info div.dropdown:last-child{
+#info div.dropdown:last-child {
     margin-bottom: auto;
 }
 
-#info div.dropdown div.container{
+#info div.dropdown div.container {
     transition: background-color .1s;
     border-radius: 5px;
 }
@@ -479,7 +486,7 @@ a{
 }
 */
 
-#info div.dropdown > div{
+#info div.dropdown>div {
     height: var(--box-height);
     height: auto;
     max-height: var(--box-height);
@@ -487,16 +494,16 @@ a{
     transition: max-height .5s;
 }
 
-#info div.show > div{
-/*    height: calc(var(--box-height) * var(--lines));*/
+#info div.show>div {
+    /*    height: calc(var(--box-height) * var(--lines));*/
     max-height: 225px;
 }
 
-#info div.dropdown div.container{
+#info div.dropdown div.container {
     display: flex;
 }
 
-#info div.dropdown h2{
+#info div.dropdown h2 {
     color: var(--light-black);
     font-family: pb;
     height: var(--question-size);
@@ -507,7 +514,7 @@ a{
     border-radius: 8px;
 }
 
-#info div.icon{
+#info div.icon {
     --init-width: 20px;
     --extra-width: 0px;
     --extra-height: 0px;
@@ -515,7 +522,7 @@ a{
     --line-spacing: 6px;
     --line-radius: 18px;
     --horizontal-padding: 10px;
-    
+
     display: flex;
     flex-direction: column;
     width: calc(var(--init-width) + var(--extra-width));
@@ -525,13 +532,13 @@ a{
     transition: width .25s, height .25s;
 }
 
-#info div.icon div{
+#info div.icon div {
     position: relative;
     height: calc((var(--line-thickness) * 2) + var(--line-spacing));
     margin: auto;
 }
 
-#info div.icon span{
+#info div.icon span {
     display: block;
     width: var(--init-width);
     height: 0;
@@ -541,36 +548,36 @@ a{
     transition: width .25s, height .25s;
 }
 
-#info div.icon span:last-child{
+#info div.icon span:last-child {
     position: absolute;
     margin-bottom: 0;
     top: calc(var(--line-thickness) + var(--line-spacing));
     border-top-right-radius: calc(var(--line-radius) - (var(--line-spacing) + var(--line-thickness)));
 }
 
-#info div.icon:hover{
+#info div.icon:hover {
     cursor: pointer;
 }
 
-#info div.show div.icon{
+#info div.show div.icon {
     --extra-width: 6px;
     --extra-height: 6px;
-    
+
     width: calc(var(--init-width) + var(--extra-width) + var(--line-spacing) + var(--line-thickness));
 }
 
-#info div.show div.icon span:first-child{
+#info div.show div.icon span:first-child {
     width: calc(var(--init-width) + var(--extra-width) + var(--line-spacing) + var(--line-thickness));
     height: calc(var(--extra-height) + var(--line-spacing) + var(--line-thickness));
     transition-delay: 0s, .02s;
 }
 
-#info div.show div.icon span:last-child{
+#info div.show div.icon span:last-child {
     width: calc(var(--init-width) + var(--extra-width));
     height: var(--extra-height);
 }
 
-#info div.dropdown p{
+#info div.dropdown p {
     color: var(--light-black);
     font-family: pbi !important;
     height: var(--answer-size);
@@ -596,7 +603,7 @@ a{
 }
 */
 
-#info div.dropdown > span{
+#info div.dropdown>span {
     display: block;
     width: 100%;
     height: var(--divider-thickness);
@@ -605,529 +612,533 @@ a{
 
 
 @media screen and (max-width: 1775px) {
-    
-    #contents{
+
+    #contents {
         --list-width: 275px;
     }
-    
-    #groups{
+
+    #groups {
         min-width: 1100px;
         margin: 0 auto 0 50px;
     }
-    
-    #info div.set{
+
+    #info div.set {
         --box-height: 42px;
         --question-size: 21px;
         --answer-size: 18px;
     }
-    
-    #info div.picture{
+
+    #info div.picture {
         --ratio: .6;
     }
-    
+
 }
 
 @media screen and (max-width: 1625px) {
-    
-    #info{
+
+    #info {
         margin: 50px 40px 275px 40px;
     }
 
-    #info img{
+    #info img {
         height: 200px;
         margin: 15px 0 8px 0;
     }
 
-    #info > h1{
+    #info>h1 {
         font-size: 65px;
         margin-bottom: 100px;
     }
-    
-    #contents{
+
+    #contents {
         --list-width: 240px;
     }
-    
-    #contents h2{
+
+    #contents h2 {
         font-size: 32px;
         height: 34px;
     }
-    
-    #contents li h3{
+
+    #contents li h3 {
         font-size: 19px;
         line-height: 20px;
     }
-    
-    #contents li li h3{
+
+    #contents li li h3 {
         font-size: 16px !important;
         line-height: 18px;
     }
-    
-    #groups{
+
+    #groups {
         min-width: 940px;
         width: 100%;
         margin: 0 auto 0 35px;
     }
-    
-    #info div.group{
+
+    #info div.group {
         width: calc(100% - 70px);
         padding: 35px;
     }
-    
-    #info div.group > h2{
+
+    #info div.group>h2 {
         font-size: 42px;
     }
-    
-    #info div.set{
+
+    #info div.set {
         --box-height: 40px;
         --box-margin: 10px;
         --question-size: 19px;
         --answer-size: 16px;
         --answer-padding: 25px;
     }
-    
-    #info div.picture{
+
+    #info div.picture {
         --ratio: .5;
     }
-    
-    #info div.show > div{
+
+    #info div.show>div {
         max-height: 175px;
     }
-    
-    #info div.icon{
+
+    #info div.icon {
         --line-spacing: 5px;
-        --line-radius: 15px; 
+        --line-radius: 15px;
     }
-    
-    #info div.show div.icon{
+
+    #info div.show div.icon {
         --extra-width: 5px;
         --extra-height: 5px;
     }
-    
+
 }
 
 @media screen and (max-width: 1400px) {
-    
-    #info{
+
+    #info {
         margin: 50px 35px 265px 35px;
     }
 
-    #info img{
+    #info img {
         height: 175px;
         margin: 12px 0 6px 0;
     }
 
-    #info > h1{
+    #info>h1 {
         font-size: 60px;
         margin-bottom: 90px;
     }
-    
-    #contents{
+
+    #contents {
         --list-width: 215px;
     }
-    
-    #contents h2{
+
+    #contents h2 {
         font-size: 30px;
         height: 31px;
     }
-    
-    #groups{
+
+    #groups {
         min-width: 920px;
         margin: 0 auto 0 25px;
     }
-    
-    #info div.group{
+
+    #info div.group {
         width: calc(100% - 70px);
         padding: 35px;
     }
-    
-    #info div.group > h2{
+
+    #info div.group>h2 {
         font-size: 42px;
     }
-    
-    #info div.picture{
+
+    #info div.picture {
         --ratio: .45;
     }
-    
+
 }
 
 @media screen and (max-width: 1325px) {
-    
-    #info{
+
+    #info {
         margin: 50px 35px 265px 35px;
     }
 
-    #info img{
+    #info img {
         height: 175px;
         margin: 12px 0 6px 0;
     }
 
-    #info > h1{
+    #info>h1 {
         font-size: 60px;
         margin-bottom: 90px;
     }
-    
-    #contents{
+
+    #contents {
         --list-width: 190px;
     }
-    
-    #contents h2{
+
+    #contents h2 {
         font-size: 28px;
         height: 29px;
     }
-    
-    #contents li h3{
+
+    #contents li h3 {
         font-size: 18px;
         line-height: 18px;
     }
-    
-    #contents > ul > li > span > h3 span{
+
+    #contents>ul>li>span>h3 span {
         margin-left: 3px;
     }
-    
-    #contents li li h3{
+
+    #contents li li h3 {
         font-size: 15px !important;
         line-height: 16px;
     }
-    
-    #groups{
+
+    #groups {
         min-width: 805px;
         margin: 0 auto 0 25px;
     }
-     
-    #info div.group > h2{
+
+    #info div.group>h2 {
         font-size: 40px;
     }
-    
-    #info div.set{
+
+    #info div.set {
         --box-height: 28px;
         --question-size: 18px;
         --answer-size: 15px;
     }
-    
-    #info div.picture{
+
+    #info div.picture {
         --ratio: .4;
     }
-    
-    #info div.icon{
+
+    #info div.icon {
         --init-width: 15px;
         --line-spacing: 4px;
-        --line-radius: 13px; 
+        --line-radius: 13px;
         --line-thickness: 1px;
     }
-    
-    #info div.show div.icon{
+
+    #info div.show div.icon {
         --extra-width: 4px;
         --extra-height: 4px;
     }
-    
+
 }
 
 @media screen and (max-width: 1200px) {
-    
-    #info{
+
+    #info {
         margin: 50px 25px 250px 25px;
     }
 
-    #info img{
+    #info img {
         height: 150px;
         margin: 8px 0 5px 0;
     }
 
-    #info > h1{
+    #info>h1 {
         font-size: 56px;
         margin-bottom: 85px;
     }
-    
-    #contents{
+
+    #contents {
         --list-width: 175px;
     }
-    
-    #contents h2{
+
+    #contents h2 {
         font-size: 27px;
         height: 28px;
     }
-    
-    #contents li h3{
+
+    #contents li h3 {
         font-size: 16px;
         line-height: 16px;
     }
-    
-    #contents > ul > li > span > h3 span{
+
+    #contents>ul>li>span>h3 span {
         margin-left: 4px;
     }
-    
-    #contents li li h3{
+
+    #contents li li h3 {
         font-size: 14px !important;
         line-height: 15px;
     }
-    
-    #groups{
+
+    #groups {
         min-width: 680px;
     }
-    
-    #info div.group{
+
+    #info div.group {
         width: calc(100% - 50px);
         padding: 25px;
     }
-    
-    #info div.group > h2{
+
+    #info div.group>h2 {
         font-size: 37px;
     }
-    
-    #info div.set{
+
+    #info div.set {
         --box-height: 26px;
         --box-margin: 8px;
         --question-size: 16px;
         --answer-size: 13px;
     }
-    
-    #info div.dropdown h2{
+
+    #info div.dropdown h2 {
         padding-left: 10px;
         padding-right: 10px;
     }
-    
-    #info div.picture{
+
+    #info div.picture {
         --ratio: .35;
     }
-    
-    #info div.show > div{
+
+    #info div.show>div {
         max-height: 150px;
     }
-    
-    #info div.icon{
+
+    #info div.icon {
         --init-width: 13px;
         --line-spacing: 3px;
-        --line-radius: 10px; 
+        --line-radius: 10px;
     }
-    
-    #info div.show div.icon{
+
+    #info div.show div.icon {
         --extra-width: 3px;
         --extra-height: 3px;
     }
-    
+
 }
 
 @media screen and (max-width: 1025px) {
-    
-    #info{
+
+    #info {
         margin: 50px 25px 250px 25px;
     }
 
-    #info img{
+    #info img {
         height: 125px;
         margin: 0 0 2px 0;
     }
 
-    #info > h1{
+    #info>h1 {
         font-size: 54px;
         margin-bottom: 60px;
     }
-    
-    #contents{
+
+    #contents {
         --list-width: 170px;
-        
+
         padding: 20px;
     }
-    
-    #contents li li h3{
+
+    #contents li li h3 {
         word-wrap: break-word;
     }
-    
-    #groups{
+
+    #groups {
         min-width: 525px;
     }
-    
-    #info div.group{
+
+    #info div.group {
         margin-bottom: 65px;
     }
-    
-    #info div.group > h2{
+
+    #info div.group>h2 {
         font-size: 32px;
     }
-    
-    #info div.set{
+
+    #info div.set {
         --box-margin: 5px;
-        
+
         flex-direction: column;
     }
-    
-    #info div.group:nth-child(2n) div.set{
+
+    #info div.group:nth-child(2n) div.set {
         flex-direction: column-reverse;
     }
-    
-    #info div.picture{
+
+    #info div.picture {
         width: auto;
         max-width: 100%;
         height: 200px;
         margin: 5px auto 10px auto;
     }
-    
-    #info div.picture img{
+
+    #info div.picture img {
         width: auto;
         height: 100%;
         margin: 0;
         transform: none;
     }
-    
+
 }
 
 @media screen and (max-width: 850px) {
-    
-    #groups{
+
+    #groups {
         min-width: 225px;
     }
-    
-    #info div.picture{
+
+    #info div.picture {
         height: 175px;
     }
-    
-    #info div.dropdown > div{
+
+    #info div.dropdown>div {
         max-height: calc((3 * var(--box-height)) - 4px);
     }
-    
-    #info div.dropdown.show > div{
+
+    #info div.dropdown.show>div {
         max-height: 250px;
     }
-    
-    #info div.dropdown h2{
+
+    #info div.dropdown h2 {
+        height: -webkit-max-content;
+        height: -moz-max-content;
         height: max-content
     }
-    
-    #info div.dropdown p{
+
+    #info div.dropdown p {
         max-height: 0;
         padding-top: 0;
         padding-bottom: 0;
         transition: max-height .2s, padding .2s;
     }
-    
-    #info div.dropdown.show p{
+
+    #info div.dropdown.show p {
         max-height: 225px;
         padding-top: calc((var(--box-height) - var(--answer-size)) / 2);
         padding-bottom: calc((var(--box-height) - var(--answer-size)) / 2);
     }
-    
-    #info div.icon{
+
+    #info div.icon {
         padding-left: calc(var(--horizontal-padding) + 10px);
         transition: width .25s, height .25s, padding .25s;
     }
-    
-    #info div.show div.icon{
+
+    #info div.show div.icon {
         padding-left: var(--horizontal-padding);
     }
-    
+
 }
 
 @media screen and (max-width: 675px) {
-    
-    #info{
+
+    #info {
         margin: 50px 25px 235px 25px;
     }
 
-    #info img{
+    #info img {
         height: 115px;
         margin: 0;
     }
 
-    #info > h1{
+    #info>h1 {
         font-size: 49px;
         margin-bottom: 55px;
     }
-    
-    #contents{
+
+    #contents {
         --list-width: 155px;
-        
+
         padding: 15px;
     }
-    
-    #contents h2{
+
+    #contents h2 {
         font-size: 23px;
         height: 24px;
     }
-    
-    #contents li li h3{
+
+    #contents li li h3 {
         font-size: 13px !important;
         line-height: 13px;
     }
-    
-    #info div.group{
+
+    #info div.group {
         width: calc(100% - 40px);
         padding: 20px;
     }
-    
-    #info div.picture{
+
+    #info div.picture {
         height: 150px;
     }
-    
-    #info div.group > h2{
+
+    #info div.group>h2 {
         font-size: 28px;
         width: 100%;
         padding-left: 0;
         padding-right: 0;
     }
-    
-    #info div.set{
+
+    #info div.set {
         --box-height: 24px;
         --question-size: 14px;
         --answer-size: 12px;
         --answer-padding: 20px;
     }
-    
+
 }
 
 @media screen and (max-width: 575px) {
-    
-    #info{
+
+    #info {
         margin: 50px 25px 235px 25px;
     }
-    
-    #info > div{
+
+    #info>div {
         flex-direction: column;
     }
-    
-    #contents{
+
+    #contents {
         --list-width: 250px;
-        
+
         position: static;
         margin: 0 auto 65px auto;
     }
-    
-    #contents ul{
+
+    #contents ul {
+        height: -webkit-max-content !important;
+        height: -moz-max-content !important;
         height: max-content !important;
         max-height: none !important;
     }
-    
-    #contents h2{
+
+    #contents h2 {
         text-align: center;
     }
-    
-    #groups{
+
+    #groups {
         margin: 0;
     }
-    
-    #info div.group{
+
+    #info div.group {
         width: calc(100% - 44px);
         margin-bottom: 50px
     }
-    
+
 }
 
 @media screen and (max-width: 450px) {
-    
-    #info{
+
+    #info {
         margin: 50px 15px 205px 15px;
     }
-    
-    #info img{
+
+    #info img {
         height: 115px;
         margin: 0;
     }
 
-    #info > h1{
+    #info>h1 {
         font-size: 45px;
     }
-    
-    #contents{
+
+    #contents {
         --list-width: 200px;
     }
-    
+
 }

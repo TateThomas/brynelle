@@ -1,7 +1,6 @@
-
 /****************** Steps ******************/
 
-#steps{
+#steps {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -9,20 +8,20 @@
     background-color: #fff8ee;
 }
 
-#steps div.image{
+#steps div.image {
     width: 250px;
     margin: 50px auto 0 auto;
 }
 
-#steps div.image img{
+#steps div.image img {
     width: 100%;
 }
 
-#steps div.title{
+#steps div.title {
     margin: 0 auto 50px auto;
 }
 
-#steps div.title h2{
+#steps div.title h2 {
     color: var(--light-black);
     font-family: d;
     letter-spacing: 5px;
@@ -30,11 +29,11 @@
     text-transform: uppercase;
 }
 
-#steps div.bar{
+#steps div.bar {
     --bar-width: 50%;
     --radius-padding: 100px;
     --h3-width: 700px;
-    
+
     display: flex;
     flex-direction: column;
     position: relative;
@@ -45,23 +44,23 @@
     background-color: #fff2ec;
 }
 
-#steps div.bar:nth-child(2n + 1){
+#steps div.bar:nth-child(2n + 1) {
     padding-right: var(--radius-padding);
     margin-right: auto;
     border-left: 0;
     border-radius: 0 var(--radius-padding) var(--radius-padding) 0;
 }
 
-#steps div.bar:nth-child(2n){
+#steps div.bar:nth-child(2n) {
     padding-left: var(--radius-padding);
     margin-left: auto;
     border-right: 0;
     border-radius: var(--radius-padding) 0 0 var(--radius-padding);
 }
 
-#steps div.bar h2{
+#steps div.bar h2 {
     --number-size: 50px;
-    
+
     position: absolute;
     color: var(--light-black);
     font-family: d;
@@ -71,15 +70,15 @@
     top: calc(-1 * (var(--number-size) / 2));
 }
 
-#steps div.bar:nth-child(2n + 1) h2{
+#steps div.bar:nth-child(2n + 1) h2 {
     right: 90px;
 }
 
-#steps div.bar:nth-child(2n) h2{
+#steps div.bar:nth-child(2n) h2 {
     left: 90px;
 }
 
-#steps div.bar h3{
+#steps div.bar h3 {
     color: var(--light-black);
     font-weight: normal;
     font-family: b;
@@ -89,11 +88,11 @@
     text-align: center;
 }
 
-#steps div.bar p{
+#steps div.bar p {
     --line-height: 23px;
     --p-width: 600px;
     --p-padding: calc((var(--h3-width) - var(--p-width)) / 2);
-    
+
     color: var(--light-black);
     font-family: pbi;
     font-size: 19px;
@@ -104,19 +103,21 @@
     text-align: center;
 }
 
-#steps div.bar:nth-child(2n + 1) h3, #steps div.bar:nth-child(2n + 1) p{
+#steps div.bar:nth-child(2n + 1) h3,
+#steps div.bar:nth-child(2n + 1) p {
     margin: 0 0 0 auto;
 }
 
-#steps div.bar:nth-child(2n) h3, #steps div.bar:nth-child(2n) p{
+#steps div.bar:nth-child(2n) h3,
+#steps div.bar:nth-child(2n) p {
     margin: 0 auto 0 0;
 }
 
-#steps div.faq{
+#steps div.faq {
     margin: 75px auto 0 auto;
 }
 
-#steps div.faq h2{
+#steps div.faq h2 {
     color: var(--light-black);
     font-family: d;
     text-transform: uppercase;
@@ -124,19 +125,21 @@
     letter-spacing: 1px;
 }
 
-#steps div.faq a{
+#steps div.faq a {
     display: flex;
     flex-direction: column;
     color: var(--light-black);
     font-family: pbsb;
     font-size: 21px;
+    width: -webkit-max-content;
+    width: -moz-max-content;
     width: max-content;
     padding: 10px;
     margin: 5px auto 0 auto;
     text-align: center;
 }
 
-#steps div.faq a::after{
+#steps div.faq a::after {
     content: '';
     width: 0;
     height: 1px;
@@ -145,361 +148,370 @@
     transition: width .25s;
 }
 
-#steps div.faq a:hover::after{
+#steps div.faq a:hover::after {
     width: 100%;
 }
 
-#steps div.faq p{
+#steps div.faq p {
     margin: 0;
 }
 
 
 @media screen and (max-width: 1625px) {
-    
-    #steps div.title h2{
+
+    #steps div.title h2 {
         font-size: 58px;
     }
-    
-    #steps div.bar h2{
+
+    #steps div.bar h2 {
         --number-size: 48px;
     }
-    
-    #steps div.bar h3{
+
+    #steps div.bar h3 {
         font-size: 25px;
     }
-    
-    #steps div.bar h3{
+
+    #steps div.bar h3 {
+        width: -webkit-max-content;
+        width: -moz-max-content;
         width: max-content;
     }
-    
-    #steps div.bar:nth-child(2n + 1) h3, #steps div.bar:nth-child(2n) h3, #steps div.bar:nth-child(2n + 1) p, #steps div.bar:nth-child(2n) p{
+
+    #steps div.bar:nth-child(2n + 1) h3,
+    #steps div.bar:nth-child(2n) h3,
+    #steps div.bar:nth-child(2n + 1) p,
+    #steps div.bar:nth-child(2n) p {
         margin: auto;
     }
-    
-    #steps div.bar p{
+
+    #steps div.bar p {
         --p-width: 490px;
         --line-height: 21px;
-        
+
         font-size: 18px;
         padding: 0;
     }
-    
-    #steps div.faq h2{
+
+    #steps div.faq h2 {
         font-size: 48px;
     }
-    
-    #steps div.faq a{
+
+    #steps div.faq a {
         font-size: 19px;
     }
-    
+
 }
 
 @media screen and (max-width: 1540px) {
-    
-    #steps div.bar{
+
+    #steps div.bar {
         --bar-width: 60%;
-        
+
         margin: 25px 0 25px 0;
     }
-    
-    #steps div.bar h2{
+
+    #steps div.bar h2 {
         --number-size: 45px;
     }
-    
+
 }
 
 @media screen and (max-width: 1300px) {
-    
-    #steps{
+
+    #steps {
         padding-bottom: 150px;
     }
-    
-    #steps div.image{
+
+    #steps div.image {
         width: 225px;
     }
-    
-    #steps div.title{
+
+    #steps div.title {
         margin-bottom: 40px;
     }
-    
-    #steps div.title h2{
+
+    #steps div.title h2 {
         font-size: 54px;
     }
-    
-    #steps div.bar{
+
+    #steps div.bar {
         --bar-width: 66%;
     }
-    
-    #steps div.bar h2{
+
+    #steps div.bar h2 {
         --number-size: 42px;
     }
-    
-    #steps div.bar h3{
+
+    #steps div.bar h3 {
         font-size: 24px;
     }
-    
-    #steps div.bar p{
+
+    #steps div.bar p {
         --line-height: 18px;
-        
+
         font-size: 16px;
     }
-    
-    #steps div.faq{
+
+    #steps div.faq {
         margin-top: 65px;
     }
-    
-    #steps div.faq h2{
+
+    #steps div.faq h2 {
         font-size: 44px;
     }
-    
-    #steps div.faq a{
+
+    #steps div.faq a {
         font-size: 18px;
         padding: 8px;
         margin-top: 0;
     }
-    
+
 }
 
 @media screen and (max-width: 1125px) {
-    
-    #steps div.bar{
+
+    #steps div.bar {
         --bar-width: 75%;
     }
-    
+
 }
 
 @media screen and (max-width: 1000px) {
-    
-    #steps div.image{
+
+    #steps div.image {
         width: 200px;
         margin-top: 40px;
     }
-    
-    #steps div.title{
+
+    #steps div.title {
         margin-bottom: 35px;
     }
-    
-    #steps div.title h2{
+
+    #steps div.title h2 {
         font-size: 50px;
     }
-    
-    #steps div.bar h2{
+
+    #steps div.bar h2 {
         --number-size: 38px;
     }
-    
-    #steps div.bar h3{
+
+    #steps div.bar h3 {
         font-size: 22px;
     }
-    
-    #steps div.bar p{
+
+    #steps div.bar p {
         --line-height: 17px;
     }
-    
-    #steps div.faq{
+
+    #steps div.faq {
         margin-top: 60px;
     }
-    
-    #steps div.faq h2{
+
+    #steps div.faq h2 {
         font-size: 42px;
     }
-    
-    #steps div.faq a{
+
+    #steps div.faq a {
         font-size: 16px;
         padding: 5px;
     }
-    
+
 }
 
 @media screen and (max-width: 925px) {
-    
-    #steps div.bar{
+
+    #steps div.bar {
         --bar-width: 85%;
     }
-    
+
 }
 
 @media screen and (max-width: 825px) {
-    
-    #steps div.bar{
+
+    #steps div.bar {
         --bar-width: 95%;
     }
-    
+
 }
 
 @media screen and (max-width: 725px) {
-    
-    #steps{
+
+    #steps {
         width: calc(100% - 50px);
         padding-left: 25px;
         padding-right: 25px;
     }
-    
-    #steps div.image{
+
+    #steps div.image {
         width: 175px;
     }
-    
-    #steps div.title h2{
+
+    #steps div.title h2 {
         font-size: 45px;
     }
-    
-    #steps div.bar{
+
+    #steps div.bar {
         width: 100%;
         padding: 17px 0 17px 0 !important;
         margin: 20px 0 20px 0 !important;
         border: 1px solid var(--light-black) !important;
         border-radius: var(--radius-padding) !important;
     }
-    
-    #steps div.bar h2{
+
+    #steps div.bar h2 {
         --number-size: 35px;
-        
+
+        width: -webkit-max-content;
+
+        width: -moz-max-content;
+
         width: max-content;
         left: 50px !important;
     }
-    
-    #steps div.bar h3{
+
+    #steps div.bar h3 {
         font-size: 20px;
         line-height: 27px;
     }
-    
-    #steps div.bar p{
+
+    #steps div.bar p {
         font-size: 15px;
     }
-    
-    #steps div.faq{
+
+    #steps div.faq {
         margin-top: 55px;
     }
-    
-    #steps div.faq h2{
+
+    #steps div.faq h2 {
         font-size: 38px;
     }
-    
-    #steps div.faq a{
+
+    #steps div.faq a {
         font-size: 14px;
     }
-    
+
 }
 
 @media screen and (max-width: 650px) {
-    
-    #steps{
+
+    #steps {
         padding-bottom: 145px;
     }
-    
-    #steps div.image{
+
+    #steps div.image {
         width: 160px;
     }
-    
-    #steps div.title h2{
+
+    #steps div.title h2 {
         font-size: 40px;
     }
-    
-    #steps div.bar h2{
+
+    #steps div.bar h2 {
         --number-size: 32px;
     }
-    
-    #steps div.bar h3{
+
+    #steps div.bar h3 {
         width: 350px;
         line-height: 22px;
         margin-bottom: 5px !important;
     }
-    
-    #steps div.bar p{
+
+    #steps div.bar p {
         --p-width: 375px;
     }
-    
-    #steps div.faq{
+
+    #steps div.faq {
         margin-top: 50px;
     }
-    
-    #steps div.faq h2{
+
+    #steps div.faq h2 {
         font-size: 36px;
     }
-    
+
 }
 
 @media screen and (max-width: 525px) {
-    
-    #steps{
+
+    #steps {
         padding-bottom: 115px;
     }
-    
+
 }
 
 @media screen and (max-width: 500px) {
-    
-    #steps div.title h2{
+
+    #steps div.title h2 {
         font-size: 37px;
     }
-    
-    #steps div.bar h3{
+
+    #steps div.bar h3 {
         width: 275px;
     }
-    
-    #steps div.bar p{
+
+    #steps div.bar p {
         --p-width: 300px;
-        
+
         height: auto;
     }
-    
+
 }
 
 @media screen and (max-width: 450px) {
-    
-    #steps div.title h2{
+
+    #steps div.title h2 {
         font-size: 35px;
     }
-    
-    #steps div.bar{
+
+    #steps div.bar {
         --radius-padding: 70px;
-        
+
         padding: 20px 0 20px 0 !important;
     }
-    
-    #steps div.bar h2{
+
+    #steps div.bar h2 {
         --number-size: 30px;
-        
+
         left: 65px !important;
     }
-    
-    #steps div.bar h3{
+
+    #steps div.bar h3 {
         width: 225px;
         margin-bottom: 7px !important;
     }
-    
-    #steps div.bar p{
+
+    #steps div.bar p {
         --p-width: 250px;
     }
-    
-    #steps div.faq h2{
+
+    #steps div.faq h2 {
         font-size: 33px;
     }
-    
+
 }
 
 @media screen and (max-width: 360px) {
-    
-    #steps div.title h2{
+
+    #steps div.title h2 {
         font-size: 32px;
         text-align: center;
     }
-    
-    #steps div.bar{
+
+    #steps div.bar {
         --radius-padding: 85px;
-        
+
         padding: 25px 0 25px 0 !important;
     }
-    
-    #steps div.bar h3{
+
+    #steps div.bar h3 {
         width: 180px;
     }
-    
-    #steps div.bar p{
+
+    #steps div.bar p {
         --p-width: 200px;
     }
-    
-    #steps div.faq h2{
+
+    #steps div.faq h2 {
         font-size: 30px;
     }
-    
+
 }

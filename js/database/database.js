@@ -1,6 +1,6 @@
 
 function Photo(imageObject, objId, dateIndex, photoshootIndex, altText, priorityString, priorityInt, typeString, locationObject, lightingString) {
-    
+
     this.image = imageObject;
     this.id = objId;
     this.picture = objId;
@@ -12,13 +12,13 @@ function Photo(imageObject, objId, dateIndex, photoshootIndex, altText, priority
     this.type = typeString;
     this.location = locationObject;
     this.lighting = lightingString;
-    
+
 }
 
 
 class Database {
-    
-    
+
+
     ids;
     pictures;
     dates;
@@ -27,68 +27,68 @@ class Database {
     types;
     locations;
     lightings;
-    
+
     currentPictures;
     currentFilters;
     currentSortingMethod;
     totalPhotosCurrentlyVisible;
 
-    
+
     constructor() {
-        
+
         this.currentPictures = [];
         this.currentFilters = {
             "type": [],
             "location": [],
             "lighting": []
         };
-        
+
         this.loadData();
-        
+
     }
-    
-    
+
+
     loadData() {
-        
+
         function loadJSON(i) {
-            
+
             return new Promise(resolve => {
-            
-                $.getJSON(dataProperties[i][1], function(data) {
+
+                $.getJSON(dataProperties[i][1], function (data) {
                     obj[dataProperties[i][0]] = data;
                 });
 
                 if (obj[dataProperties[i][0]] == undefined) {
                     obj[dataProperties[i][0]] = dataProperties[i][2];
                 }
-                
-                setTimeout(function() {resolve("complete")}, 1);
-            
+
+                setTimeout(function () { resolve("complete") }, 1);
+
             });
-            
+
         }
-        
+
         async function loadImages() {
 
             for (let i = 0; i < dataProperties.length; i++) {
                 await loadJSON(i);
-                
+
             }
-            
+
             await obj.changeSortingMethod();
             await obj.setUpSortingSelector();
             await obj.setUpFiltersSelector();
             obj.totalPhotosCurrentlyVisible = obj.ids.length;
             await obj.updateUserPage();
-            
+
             let searchParameters = new URLSearchParams(window.location.search);
             if (searchParameters.get("filterType") != undefined) {
                 obj.updateFilters(searchParameters.get("filterType").replaceAll('\"', ''), searchParameters.get("filterSpecifier").replaceAll('\"', ''), true);
                 document.getElementById(searchParameters.get("filterSpecifier").replaceAll('\"', '')).checked = true;
             }
-            
+
         }
-        
+
         const obj = this;
         const dataProperties = [
             ["ids", "../js/database/json/ids.json", []],
@@ -100,29 +100,29 @@ class Database {
             ["locations", "../js/database/json/locations.json", {}],
             ["lightings", "../js/database/json/lightings.json", {}]
         ];
-        
+
         loadImages();
-        
+
     }
-    
-    
+
+
     postData(property) {
         /* "Pseudo" function, no need to implement actual post method, website is static.
            Used for building up the website.
         */
-        
+
         console.log(JSON.stringify(this[property]));
-        
+
     }
-    
-    
+
+
     pushToSortedArray(array, object, targetProperty, photoObjectProperty) {
         /* Algorithm from https://stackoverflow.com/questions/1344500/efficient-way-to-insert-a-number-into-a-sorted-    array-of-numbers
         */
-        
+
         let low = 0,
             high = array.length;
-        
+
         while (low < high) {
             let mid = (low + high) >>> 1;
             if (array[mid][targetProperty] < object[targetProperty]) {
@@ -132,18 +132,18 @@ class Database {
                 high = mid;
             }
         }
-        
+
         array.splice(low, 0, object);
-        
+
         for (let i = low + 1; i < array.length; i++) {
             this["ids"][array[i].parentId][photoObjectProperty] = i;
         }
-        
+
         return low;
-        
+
     }
-    
-    
+
+
     /*
     parseDate(dateString) {
          Algorithm from https://stackoverflow.com/questions/43083993/javascript-how-to-convert-exif-date-time-data-    to-timestamp
@@ -154,18 +154,18 @@ class Database {
         
     }
     */
-    
-    
+
+
     newEntry(imagePath, photoDateInfo, photoshootName, altInfo, priorityLevel, photoType, locationsArray, photoLighting) {
-        
+
         function initPropertyArrayIf(thisObj, property, key) {
-            
+
             if (thisObj[property][key] == undefined) {
                 thisObj[property][key] = [];
             }
-            
+
         }
-        
+
         /*
         function finishSetUp(obj, objId, photoshootId, priority, priorityId, type, location, locationFilters, lighting) {
             
@@ -220,36 +220,42 @@ class Database {
             
         }
         */
-        
+
         var newId = this.ids.length;
-        
+
         this.pictures.push(imagePath);
-        
+
         let dateInfoArray = photoDateInfo.split(",");
         let dateObj = new Date(dateInfoArray[0], parseInt(dateInfoArray[1]) - 1, dateInfoArray[2], dateInfoArray[3], dateInfoArray[4], dateInfoArray[5]);
         let datesId = this.pushToSortedArray(this.dates,
-                                                        { "date": dateObj,
-                                                          "dateUTC": dateObj.getTime(),
-                                                          "parentId": newId },
-                                                        "dateUTC",
-                                                        "date");
-        
+            {
+                "date": dateObj,
+                "dateUTC": dateObj.getTime(),
+                "parentId": newId
+            },
+            "dateUTC",
+            "date");
+
         let photoshootsId = this.pushToSortedArray(this.photoshoots,
-                                                   { "shoot": photoshootName,
-                                                     "parentId": newId },
-                                                  "shoot",
-                                                  "photoshoot");
-        
+            {
+                "shoot": photoshootName,
+                "parentId": newId
+            },
+            "shoot",
+            "photoshoot");
+
         initPropertyArrayIf(this, "priorities", priorityLevel);
         let priorityId = this.pushToSortedArray(this.priorities[priorityLevel],
-                               { "photoshoot": photoshootName,
-                                 "parentId": newId },
-                              "photoshoot",
-                              "priorityId");
-        
+            {
+                "photoshoot": photoshootName,
+                "parentId": newId
+            },
+            "photoshoot",
+            "priorityId");
+
         initPropertyArrayIf(this, "types", photoType);
         this.types[photoType].push(newId);
-        
+
         let locationsObject = {};
         let locationsFilterObject = {};
         for (let i = 0; i < locationsArray.length; i++) {
@@ -258,96 +264,96 @@ class Database {
             locationsFilterObject[locationsArray[i]] = false;
             this.locations[locationsArray[i]].push(newId);
         }
-        
+
         initPropertyArrayIf(this, "lightings", photoLighting);
         this.lightings[photoLighting].push(newId);
-        
-//        finishSetUp(this, newId, photoshootsId, priorityLevel, priorityId, photoType, locationsObject, locationsFilterObject, photoLighting);
-     
+
+        //        finishSetUp(this, newId, photoshootsId, priorityLevel, priorityId, photoType, locationsObject, locationsFilterObject, photoLighting);
+
         let photoObject = this.createImage(imagePath, altInfo, newId, locationsFilterObject, locationsArray[0], this.dates[datesId].date.toDateString());
-        
+
         this.ids.push(new Photo(photoObject, newId, datesId, photoshootsId, altInfo, priorityLevel, priorityId, photoType, locationsObject, photoLighting));
-        
+
         this.totalPhotosCurrentlyVisible += 1;
         this.changeSortingMethod();
-        
+
     }
-    
-    
+
+
     updateFilters(filterType, filterSpecifier, checked) {
-        
+
         function updateCurrentFilters(obj) {
-            
+
             if (checked) {
                 obj.currentFilters[filterType].push(filterSpecifier);
             }
             else {
                 obj.currentFilters[filterType].splice(obj.currentFilters[filterType].indexOf(filterSpecifier), 1);
             }
-            
+
         }
-        
+
         function changeVisibilityOnImage(obj, photoId, condition) {
-            
+
             if (condition) {
                 obj.ids[photoId].image.html = obj.ids[photoId].image.html.replace("hidden", "show");
             }
             else {
                 obj.ids[photoId].image.html = obj.ids[photoId].image.html.replace("show", "hidden");
             }
-            
+
         }
-        
+
         function changeVisibilityOnHTML(obj, photoId, condition) {
-            
+
             let element = document.querySelector(`.img${photoId}`);
             if (condition) {
                 let newClassName = element.className.replace("hidden", "show");
-                if (newClassName !=element.className) {
+                if (newClassName != element.className) {
                     obj.totalPhotosCurrentlyVisible += 1;
                     element.className = newClassName;
                 }
             }
-            else{
+            else {
                 let newClassName = element.className.replace("show", "hidden");
                 if (newClassName != element.className) {
                     obj.totalPhotosCurrentlyVisible -= 1;
                     element.className = newClassName;
                 }
             }
-            
+
         }
-        
+
         function determineVisibility(obj, photoId) {
-            
+
             let visibilityBool = true;
             let locationsVisibility = false;
-            
+
             let photoLocationsArray = Object.keys(obj.ids[photoId].image.filters.location);
-            
+
             for (let j = 0; j < photoLocationsArray.length; j++) {
                 if (obj.ids[photoId].image.filters.location[photoLocationsArray[j]]) {
                     locationsVisibility = true;
                     break;
                 }
             }
-                
+
             if ((!obj.ids[photoId].image.filters.type && (obj.currentFilters.type.length > 0)) || (!obj.ids[photoId].image.filters.lighting && (obj.currentFilters.lighting.length > 0)) || (!locationsVisibility && (obj.currentFilters.location.length > 0))) {
                 visibilityBool = false;
             }
-            
+
             return visibilityBool;
-            
+
         }
-        
+
         if (((this.currentFilters[filterType].length == 1) && !checked) || (this.currentFilters[filterType].length == 0)) {
-            
+
             updateCurrentFilters(this);
-            
+
             for (let i = 0; i < this.currentPictures.length; i++) {
-                
+
                 let currentId = this.currentPictures[i].parentId;
-                
+
                 if ((filterType == "location") && (this.ids[currentId].location[filterSpecifier] != undefined)) {
                     this.ids[currentId].image.filters.location[filterSpecifier] = checked;
                 }
@@ -356,46 +362,46 @@ class Database {
                 }
                 else {
                     let visible = determineVisibility(this, currentId);
-                    
+
                     changeVisibilityOnHTML(this, currentId, visible);
                     changeVisibilityOnImage(this, currentId, visible);
                 }
-                
+
             }
-            
+
         }
         else if ((this[filterType + "s"][filterSpecifier] == undefined) || (this[filterType + "s"][filterSpecifier].length == 0)) {
-            
+
             updateCurrentFilters(this);
             this[filterType + "s"][filterSpecifier] = [];
 
         }
         else {
-            
+
             updateCurrentFilters(this);
-            
+
             for (let i = 0; i < this[filterType + "s"][filterSpecifier].length; i++) {
-                
+
                 let currentId = this[filterType + "s"][filterSpecifier][i];
-                
+
                 if (filterType == "location") {
                     this.ids[currentId].image.filters.location[filterSpecifier] = checked;
                 }
                 else {
                     this.ids[currentId].image.filters[filterType] = checked;
                 }
-                
+
                 let visible = determineVisibility(this, currentId);
                 changeVisibilityOnHTML(this, currentId, visible);
                 changeVisibilityOnImage(this, currentId, visible);
-                
+
             }
-            
+
         }
-        
+
         document.getElementById("photos").getElementsByTagName("h4")[0].innerHTML = `${this.totalPhotosCurrentlyVisible} photo${(this.totalPhotosCurrentlyVisible != 1) ? "s" : ""}`;
         //this.updateUserPage();
-        
+
         const filterKeys = Object.keys(this.currentFilters);
         const tabElem = document.getElementById("tab");
         const amountElem = document.querySelector(`.amount.${filterType}`);
@@ -403,7 +409,7 @@ class Database {
         let offset = 31;
         let secondOffset = 10;
         const filterCount = this.currentFilters[filterType].length;
-        
+
         for (let i = 0; i < filterKeys.length; i++) {
             if ((filterKeys[i] != filterType) && (this.currentFilters[filterKeys[i]].length > 0)) {
                 offset -= 1;
@@ -418,11 +424,11 @@ class Database {
             amountElem.className = amountElem.className.replace("hidden", "show");
             tabElem.style.setProperty("--starting-top", `${topDistance + offset}px`);
         }
-        else if ((filterCount == 10) && checked){
+        else if ((filterCount == 10) && checked) {
             tabElem.style.setProperty("--starting-top", `${topDistance + secondOffset}px`);
             amountElem.className = amountElem.className.replace("hidden", "show");
         }
-        else if ((filterCount == 9) && !checked){
+        else if ((filterCount == 9) && !checked) {
             tabElem.style.setProperty("--starting-top", `${topDistance - secondOffset}px`);
             amountElem.className = amountElem.className.replace("hidden", "show");
         }
@@ -430,29 +436,29 @@ class Database {
             amountElem.className = amountElem.className.replace("hidden", "show");
         }
         amountElem.querySelector(".number").innerHTML = filterCount.toString();
-        
+
     }
-    
-    
+
+
     setUpFiltersSelector() {
-        
+
         let boxes = document.getElementById("filters").getElementsByTagName("input");
-        
+
         for (let i = 0; i < boxes.length; i++) {
             boxes[i].addEventListener('change', (event) => {
-                
+
                 this.updateFilters(event.currentTarget.className, event.currentTarget.id, event.currentTarget.checked);
-                
+
                 document.getElementById("photos").style.setProperty("--total-rows", 10);
-                
+
             });
         }
-        
+
     }
-    
-    
+
+
     changeSortingMethod() {
-        
+
         let obj;
         if (database == undefined) {
             obj = this;
@@ -460,52 +466,52 @@ class Database {
         else {
             obj = database;
         }
-        
+
         obj.currentSortingMethod = document.getElementById("sort-by").getElementsByTagName("select")[0].value;
         let newList = [];
-        
-        switch(obj.currentSortingMethod) {
-                
+
+        switch (obj.currentSortingMethod) {
+
             case "featured":
                 let prioritiesPropertyArray = Object.keys(obj.priorities).sort();
                 for (let i = 0; i < prioritiesPropertyArray.length; i++) {
                     newList.push(...obj.priorities[prioritiesPropertyArray[i]]);
                 }
                 break;
-                
+
             case "most-recent":
                 newList = [...obj.dates].reverse();
                 break;
-            
+
             case "least-recent":
                 newList = obj.dates;
                 break;
-                
+
             case "photoshoot":
                 newList = obj.photoshoots;
                 break;
-                
+
         }
-        
+
         obj.currentPictures = newList;
         obj.updateUserPage();
-        
+
         document.getElementById("photos").style.setProperty("--total-rows", 10);
-        
+
     }
-    
-    
+
+
     setUpSortingSelector() {
-        
+
         document.getElementById("sort-by").getElementsByTagName("select")[0].onchange = this.changeSortingMethod;
-        
+
     }
-    
-    
+
+
     createImage(imagePath, altText, imageId, locationObject, location, date) {
-        
+
         let dateArray = date.split(" ");
-        
+
         return {
             "filters": {
                 "type": false,
@@ -531,68 +537,68 @@ class Database {
                 </div>
                 `
         };
-        
+
     }
-    
-    
+
+
     updateUserPage() {
-        
+
         function expandImage() {
-            
+
             let { x, y } = this.getBoundingClientRect();
-            
+
             if (this.parentElement.classList[2] == "expanded") {
-                
+
                 this.parentElement.className = this.parentElement.className.replace("expanded", "normal");
-                
+
                 this.style.setProperty("left", "0px");
                 this.style.setProperty("top", "0px");
                 this.style.setProperty("--transition-time", ".45s");
-                
+
             }
             else {
-                
+
                 this.parentElement.className = this.parentElement.className.replace("normal", "expanded");
-                
+
                 this.style.setProperty("left", `${-1 * x}px`);
                 this.style.setProperty("top", `${-1 * y}px`);
                 let obj = this;
-                setTimeout(function() {
+                setTimeout(function () {
                     obj.style.setProperty("--transition-time", "0s");
                 }, 445);
-                
+
             }
-            
+
         }
-        
+
         function scrollImage() {
-            
+
             console.log("scroll");
-            
+
         }
-        
+
         let photos = document.getElementById("photos");
         let newHTML = `<h4>${this.totalPhotosCurrentlyVisible} photo${(this.totalPhotosCurrentlyVisible != 1) ? "s" : ""}</h4>`;
-        
+
         if (this.currentPictures.length > 0) {
-            
+
             for (let i = 0; i < this.currentPictures.length; i++) {
                 newHTML += this.ids[this.currentPictures[i].parentId].image.html;
             }
             photos.innerHTML = newHTML;
-            
+
             let images = document.querySelectorAll("#photos div.container");
             for (let i = 0; i < images.length; i++) {
                 images[i].addEventListener('click', expandImage);
             }
-            
+
             document.getElementById("photos").className = "loaded";
-            
+
         }
-        
+
     }
-    
-    
+
+
 }
 
 

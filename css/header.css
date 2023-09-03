@@ -1,10 +1,9 @@
-
-#header{
+#header {
     --header-height: 46px;
     --header-color: #e6d2c6;
     --header-radius: 30px;
     --shadow-color: rgba(0, 0, 0, .2);
-    
+
     position: fixed;
     display: flex;
     width: 100%;
@@ -14,7 +13,7 @@
     transition: background-color .75s;
 }
 
-#header div.border{
+#header div.border {
     position: absolute;
     top: var(--header-height);
     width: 0;
@@ -24,17 +23,17 @@
     transition: width 1.3s, box-shadow 2s;
 }
 
-#header.show div.border{
+#header.show div.border {
     width: 100%;
 }
 
-#header.show{
+#header.show {
     background-color: var(--header-color);
 }
 
-#header h1{
+#header h1 {
     --brand-font-size: 26px;
-    
+
     display: inline-block;
     margin-right: auto;
     padding: calc((var(--header-height) - var(--brand-font-size)) / 2);
@@ -46,32 +45,34 @@
     transition: background-color .5s, color .5s;
 }
 
-#header.hidden h1:hover{
+#header.hidden h1:hover {
     background-color: var(--shadow-color);
 }
 
-#header.show h1:hover{
+#header.show h1:hover {
     color: #ca9e85;
 }
 
-#links{
+#links {
     display: inline-block;
     position: relative;
     margin-left: auto;
 }
 
-#links ul{
+#links ul {
     margin-right: 14px;
     height: var(--header-height);
     z-index: 10;
 }
 
-#links li{
+#links li {
     --links-font-size: 22px;
-    
+
     position: relative;
     padding: calc((var(--header-height) - var(--links-font-size)) / 2);
     font-size: var(--links-font-size);
+    width: -webkit-max-content;
+    width: -moz-max-content;
     width: max-content;
     height: var(--links-font-size);
     text-align: center;
@@ -80,19 +81,19 @@
     transition: background-color .5s, width .5s, height .5s;
 }
 
-#header.hidden ul li:hover{
+#header.hidden ul li:hover {
     background-color: var(--shadow-color);
 }
 
-#links > ul > li.gallery{
+#links>ul>li.gallery {
     --gallery-word-width: 85.27px;
-    
+
     width: var(--gallery-word-width);
 }
 
-#links li ul{
+#links li ul {
     --default-sublist-width: 240px;
-    
+
     display: block;
     position: absolute;
     height: 0;
@@ -105,9 +106,9 @@
     transition: background-color .5s, border .25s, border-radius .5s, height 1s;
 }
 
-#links li ul li{
+#links li ul li {
     --default-subvalue-width: 196px;
-    
+
     display: block;
     height: 0;
     width: var(--default-subvalue-width);
@@ -117,21 +118,21 @@
     transition: background-color .5s, color .5s, border .25s, border-radius .75s, height .6s, opacity .6s;
 }
 
-#links > ul > li.gallery:hover{
+#links>ul>li.gallery:hover {
     --gallery-sublist-width: 170px;
     --total-elements: 8;
-    
+
     width: var(--gallery-sublist-width);
     height: calc(var(--header-height) * var(--total-elements));
     padding: calc((var(--header-height) - var(--links-font-size)) / 2);
     padding-bottom: 0;
 }
 
-#links > ul > li.gallery ul{
+#links>ul>li.gallery ul {
     width: var(--gallery-sublist-width);
 }
 
-#links > ul > li.gallery li{
+#links>ul>li.gallery li {
     width: calc(var(--gallery-sublist-width) - (var(--header-height) - var(--links-font-size)));
 }
 
@@ -158,90 +159,90 @@
 }
 */
 
-#links li:hover ul{
+#links li:hover ul {
     height: auto;
 }
 
-#links li:hover ul li{
+#links li:hover ul li {
     height: var(--links-font-size);
     opacity: 1;
 }
 
-#header.show li a{
+#header.show li a {
     transition: color .5s;
 }
 
-#header.show li a:hover{
+#header.show li a:hover {
     color: #ca9e85;
 }
 
-#header.show ul li ul{
+#header.show ul li ul {
     border-radius: 0 0 var(--header-radius) var(--header-radius);
     box-shadow: 0 2px 6px rgba(0, 0, 0, .1);
 }
 
-#header.show ul li:hover ul{
+#header.show ul li:hover ul {
     background-color: #ddc2b1;
     border: 3px solid white;
     border-top: 0;
 }
 
-#header.show li ul li{
+#header.show li ul li {
     border-radius: 0;
 }
 
-#header.show li:hover ul li:hover{
+#header.show li:hover ul li:hover {
     background-color: #d5b39f;
 }
 
-#header.show li:hover ul li a:hover{
+#header.show li:hover ul li a:hover {
     color: #b37651;
 }
 
 
 @media screen and (max-width: 990px) {
-    
-    #header{
+
+    #header {
         --header-height: 40px;
     }
-    
-    #header h1{
+
+    #header h1 {
         --brand-font-size: 22px;
     }
-    
-    #links li{
+
+    #links li {
         --links-font-size: 18px;
     }
-    
-    #links > ul > li.gallery{
+
+    #links>ul>li.gallery {
         --gallery-word-width: 71.04px;
     }
-    
-    #links > ul > li.gallery:hover{
+
+    #links>ul>li.gallery:hover {
         --gallery-sublist-width: 150px;
     }
-    
+
 }
 
 @media screen and (max-width: 870px) {
 
-    #header{
+    #header {
         --header-height: 36px;
     }
-    
-    #header h1{
+
+    #header h1 {
         --brand-font-size: 20px;
     }
-    
-    #links li{
+
+    #links li {
         --links-font-size: 16px;
     }
-    
-    #links > ul > li.gallery{
+
+    #links>ul>li.gallery {
         --gallery-word-width: 63.91px;
     }
-    
-    #links > ul > li.gallery:hover{
+
+    #links>ul>li.gallery:hover {
         --gallery-sublist-width: 135px;
     }
 
@@ -249,7 +250,7 @@
 
 @media screen and (max-width: 780px) {
 
-    #links > ul > li{
+    #links>ul>li {
         padding-left: 5px;
         padding-right: 5px;
     }
@@ -258,14 +259,14 @@
 
 @media screen and (max-width: 730px) {
 
-    #header h1{
+    #header h1 {
         z-index: 12;
     }
-    
-    #burger{
+
+    #burger {
         --arch-radius: 20px;
         --line-spacing: 5px;
-        
+
         position: relative;
         margin-left: auto;
         margin-right: 35px;
@@ -274,15 +275,15 @@
         border-radius: var(--header-radius);
         transition: background-color .75s, margin-top .75s, width .75s;
     }
-    
-    #burger:hover{
+
+    #burger:hover {
         cursor: pointer;
         background-color: var(--shadow-color);
     }
-    
-    #burger span{
+
+    #burger span {
         --margin-top: 14px;
-        
+
         position: absolute;
         display: block;
         width: 30px;
@@ -295,31 +296,31 @@
         border-radius: 0;
         transition: height .4s, width .4s, margin-top .4s, margin-left .4s, border-radius .4s;
     }
-    
-    #burger span:last-child{
+
+    #burger span:last-child {
         margin-top: calc(var(--margin-top) + var(--line-spacing));
-        
+
     }
-    
-    #burger.show:hover{
+
+    #burger.show:hover {
         background-color: transparent;
     }
-    
-    #burger.show span{
+
+    #burger.show span {
         height: 20px;
         margin-top: 7px;
         border-radius: var(--arch-radius) var(--arch-radius) 0 0;
     }
-    
-    #burger.show span:last-child{
+
+    #burger.show span:last-child {
         width: 20px;
         height: 15px;
         margin-top: 12px;
         margin-left: 12px;
         border-radius: calc(var(--arch-radius) - var(--line-spacing)) calc(var(--arch-radius) - var(--line-spacing)) 0 0;
     }
-    
-    #links{
+
+    #links {
         position: absolute;
         right: 3px;
         width: 129.48px;
@@ -328,8 +329,8 @@
         border-radius: var(--header-radius);
         transition: background-color .75s, height .75s, padding-bottom .75s;
     }
-    
-    #links > ul{
+
+    #links>ul {
         display: flex;
         flex-direction: column;
         position: absolute;
@@ -337,64 +338,64 @@
         overflow: hidden;
         transition: background-color .75s, height .75s;
     }
-    
-    #links > ul > li{
+
+    #links>ul>li {
         padding-left: 10px;
         padding-right: 10px;
         text-align: left;
         transition: background-color .75s, border-radius .75s;
     }
-    
-    #links.show{
+
+    #links.show {
         height: calc(var(--header-height) * 7);
         padding-bottom: 15px;
     }
-    
-    #links.show > ul{
+
+    #links.show>ul {
         height: 216px;
     }
-    
-    #links.show:hover{
+
+    #links.show:hover {
         background-color: var(--shadow-color);
     }
-    
-    #header.show #links > ul > li{
+
+    #header.show #links>ul>li {
         width: 109.48px;
     }
-    
-    #links.show > ul > li{
+
+    #links.show>ul>li {
         width: 109.48px;
         text-align: left;
     }
-    
-    #links > ul > li.gallery:hover{
+
+    #links>ul>li.gallery:hover {
         width: 109.48px;
         height: 16px;
         padding-bottom: 10px;
     }
-    
-    #links ul li.gallery:hover ul{
+
+    #links ul li.gallery:hover ul {
         height: 0;
         border: 0;
     }
-    
-    #header.show div.border{
+
+    #header.show div.border {
         z-index: 9;
     }
-    
-    #header.show nav #burger{
+
+    #header.show nav #burger {
         left: -20px;
         padding-left: 70px;
         padding-right: 70px;
         background-color: var(--header-color);
         border-radius: 0;
     }
-    
-    #header.show nav #burger span{
+
+    #header.show nav #burger span {
         left: 77px;
     }
-    
-    #header.show nav{
+
+    #header.show nav {
         width: 159.48px;
         right: 0;
         padding: 0;
@@ -405,35 +406,35 @@
         z-index: 10;
         transition: background-color .75s, height .75s, border .25s, box-shadow .75s, right .25s, padding-bottom .75s;
     }
-    
-    #header.show nav li{
+
+    #header.show nav li {
         padding-left: 25px;
         padding-right: 25px;
         border-radius: 0;
     }
-    
-    #header.show nav li.gallery:hover{
+
+    #header.show nav li.gallery:hover {
         width: 109.48px;
         padding-left: 25px;
         padding-right: 25px;
     }
-    
-    #header.show nav li:last-child{
+
+    #header.show nav li:last-child {
         padding-bottom: 11px;
         border-radius: 0 0 var(--header-radius) var(--header-radius);
     }
-    
-    #header.show nav.show{
+
+    #header.show nav.show {
         right: 0;
         box-shadow: 0 2px 6px rgba(0, 0, 0, .1);
     }
-    
-    #header.show nav:hover{
+
+    #header.show nav:hover {
         background-color: #ddc2b1;
     }
-    
-    #header.show nav.show li:hover{
+
+    #header.show nav.show li:hover {
         background-color: #d5b39f;
     }
-    
+
 }

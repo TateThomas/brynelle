@@ -4,102 +4,102 @@
 @import "/css/steps.css";
 
 
-@font-face{
+@font-face {
     src: url(/fonts/title/alta-regular.otf);
     font-family: alta;
 }
 
-@font-face{
+@font-face {
     src: url(/fonts/title/goodfish/goodfish.regular.otf);
     font-family: a;
 }
 
-@font-face{
+@font-face {
     src: url(/fonts/title/RomilePersonalUse-x3Xdr.otf);
     font-family: b;
 }
 
-@font-face{
+@font-face {
     src: url(/fonts/title/VioletyDreams-WyEOA.otf);
     font-family: c;
 }
 
-@font-face{
+@font-face {
     src: url(/fonts/title/black-aroug/BlackArougDemoVersionRegular-GOpRA.ttf);
     font-family: d;
 }
 
-@font-face{
+@font-face {
     src: url(/fonts/title/ranille/RanilleNormalRegular-axEpm.otf);
     font-family: e;
 }
 
-@font-face{
+@font-face {
     src: url(/fonts/title/VtksTatuage2-3GzL.ttf);
     font-family: f;
 }
 
-@font-face{
+@font-face {
     src: url(/fonts/title/TypographyTimes-RgRW.ttf);
     font-family: g;
 }
 
-@font-face{
+@font-face {
     src: url(/fonts/paragraph/coco-gothic/coco-gothic.light.ttf);
     font-family: pa;
 }
 
-@font-face{
+@font-face {
     src: url(/fonts/paragraph/coco-gothic/coco-gothic.light-italic.ttf);
     font-family: pai;
 }
 
-@font-face{
+@font-face {
     src: url(/fonts/paragraph/josefin-sans/josefin-sans.regular.ttf);
     font-family: pb;
 }
 
-@font-face{
+@font-face {
     src: url(/fonts/paragraph/josefin-sans/josefin-sans.bold.ttf);
     font-family: pbb;
 }
 
-@font-face{
+@font-face {
     src: url(/fonts/paragraph/josefin-sans/josefin-sans.semibold.ttf);
     font-family: pbsb;
 }
 
-@font-face{
+@font-face {
     src: url(/fonts/paragraph/josefin-sans/josefin-sans.italic.ttf);
     font-family: pbi;
 }
 
-@font-face{
+@font-face {
     src: url(/fonts/paragraph/source-sans-pro/source-sans-pro.regular.ttf);
     font-family: pc;
 }
 
-@font-face{
+@font-face {
     src: url(/fonts/paragraph/source-sans-pro/source-sans-pro.light.ttf);
     font-family: pcl;
 }
 
-@font-face{
+@font-face {
     src: url(/fonts/paragraph/source-sans-pro/source-sans-pro.semibold.ttf);
     font-family: pcsb;
 }
 
-@font-face{
+@font-face {
     src: url(/fonts/paragraph/roboto-condensed/roboto-condensed.regular.ttf);
     font-family: pd;
 }
 
-@font-face{
+@font-face {
     src: url(/fonts/cursive/holland/Holland-JRGaj.ttf);
     font-family: ca;
 }
 
-@font-face{
+@font-face {
     src: url(/fonts/cursive/holland/HollandMonolineClean-VGEqZ.ttf);
     font-family: cac;
 }
@@ -107,15 +107,18 @@
 
 /****************** All ******************/
 
-body{
+body {
     --light-black: #404040;
     --lower-gradient-z: 2;
-    
+
     background-color: white;
     margin: 0;
 }
 
-h1, h2, ul, li{
+h1,
+h2,
+ul,
+li {
     padding: 0;
     margin: 0;
     display: inline-block;
@@ -126,12 +129,12 @@ h1, h2, ul, li{
     color: white;
 }
 
-a{
+a {
     color: white;
     text-decoration: none;
 }
 
-#content{
+#content {
     color: white;
     display: flex;
     flex-direction: column;
@@ -139,35 +142,35 @@ a{
     width: 100%;
 }
 
-#links li.pricing{
+#links li.pricing {
     background-color: #ddc2bf;
 }
 
-#links li.pricing > a:hover{
+#links li.pricing>a:hover {
     color: #c89c97 !important;
 }
 
 
 /****************** Investment ******************/
 
-#investment{
+#investment {
     --invest-height: 450px;
-    
+
     display: flex;
     position: relative;
     width: 100%;
     height: var(--invest-height);
-/*    border-bottom: 10px solid white;*/
+    /*    border-bottom: 10px solid white;*/
     overflow: hidden;
 }
 
-#investment div.image{
+#investment div.image {
     position: absolute;
     width: 100%;
     height: 100%;
 }
 
-#investment div.image img{
+#investment div.image img {
     position: absolute;
     width: 4000px;
     min-width: 100%;
@@ -175,15 +178,17 @@ a{
     margin-left: 80%;
     transform: translateX(-70%);
     top: -1150px;
+    -o-object-fit: cover;
     object-fit: cover;
+    -o-object-position: right;
     object-position: right;
 }
 
-#investment div.text{
+#investment div.text {
     margin: auto;
 }
 
-#investment div.text h1{
+#investment div.text h1 {
     font-size: 110px;
     font-family: b;
     letter-spacing: 5px;
@@ -194,7 +199,7 @@ a{
 
 /****************** Weddings ******************/
 
-#weddings{
+#weddings {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -202,64 +207,72 @@ a{
     overflow: hidden;
 }
 
-#weddings div.title{
+#weddings div.title {
     padding: 30px 25px 50px 50px;
     margin: 50px auto 50px auto;
     border-bottom: 1px solid #7a6d4e;
 }
 
-#weddings div.title h2{
+#weddings div.title h2 {
     color: #7a6d4e;
     font-size: 45px;
     letter-spacing: 3px;
     font-family: d;
 }
 
-#weddings div.title img{
+#weddings div.title img {
     position: relative;
     height: 50px;
     margin-left: 15px;
     top: 7px;
 }
 
-#weddings ul{
+#weddings ul {
     display: flex;
     margin: auto;
 }
 
-#weddings li{
+#weddings li {
     display: flex;
     flex-direction: column;
     width: 375px;
     margin: 50px 50px 85px 50px;
 }
 
-#weddings div.image{
+#weddings div.image {
     height: 500px;
     overflow: hidden;
 }
 
-#weddings div.image img{
+#weddings div.image img {
     width: 100%;
     height: 100%;
+    -o-object-fit: cover;
     object-fit: cover;
 }
 
-#weddings div.text-container, #families div.text-container{
+#weddings div.text-container,
+#families div.text-container {
     display: flex;
     width: 100%;
+    height: -webkit-max-content;
+    height: -moz-max-content;
     height: max-content;
     padding: 10px 0 10px 0;
     margin: 35px 0 35px 0;
 }
 
-#weddings li h2, #families div.container.b h2{
+#weddings li h2,
+#families div.container.b h2 {
     color: #3f331f;
     font-family: pb;
     font-size: 24px;
 }
 
-#weddings li h3, #split div.arch h3, #shoots h3, #families div.container.b h3{
+#weddings li h3,
+#split div.arch h3,
+#shoots h3,
+#families div.container.b h3 {
     color: #ad8d58;
     font-weight: normal;
     font-family: cac;
@@ -269,7 +282,8 @@ a{
     text-align: center;
 }
 
-#weddings div.duration, #families div.size{
+#weddings div.duration,
+#families div.size {
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -278,22 +292,31 @@ a{
     border-right: 1px solid #77603a;
 }
 
-#weddings div.duration h2, #families div.size h2{
+#weddings div.duration h2,
+#families div.size h2 {
+    width: -webkit-max-content;
+    width: -moz-max-content;
     width: max-content;
     margin: auto;
 }
 
-#weddings div.price, #families div.price{
+#weddings div.price,
+#families div.price {
     padding-bottom: 10px;
     margin-right: auto;
 }
 
-#weddings div.price h2, #families div.price h2{
+#weddings div.price h2,
+#families div.price h2 {
     font-family: pbsb;
     font-size: 35px;
 }
 
-#weddings div.price h2 span, #split div.arch h2 span, #split li h2 span, #shoots li h2 span, #families div.price h2 span{
+#weddings div.price h2 span,
+#split div.arch h2 span,
+#split li h2 span,
+#shoots li h2 span,
+#families div.price h2 span {
     position: relative;
     color: #77603a;
     font-size: 20px;
@@ -304,51 +327,51 @@ a{
 
 /****************** Split ******************/
 
-#split{
+#split {
     --container-proportion: 42.5%;
-    
+
     display: flex;
     width: 100%;
     height: 800px;
 }
 
-#split div.container{
+#split div.container {
     display: flex;
 }
 
-#split div.container.a{
+#split div.container.a {
     position: relative;
     width: var(--container-proportion);
     overflow: hidden;
     background-color: white;
 }
 
-#split div.container.b{
+#split div.container.b {
     width: calc(100% - var(--container-proportion));
     overflow: hidden;
     background-color: #e6d9c6;
 }
 
-#split div.container > div{
+#split div.container>div {
     padding: 30px;
 }
 
-#split div.add-ons{
+#split div.add-ons {
     display: flex;
     margin-left: auto;
 }
 
-#split div.vertical-text{
+#split div.vertical-text {
     --vertical-font-size: 50px;
     --line-thickness: 2px;
-    
+
     display: flex;
     width: var(--vertical-font-size);
     height: 100%;
     z-index: 3;
 }
 
-#split div.vertical-text div{
+#split div.vertical-text div {
     position: relative;
     width: var(--line-thickness);
     height: 100%;
@@ -356,7 +379,7 @@ a{
     background-color: #876d46;
 }
 
-#split div.vertical-text h2{
+#split div.vertical-text h2 {
     position: absolute;
     color: #876d46;
     font-family: b;
@@ -364,6 +387,8 @@ a{
     letter-spacing: 8px;
     transform: rotate(-90deg);
     transform-origin: right top;
+    width: -webkit-max-content;
+    width: -moz-max-content;
     width: max-content;
     height: var(--vertical-font-size);
     line-height: var(--vertical-font-size);
@@ -373,18 +398,18 @@ a{
     background-color: white;
 }
 
-#split ul{
+#split ul {
     display: flex;
     flex-direction: column;
     padding: 150px 75px 150px 75px;
     z-index: 3;
 }
 
-#split li{
+#split li {
     margin: auto;
 }
 
-#split li h2{
+#split li h2 {
     display: block;
     color: #42433e;
     font-family: f;
@@ -394,16 +419,16 @@ a{
     margin-bottom: 15px;
 }
 
-#split li h2:last-child{
+#split li h2:last-child {
     font-family: pbsb;
     font-size: 30px;
 }
 
-#split li h2 span{
+#split li h2 span {
     font-size: 17px;
 }
 
-#split div.container.a div.image{
+#split div.container.a div.image {
     position: absolute;
     width: 550px;
     height: auto;
@@ -413,13 +438,13 @@ a{
     z-index: 1;
 }
 
-#split div.a div.image img{
+#split div.a div.image img {
     width: 100%;
     height: 100%;
     transform: rotate(180deg);
 }
 
-#split div.elopements{
+#split div.elopements {
     display: flex;
     flex-direction: column;
     position: relative;
@@ -428,7 +453,7 @@ a{
     margin-right: auto;
 }
 
-#split div.elopements > h2{
+#split div.elopements>h2 {
     color: #42433e;
     font-family: b;
     font-size: 50px;
@@ -436,17 +461,20 @@ a{
     width: 100%;
 }
 
-#split div.elopements div.content{
+#split div.elopements div.content {
     display: flex;
     width: 100%;
     margin: auto;
 }
 
-#split div.text-container, #split div.image{
+#split div.text-container,
+#split div.image {
     margin: auto;
 }
 
-#split div.text-container{
+#split div.text-container {
+    width: -webkit-min-content;
+    width: -moz-min-content;
     width: min-content;
     padding: 40px;
     border-radius: 12px;
@@ -454,48 +482,50 @@ a{
     z-index: 3;
 }
 
-#split div.arch{
+#split div.arch {
+    width: -webkit-max-content;
+    width: -moz-max-content;
     width: max-content;
     padding: 90px 60px 80px 60px;
     border-radius: 95px 95px 0 0;
     background-color: #fff8ee;
 }
 
-#split div.arch h3{
+#split div.arch h3 {
     color: #ad8d58;
 }
 
-#split div.arch h2{
+#split div.arch h2 {
     color: #3f331f;
     font-family: pbsb;
     font-size: 30px;
 }
 
-#split div.arch h2 span{
+#split div.arch h2 span {
     font-size: 17px;
 }
 
-#split div.text-container p{
+#split div.text-container p {
     color: #3f331f;
     font-family: pbsb;
     font-size: 16px;
     text-align: center;
 }
 
-#split div.button{
+#split div.button {
     display: flex;
     width: 100%;
     margin-top: 30px;
 }
 
-#split div.button a{
+#split div.button a {
     margin: auto;
     border: 1px solid #3f331f;
     border-radius: 30px;
     transition: background-color .1s;
 }
 
-#split div.button h3{
+#split div.button h3 {
     color: #3f331f;
     font-weight: normal;
     font-family: pbsb;
@@ -505,15 +535,15 @@ a{
     transition: color .1s;
 }
 
-#split div.button a:hover{
+#split div.button a:hover {
     background-color: #3f331f;
 }
 
-#split div.button a:hover h3{
+#split div.button a:hover h3 {
     color: #f6eddf;
 }
 
-#split div.content div.image{
+#split div.content div.image {
     width: 300px;
     height: 600px;
     border-radius: 50%;
@@ -521,13 +551,14 @@ a{
     z-index: 3;
 }
 
-#split div.content div.image img{
+#split div.content div.image img {
     width: 100%;
     height: 100%;
+    -o-object-fit: cover;
     object-fit: cover;
 }
 
-#split div.elopements > div.image{
+#split div.elopements>div.image {
     position: absolute;
     width: 500px;
     bottom: -35px;
@@ -535,7 +566,7 @@ a{
     z-index: 1;
 }
 
-#split div.elopements > div.image img{
+#split div.elopements>div.image img {
     position: relative;
     width: 100%;
     height: 100%;
@@ -546,24 +577,24 @@ a{
 
 /****************** Shoots ******************/
 
-#shoots{
+#shoots {
     display: flex;
     flex-direction: column;
     padding: 40px 0 130px 0;
     background-color: #ffeae0;
 }
 
-#shoots ul{
+#shoots ul {
     display: flex;
     margin: 50px auto 0 auto;
 }
 
-#shoots li{
+#shoots li {
     width: 330px;
     padding: 50px;
 }
 
-#shoots ul.icons li h2{
+#shoots ul.icons li h2 {
     color: #b97c5d;
     font-family: b;
     font-family: d;
@@ -574,15 +605,16 @@ a{
     text-align: center;
 }
 
-#shoots li img{
+#shoots li img {
     width: 100%;
     height: 375px;
     border: 2px solid #88553b;
     border-radius: 165px 165px 0 0;
+    -o-object-fit: cover;
     object-fit: cover;
 }
 
-#shoots ul.text{
+#shoots ul.text {
     display: flex;
     width: 100%;
     padding: 30px 0 30px 0;
@@ -590,36 +622,38 @@ a{
     background-color: #ffe0d2;
 }
 
-#shoots ul.text li{
+#shoots ul.text li {
     padding: 40px 50px 40px 50px;
 }
 
-#shoots ul.text li:first-child{
+#shoots ul.text li:first-child {
     margin-left: auto;
 }
 
-#shoots ul.text li:nth-child(2){
+#shoots ul.text li:nth-child(2) {
     border-left: 1px solid #d5b09e;
     border-right: 1px solid #d5b09e;
 }
 
-#shoots ul.text li:last-child{
+#shoots ul.text li:last-child {
     margin-right: auto;
 }
 
-#shoots div.price{
+#shoots div.price {
     display: flex;
 }
 
-#shoots div.price h3{
+#shoots div.price h3 {
     color: #d5b09e;
     font-size: 37px;
     line-height: 43px;
+    width: -webkit-max-content;
+    width: -moz-max-content;
     width: max-content;
     margin: 0 25px 0 auto;
 }
 
-#shoots div.price h2{
+#shoots div.price h2 {
     color: #b97c5d;
     font-family: pbsb;
     font-size: 37px;
@@ -627,7 +661,7 @@ a{
     margin-right: auto;
 }
 
-#shoots div.price h2 span{
+#shoots div.price h2 span {
     color: #c7967d;
     font-size: 20px;
 }
@@ -635,16 +669,16 @@ a{
 
 /****************** Families ******************/
 
-#families{
+#families {
     width: 100%;
     background-color: #e6d9c6;
 }
 
-#families div.title{
+#families div.title {
     --title-size: 55px;
     --line-thickness: 3px;
     --title-padding: 15px;
-    
+
     display: flex;
     flex-direction: column;
     position: relative;
@@ -655,7 +689,7 @@ a{
     background-color: #fffcf7;
 }
 
-#families div.title div{
+#families div.title div {
     display: flex;
     width: 100%;
     height: var(--line-thickness);
@@ -664,7 +698,7 @@ a{
     background-color: #b97c5d;
 }
 
-#families div.title h2{
+#families div.title h2 {
     position: absolute;
     color: white;
     color: #b97c5d;
@@ -679,48 +713,54 @@ a{
     background-color: #fffcf7;
 }
 
-#families div.content{
+#families div.content {
     --a-proportion: 35%;
     --b-proportion: 40%;
-    
+
     display: flex;
     width: 100%;
     overflow: hidden;
 }
 
-#families div.container{
+#families div.container {
     display: flex;
 }
 
-#families div.container.a{
+#families div.container.a {
     width: var(--a-proportion);
     padding: 75px 0 75px 0;
 }
 
-#families div.container.b{
+#families div.container.b {
     flex-direction: column;
     position: relative;
     width: var(--b-proportion);
+    min-width: -webkit-max-content;
+    min-width: -moz-max-content;
     min-width: max-content;
     padding: 150px 0 150px 0;
 }
 
-#families div.container.c{
+#families div.container.c {
     position: relative;
     width: calc(100% - var(--a-proportion) - var(--b-proportion));
     background-color: #f6eddf;
 }
 
-#families div.photo-reel{
+#families div.photo-reel {
     --photo-size: 250px;
     --reel-padding: 15px;
     --photo-spacing: 9px;
-    
+
+    height: -webkit-max-content;
+
+    height: -moz-max-content;
+
     height: max-content;
     margin: auto 50px auto auto;
 }
 
-#families div.photo-reel > div{
+#families div.photo-reel>div {
     display: flex;
     height: calc((2 * var(--photo-size) + var(--photo-spacing)));
     padding: var(--reel-padding) 0 var(--reel-padding) 0;
@@ -729,34 +769,34 @@ a{
     transform-origin: center;
 }
 
-#families div.text{
+#families div.text {
     position: relative;
     width: var(--reel-padding);
     height: calc((2 * var(--photo-size) + var(--photo-spacing)));
 }
 
-#families div.text div{
+#families div.text div {
     display: flex;
     position: absolute;
     width: calc((2 * var(--photo-size) + var(--photo-spacing)));
     height: var(--reel-padding);
 }
 
-#families div.text.a div{
+#families div.text.a div {
     transform: rotate(90deg);
     transform-origin: left top;
     top: 0;
     left: var(--reel-padding);
 }
 
-#families div.text.b div{
+#families div.text.b div {
     transform: rotate(-90deg);
     transform-origin: right top;
     top: 0;
     right: var(--reel-padding);
 }
 
-#families div.text p{
+#families div.text p {
     color: #7a6d4e;
     font-family: pd;
     font-weight: bold;
@@ -766,1583 +806,1588 @@ a{
     margin: 0 auto 0 auto;
 }
 
-#families div.text.a p:first-child{
+#families div.text.a p:first-child {
     margin-left: 20px;
 }
 
-#families div.text.a p:last-child{
+#families div.text.a p:last-child {
     margin-right: 20px;
 }
 
-#families div.text.b p:first-child{
+#families div.text.b p:first-child {
     margin-left: 30px;
 }
 
-#families div.text.b p:last-child{
+#families div.text.b p:last-child {
     margin-right: 30px;
 }
 
-#families div.photos{
+#families div.photos {
     display: flex;
     flex-direction: column;
 }
 
-#families div.photos img{
+#families div.photos img {
     width: var(--photo-size);
     height: var(--photo-size);
+    -o-object-fit: cover;
     object-fit: cover;
 }
 
-#families div.photos img:first-child{
+#families div.photos img:first-child {
     margin-bottom: var(--photo-spacing);
 }
 
-#families div.text-container{
+#families div.text-container {
+    width: -webkit-max-content;
+    width: -moz-max-content;
     width: max-content;
     padding: 15px 80px 15px 80px;
     margin: auto auto auto 50px;
-/*    border: 1px solid var(--light-black);*/
+    /*    border: 1px solid var(--light-black);*/
     background-color: #f6ecdc;
     z-index: 3;
 }
 
-#families div.size{
+#families div.size {
     width: 205px;
-    padding-right: 0px;
+    padding-right: 0;
     margin-right: 50px;
 }
 
-#families div.size h2{
+#families div.size h2 {
     margin: 0;
 }
 
-#families div.size h2:first-child{
+#families div.size h2:first-child {
     margin-top: auto
 }
 
-#families div.size h2:last-child{
+#families div.size h2:last-child {
     margin-bottom: auto
 }
 
-#families div.price h2{
+#families div.price h2 {
     font-family: pbsb !important;
     font-size: 35px !important;
 }
 
-#families div.price h2 span{
+#families div.price h2 span {
     color: #b97c5d !important;
 }
 
-#families div.image{
+#families div.image {
     width: 200px;
     margin: auto auto 0 auto;
     z-index: 1;
 }
 
-#families div.image img{
+#families div.image img {
     width: 100%;
 }
 
 
 @media screen and (max-width: 1500px) {
-    
-    #families div.content{
+
+    #families div.content {
         --a-proportion: 32%;
         --b-proportion: 47%;
     }
-    
-    #families div.text-container{
+
+    #families div.text-container {
         margin: auto auto auto 60px;
     }
-    
+
 }
 
 @media screen and (max-width: 1475px) {
-    
-    #weddings div.title{
+
+    #weddings div.title {
         padding: 30px 15px 40px 40px;
     }
 
-    #weddings div.title h2{
+    #weddings div.title h2 {
         font-size: 42px;
     }
-    
-    #weddings div.title img{
+
+    #weddings div.title img {
         height: 45px;
         top: 6px;
     }
-    
-    #weddings li{
+
+    #weddings li {
         width: 325px;
         margin: 50px 40px 80px 40px;
     }
-    
-    #weddings div.image{
+
+    #weddings div.image {
         height: 430px;
     }
-    
-    #weddings li h2{
+
+    #weddings li h2 {
         font-size: 21px;
     }
-    
-    #weddings li h3{
+
+    #weddings li h3 {
         font-size: 26px;
     }
-    
-    #weddings div.price h2{
+
+    #weddings div.price h2 {
         font-size: 33px;
     }
-    
-    #weddings div.price h2 span{
+
+    #weddings div.price h2 span {
         font-size: 18px;
     }
-    
+
 }
 
 @media screen and (max-width: 1400px) {
-    
-    #shoots li{
+
+    #shoots li {
         width: 290px;
         padding: 40px;
     }
-    
-    #shoots ul.icons li h2{
+
+    #shoots ul.icons li h2 {
         font-size: 38px;
     }
-    
-    #shoots li img{
+
+    #shoots li img {
         height: 330px;
         border-radius: 145px 145px 0 0;
     }
-    
-    #shoots ul.text li{
+
+    #shoots ul.text li {
         padding: 35px 40px 35px 40px;
     }
-    
-    #shoots div.price h3{
+
+    #shoots div.price h3 {
         font-size: 34px;
     }
-    
-    #shoots div.price h2{
+
+    #shoots div.price h2 {
         font-size: 36px;
     }
 
-    #shoots div.price h2 span{
+    #shoots div.price h2 span {
         font-size: 19px;
     }
-    
+
 }
 
 @media screen and (max-width: 1325px) {
-    
-    #investment div.text h1{
+
+    #investment div.text h1 {
         font-size: 100px;
     }
-    
-    #families div.title{
+
+    #families div.title {
         --title-size: 53px;
         --title-padding: 14px;
     }
-    
-    #families div.content{
+
+    #families div.content {
         --a-proportion: 35%;
         --b-proportion: 43%;
     }
-    
-    #families div.photo-reel{
+
+    #families div.photo-reel {
         --photo-size: 225px;
         --reel-padding: 13px;
         --photo-spacing: 7px;
     }
-    
-    #families div.text p{
+
+    #families div.text p {
         font-size: 5px;
     }
-    
-    #families div.text-container{
+
+    #families div.text-container {
         padding: 15px 55px 15px 55px;
     }
-    
-    #families div.size{
+
+    #families div.size {
         width: 180px;
     }
-    
-    #families div.size h2{
+
+    #families div.size h2 {
         font-size: 21px !important;
     }
-    
-    #families div.price{
+
+    #families div.price {
         padding-bottom: 7px;
     }
-    
-    #families div.price h3{
+
+    #families div.price h3 {
         font-size: 25px !important;
         line-height: 30px;
     }
-    
-    #families div.price h2{
+
+    #families div.price h2 {
         font-size: 33px !important;
     }
-    
-    #families div.price h2 span{
+
+    #families div.price h2 span {
         font-size: 19px;
     }
-    
-    #families div.image{
+
+    #families div.image {
         width: 175px;
     }
-    
+
 }
 
 @media screen and (max-width: 1275px) {
 
-    #weddings div.title h2{
+    #weddings div.title h2 {
         font-size: 40px;
     }
-    
-    #weddings div.title img{
+
+    #weddings div.title img {
         height: 43px;
         top: 5px;
     }
-    
-    #weddings li{
+
+    #weddings li {
         width: 275px;
         margin: 50px 30px 80px 30px;
     }
-    
-    #weddings div.image{
+
+    #weddings div.image {
         height: 370px;
     }
-    
-    #weddings div.text-container{
+
+    #weddings div.text-container {
         margin-top: 30px;
     }
-    
-    #weddings div.duration{
+
+    #weddings div.duration {
         padding-right: 20px;
         margin-right: 20px;
     }
-    
-    #weddings li h2{
+
+    #weddings li h2 {
         font-size: 18px;
     }
-    
-    #weddings li h3{
+
+    #weddings li h3 {
         font-size: 24px;
     }
-    
-    #weddings div.price h2{
+
+    #weddings div.price h2 {
         font-size: 29px;
     }
-    
-    #weddings div.price h2 span{
+
+    #weddings div.price h2 span {
         font-size: 14px;
     }
-    
-    #split{
+
+    #split {
         height: 775px;
     }
-    
-    #split div.vertical-text{
+
+    #split div.vertical-text {
         --vertical-font-size: 45px;
     }
-    
-    #split ul{
+
+    #split ul {
         padding: 150px 30px 150px 30px;
     }
-    
-    #split li h2{
+
+    #split li h2 {
         font-size: 22px;
         line-height: 28px;
         margin-bottom: 10px;
     }
-    
-    #split li h2:last-child{
+
+    #split li h2:last-child {
         font-size: 27px;
     }
-    
-    #split li h2 span{
+
+    #split li h2 span {
         font-size: 15px;
     }
-    
-    #split div.container.a div.image{
+
+    #split div.container.a div.image {
         width: 500px;
         right: -250px;
     }
-    
-    #split div.elopements{
+
+    #split div.elopements {
         padding: 35px !important;
     }
-    
-    #split div.elopements > h2{
+
+    #split div.elopements>h2 {
         font-size: 45px;
     }
-    
-    #split div.text-container{
+
+    #split div.text-container {
         padding: 35px 35px 30px 35px;
     }
-    
-    #split div.arch{
+
+    #split div.arch {
         padding: 80px 50px 65px 50px;
         border-radius: 85px 85px 0 0;
     }
-    
-    #split div.button{
+
+    #split div.button {
         margin-top: 25px;
     }
-    
-    #split div.content div.image{
+
+    #split div.content div.image {
         width: 275px;
         height: 565px;
     }
-    
-    #split div.elopements > div.image{
+
+    #split div.elopements>div.image {
         width: 475px;
         right: -165px;
     }
-    
+
 }
 
 @media screen and (max-width: 1225px) {
-    
-    #families div.content{
+
+    #families div.content {
         --a-proportion: 33%;
         --b-proportion: 47%;
     }
-    
-    #families div.text-container{
+
+    #families div.text-container {
         margin: auto auto auto 50px;
     }
-    
+
 }
 
 @media screen and (max-width: 1200px) {
-    
-    #shoots li{
+
+    #shoots li {
         width: 240px;
         padding: 35px;
     }
-    
-    #shoots ul.icons li h2{
+
+    #shoots ul.icons li h2 {
         font-size: 35px;
     }
-    
-    #shoots li img{
+
+    #shoots li img {
         height: 275px;
         border-radius: 120px 120px 0 0;
     }
-    
-    #shoots ul.text{
+
+    #shoots ul.text {
         padding: 25px 0 25px 0;
     }
-    
-    #shoots ul.text li{
+
+    #shoots ul.text li {
         padding: 30px 35px 30px 35px;
     }
-    
-    #shoots div.price h3{
+
+    #shoots div.price h3 {
         font-size: 31px;
         margin-right: 20px;
     }
-    
-    #shoots div.price h2{
+
+    #shoots div.price h2 {
         font-size: 34px;
     }
 
-    #shoots div.price h2 span{
+    #shoots div.price h2 span {
         font-size: 17px;
     }
-    
+
 }
 
 @media screen and (max-width: 1125px) {
-    
-    #split{
+
+    #split {
         height: 710px;
     }
-    
-    #split div.vertical-text{
+
+    #split div.vertical-text {
         --vertical-font-size: 42px;
     }
-    
-    #split li h2{
+
+    #split li h2 {
         font-size: 19px;
         line-height: 25px;
         margin-bottom: 12px;
     }
-    
-    #split li h2:last-child{
+
+    #split li h2:last-child {
         font-size: 26px;
     }
-    
-    #split li h2 span{
+
+    #split li h2 span {
         font-size: 14px;
     }
-    
-    #split div.container.a div.image{
+
+    #split div.container.a div.image {
         width: 465px;
         right: -230px;
     }
-    
-    #split div.elopements > h2{
+
+    #split div.elopements>h2 {
         font-size: 42px;
     }
-    
-    #split div.arch{
+
+    #split div.arch {
         padding: 70px 40px 55px 40px;
         border-radius: 75px 75px 0 0;
     }
-    
-    #split div.arch h3{
+
+    #split div.arch h3 {
         font-size: 25px;
         line-height: 30px;
     }
-    
-    #split div.arch h2{
+
+    #split div.arch h2 {
         font-size: 27px;
     }
-    
-    #split div.arch h2 span{
+
+    #split div.arch h2 span {
         font-size: 15px;
     }
-    
-    #split div.text-container p{
+
+    #split div.text-container p {
         font-size: 13px;
         margin-top: 20px;
     }
-    
-    #split div.content div.image{
+
+    #split div.content div.image {
         width: 225px;
         height: 500px;
     }
-    
-    #split div.elopements > div.image{
+
+    #split div.elopements>div.image {
         width: 425px;
         right: -145px;
     }
-    
+
 }
 
 @media screen and (max-width: 1075px) {
-    
-    #weddings div.title{
+
+    #weddings div.title {
         padding: 20px 10px 30px 30px;
     }
-    
-    #weddings div.title h2{
+
+    #weddings div.title h2 {
         font-size: 38px;
     }
-    
-    #weddings div.title img{
+
+    #weddings div.title img {
         height: 40px;
         margin-left: 10px;
         top: 4px;
     }
-    
-    #weddings li{
+
+    #weddings li {
         width: 225px;
         margin: 50px 25px 80px 25px;
     }
-    
-    #weddings div.image{
+
+    #weddings div.image {
         height: 305px;
     }
-    
-    #weddings div.text-container{
+
+    #weddings div.text-container {
         margin-top: 25px;
     }
-    
-    #weddings div.duration h2{
+
+    #weddings div.duration h2 {
         width: 70px;
         line-height: 20px;
     }
-    
-    #weddings li h3{
+
+    #weddings li h3 {
         line-height: 30px;
     }
-    
-    #weddings div.price h2{
+
+    #weddings div.price h2 {
         font-size: 27px;
     }
-    
-    #weddings div.price h2 span{
+
+    #weddings div.price h2 span {
         font-size: 13px;
     }
-    
-    #families div.title{
+
+    #families div.title {
         --title-size: 48px;
         --title-padding: 12px;
     }
-    
-    #families div.content{
+
+    #families div.content {
         --a-proportion: 38%;
         --b-proportion: 42%;
     }
-    
-    #families div.photo-reel{
+
+    #families div.photo-reel {
         --photo-size: 190px;
         --reel-padding: 10px;
         --photo-spacing: 6px;
     }
-    
-    #families div.text p{
+
+    #families div.text p {
         font-size: 4px;
     }
-    
-    #families div.text-container{
+
+    #families div.text-container {
         padding: 15px 35px 15px 35px;
         margin: auto auto auto 30px;
     }
-    
-    #families div.size{
+
+    #families div.size {
         width: 150px;
         margin-right: 35px;
     }
-    
-    #families div.size h2{
+
+    #families div.size h2 {
         font-size: 18px !important;
     }
-    
-    #families div.price{
+
+    #families div.price {
         padding-bottom: 2px;
     }
-    
-    #families div.price h3{
+
+    #families div.price h3 {
         font-size: 22px !important;
         line-height: 23px;
     }
-    
-    #families div.price h2{
+
+    #families div.price h2 {
         font-size: 30px !important;
     }
-    
-    #families div.price h2 span{
+
+    #families div.price h2 span {
         font-size: 17px;
     }
-    
-    #families div.image{
+
+    #families div.image {
         width: 150px;
     }
-    
+
 }
 
 @media screen and (max-width: 1050px) {
-    
-    #shoots li{
+
+    #shoots li {
         width: 200px;
         padding: 30px;
     }
-    
-    #shoots ul.icons li h2{
+
+    #shoots ul.icons li h2 {
         font-size: 31px;
     }
-    
-    #shoots li img{
+
+    #shoots li img {
         height: 235px;
         border-radius: 100px 100px 0 0;
     }
-    
-    #shoots ul.text li{
+
+    #shoots ul.text li {
         padding: 25px 30px 25px 30px;
     }
-    
-    #shoots div.price h3{
+
+    #shoots div.price h3 {
         font-size: 28px;
         margin-right: 18px;
     }
-    
-    #shoots div.price h2{
+
+    #shoots div.price h2 {
         font-size: 32px;
     }
 
-    #shoots div.price h2 span{
+    #shoots div.price h2 span {
         font-size: 16px;
     }
-    
+
 }
 
 @media screen and (max-width: 1000px) {
-    
-    #investment div.text h1{
+
+    #investment div.text h1 {
         font-size: 90px;
     }
-    
-    #split{
+
+    #split {
         height: 650px;
     }
-    
-    #split div.vertical-text{
+
+    #split div.vertical-text {
         --vertical-font-size: 38px;
     }
-    
-    #split li h2{
+
+    #split li h2 {
         font-size: 16px;
         line-height: 22px;
         margin-bottom: 10px;
     }
-    
-    #split li h2:last-child{
+
+    #split li h2:last-child {
         font-size: 24px;
     }
-    
-    #split li h2 span{
+
+    #split li h2 span {
         font-size: 12px;
     }
-    
-    #split div.container.a div.image{
+
+    #split div.container.a div.image {
         width: 435px;
         right: -215px;
     }
-    
-    #split div.elopements{
+
+    #split div.elopements {
         padding: 25px !important;
     }
-    
-    #split div.elopements > h2{
+
+    #split div.elopements>h2 {
         font-size: 38px;
     }
-    
-    #split div.arch{
+
+    #split div.arch {
         padding: 60px 30px 40px 30px;
         border-radius: 60px 60px 0 0;
     }
-    
-    #split div.arch h3{
+
+    #split div.arch h3 {
         font-size: 22px;
         line-height: 25px;
     }
-    
-    #split div.arch h2{
+
+    #split div.arch h2 {
         font-size: 25px;
     }
-    
-    #split div.arch h2 span{
+
+    #split div.arch h2 span {
         font-size: 13px;
     }
-    
-    #split div.text-container p{
+
+    #split div.text-container p {
         margin-top: 15px;
     }
-    
-    #split div.button h3{
+
+    #split div.button h3 {
         padding: 4px 13px 4px 13px;
     }
-    
-    #split div.content div.image{
+
+    #split div.content div.image {
         width: 175px;
         height: 425px;
     }
-    
-    #split div.elopements > div.image{
+
+    #split div.elopements>div.image {
         width: 400px;
         right: -135px;
     }
-    
+
 }
 
 @media screen and (max-width: 925px) {
-    
-    #families div.content{
+
+    #families div.content {
         --a-proportion: 37%;
         --b-proportion: 44%;
     }
-    
-    #families div.text-container{
+
+    #families div.text-container {
         margin: auto auto auto 5px;
     }
-    
+
 }
 
 @media screen and (max-width: 875px) {
 
-    #weddings div.title h2{
+    #weddings div.title h2 {
         font-size: 35px;
     }
 
-    #weddings div.title img{
+    #weddings div.title img {
         height: 38px;
     }
-    
-    #weddings li{
+
+    #weddings li {
         width: 175px;
     }
-    
-    #weddings div.image{
+
+    #weddings div.image {
         height: 250px;
     }
-    
-    #weddings div.text-container{
+
+    #weddings div.text-container {
         flex-direction: column;
     }
-    
-    #weddings div.duration{
+
+    #weddings div.duration {
         padding: 0 10px 20px 10px;
         margin: 0 auto 20px auto;
         border-right: 0;
         border-bottom: 1px solid #77603a;
     }
-    
-    #weddings div.duration h2{
+
+    #weddings div.duration h2 {
+        width: -webkit-max-content;
+        width: -moz-max-content;
         width: max-content;
     }
-    
-    #weddings div.price{
+
+    #weddings div.price {
         margin-left: auto;
     }
-    
-    #weddings li h3{
+
+    #weddings li h3 {
         font-size: 24px;
         line-height: 24px;
     }
-    
+
 }
 
 @media screen and (max-width: 850px) {
-    
-    #shoots{
+
+    #shoots {
         padding-bottom: 110px;
     }
-    
-    #shoots ul.icons{
+
+    #shoots ul.icons {
         margin-top: 30px;
     }
-    
-    #shoots li{
+
+    #shoots li {
         width: 165px;
     }
-    
-    #shoots ul.icons li h2{
+
+    #shoots ul.icons li h2 {
         font-size: 27px;
     }
-    
-    #shoots li img{
+
+    #shoots li img {
         height: 190px;
         border-radius: 82px 82px 0 0;
     }
-    
-    #shoots ul.text{
+
+    #shoots ul.text {
         padding: 20px 0 20px 0;
     }
-    
-    #shoots ul.text li{
+
+    #shoots ul.text li {
         padding: 20px 30px 20px 30px;
     }
-    
-    #shoots div.price h3{
+
+    #shoots div.price h3 {
         font-size: 25px;
     }
-    
-    #shoots div.price h2{
+
+    #shoots div.price h2 {
         font-size: 29px;
     }
 
-    #shoots div.price h2 span{
+    #shoots div.price h2 span {
         font-size: 14px;
     }
-    
+
 }
 
 @media screen and (max-width: 825px) {
-    
-    #split{
+
+    #split {
         --container-proportion: 39%;
     }
-    
-    #split ul{
+
+    #split ul {
         padding-right: 0;
     }
-    
-    #split div.container.a div.image{
+
+    #split div.container.a div.image {
         width: 380px;
         right: -190px;
     }
-    
-    #split div.elopements{
+
+    #split div.elopements {
         padding-right: 5px !important;
     }
-    
-    #split div.text-container{
+
+    #split div.text-container {
         padding: 25px 25px 20px 25px;
     }
-    
-    #split div.elopements > div.image{
+
+    #split div.elopements>div.image {
         width: 365px;
         right: -120px;
     }
-    
-    #families div.title{
+
+    #families div.title {
         --title-size: 43px;
         --title-padding: 10px;
     }
-    
-    #families div.content{
+
+    #families div.content {
         --a-proportion: 39%;
         --b-proportion: 40%;
     }
-    
-    #families div.container.b{
+
+    #families div.container.b {
         padding: 120px 0 120px 0;
     }
-    
-    #families div.photo-reel{
+
+    #families div.photo-reel {
         --photo-size: 150px;
         --reel-padding: 9px;
         --photo-spacing: 5px;
     }
-    
-    #families div.text.a p:first-child{
+
+    #families div.text.a p:first-child {
         margin-left: 12px;
     }
 
-    #families div.text.a p:last-child{
+    #families div.text.a p:last-child {
         margin-right: 12px;
     }
 
-    #families div.text.b p:first-child{
+    #families div.text.b p:first-child {
         margin-left: 20px;
     }
 
-    #families div.text.b p:last-child{
+    #families div.text.b p:last-child {
         margin-right: 20px;
     }
-    
-    #families div.text-container{
+
+    #families div.text-container {
         padding: 12px 20px 12px 20px;
         margin: auto auto auto 0;
     }
-    
-    #families div.size{
+
+    #families div.size {
         width: 125px;
         margin-right: 25px;
     }
-    
-    #families div.size h2{
+
+    #families div.size h2 {
         font-size: 16px !important;
     }
-    
-    #families div.price{
+
+    #families div.price {
         padding-top: 3px;
         padding-bottom: 3px;
     }
-    
-    #families div.price h3{
+
+    #families div.price h3 {
         font-size: 19px !important;
         line-height: 19px;
     }
-    
-    #families div.price h2{
+
+    #families div.price h2 {
         font-size: 26px !important;
     }
-    
-    #families div.price h2 span{
+
+    #families div.price h2 span {
         font-size: 14px;
     }
-    
-    #families div.image{
+
+    #families div.image {
         width: 115px;
     }
-    
+
 }
 
 @media screen and (max-width: 800px) {
-    
-    #investment div.text h1{
+
+    #investment div.text h1 {
         font-size: 80px;
     }
-    
+
 }
 
 @media screen and (max-width: 700px) {
-    
-    #families div.title{
+
+    #families div.title {
         --title-size: 40px;
         --title-padding: 8px;
         --line-thickness: 2px;
     }
-    
-    #families div.content{
+
+    #families div.content {
         --a-proportion: 43%;
         --b-proportion: 26%;
     }
-    
-    #families div.text-container{
+
+    #families div.text-container {
         position: absolute;
         border: 1px solid #e6d9c6;
         border-left: 0;
     }
-    
-    #families div.text-container:first-child{
+
+    #families div.text-container:first-child {
         top: 29%;
     }
-    
-    #families div.text-container:last-child{
+
+    #families div.text-container:last-child {
         bottom: 29%;
     }
-    
-    #families div.size{
+
+    #families div.size {
         height: auto;
     }
-    
+
 }
 
 @media screen and (max-width: 725px) {
-    
-    #weddings li{
+
+    #weddings li {
         margin: 50px 15px 80px 15px;
     }
-    
-    #split{
+
+    #split {
         flex-direction: column;
         height: auto;
     }
-    
-    #split div.container{
+
+    #split div.container {
         width: 100% !important;
     }
-    
-    #split div.add-ons{
+
+    #split div.add-ons {
         width: 100%;
         height: 425px;
         margin-left: 0;
     }
-    
-    #split div.vertical-text{
+
+    #split div.vertical-text {
         --vertical-font-size: 30px;
     }
-    
-    #split ul{
+
+    #split ul {
         padding: 50px 30px 50px 10px;
         margin: auto;
     }
-    
-    #split li{
+
+    #split li {
         margin-top: 10px;
         margin-bottom: 10px;
     }
-    
-    #split li h2{
+
+    #split li h2 {
         font-size: 19px;
         line-height: 24px;
         margin-bottom: 10px;
     }
-    
-    #split div.elopements{
+
+    #split div.elopements {
         padding: 40px 40px 75px 40px !important;
     }
-    
-    #split div.elopements > h2{
+
+    #split div.elopements>h2 {
         font-size: 35px;
         margin-bottom: 25px;
     }
-    
-    #split div.text-container{
+
+    #split div.text-container {
         padding: 35px 35px 30px 35px;
     }
-    
-    #split div.arch{
+
+    #split div.arch {
         padding: 80px 45px 65px 45px;
         border-radius: 85px 85px 0 0;
     }
-    
-    #split div.arch h3{
+
+    #split div.arch h3 {
         font-size: 26px;
         line-height: 30px;
     }
-    
-    #split div.arch h2{
+
+    #split div.arch h2 {
         font-size: 30px;
     }
-    
-    #split div.arch h2 span{
+
+    #split div.arch h2 span {
         font-size: 17px;
     }
-    
-    #split div.text-container p{
+
+    #split div.text-container p {
         font-size: 16px;
         margin-top: 20px;
     }
-    
-    #split div.button h3{
+
+    #split div.button h3 {
         padding: 6px 15px 6px 15px;
     }
-    
-    #split div.content div.image{
+
+    #split div.content div.image {
         width: 225px;
         height: 500px;
     }
-    
-    #shoots li{
+
+    #shoots li {
         width: 135px;
         padding: 25px;
     }
-    
-    #shoots ul.icons li h2{
+
+    #shoots ul.icons li h2 {
         font-size: 22px;
     }
-    
-    #shoots li img{
+
+    #shoots li img {
         height: 155px;
         border-radius: 68px 68px 0 0;
     }
-    
-    #shoots ul.text{
+
+    #shoots ul.text {
         padding: 15px 0 15px 0;
     }
-    
-    #shoots ul.text li{
+
+    #shoots ul.text li {
         padding: 5px 25px 5px 25px;
     }
-    
-    #shoots div.price{
+
+    #shoots div.price {
         flex-direction: column;
     }
-    
-    #shoots div.price h3{
+
+    #shoots div.price h3 {
         font-size: 23px;
         line-height: 23px;
         margin-right: auto;
     }
-    
-    #shoots div.price h2{
+
+    #shoots div.price h2 {
         font-size: 27px;
         line-height: 30px;
         margin-left: auto;
     }
 
-    #shoots div.price h2 span{
+    #shoots div.price h2 span {
         font-size: 13px;
     }
-    
+
 }
 
 @media screen and (max-width: 675px) {
-    
-    #investment div.text h1{
+
+    #investment div.text h1 {
         font-size: 70px;
     }
-    
+
 }
 
 @media screen and (max-width: 650px) {
-    
-    #weddings div.title h2{
+
+    #weddings div.title h2 {
         font-size: 32px;
     }
-    
-    #weddings div.title img{
+
+    #weddings div.title img {
         height: 35px;
         top: 3px;
     }
-    
-    #weddings li{
+
+    #weddings li {
         width: 140px;
     }
-    
-    #weddings div.image{
+
+    #weddings div.image {
         height: 200px;
     }
-    
-    #weddings div.duration{
+
+    #weddings div.duration {
         padding: 0 6px 15px 6px;
     }
-    
-    #weddings li h2{
+
+    #weddings li h2 {
         font-size: 16px;
     }
-    
-    #weddings li h3{
+
+    #weddings li h3 {
         font-size: 22px;
         line-height: 22px;
     }
-    
-    #weddings div.price h2{
+
+    #weddings div.price h2 {
         font-size: 25px;
     }
-    
-    #weddings div.price h2 span{
+
+    #weddings div.price h2 span {
         font-size: 12px;
     }
-    
+
 }
 
 @media screen and (max-width: 625px) {
-    
-    #split div.text-container{
+
+    #split div.text-container {
         padding: 30px 30px 25px 30px;
     }
-    
-    #split div.arch{
+
+    #split div.arch {
         padding: 70px 35px 55px 35px;
         border-radius: 70px 70px 0 0;
     }
-    
-    #split div.arch h3{
+
+    #split div.arch h3 {
         font-size: 25px;
         line-height: 28px;
     }
-    
-    #split div.arch h2{
+
+    #split div.arch h2 {
         font-size: 27px;
     }
-    
-    #split div.arch h2 span{
+
+    #split div.arch h2 span {
         font-size: 15px;
     }
-    
-    #split div.text-container p{
+
+    #split div.text-container p {
         font-size: 13px;
         margin-top: 20px;
     }
-    
-    #split div.button h3{
+
+    #split div.button h3 {
         padding: 5px 14px 5px 14px;
     }
-    
-    #split div.content div.image{
+
+    #split div.content div.image {
         width: 175px;
         height: 420px;
     }
-    
-    #shoots{
+
+    #shoots {
         padding-bottom: 95px;
     }
-    
-    #shoots ul.icons{
-        margin-top: 0px;
+
+    #shoots ul.icons {
+        margin-top: 0;
     }
-    
-    #shoots li{
+
+    #shoots li {
         width: 125px;
         padding: 20px;
     }
-    
-    #shoots ul.icons li h2{
+
+    #shoots ul.icons li h2 {
         font-size: 20px;
         margin-bottom: 35px;
     }
-    
-    #shoots li img{
+
+    #shoots li img {
         height: 140px;
         border-radius: 63px 63px 0 0;
     }
-    
-    #shoots ul.text li{
+
+    #shoots ul.text li {
         padding: 5px 20px 5px 20px;
     }
-    
-    #shoots div.price h3{
+
+    #shoots div.price h3 {
         font-size: 21px;
         line-height: 21px;
     }
-    
-    #shoots div.price h2{
+
+    #shoots div.price h2 {
         font-size: 25px;
         line-height: 28px;
     }
 
-    #shoots div.price h2 span{
+    #shoots div.price h2 span {
         font-size: 12px;
     }
-    
+
 }
 
 @media screen and (max-width: 600px) {
-    
-    #families div.title{
+
+    #families div.title {
         --title-size: 37px;
         --title-padding: 7px;
     }
-    
-    #families div.content{
+
+    #families div.content {
         --a-proportion: 47%;
         --b-proportion: 20%;
     }
-    
-    #families div.photo-reel{
+
+    #families div.photo-reel {
         margin-right: 35px;
     }
-    
+
 }
 
 @media screen and (max-width: 550px) {
-    
-    #weddings div.title{
+
+    #weddings div.title {
         padding: 30px 10px 35px 28px;
         margin-bottom: 85px;
     }
-    
-    #weddings div.title h2{
+
+    #weddings div.title h2 {
         font-size: 35px;
     }
-    
-    #weddings div.title img{
+
+    #weddings div.title img {
         height: 38px;
         top: 4px;
     }
-    
-    #weddings ul{
+
+    #weddings ul {
         flex-direction: column;
         margin-bottom: 100px;
     }
-    
-    #weddings li{
+
+    #weddings li {
         width: 300px;
         margin: 25px 20px 25px 20px;
     }
-    
-    #weddings div.image{
+
+    #weddings div.image {
         height: 400px;
     }
-    
-    #weddings div.text-container{
+
+    #weddings div.text-container {
         flex-direction: row;
         margin-top: 15px;
     }
-    
-    #weddings div.duration{
+
+    #weddings div.duration {
         height: auto;
         padding: 0 25px 0 0;
         margin: 0 25px 0 auto;
         border-bottom: 0;
         border-right: 1px solid #77603a;
     }
-    
-    #weddings li h2{
+
+    #weddings li h2 {
         font-size: 21px;
     }
-    
-    #weddings div.price{
+
+    #weddings div.price {
         padding-bottom: 5px;
         margin-left: 0;
     }
-    
-    #weddings li h3{
+
+    #weddings li h3 {
         font-size: 24px;
         line-height: 24px;
     }
-    
-    #weddings div.price h2{
+
+    #weddings div.price h2 {
         font-size: 29px;
     }
-    
-    #weddings div.price h2 span{
+
+    #weddings div.price h2 span {
         font-size: 15px;
     }
-    
-    #shoots{
+
+    #shoots {
         position: relative;
         padding-top: 75px;
     }
-    
-    #shoots ul{
+
+    #shoots ul {
         flex-direction: column;
     }
-    
-    #shoots li{
+
+    #shoots li {
         width: 300px;
         padding: 10px;
         margin-bottom: 150px;
     }
-    
-    #shoots ul.icons li h2{
+
+    #shoots ul.icons li h2 {
         font-size: 30px;
         margin-bottom: 35px;
     }
-    
-    #shoots li img{
+
+    #shoots li img {
         height: 330px;
         border-radius: 150px 150px 0 0;
     }
-    
-    #shoots ul.text{
+
+    #shoots ul.text {
         position: absolute;
         top: 0;
         background-color: transparent;
     }
-    
-    #shoots ul.text li{
+
+    #shoots ul.text li {
         --icon-height: 589px;
         --text-height: 84px;
-        
+
         width: 100%;
         padding: 25px 0 25px 0;
         margin: calc(var(--icon-height) - var(--text-height)) auto 0 auto;
         background-color: #ffe0d2;
     }
-    
-    #shoots ul.text li:nth-child(2){
+
+    #shoots ul.text li:nth-child(2) {
         border: 0;
     }
-    
-    #shoots div.price{
+
+    #shoots div.price {
         flex-direction: row;
     }
-    
-    #shoots div.price h3{
+
+    #shoots div.price h3 {
         font-size: 29px;
         line-height: 34px;
         margin-right: 25px;
     }
-    
-    #shoots div.price h2{
+
+    #shoots div.price h2 {
         font-size: 30px;
         line-height: 30px;
         margin-left: 0;
     }
 
-    #shoots div.price h2 span{
+    #shoots div.price h2 span {
         font-size: 17px;
     }
-    
+
 }
 
 @media screen and (max-width: 525px) {
-    
-    #investment div.text h1{
+
+    #investment div.text h1 {
         font-size: 60px;
     }
-    
-    #split div.container.a div.image{
+
+    #split div.container.a div.image {
         width: 340px;
         right: -165px;
     }
-    
-    #split div.elopements{
+
+    #split div.elopements {
         padding: 30px 25px 70px 25px !important;
     }
-    
-    #split div.elopements > h2{
+
+    #split div.elopements>h2 {
         font-size: 32px;
         margin-bottom: 35px;
     }
-    
-    #split div.text-container{
+
+    #split div.text-container {
         padding: 20px 20px 15px 20px;
     }
-    
-    #split div.arch{
+
+    #split div.arch {
         padding: 65px 30px 50px 30px;
         border-radius: 60px 60px 0 0;
     }
-    
-    #split div.arch h3{
+
+    #split div.arch h3 {
         font-size: 22px;
         line-height: 25px;
     }
-    
-    #split div.arch h2{
+
+    #split div.arch h2 {
         font-size: 25px;
     }
-    
-    #split div.arch h2 span{
+
+    #split div.arch h2 span {
         font-size: 13px;
     }
-    
-    #split div.text-container p{
+
+    #split div.text-container p {
         font-size: 13px;
         margin-top: 15px;
     }
-    
-    #split div.button{
+
+    #split div.button {
         margin-top: 20px;
     }
-    
-    #split div.content div.image{
+
+    #split div.content div.image {
         width: 150px;
         height: 385px;
     }
-    
-    #split div.elopements > div.image{
+
+    #split div.elopements>div.image {
         width: 335px;
         right: -105px;
     }
-    
-    #families div.title{
+
+    #families div.title {
         --title-size: 32px;
         --title-padding: 7px;
     }
-    
-    #families div.title h2{
+
+    #families div.title h2 {
         padding-right: 15px;
     }
-    
-    #families div.content{
+
+    #families div.content {
         --a-proportion: 45%;
         --b-proportion: 14%;
     }
-    
-    #families div.container.a{
+
+    #families div.container.a {
         padding: 60px 0 60px 0;
     }
-    
-    #families div.photo-reel{
+
+    #families div.photo-reel {
         --photo-size: 125px;
         --reel-padding: 8px;
         --photo-spacing: 4px;
-        
+
         margin-right: 25px;
     }
-    
-    #families div.photo-reel > div{
+
+    #families div.photo-reel>div {
         transform: rotate(-2.5deg);
     }
-    
-    #families div.text p{
+
+    #families div.text p {
         font-size: 3px;
     }
-    
-    #families div.text.a p:first-child{
+
+    #families div.text.a p:first-child {
         margin-left: 8px;
     }
 
-    #families div.text.a p:last-child{
+    #families div.text.a p:last-child {
         margin-right: 8px;
     }
 
-    #families div.text.b p:first-child{
+    #families div.text.b p:first-child {
         margin-left: 15px;
     }
 
-    #families div.text.b p:last-child{
+    #families div.text.b p:last-child {
         margin-right: 15px;
     }
-    
-    #families div.text-container{
+
+    #families div.text-container {
         padding: 10px 15px 10px 15px;
     }
-    
-    #families div.text-container:first-child{
+
+    #families div.text-container:first-child {
         top: 29.5%;
     }
-    
-    #families div.text-container:last-child{
+
+    #families div.text-container:last-child {
         bottom: 29.5%;
     }
-    
-    #families div.size{
+
+    #families div.size {
         width: 110px;
         margin-right: 20px;
     }
-    
-    #families div.size h2{
+
+    #families div.size h2 {
         font-size: 14px !important;
     }
-    
-    #families div.price{
-        padding-top: 0px;
-        padding-bottom: 0px;
+
+    #families div.price {
+        padding-top: 0;
+        padding-bottom: 0;
     }
-    
-    #families div.price h3{
+
+    #families div.price h3 {
         font-size: 18px !important;
         line-height: 18px;
     }
-    
-    #families div.price h2{
+
+    #families div.price h2 {
         font-size: 24px !important;
     }
-    
-    #families div.price h2 span{
+
+    #families div.price h2 span {
         font-size: 12px;
     }
-    
-    #families div.image{
+
+    #families div.image {
         width: 95px;
     }
-    
+
 }
 
 @media screen and (max-width: 450px) {
-    
-    #weddings div.title{
+
+    #weddings div.title {
         padding: 30px 8px 30px 15px;
     }
-    
-    #weddings div.title h2{
+
+    #weddings div.title h2 {
         font-size: 32px;
     }
-    
-    #weddings div.title img{
+
+    #weddings div.title img {
         height: 34px;
         top: 3px;
     }
-    
-    #weddings li{
+
+    #weddings li {
         width: 250px;
     }
-    
-    #weddings div.image{
+
+    #weddings div.image {
         height: 325px;
     }
-    
-    #weddings div.duration h2{
+
+    #weddings div.duration h2 {
         width: 90px;
         text-align: center;
     }
-    
-    #shoots ul.icons li{
+
+    #shoots ul.icons li {
         width: 250px;
     }
-    
-    #shoots ul.icons li h2{
-        font-size: 28px;
-    }
-    
-    #shoots li img{
-        height: 275px;
-    }
-    
-    #shoots ul.text{
-        top: -5px;
-    }
-    
-    #shoots ul.text li{
-        --icon-height: 532px;
-        --text-height: 84px;
-    }
-    
-    #shoots div.price h3{
-        font-size: 25px;
-        margin-right: 20px;
-    }
-    
-    #shoots div.price h2{
+
+    #shoots ul.icons li h2 {
         font-size: 28px;
     }
 
-    #shoots div.price h2 span{
+    #shoots li img {
+        height: 275px;
+    }
+
+    #shoots ul.text {
+        top: -5px;
+    }
+
+    #shoots ul.text li {
+        --icon-height: 532px;
+        --text-height: 84px;
+    }
+
+    #shoots div.price h3 {
+        font-size: 25px;
+        margin-right: 20px;
+    }
+
+    #shoots div.price h2 {
+        font-size: 28px;
+    }
+
+    #shoots div.price h2 span {
         font-size: 16px;
     }
-    
-    #families div.title{
+
+    #families div.title {
         --title-size: 31px;
         --title-padding: 6px;
     }
-    
-    #families div.title h2{
+
+    #families div.title h2 {
         padding-left: 15px;
         padding-right: 10px;
     }
-    
-    #families div.content{
+
+    #families div.content {
         --a-proportion: 51.5%;
         --b-proportion: 13%;
     }
-    
-    #families div.text-container{
+
+    #families div.text-container {
         flex-direction: column;
         margin-left: 5px;
     }
-    
-    #families div.text-container:first-child{
+
+    #families div.text-container:first-child {
         top: 22.5%;
     }
-    
-    #families div.text-container:last-child{
+
+    #families div.text-container:last-child {
         bottom: 22.5%;
     }
-    
-    #families div.size{
+
+    #families div.size {
         width: 100%;
         padding-bottom: 8px;
         margin-right: 0;
@@ -2350,239 +2395,239 @@ a{
         border-right: 0;
         border-bottom: 1px solid #77603a;
     }
-    
-    #families div.size h2{
+
+    #families div.size h2 {
         margin: auto;
     }
-    
-    #families div.price{
+
+    #families div.price {
         display: flex;
         padding: 0 7px 0 7px;
     }
-    
-    #families div.price h3{
+
+    #families div.price h3 {
         font-size: 17px !important;
         line-height: 25px;
         margin-right: 12px !important;
     }
-    
-    #families div.price h2{
+
+    #families div.price h2 {
         font-size: 21px !important;
     }
-    
-    #families div.price h2 span{
+
+    #families div.price h2 span {
         font-size: 11px;
         margin-right: 2px;
     }
-    
-    #families div.image{
+
+    #families div.image {
         width: 85px;
     }
-    
+
 }
 
 @media screen and (max-width: 425px) {
-    
-    #investment div.text h1{
+
+    #investment div.text h1 {
         font-size: 55px;
     }
-    
-    #split ul{
+
+    #split ul {
         padding: 50px 15px 50px 15px;
         margin: auto;
     }
-    
-    #split li{
+
+    #split li {
         margin-top: 7px;
         margin-bottom: 7px;
     }
-    
-    #split li h2{
+
+    #split li h2 {
         font-size: 16px;
         line-height: 22px;
     }
-    
-    #split li h2:last-child{
+
+    #split li h2:last-child {
         font-size: 23px;
     }
-    
-    #split li h2 span{
+
+    #split li h2 span {
         font-size: 11px;
     }
-    
-    #split div.container.a div.image{
+
+    #split div.container.a div.image {
         width: 310px;
         right: -155px;
     }
-    
-    #split div.elopements{
+
+    #split div.elopements {
         padding: 30px 0 60px 0 !important;
     }
-    
-    #split div.elopements > h2{
+
+    #split div.elopements>h2 {
         font-size: 29px;
         letter-spacing: 14px;
         margin-bottom: 45px;
         margin-left: 20px;
     }
-    
-    #split div.text-container{
+
+    #split div.text-container {
         padding: 15px;
         margin-right: 10px;
     }
-    
-    #split div.arch{
+
+    #split div.arch {
         padding: 55px 25px 40px 25px;
         border-radius: 50px 50px 0 0;
     }
-    
-    #split div.arch h3{
+
+    #split div.arch h3 {
         font-size: 19px;
         line-height: 25px;
     }
-    
-    #split div.arch h2{
+
+    #split div.arch h2 {
         font-size: 22px;
     }
-    
-    #split div.arch h2 span{
+
+    #split div.arch h2 span {
         font-size: 11px;
     }
-    
-    #split div.text-container p{
+
+    #split div.text-container p {
         font-size: 11px;
         margin-top: 15px;
     }
-    
-    #split div.button h3{
+
+    #split div.button h3 {
         font-size: 13px;
     }
-    
-    #split div.content div.image{
+
+    #split div.content div.image {
         width: 125px;
         height: 325px;
         margin-left: 10px;
     }
-    
-    #split div.elopements > div.image{
+
+    #split div.elopements>div.image {
         width: 300px;
         right: -95px;
     }
-    
+
 }
 
 @media screen and (max-width: 400px) {
-    
-    #weddings div.title{
+
+    #weddings div.title {
         padding: 30px 30px 45px 40px;
     }
-    
-    #weddings div.title h2{
+
+    #weddings div.title h2 {
         width: 155px;
     }
-    
-    #weddings div.title img{
+
+    #weddings div.title img {
         height: 40px;
         top: -8px;
     }
-    
+
 }
 
 @media screen and (max-width: 375px) {
-    
-    #investment div.text h1{
+
+    #investment div.text h1 {
         font-size: 50px;
     }
-    
-    #families div.title{
+
+    #families div.title {
         --title-size: 28px;
     }
-    
-    #families div.title h2{
+
+    #families div.title h2 {
         letter-spacing: 13px;
         padding-left: 10px;
         padding-right: 5px;
     }
-    
-    #families div.content{
+
+    #families div.content {
         --a-proportion: 55%;
         --b-proportion: 10%;
     }
-    
-    #families div.photo-reel{
+
+    #families div.photo-reel {
         margin-right: 15px;
     }
-    
-    #families div.text-container{
+
+    #families div.text-container {
         padding: 7px 10px 7px 10px;
     }
-    
-    #families div.text-container:first-child{
+
+    #families div.text-container:first-child {
         top: 24.5%;
     }
-    
-    #families div.text-container:last-child{
+
+    #families div.text-container:last-child {
         bottom: 24.5%;
     }
-    
-    #families div.size{
+
+    #families div.size {
         padding-bottom: 6px;
         margin-bottom: 6px;
     }
-    
-    #families div.size h2{
+
+    #families div.size h2 {
         font-size: 13px !important;
     }
-    
-    #families div.price{
+
+    #families div.price {
         padding: 0 3px 0 3px;
     }
-    
-    #families div.price h3{
+
+    #families div.price h3 {
         font-size: 16px !important;
         margin-right: 10px !important;
     }
-    
-    #families div.price h2{
+
+    #families div.price h2 {
         font-size: 20px !important;
     }
-    
-    #families div.price h2 span{
+
+    #families div.price h2 span {
         font-size: 9px;
         margin-right: 1px;
     }
-    
-    #families div.image{
+
+    #families div.image {
         width: 80px;
     }
-    
+
 }
 
 @media screen and (max-width: 340px) {
-    
-    #investment div.text h1{
+
+    #investment div.text h1 {
         font-size: 45px;
     }
-    
-    #split div.elopements > h2{
+
+    #split div.elopements>h2 {
         font-size: 25px;
         letter-spacing: 13px;
     }
-    
-    #split div.text-container{
+
+    #split div.text-container {
         margin-right: 5px;
     }
-    
-    #split div.content div.image{
+
+    #split div.content div.image {
         margin-left: 5px;
     }
-    
+
 }
 
 @media screen and (max-width: 320px) {
-    
-    #investment div.text h1{
+
+    #investment div.text h1 {
         font-size: 40px;
     }
-    
+
 }

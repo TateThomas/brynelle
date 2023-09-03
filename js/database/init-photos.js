@@ -1,27 +1,27 @@
 
 function createNewEntry(path, date, name, alt, priority, type, locationsArray, lighting) {
-    
+
     return new Promise(resolve => {
-        
-//        console.log("START: " + name);
+
+        //        console.log("START: " + name);
         database.newEntry(path, date, name, alt, priority, type, locationsArray, lighting);
-//        console.log("STOP: " + name);
-        setTimeout(function() {resolve("complete")}, 0);
-        
+        //        console.log("STOP: " + name);
+        setTimeout(function () { resolve("complete") }, 0);
+
     });
-    
+
 }
 
 
 async function enterNewPictures(pictureInfoArray) {
-    
+
     for (let i = 0; i < pictureInfoArray.length; i++) {
-        
+
         await createNewEntry(pictureInfoArray[i][0], pictureInfoArray[i][1], pictureInfoArray[i][2], pictureInfoArray[i][3], pictureInfoArray[i][4], pictureInfoArray[i][5], pictureInfoArray[i][6], pictureInfoArray[i][7]);
-        
+
     }
-//    console.log("complete");
-    
+    //    console.log("complete");
+
 }
 
 
@@ -49,7 +49,7 @@ var pictureArray = [
     ["/images/gallery/20", "2022,2,4,11,15,19", "Snowy Bridals 2022", "Groom lifting bride in the forest", "c", "bridals", ["salt-lake", "utah-mountains", "forest", "snow", "utah"], "shaded"],
     ["/images/gallery/21", "2022,2,4,11,33,15", "Snowy Engagements 2022", "Couple playing in the snow", "b", "engagements", ["salt-lake", "utah-mountains", "forest", "snow", "utah"], "full-sun"],
     ["/images/gallery/22", "2022,2,4,11,33,50", "Snowy Engagements 2022", "Couple playing in the snow", "b", "engagements", ["salt-lake", "utah-mountains", "forest", "snow", "utah"], "full-sun"],
-    ["/images/gallery/23", "2022,2,4,11,36,58", "Snowy Engagements 2022", "Couple in the snow lifting girl up","d", "engagements", ["salt-lake", "utah-mountains", "forest", "snow", "utah"], "full-sun"],
+    ["/images/gallery/23", "2022,2,4,11,36,58", "Snowy Engagements 2022", "Couple in the snow lifting girl up", "d", "engagements", ["salt-lake", "utah-mountains", "forest", "snow", "utah"], "full-sun"],
     ["/images/gallery/24", "2022,2,4,17,6,48", "L and M Engagements", "Couple sitting and looking at each other", "c", "engagements", ["salt-flats", "salt-lake", "utah"], "sunset"],
     ["/images/gallery/25", "2022,2,4,17,8,30", "L and M Engagements", "Couple sitting back to back and looking at each other", "d", "engagements", ["salt-flats", "salt-lake", "utah"], "sunset"],
     ["/images/gallery/26", "2022,2,4,17,23,39", "L and M Engagements", "Couple sitting on the ground holding hands", "b", "engagements", ["salt-flats", "salt-lake", "utah"], "sunset"],
@@ -117,6 +117,6 @@ var pictureArray = [
 
 // ["/images/gallery/", "date", "name", "alt", "priority", "type", ["locations"], "lighting"]
 
-setTimeout(function() {
+setTimeout(function () {
     enterNewPictures(pictureArray)
 }, 50);

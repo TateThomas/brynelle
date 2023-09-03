@@ -33,22 +33,22 @@ const pictureList = [
 
 
 function openInfo(elem) {
-    
-    elem.addEventListener('click', function() {
-    
+
+    elem.addEventListener('click', function () {
+
         if (elem.classList[1] == "hidden")
             elem.className = elem.className.replace("hidden", "show");
         else {
             elem.className = elem.className.replace("show", "hidden");
         }
-        
+
     });
-    
+
 }
 
 
 function contentsHTMLtemplate(question, elemId, sublistHTML) {
-    
+
     return `
                     <li class="hidden">
                         <span onclick="location.href='#${elemId}'">
@@ -59,11 +59,11 @@ function contentsHTMLtemplate(question, elemId, sublistHTML) {
                         </span>
                     </li>
     `;
-    
+
 }
 
 function contentsSublistHTMLtemplate(question, elemId) {
-    
+
     return `
                             <li>
                                 <span onclick="location.href='#${elemId}'">
@@ -71,12 +71,12 @@ function contentsSublistHTMLtemplate(question, elemId) {
                                 </span>
                             </li>
     `;
-    
+
 }
 
 
 function questionHTMLtemplate(question, answer, elemId) {
-    
+
     return `
                         <div id="${elemId}" class="dropdown hidden">
 
@@ -100,15 +100,15 @@ function questionHTMLtemplate(question, answer, elemId) {
 
                         </div>
     `;
-    
+
 }
 
 
 function initInfo(info, pictures, rowsPerPic) {
-    
+
     const contents = document.getElementById("contents").getElementsByTagName("ul")[0];
     const infoElem = document.getElementById("groups");
-    
+
     const infoGroups = Object.keys(info);
     let toggle = true;
     let nthPicture = 0;
@@ -116,30 +116,30 @@ function initInfo(info, pictures, rowsPerPic) {
     let finalHTML = "";
     let groupHTML = "";
     let elemId;
-    
+
     for (let i = 0; i < infoGroups.length; i++) {
-        
+
         const infoGroup = info[infoGroups[i]];
         const questionsList = Object.keys(infoGroup);
         let contentsSublistHTML = "";
         let setHTML, sublistId;
-        
+
         elemId = infoGroups[i].replaceAll(" ", "-").toLowerCase();
-        
+
         groupHTML = `<h2>${infoGroups[i]}</h2>`;
-        
+
         for (let j = 0; j < questionsList.length; j++) {
-            
+
             sublistId = `${infoGroups[i].replaceAll(" ", "-").toLowerCase()}-${j}`;
             console.log(questionsList[j]);
             contentsSublistHTML += contentsSublistHTMLtemplate(infoGroup[questionsList[j]], sublistId);
-            
+
             if ((j % rowsPerPic) == 0) {
                 setHTML = "";
             }
-            
+
             if ((((j % rowsPerPic) == (rowsPerPic - 1)) || ((j + 1) == questionsList.length)) && toggle) {
-                
+
                 groupHTML += `
                 <div class="set">
                     <div class="picture">
@@ -150,13 +150,13 @@ function initInfo(info, pictures, rowsPerPic) {
                     </div>
                 </div>
                 `;
-                
+
                 toggle = false;
                 nthPicture += 1;
-                
+
             }
             else if ((((j % rowsPerPic) == (rowsPerPic - 1)) || ((j + 1) == questionsList.length)) && !toggle) {
-                
+
                 groupHTML += `
                 <div class="set">
                     <div class="questions">
@@ -167,61 +167,61 @@ function initInfo(info, pictures, rowsPerPic) {
                     </div>
                 </div>
                 `;
-                
+
                 toggle = true;
                 nthPicture += 1;
-                
+
             }
             else if ((j % rowsPerPic) == 0) {
-                
+
                 setHTML = questionHTMLtemplate(questionsList[j], infoGroup[questionsList[j]], sublistId);
-                
+
             }
             else {
-                
+
                 setHTML += questionHTMLtemplate(questionsList[j], infoGroup[questionsList[j]], sublistId);
-                
+
             }
-            
+
         }
-        
+
         finalHTML += `
             <div id="${elemId}" class="group">
                 ${groupHTML}
             </div>
         `;
-        
+
         contentsHTML += contentsHTMLtemplate(infoGroups[i], elemId, contentsSublistHTML);
-        
+
     }
-    
+
     contents.innerHTML = contentsHTML;
     infoElem.innerHTML = infoElem.innerHTML + finalHTML;
-    
+
     const dropdowns = document.querySelectorAll(".dropdown");
     for (let i = 0; i < dropdowns.length; i++) {
         openInfo(dropdowns[i]);
     }
-    
+
 }
 
 
 function contentsFollow() {
-    
+
     const allInfoElem = document.getElementById("info");
     const infoElem = allInfoElem.getElementsByTagName("div")[0];
     const contents = document.getElementById("contents");
-    
+
     let distanceFromBottomInfo = allInfoElem.getBoundingClientRect().y + allInfoElem.clientHeight - window.innerHeight;
     let distanceFromBottomContents = contents.getBoundingClientRect().y + contents.clientHeight - window.innerHeight;
-    
+
     let extraDistance = 125;
     if (window.innerWidth <= 1025) {
         extraDistance = 100;
     }
-    
+
     let computedDistance1 = infoElem.getBoundingClientRect().y - extraDistance;
-    
+
     if ((allInfoElem.getBoundingClientRect().y + extraDistance) > 0) {
         const contentLists = contents.querySelectorAll(".show");
         for (let i = 0; i < contentLists.length; i++) {
@@ -233,97 +233,98 @@ function contentsFollow() {
     }
     else if (((contents.getBoundingClientRect().y - extraDistance) > 0) || ((distanceFromBottomContents < distanceFromBottomInfo) && (computedDistance1 <= 0))) {
         contents.style.top = `${-1 * computedDistance1}px`;
+        console.log(distanceFromBottomContents, distanceFromBottomInfo, computedDistance1);
     }
     else {
-        contents.style.top = `${infoElem.clientHeight - contents.clientHeight}px`;
+        contents.style.top = `${infoElem.clientHeight - contents.clientHeight + 1}px`;
     }
-    
+
 }
 
 
 function highlightElements(elem) {
-    
+
     const elemId = event.currentTarget.getAttribute("name");
     const targetElem = document.getElementById(elemId);
     const targetElemText = targetElem.getElementsByTagName("h2")[0];
-    
+
     targetElemText.style.transition = "background-color 0s";
     targetElemText.style.backgroundColor = "rgba(250, 232, 215, .5)";
     targetElem.className = targetElem.className.replace("hidden", "show");
-    
-    setTimeout(function() {
-        
+
+    setTimeout(function () {
+
         targetElemText.style.transition = "background-color 1.25s";
         targetElemText.style.backgroundColor = "transparent";
-        
-        setTimeout(function() {
+
+        setTimeout(function () {
             targetElemText.style.transition = "background-color 0s";
         }, 1250);
-        
+
     }, 2000);
-    
+
 }
 
 
-window.onload = function() {
-    
+window.onload = function () {
+
     initInfo(infoObj, pictureList, 5);
-    
+
     const contentsElem = document.getElementById("contents");
     const contentTags = contentsElem.getElementsByTagName("h3");
     const contentLists = contentsElem.querySelectorAll(".hidden");
-    
+
     for (let i = 0; i < contentTags.length; i++) {
         contentTags[i].addEventListener('click', highlightElements);
     }
-    
+
     for (let j = 0; j < contentLists.length; j++) {
-        
-        contentLists[j].addEventListener('click', function() {
-            
+
+        contentLists[j].addEventListener('click', function () {
+
             if (contentLists[j].className == "hidden") {
-                
+
                 contentLists[j].className = "show";
-                
+
                 for (let k = 0; k < contentLists.length; k++) {
                     if (k != j) {
                         contentLists[k].className = "hidden";
                     }
                 }
-                
+
             }
-            
+
         });
-        
+
     }
-    
-    contentsElem.addEventListener('click', function() {
-        
+
+    contentsElem.addEventListener('click', function () {
+
         for (let i = 0; i < contentLists.length; i++) {
-            
+
             let hoveredElems, elemName, comparisonName;
-            
+
             hoveredElems = document.getElementById("contents").querySelector("li:hover");
             comparisonName = contentLists[i].getElementsByTagName("h3")[0].getAttribute("name");
-            
+
             try {
                 elemName = hoveredElems.getElementsByTagName("h3")[0].getAttribute("name");
             }
             catch {
                 elemName = null;
             }
-            
+
             if ((elemName == null) || (elemName != comparisonName)) {
                 contentLists[i].className = "hidden";
             }
         }
-        
+
     });
-    
+
 };
 
-window.onscroll = function() {
-    
+window.onscroll = function () {
+
     contentsFollow();
-    
+
 };
