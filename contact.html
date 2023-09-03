@@ -5,6 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0" />
     <title>Contact - Brynelle Photo</title>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/contact.css">
 </head>
 
@@ -14,27 +15,30 @@
     <script async src="js/header.js"></script>
 
     <div id="background-photo">
-        
+
         <picture>
             <source type="image/avif" srcset="./images/contact/dead-horse-point.avif">
             <source type="image/webp" srcset="./images/contact/dead-horse-point.webp">
             <source type="image/jpg" srcset="./images/contact/dead-horse-point.jpg">
             <img src="./images/contact/dead-horse-point.avif" alt="Photo of the view from Dead Horse Point">
         </picture>
-        
+
     </div>
-    
+
     <div id="content">
-        
+
         <div id="form" class="">
-        
-            <iframe name="hiddenConfirm" id="hiddenConfirm" style="display: none" onload="if(submitted){window.location='contact/success.html';}"></iframe>
-            <form action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSffOqFmF31uSwLqpY1u2azJ3-zLo0mdqa3BK_PqS8-T7sh7oA/formResponse" method="POST" target="hiddenConfirm" onsubmit="submitted=true">
-            
+
+            <iframe name="hiddenConfirm" id="hiddenConfirm" style="display: none"
+                onload="if(submitted){window.location='contact/success.html';}"></iframe>
+            <form
+                action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSffOqFmF31uSwLqpY1u2azJ3-zLo0mdqa3BK_PqS8-T7sh7oA/formResponse"
+                method="POST" target="hiddenConfirm" onsubmit="submitted=true">
+
                 <div class="title">
                     <h1>Submit an Inquiry</h1>
                 </div>
-                
+
                 <div class="multiple-answer">
                     <h2>Name <span>*</span></h2>
                     <div class="short-answer">
@@ -44,21 +48,23 @@
                         <input class=" valid" type="text" name="entry.546681571" placeholder="Last name" required>
                     </div>
                 </div>
-                
+
                 <div class="single-answer">
                     <h2>Email <span>*</span></h2>
                     <div class="short-answer">
-                        <input class=" valid" type="email" name="entry.1109865922" placeholder="example@email.com" required>
+                        <input class=" valid" type="email" name="entry.1109865922" placeholder="example@email.com"
+                            required>
                     </div>
                 </div>
-                
+
                 <div class="single-answer">
                     <h2>Phone number (optional)</h2>
                     <div class="short-answer">
-                        <input class="valid" type="text" name="entry.1954152825" placeholder="Your phone number" maxlength="17">
+                        <input class="valid" type="text" name="entry.1954152825" placeholder="Your phone number"
+                            maxlength="17">
                     </div>
                 </div>
-                
+
                 <div class="multiple-answer">
                     <h2>Select session type <span>*</span></h2>
                     <div class="dropdown">
@@ -82,7 +88,7 @@
                         <input class="hidden valid" type="text" name="entry.1820133147" placeholder="Please specify">
                     </div>
                 </div>
-                
+
                 <div class="multiple-answer">
                     <h2>Date <span>*</span></h2>
                     <div class="single-choice valid">
@@ -104,31 +110,32 @@
                         <input name="entry.1034218897" type="time">
                     </div>
                 </div>
-                
+
                 <div class="single-answer">
                     <h2>Do you have a location in mind? (optional)</h2>
                     <div class="short-answer">
                         <input class=" valid" type="text" name="entry.22383239" placeholder="Your location">
                     </div>
                 </div>
-                
+
                 <div class="single-answer centered">
                     <h2>Tell me more about you and what your dream photoshoot session looks like:</h2>
                     <div class="long-answer">
-                        <textarea name="entry.1005791265" placeholder="Help me make this the best experience for you :)"></textarea>
+                        <textarea name="entry.1005791265"
+                            placeholder="Help me make this the best experience for you :)"></textarea>
                     </div>
                 </div>
-                
+
                 <div class="submit-button">
                     <button type="submit">Submit</button>
                 </div>
-                
+
             </form>
-        
+
         </div>
-        
+
         <div id="contact">
-        
+
             <div class="title">
                 <h1>Have a question?</h1>
                 <div>
@@ -136,37 +143,37 @@
                 </div>
                 <span></span>
             </div>
-            
+
             <ul>
-            
+
                 <li>
                     <h2>text/call: <a href="tel:3853898089">(385) 389-8089</a></h2>
                 </li>
-                
+
                 <li>
                     <h2>dm: <a href="https://instagram.com/brynellephoto/">@brynellephoto</a></h2>
                 </li>
-                
+
                 <li>
                     <h2>email: <a href="mailto:brynellephoto@gmail.com">brynellephoto@gmail.com</a></h2>
                 </li>
-            
+
             </ul>
-            
+
             <div class="image">
                 <img src="/images/contact/palm-trees.png">
             </div>
-        
+
         </div>
-        
+
     </div>
-    
+
     <footer id="app-footer"></footer>
     <script async src="js/footer.js"></script>
-    
+
     <script src="/frameworks/circletype.min.js"></script>
     <script src="js/contact.js"></script>
-    
+
 </body>
 
 </html>
