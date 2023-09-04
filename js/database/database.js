@@ -62,7 +62,7 @@ class Database {
                     obj[dataProperties[i][0]] = dataProperties[i][2];
                 }
 
-                setTimeout(function () { resolve("complete") }, 1);
+                setTimeout(function () { resolve("complete") }, 10);
 
             });
 
@@ -75,17 +75,24 @@ class Database {
 
             }
 
-            await obj.changeSortingMethod();
+            obj.totalPhotosCurrentlyVisible = obj.ids.length;
             await obj.setUpSortingSelector();
+            obj.totalPhotosCurrentlyVisible = obj.ids.length;
             await obj.setUpFiltersSelector();
+            obj.totalPhotosCurrentlyVisible = obj.ids.length;
+            await obj.changeSortingMethod();
             obj.totalPhotosCurrentlyVisible = obj.ids.length;
             await obj.updateUserPage();
 
-            let searchParameters = new URLSearchParams(window.location.search);
-            if (searchParameters.get("filterType") != undefined) {
-                obj.updateFilters(searchParameters.get("filterType").replaceAll('\"', ''), searchParameters.get("filterSpecifier").replaceAll('\"', ''), true);
-                document.getElementById(searchParameters.get("filterSpecifier").replaceAll('\"', '')).checked = true;
-            }
+            setTimeout(function () {
+
+                let searchParameters = new URLSearchParams(window.location.search);
+                if (searchParameters.get("filterType") != undefined) {
+                    obj.updateFilters(searchParameters.get("filterType").replaceAll('\"', ''), searchParameters.get("filterSpecifier").replaceAll('\"', ''), true);
+                    document.getElementById(searchParameters.get("filterSpecifier").replaceAll('\"', '')).checked = true;
+                }
+
+            }, 10);
 
         }
 
@@ -545,15 +552,25 @@ class Database {
 
         function expandImage() {
 
-            let { x, y } = this.getBoundingClientRect();
+            let { x, y } = this.parentElement.getBoundingClientRect();
 
             if (this.parentElement.classList[2] == "expanded") {
 
-                this.parentElement.className = this.parentElement.className.replace("expanded", "normal");
+                this.className = this.className.replace("big", "small");
 
-                this.style.setProperty("left", "0px");
-                this.style.setProperty("top", "0px");
-                this.style.setProperty("--transition-time", ".45s");
+                this.style.setProperty("position", "absolute");
+                this.style.setProperty("left", `${-1 * x}px`);
+                this.style.setProperty("top", `${-1 * y}px`);
+
+                let obj = this;
+                setTimeout(function () {
+                    if (obj.classList[1] == "small") {
+                        obj.parentElement.className = obj.parentElement.className.replace("expanded", "normal");
+                        obj.style.setProperty("--transition-time", ".45s");
+                        obj.style.setProperty("left", "0px");
+                        obj.style.setProperty("top", "0px");
+                    }
+                }, 1);
 
             }
             else {
@@ -562,18 +579,22 @@ class Database {
 
                 this.style.setProperty("left", `${-1 * x}px`);
                 this.style.setProperty("top", `${-1 * y}px`);
+                this.style.setProperty("--width", `${document.body.clientWidth}px`);
+
                 let obj = this;
                 setTimeout(function () {
-                    obj.style.setProperty("--transition-time", "0s");
-                }, 445);
+                    if (obj.parentElement.classList[2] == "expanded") {
+                        obj.className = obj.className.replace("small", "big");
+                        obj.style.setProperty("--transition-time", "0s");
+                        obj.style.setProperty("position", "fixed");
+                        obj.style.setProperty("left", "0px");
+                        obj.style.setProperty("top", "0px");
+
+                        obj.style.setProperty("--img-position", obj.getElementsByTagName("picture")[0].getBoundingClientRect().y + "px");
+                    }
+                }, 450);
 
             }
-
-        }
-
-        function scrollImage() {
-
-            console.log("scroll");
 
         }
 

@@ -124,9 +124,8 @@ function filtersTabFollow() {
 function expandedFollow() {
 
     const expandedElem = document.querySelector(".expanded div.container");
-    if (expandedElem != null) {
-        let y = expandedElem.parentElement.getBoundingClientRect().y + window.pageYOffset;
-        expandedElem.style.setProperty("top", window.scrollY - y + "px");
+    if ((expandedElem != null) && (expandedElem.classList[1] == "small")) {
+        expandedElem.style.setProperty("top", (-1 * expandedElem.parentElement.getBoundingClientRect().y) + "px");
     }
 
 }
@@ -142,6 +141,7 @@ function loadMorePhotos() {
 
     if ((distanceFromBottom - (imageHeight * distanceMultiplier)) <= 0) {
 
+        console.log("loaded");
         photosElem.style.setProperty("--total-rows", totalRows + 5);
 
     }
@@ -166,7 +166,9 @@ window.onload = function () {
     document.getElementById("filters").getElementsByTagName("img")[0].addEventListener('click', toggleFilters);
 
     setUpFilterTabListeners();
+    expandedFollow();
     filtersTabFollow();
+    setTimeout(loadMorePhotos, 500);
 
 }
 
@@ -178,7 +180,8 @@ var myInterval = setInterval(function () {
         database.updateUserPage();
     }
     else {
+        console.log("complete");
         clearInterval(myInterval);
     }
 
-}, 50);
+}, 100);

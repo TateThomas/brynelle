@@ -131,7 +131,6 @@ function initInfo(info, pictures, rowsPerPic) {
         for (let j = 0; j < questionsList.length; j++) {
 
             sublistId = `${infoGroups[i].replaceAll(" ", "-").toLowerCase()}-${j}`;
-            console.log(questionsList[j]);
             contentsSublistHTML += contentsSublistHTMLtemplate(infoGroup[questionsList[j]], sublistId);
 
             if ((j % rowsPerPic) == 0) {
@@ -233,7 +232,6 @@ function contentsFollow() {
     }
     else if (((contents.getBoundingClientRect().y - extraDistance) > 0) || ((distanceFromBottomContents < distanceFromBottomInfo) && (computedDistance1 <= 0))) {
         contents.style.top = `${-1 * computedDistance1}px`;
-        console.log(distanceFromBottomContents, distanceFromBottomInfo, computedDistance1);
     }
     else {
         contents.style.top = `${infoElem.clientHeight - contents.clientHeight + 1}px`;
