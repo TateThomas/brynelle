@@ -5,138 +5,142 @@
 
 
 @font-face {
-    src: url(/fonts/title/alta-regular.otf);
-    font-family: alta;
+    font-family: "Alta";
+    src: url(/fonts/title/alta-regular.otf) format("opentype");
 }
 
 @font-face {
-    src: url(/fonts/cursive/AnticallyRegular-OVox8.ttf);
-    font-family: antically;
+    font-family: "Antically";
+    src: url(/fonts/cursive/AnticallyRegular-OVox8.ttf) format("truetype");
 }
 
-@font-face {
-    src: url(/fonts/cursive/DarlingtonDemo-z8xjG.ttf);
-    font-family: darlington;
-}
+/* @font-face {
+    font-family: "Darlington";
+    src: url(/fonts/cursive/DarlingtonDemo-z8xjG.ttf) format("truetype");
+} */
+
+/* @font-face {
+    font-family: "Goodfish";
+    src: url(/fonts/title/goodfish/goodfish.regular.otf) format("opentype");
+} */
 
 @font-face {
-    src: url(/fonts/title/goodfish/goodfish.regular.otf);
-    font-family: a;
+    font-family: "Romile";
+    src: url(/fonts/title/RomilePersonalUse-x3Xdr.otf) format("opentype");
 }
 
-@font-face {
-    src: url(/fonts/title/RomilePersonalUse-x3Xdr.otf);
-    font-family: b;
-}
+/* @font-face {
+    font-family: "Violety Dreams";
+    src: url(/fonts/title/VioletyDreams-WyEOA.otf) format("opentype");
+} */
 
 @font-face {
-    src: url(/fonts/title/VioletyDreams-WyEOA.otf);
-    font-family: c;
+    font-family: "Black Aroug";
+    src:
+        url(/fonts/title/black-aroug/BlackArougDemoVersionRegular-jE6ly.otf) format("opentype"),
+        url(/fonts/title/black-aroug/BlackArougDemoVersionRegular-GOpRA.ttf) format("truetype");
 }
 
-@font-face {
-    src: url(/fonts/title/black-aroug/BlackArougDemoVersionRegular-GOpRA.ttf);
-    font-family: d;
-}
+/* @font-face {
+    font-family: "Ranille";
+    src:
+        url(/fonts/title/ranille/RanilleNormalRegular-axEpm.otf) format("opentype"),
+        url(/fonts/title/ranille/RanilleNormalRegular-axEpm.otf) format("truetype");
+} */
 
 @font-face {
-    src: url(/fonts/title/ranille/RanilleNormalRegular-axEpm.otf);
-    font-family: e;
+    font-family: "Tautage";
+    src: url(/fonts/title/VtksTatuage2-3GzL.ttf) format("truetype");
 }
 
-@font-face {
-    src: url(/fonts/title/VtksTatuage2-3GzL.ttf);
-    font-family: f;
-}
+/* @font-face {
+    font-family: "Typography Times";
+    src: url(/fonts/title/TypographyTimes-RgRW.ttf) format("truetype");
+} */
+
+/* @font-face {
+    font-family: "Coco Gothic Light";
+    src: url(/fonts/paragraph/coco-gothic/coco-gothic.light.ttf) format("truetype");
+} */
+
+/* @font-face {
+    font-family: "Coco Gothic Light Italic";
+    src: url(/fonts/paragraph/coco-gothic/coco-gothic.light-italic.ttf) format("truetype");
+} */
 
 @font-face {
-    src: url(/fonts/title/TypographyTimes-RgRW.ttf);
-    font-family: g;
+    font-family: "Josefin Sans Regular";
+    src: url(/fonts/paragraph/josefin-sans/josefin-sans.regular.ttf) format("truetype");
 }
 
-@font-face {
-    src: url(/fonts/paragraph/coco-gothic/coco-gothic.light.ttf);
-    font-family: pa;
-}
+/* @font-face {
+    font-family: "Josefin Sans Bold";
+    src: url(/fonts/paragraph/josefin-sans/josefin-sans.bold.ttf) format("truetype");
+} */
+
+/* @font-face {
+    font-family: "Josefin Sans Semibold";
+    src: url(/fonts/paragraph/josefin-sans/josefin-sans.semibold.ttf) format("truetype");
+} */
+
+/* @font-face {
+    font-family: "Josefin Sans Semibold Italic";
+    src: url(/fonts/paragraph/josefin-sans/josefin-sans.semibold-italic.ttf) format("truetype");
+} */
 
 @font-face {
-    src: url(/fonts/paragraph/coco-gothic/coco-gothic.light-italic.ttf);
-    font-family: pai;
+    font-family: "Josefin Sans Italic";
+    src: url(/fonts/paragraph/josefin-sans/josefin-sans.italic.ttf) format("truetype");
 }
 
-@font-face {
-    src: url(/fonts/paragraph/josefin-sans/josefin-sans.regular.ttf);
-    font-family: pb;
-}
+/* @font-face {
+    font-family: "Source Sans Pro Regular";
+    src: url(/fonts/paragraph/source-sans-pro/source-sans-pro.regular.ttf) format("truetype");
+} */
+
+/* @font-face {
+    font-family: "Source Sans Pro Light";
+    src: url(/fonts/paragraph/source-sans-pro/source-sans-pro.light.ttf) format("truetype");
+} */
+
+/* @font-face {
+    font-family: "Source Sans Pro Semibold";
+    src: url(/fonts/paragraph/source-sans-pro/source-sans-pro.semibold.ttf) format("truetype");
+} */
+
+/* @font-face {
+    font-family: "Source Sans Pro Italic";
+    src: url(/fonts/paragraph/source-sans-pro/source-sans-pro.italic.ttf) format("truetype");
+} */
+
+/* @font-face {
+    font-family: "Source Sans Pro Light Italic";
+    src: url(/fonts/paragraph/source-sans-pro/source-sans-pro.light-italic.ttf) format("truetype");
+} */
+
+/* @font-face {
+    font-family: "Roboto Condensed";
+    src: url(/fonts/paragraph/roboto-condensed/roboto-condensed.regular.ttf) format("truetype");
+} */
 
 @font-face {
-    src: url(/fonts/paragraph/josefin-sans/josefin-sans.bold.ttf);
-    font-family: pbb;
+    font-family: "Holland Regular";
+    src: url(/fonts/cursive/holland/Holland-JRGaj.ttf) format("truetype");
 }
 
-@font-face {
-    src: url(/fonts/paragraph/josefin-sans/josefin-sans.semibold-italic.ttf);
-    font-family: pbsbi;
-}
+/* @font-face {
+    font-family: "Holland Clean";
+    src: url(/fonts/cursive/holland/Holland-JRGaj.ttf) format("truetype");
+} */
+
+/* @font-face {
+    font-family: "Themysion";
+    src: url(/fonts/cursive/Themysion.ttf) format("truetype");
+} */
 
 @font-face {
-    src: url(/fonts/paragraph/josefin-sans/josefin-sans.semibold.ttf);
-    font-family: pbsb;
-}
-
-@font-face {
-    src: url(/fonts/paragraph/josefin-sans/josefin-sans.italic.ttf);
-    font-family: pbi;
-}
-
-@font-face {
-    src: url(/fonts/paragraph/source-sans-pro/source-sans-pro.regular.ttf);
-    font-family: pc;
-}
-
-@font-face {
-    src: url(/fonts/paragraph/source-sans-pro/source-sans-pro.light.ttf);
-    font-family: pcl;
-}
-
-@font-face {
-    src: url(/fonts/paragraph/source-sans-pro/source-sans-pro.semibold.ttf);
-    font-family: pcsb;
-}
-
-@font-face {
-    src: url(/fonts/paragraph/source-sans-pro/source-sans-pro.italic.ttf);
-    font-family: pci;
-}
-
-@font-face {
-    src: url(/fonts/paragraph/source-sans-pro/source-sans-pro.light-italic.ttf);
-    font-family: pcli;
-}
-
-@font-face {
-    src: url(/fonts/paragraph/roboto-condensed/roboto-condensed.regular.ttf);
-    font-family: pd;
-}
-
-@font-face {
-    src: url(/fonts/cursive/holland/Holland-JRGaj.ttf);
-    font-family: ca;
-}
-
-@font-face {
-    src: url(/fonts/cursive/holland/HollandMonolineClean-VGEqZ.ttf);
-    font-family: cac;
-}
-
-@font-face {
-    src: url(/fonts/cursive/Themysion.ttf);
-    font-family: cb;
-}
-
-@font-face {
+    font-family: "Brittany Signature";
     src: url(/fonts/cursive/BrittanySignature.ttf);
-    font-family: cc;
 }
 
 
@@ -158,7 +162,7 @@ li {
     margin: 0;
     display: inline-block;
     position: relative;
-    font-family: alta;
+    /* font-family: "Alta"; */
     font-weight: normal;
     text-decoration: none;
     color: white;
@@ -188,7 +192,7 @@ a {
     min-height: calc(100vh - var(--arches-offset) + 50px);
     display: flex;
     flex-direction: column;
-    z-index: calc(var(--lower-gradient-z) + 1);
+    z-index: 3;
 }
 
 #images {
@@ -227,7 +231,7 @@ a {
     position: relative;
     top: 62vh;
     left: -400px;
-    font-family: ca;
+    font-family: "Holland Regular";
     font-size: 75px;
     color: var(--light-black);
     z-index: calc(var(--lower-gradient-z) + 3);
@@ -286,6 +290,7 @@ a {
     flex-direction: column;
     padding-bottom: 100px;
     margin-bottom: 100px;
+    z-index: 3;
 }
 
 #arches {
@@ -352,7 +357,7 @@ a {
 
 #arches h2 {
     color: #fffbf5;
-    font-family: d;
+    font-family: "Black Aroug";
     width: 100%;
     bottom: 60%;
     font-size: 42px;
@@ -375,7 +380,7 @@ a {
 #arches li h3{
     position: relative;
     color: var(--light-black);
-    font-family: alta;
+    font-family: "Alta";
     letter-spacing: 1px;
     transform: rotate(90deg);
     margin: 0;
@@ -429,7 +434,7 @@ a {
 
 #break h2 {
     color: var(--light-black);
-    font-family: b;
+    font-family: "Romile";
     text-transform: uppercase;
     font-size: 40px;
     font-weight: bold;
@@ -636,7 +641,7 @@ a {
 }
 
 #about-me-pictures h2 {
-    font-family: cc;
+    font-family: "Brittany Signature";
     font-size: 55px;
     line-height: 63px;
     text-indent: -60px;
@@ -702,7 +707,7 @@ a {
 #about-me-desc h3 {
     color: var(--light-black);
     font-weight: normal;
-    font-family: b;
+    font-family: "Romile";
     letter-spacing: 1px;
     font-size: 37px;
     width: -webkit-max-content;
@@ -713,7 +718,7 @@ a {
 
 #about-me-desc p {
     color: var(--light-black);
-    font-family: pb;
+    font-family: "Josefin Sans Regular";
     font-size: 21px;
     text-indent: 30px;
     margin: 15px 0 15px 0;
@@ -737,7 +742,7 @@ a {
     width: -webkit-max-content;
     width: -moz-max-content;
     width: max-content;
-    font-family: d;
+    font-family: "Black Aroug";
     font-weight: normal;
     letter-spacing: 1px;
     margin: 0;
@@ -794,7 +799,7 @@ a {
     transform: rotate(-90deg);
     left: calc((-1 * var(--lower-page-padding)) + 2px);
     top: 250px;
-    font-family: f;
+    font-family: "Tautage";
     font-size: 25px;
     z-index: calc(var(--lower-gradient-z) + 1);
     -webkit-transition: top 1.5s;
@@ -1074,7 +1079,7 @@ a {
 
 #my-work-explore h3 {
     color: var(--light-black);
-    font-family: antically;
+    font-family: "Antically";
     font-weight: normal;
     font-size: var(--explore-font-size);
     margin: 0;
@@ -1123,7 +1128,7 @@ a {
     padding: var(--travel-padding);
     padding-top: var(--top-padding);
     top: -100px;
-    font-family: d;
+    font-family: "Black Aroug";
     text-transform: lowercase;
     /*    font-weight: bold;*/
     letter-spacing: 2px;
@@ -1255,7 +1260,7 @@ a {
 }
 
 #travel div.info>h2 {
-    font-family: b;
+    font-family: "Romile";
     width: 100%;
     padding-top: 20px;
     padding-bottom: 10px;
@@ -1296,7 +1301,7 @@ a {
     width: -moz-max-content;
     width: max-content;
     padding: 8px;
-    font-family: pbi;
+    font-family: "Josefin Sans Italic";
     text-transform: lowercase;
     font-size: 22px;
     color: var(--light-black);
@@ -1426,8 +1431,8 @@ a {
     text-align: center;
     line-height: 450px;
     font-size: 95px;
-    font-family: antically;
-    font-family: ca;
+    font-family: "Antically";
+    font-family: "Holland Regular";
     text-shadow: 0 0 30px rgba(0, 0, 0, .1);
     -webkit-transition: text-shadow 1s;
     -moz-transition: text-shadow 1s;
@@ -1460,7 +1465,7 @@ a {
     color: #fffbf5;
     margin: 0;
     font-size: 40px;
-    font-family: alta;
+    font-family: "Alta";
     font-weight: normal;
     padding: 0;
     text-shadow: 0 0 30px rgba(0, 0, 0, .1);

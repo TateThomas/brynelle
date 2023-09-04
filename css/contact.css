@@ -3,134 +3,37 @@
 
 
 @font-face {
-    src: url(/fonts/title/alta-regular.otf);
-    font-family: alta;
+    font-family: "Romile";
+    src: url(/fonts/title/RomilePersonalUse-x3Xdr.otf) format("opentype");
 }
 
 @font-face {
-    src: url(/fonts/cursive/AnticallyRegular-OVox8.ttf);
-    font-family: antically;
+    font-family: "Black Aroug";
+    src:
+        url(/fonts/title/black-aroug/BlackArougDemoVersionRegular-jE6ly.otf) format("opentype"),
+        url(/fonts/title/black-aroug/BlackArougDemoVersionRegular-GOpRA.ttf) format("truetype");
 }
 
 @font-face {
-    src: url(/fonts/cursive/DarlingtonDemo-z8xjG.ttf);
-    font-family: darlington;
+    font-family: "Coco Gothic Light";
+    src: url(/fonts/paragraph/coco-gothic/coco-gothic.light.ttf) format("truetype");
 }
 
 @font-face {
-    src: url(/fonts/title/goodfish/goodfish.regular.otf);
-    font-family: a;
+    font-family: "Josefin Sans Italic";
+    src: url(/fonts/paragraph/josefin-sans/josefin-sans.italic.ttf) format("truetype");
 }
 
 @font-face {
-    src: url(/fonts/title/RomilePersonalUse-x3Xdr.otf);
-    font-family: b;
+    font-family: "Source Sans Pro Italic";
+    src: url(/fonts/paragraph/source-sans-pro/source-sans-pro.italic.ttf) format("truetype");
 }
 
 @font-face {
-    src: url(/fonts/title/VioletyDreams-WyEOA.otf);
-    font-family: c;
+    font-family: "Source Sans Pro Light Italic";
+    src: url(/fonts/paragraph/source-sans-pro/source-sans-pro.light-italic.ttf) format("truetype");
 }
 
-@font-face {
-    src: url(/fonts/title/black-aroug/BlackArougDemoVersionRegular-GOpRA.ttf);
-    font-family: d;
-}
-
-@font-face {
-    src: url(/fonts/title/ranille/RanilleNormalRegular-axEpm.otf);
-    font-family: e;
-}
-
-@font-face {
-    src: url(/fonts/title/VtksTatuage2-3GzL.ttf);
-    font-family: f;
-}
-
-@font-face {
-    src: url(/fonts/title/TypographyTimes-RgRW.ttf);
-    font-family: g;
-}
-
-@font-face {
-    src: url(/fonts/paragraph/coco-gothic/coco-gothic.light.ttf);
-    font-family: pa;
-}
-
-@font-face {
-    src: url(/fonts/paragraph/coco-gothic/coco-gothic.light-italic.ttf);
-    font-family: pai;
-}
-
-@font-face {
-    src: url(/fonts/paragraph/josefin-sans/josefin-sans.regular.ttf);
-    font-family: pb;
-}
-
-@font-face {
-    src: url(/fonts/paragraph/josefin-sans/josefin-sans.bold.ttf);
-    font-family: pbb;
-}
-
-@font-face {
-    src: url(/fonts/paragraph/josefin-sans/josefin-sans.semibold-italic.ttf);
-    font-family: pbsbi;
-}
-
-@font-face {
-    src: url(/fonts/paragraph/josefin-sans/josefin-sans.semibold.ttf);
-    font-family: pbsb;
-}
-
-@font-face {
-    src: url(/fonts/paragraph/josefin-sans/josefin-sans.italic.ttf);
-    font-family: pbi;
-}
-
-@font-face {
-    src: url(/fonts/paragraph/source-sans-pro/source-sans-pro.regular.ttf);
-    font-family: pc;
-}
-
-@font-face {
-    src: url(/fonts/paragraph/source-sans-pro/source-sans-pro.light.ttf);
-    font-family: pcl;
-}
-
-@font-face {
-    src: url(/fonts/paragraph/source-sans-pro/source-sans-pro.semibold.ttf);
-    font-family: pcsb;
-}
-
-@font-face {
-    src: url(/fonts/paragraph/source-sans-pro/source-sans-pro.italic.ttf);
-    font-family: pci;
-}
-
-@font-face {
-    src: url(/fonts/paragraph/source-sans-pro/source-sans-pro.light-italic.ttf);
-    font-family: pcli;
-}
-
-@font-face {
-    src: url(/fonts/paragraph/roboto-condensed/roboto-condensed.regular.ttf);
-    font-family: pd;
-}
-
-@font-face {
-    src: url(/fonts/cursive/holland/Holland-JRGaj.ttf);
-    font-family: ca;
-}
-
-@font-face {
-    src: url(/fonts/cursive/holland/HollandMonolineClean-VGEqZ.ttf);
-    font-family: cac;
-}
-
-@font-face {
-    src: url(/fonts/cursive/Themysion.ttf);
-    font-family: cb;
-}
 
 
 /****************** All ******************/
@@ -155,7 +58,7 @@ li {
     margin: 0;
     display: inline-block;
     position: relative;
-    font-family: alta;
+    /* font-family: "Alta"; */
     font-weight: normal;
     text-decoration: none;
     color: white;
@@ -214,7 +117,7 @@ a {
     --req-red-dim: rgba(217, 48, 37, .09);
     --req-red-dimmer: rgba(217, 48, 37, .05);
     --req-red-dark: #d73025;
-    --form-font: pcli;
+    --form-font: "Source Sans Pro Light Italic";
 
     width: 625px;
     max-height: 2500px;
@@ -255,7 +158,7 @@ form div.title h1 {
     width: -webkit-max-content;
     width: -moz-max-content;
     width: max-content;
-    font-family: d;
+    font-family: "Black Aroug";
     letter-spacing: 1px;
     text-transform: uppercase;
     font-size: 40px;
@@ -280,7 +183,7 @@ form input,
 form select,
 form textarea {
     background-color: #faf3ec;
-    font-family: pcli;
+    font-family: "Source Sans Pro Light Italic";
     font-size: 15px !important;
 }
 
@@ -290,7 +193,7 @@ div.single-choice label:hover {
 
 form h2 {
     font-family: var(--form-font);
-    font-family: pa;
+    font-family: "Coco Gothic Light";
     font-size: 17px;
 }
 
@@ -448,7 +351,7 @@ div.single-choice input:checked {
 div.single-choice label {
     position: relative;
     display: flex;
-    font-family: pci;
+    font-family: "Source Sans Pro Italic";
     font-size: 16px;
     width: -webkit-max-content;
     width: -moz-max-content;
@@ -462,6 +365,12 @@ div.single-choice label {
 div.single-choice label span {
     display: inline-block;
     line-height: 20px;
+}
+
+div.multiple-answer:has(div.choose-date)>div:last-child {
+    /* line-height: 0; */
+    height: auto;
+    display: flex;
 }
 
 div.choose-date {
@@ -484,8 +393,9 @@ div.choose-date label,
 div.choose-time label {
     display: block;
     color: darkgray;
-    font-family: pa;
+    font-family: "Coco Gothic Light";
     font-size: 11px;
+    /* line-height: normal; */
     margin-bottom: 5px;
 }
 
@@ -533,7 +443,7 @@ div.submit-button {
 
 div.submit-button button {
     color: var(--light-black);
-    font-family: b;
+    font-family: "Romile";
     letter-spacing: 1px;
     font-size: 25px;
     padding: 10px 30px 10px 30px;
@@ -609,9 +519,9 @@ div.single-choice.invalid label:last-child::before {
     width: -moz-max-content;
     width: max-content;
     bottom: -17px;
-    font-family: pci !important;
+    font-family: "Source Sans Pro Italic";
     font-size: 11px;
-    font-family: sans-serif;
+    /* line-height: normal; */
 }
 
 div.single-choice.invalid label:last-child::before {
@@ -664,7 +574,7 @@ div.single-choice.invalid label:last-child::before {
 
 #contact div.title h1 {
     color: var(--light-black);
-    font-family: d;
+    font-family: "Black Aroug";
     text-transform: uppercase;
     letter-spacing: 1px;
     font-size: 36px;
@@ -684,7 +594,7 @@ div.single-choice.invalid label:last-child::before {
 #contact div.title h2 {
     position: relative;
     color: var(--light-black);
-    font-family: d;
+    font-family: "Black Aroug";
     font-size: 23px;
     width: -webkit-max-content;
     width: -moz-max-content;
@@ -714,7 +624,7 @@ div.single-choice.invalid label:last-child::before {
 #contact ul h2 {
     display: flex;
     color: #af917c;
-    font-family: d;
+    font-family: "Black Aroug";
     letter-spacing: 1px;
     font-size: 25px;
     line-height: 25px;
@@ -722,7 +632,7 @@ div.single-choice.invalid label:last-child::before {
 
 #contact ul a {
     color: #af917c;
-    font-family: pbi;
+    font-family: "Josefin Sans Italic";
     letter-spacing: 0;
     font-size: 20px;
     margin-left: 10px;

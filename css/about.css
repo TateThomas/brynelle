@@ -5,118 +5,45 @@
 
 
 @font-face {
-    src: url(/fonts/title/alta-regular.otf);
-    font-family: alta;
+    font-family: "Romile";
+    src: url(/fonts/title/RomilePersonalUse-x3Xdr.otf) format("opentype");
 }
 
 @font-face {
-    src: url(/fonts/cursive/AnticallyRegular-OVox8.ttf);
-    font-family: antically;
+    font-family: "Black Aroug";
+    src:
+        url(/fonts/title/black-aroug/BlackArougDemoVersionRegular-jE6ly.otf) format("opentype"),
+        url(/fonts/title/black-aroug/BlackArougDemoVersionRegular-GOpRA.ttf) format("truetype");
 }
 
 @font-face {
-    src: url(/fonts/cursive/DarlingtonDemo-z8xjG.ttf);
-    font-family: darlington;
+    font-family: "Typography Times";
+    src: url(/fonts/title/TypographyTimes-RgRW.ttf) format("truetype");
 }
 
 @font-face {
-    src: url(/fonts/title/goodfish/goodfish.regular.otf);
-    font-family: a;
+    font-family: "Coco Gothic Light Italic";
+    src: url(/fonts/paragraph/coco-gothic/coco-gothic.light-italic.ttf) format("truetype");
 }
 
 @font-face {
-    src: url(/fonts/title/RomilePersonalUse-x3Xdr.otf);
-    font-family: b;
+    font-family: "Josefin Sans Regular";
+    src: url(/fonts/paragraph/josefin-sans/josefin-sans.regular.ttf) format("truetype");
 }
 
 @font-face {
-    src: url(/fonts/title/VioletyDreams-WyEOA.otf);
-    font-family: c;
+    font-family: "Josefin Sans Semibold";
+    src: url(/fonts/paragraph/josefin-sans/josefin-sans.semibold.ttf) format("truetype");
 }
 
 @font-face {
-    src: url(/fonts/title/black-aroug/BlackArougDemoVersionRegular-GOpRA.ttf);
-    font-family: d;
+    font-family: "Josefin Sans Italic";
+    src: url(/fonts/paragraph/josefin-sans/josefin-sans.italic.ttf) format("truetype");
 }
 
 @font-face {
-    src: url(/fonts/title/ranille/RanilleNormalRegular-axEpm.otf);
-    font-family: e;
-}
-
-@font-face {
-    src: url(/fonts/title/VtksTatuage2-3GzL.ttf);
-    font-family: f;
-}
-
-@font-face {
-    src: url(/fonts/title/TypographyTimes-RgRW.ttf);
-    font-family: g;
-}
-
-@font-face {
-    src: url(/fonts/paragraph/coco-gothic/coco-gothic.light.ttf);
-    font-family: pa;
-}
-
-@font-face {
-    src: url(/fonts/paragraph/coco-gothic/coco-gothic.light-italic.ttf);
-    font-family: pai;
-}
-
-@font-face {
-    src: url(/fonts/paragraph/josefin-sans/josefin-sans.regular.ttf);
-    font-family: pb;
-}
-
-@font-face {
-    src: url(/fonts/paragraph/josefin-sans/josefin-sans.bold.ttf);
-    font-family: pbb;
-}
-
-@font-face {
-    src: url(/fonts/paragraph/josefin-sans/josefin-sans.semibold.ttf);
-    font-family: pbsb;
-}
-
-@font-face {
-    src: url(/fonts/paragraph/josefin-sans/josefin-sans.italic.ttf);
-    font-family: pbi;
-}
-
-@font-face {
-    src: url(/fonts/paragraph/source-sans-pro/source-sans-pro.regular.ttf);
-    font-family: pc;
-}
-
-@font-face {
-    src: url(/fonts/paragraph/source-sans-pro/source-sans-pro.light.ttf);
-    font-family: pcl;
-}
-
-@font-face {
-    src: url(/fonts/paragraph/source-sans-pro/source-sans-pro.semibold.ttf);
-    font-family: pcsb;
-}
-
-@font-face {
-    src: url(/fonts/paragraph/roboto-condensed/roboto-condensed.regular.ttf);
-    font-family: pd;
-}
-
-@font-face {
-    src: url(/fonts/cursive/holland/Holland-JRGaj.ttf);
-    font-family: ca;
-}
-
-@font-face {
-    src: url(/fonts/cursive/holland/HollandMonolineClean-VGEqZ.ttf);
-    font-family: cac;
-}
-
-@font-face {
-    src: url(/fonts/cursive/Themysion.ttf);
-    font-family: cb;
+    font-family: "Themysion";
+    src: url(/fonts/cursive/Themysion.ttf) format("truetype");
 }
 
 
@@ -138,7 +65,7 @@ li {
     margin: 0;
     display: inline-block;
     position: relative;
-    font-family: alta;
+    /* font-family: "Alta"; */
     font-weight: normal;
     text-decoration: none;
     color: white;
@@ -320,7 +247,7 @@ a {
     width: -webkit-max-content;
     width: -moz-max-content;
     width: max-content;
-    font-family: d;
+    font-family: "Black Aroug";
     font-weight: bold;
     letter-spacing: 15px;
     font-size: var(--font-size);
@@ -390,7 +317,7 @@ a {
 
 #about div.title h1 {
     color: var(--light-black);
-    font-family: cb;
+    font-family: "Themysion";
     font-size: 100px;
     line-height: 80px;
     margin: auto;
@@ -398,7 +325,7 @@ a {
 
 #about div.title h2 {
     color: var(--light-black);
-    font-family: d;
+    font-family: "Black Aroug";
     text-transform: uppercase;
     font-size: 40px;
     line-height: 40px;
@@ -411,7 +338,7 @@ a {
 
 #about div.text p {
     color: #84542A;
-    font-family: pb;
+    font-family: "Josefin Sans Regular";
     font-size: 24px;
     text-align: center;
     margin: 30px 0 30px 0;
@@ -503,7 +430,7 @@ a {
 
 #favs ul.desc h2 {
     color: var(--theme-color);
-    font-family: b;
+    font-family: "Romile";
     letter-spacing: 1px;
     font-size: 55px;
     line-height: 60px;
@@ -525,7 +452,7 @@ a {
 #favs ul.desc h3 {
     color: var(--theme-color);
     font-weight: normal;
-    font-family: pbsb;
+    font-family: "Josefin Sans Semibold";
     font-size: 24px;
     margin: 0;
     text-align: center;
@@ -540,7 +467,7 @@ a {
 
 #favs ul.desc p {
     color: var(--theme-color);
-    font-family: pb;
+    font-family: "Josefin Sans Regular";
     font-size: 24px;
     margin: 0;
     text-align: center;
@@ -592,7 +519,7 @@ a {
 #favs div.arrows h4 {
     color: var(--theme-color);
     font-weight: normal;
-    font-family: pai;
+    font-family: "Coco Gothic Light Italic";
     font-size: var(--font-size);
     line-height: var(--font-size);
     margin: 0;
@@ -632,7 +559,7 @@ a {
 
 #favs div.rotate h1 {
     color: var(--background-color);
-    font-family: g;
+    font-family: "Typography Times";
     font-size: var(--font-size);
     line-height: var(--line-height);
 }
@@ -669,7 +596,7 @@ a {
 
 #life div.title h1 {
     color: #84542a;
-    font-family: cb;
+    font-family: "Themysion";
     font-size: 140px;
     line-height: 90px;
     width: 100%;
@@ -678,7 +605,7 @@ a {
 
 #life div.title h2 {
     color: #84542a;
-    font-family: b;
+    font-family: "Romile";
     font-size: 45px;
     letter-spacing: 1px;
     width: 100%;
@@ -734,7 +661,7 @@ a {
 
 #life div.right p {
     color: #84542a;
-    font-family: pb;
+    font-family: "Josefin Sans Regular";
     font-size: 21px;
     text-indent: 35px;
 }
@@ -762,7 +689,7 @@ a {
 
 #love div.text p {
     color: #84542a;
-    font-family: pbi;
+    font-family: "Josefin Sans Italic";
     font-size: 21px;
     text-align: center;
 }
@@ -783,7 +710,7 @@ a {
 
 #love div.title h1 {
     color: var(--light-black);
-    font-family: b;
+    font-family: "Romile";
     text-transform: uppercase;
     letter-spacing: 10px;
     font-size: 80px;
@@ -1888,7 +1815,7 @@ a {
 @media screen and (max-width: 625px) {
 
     #top-page {
-        padding-bottom: 295px;
+        padding-bottom: 0;
     }
 
     #top-page div.container {
@@ -1922,20 +1849,29 @@ a {
     }
 
     #top-page div.right {
-        position: absolute;
-        bottom: -295px;
-        right: 0;
+        --right-height: 335px;
+        --right-offset: 25px;
+
+        /* position: absolute; */
+        /* bottom: -295px; */
+        /* right: 0; */
+        display: flex;
+        height: calc(var(--right-height) - var(--right-offset));
     }
 
     #top-page div.right div.image {
         display: flex;
-        margin-right: 50px;
+        position: relative;
+        height: var(--right-height);
+        /* margin-right: 50px; */
+        margin: 0 50px 0 auto;
+        bottom: var(--right-offset);
     }
 
     #top-page div.right img {
         --image-radius: calc((var(--image-width) / 2) + 10px);
 
-        margin-left: auto;
+        /* margin-left: auto; */
         padding: 10px 10px 0 10px;
         border: 1px solid white;
         border-bottom: 0;
@@ -2182,9 +2118,9 @@ a {
 
 @media screen and (max-width: 450px) {
 
-    #top-page {
+    /* #top-page {
         padding-bottom: 262px;
-    }
+    } */
 
     #top-page div.container {
         margin: 50px auto 0 auto;
@@ -2255,7 +2191,10 @@ a {
     }
 
     #top-page div.right {
-        bottom: -262px;
+        --right-height: 290px;
+        --right-offset: 20px;
+
+        /* bottom: -262px; */
     }
 
     #top-page div.right div.image {
@@ -2263,7 +2202,7 @@ a {
     }
 
     #top-page div.right img {
-        --image-width: 180px;
+        --image-width: 165px;
     }
 
     #favs {

@@ -1,3 +1,9 @@
+@font-face {
+    font-family: "Alta";
+    src: url(/fonts/title/alta-regular.otf) format("opentype");
+}
+
+
 #footer {
     --side-padding: 50px;
 
@@ -25,12 +31,14 @@
 #nav h2 {
     display: block;
     padding-bottom: 10px;
+    font-family: "Alta";
     font-size: 18px;
 }
 
 #nav li {
     display: block;
     margin-bottom: 3px;
+    font-family: "Alta";
     font-size: 14px;
 }
 

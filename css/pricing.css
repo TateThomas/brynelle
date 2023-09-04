@@ -5,103 +5,40 @@
 
 
 @font-face {
-    src: url(/fonts/title/alta-regular.otf);
-    font-family: alta;
+    font-family: "Romile";
+    src: url(/fonts/title/RomilePersonalUse-x3Xdr.otf) format("opentype");
 }
 
 @font-face {
-    src: url(/fonts/title/goodfish/goodfish.regular.otf);
-    font-family: a;
+    font-family: "Black Aroug";
+    src:
+        url(/fonts/title/black-aroug/BlackArougDemoVersionRegular-jE6ly.otf) format("opentype"),
+        url(/fonts/title/black-aroug/BlackArougDemoVersionRegular-GOpRA.ttf) format("truetype");
 }
 
 @font-face {
-    src: url(/fonts/title/RomilePersonalUse-x3Xdr.otf);
-    font-family: b;
+    font-family: "Tautage";
+    src: url(/fonts/title/VtksTatuage2-3GzL.ttf) format("truetype");
 }
 
 @font-face {
-    src: url(/fonts/title/VioletyDreams-WyEOA.otf);
-    font-family: c;
+    font-family: "Josefin Sans Regular";
+    src: url(/fonts/paragraph/josefin-sans/josefin-sans.regular.ttf) format("truetype");
 }
 
 @font-face {
-    src: url(/fonts/title/black-aroug/BlackArougDemoVersionRegular-GOpRA.ttf);
-    font-family: d;
+    font-family: "Josefin Sans Semibold";
+    src: url(/fonts/paragraph/josefin-sans/josefin-sans.semibold.ttf) format("truetype");
 }
 
 @font-face {
-    src: url(/fonts/title/ranille/RanilleNormalRegular-axEpm.otf);
-    font-family: e;
+    font-family: "Roboto Condensed";
+    src: url(/fonts/paragraph/roboto-condensed/roboto-condensed.regular.ttf) format("truetype");
 }
 
 @font-face {
-    src: url(/fonts/title/VtksTatuage2-3GzL.ttf);
-    font-family: f;
-}
-
-@font-face {
-    src: url(/fonts/title/TypographyTimes-RgRW.ttf);
-    font-family: g;
-}
-
-@font-face {
-    src: url(/fonts/paragraph/coco-gothic/coco-gothic.light.ttf);
-    font-family: pa;
-}
-
-@font-face {
-    src: url(/fonts/paragraph/coco-gothic/coco-gothic.light-italic.ttf);
-    font-family: pai;
-}
-
-@font-face {
-    src: url(/fonts/paragraph/josefin-sans/josefin-sans.regular.ttf);
-    font-family: pb;
-}
-
-@font-face {
-    src: url(/fonts/paragraph/josefin-sans/josefin-sans.bold.ttf);
-    font-family: pbb;
-}
-
-@font-face {
-    src: url(/fonts/paragraph/josefin-sans/josefin-sans.semibold.ttf);
-    font-family: pbsb;
-}
-
-@font-face {
-    src: url(/fonts/paragraph/josefin-sans/josefin-sans.italic.ttf);
-    font-family: pbi;
-}
-
-@font-face {
-    src: url(/fonts/paragraph/source-sans-pro/source-sans-pro.regular.ttf);
-    font-family: pc;
-}
-
-@font-face {
-    src: url(/fonts/paragraph/source-sans-pro/source-sans-pro.light.ttf);
-    font-family: pcl;
-}
-
-@font-face {
-    src: url(/fonts/paragraph/source-sans-pro/source-sans-pro.semibold.ttf);
-    font-family: pcsb;
-}
-
-@font-face {
-    src: url(/fonts/paragraph/roboto-condensed/roboto-condensed.regular.ttf);
-    font-family: pd;
-}
-
-@font-face {
-    src: url(/fonts/cursive/holland/Holland-JRGaj.ttf);
-    font-family: ca;
-}
-
-@font-face {
-    src: url(/fonts/cursive/holland/HollandMonolineClean-VGEqZ.ttf);
-    font-family: cac;
+    font-family: "Holland Clean";
+    src: url(/fonts/cursive/holland/Holland-JRGaj.ttf) format("truetype");
 }
 
 
@@ -123,7 +60,7 @@ li {
     margin: 0;
     display: inline-block;
     position: relative;
-    font-family: alta;
+    /* font-family: "Alta"; */
     font-weight: normal;
     text-decoration: none;
     color: white;
@@ -190,7 +127,7 @@ a {
 
 #investment div.text h1 {
     font-size: 110px;
-    font-family: b;
+    font-family: "Romile";
     letter-spacing: 5px;
     color: #876d46;
     color: white;
@@ -217,7 +154,7 @@ a {
     color: #7a6d4e;
     font-size: 45px;
     letter-spacing: 3px;
-    font-family: d;
+    font-family: "Black Aroug";
 }
 
 #weddings div.title img {
@@ -265,7 +202,7 @@ a {
 #weddings li h2,
 #families div.container.b h2 {
     color: #3f331f;
-    font-family: pb;
+    font-family: "Josefin Sans Regular";
     font-size: 24px;
 }
 
@@ -275,7 +212,7 @@ a {
 #families div.container.b h3 {
     color: #ad8d58;
     font-weight: normal;
-    font-family: cac;
+    font-family: "Holland Clean";
     font-size: 28px;
     width: 100%;
     margin: 0;
@@ -308,7 +245,7 @@ a {
 
 #weddings div.price h2,
 #families div.price h2 {
-    font-family: pbsb;
+    font-family: "Josefin Sans Semibold";
     font-size: 35px;
 }
 
@@ -382,7 +319,7 @@ a {
 #split div.vertical-text h2 {
     position: absolute;
     color: #876d46;
-    font-family: b;
+    font-family: "Romile";
     font-size: var(--vertical-font-size);
     letter-spacing: 8px;
     transform: rotate(-90deg);
@@ -412,7 +349,7 @@ a {
 #split li h2 {
     display: block;
     color: #42433e;
-    font-family: f;
+    font-family: "Tautage";
     text-align: center;
     font-size: 23px;
     line-height: 30px;
@@ -420,7 +357,7 @@ a {
 }
 
 #split li h2:last-child {
-    font-family: pbsb;
+    font-family: "Josefin Sans Semibold";
     font-size: 30px;
 }
 
@@ -455,7 +392,7 @@ a {
 
 #split div.elopements>h2 {
     color: #42433e;
-    font-family: b;
+    font-family: "Romile";
     font-size: 50px;
     letter-spacing: 16px;
     width: 100%;
@@ -497,7 +434,7 @@ a {
 
 #split div.arch h2 {
     color: #3f331f;
-    font-family: pbsb;
+    font-family: "Josefin Sans Semibold";
     font-size: 30px;
 }
 
@@ -507,7 +444,7 @@ a {
 
 #split div.text-container p {
     color: #3f331f;
-    font-family: pbsb;
+    font-family: "Josefin Sans Semibold";
     font-size: 16px;
     text-align: center;
 }
@@ -528,7 +465,7 @@ a {
 #split div.button h3 {
     color: #3f331f;
     font-weight: normal;
-    font-family: pbsb;
+    font-family: "Josefin Sans Semibold";
     font-size: 16px;
     padding: 6px 15px 6px 15px;
     margin: 0;
@@ -596,8 +533,8 @@ a {
 
 #shoots ul.icons li h2 {
     color: #b97c5d;
-    font-family: b;
-    font-family: d;
+    /* font-family: "Romile"; */
+    font-family: "Black Aroug";
     font-size: 40px;
     letter-spacing: 3px;
     width: 100%;
@@ -655,7 +592,7 @@ a {
 
 #shoots div.price h2 {
     color: #b97c5d;
-    font-family: pbsb;
+    font-family: "Josefin Sans Semibold";
     font-size: 37px;
     line-height: 37px;
     margin-right: auto;
@@ -702,7 +639,7 @@ a {
     position: absolute;
     color: white;
     color: #b97c5d;
-    font-family: f;
+    font-family: "Tautage";
     font-size: var(--title-size);
     line-height: calc(var(--title-size) + (var(--title-padding) * 2));
     letter-spacing: 15px;
@@ -798,7 +735,7 @@ a {
 
 #families div.text p {
     color: #7a6d4e;
-    font-family: pd;
+    font-family: "Roboto Condensed";
     font-weight: bold;
     font-size: 6px;
     letter-spacing: 1px;
@@ -868,7 +805,7 @@ a {
 }
 
 #families div.price h2 {
-    font-family: pbsb !important;
+    font-family: "Josefin Sans Semibold" !important;
     font-size: 35px !important;
 }
 

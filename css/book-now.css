@@ -1,3 +1,21 @@
+@font-face {
+    font-family: "Romile";
+    src: url(/fonts/title/RomilePersonalUse-x3Xdr.otf) format("opentype");
+}
+
+@font-face {
+    font-family: "Black Aroug";
+    src:
+        url(/fonts/title/black-aroug/BlackArougDemoVersionRegular-jE6ly.otf) format("opentype"),
+        url(/fonts/title/black-aroug/BlackArougDemoVersionRegular-GOpRA.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Josefin Sans Semibold";
+    src: url(/fonts/paragraph/josefin-sans/josefin-sans.semibold.ttf) format("truetype");
+}
+
+
 /****************** Book Now ******************/
 
 #book-now {
@@ -35,13 +53,13 @@
 
 #book-now h1 {
     color: var(--light-black);
-    font-family: b;
+    font-family: "Romile";
     font-size: 44px;
 }
 
 #book-now p {
     color: var(--light-black);
-    font-family: pbsb;
+    font-family: "Josefin Sans Semibold";
     text-align: center;
     font-size: 21px;
     margin: 10px 0 10px 0;
@@ -65,7 +83,7 @@
 
 #book-now h2 {
     color: var(--light-black);
-    font-family: d;
+    font-family: "Black Aroug";
     letter-spacing: 1px;
     font-size: 30px;
     transition: color .1s;

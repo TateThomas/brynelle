@@ -4,143 +4,30 @@
 
 
 @font-face {
-    src: url(/fonts/title/alta-regular.otf);
-    font-family: alta;
+    font-family: "Romile";
+    src: url(/fonts/title/RomilePersonalUse-x3Xdr.otf) format("opentype");
 }
 
 @font-face {
-    src: url(/fonts/cursive/AnticallyRegular-OVox8.ttf);
-    font-family: antically;
+    font-family: "Black Aroug";
+    src:
+        url(/fonts/title/black-aroug/BlackArougDemoVersionRegular-jE6ly.otf) format("opentype"),
+        url(/fonts/title/black-aroug/BlackArougDemoVersionRegular-GOpRA.ttf) format("truetype");
 }
 
 @font-face {
-    src: url(/fonts/cursive/DarlingtonDemo-z8xjG.ttf);
-    font-family: darlington;
+    font-family: "Josefin Sans Regular";
+    src: url(/fonts/paragraph/josefin-sans/josefin-sans.regular.ttf) format("truetype");
 }
 
 @font-face {
-    src: url(/fonts/title/goodfish/goodfish.regular.otf);
-    font-family: a;
+    font-family: "Josefin Sans Semibold";
+    src: url(/fonts/paragraph/josefin-sans/josefin-sans.semibold.ttf) format("truetype");
 }
 
 @font-face {
-    src: url(/fonts/title/RomilePersonalUse-x3Xdr.otf);
-    font-family: b;
-}
-
-@font-face {
-    src: url(/fonts/title/VioletyDreams-WyEOA.otf);
-    font-family: c;
-}
-
-@font-face {
-    src: url(/fonts/title/black-aroug/BlackArougDemoVersionRegular-GOpRA.ttf);
-    font-family: d;
-}
-
-@font-face {
-    src: url(/fonts/title/ranille/RanilleNormalRegular-axEpm.otf);
-    font-family: e;
-}
-
-@font-face {
-    src: url(/fonts/title/VtksTatuage2-3GzL.ttf);
-    font-family: f;
-}
-
-@font-face {
-    src: url(/fonts/title/TypographyTimes-RgRW.ttf);
-    font-family: g;
-}
-
-@font-face {
-    src: url(/fonts/paragraph/coco-gothic/coco-gothic.light.ttf);
-    font-family: pa;
-}
-
-@font-face {
-    src: url(/fonts/paragraph/coco-gothic/coco-gothic.light-italic.ttf);
-    font-family: pai;
-}
-
-@font-face {
-    src: url(/fonts/paragraph/coco-gothic/coco-gothic.ultralight.ttf);
-    font-family: pau;
-}
-
-@font-face {
-    src: url(/fonts/paragraph/josefin-sans/josefin-sans.regular.ttf);
-    font-family: pb;
-}
-
-@font-face {
-    src: url(/fonts/paragraph/josefin-sans/josefin-sans.bold.ttf);
-    font-family: pbb;
-}
-
-@font-face {
-    src: url(/fonts/paragraph/josefin-sans/josefin-sans.semibold-italic.ttf);
-    font-family: pbsbi;
-}
-
-@font-face {
-    src: url(/fonts/paragraph/josefin-sans/josefin-sans.semibold.ttf);
-    font-family: pbsb;
-}
-
-@font-face {
-    src: url(/fonts/paragraph/josefin-sans/josefin-sans.italic.ttf);
-    font-family: pbi;
-}
-
-@font-face {
-    src: url(/fonts/paragraph/source-sans-pro/source-sans-pro.regular.ttf);
-    font-family: pc;
-}
-
-@font-face {
-    src: url(/fonts/paragraph/source-sans-pro/source-sans-pro.light.ttf);
-    font-family: pcl;
-}
-
-@font-face {
-    src: url(/fonts/paragraph/source-sans-pro/source-sans-pro.semibold.ttf);
-    font-family: pcsb;
-}
-
-@font-face {
-    src: url(/fonts/paragraph/source-sans-pro/source-sans-pro.italic.ttf);
-    font-family: pci;
-}
-
-@font-face {
-    src: url(/fonts/paragraph/source-sans-pro/source-sans-pro.light-italic.ttf);
-    font-family: pcli;
-}
-
-@font-face {
-    src: url(/fonts/paragraph/roboto-condensed/roboto-condensed.regular.ttf);
-    font-family: pd;
-}
-
-@font-face {
-    src: url(/fonts/cursive/holland/Holland-JRGaj.ttf);
-    font-family: ca;
-}
-
-@font-face {
-    src: url(/fonts/cursive/holland/HollandMonolineClean-VGEqZ.ttf);
-    font-family: cac;
-}
-
-@font-face {
-    src: url(/fonts/cursive/Themysion.ttf);
-    font-family: cb;
-}
-
-@font-face {
-    src: url(/fonts/cursive/BrittanySignature.ttf);
-    font-family: cc;
+    font-family: "Josefin Sans Italic";
+    src: url(/fonts/paragraph/josefin-sans/josefin-sans.italic.ttf) format("truetype");
 }
 
 
@@ -168,7 +55,7 @@ li {
     margin: 0;
     display: inline-block;
     position: relative;
-    font-family: alta;
+    /* font-family: "Alta"; */
     font-weight: normal;
     text-decoration: none;
     color: white;
@@ -215,7 +102,7 @@ a {
     color: var(--light-black);
     width: 100%;
     text-align: center;
-    font-family: d;
+    font-family: "Black Aroug";
     text-transform: uppercase;
     letter-spacing: 4px;
     font-size: 70px;
@@ -242,7 +129,7 @@ a {
     /*    border: 1px solid var(--light-black);*/
     border: 2px solid #fae8d7;
     border-radius: 20px;
-    box-shadow: 0 0 7px rgba(0, 0, 0, .05);
+    /* box-shadow: 0 0 7px rgba(0, 0, 0, .05); */
     background-color: #fae8d7;
     background-color: rgba(250, 232, 215, .45);
     z-index: 2;
@@ -251,7 +138,7 @@ a {
 #contents h2 {
     display: block;
     color: var(--light-black);
-    font-family: b;
+    font-family: "Romile";
     font-size: 34px;
     letter-spacing: 1px;
     height: 35px;
@@ -261,8 +148,8 @@ a {
 }
 
 #contents ul {
-    list-style-type: circle;
-    list-style-position: inside;
+    list-style-type: none;
+    /* list-style-position: inside; */
     margin-top: 15px;
 }
 
@@ -280,7 +167,7 @@ a {
     display: list-item;
     color: var(--light-black);
     font-weight: normal;
-    font-family: pbsb;
+    font-family: "Josefin Sans Semibold";
     font-size: 21px;
     line-height: 22px;
     padding: 4px;
@@ -290,8 +177,16 @@ a {
     transition: background-color .1s;
 }
 
+#contents>ul>li>span>h3::before {
+    content: '○';
+    position: absolute;
+    font-size: 12px;
+    line-height: 25px;
+    left: 5px;
+}
+
 #contents li li h3 {
-    font-family: pbi;
+    font-family: "Josefin Sans Italic";
     font-size: 18px !important;
 }
 
@@ -306,7 +201,8 @@ a {
 
 #contents h3 span {
     position: relative;
-    left: -15px;
+    /* left: -15px; */
+    left: 10px;
 }
 
 #contents li ul {
@@ -396,7 +292,7 @@ a {
     margin-bottom: 100px;
     border: 2px solid #fae8d7;
     border-radius: 20px;
-    box-shadow: 0 0 7px rgba(0, 0, 0, .05);
+    /* box-shadow: 0 0 7px rgba(0, 0, 0, .05); */
     scroll-margin-top: 125px;
 }
 
@@ -407,7 +303,7 @@ a {
 #info div.group>h2 {
     color: var(--light-black);
     text-align: center;
-    font-family: d;
+    font-family: "Black Aroug";
     text-transform: uppercase;
     font-size: 44px;
     letter-spacing: 3px;
@@ -505,7 +401,7 @@ a {
 
 #info div.dropdown h2 {
     color: var(--light-black);
-    font-family: pb;
+    font-family: "Josefin Sans Regular";
     height: var(--question-size);
     font-size: var(--question-size);
     padding: calc((var(--box-height) - var(--question-size)) / 2);
@@ -579,7 +475,7 @@ a {
 
 #info div.dropdown p {
     color: var(--light-black);
-    font-family: pbi !important;
+    font-family: "Josefin Sans Italic";
     height: var(--answer-size);
     height: auto;
     padding: calc((var(--box-height) - var(--answer-size)) / 2);
@@ -587,8 +483,7 @@ a {
     padding-right: var(--answer-padding);
     margin: 0;
     font-size: var(--answer-size);
-    font-family: alta;
-    background-color: rgba(250, 232, 215, .3);
+    background-color: rgba(250, 232, 215, .2);
     border-radius: 5px 5px 0 0;
     transition: background-color .1s;
 }
@@ -662,6 +557,10 @@ a {
     #contents li h3 {
         font-size: 19px;
         line-height: 20px;
+    }
+
+    #contents>ul>li>span>h3::before {
+        line-height: 23px;
     }
 
     #contents li li h3 {
@@ -787,9 +686,13 @@ a {
         line-height: 18px;
     }
 
-    #contents>ul>li>span>h3 span {
-        margin-left: 3px;
+    #contents>ul>li>span>h3::before {
+        line-height: 22px;
     }
+
+    /* #contents>ul>li>span>h3 span {
+        margin-left: 3px;
+    } */
 
     #contents li li h3 {
         font-size: 15px !important;
@@ -859,8 +762,14 @@ a {
         line-height: 16px;
     }
 
+    #contents>ul>li>span>h3::before {
+        font-size: 11px;
+        line-height: 19px;
+    }
+
     #contents>ul>li>span>h3 span {
-        margin-left: 4px;
+        /* margin-left: 4px; */
+        left: 9px;
     }
 
     #contents li li h3 {
@@ -1109,6 +1018,10 @@ a {
 
     #contents h2 {
         text-align: center;
+    }
+
+    #contents>ul>li>span>h3::before {
+        font-size: 10px;
     }
 
     #groups {

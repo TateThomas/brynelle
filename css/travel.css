@@ -4,118 +4,30 @@
 
 
 @font-face {
-    src: url(/fonts/title/alta-regular.otf);
-    font-family: alta;
+    font-family: "Antically";
+    src: url(/fonts/cursive/AnticallyRegular-OVox8.ttf) format("truetype");
 }
 
 @font-face {
-    src: url(/fonts/cursive/AnticallyRegular-OVox8.ttf);
-    font-family: antically;
+    font-family: "Romile";
+    src: url(/fonts/title/RomilePersonalUse-x3Xdr.otf) format("opentype");
 }
 
 @font-face {
-    src: url(/fonts/cursive/DarlingtonDemo-z8xjG.ttf);
-    font-family: darlington;
+    font-family: "Black Aroug";
+    src:
+        url(/fonts/title/black-aroug/BlackArougDemoVersionRegular-jE6ly.otf) format("opentype"),
+        url(/fonts/title/black-aroug/BlackArougDemoVersionRegular-GOpRA.ttf) format("truetype");
 }
 
 @font-face {
-    src: url(/fonts/title/goodfish/goodfish.regular.otf);
-    font-family: a;
+    font-family: "Josefin Sans Regular";
+    src: url(/fonts/paragraph/josefin-sans/josefin-sans.regular.ttf) format("truetype");
 }
 
 @font-face {
-    src: url(/fonts/title/RomilePersonalUse-x3Xdr.otf);
-    font-family: b;
-}
-
-@font-face {
-    src: url(/fonts/title/VioletyDreams-WyEOA.otf);
-    font-family: c;
-}
-
-@font-face {
-    src: url(/fonts/title/black-aroug/BlackArougDemoVersionRegular-GOpRA.ttf);
-    font-family: d;
-}
-
-@font-face {
-    src: url(/fonts/title/ranille/RanilleNormalRegular-axEpm.otf);
-    font-family: e;
-}
-
-@font-face {
-    src: url(/fonts/title/VtksTatuage2-3GzL.ttf);
-    font-family: f;
-}
-
-@font-face {
-    src: url(/fonts/title/TypographyTimes-RgRW.ttf);
-    font-family: g;
-}
-
-@font-face {
-    src: url(/fonts/paragraph/coco-gothic/coco-gothic.light.ttf);
-    font-family: pa;
-}
-
-@font-face {
-    src: url(/fonts/paragraph/coco-gothic/coco-gothic.light-italic.ttf);
-    font-family: pai;
-}
-
-@font-face {
-    src: url(/fonts/paragraph/josefin-sans/josefin-sans.regular.ttf);
-    font-family: pb;
-}
-
-@font-face {
-    src: url(/fonts/paragraph/josefin-sans/josefin-sans.bold.ttf);
-    font-family: pbb;
-}
-
-@font-face {
-    src: url(/fonts/paragraph/josefin-sans/josefin-sans.semibold.ttf);
-    font-family: pbsb;
-}
-
-@font-face {
-    src: url(/fonts/paragraph/josefin-sans/josefin-sans.italic.ttf);
-    font-family: pbi;
-}
-
-@font-face {
-    src: url(/fonts/paragraph/source-sans-pro/source-sans-pro.regular.ttf);
-    font-family: pc;
-}
-
-@font-face {
-    src: url(/fonts/paragraph/source-sans-pro/source-sans-pro.light.ttf);
-    font-family: pcl;
-}
-
-@font-face {
-    src: url(/fonts/paragraph/source-sans-pro/source-sans-pro.semibold.ttf);
-    font-family: pcsb;
-}
-
-@font-face {
-    src: url(/fonts/paragraph/roboto-condensed/roboto-condensed.regular.ttf);
-    font-family: pd;
-}
-
-@font-face {
-    src: url(/fonts/cursive/holland/Holland-JRGaj.ttf);
-    font-family: ca;
-}
-
-@font-face {
-    src: url(/fonts/cursive/holland/HollandMonolineClean-VGEqZ.ttf);
-    font-family: cac;
-}
-
-@font-face {
-    src: url(/fonts/cursive/BarristarDemoVersion-X3Jvo.ttf);
-    font-family: cb;
+    font-family: "Holland Regular";
+    src: url(/fonts/cursive/holland/Holland-JRGaj.ttf) format("truetype");
 }
 
 
@@ -137,7 +49,7 @@ li {
     margin: 0;
     display: inline-block;
     position: relative;
-    font-family: alta;
+    /* font-family: "Alta"; */
     font-weight: normal;
     text-decoration: none;
     color: white;
@@ -209,7 +121,7 @@ a {
     font-size: 80px;
     line-height: 80px;
     letter-spacing: 1px;
-    font-family: b;
+    font-family: "Romile";
     color: var(--light-black);
     z-index: 4;
 }
@@ -233,7 +145,7 @@ a {
 
 #top-page div.picture h2 span {
     position: relative;
-    font-family: antically;
+    font-family: "Antically";
     letter-spacing: 0;
     font-size: 47px;
     top: -10px;
@@ -269,14 +181,14 @@ a {
 
 #worldwide h2 {
     color: #fff9ef;
-    font-family: b;
+    font-family: "Romile";
     letter-spacing: .1px;
     font-size: 50px;
 }
 
 #worldwide p {
     color: #fff9ef;
-    font-family: pb;
+    font-family: "Josefin Sans Regular";
     font-size: 24px;
     text-align: center;
     margin: 10px 0 10px 0;
@@ -321,7 +233,7 @@ a {
 
 #romance h2 {
     color: var(--light-black);
-    font-family: ca;
+    font-family: "Holland Regular";
     font-size: 75px;
 }
 
@@ -370,7 +282,7 @@ a {
 
 #dream h2 {
     color: var(--light-black);
-    font-family: b;
+    font-family: "Romile";
     font-size: 50px;
     letter-spacing: 2px;
     margin-bottom: 50px;
@@ -383,7 +295,7 @@ a {
 
 #dream li {
     color: var(--light-black);
-    font-family: pb;
+    font-family: "Josefin Sans Regular";
     text-transform: uppercase;
     text-align: center;
     font-size: 24px;
@@ -410,14 +322,14 @@ a {
     position: absolute;
     color: var(--light-black);
     color: #533626;
-    font-family: ca;
+    font-family: "Holland Regular";
     font-size: 80px;
     top: -45px;
     left: 50px;
 }
 
 #discount h1 {
-    font-family: d;
+    font-family: "Black Aroug";
     font-size: 60px;
     letter-spacing: 1px;
     word-spacing: 5px;

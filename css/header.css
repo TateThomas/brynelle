@@ -1,3 +1,9 @@
+@font-face {
+    font-family: "Alta";
+    src: url(/fonts/title/alta-regular.otf) format("opentype");
+}
+
+
 #header {
     --header-height: 46px;
     --header-color: #e6d2c6;
@@ -38,6 +44,7 @@
     margin-right: auto;
     padding: calc((var(--header-height) - var(--brand-font-size)) / 2);
     margin-left: 16px;
+    font-family: "Alta";
     font-size: var(--brand-font-size);
     height: var(--brand-font-size);
     transition: background-color .5s;
@@ -70,6 +77,7 @@
 
     position: relative;
     padding: calc((var(--header-height) - var(--links-font-size)) / 2);
+    font-family: "Alta";
     font-size: var(--links-font-size);
     width: -webkit-max-content;
     width: -moz-max-content;
@@ -327,6 +335,7 @@
         height: var(--header-height);
         padding: 0 15px 0 15px;
         border-radius: var(--header-radius);
+        /* overflow: hidden; */
         transition: background-color .75s, height .75s, padding-bottom .75s;
     }
 
@@ -400,7 +409,7 @@
         right: 0;
         padding: 0;
         background-color: #ddc2b1;
-        border: 3px solid white;
+        border: 2px solid white;
         border-top: 0;
         box-shadow: 0;
         z-index: 10;

@@ -3,8 +3,35 @@
 
 
 @font-face {
-    src: url(/fonts/title/alta-regular.otf);
-    font-family: alta;
+    font-family: "Alta";
+    src: url(/fonts/title/alta-regular.otf) format("opentype");
+}
+
+@font-face {
+    font-family: "Romile";
+    src: url(/fonts/title/RomilePersonalUse-x3Xdr.otf) format("opentype");
+}
+
+@font-face {
+    font-family: "Black Aroug";
+    src:
+        url(/fonts/title/black-aroug/BlackArougDemoVersionRegular-jE6ly.otf) format("opentype"),
+        url(/fonts/title/black-aroug/BlackArougDemoVersionRegular-GOpRA.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Josefin Sans Regular";
+    src: url(/fonts/paragraph/josefin-sans/josefin-sans.regular.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Josefin Sans Semibold";
+    src: url(/fonts/paragraph/josefin-sans/josefin-sans.semibold.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Josefin Sans Semibold Italic";
+    src: url(/fonts/paragraph/josefin-sans/josefin-sans.semibold-italic.ttf) format("truetype");
 }
 
 
@@ -26,7 +53,7 @@ li {
     margin: 0;
     display: inline-block;
     position: relative;
-    font-family: alta;
+    /* font-family: "Alta"; */
     font-weight: normal;
     text-decoration: none;
     color: white;
@@ -68,7 +95,9 @@ a {
 
 #content>div>h2 {
     color: var(--light-black);
-    font-size: 40px;
+    font-family: "Romile";
+    letter-spacing: 1px;
+    font-size: 50px;
     padding-bottom: 15px;
 }
 
@@ -151,7 +180,7 @@ a {
 }
 
 #filters div:first-child>div h2 {
-    font-family: alta;
+    font-family: "Alta";
     font-size: 20px;
     line-height: 20px;
     letter-spacing: 1px;
@@ -177,6 +206,8 @@ a {
     width: -moz-max-content;
     width: max-content;
     height: 18px;
+    font-family: "Black Aroug";
+    font-weight: 500;
     font-size: 14px;
     line-height: 18px;
     color: white;
@@ -225,7 +256,7 @@ a {
 #filters h2,
 #filters li {
     color: var(--light-black);
-    font-family: sans-serif;
+    font-family: "Josefin Sans Semibold";
 }
 
 #filters ul,
@@ -270,6 +301,7 @@ a {
 }
 
 #filters>ul>li li {
+    font-family: "Josefin Sans Semibold Italic";
     padding-bottom: 4px;
     padding-left: 25px;
 }
@@ -373,6 +405,12 @@ a {
     height: 20px;
     top: -25px;
     overflow: hidden;
+    opacity: 0;
+    -webkit-transition: top .45s, margin .45s, height .45s, opacity .1s;
+    -moz-transition: top .45s, margin .45s, height .45s, opacity .1s;
+    -o-transition: top .45s, margin .45s, height .45s, opacity .1s;
+    transition: top .45s, margin .45s, height .45s, opacity .1s;
+    transition-delay: 0s, 0s, 0s, 1s;
 }
 
 #photos h3 {
@@ -383,7 +421,7 @@ a {
     margin: 0;
     top: 30px;
     font-size: 20px;
-    font-family: alta;
+    font-family: "Alta";
     font-weight: normal;
     letter-spacing: 1px;
     color: var(--light-black);
@@ -404,6 +442,11 @@ a {
     transition-delay: 0s;
 }
 
+#photos div.container:hover>div {
+    opacity: 1;
+    transition-delay: 0s, 0s, 0s, 0s;
+}
+
 #photos div.container:hover>div h3 {
     top: 0;
 }
@@ -415,7 +458,8 @@ a {
 #photos picture {
     display: flex;
     min-height: var(--image-height);
-    max-height: 100%;
+    /* max-height: 100%; */
+    max-height: var(--image-height);
     min-width: calc(var(--image-width) + ((var(--img-span) - 1) * (var(--image-width) + var(--column-gap))));
     margin: auto;
     -webkit-transition: height var(--transition-time), max-height var(--transition-time), width var(--transition-time), max-width var(--transition-time);
@@ -494,7 +538,10 @@ a {
 */
 
 #photos div.expanded div.container {
-    width: 100vw;
+    --width: 100vw;
+    --img-position: 0px;
+
+    width: var(--width);
     height: 100vh;
     left: 0;
     top: 0;
@@ -510,6 +557,7 @@ a {
 #photos div.expanded picture {
     max-height: 85vh;
     width: 100%;
+    /* margin: 0; */
     -webkit-transition: height var(--transition-time), max-height var(--transition-time), width var(--transition-time), max-width var(--transition-time), margin var(--transition-time);
     -moz-transition: height var(--transition-time), max-height var(--transition-time), width var(--transition-time), max-width var(--transition-time), margin var(--transition-time);
     -o-transition: height var(--transition-time), max-height var(--transition-time), width var(--transition-time), max-width var(--transition-time), margin var(--transition-time);
@@ -527,41 +575,62 @@ a {
 }
 
 #photos div.expanded div.container>div {
+    /* position: relative; */
+    display: flex;
+    flex-direction: column;
     width: 100%;
     height: 25px;
+    height: var(--img-position);
     overflow: visible;
-    top: calc(7.5vh - 35px);
+    /* top: var(--img-position); */
+    top: 0;
+    opacity: 0 !important;
+    transition: opacity 0s;
+    transition-delay: 0s !important;
+    /* margin-top: var(--img-position); */
+    /* top: calc(7.5vh - 35px); */
 }
 
-#photos div.expanded div.container>div:first-child {
-    margin-top: auto;
-}
-
-#photos div.expanded div.container>div:last-child {
-    margin-bottom: auto;
-    top: calc(92.5vh + 10px);
+#photos div.expanded div.container.big>div {
+    opacity: 1 !important;
+    transition: opacity .5s;
+    transition-delay: .05s !important;
 }
 
 #photos div.expanded div.container div h3 {
     position: static;
     color: white;
+    width: 100%;
     padding: 0;
+    margin: auto 0 0 0;
     top: 0;
-    font-size: 25px;
-    line-height: 25px;
+    font-size: 26px;
+    line-height: 26px;
     text-align: center;
+    transition-delay: 0s !important;
 }
 
-#photos div.expanded div.container>div:first-child::after {
+#photos div.expanded div.container>div:first-child h3 {
+    margin: auto 0 35px 0;
+}
+
+#photos div.expanded div.container>div:last-child h3 {
+    font-size: 17px;
+    height: 17px;
+    margin: auto 0 15px 0;
+}
+
+#photos div.expanded div.container::after {
     content: 'x';
     display: block;
     position: absolute;
     height: 50px;
     width: 50px;
     padding: 0;
-    top: -30px;
-    right: 50px;
-    font-family: sans-serif;
+    top: 10px;
+    right: 20px;
+    /* font-family: sans-serif; */
+    font-family: "Josefin Sans Regular";
     font-size: 50px;
     line-height: 45px;
     text-align: center;
@@ -569,7 +638,7 @@ a {
     z-index: 2;
 }
 
-#photos div.expanded div.container>div:first-child:hover::after {
+#photos div.expanded div.container:hover::after {
     cursor: pointer;
 }
 
@@ -795,8 +864,8 @@ a {
     }
 
     #photos h3 {
-        font-size: 14px;
-        height: 14px;
+        font-size: 15px;
+        line-height: 15px;
     }
 
 }

@@ -1,3 +1,26 @@
+@font-face {
+    font-family: "Romile";
+    src: url(/fonts/title/RomilePersonalUse-x3Xdr.otf) format("opentype");
+}
+
+@font-face {
+    font-family: "Black Aroug";
+    src:
+        url(/fonts/title/black-aroug/BlackArougDemoVersionRegular-jE6ly.otf) format("opentype"),
+        url(/fonts/title/black-aroug/BlackArougDemoVersionRegular-GOpRA.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Josefin Sans Italic";
+    src: url(/fonts/paragraph/josefin-sans/josefin-sans.italic.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Josefin Sans Semibold";
+    src: url(/fonts/paragraph/josefin-sans/josefin-sans.semibold.ttf) format("truetype");
+}
+
+
 /****************** Steps ******************/
 
 #steps {
@@ -23,7 +46,7 @@
 
 #steps div.title h2 {
     color: var(--light-black);
-    font-family: d;
+    font-family: "Black Aroug";
     letter-spacing: 5px;
     font-size: 60px;
     text-transform: uppercase;
@@ -63,7 +86,7 @@
 
     position: absolute;
     color: var(--light-black);
-    font-family: d;
+    font-family: "Black Aroug";
     font-size: var(--number-size);
     line-height: var(--number-size);
     height: var(--number-size);
@@ -81,7 +104,7 @@
 #steps div.bar h3 {
     color: var(--light-black);
     font-weight: normal;
-    font-family: b;
+    font-family: "Romile";
     font-size: 27px;
     letter-spacing: 1px;
     width: var(--h3-width);
@@ -94,7 +117,7 @@
     --p-padding: calc((var(--h3-width) - var(--p-width)) / 2);
 
     color: var(--light-black);
-    font-family: pbi;
+    font-family: "Josefin Sans Italic";
     font-size: 19px;
     width: var(--p-width);
     line-height: var(--line-height);
@@ -119,7 +142,7 @@
 
 #steps div.faq h2 {
     color: var(--light-black);
-    font-family: d;
+    font-family: "Black Aroug";
     text-transform: uppercase;
     font-size: 50px;
     letter-spacing: 1px;
@@ -129,7 +152,7 @@
     display: flex;
     flex-direction: column;
     color: var(--light-black);
-    font-family: pbsb;
+    font-family: "Josefin Sans Semibold";
     font-size: 21px;
     width: -webkit-max-content;
     width: -moz-max-content;

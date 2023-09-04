@@ -3,133 +3,35 @@
 
 
 @font-face {
-    src: url(/fonts/title/alta-regular.otf);
-    font-family: alta;
+    font-family: "Romile";
+    src: url(/fonts/title/RomilePersonalUse-x3Xdr.otf) format("opentype");
 }
 
 @font-face {
-    src: url(/fonts/cursive/AnticallyRegular-OVox8.ttf);
-    font-family: antically;
+    font-family: "Black Aroug";
+    src:
+        url(/fonts/title/black-aroug/BlackArougDemoVersionRegular-jE6ly.otf) format("opentype"),
+        url(/fonts/title/black-aroug/BlackArougDemoVersionRegular-GOpRA.ttf) format("truetype");
 }
 
 @font-face {
-    src: url(/fonts/cursive/DarlingtonDemo-z8xjG.ttf);
-    font-family: darlington;
+    font-family: "Josefin Sans Regular";
+    src: url(/fonts/paragraph/josefin-sans/josefin-sans.regular.ttf) format("truetype");
 }
 
 @font-face {
-    src: url(/fonts/title/goodfish/goodfish.regular.otf);
-    font-family: a;
+    font-family: "Josefin Sans Semibold Italic";
+    src: url(/fonts/paragraph/josefin-sans/josefin-sans.semibold-italic.ttf) format("truetype");
 }
 
 @font-face {
-    src: url(/fonts/title/RomilePersonalUse-x3Xdr.otf);
-    font-family: b;
+    font-family: "Josefin Sans Italic";
+    src: url(/fonts/paragraph/josefin-sans/josefin-sans.italic.ttf) format("truetype");
 }
 
 @font-face {
-    src: url(/fonts/title/VioletyDreams-WyEOA.otf);
-    font-family: c;
-}
-
-@font-face {
-    src: url(/fonts/title/black-aroug/BlackArougDemoVersionRegular-GOpRA.ttf);
-    font-family: d;
-}
-
-@font-face {
-    src: url(/fonts/title/ranille/RanilleNormalRegular-axEpm.otf);
-    font-family: e;
-}
-
-@font-face {
-    src: url(/fonts/title/VtksTatuage2-3GzL.ttf);
-    font-family: f;
-}
-
-@font-face {
-    src: url(/fonts/title/TypographyTimes-RgRW.ttf);
-    font-family: g;
-}
-
-@font-face {
-    src: url(/fonts/paragraph/coco-gothic/coco-gothic.light.ttf);
-    font-family: pa;
-}
-
-@font-face {
-    src: url(/fonts/paragraph/coco-gothic/coco-gothic.light-italic.ttf);
-    font-family: pai;
-}
-
-@font-face {
-    src: url(/fonts/paragraph/josefin-sans/josefin-sans.regular.ttf);
-    font-family: pb;
-}
-
-@font-face {
-    src: url(/fonts/paragraph/josefin-sans/josefin-sans.bold.ttf);
-    font-family: pbb;
-}
-
-@font-face {
-    src: url(/fonts/paragraph/josefin-sans/josefin-sans.semibold-italic.ttf);
-    font-family: pbsbi;
-}
-
-@font-face {
-    src: url(/fonts/paragraph/josefin-sans/josefin-sans.semibold.ttf);
-    font-family: pbsb;
-}
-
-@font-face {
-    src: url(/fonts/paragraph/josefin-sans/josefin-sans.italic.ttf);
-    font-family: pbi;
-}
-
-@font-face {
-    src: url(/fonts/paragraph/source-sans-pro/source-sans-pro.regular.ttf);
-    font-family: pc;
-}
-
-@font-face {
-    src: url(/fonts/paragraph/source-sans-pro/source-sans-pro.light.ttf);
-    font-family: pcl;
-}
-
-@font-face {
-    src: url(/fonts/paragraph/source-sans-pro/source-sans-pro.semibold.ttf);
-    font-family: pcsb;
-}
-
-@font-face {
-    src: url(/fonts/paragraph/source-sans-pro/source-sans-pro.italic.ttf);
-    font-family: pci;
-}
-
-@font-face {
-    src: url(/fonts/paragraph/source-sans-pro/source-sans-pro.light-italic.ttf);
-    font-family: pcli;
-}
-
-@font-face {
-    src: url(/fonts/paragraph/roboto-condensed/roboto-condensed.regular.ttf);
-    font-family: pd;
-}
-
-@font-face {
-    src: url(/fonts/cursive/holland/Holland-JRGaj.ttf);
-    font-family: ca;
-}
-
-@font-face {
-    src: url(/fonts/cursive/holland/HollandMonolineClean-VGEqZ.ttf);
-    font-family: cac;
-}
-
-@font-face {
-    src: url(/fonts/cursive/Themysion.ttf);
-    font-family: cb;
+    font-family: "Holland Regular";
+    src: url(/fonts/cursive/holland/Holland-JRGaj.ttf) format("truetype");
 }
 
 
@@ -155,7 +57,7 @@ li {
     margin: 0;
     display: inline-block;
     position: relative;
-    font-family: alta;
+    /* font-family: "Alta"; */
     font-weight: normal;
     text-decoration: none;
     color: white;
@@ -174,13 +76,13 @@ a {
     width: 100%;
 }
 
-#links li.contact {
+/* #links li.contact {
     background-color: #ddc2bf;
 }
 
 #links li.contact>a:hover {
     color: #c89c97 !important;
-}
+} */
 
 
 /****************** Content ******************/
@@ -252,7 +154,7 @@ a {
     width: -webkit-max-content;
     width: -moz-max-content;
     width: max-content;
-    font-family: d;
+    font-family: "Black Aroug";
     letter-spacing: 1px;
     font-size: 45px;
     letter-spacing: 4px;
@@ -286,7 +188,7 @@ a {
 
 #success h2 {
     color: var(--light-black);
-    font-family: d;
+    font-family: "Black Aroug";
     letter-spacing: 1px;
     font-size: 26px;
     text-align: center;
@@ -321,7 +223,7 @@ a {
 #success h3 {
     color: var(--light-black);
     font-weight: normal;
-    font-family: pb;
+    font-family: "Josefin Sans Regular";
     font-size: 16px;
     width: 150px;
     margin: auto auto auto 0;
@@ -335,7 +237,7 @@ a {
 }
 
 #success div.content>h2 {
-    font-family: pbi;
+    font-family: "Josefin Sans Italic";
     font-size: 21px;
     width: 300px;
     margin: 40px auto 160px auto;
@@ -343,7 +245,7 @@ a {
 
 #success h2 a {
     color: var(--light-black);
-    font-family: pbsbi;
+    font-family: "Josefin Sans Semibold Italic";
     padding: 3px 0 3px 0;
 }
 
@@ -364,7 +266,7 @@ a {
 #success h4 {
     color: var(--light-black);
     font-weight: normal;
-    font-family: b;
+    font-family: "Romile";
     font-size: 30px;
     letter-spacing: 1px;
     width: 300px;
@@ -375,7 +277,7 @@ a {
 }
 
 #success h4 span {
-    font-family: ca;
+    font-family: "Holland Regular";
     font-size: 48px;
     line-height: 32px;
     margin-left: 7px;
@@ -398,7 +300,7 @@ a {
 
 #success p a {
     color: #707070;
-    font-family: pb;
+    font-family: "Josefin Sans Regular";
     text-decoration: underline;
     text-underline-offset: 2px;
     font-size: 16px;
@@ -578,6 +480,7 @@ a {
     #success div.group h2::after {
         height: 250%;
         right: -8px;
+        top: -19px;
     }
 
     #success h3 {
@@ -650,6 +553,10 @@ a {
 
     #success div.group h2 span {
         font-size: 23px;
+    }
+
+    #success div.group h2::after {
+        top: -17px;
     }
 
     #success h3 {
