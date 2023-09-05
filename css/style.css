@@ -5,142 +5,102 @@
 
 
 @font-face {
-    font-family: "Alta";
-    src: url(/fonts/title/alta-regular.otf) format("opentype");
+    font-family: 'Alta';
+    src: url('/fonts/title/Alta_regular.eot');
+    src: url('/fonts/title/Alta_regular.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/title/Alta_regular.woff2') format('woff2'),
+        url('/fonts/title/Alta_regular.woff') format('woff'),
+        url('/fonts/title/Alta_regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-    font-family: "Antically";
-    src: url(/fonts/cursive/AnticallyRegular-OVox8.ttf) format("truetype");
+    font-family: 'Romile';
+    src: url('/fonts/title/RomilePersonalUse.eot');
+    src: url('/fonts/title/RomilePersonalUse.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/title/RomilePersonalUse.woff2') format('woff2'),
+        url('/fonts/title/RomilePersonalUse.woff') format('woff'),
+        url('/fonts/title/RomilePersonalUse.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
-/* @font-face {
-    font-family: "Darlington";
-    src: url(/fonts/cursive/DarlingtonDemo-z8xjG.ttf) format("truetype");
-} */
-
-/* @font-face {
-    font-family: "Goodfish";
-    src: url(/fonts/title/goodfish/goodfish.regular.otf) format("opentype");
-} */
-
 @font-face {
-    font-family: "Romile";
-    src: url(/fonts/title/RomilePersonalUse-x3Xdr.otf) format("opentype");
+    font-family: 'Black Aroug';
+    src: url('/fonts/title/black-aroug/BlackAroug-DemoVersion-Regular.eot');
+    src: url('/fonts/title/black-aroug/BlackAroug-DemoVersion-Regular.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/title/black-aroug/BlackAroug-DemoVersion-Regular.woff2') format('woff2'),
+        url('/fonts/title/black-aroug/BlackAroug-DemoVersion-Regular.woff') format('woff'),
+        url('/fonts/title/black-aroug/BlackAroug-DemoVersion-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
-/* @font-face {
-    font-family: "Violety Dreams";
-    src: url(/fonts/title/VioletyDreams-WyEOA.otf) format("opentype");
-} */
-
 @font-face {
-    font-family: "Black Aroug";
-    src:
-        url(/fonts/title/black-aroug/BlackArougDemoVersionRegular-jE6ly.otf) format("opentype"),
-        url(/fonts/title/black-aroug/BlackArougDemoVersionRegular-GOpRA.ttf) format("truetype");
+    font-family: 'Tautage';
+    src: url('/fonts/title/VtksTautage2.eot');
+    src: url('/fonts/title/VtksTautage2.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/title/VtksTautage2.woff2') format('woff2'),
+        url('/fonts/title/VtksTautage2.woff') format('woff'),
+        url('/fonts/title/VtksTautage2.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
-/* @font-face {
-    font-family: "Ranille";
-    src:
-        url(/fonts/title/ranille/RanilleNormalRegular-axEpm.otf) format("opentype"),
-        url(/fonts/title/ranille/RanilleNormalRegular-axEpm.otf) format("truetype");
-} */
-
 @font-face {
-    font-family: "Tautage";
-    src: url(/fonts/title/VtksTatuage2-3GzL.ttf) format("truetype");
+    font-family: 'Josefin Sans';
+    src: url('/fonts/paragraph/josefin-sans/JosefinSans.eot');
+    src: url('/fonts/paragraph/josefin-sans/JosefinSans.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/paragraph/josefin-sans/JosefinSans.woff2') format('woff2'),
+        url('/fonts/paragraph/josefin-sans/JosefinSans.woff') format('woff'),
+        url('/fonts/paragraph/josefin-sans/JosefinSans.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
-/* @font-face {
-    font-family: "Typography Times";
-    src: url(/fonts/title/TypographyTimes-RgRW.ttf) format("truetype");
-} */
-
-/* @font-face {
-    font-family: "Coco Gothic Light";
-    src: url(/fonts/paragraph/coco-gothic/coco-gothic.light.ttf) format("truetype");
-} */
-
-/* @font-face {
-    font-family: "Coco Gothic Light Italic";
-    src: url(/fonts/paragraph/coco-gothic/coco-gothic.light-italic.ttf) format("truetype");
-} */
-
 @font-face {
-    font-family: "Josefin Sans Regular";
-    src: url(/fonts/paragraph/josefin-sans/josefin-sans.regular.ttf) format("truetype");
+    font-family: 'Josefin Sans';
+    src: url('/fonts/paragraph/josefin-sans/JosefinSans-Italic.eot');
+    src: url('/fonts/paragraph/josefin-sans/JosefinSans-Italic.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/paragraph/josefin-sans/JosefinSans-Italic.woff2') format('woff2'),
+        url('/fonts/paragraph/josefin-sans/JosefinSans-Italic.woff') format('woff'),
+        url('/fonts/paragraph/josefin-sans/JosefinSans-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
 }
 
-/* @font-face {
-    font-family: "Josefin Sans Bold";
-    src: url(/fonts/paragraph/josefin-sans/josefin-sans.bold.ttf) format("truetype");
-} */
-
-/* @font-face {
-    font-family: "Josefin Sans Semibold";
-    src: url(/fonts/paragraph/josefin-sans/josefin-sans.semibold.ttf) format("truetype");
-} */
-
-/* @font-face {
-    font-family: "Josefin Sans Semibold Italic";
-    src: url(/fonts/paragraph/josefin-sans/josefin-sans.semibold-italic.ttf) format("truetype");
-} */
-
 @font-face {
-    font-family: "Josefin Sans Italic";
-    src: url(/fonts/paragraph/josefin-sans/josefin-sans.italic.ttf) format("truetype");
+    font-family: 'Antically';
+    src: url('/fonts/cursive/Antically-Regular.eot');
+    src: url('/fonts/cursive/Antically-Regular.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/cursive/Antically-Regular.woff2') format('woff2'),
+        url('/fonts/cursive/Antically-Regular.woff') format('woff'),
+        url('/fonts/cursive/Antically-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
-/* @font-face {
-    font-family: "Source Sans Pro Regular";
-    src: url(/fonts/paragraph/source-sans-pro/source-sans-pro.regular.ttf) format("truetype");
-} */
-
-/* @font-face {
-    font-family: "Source Sans Pro Light";
-    src: url(/fonts/paragraph/source-sans-pro/source-sans-pro.light.ttf) format("truetype");
-} */
-
-/* @font-face {
-    font-family: "Source Sans Pro Semibold";
-    src: url(/fonts/paragraph/source-sans-pro/source-sans-pro.semibold.ttf) format("truetype");
-} */
-
-/* @font-face {
-    font-family: "Source Sans Pro Italic";
-    src: url(/fonts/paragraph/source-sans-pro/source-sans-pro.italic.ttf) format("truetype");
-} */
-
-/* @font-face {
-    font-family: "Source Sans Pro Light Italic";
-    src: url(/fonts/paragraph/source-sans-pro/source-sans-pro.light-italic.ttf) format("truetype");
-} */
-
-/* @font-face {
-    font-family: "Roboto Condensed";
-    src: url(/fonts/paragraph/roboto-condensed/roboto-condensed.regular.ttf) format("truetype");
-} */
-
 @font-face {
-    font-family: "Holland Regular";
-    src: url(/fonts/cursive/holland/Holland-JRGaj.ttf) format("truetype");
+    font-family: 'Holland Regular';
+    src: url('/fonts/cursive/holland/Holland.eot');
+    src: url('/fonts/cursive/holland/Holland.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/cursive/holland/Holland.woff2') format('woff2'),
+        url('/fonts/cursive/holland/Holland.woff') format('woff'),
+        url('/fonts/cursive/holland/Holland.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
-/* @font-face {
-    font-family: "Holland Clean";
-    src: url(/fonts/cursive/holland/Holland-JRGaj.ttf) format("truetype");
-} */
-
-/* @font-face {
-    font-family: "Themysion";
-    src: url(/fonts/cursive/Themysion.ttf) format("truetype");
-} */
-
 @font-face {
-    font-family: "Brittany Signature";
-    src: url(/fonts/cursive/BrittanySignature.ttf);
+    font-family: 'Brittany Signature';
+    src: url('/fonts/cursive/BrittanySignatureRegular.eot');
+    src: url('/fonts/cursive/BrittanySignatureRegular.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/cursive/BrittanySignatureRegular.woff2') format('woff2'),
+        url('/fonts/cursive/BrittanySignatureRegular.woff') format('woff'),
+        url('/fonts/cursive/BrittanySignatureRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 
@@ -231,7 +191,7 @@ a {
     position: relative;
     top: 62vh;
     left: -400px;
-    font-family: "Holland Regular";
+    font-family: 'Holland Regular';
     font-size: 75px;
     color: var(--light-black);
     z-index: calc(var(--lower-gradient-z) + 3);
@@ -358,11 +318,16 @@ a {
 #arches h2 {
     color: #fffbf5;
     font-family: "Black Aroug";
+    -webkit-font-feature-settings: "kern" 1;
+    -moz-font-feature-settings: "kern" 1;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
     width: 100%;
     bottom: 60%;
     font-size: 42px;
     text-align: center;
     letter-spacing: 1px;
+    letter-spacing: 0.03em;
 }
 
 /*
@@ -436,13 +401,18 @@ a {
     color: var(--light-black);
     font-family: "Romile";
     text-transform: uppercase;
+    -webkit-font-feature-settings: "kern" 1;
+    -moz-font-feature-settings: "kern" 1;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
     font-size: 40px;
     font-weight: bold;
     background-color: #fffbf5;
     margin-left: auto;
     margin-right: auto;
     padding: 10px;
-    letter-spacing: 2px;
+    /* letter-spacing: 2px; */
+    letter-spacing: 0.04em;
 }
 
 
@@ -641,7 +611,7 @@ a {
 }
 
 #about-me-pictures h2 {
-    font-family: "Brittany Signature";
+    font-family: 'Brittany Signature';
     font-size: 55px;
     line-height: 63px;
     text-indent: -60px;
@@ -708,7 +678,12 @@ a {
     color: var(--light-black);
     font-weight: normal;
     font-family: "Romile";
-    letter-spacing: 1px;
+    -webkit-font-feature-settings: "kern" 1;
+    -moz-font-feature-settings: "kern" 1;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
+    /* letter-spacing: 1px; */
+    letter-spacing: 0.03em;
     font-size: 37px;
     width: -webkit-max-content;
     width: -moz-max-content;
@@ -718,8 +693,14 @@ a {
 
 #about-me-desc p {
     color: var(--light-black);
-    font-family: "Josefin Sans Regular";
+    font-family: 'Josefin Sans';
+    -webkit-font-feature-settings: "kern" 1;
+    -moz-font-feature-settings: "kern" 1;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
     font-size: 21px;
+    letter-spacing: 0.01em;
+    /* word-spacing: 0.0002em; */
     text-indent: 30px;
     margin: 15px 0 15px 0;
 }
@@ -734,7 +715,7 @@ a {
 }
 
 #about-me-desc-more a {
-    padding: 4px 4px 1px 4px;
+    padding: 4px 1px 1px 1px;
 }
 
 #about-me-desc-more h3 {
@@ -744,7 +725,12 @@ a {
     width: max-content;
     font-family: "Black Aroug";
     font-weight: normal;
-    letter-spacing: 1px;
+    -webkit-font-feature-settings: "kern" 1;
+    -moz-font-feature-settings: "kern" 1;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
+    /* letter-spacing: 1px; */
+    letter-spacing: 0.035em;
     margin: 0;
     font-size: 24px;
     line-height: 27px;
@@ -800,7 +786,13 @@ a {
     left: calc((-1 * var(--lower-page-padding)) + 2px);
     top: 250px;
     font-family: "Tautage";
+    -webkit-font-feature-settings: "kern" 1;
+    -moz-font-feature-settings: "kern" 1;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
     font-size: 25px;
+    letter-spacing: 0.007em;
+    word-spacing: 0.06em;
     z-index: calc(var(--lower-gradient-z) + 1);
     -webkit-transition: top 1.5s;
     -moz-transition: top 1.5s;
@@ -815,7 +807,8 @@ a {
 */
 
 #my-work h2:hover {
-    cursor: vertical-text;
+    /* cursor: vertical-text; */
+    cursor: default;
 }
 
 #my-work-content {
@@ -1079,7 +1072,7 @@ a {
 
 #my-work-explore h3 {
     color: var(--light-black);
-    font-family: "Antically";
+    font-family: 'Antically';
     font-weight: normal;
     font-size: var(--explore-font-size);
     margin: 0;
@@ -1130,8 +1123,13 @@ a {
     top: -100px;
     font-family: "Black Aroug";
     text-transform: lowercase;
+    -webkit-font-feature-settings: "kern" 1;
+    -moz-font-feature-settings: "kern" 1;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
     /*    font-weight: bold;*/
     letter-spacing: 2px;
+    letter-spacing: 0.04em;
     font-size: 55px;
     line-height: 50px;
     color: var(--light-black);
@@ -1261,11 +1259,16 @@ a {
 
 #travel div.info>h2 {
     font-family: "Romile";
+    -webkit-font-feature-settings: "kern" 1;
+    -moz-font-feature-settings: "kern" 1;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
     width: 100%;
     padding-top: 20px;
     padding-bottom: 10px;
     color: var(--light-black);
     font-size: 35px;
+    letter-spacing: 0.03em;
     text-align: center;
 }
 
@@ -1301,8 +1304,14 @@ a {
     width: -moz-max-content;
     width: max-content;
     padding: 8px;
-    font-family: "Josefin Sans Italic";
+    font-family: 'Josefin Sans';
+    font-style: italic;
     text-transform: lowercase;
+    -webkit-font-feature-settings: "kern" 1;
+    -moz-font-feature-settings: "kern" 1;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
+    letter-spacing: 0.04em;
     font-size: 22px;
     color: var(--light-black);
     background-color: #fffbf5;
@@ -1431,8 +1440,8 @@ a {
     text-align: center;
     line-height: 450px;
     font-size: 95px;
-    font-family: "Antically";
-    font-family: "Holland Regular";
+    /* font-family: 'Antically'; */
+    font-family: 'Holland Regular';
     text-shadow: 0 0 30px rgba(0, 0, 0, .1);
     -webkit-transition: text-shadow 1s;
     -moz-transition: text-shadow 1s;
@@ -1467,6 +1476,11 @@ a {
     font-size: 40px;
     font-family: "Alta";
     font-weight: normal;
+    -webkit-font-feature-settings: "kern" 1;
+    -moz-font-feature-settings: "kern" 1;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
+    letter-spacing: 0.03em;
     padding: 0;
     text-shadow: 0 0 30px rgba(0, 0, 0, .1);
     -webkit-transition: text-shadow 1s;

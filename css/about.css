@@ -5,45 +5,91 @@
 
 
 @font-face {
-    font-family: "Romile";
-    src: url(/fonts/title/RomilePersonalUse-x3Xdr.otf) format("opentype");
+    font-family: 'Romile';
+    src: url('/fonts/title/RomilePersonalUse.eot');
+    src: url('/fonts/title/RomilePersonalUse.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/title/RomilePersonalUse.woff2') format('woff2'),
+        url('/fonts/title/RomilePersonalUse.woff') format('woff'),
+        url('/fonts/title/RomilePersonalUse.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-    font-family: "Black Aroug";
-    src:
-        url(/fonts/title/black-aroug/BlackArougDemoVersionRegular-jE6ly.otf) format("opentype"),
-        url(/fonts/title/black-aroug/BlackArougDemoVersionRegular-GOpRA.ttf) format("truetype");
+    font-family: 'Black Aroug';
+    src: url('/fonts/title/black-aroug/BlackAroug-DemoVersion-Regular.eot');
+    src: url('/fonts/title/black-aroug/BlackAroug-DemoVersion-Regular.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/title/black-aroug/BlackAroug-DemoVersion-Regular.woff2') format('woff2'),
+        url('/fonts/title/black-aroug/BlackAroug-DemoVersion-Regular.woff') format('woff'),
+        url('/fonts/title/black-aroug/BlackAroug-DemoVersion-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-    font-family: "Typography Times";
-    src: url(/fonts/title/TypographyTimes-RgRW.ttf) format("truetype");
+    font-family: 'Typography Times';
+    src: url('/fonts/title/Typographytimes-Regular.eot');
+    src: url('/fonts/title/Typographytimes-Regular.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/title/Typographytimes-Regular.woff2') format('woff2'),
+        url('/fonts/title/Typographytimes-Regular.woff') format('woff'),
+        url('/fonts/title/Typographytimes-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-    font-family: "Coco Gothic Light Italic";
-    src: url(/fonts/paragraph/coco-gothic/coco-gothic.light-italic.ttf) format("truetype");
+    font-family: 'Coco Gothic';
+    src: url('/fonts/paragraph/coco-gothic/CocoGothic-LightItalic.eot');
+    src: url('/fonts/paragraph/coco-gothic/CocoGothic-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/paragraph/coco-gothic/CocoGothic-LightItalic.woff2') format('woff2'),
+        url('/fonts/paragraph/coco-gothic/CocoGothic-LightItalic.woff') format('woff'),
+        url('/fonts/paragraph/coco-gothic/CocoGothic-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
 }
 
 @font-face {
-    font-family: "Josefin Sans Regular";
-    src: url(/fonts/paragraph/josefin-sans/josefin-sans.regular.ttf) format("truetype");
+    font-family: 'Josefin Sans';
+    src: url('/fonts/paragraph/josefin-sans/JosefinSans.eot');
+    src: url('/fonts/paragraph/josefin-sans/JosefinSans.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/paragraph/josefin-sans/JosefinSans.woff2') format('woff2'),
+        url('/fonts/paragraph/josefin-sans/JosefinSans.woff') format('woff'),
+        url('/fonts/paragraph/josefin-sans/JosefinSans.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-    font-family: "Josefin Sans Semibold";
-    src: url(/fonts/paragraph/josefin-sans/josefin-sans.semibold.ttf) format("truetype");
+    font-family: 'Josefin Sans';
+    src: url('/fonts/paragraph/josefin-sans/JosefinSans-SemiBold.eot');
+    src: url('/fonts/paragraph/josefin-sans/JosefinSans-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/paragraph/josefin-sans/JosefinSans-SemiBold.woff2') format('woff2'),
+        url('/fonts/paragraph/josefin-sans/JosefinSans-SemiBold.woff') format('woff'),
+        url('/fonts/paragraph/josefin-sans/JosefinSans-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
 }
 
 @font-face {
-    font-family: "Josefin Sans Italic";
-    src: url(/fonts/paragraph/josefin-sans/josefin-sans.italic.ttf) format("truetype");
+    font-family: 'Josefin Sans';
+    src: url('/fonts/paragraph/josefin-sans/JosefinSans-Italic.eot');
+    src: url('/fonts/paragraph/josefin-sans/JosefinSans-Italic.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/paragraph/josefin-sans/JosefinSans-Italic.woff2') format('woff2'),
+        url('/fonts/paragraph/josefin-sans/JosefinSans-Italic.woff') format('woff'),
+        url('/fonts/paragraph/josefin-sans/JosefinSans-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
 }
 
 @font-face {
-    font-family: "Themysion";
-    src: url(/fonts/cursive/Themysion.ttf) format("truetype");
+    font-family: 'Themysion';
+    src: url('/fonts/cursive/Themysion.eot');
+    src: url('/fonts/cursive/Themysion.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/cursive/Themysion.woff2') format('woff2'),
+        url('/fonts/cursive/Themysion.woff') format('woff'),
+        url('/fonts/cursive/Themysion.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 
@@ -249,7 +295,12 @@ a {
     width: max-content;
     font-family: "Black Aroug";
     font-weight: bold;
-    letter-spacing: 15px;
+    -webkit-font-feature-settings: "kern" 1;
+    -moz-font-feature-settings: "kern" 1;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
+    /* letter-spacing: 15px; */
+    letter-spacing: 0.125em;
     font-size: var(--font-size);
     line-height: var(--line-height);
     z-index: 2;
@@ -317,7 +368,7 @@ a {
 
 #about div.title h1 {
     color: var(--light-black);
-    font-family: "Themysion";
+    font-family: 'Themysion';
     font-size: 100px;
     line-height: 80px;
     margin: auto;
@@ -326,8 +377,13 @@ a {
 #about div.title h2 {
     color: var(--light-black);
     font-family: "Black Aroug";
+    -webkit-font-feature-settings: "kern" 1;
+    -moz-font-feature-settings: "kern" 1;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
     text-transform: uppercase;
     font-size: 40px;
+    letter-spacing: 0.002em;
     line-height: 40px;
 }
 
@@ -338,8 +394,13 @@ a {
 
 #about div.text p {
     color: #84542A;
-    font-family: "Josefin Sans Regular";
+    font-family: 'Josefin Sans';
+    -webkit-font-feature-settings: "kern" 1;
+    -moz-font-feature-settings: "kern" 1;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
     font-size: 24px;
+    letter-spacing: 0.0005em;
     text-align: center;
     margin: 30px 0 30px 0;
 }
@@ -431,7 +492,12 @@ a {
 #favs ul.desc h2 {
     color: var(--theme-color);
     font-family: "Romile";
-    letter-spacing: 1px;
+    -webkit-font-feature-settings: "kern" 1;
+    -moz-font-feature-settings: "kern" 1;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
+    /* letter-spacing: 1px; */
+    letter-spacing: 0.02em;
     font-size: 55px;
     line-height: 60px;
     text-align: center;
@@ -451,9 +517,14 @@ a {
 
 #favs ul.desc h3 {
     color: var(--theme-color);
-    font-weight: normal;
-    font-family: "Josefin Sans Semibold";
+    font-family: 'Josefin Sans';
+    font-weight: 600;
+    -webkit-font-feature-settings: "kern" 1;
+    -moz-font-feature-settings: "kern" 1;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
     font-size: 24px;
+    letter-spacing: 0.005em;
     margin: 0;
     text-align: center;
 }
@@ -467,8 +538,13 @@ a {
 
 #favs ul.desc p {
     color: var(--theme-color);
-    font-family: "Josefin Sans Regular";
+    font-family: 'Josefin Sans';
+    -webkit-font-feature-settings: "kern" 1;
+    -moz-font-feature-settings: "kern" 1;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
     font-size: 24px;
+    letter-spacing: 0.005em;
     margin: 0;
     text-align: center;
 }
@@ -518,9 +594,15 @@ a {
 
 #favs div.arrows h4 {
     color: var(--theme-color);
-    font-weight: normal;
-    font-family: "Coco Gothic Light Italic";
+    font-family: 'Coco Gothic';
+    font-weight: 300;
+    font-style: italic;
+    -webkit-font-feature-settings: "kern" 1;
+    -moz-font-feature-settings: "kern" 1;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
     font-size: var(--font-size);
+    letter-spacing: 0.0005em;
     line-height: var(--font-size);
     margin: 0;
 }
@@ -560,7 +642,12 @@ a {
 #favs div.rotate h1 {
     color: var(--background-color);
     font-family: "Typography Times";
+    -webkit-font-feature-settings: "kern" 1;
+    -moz-font-feature-settings: "kern" 1;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
     font-size: var(--font-size);
+    letter-spacing: 0.005em;
     line-height: var(--line-height);
 }
 
@@ -596,7 +683,7 @@ a {
 
 #life div.title h1 {
     color: #84542a;
-    font-family: "Themysion";
+    font-family: 'Themysion';
     font-size: 140px;
     line-height: 90px;
     width: 100%;
@@ -606,8 +693,13 @@ a {
 #life div.title h2 {
     color: #84542a;
     font-family: "Romile";
+    -webkit-font-feature-settings: "kern" 1;
+    -moz-font-feature-settings: "kern" 1;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
     font-size: 45px;
-    letter-spacing: 1px;
+    /* letter-spacing: 1px; */
+    letter-spacing: 0.02em;
     width: 100%;
     margin: 10px 0 15px 0;
     text-align: right;
@@ -661,8 +753,13 @@ a {
 
 #life div.right p {
     color: #84542a;
-    font-family: "Josefin Sans Regular";
+    font-family: 'Josefin Sans';
+    -webkit-font-feature-settings: "kern" 1;
+    -moz-font-feature-settings: "kern" 1;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
     font-size: 21px;
+    letter-spacing: 0.0005em;
     text-indent: 35px;
 }
 
@@ -689,8 +786,14 @@ a {
 
 #love div.text p {
     color: #84542a;
-    font-family: "Josefin Sans Italic";
+    font-family: 'Josefin Sans';
+    font-style: italic;
+    -webkit-font-feature-settings: "kern" 1;
+    -moz-font-feature-settings: "kern" 1;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
     font-size: 21px;
+    /* letter-spacing: 0.0005em; */
     text-align: center;
 }
 
@@ -711,8 +814,13 @@ a {
 #love div.title h1 {
     color: var(--light-black);
     font-family: "Romile";
+    -webkit-font-feature-settings: "kern" 1;
+    -moz-font-feature-settings: "kern" 1;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
     text-transform: uppercase;
-    letter-spacing: 10px;
+    /* letter-spacing: 10px; */
+    letter-spacing: 0.125em;
     font-size: 80px;
     line-height: 100px;
 }
@@ -1261,7 +1369,7 @@ a {
     }
 
     #love div.title h1 {
-        letter-spacing: 9px;
+        /* letter-spacing: 9px; */
         font-size: 70px;
         line-height: 90px;
     }
@@ -1383,7 +1491,7 @@ a {
     }
 
     #love div.title h1 {
-        letter-spacing: 9px;
+        /* letter-spacing: 9px; */
         font-size: 65px;
         line-height: 85px;
     }
@@ -1444,9 +1552,9 @@ a {
         --line-height: 80px;
     }
 
-    #top-page div.text h1 {
+    /* #top-page div.text h1 {
         letter-spacing: 12px;
-    }
+    } */
 
     #top-page div.right div.image {
         --margin-top: 10px;
@@ -1589,7 +1697,7 @@ a {
     }
 
     #love div.title h1 {
-        letter-spacing: 8px;
+        /* letter-spacing: 8px; */
         font-size: 50px;
         line-height: 64px;
     }
@@ -1650,9 +1758,9 @@ a {
         --line-height: 65px;
     }
 
-    #top-page div.text h1 {
+    /* #top-page div.text h1 {
         letter-spacing: 10px;
-    }
+    } */
 
     #top-page div.right img {
         --image-width: 205px;
@@ -1805,7 +1913,7 @@ a {
     }
 
     #love div.title h1 {
-        letter-spacing: 8px;
+        /* letter-spacing: 8px; */
         font-size: 45px;
         line-height: 59px;
     }
@@ -1938,9 +2046,9 @@ a {
         right: 20px;
     }
 
-    #love div.title h1 {
+    /* #love div.title h1 {
         letter-spacing: 7px;
-    }
+    } */
 
 }
 
@@ -2177,9 +2285,9 @@ a {
         --line-height: 55px;
     }
 
-    #top-page div.text h1 {
+    /* #top-page div.text h1 {
         letter-spacing: 8px;
-    }
+    } */
 
     #top-page div.text h1:first-child {
         left: 0;
@@ -2431,7 +2539,7 @@ a {
     }
 
     #love div.title h1 {
-        letter-spacing: 6px;
+        /* letter-spacing: 6px; */
         font-size: 35px;
         line-height: 45px;
     }

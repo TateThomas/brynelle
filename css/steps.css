@@ -1,23 +1,45 @@
 @font-face {
-    font-family: "Romile";
-    src: url(/fonts/title/RomilePersonalUse-x3Xdr.otf) format("opentype");
+    font-family: 'Romile';
+    src: url('/fonts/title/RomilePersonalUse.eot');
+    src: url('/fonts/title/RomilePersonalUse.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/title/RomilePersonalUse.woff2') format('woff2'),
+        url('/fonts/title/RomilePersonalUse.woff') format('woff'),
+        url('/fonts/title/RomilePersonalUse.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-    font-family: "Black Aroug";
-    src:
-        url(/fonts/title/black-aroug/BlackArougDemoVersionRegular-jE6ly.otf) format("opentype"),
-        url(/fonts/title/black-aroug/BlackArougDemoVersionRegular-GOpRA.ttf) format("truetype");
+    font-family: 'Black Aroug';
+    src: url('/fonts/title/black-aroug/BlackAroug-DemoVersion-Regular.eot');
+    src: url('/fonts/title/black-aroug/BlackAroug-DemoVersion-Regular.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/title/black-aroug/BlackAroug-DemoVersion-Regular.woff2') format('woff2'),
+        url('/fonts/title/black-aroug/BlackAroug-DemoVersion-Regular.woff') format('woff'),
+        url('/fonts/title/black-aroug/BlackAroug-DemoVersion-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-    font-family: "Josefin Sans Italic";
-    src: url(/fonts/paragraph/josefin-sans/josefin-sans.italic.ttf) format("truetype");
+    font-family: 'Josefin Sans';
+    src: url('/fonts/paragraph/josefin-sans/JosefinSans-Italic.eot');
+    src: url('/fonts/paragraph/josefin-sans/JosefinSans-Italic.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/paragraph/josefin-sans/JosefinSans-Italic.woff2') format('woff2'),
+        url('/fonts/paragraph/josefin-sans/JosefinSans-Italic.woff') format('woff'),
+        url('/fonts/paragraph/josefin-sans/JosefinSans-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
 }
 
 @font-face {
-    font-family: "Josefin Sans Semibold";
-    src: url(/fonts/paragraph/josefin-sans/josefin-sans.semibold.ttf) format("truetype");
+    font-family: 'Josefin Sans';
+    src: url('/fonts/paragraph/josefin-sans/JosefinSans-SemiBold.eot');
+    src: url('/fonts/paragraph/josefin-sans/JosefinSans-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/paragraph/josefin-sans/JosefinSans-SemiBold.woff2') format('woff2'),
+        url('/fonts/paragraph/josefin-sans/JosefinSans-SemiBold.woff') format('woff'),
+        url('/fonts/paragraph/josefin-sans/JosefinSans-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
 }
 
 
@@ -47,7 +69,12 @@
 #steps div.title h2 {
     color: var(--light-black);
     font-family: "Black Aroug";
-    letter-spacing: 5px;
+    -webkit-font-feature-settings: "kern" 1;
+    -moz-font-feature-settings: "kern" 1;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
+    /* letter-spacing: 5px; */
+    letter-spacing: 0.08em;
     font-size: 60px;
     text-transform: uppercase;
 }
@@ -105,8 +132,13 @@
     color: var(--light-black);
     font-weight: normal;
     font-family: "Romile";
+    -webkit-font-feature-settings: "kern" 1;
+    -moz-font-feature-settings: "kern" 1;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
     font-size: 27px;
     letter-spacing: 1px;
+    letter-spacing: 0.02em;
     width: var(--h3-width);
     text-align: center;
 }
@@ -117,8 +149,14 @@
     --p-padding: calc((var(--h3-width) - var(--p-width)) / 2);
 
     color: var(--light-black);
-    font-family: "Josefin Sans Italic";
+    font-family: 'Josefin Sans';
+    font-style: italic;
+    -webkit-font-feature-settings: "kern" 1;
+    -moz-font-feature-settings: "kern" 1;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
     font-size: 19px;
+    letter-spacing: 0.001em;
     width: var(--p-width);
     line-height: var(--line-height);
     height: calc(var(--line-height) * 2);
@@ -144,16 +182,27 @@
     color: var(--light-black);
     font-family: "Black Aroug";
     text-transform: uppercase;
+    -webkit-font-feature-settings: "kern" 1;
+    -moz-font-feature-settings: "kern" 1;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
     font-size: 50px;
-    letter-spacing: 1px;
+    /* letter-spacing: 1px; */
+    letter-spacing: 0.02em;
 }
 
 #steps div.faq a {
     display: flex;
     flex-direction: column;
     color: var(--light-black);
-    font-family: "Josefin Sans Semibold";
+    font-family: 'Josefin Sans';
+    font-weight: 600;
+    -webkit-font-feature-settings: "kern" 1;
+    -moz-font-feature-settings: "kern" 1;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
     font-size: 21px;
+    letter-spacing: 0.001em;
     width: -webkit-max-content;
     width: -moz-max-content;
     width: max-content;

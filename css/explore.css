@@ -3,35 +3,69 @@
 
 
 @font-face {
-    font-family: "Alta";
-    src: url(/fonts/title/alta-regular.otf) format("opentype");
+    font-family: 'Alta';
+    src: url('/fonts/title/Alta_regular.eot');
+    src: url('/fonts/title/Alta_regular.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/title/Alta_regular.woff2') format('woff2'),
+        url('/fonts/title/Alta_regular.woff') format('woff'),
+        url('/fonts/title/Alta_regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-    font-family: "Romile";
-    src: url(/fonts/title/RomilePersonalUse-x3Xdr.otf) format("opentype");
+    font-family: 'Romile';
+    src: url('/fonts/title/RomilePersonalUse.eot');
+    src: url('/fonts/title/RomilePersonalUse.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/title/RomilePersonalUse.woff2') format('woff2'),
+        url('/fonts/title/RomilePersonalUse.woff') format('woff'),
+        url('/fonts/title/RomilePersonalUse.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-    font-family: "Black Aroug";
-    src:
-        url(/fonts/title/black-aroug/BlackArougDemoVersionRegular-jE6ly.otf) format("opentype"),
-        url(/fonts/title/black-aroug/BlackArougDemoVersionRegular-GOpRA.ttf) format("truetype");
+    font-family: 'Black Aroug';
+    src: url('/fonts/title/black-aroug/BlackAroug-DemoVersion-Regular.eot');
+    src: url('/fonts/title/black-aroug/BlackAroug-DemoVersion-Regular.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/title/black-aroug/BlackAroug-DemoVersion-Regular.woff2') format('woff2'),
+        url('/fonts/title/black-aroug/BlackAroug-DemoVersion-Regular.woff') format('woff'),
+        url('/fonts/title/black-aroug/BlackAroug-DemoVersion-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-    font-family: "Josefin Sans Regular";
-    src: url(/fonts/paragraph/josefin-sans/josefin-sans.regular.ttf) format("truetype");
+    font-family: 'Josefin Sans';
+    src: url('/fonts/paragraph/josefin-sans/JosefinSans.eot');
+    src: url('/fonts/paragraph/josefin-sans/JosefinSans.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/paragraph/josefin-sans/JosefinSans.woff2') format('woff2'),
+        url('/fonts/paragraph/josefin-sans/JosefinSans.woff') format('woff'),
+        url('/fonts/paragraph/josefin-sans/JosefinSans.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-    font-family: "Josefin Sans Semibold";
-    src: url(/fonts/paragraph/josefin-sans/josefin-sans.semibold.ttf) format("truetype");
+    font-family: 'Josefin Sans';
+    src: url('/fonts/paragraph/josefin-sans/JosefinSans-SemiBold.eot');
+    src: url('/fonts/paragraph/josefin-sans/JosefinSans-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/paragraph/josefin-sans/JosefinSans-SemiBold.woff2') format('woff2'),
+        url('/fonts/paragraph/josefin-sans/JosefinSans-SemiBold.woff') format('woff'),
+        url('/fonts/paragraph/josefin-sans/JosefinSans-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
 }
 
 @font-face {
-    font-family: "Josefin Sans Semibold Italic";
-    src: url(/fonts/paragraph/josefin-sans/josefin-sans.semibold-italic.ttf) format("truetype");
+    font-family: 'Josefin Sans';
+    src: url('/fonts/paragraph/josefin-sans/JosefinSans-SemiBoldItalic.eot');
+    src: url('/fonts/paragraph/josefin-sans/JosefinSans-SemiBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/paragraph/josefin-sans/JosefinSans-SemiBoldItalic.woff2') format('woff2'),
+        url('/fonts/paragraph/josefin-sans/JosefinSans-SemiBoldItalic.woff') format('woff'),
+        url('/fonts/paragraph/josefin-sans/JosefinSans-SemiBoldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
 }
 
 
@@ -96,7 +130,12 @@ a {
 #content>div>h2 {
     color: var(--light-black);
     font-family: "Romile";
-    letter-spacing: 1px;
+    -webkit-font-feature-settings: "kern" 1;
+    -moz-font-feature-settings: "kern" 1;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
+    /* letter-spacing: 1px; */
+    letter-spacing: 0.025em;
     font-size: 50px;
     padding-bottom: 15px;
 }
@@ -256,7 +295,8 @@ a {
 #filters h2,
 #filters li {
     color: var(--light-black);
-    font-family: "Josefin Sans Semibold";
+    font-family: 'Josefin Sans';
+    font-weight: 600;
 }
 
 #filters ul,
@@ -301,7 +341,9 @@ a {
 }
 
 #filters>ul>li li {
-    font-family: "Josefin Sans Semibold Italic";
+    font-family: 'Josefin Sans';
+    font-weight: 600;
+    font-style: italic;
     padding-bottom: 4px;
     padding-left: 25px;
 }
@@ -385,7 +427,8 @@ a {
     flex-direction: column;
     position: absolute;
     left: 0;
-    right: 0;
+    /* right: 0; */
+    top: 0;
     width: inherit;
     height: 100%;
     background-color: transparent;
@@ -416,6 +459,7 @@ a {
 #photos h3 {
     position: relative;
     width: calc(100% - 10px);
+    line-height: 20px;
     height: 20px;
     padding: 0 5px 0 5px;
     margin: 0;
@@ -423,7 +467,12 @@ a {
     font-size: 20px;
     font-family: "Alta";
     font-weight: normal;
-    letter-spacing: 1px;
+    -webkit-font-feature-settings: "kern" 1;
+    -moz-font-feature-settings: "kern" 1;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
+    /* letter-spacing: 1px; */
+    letter-spacing: 0.05em;
     color: var(--light-black);
     -webkit-transition: top .75s, margin var(--transition-time);
     -moz-transition: top .75s, margin var(--transition-time);
@@ -457,11 +506,13 @@ a {
 
 #photos picture {
     display: flex;
+    width: 100%;
     min-height: var(--image-height);
     /* max-height: 100%; */
     max-height: var(--image-height);
     min-width: calc(var(--image-width) + ((var(--img-span) - 1) * (var(--image-width) + var(--column-gap))));
     margin: auto;
+    overflow: hidden;
     -webkit-transition: height var(--transition-time), max-height var(--transition-time), width var(--transition-time), max-width var(--transition-time);
     -moz-transition: height var(--transition-time), max-height var(--transition-time), width var(--transition-time), max-width var(--transition-time);
     -o-transition: height var(--transition-time), max-height var(--transition-time), width var(--transition-time), max-width var(--transition-time);
@@ -476,6 +527,7 @@ a {
     */
     min-width: calc(var(--image-width) + ((var(--img-span) - 1) * (var(--image-width) + var(--column-gap))));
     max-width: 100%;
+    height: 100%;
     min-height: var(--image-height);
     max-height: 100%;
     margin: auto;
@@ -556,7 +608,7 @@ a {
 
 #photos div.expanded picture {
     max-height: 85vh;
-    width: 100%;
+    /* width: 100%; */
     /* margin: 0; */
     -webkit-transition: height var(--transition-time), max-height var(--transition-time), width var(--transition-time), max-width var(--transition-time), margin var(--transition-time);
     -moz-transition: height var(--transition-time), max-height var(--transition-time), width var(--transition-time), max-width var(--transition-time), margin var(--transition-time);
@@ -616,8 +668,9 @@ a {
 
 #photos div.expanded div.container>div:last-child h3 {
     font-size: 17px;
+    line-height: 17px;
     height: 17px;
-    margin: auto 0 15px 0;
+    margin: auto 0 12px 0;
 }
 
 #photos div.expanded div.container::after {
@@ -630,7 +683,7 @@ a {
     top: 10px;
     right: 20px;
     /* font-family: sans-serif; */
-    font-family: "Josefin Sans Regular";
+    font-family: 'Josefin Sans';
     font-size: 50px;
     line-height: 45px;
     text-align: center;
@@ -864,8 +917,17 @@ a {
     }
 
     #photos h3 {
-        font-size: 15px;
-        line-height: 15px;
+        font-size: 14px;
+        line-height: 14px;
+        height: 14px;
+    }
+
+    #photos div.expanded div.container>div:first-child h3{
+        margin: auto 0 37px 0;
+    }
+
+    #photos div.expanded div.container>div:last-child h3{
+        margin: auto 0 9px 0;
     }
 
 }

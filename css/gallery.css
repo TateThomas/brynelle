@@ -4,30 +4,58 @@
 
 
 @font-face {
-    font-family: "Alta";
-    src: url(/fonts/title/alta-regular.otf) format("opentype");
+    font-family: 'Alta';
+    src: url('/fonts/title/Alta_regular.eot');
+    src: url('/fonts/title/Alta_regular.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/title/Alta_regular.woff2') format('woff2'),
+        url('/fonts/title/Alta_regular.woff') format('woff'),
+        url('/fonts/title/Alta_regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-    font-family: "Romile";
-    src: url(/fonts/title/RomilePersonalUse-x3Xdr.otf) format("opentype");
+    font-family: 'Romile';
+    src: url('/fonts/title/RomilePersonalUse.eot');
+    src: url('/fonts/title/RomilePersonalUse.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/title/RomilePersonalUse.woff2') format('woff2'),
+        url('/fonts/title/RomilePersonalUse.woff') format('woff'),
+        url('/fonts/title/RomilePersonalUse.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-    font-family: "Black Aroug";
-    src:
-        url(/fonts/title/black-aroug/BlackArougDemoVersionRegular-jE6ly.otf) format("opentype"),
-        url(/fonts/title/black-aroug/BlackArougDemoVersionRegular-GOpRA.ttf) format("truetype");
+    font-family: 'Black Aroug';
+    src: url('/fonts/title/black-aroug/BlackAroug-DemoVersion-Regular.eot');
+    src: url('/fonts/title/black-aroug/BlackAroug-DemoVersion-Regular.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/title/black-aroug/BlackAroug-DemoVersion-Regular.woff2') format('woff2'),
+        url('/fonts/title/black-aroug/BlackAroug-DemoVersion-Regular.woff') format('woff'),
+        url('/fonts/title/black-aroug/BlackAroug-DemoVersion-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-    font-family: "Josefin Sans Regular";
-    src: url(/fonts/paragraph/josefin-sans/josefin-sans.regular.ttf) format("truetype");
+    font-family: 'Josefin Sans';
+    src: url('/fonts/paragraph/josefin-sans/JosefinSans.eot');
+    src: url('/fonts/paragraph/josefin-sans/JosefinSans.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/paragraph/josefin-sans/JosefinSans.woff2') format('woff2'),
+        url('/fonts/paragraph/josefin-sans/JosefinSans.woff') format('woff'),
+        url('/fonts/paragraph/josefin-sans/JosefinSans.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-    font-family: "Holland Regular";
-    src: url(/fonts/cursive/holland/Holland-JRGaj.ttf) format("truetype");
+    font-family: 'Holland Regular';
+    src: url('/fonts/cursive/holland/Holland.eot');
+    src: url('/fonts/cursive/holland/Holland.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/cursive/holland/Holland.woff2') format('woff2'),
+        url('/fonts/cursive/holland/Holland.woff') format('woff'),
+        url('/fonts/cursive/holland/Holland.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 
@@ -123,13 +151,18 @@ a {
 #top-page div.picture h2 {
     position: absolute;
     color: #fffbf5;
+    font-family: "Black Aroug";
+    -webkit-font-feature-settings: "kern" 1;
+    -moz-font-feature-settings: "kern" 1;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
+    font-size: 120px;
+    letter-spacing: 15px;
+    letter-spacing: 0.135em;
     width: 100%;
     top: 100px;
     left: 0;
     text-align: center;
-    font-size: 120px;
-    letter-spacing: 15px;
-    font-family: "Black Aroug";
     z-index: 4;
 }
 
@@ -172,7 +205,12 @@ div.button h3 {
     margin: 0;
     color: #0e0f0c;
     font-family: "Romile";
-    letter-spacing: 2px;
+    -webkit-font-feature-settings: "kern" 1;
+    -moz-font-feature-settings: "kern" 1;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
+    /* letter-spacing: 2px; */
+    letter-spacing: 0.06em;
     font-size: 36px;
 }
 
@@ -189,7 +227,7 @@ div.button div:hover {
 
 #top-page div.quick h2 {
     color: #b67354;
-    font-family: "Holland Regular";
+    font-family: 'Holland Regular';
     font-size: 75px;
     padding: 35px;
     margin: auto;
@@ -210,9 +248,14 @@ div.button div:hover {
     color: var(--light-black);
     text-align: center;
     font-family: "Black Aroug";
+    -webkit-font-feature-settings: "kern" 1;
+    -moz-font-feature-settings: "kern" 1;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
     /*    font-weight: bold;*/
     font-size: 60px;
-    letter-spacing: 3px;
+    /* letter-spacing: 3px; */
+    letter-spacing: 0.05em;
     padding: 75px 0 25px 0;
 }
 
@@ -257,9 +300,14 @@ div.button div:hover {
     color: #fffbf5;
     margin: auto;
     font-family: "Black Aroug";
+    -webkit-font-feature-settings: "kern" 1;
+    -moz-font-feature-settings: "kern" 1;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
     text-transform: uppercase;
     /*    font-weight: bold;*/
     letter-spacing: 3px;
+    letter-spacing: 0.045em;
     font-size: 65px;
     line-height: 100%;
     z-index: 4;
@@ -302,7 +350,12 @@ div.button div:hover {
     color: var(--light-black);
     text-align: center;
     font-family: "Alta";
+    -webkit-font-feature-settings: "kern" 1;
+    -moz-font-feature-settings: "kern" 1;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
     font-size: 45px;
+    letter-spacing: 0.005em;
     margin-top: auto;
 }
 
@@ -310,8 +363,13 @@ div.button div:hover {
     width: 100%;
     text-align: center;
     color: var(--light-black);
-    font-family: "Josefin Sans Regular";
+    font-family: 'Josefin Sans';
+    -webkit-font-feature-settings: "kern" 1;
+    -moz-font-feature-settings: "kern" 1;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
     font-size: 21px;
+    letter-spacing: 0.0004em;
     font-weight: normal;
     margin: 5px 0 auto 0;
 }

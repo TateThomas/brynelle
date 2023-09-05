@@ -4,30 +4,58 @@
 
 
 @font-face {
-    font-family: "Antically";
-    src: url(/fonts/cursive/AnticallyRegular-OVox8.ttf) format("truetype");
+    font-family: 'Romile';
+    src: url('/fonts/title/RomilePersonalUse.eot');
+    src: url('/fonts/title/RomilePersonalUse.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/title/RomilePersonalUse.woff2') format('woff2'),
+        url('/fonts/title/RomilePersonalUse.woff') format('woff'),
+        url('/fonts/title/RomilePersonalUse.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-    font-family: "Romile";
-    src: url(/fonts/title/RomilePersonalUse-x3Xdr.otf) format("opentype");
+    font-family: 'Black Aroug';
+    src: url('/fonts/title/black-aroug/BlackAroug-DemoVersion-Regular.eot');
+    src: url('/fonts/title/black-aroug/BlackAroug-DemoVersion-Regular.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/title/black-aroug/BlackAroug-DemoVersion-Regular.woff2') format('woff2'),
+        url('/fonts/title/black-aroug/BlackAroug-DemoVersion-Regular.woff') format('woff'),
+        url('/fonts/title/black-aroug/BlackAroug-DemoVersion-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-    font-family: "Black Aroug";
-    src:
-        url(/fonts/title/black-aroug/BlackArougDemoVersionRegular-jE6ly.otf) format("opentype"),
-        url(/fonts/title/black-aroug/BlackArougDemoVersionRegular-GOpRA.ttf) format("truetype");
+    font-family: 'Josefin Sans';
+    src: url('/fonts/paragraph/josefin-sans/JosefinSans.eot');
+    src: url('/fonts/paragraph/josefin-sans/JosefinSans.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/paragraph/josefin-sans/JosefinSans.woff2') format('woff2'),
+        url('/fonts/paragraph/josefin-sans/JosefinSans.woff') format('woff'),
+        url('/fonts/paragraph/josefin-sans/JosefinSans.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-    font-family: "Josefin Sans Regular";
-    src: url(/fonts/paragraph/josefin-sans/josefin-sans.regular.ttf) format("truetype");
+    font-family: 'Antically';
+    src: url('/fonts/cursive/Antically-Regular.eot');
+    src: url('/fonts/cursive/Antically-Regular.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/cursive/Antically-Regular.woff2') format('woff2'),
+        url('/fonts/cursive/Antically-Regular.woff') format('woff'),
+        url('/fonts/cursive/Antically-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-    font-family: "Holland Regular";
-    src: url(/fonts/cursive/holland/Holland-JRGaj.ttf) format("truetype");
+    font-family: 'Holland Regular';
+    src: url('/fonts/cursive/holland/Holland.eot');
+    src: url('/fonts/cursive/holland/Holland.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/cursive/holland/Holland.woff2') format('woff2'),
+        url('/fonts/cursive/holland/Holland.woff') format('woff'),
+        url('/fonts/cursive/holland/Holland.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 
@@ -118,11 +146,16 @@ a {
 
 #top-page div.picture h2 {
     position: absolute;
+    color: var(--light-black);
+    font-family: "Romile";
+    -webkit-font-feature-settings: "kern" 1;
+    -moz-font-feature-settings: "kern" 1;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
     font-size: 80px;
     line-height: 80px;
-    letter-spacing: 1px;
-    font-family: "Romile";
-    color: var(--light-black);
+    /* letter-spacing: 1px; */
+    letter-spacing: 0.01em;
     z-index: 4;
 }
 
@@ -145,7 +178,7 @@ a {
 
 #top-page div.picture h2 span {
     position: relative;
-    font-family: "Antically";
+    font-family: 'Antically';
     letter-spacing: 0;
     font-size: 47px;
     top: -10px;
@@ -182,14 +215,24 @@ a {
 #worldwide h2 {
     color: #fff9ef;
     font-family: "Romile";
-    letter-spacing: .1px;
+    -webkit-font-feature-settings: "kern" 1;
+    -moz-font-feature-settings: "kern" 1;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
+    /* letter-spacing: .1px; */
+    letter-spacing: 0.003em;
     font-size: 50px;
 }
 
 #worldwide p {
     color: #fff9ef;
-    font-family: "Josefin Sans Regular";
+    font-family: 'Josefin Sans';
+    -webkit-font-feature-settings: "kern" 1;
+    -moz-font-feature-settings: "kern" 1;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
     font-size: 24px;
+    letter-spacing: 0.001em;
     text-align: center;
     margin: 10px 0 10px 0;
 }
@@ -199,7 +242,7 @@ a {
     text-decoration: underline;
     text-decoration-thickness: 1px;
     text-underline-offset: 2px;
-    padding: 5px;
+    padding: 5px 0 5px 0;
     transition: color .1s;
 }
 
@@ -233,7 +276,7 @@ a {
 
 #romance h2 {
     color: var(--light-black);
-    font-family: "Holland Regular";
+    font-family: 'Holland Regular';
     font-size: 75px;
 }
 
@@ -283,8 +326,13 @@ a {
 #dream h2 {
     color: var(--light-black);
     font-family: "Romile";
+    -webkit-font-feature-settings: "kern" 1;
+    -moz-font-feature-settings: "kern" 1;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
     font-size: 50px;
-    letter-spacing: 2px;
+    /* letter-spacing: 2px; */
+    letter-spacing: 0.04em;
     margin-bottom: 50px;
 }
 
@@ -295,10 +343,15 @@ a {
 
 #dream li {
     color: var(--light-black);
-    font-family: "Josefin Sans Regular";
+    font-family: 'Josefin Sans';
+    -webkit-font-feature-settings: "kern" 1;
+    -moz-font-feature-settings: "kern" 1;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
     text-transform: uppercase;
     text-align: center;
     font-size: 24px;
+    letter-spacing: 0.0008em;
     margin: 10px 0 10px 0;
 }
 
@@ -322,7 +375,7 @@ a {
     position: absolute;
     color: var(--light-black);
     color: #533626;
-    font-family: "Holland Regular";
+    font-family: 'Holland Regular';
     font-size: 80px;
     top: -45px;
     left: 50px;
@@ -330,8 +383,13 @@ a {
 
 #discount h1 {
     font-family: "Black Aroug";
+    -webkit-font-feature-settings: "kern" 1;
+    -moz-font-feature-settings: "kern" 1;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
     font-size: 60px;
     letter-spacing: 1px;
+    letter-spacing: 0.02em;
     word-spacing: 5px;
     text-transform: uppercase;
     border-bottom: 1px solid white;
@@ -605,7 +663,7 @@ a {
     }
 
     #worldwide a {
-        padding: 3px;
+        padding: 3px 0 3px 0;
     }
 
     #romance {
@@ -660,7 +718,7 @@ a {
     }
 
     #worldwide a {
-        padding: 1px;
+        padding: 1px 0 1px 0;
     }
 
     #dream div.arch {

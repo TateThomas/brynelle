@@ -5,40 +5,79 @@
 
 
 @font-face {
-    font-family: "Romile";
-    src: url(/fonts/title/RomilePersonalUse-x3Xdr.otf) format("opentype");
+    font-family: 'Romile';
+    src: url('/fonts/title/RomilePersonalUse.eot');
+    src: url('/fonts/title/RomilePersonalUse.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/title/RomilePersonalUse.woff2') format('woff2'),
+        url('/fonts/title/RomilePersonalUse.woff') format('woff'),
+        url('/fonts/title/RomilePersonalUse.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-    font-family: "Black Aroug";
-    src:
-        url(/fonts/title/black-aroug/BlackArougDemoVersionRegular-jE6ly.otf) format("opentype"),
-        url(/fonts/title/black-aroug/BlackArougDemoVersionRegular-GOpRA.ttf) format("truetype");
+    font-family: 'Black Aroug';
+    src: url('/fonts/title/black-aroug/BlackAroug-DemoVersion-Regular.eot');
+    src: url('/fonts/title/black-aroug/BlackAroug-DemoVersion-Regular.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/title/black-aroug/BlackAroug-DemoVersion-Regular.woff2') format('woff2'),
+        url('/fonts/title/black-aroug/BlackAroug-DemoVersion-Regular.woff') format('woff'),
+        url('/fonts/title/black-aroug/BlackAroug-DemoVersion-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-    font-family: "Tautage";
-    src: url(/fonts/title/VtksTatuage2-3GzL.ttf) format("truetype");
+    font-family: 'Tautage';
+    src: url('/fonts/title/VtksTautage2.eot');
+    src: url('/fonts/title/VtksTautage2.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/title/VtksTautage2.woff2') format('woff2'),
+        url('/fonts/title/VtksTautage2.woff') format('woff'),
+        url('/fonts/title/VtksTautage2.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-    font-family: "Josefin Sans Regular";
-    src: url(/fonts/paragraph/josefin-sans/josefin-sans.regular.ttf) format("truetype");
+    font-family: 'Josefin Sans';
+    src: url('/fonts/paragraph/josefin-sans/JosefinSans.eot');
+    src: url('/fonts/paragraph/josefin-sans/JosefinSans.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/paragraph/josefin-sans/JosefinSans.woff2') format('woff2'),
+        url('/fonts/paragraph/josefin-sans/JosefinSans.woff') format('woff'),
+        url('/fonts/paragraph/josefin-sans/JosefinSans.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-    font-family: "Josefin Sans Semibold";
-    src: url(/fonts/paragraph/josefin-sans/josefin-sans.semibold.ttf) format("truetype");
+    font-family: 'Josefin Sans';
+    src: url('/fonts/paragraph/josefin-sans/JosefinSans-SemiBold.eot');
+    src: url('/fonts/paragraph/josefin-sans/JosefinSans-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/paragraph/josefin-sans/JosefinSans-SemiBold.woff2') format('woff2'),
+        url('/fonts/paragraph/josefin-sans/JosefinSans-SemiBold.woff') format('woff'),
+        url('/fonts/paragraph/josefin-sans/JosefinSans-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
 }
 
 @font-face {
-    font-family: "Roboto Condensed";
-    src: url(/fonts/paragraph/roboto-condensed/roboto-condensed.regular.ttf) format("truetype");
+    font-family: 'Roboto Condensed';
+    src: url('/fonts/paragraph/roboto-condensed/RobotoCondensed-Regular.eot');
+    src: url('/fonts/paragraph/roboto-condensed/RobotoCondensed-Regular.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/paragraph/roboto-condensed/RobotoCondensed-Regular.woff2') format('woff2'),
+        url('/fonts/paragraph/roboto-condensed/RobotoCondensed-Regular.woff') format('woff'),
+        url('/fonts/paragraph/roboto-condensed/RobotoCondensed-Regular.ttf') format('truetype');
+    font-style: normal;
 }
 
 @font-face {
-    font-family: "Holland Clean";
-    src: url(/fonts/cursive/holland/Holland-JRGaj.ttf) format("truetype");
+    font-family: 'Holland Clean';
+    src: url('/fonts/cursive/holland/HollandMonolineClean.eot');
+    src: url('/fonts/cursive/holland/HollandMonolineClean.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/cursive/holland/HollandMonolineClean.woff2') format('woff2'),
+        url('/fonts/cursive/holland/HollandMonolineClean.woff') format('woff'),
+        url('/fonts/cursive/holland/HollandMonolineClean.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 
@@ -128,7 +167,12 @@ a {
 #investment div.text h1 {
     font-size: 110px;
     font-family: "Romile";
-    letter-spacing: 5px;
+    -webkit-font-feature-settings: "kern" 1;
+    -moz-font-feature-settings: "kern" 1;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
+    /* letter-spacing: 5px; */
+    letter-spacing: 0.045em;
     color: #876d46;
     color: white;
 }
@@ -152,9 +196,14 @@ a {
 
 #weddings div.title h2 {
     color: #7a6d4e;
-    font-size: 45px;
-    letter-spacing: 3px;
     font-family: "Black Aroug";
+    -webkit-font-feature-settings: "kern" 1;
+    -moz-font-feature-settings: "kern" 1;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
+    font-size: 45px;
+    /* letter-spacing: 3px; */
+    letter-spacing: 0.07em;
 }
 
 #weddings div.title img {
@@ -202,8 +251,13 @@ a {
 #weddings li h2,
 #families div.container.b h2 {
     color: #3f331f;
-    font-family: "Josefin Sans Regular";
+    font-family: "Josefin Sans";
+    -webkit-font-feature-settings: "kern" 1;
+    -moz-font-feature-settings: "kern" 1;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
     font-size: 24px;
+    letter-spacing: 0.005em;
 }
 
 #weddings li h3,
@@ -212,7 +266,7 @@ a {
 #families div.container.b h3 {
     color: #ad8d58;
     font-weight: normal;
-    font-family: "Holland Clean";
+    font-family: 'Holland Clean';
     font-size: 28px;
     width: 100%;
     margin: 0;
@@ -245,8 +299,14 @@ a {
 
 #weddings div.price h2,
 #families div.price h2 {
-    font-family: "Josefin Sans Semibold";
+    font-family: 'Josefin Sans';
+    font-weight: 600;
+    -webkit-font-feature-settings: "kern" 1;
+    -moz-font-feature-settings: "kern" 1;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
     font-size: 35px;
+    letter-spacing: 0.008em;
 }
 
 #weddings div.price h2 span,
@@ -320,8 +380,13 @@ a {
     position: absolute;
     color: #876d46;
     font-family: "Romile";
+    -webkit-font-feature-settings: "kern" 1;
+    -moz-font-feature-settings: "kern" 1;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
     font-size: var(--vertical-font-size);
-    letter-spacing: 8px;
+    /* letter-spacing: 8px; */
+    letter-spacing: 0.15em;
     transform: rotate(-90deg);
     transform-origin: right top;
     width: -webkit-max-content;
@@ -350,15 +415,26 @@ a {
     display: block;
     color: #42433e;
     font-family: "Tautage";
+    -webkit-font-feature-settings: "kern" 1;
+    -moz-font-feature-settings: "kern" 1;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
     text-align: center;
     font-size: 23px;
+    letter-spacing: 0.007em;
     line-height: 30px;
     margin-bottom: 15px;
 }
 
 #split li h2:last-child {
-    font-family: "Josefin Sans Semibold";
+    font-family: 'Josefin Sans';
+    font-weight: 600;
+    -webkit-font-feature-settings: "kern" 1;
+    -moz-font-feature-settings: "kern" 1;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
     font-size: 30px;
+    letter-spacing: 0.008em;
 }
 
 #split li h2 span {
@@ -393,8 +469,13 @@ a {
 #split div.elopements>h2 {
     color: #42433e;
     font-family: "Romile";
+    -webkit-font-feature-settings: "kern" 1;
+    -moz-font-feature-settings: "kern" 1;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
     font-size: 50px;
-    letter-spacing: 16px;
+    /* letter-spacing: 16px; */
+    letter-spacing: 0.32em;
     width: 100%;
 }
 
@@ -434,8 +515,14 @@ a {
 
 #split div.arch h2 {
     color: #3f331f;
-    font-family: "Josefin Sans Semibold";
+    font-family: 'Josefin Sans';
+    font-weight: 600;
+    -webkit-font-feature-settings: "kern" 1;
+    -moz-font-feature-settings: "kern" 1;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
     font-size: 30px;
+    letter-spacing: 0.008em;
 }
 
 #split div.arch h2 span {
@@ -444,8 +531,14 @@ a {
 
 #split div.text-container p {
     color: #3f331f;
-    font-family: "Josefin Sans Semibold";
+    font-family: 'Josefin Sans';
+    font-weight: 600;
+    -webkit-font-feature-settings: "kern" 1;
+    -moz-font-feature-settings: "kern" 1;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
     font-size: 16px;
+    letter-spacing: 0.0025em;
     text-align: center;
 }
 
@@ -464,9 +557,14 @@ a {
 
 #split div.button h3 {
     color: #3f331f;
-    font-weight: normal;
-    font-family: "Josefin Sans Semibold";
+    font-family: 'Josefin Sans';
+    font-weight: 600;
+    -webkit-font-feature-settings: "kern" 1;
+    -moz-font-feature-settings: "kern" 1;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
     font-size: 16px;
+    letter-spacing: 0.005em;
     padding: 6px 15px 6px 15px;
     margin: 0;
     transition: color .1s;
@@ -535,8 +633,13 @@ a {
     color: #b97c5d;
     /* font-family: "Romile"; */
     font-family: "Black Aroug";
+    -webkit-font-feature-settings: "kern" 1;
+    -moz-font-feature-settings: "kern" 1;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
     font-size: 40px;
-    letter-spacing: 3px;
+    /* letter-spacing: 3px; */
+    letter-spacing: 0.06em;
     width: 100%;
     margin: 10px 0 40px 0;
     text-align: center;
@@ -592,8 +695,14 @@ a {
 
 #shoots div.price h2 {
     color: #b97c5d;
-    font-family: "Josefin Sans Semibold";
+    font-family: 'Josefin Sans';
+    font-weight: 600;
+    -webkit-font-feature-settings: "kern" 1;
+    -moz-font-feature-settings: "kern" 1;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
     font-size: 37px;
+    letter-spacing: 0.008em;
     line-height: 37px;
     margin-right: auto;
 }
@@ -640,9 +749,14 @@ a {
     color: white;
     color: #b97c5d;
     font-family: "Tautage";
+    -webkit-font-feature-settings: "kern" 1;
+    -moz-font-feature-settings: "kern" 1;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
     font-size: var(--title-size);
     line-height: calc(var(--title-size) + (var(--title-padding) * 2));
     letter-spacing: 15px;
+    letter-spacing: 0.28em;
     padding: 0 30px 0 25px;
     right: 0;
     top: 0;
@@ -735,7 +849,7 @@ a {
 
 #families div.text p {
     color: #7a6d4e;
-    font-family: "Roboto Condensed";
+    font-family: 'Roboto Condensed';
     font-weight: bold;
     font-size: 6px;
     letter-spacing: 1px;
@@ -805,7 +919,8 @@ a {
 }
 
 #families div.price h2 {
-    font-family: "Josefin Sans Semibold" !important;
+    font-family: 'Josefin Sans' !important;
+    font-weight: 600;
     font-size: 35px !important;
 }
 
@@ -2481,7 +2596,7 @@ a {
     }
 
     #families div.title h2 {
-        letter-spacing: 13px;
+        /* letter-spacing: 13px; */
         padding-left: 10px;
         padding-right: 5px;
     }

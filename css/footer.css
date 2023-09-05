@@ -1,6 +1,12 @@
 @font-face {
-    font-family: "Alta";
-    src: url(/fonts/title/alta-regular.otf) format("opentype");
+    font-family: 'Alta';
+    src: url('/fonts/title/Alta_regular.eot');
+    src: url('/fonts/title/Alta_regular.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/title/Alta_regular.woff2') format('woff2'),
+        url('/fonts/title/Alta_regular.woff') format('woff'),
+        url('/fonts/title/Alta_regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 

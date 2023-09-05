@@ -3,35 +3,69 @@
 
 
 @font-face {
-    font-family: "Romile";
-    src: url(/fonts/title/RomilePersonalUse-x3Xdr.otf) format("opentype");
+    font-family: 'Romile';
+    src: url('/fonts/title/RomilePersonalUse.eot');
+    src: url('/fonts/title/RomilePersonalUse.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/title/RomilePersonalUse.woff2') format('woff2'),
+        url('/fonts/title/RomilePersonalUse.woff') format('woff'),
+        url('/fonts/title/RomilePersonalUse.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-    font-family: "Black Aroug";
-    src:
-        url(/fonts/title/black-aroug/BlackArougDemoVersionRegular-jE6ly.otf) format("opentype"),
-        url(/fonts/title/black-aroug/BlackArougDemoVersionRegular-GOpRA.ttf) format("truetype");
+    font-family: 'Black Aroug';
+    src: url('/fonts/title/black-aroug/BlackAroug-DemoVersion-Regular.eot');
+    src: url('/fonts/title/black-aroug/BlackAroug-DemoVersion-Regular.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/title/black-aroug/BlackAroug-DemoVersion-Regular.woff2') format('woff2'),
+        url('/fonts/title/black-aroug/BlackAroug-DemoVersion-Regular.woff') format('woff'),
+        url('/fonts/title/black-aroug/BlackAroug-DemoVersion-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-    font-family: "Coco Gothic Light";
-    src: url(/fonts/paragraph/coco-gothic/coco-gothic.light.ttf) format("truetype");
+    font-family: 'Coco Gothic';
+    src: url('/fonts/paragraph/coco-gothic/CocoGothic-Light.eot');
+    src: url('/fonts/paragraph/coco-gothic/CocoGothic-Light.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/paragraph/coco-gothic/CocoGothic-Light.woff2') format('woff2'),
+        url('/fonts/paragraph/coco-gothic/CocoGothic-Light.woff') format('woff'),
+        url('/fonts/paragraph/coco-gothic/CocoGothic-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
 }
 
 @font-face {
-    font-family: "Josefin Sans Italic";
-    src: url(/fonts/paragraph/josefin-sans/josefin-sans.italic.ttf) format("truetype");
+    font-family: 'Josefin Sans';
+    src: url('/fonts/paragraph/josefin-sans/JosefinSans-Italic.eot');
+    src: url('/fonts/paragraph/josefin-sans/JosefinSans-Italic.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/paragraph/josefin-sans/JosefinSans-Italic.woff2') format('woff2'),
+        url('/fonts/paragraph/josefin-sans/JosefinSans-Italic.woff') format('woff'),
+        url('/fonts/paragraph/josefin-sans/JosefinSans-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
 }
 
 @font-face {
-    font-family: "Source Sans Pro Italic";
-    src: url(/fonts/paragraph/source-sans-pro/source-sans-pro.italic.ttf) format("truetype");
+    font-family: 'Source Sans Pro';
+    src: url('/fonts/paragraph/source-sans-pro/SourceSansPro-It.eot');
+    src: url('/fonts/paragraph/source-sans-pro/SourceSansPro-It.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/paragraph/source-sans-pro/SourceSansPro-It.woff2') format('woff2'),
+        url('/fonts/paragraph/source-sans-pro/SourceSansPro-It.woff') format('woff'),
+        url('/fonts/paragraph/source-sans-pro/SourceSansPro-It.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
 }
 
 @font-face {
-    font-family: "Source Sans Pro Light Italic";
-    src: url(/fonts/paragraph/source-sans-pro/source-sans-pro.light-italic.ttf) format("truetype");
+    font-family: 'Source Sans Pro';
+    src: url('/fonts/paragraph/source-sans-pro/SourceSansPro-LightIt.eot');
+    src: url('/fonts/paragraph/source-sans-pro/SourceSansPro-LightIt.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/paragraph/source-sans-pro/SourceSansPro-LightIt.woff2') format('woff2'),
+        url('/fonts/paragraph/source-sans-pro/SourceSansPro-LightIt.woff') format('woff'),
+        url('/fonts/paragraph/source-sans-pro/SourceSansPro-LightIt.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
 }
 
 
@@ -117,7 +151,7 @@ a {
     --req-red-dim: rgba(217, 48, 37, .09);
     --req-red-dimmer: rgba(217, 48, 37, .05);
     --req-red-dark: #d73025;
-    --form-font: "Source Sans Pro Light Italic";
+    --form-font: 'Source Sans Pro';
 
     width: 625px;
     max-height: 2500px;
@@ -159,7 +193,12 @@ form div.title h1 {
     width: -moz-max-content;
     width: max-content;
     font-family: "Black Aroug";
-    letter-spacing: 1px;
+    -webkit-font-feature-settings: "kern" 1;
+    -moz-font-feature-settings: "kern" 1;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
+    /* letter-spacing: 1px; */
+    letter-spacing: 0.023em;
     text-transform: uppercase;
     font-size: 40px;
     padding: 0 15px 10px 15px;
@@ -183,7 +222,9 @@ form input,
 form select,
 form textarea {
     background-color: #faf3ec;
-    font-family: "Source Sans Pro Light Italic";
+    font-family: 'Source Sans Pro';
+    font-weight: 300;
+    font-style: italic;
     font-size: 15px !important;
 }
 
@@ -192,8 +233,9 @@ div.single-choice label:hover {
 }
 
 form h2 {
-    font-family: var(--form-font);
-    font-family: "Coco Gothic Light";
+    /* font-family: var(--form-font); */
+    font-family: 'Coco Gothic';
+    font-weight: 300;
     font-size: 17px;
 }
 
@@ -324,6 +366,8 @@ div.single-choice {
     width: 100%;
     color: var(--light-black);
     font-family: var(--form-font);
+    font-weight: 300;
+    font-style: italic;
 }
 
 div.single-choice input {
@@ -351,7 +395,9 @@ div.single-choice input:checked {
 div.single-choice label {
     position: relative;
     display: flex;
-    font-family: "Source Sans Pro Italic";
+    font-family: 'Source Sans Pro';
+    font-weight: normal;
+    font-style: italic;
     font-size: 16px;
     width: -webkit-max-content;
     width: -moz-max-content;
@@ -387,13 +433,16 @@ div.choose-date input,
 div.choose-time input {
     min-width: 0;
     font-family: var(--form-font);
+    font-weight: 300;
+    font-style: italic;
 }
 
 div.choose-date label,
 div.choose-time label {
     display: block;
     color: darkgray;
-    font-family: "Coco Gothic Light";
+    font-family: 'Coco Gothic';
+    font-weight: 300;
     font-size: 11px;
     /* line-height: normal; */
     margin-bottom: 5px;
@@ -431,6 +480,8 @@ div.long-answer textarea {
     min-height: 30px;
     max-height: 300px;
     font-family: var(--form-font);
+    font-weight: 300;
+    font-style: italic;
     font-size: 15px;
     line-height: 30px;
 }
@@ -444,7 +495,12 @@ div.submit-button {
 div.submit-button button {
     color: var(--light-black);
     font-family: "Romile";
-    letter-spacing: 1px;
+    -webkit-font-feature-settings: "kern" 1;
+    -moz-font-feature-settings: "kern" 1;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
+    /* letter-spacing: 1px; */
+    letter-spacing: 0.045em;
     font-size: 25px;
     padding: 10px 30px 10px 30px;
     margin: auto;
@@ -519,7 +575,9 @@ div.single-choice.invalid label:last-child::before {
     width: -moz-max-content;
     width: max-content;
     bottom: -17px;
-    font-family: "Source Sans Pro Italic";
+    font-family: 'Source Sans Pro';
+    font-weight: normal;
+    font-style: italic;
     font-size: 11px;
     /* line-height: normal; */
 }
@@ -575,8 +633,13 @@ div.single-choice.invalid label:last-child::before {
 #contact div.title h1 {
     color: var(--light-black);
     font-family: "Black Aroug";
+    -webkit-font-feature-settings: "kern" 1;
+    -moz-font-feature-settings: "kern" 1;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    /* letter-spacing: 1px; */
+    letter-spacing: 0.025em;
     font-size: 36px;
     width: 100%;
     margin-top: 30px;
@@ -625,15 +688,26 @@ div.single-choice.invalid label:last-child::before {
     display: flex;
     color: #af917c;
     font-family: "Black Aroug";
-    letter-spacing: 1px;
+    -webkit-font-feature-settings: "kern" 1;
+    -moz-font-feature-settings: "kern" 1;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
+    /* letter-spacing: 1px; */
+    letter-spacing: 0.045em;
     font-size: 25px;
     line-height: 25px;
 }
 
 #contact ul a {
     color: #af917c;
-    font-family: "Josefin Sans Italic";
-    letter-spacing: 0;
+    font-family: 'Josefin Sans';
+    font-style: italic;
+    -webkit-font-feature-settings: "kern" 1;
+    -moz-font-feature-settings: "kern" 1;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
+    /* letter-spacing: 0; */
+    letter-spacing: 0.001em;
     font-size: 20px;
     margin-left: 10px;
 }

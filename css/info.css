@@ -4,30 +4,58 @@
 
 
 @font-face {
-    font-family: "Romile";
-    src: url(/fonts/title/RomilePersonalUse-x3Xdr.otf) format("opentype");
+    font-family: 'Romile';
+    src: url('/fonts/title/RomilePersonalUse.eot');
+    src: url('/fonts/title/RomilePersonalUse.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/title/RomilePersonalUse.woff2') format('woff2'),
+        url('/fonts/title/RomilePersonalUse.woff') format('woff'),
+        url('/fonts/title/RomilePersonalUse.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-    font-family: "Black Aroug";
-    src:
-        url(/fonts/title/black-aroug/BlackArougDemoVersionRegular-jE6ly.otf) format("opentype"),
-        url(/fonts/title/black-aroug/BlackArougDemoVersionRegular-GOpRA.ttf) format("truetype");
+    font-family: 'Black Aroug';
+    src: url('/fonts/title/black-aroug/BlackAroug-DemoVersion-Regular.eot');
+    src: url('/fonts/title/black-aroug/BlackAroug-DemoVersion-Regular.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/title/black-aroug/BlackAroug-DemoVersion-Regular.woff2') format('woff2'),
+        url('/fonts/title/black-aroug/BlackAroug-DemoVersion-Regular.woff') format('woff'),
+        url('/fonts/title/black-aroug/BlackAroug-DemoVersion-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-    font-family: "Josefin Sans Regular";
-    src: url(/fonts/paragraph/josefin-sans/josefin-sans.regular.ttf) format("truetype");
+    font-family: 'Josefin Sans';
+    src: url('/fonts/paragraph/josefin-sans/JosefinSans.eot');
+    src: url('/fonts/paragraph/josefin-sans/JosefinSans.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/paragraph/josefin-sans/JosefinSans.woff2') format('woff2'),
+        url('/fonts/paragraph/josefin-sans/JosefinSans.woff') format('woff'),
+        url('/fonts/paragraph/josefin-sans/JosefinSans.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-    font-family: "Josefin Sans Semibold";
-    src: url(/fonts/paragraph/josefin-sans/josefin-sans.semibold.ttf) format("truetype");
+    font-family: 'Josefin Sans';
+    src: url('/fonts/paragraph/josefin-sans/JosefinSans-SemiBold.eot');
+    src: url('/fonts/paragraph/josefin-sans/JosefinSans-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/paragraph/josefin-sans/JosefinSans-SemiBold.woff2') format('woff2'),
+        url('/fonts/paragraph/josefin-sans/JosefinSans-SemiBold.woff') format('woff'),
+        url('/fonts/paragraph/josefin-sans/JosefinSans-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
 }
 
 @font-face {
-    font-family: "Josefin Sans Italic";
-    src: url(/fonts/paragraph/josefin-sans/josefin-sans.italic.ttf) format("truetype");
+    font-family: 'Josefin Sans';
+    src: url('/fonts/paragraph/josefin-sans/JosefinSans-Italic.eot');
+    src: url('/fonts/paragraph/josefin-sans/JosefinSans-Italic.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/paragraph/josefin-sans/JosefinSans-Italic.woff2') format('woff2'),
+        url('/fonts/paragraph/josefin-sans/JosefinSans-Italic.woff') format('woff'),
+        url('/fonts/paragraph/josefin-sans/JosefinSans-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
 }
 
 
@@ -103,8 +131,13 @@ a {
     width: 100%;
     text-align: center;
     font-family: "Black Aroug";
+    -webkit-font-feature-settings: "kern" 1;
+    -moz-font-feature-settings: "kern" 1;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
     text-transform: uppercase;
-    letter-spacing: 4px;
+    /* letter-spacing: 4px; */
+    letter-spacing: 0.065em;
     font-size: 70px;
     margin-bottom: 125px;
 }
@@ -139,8 +172,13 @@ a {
     display: block;
     color: var(--light-black);
     font-family: "Romile";
+    -webkit-font-feature-settings: "kern" 1;
+    -moz-font-feature-settings: "kern" 1;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
     font-size: 34px;
-    letter-spacing: 1px;
+    /* letter-spacing: 1px; */
+    letter-spacing: 0.035em;
     height: 35px;
     text-decoration: underline;
     text-decoration-thickness: 1px;
@@ -166,9 +204,14 @@ a {
 #contents li h3 {
     display: list-item;
     color: var(--light-black);
-    font-weight: normal;
-    font-family: "Josefin Sans Semibold";
+    font-family: 'Josefin Sans';
+    font-weight: 600;
+    -webkit-font-feature-settings: "kern" 1;
+    -moz-font-feature-settings: "kern" 1;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
     font-size: 21px;
+    letter-spacing: 0.001em;
     line-height: 22px;
     padding: 4px;
     padding-left: 8px;
@@ -180,13 +223,18 @@ a {
 #contents>ul>li>span>h3::before {
     content: '○';
     position: absolute;
+    font-family: 'Josefin Sans';
+    font-weight: normal;
+    font-style: normal;
     font-size: 12px;
     line-height: 25px;
     left: 5px;
 }
 
 #contents li li h3 {
-    font-family: "Josefin Sans Italic";
+    font-family: 'Josefin Sans';
+    font-weight: normal;
+    font-style: italic;
     font-size: 18px !important;
 }
 
@@ -304,9 +352,14 @@ a {
     color: var(--light-black);
     text-align: center;
     font-family: "Black Aroug";
+    -webkit-font-feature-settings: "kern" 1;
+    -moz-font-feature-settings: "kern" 1;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
     text-transform: uppercase;
     font-size: 44px;
-    letter-spacing: 3px;
+    /* letter-spacing: 3px; */
+    letter-spacing: 0.08em;
     padding: 10px 15px 0 15px;
     border-radius: 12px;
     transition: background-color 0s;
@@ -401,9 +454,14 @@ a {
 
 #info div.dropdown h2 {
     color: var(--light-black);
-    font-family: "Josefin Sans Regular";
+    font-family: 'Josefin Sans';
+    -webkit-font-feature-settings: "kern" 1;
+    -moz-font-feature-settings: "kern" 1;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
     height: var(--question-size);
     font-size: var(--question-size);
+    letter-spacing: 0.001em;
     padding: calc((var(--box-height) - var(--question-size)) / 2);
     padding-left: 15px;
     padding-right: 15px;
@@ -475,7 +533,12 @@ a {
 
 #info div.dropdown p {
     color: var(--light-black);
-    font-family: "Josefin Sans Italic";
+    font-family: 'Josefin Sans';
+    font-style: italic;
+    -webkit-font-feature-settings: "kern" 1;
+    -moz-font-feature-settings: "kern" 1;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
     height: var(--answer-size);
     height: auto;
     padding: calc((var(--box-height) - var(--answer-size)) / 2);
@@ -483,6 +546,7 @@ a {
     padding-right: var(--answer-padding);
     margin: 0;
     font-size: var(--answer-size);
+    letter-spacing: 0.001em;
     background-color: rgba(250, 232, 215, .2);
     border-radius: 5px 5px 0 0;
     transition: background-color .1s;
