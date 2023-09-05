@@ -527,7 +527,7 @@ class Database {
             },
             "html": `
                 <div class="img${imageId} show normal">
-                    <div class="container" style="left: 0px; top: 0px;">
+                    <div class="container small" style="left: 0px; top: 0px;">
                         <div>
                             <h3>${location.replaceAll("-", " ")}</h3>
                         </div>
@@ -538,7 +538,7 @@ class Database {
                             <img src='${imagePath}.avif' alt="${altText}" loading="lazy">
                         </picture>
                         <div>
-                            <h3>${dateArray[0]} ${dateArray[1]} ${parseInt(dateArray[2])} ${dateArray[3]}</h3>
+                            <h3>${dateArray[1]} ${parseInt(dateArray[2])} ${dateArray[3]}</h3>
                         </div>
                     </div>
                 </div>

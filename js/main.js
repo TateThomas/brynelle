@@ -237,7 +237,7 @@ function scrollFunctions() {
 
     archesAnimation(archesAnimationDelay);
     headerAnimation();
-    breakAnimation();
+    // breakAnimation();
     //    myWorkAnimation(myWorkAnimationHeight);
     shadowButtonScrollFix();
     lowerLineAnimation();

@@ -1,6 +1,14 @@
 [
     {
         "shoot": "A and C Arches Engagements",
+        "parentId": 90
+    },
+    {
+        "shoot": "A and C Arches Engagements",
+        "parentId": 89
+    },
+    {
+        "shoot": "A and C Arches Engagements",
         "parentId": 48
     },
     {
@@ -9,11 +17,19 @@
     },
     {
         "shoot": "A and H Engagements Session",
+        "parentId": 127
+    },
+    {
+        "shoot": "A and H Engagements Session",
         "parentId": 69
     },
     {
         "shoot": "A and H Engagements Session",
         "parentId": 68
+    },
+    {
+        "shoot": "A and K Goblin Valley Bridals",
+        "parentId": 86
     },
     {
         "shoot": "A and K Goblin Valley Bridals",
@@ -36,16 +52,40 @@
         "parentId": 40
     },
     {
+        "shoot": "B and C Engagements",
+        "parentId": 117
+    },
+    {
+        "shoot": "B and C Engagements",
+        "parentId": 116
+    },
+    {
+        "shoot": "B and C Engagements",
+        "parentId": 115
+    },
+    {
+        "shoot": "B and C Engagements",
+        "parentId": 114
+    },
+    {
+        "shoot": "B and C Engagements",
+        "parentId": 113
+    },
+    {
+        "shoot": "B and C Engagements",
+        "parentId": 112
+    },
+    {
+        "shoot": "B and C Engagements",
+        "parentId": 111
+    },
+    {
         "shoot": "B and S Couples Session",
         "parentId": 70
     },
     {
         "shoot": "Bellagio Fountain Bridals",
         "parentId": 73
-    },
-    {
-        "shoot": "Casper Family",
-        "parentId": 82
     },
     {
         "shoot": "City Bridals 2022",
@@ -72,6 +112,10 @@
         "parentId": 4
     },
     {
+        "shoot": "Dead Horse Lookout 2021",
+        "parentId": 126
+    },
+    {
         "shoot": "E and R Engagements",
         "parentId": 64
     },
@@ -86,6 +130,14 @@
     {
         "shoot": "Fremont Street Bridals",
         "parentId": 10
+    },
+    {
+        "shoot": "G and B Las Vegas Wedding",
+        "parentId": 88
+    },
+    {
+        "shoot": "G and B Las Vegas Wedding",
+        "parentId": 87
     },
     {
         "shoot": "G and B Las Vegas Wedding",
@@ -106,6 +158,14 @@
     {
         "shoot": "G and B Las Vegas Wedding",
         "parentId": 59
+    },
+    {
+        "shoot": "Goblin Valley Bridals 2021",
+        "parentId": 123
+    },
+    {
+        "shoot": "Goblin Valley Bridals 2021",
+        "parentId": 96
     },
     {
         "shoot": "Goblin Valley Bridals 2021",
@@ -132,6 +192,22 @@
         "parentId": 38
     },
     {
+        "shoot": "July 2023 SLC Wedding",
+        "parentId": 110
+    },
+    {
+        "shoot": "July 2023 SLC Wedding",
+        "parentId": 109
+    },
+    {
+        "shoot": "July 2023 SLC Wedding",
+        "parentId": 108
+    },
+    {
+        "shoot": "July 2023 SLC Wedding",
+        "parentId": 107
+    },
+    {
         "shoot": "L and M Engagements",
         "parentId": 27
     },
@@ -156,12 +232,44 @@
         "parentId": 8
     },
     {
-        "shoot": "M Senior",
+        "shoot": "M Family",
+        "parentId": 119
+    },
+    {
+        "shoot": "M Family",
+        "parentId": 100
+    },
+    {
+        "shoot": "M Family",
+        "parentId": 98
+    },
+    {
+        "shoot": "M Family",
+        "parentId": 82
+    },
+    {
+        "shoot": "M Senior April",
         "parentId": 12
     },
     {
-        "shoot": "M Senior",
+        "shoot": "M Senior April",
         "parentId": 9
+    },
+    {
+        "shoot": "M Senior July",
+        "parentId": 106
+    },
+    {
+        "shoot": "M Senior July",
+        "parentId": 105
+    },
+    {
+        "shoot": "M Senior July",
+        "parentId": 104
+    },
+    {
+        "shoot": "M and E Couple Session",
+        "parentId": 99
     },
     {
         "shoot": "M and E Couple Session",
@@ -174,6 +282,14 @@
     {
         "shoot": "M and E Couple Session",
         "parentId": 17
+    },
+    {
+        "shoot": "M and L Arches Bridals",
+        "parentId": 97
+    },
+    {
+        "shoot": "M and L Arches Bridals",
+        "parentId": 95
     },
     {
         "shoot": "M and L Arches Bridals",
@@ -205,6 +321,18 @@
     },
     {
         "shoot": "Moab Cozy Engagements 2021",
+        "parentId": 124
+    },
+    {
+        "shoot": "Moab Cozy Engagements 2021",
+        "parentId": 122
+    },
+    {
+        "shoot": "Moab Cozy Engagements 2021",
+        "parentId": 121
+    },
+    {
+        "shoot": "Moab Cozy Engagements 2021",
         "parentId": 85
     },
     {
@@ -214,6 +342,10 @@
     {
         "shoot": "Moab Cozy Engagements 2021",
         "parentId": 67
+    },
+    {
+        "shoot": "P and A Bridals",
+        "parentId": 5
     },
     {
         "shoot": "P and A Bridals",
@@ -241,11 +373,11 @@
     },
     {
         "shoot": "P and M Engagements",
-        "parentId": 5
+        "parentId": 1
     },
     {
-        "shoot": "P and M Engagements",
-        "parentId": 1
+        "shoot": "P and M Engagements 1",
+        "parentId": 94
     },
     {
         "shoot": "R Portrait Session 2021",
@@ -256,8 +388,24 @@
         "parentId": 39
     },
     {
+        "shoot": "Red Rock Bridals 2021",
+        "parentId": 125
+    },
+    {
         "shoot": "S Wedding Day",
         "parentId": 66
+    },
+    {
+        "shoot": "S and C Arches Bridals",
+        "parentId": 93
+    },
+    {
+        "shoot": "S and C Arches Bridals",
+        "parentId": 92
+    },
+    {
+        "shoot": "S and C Arches Bridals",
+        "parentId": 91
     },
     {
         "shoot": "S and C Arches Bridals",
@@ -341,6 +489,26 @@
     },
     {
         "shoot": "Utah Lake Family 2023",
+        "parentId": 118
+    },
+    {
+        "shoot": "Utah Lake Family 2023",
+        "parentId": 103
+    },
+    {
+        "shoot": "Utah Lake Family 2023",
+        "parentId": 102
+    },
+    {
+        "shoot": "Utah Lake Family 2023",
+        "parentId": 101
+    },
+    {
+        "shoot": "Utah Lake Family 2023",
         "parentId": 83
+    },
+    {
+        "shoot": "Western Dead Horse Bridals 2021",
+        "parentId": 120
     }
 ]

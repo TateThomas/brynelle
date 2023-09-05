@@ -163,6 +163,20 @@ window.onscroll = function () {
 
 window.onload = function () {
 
+    var myInterval = setInterval(function () {
+
+        if ((document.getElementById("photos").className == "not-loaded") && (database.totalPhotosCurrentlyLoaded == 0)) {
+            console.log("here");
+            database.changeSortingMethod();
+            database.updateUserPage();
+        }
+        else {
+            console.log("complete");
+            clearInterval(myInterval);
+        }
+    
+    }, 50);
+
     document.getElementById("filters").getElementsByTagName("img")[0].addEventListener('click', toggleFilters);
 
     setUpFilterTabListeners();
@@ -171,17 +185,3 @@ window.onload = function () {
     setTimeout(loadMorePhotos, 500);
 
 }
-
-var myInterval = setInterval(function () {
-
-    if (document.getElementById("photos").className == "not-loaded") {
-        console.log("here");
-        database.changeSortingMethod();
-        database.updateUserPage();
-    }
-    else {
-        console.log("complete");
-        clearInterval(myInterval);
-    }
-
-}, 100);
