@@ -743,7 +743,9 @@ a {
     #photos div.img59,
     #photos div.img69,
     #photos div.img76,
-    #photos div.img83 {
+    #photos div.img83,
+    #photos div.img118,
+    #photos div.img126 {
         --img-span: 2;
     }
 
@@ -930,11 +932,11 @@ a {
         height: 14px;
     }
 
-    #photos div.expanded div.container>div:first-child h3{
+    #photos div.expanded div.container>div:first-child h3 {
         margin: auto 0 37px 0;
     }
 
-    #photos div.expanded div.container>div:last-child h3{
+    #photos div.expanded div.container>div:last-child h3 {
         margin: auto 0 9px 0;
     }
 
@@ -996,7 +998,12 @@ a {
     #photos div.img56,
     #photos div.img61,
     #photos div.img62,
-    #photos div.img80 {
+    #photos div.img80,
+    #photos div.img86,
+    #photos div.img94,
+    #photos div.img116,
+    #photos div.img117,
+    #photos div.img120 {
         --img-span: 1;
     }
 
@@ -1006,7 +1013,9 @@ a {
     #photos div.img59,
     #photos div.img69,
     #photos div.img76,
-    #photos div.img83 {
+    #photos div.img83,
+    #photos div.img118,
+    #photos div.img126 {
         --img-span: 1;
     }
 
