@@ -21,6 +21,17 @@
 }
 
 @font-face {
+    font-family: 'Typography Times';
+    src: url('/fonts/title/Typographytimes-Regular.eot');
+    src: url('/fonts/title/Typographytimes-Regular.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/title/Typographytimes-Regular.woff2') format('woff2'),
+        url('/fonts/title/Typographytimes-Regular.woff') format('woff'),
+        url('/fonts/title/Typographytimes-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'Josefin Sans';
     src: url('/fonts/paragraph/josefin-sans/JosefinSans-Italic.eot');
     src: url('/fonts/paragraph/josefin-sans/JosefinSans-Italic.eot?#iefix') format('embedded-opentype'),
@@ -109,11 +120,11 @@
 }
 
 #steps div.bar h2 {
-    --number-size: 50px;
+    --number-size: 40px;
 
     position: absolute;
     color: var(--light-black);
-    font-family: "Black Aroug";
+    font-family: "Typography Times";
     font-size: var(--number-size);
     line-height: var(--number-size);
     height: var(--number-size);
@@ -236,7 +247,7 @@
     }
 
     #steps div.bar h2 {
-        --number-size: 48px;
+        --number-size: 36px;
     }
 
     #steps div.bar h3 {
@@ -283,7 +294,7 @@
     }
 
     #steps div.bar h2 {
-        --number-size: 45px;
+        --number-size: 34px;
     }
 
 }
@@ -311,7 +322,7 @@
     }
 
     #steps div.bar h2 {
-        --number-size: 42px;
+        --number-size: 30px;
     }
 
     #steps div.bar h3 {
@@ -364,7 +375,7 @@
     }
 
     #steps div.bar h2 {
-        --number-size: 38px;
+        --number-size: 27px;
     }
 
     #steps div.bar h3 {
@@ -431,7 +442,7 @@
     }
 
     #steps div.bar h2 {
-        --number-size: 35px;
+        --number-size: 25px;
 
         width: -webkit-max-content;
 
@@ -478,9 +489,9 @@
         font-size: 40px;
     }
 
-    #steps div.bar h2 {
-        --number-size: 32px;
-    }
+    /* #steps div.bar h2 {
+        --number-size: 24px;
+    } */
 
     #steps div.bar h3 {
         width: 350px;
@@ -541,7 +552,7 @@
     }
 
     #steps div.bar h2 {
-        --number-size: 30px;
+        --number-size: 26px;
 
         left: 65px !important;
     }

@@ -659,9 +659,9 @@ a {
     border: 1px solid white;
 }
 
-#about-me-pictures img:nth-child(2) {
-    -o-object-position: left;
-    object-position: left;
+#about-me-pictures>div:last-child img {
+    -o-object-position: top 25% left 0;
+    object-position: top 25% left 0;
 }
 
 #about-me-desc {

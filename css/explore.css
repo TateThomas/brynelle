@@ -220,6 +220,7 @@ a {
 
 #filters div:first-child>div h2 {
     font-family: "Alta";
+    font-weight: normal;
     font-size: 20px;
     line-height: 20px;
     letter-spacing: 1px;
@@ -240,13 +241,13 @@ a {
 }
 
 #filters div:first-child>div div.amount h2 {
-    font-family: sans-serif;
     width: -webkit-max-content;
     width: -moz-max-content;
     width: max-content;
     height: 18px;
-    font-family: "Black Aroug";
-    font-weight: 500;
+    font-family: "Josefin Sans";
+    font-weight: 600;
+    font-style: normal;
     font-size: 14px;
     line-height: 18px;
     color: white;
@@ -254,7 +255,6 @@ a {
 
 #filters div:first-child>div div.amount h2.x {
     position: absolute;
-    font-family: sans-serif;
     font-size: 13px;
     line-height: 20px;
     margin-left: 1px;
@@ -563,7 +563,12 @@ a {
 #photos div.img56,
 #photos div.img61,
 #photos div.img62,
-#photos div.img80 {
+#photos div.img80,
+#photos div.img86,
+#photos div.img94,
+#photos div.img116,
+#photos div.img117,
+#photos div.img120 {
     --img-span: 2;
 }
 
@@ -573,7 +578,9 @@ a {
 #photos div.img59,
 #photos div.img69,
 #photos div.img76,
-#photos div.img83 {
+#photos div.img83,
+#photos div.img118,
+#photos div.img126 {
     --img-span: 3;
 }
 
@@ -610,6 +617,7 @@ a {
     max-height: 85vh;
     /* width: 100%; */
     /* margin: 0; */
+    overflow: visible;
     -webkit-transition: height var(--transition-time), max-height var(--transition-time), width var(--transition-time), max-width var(--transition-time), margin var(--transition-time);
     -moz-transition: height var(--transition-time), max-height var(--transition-time), width var(--transition-time), max-width var(--transition-time), margin var(--transition-time);
     -o-transition: height var(--transition-time), max-height var(--transition-time), width var(--transition-time), max-width var(--transition-time), margin var(--transition-time);

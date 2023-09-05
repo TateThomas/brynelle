@@ -38,17 +38,6 @@
 
 @font-face {
     font-family: 'Josefin Sans';
-    src: url('/fonts/paragraph/josefin-sans/JosefinSans-SemiBold.eot');
-    src: url('/fonts/paragraph/josefin-sans/JosefinSans-SemiBold.eot?#iefix') format('embedded-opentype'),
-        url('/fonts/paragraph/josefin-sans/JosefinSans-SemiBold.woff2') format('woff2'),
-        url('/fonts/paragraph/josefin-sans/JosefinSans-SemiBold.woff') format('woff'),
-        url('/fonts/paragraph/josefin-sans/JosefinSans-SemiBold.ttf') format('truetype');
-    font-weight: 600;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Josefin Sans';
     src: url('/fonts/paragraph/josefin-sans/JosefinSans-Italic.eot');
     src: url('/fonts/paragraph/josefin-sans/JosefinSans-Italic.eot?#iefix') format('embedded-opentype'),
         url('/fonts/paragraph/josefin-sans/JosefinSans-Italic.woff2') format('woff2'),
@@ -205,7 +194,7 @@ a {
     display: list-item;
     color: var(--light-black);
     font-family: 'Josefin Sans';
-    font-weight: 600;
+    font-weight: normal;
     -webkit-font-feature-settings: "kern" 1;
     -moz-font-feature-settings: "kern" 1;
     font-feature-settings: "kern" 1;
