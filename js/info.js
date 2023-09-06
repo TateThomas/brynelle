@@ -25,10 +25,10 @@ const infoObj = {
     }
 };
 const pictureList = [
-    "images/info/mountains.jpeg",
-    "images/info/shell.jpeg",
-    "images/info/palm-tree.jpeg",
-    "images/info/wave.jpeg"
+    ["./images/info/mountains", "Hand drawn mountain landscape with a sun, all contained within an arch"],
+    ["./images/info/shell", "Hand drawn picture of a pink shell, all contained within a cirlce"],
+    ["./images/info/palm-tree", "Hand drawn picture of a pink palm tree contained within an arch"],
+    ["./images/info/wave", "Hand drawn picture of an ocean wave with a sun behind it, all contained within a circle"]
 ];
 
 
@@ -122,7 +122,7 @@ function initInfo(info, pictures, rowsPerPic) {
         const infoGroup = info[infoGroups[i]];
         const questionsList = Object.keys(infoGroup);
         let contentsSublistHTML = "";
-        let setHTML, sublistId;
+        let setHTML, sublistId, imgPath;
 
         elemId = infoGroups[i].replaceAll(" ", "-").toLowerCase();
 
@@ -132,6 +132,7 @@ function initInfo(info, pictures, rowsPerPic) {
 
             sublistId = `${infoGroups[i].replaceAll(" ", "-").toLowerCase()}-${j}`;
             contentsSublistHTML += contentsSublistHTMLtemplate(infoGroup[questionsList[j]], sublistId);
+            imgPath = pictures[nthPicture % pictures.length][0];
 
             if ((j % rowsPerPic) == 0) {
                 setHTML = "";
@@ -142,7 +143,12 @@ function initInfo(info, pictures, rowsPerPic) {
                 groupHTML += `
                 <div class="set">
                     <div class="picture">
-                        <img src="${pictures[nthPicture % pictures.length]}">
+                        <picture>
+                            <source type="image/avif" srcset="${imgPath}.avif">
+                            <source type="image/webp" srcset="${imgPath}.webp">
+                            <source type="image/jpg" srcset="${imgPath}.jpg">
+                            <img src="${imgPath}.avif" alt="${pictures[nthPicture % pictures.length][1]}">
+                        </picture>
                     </div>
                     <div class="questions">
                         ${setHTML + questionHTMLtemplate(questionsList[j], infoGroup[questionsList[j]], sublistId)}
@@ -162,7 +168,12 @@ function initInfo(info, pictures, rowsPerPic) {
                         ${setHTML + questionHTMLtemplate(questionsList[j], infoGroup[questionsList[j]], sublistId)}
                     </div>
                     <div class="picture">
-                        <img src="${pictures[nthPicture % pictures.length]}">
+                        <picture>
+                            <source type="image/avif" srcset="${imgPath}.avif">
+                            <source type="image/webp" srcset="${imgPath}.webp">
+                            <source type="image/jpg" srcset="${imgPath}.jpg">
+                            <img src="${imgPath}.avif" alt="${pictures[nthPicture % pictures.length][1]}">
+                        </picture>
                     </div>
                 </div>
                 `;

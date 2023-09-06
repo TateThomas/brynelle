@@ -13,6 +13,7 @@
         url('/fonts/title/Alta_regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -24,6 +25,7 @@
         url('/fonts/title/RomilePersonalUse.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -35,6 +37,7 @@
         url('/fonts/title/black-aroug/BlackAroug-DemoVersion-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -46,6 +49,7 @@
         url('/fonts/title/VtksTautage2.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -57,6 +61,7 @@
         url('/fonts/paragraph/josefin-sans/JosefinSans.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -68,6 +73,7 @@
         url('/fonts/paragraph/josefin-sans/JosefinSans-Italic.ttf') format('truetype');
     font-weight: normal;
     font-style: italic;
+    font-display: swap;
 }
 
 @font-face {
@@ -79,6 +85,7 @@
         url('/fonts/cursive/Antically-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -90,6 +97,7 @@
         url('/fonts/cursive/holland/Holland.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -101,6 +109,7 @@
         url('/fonts/cursive/BrittanySignatureRegular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 
@@ -1055,7 +1064,7 @@ a {
     height: -moz-max-content;
     height: max-content;
     top: -50px;
-    z-index: calc(var(--lower-gradient-z) + 1);
+    z-index: calc(var(--lower-gradient-z) + 2);
 }
 
 #my-work-explore>div {
@@ -2190,6 +2199,14 @@ a {
         top: 53vh;
     }
 
+    #top-page h2.loaded:nth-child(2) {
+        left: 30px;
+    }
+
+    #top-page h2.loaded:nth-child(3) {
+        left: 80px;
+    }
+
     #mid-page {
         --arches-width: 135px;
         --arches-border-width: 3px;
@@ -2385,11 +2402,11 @@ a {
     }
 
     #top-page h2.loaded:nth-child(2) {
-        left: 30px;
+        left: 15px;
     }
 
     #top-page h2.loaded:nth-child(3) {
-        left: 80px;
+        left: 45px;
     }
 
     #mid-page {
@@ -2620,11 +2637,11 @@ a {
     }
 
     #top-page h2.loaded:nth-child(2) {
-        left: 20px;
+        left: 10px;
     }
 
     #top-page h2.loaded:nth-child(3) {
-        left: 40px;
+        left: 25px;
     }
 
     #mid-page {
@@ -2772,7 +2789,7 @@ a {
     }
 
     #my-work-explore {
-        top: -20px;
+        top: -5px;
     }
 
     #my-work-explore>div {
@@ -2878,6 +2895,15 @@ a {
 }
 
 @media screen and (max-width: 400px) {
+
+    #top-page h2:nth-child(3) {
+        width: 250px;
+        text-align: center;
+    }
+
+    #top-page h2.loaded:nth-child(3) {
+        left: 55px;
+    }
 
     #lower-page>div {
         --my-work-height: 410px;

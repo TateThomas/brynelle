@@ -11,6 +11,7 @@
         url('/fonts/title/RomilePersonalUse.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -22,6 +23,7 @@
         url('/fonts/title/black-aroug/BlackAroug-DemoVersion-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -33,6 +35,7 @@
         url('/fonts/paragraph/coco-gothic/CocoGothic-Light.ttf') format('truetype');
     font-weight: 300;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -44,6 +47,7 @@
         url('/fonts/paragraph/josefin-sans/JosefinSans-Italic.ttf') format('truetype');
     font-weight: normal;
     font-style: italic;
+    font-display: swap;
 }
 
 @font-face {
@@ -55,6 +59,7 @@
         url('/fonts/paragraph/source-sans-pro/SourceSansPro-It.ttf') format('truetype');
     font-weight: normal;
     font-style: italic;
+    font-display: swap;
 }
 
 @font-face {
@@ -66,6 +71,7 @@
         url('/fonts/paragraph/source-sans-pro/SourceSansPro-LightIt.ttf') format('truetype');
     font-weight: 300;
     font-style: italic;
+    font-display: swap;
 }
 
 
@@ -371,6 +377,7 @@ div.single-choice {
 }
 
 div.single-choice input {
+    position: relative;
     width: 14px;
     height: 14px;
     margin: auto 10px auto 0;
@@ -379,17 +386,36 @@ div.single-choice input {
     -webkit-appearance: none;
     border-radius: 50%;
     border: 3px solid #fffaf7;
-    outline: 1px solid var(--light-black);
+    /* outline: 1px solid var(--light-black); */
     transition: outline .2s, background .2s;
 }
 
-div.single-choice label:hover input {
+div.single-choice input::after {
+    content: '';
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    top: -4px;
+    left: -4px;
+    border: 1px solid var(--light-black);
+    border-radius: 50%;
+}
+
+/* div.single-choice label:hover input {
     outline: 1px solid var(--theme-color);
+} */
+
+div.single-choice label:hover input::after {
+    border: 1px solid var(--theme-color);
 }
 
 div.single-choice input:checked {
     background: var(--theme-color);
-    outline: 1px solid var(--theme-color);
+    /* outline: 1px solid var(--theme-color); */
+}
+
+div.single-choice input:checked::after {
+    border: 1px solid var(--theme-color);
 }
 
 div.single-choice label {
@@ -1203,6 +1229,11 @@ div.single-choice.invalid label:last-child::before {
         height: 13px;
     }
 
+    div.single-choice input::after {
+        width: 13px;
+        height: 13px;
+    }
+
     div.choose-date label,
     div.choose-time label {
         font-size: 10px;
@@ -1348,6 +1379,11 @@ div.single-choice.invalid label:last-child::before {
         width: 12px;
         height: 12px;
         margin-right: 9px;
+    }
+
+    div.single-choice input::after {
+        width: 12px;
+        height: 12px;
     }
 
     div.choose-date {

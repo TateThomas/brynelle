@@ -7,6 +7,7 @@
         url('/fonts/title/RomilePersonalUse.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -18,6 +19,7 @@
         url('/fonts/title/black-aroug/BlackAroug-DemoVersion-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -29,6 +31,7 @@
         url('/fonts/title/Typographytimes-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -40,6 +43,7 @@
         url('/fonts/paragraph/josefin-sans/JosefinSans-Italic.ttf') format('truetype');
     font-weight: normal;
     font-style: italic;
+    font-display: swap;
 }
 
 @font-face {
@@ -51,6 +55,7 @@
         url('/fonts/paragraph/josefin-sans/JosefinSans-SemiBold.ttf') format('truetype');
     font-weight: 600;
     font-style: normal;
+    font-display: swap;
 }
 
 
@@ -71,6 +76,7 @@
 
 #steps div.image img {
     width: 100%;
+    height: 100%;
 }
 
 #steps div.title {

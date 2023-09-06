@@ -12,6 +12,7 @@
         url('/fonts/title/RomilePersonalUse.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -23,6 +24,7 @@
         url('/fonts/title/black-aroug/BlackAroug-DemoVersion-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -34,6 +36,7 @@
         url('/fonts/paragraph/josefin-sans/JosefinSans.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -45,6 +48,7 @@
         url('/fonts/cursive/Antically-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -56,6 +60,7 @@
         url('/fonts/cursive/holland/Holland.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 
@@ -973,6 +978,7 @@ a {
         white-space: pre-line;
         text-indent: -50px;
         line-height: 25px;
+        width: 130px;
         top: 255px;
         right: 30px;
     }
@@ -1059,6 +1065,7 @@ a {
     #top-page div.picture h2:last-child {
         text-indent: -45px;
         line-height: 21px;
+        width: 115px;
         top: 230px;
         right: 15px;
     }
@@ -1183,6 +1190,7 @@ a {
     #top-page div.picture h2:last-child {
         text-indent: -40px;
         line-height: 18px;
+        width: 100px;
         top: 210px;
         right: 10px;
     }
@@ -1315,6 +1323,7 @@ a {
     #top-page div.picture h2:last-child {
         text-indent: -35px;
         line-height: 15px;
+        width: 80px;
         top: 184px;
     }
 

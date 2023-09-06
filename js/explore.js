@@ -141,7 +141,7 @@ function loadMorePhotos() {
 
     if ((distanceFromBottom - (imageHeight * distanceMultiplier)) <= 0) {
 
-        console.log("loaded");
+        // console.log("loaded");
         photosElem.style.setProperty("--total-rows", totalRows + 5);
 
     }
@@ -165,17 +165,17 @@ window.onload = function () {
 
     var myInterval = setInterval(function () {
 
-        if ((document.getElementById("photos").className == "not-loaded") && (database.totalPhotosCurrentlyLoaded == 0)) {
-            console.log("here");
+        if (document.getElementById("photos").className == "not-loaded") {
+            // console.log("here");
             database.changeSortingMethod();
             database.updateUserPage();
         }
         else {
-            console.log("complete");
+            // console.log("complete");
             clearInterval(myInterval);
         }
-    
-    }, 50);
+
+    }, 200);
 
     document.getElementById("filters").getElementsByTagName("img")[0].addEventListener('click', toggleFilters);
 

@@ -11,6 +11,7 @@
         url('/fonts/title/Alta_regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -22,6 +23,7 @@
         url('/fonts/title/RomilePersonalUse.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -33,6 +35,7 @@
         url('/fonts/title/black-aroug/BlackAroug-DemoVersion-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -44,6 +47,7 @@
         url('/fonts/paragraph/josefin-sans/JosefinSans.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -55,6 +59,7 @@
         url('/fonts/paragraph/josefin-sans/JosefinSans-SemiBold.ttf') format('truetype');
     font-weight: 600;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -66,6 +71,7 @@
         url('/fonts/paragraph/josefin-sans/JosefinSans-SemiBoldItalic.ttf') format('truetype');
     font-weight: 600;
     font-style: italic;
+    font-display: swap;
 }
 
 

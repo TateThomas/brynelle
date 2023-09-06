@@ -611,9 +611,10 @@ class Database {
             let images = document.querySelectorAll("#photos div.container");
             for (let i = 0; i < images.length; i++) {
                 images[i].addEventListener('click', expandImage);
+                if (i == (images.length - 1)) {
+                    document.getElementById("photos").className = "loaded";
+                }
             }
-
-            document.getElementById("photos").className = "loaded";
 
         }
 
