@@ -1,10 +1,10 @@
 <!DOCType HTML>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0" />
-    
+
     <title>Info - Brynelle Photo</title>
     <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/images/favicon/apple-touch-icon-57x57.png" />
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/images/favicon/apple-touch-icon-114x114.png" />
@@ -40,7 +40,12 @@
 
         <div id="info">
 
-            <img src="/images/info/white-sun.jpeg">
+            <picture>
+                <source type="image/avif" srcset="./images/info/white-sun.avif">
+                <source type="image/webp" srcset="./images/info/white-sun.webp">
+                <source type="image/jpg" srcset="./images/info/white-sun.jpg">
+                <img src="./images/info/white-sun.avif" alt="Hand drawn picture of a sun">
+            </picture>
             <h1>Info</h1>
 
             <div>

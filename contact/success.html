@@ -1,10 +1,10 @@
 <!DOCType HTML>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0" />
-    
+
     <title>Contact - Brynelle Photo</title>
     <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/images/favicon/apple-touch-icon-57x57.png" />
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/images/favicon/apple-touch-icon-114x114.png" />
@@ -74,7 +74,12 @@
                         </div>
 
                         <div class="end">
-                            <img src="/images/pricing/sun.png" alt="Sun line art">
+                            <picture>
+                                <source type="image/avif" srcset="/images/pricing/sun.avif">
+                                <source type="image/webp" srcset="/images/pricing/sun.webp">
+                                <source type="image/jpg" srcset="/images/pricing/sun.jpg">
+                                <img src="/images/pricing/sun.avif" alt="Sun line art">
+                            </picture>
                             <p><a href="https://brynelle.com/contact">Submit another inquiry</a></p>
                         </div>
                     </div>
