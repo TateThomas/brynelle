@@ -32,6 +32,7 @@ class Database {
     currentFilters;
     currentSortingMethod;
     totalPhotosCurrentlyVisible;
+    visibleElements;
 
 
     constructor() {
@@ -62,7 +63,7 @@ class Database {
                     obj[dataProperties[i][0]] = dataProperties[i][2];
                 }
 
-                setTimeout(function () { resolve("complete") }, 10);
+                setTimeout(function () { resolve("complete") }, 1);
 
             });
 
@@ -84,15 +85,18 @@ class Database {
             obj.totalPhotosCurrentlyVisible = obj.ids.length;
             await obj.updateUserPage();
 
-            setTimeout(function () {
-
-                let searchParameters = new URLSearchParams(window.location.search);
-                if (searchParameters.get("filterType") != undefined) {
-                    obj.updateFilters(searchParameters.get("filterType").replaceAll('\"', ''), searchParameters.get("filterSpecifier").replaceAll('\"', ''), true);
-                    document.getElementById(searchParameters.get("filterSpecifier").replaceAll('\"', '')).checked = true;
+            let thisInterval = setInterval(function () {
+                
+                if (document.getElementById("photos").className == "loaded") {
+                    let searchParameters = new URLSearchParams(window.location.search);
+                    if (searchParameters.get("filterType") != undefined) {
+                        obj.updateFilters(searchParameters.get("filterType").replaceAll('\"', ''), searchParameters.get("filterSpecifier").replaceAll('\"', ''), true);
+                        document.getElementById(searchParameters.get("filterSpecifier").replaceAll('\"', '')).checked = true;
+                    }
+                    clearInterval(thisInterval);
                 }
 
-            }, 10);
+            }, 50);
 
         }
 
@@ -443,6 +447,8 @@ class Database {
             amountElem.className = amountElem.className.replace("hidden", "show");
         }
         amountElem.querySelector(".number").innerHTML = filterCount.toString();
+        
+        this.visibleElements = Array.prototype.slice.call(document.querySelectorAll("div#photos>div.show"));
 
     }
 
@@ -552,8 +558,23 @@ class Database {
 
         function expandImage() {
 
+            let clickedIndex = obj.visibleElements.indexOf(this.parentElement);
+            
+            if (clickedIndex == 0) {
+                document.querySelector("button.left").className = "left hidden";
+            }
+            else {
+                document.querySelector("button.left").className = "left show";
+            }
+            if (clickedIndex == (obj.visibleElements.length - 1)) {
+                document.querySelector("button.right").className = "right hidden";
+            }
+            else {
+                document.querySelector("button.right").className = "right show";
+            }
+            
             let { x, y } = this.parentElement.getBoundingClientRect();
-
+            
             if (this.parentElement.classList[2] == "expanded") {
 
                 this.className = this.className.replace("big", "small");
@@ -598,6 +619,7 @@ class Database {
 
         }
 
+        let obj = this;
         let photos = document.getElementById("photos");
         let newHTML = `<h4>${this.totalPhotosCurrentlyVisible} photo${(this.totalPhotosCurrentlyVisible != 1) ? "s" : ""}</h4>`;
 
@@ -613,6 +635,7 @@ class Database {
                 images[i].addEventListener('click', expandImage);
                 if (i == (images.length - 1)) {
                     document.getElementById("photos").className = "loaded";
+                    this.visibleElements = Array.prototype.slice.call(document.querySelectorAll("div#photos>div.show"));
                 }
             }
 

@@ -1,9 +1,11 @@
 let appHeader = `
     <div class="border"></div>
 
-    <a href="https://brynelle.com">
-        <h1>Brynelle Photo</h1>
-    </a>
+    <div class="title">
+        <a href="https://brynelle.com">
+            <h1>Brynelle Photo</h1>
+        </a>
+    </div>
 
     <nav id="links">
 
@@ -14,39 +16,41 @@ let appHeader = `
 
         <ul>
             <li class="pricing">
-                <a href="https://brynelle.com/pricing">Pricing</a>
+                <a href="https://brynelle.com/pricing"><h2>Pricing</h2></a>
             </li>
             <li class="travel">
-                <a href="https://brynelle.com/travel">Travel</a>
+                <a href="https://brynelle.com/travel"><h2>Travel</h2></a>
             </li>
             <li class="gallery">
-                <a href="https://brynelle.com/gallery">Gallery</a>
-                <ul>
-                    <li>
-                        <a href='https://brynelle.com/gallery/explore?filterType="type"&filterSpecifier="weddings"'>Weddings</a>
-                    </li>
-                    <li>
-                        <a href='https://brynelle.com/gallery/explore?filterType="type"&filterSpecifier="engagements"'>Engagements</a>
-                    </li>
-                    <li>
-                        <a href='https://brynelle.com/gallery/explore?filterType="type"&filterSpecifier="bridals"'>Bridals</a>
-                    </li>
-                    <li>
-                        <a href='https://brynelle.com/gallery/explore?filterType="type"&filterSpecifier="couples"'>Couples</a>
-                    </li>
-                    <li>
-                        <a href='https://brynelle.com/gallery/explore?filterType="type"&filterSpecifier="families"'>Families</a>
-                    </li>
-                    <li>
-                        <a href='https://brynelle.com/gallery/explore?filterType="type"&filterSpecifier="portraits"'>Portraits</a>
-                    </li>
-                    <li>
-                        <a href='https://brynelle.com/gallery/explore'>All</a>
-                    </li>
-                </ul>
+                <a href="https://brynelle.com/gallery"><h2>Gallery</h2></a>
+                <div class="container">
+                    <ul>
+                        <li>
+                            <a href='https://brynelle.com/gallery/explore?filterType="type"&filterSpecifier="weddings"'><h3>Weddings</h3></a>
+                        </li>
+                        <li>
+                            <a href='https://brynelle.com/gallery/explore?filterType="type"&filterSpecifier="engagements"'><h3>Engagements</h3></a>
+                        </li>
+                        <li>
+                            <a href='https://brynelle.com/gallery/explore?filterType="type"&filterSpecifier="bridals"'><h3>Bridals</h3></a>
+                        </li>
+                        <li>
+                            <a href='https://brynelle.com/gallery/explore?filterType="type"&filterSpecifier="couples"'><h3>Couples</h3></a>
+                        </li>
+                        <li>
+                            <a href='https://brynelle.com/gallery/explore?filterType="type"&filterSpecifier="families"'><h3>Families</h3></a>
+                        </li>
+                        <li>
+                            <a href='https://brynelle.com/gallery/explore?filterType="type"&filterSpecifier="portraits"'><h3>Portraits</h3></a>
+                        </li>
+                        <li>
+                            <a href='https://brynelle.com/gallery/explore'><h3>All</h3></a>
+                        </li>
+                    </ul>
+                </div>
             </li>
             <!--<li class="events">
-                <a href="https://brynelle.com/events">Events</a>
+                <a href="https://brynelle.com/events"><h2>Events</h2></a>
                 <ul>
                     <li>
                         <a href="https://brynelle.com/events/mini_sessions">Mini Sessions</a>
@@ -60,16 +64,16 @@ let appHeader = `
                 </ul>
             </li>-->
             <!--<li>
-                <a href="https://brynelle.com/clients">Clients</a>
+                <a href="https://brynelle.com/clients"><h2>Clients</h2></a>
             </li>-->
             <li class="about-me">
-                <a href="https://brynelle.com/about">About</a>
+                <a href="https://brynelle.com/about"><h2>About</h2></a>
             </li>
             <li class="info">
-                <a href="https://brynelle.com/info">Info</a>
+                <a href="https://brynelle.com/info"><h2>Info</h2></a>
             </li>
             <li class="contact">
-                <a href="https://brynelle.com/contact">Contact</a>
+                <a href="https://brynelle.com/contact"><h2>Contact</h2></a>
             </li>
         </ul>
     </nav>

@@ -77,6 +77,10 @@
 
 /****************** All ******************/
 
+html{
+    scroll-behavior: smooth;
+}
+
 body {
     --light-black: #404040;
     --lower-gradient-z: 2;
@@ -112,17 +116,30 @@ a {
     width: 100%;
 }
 
-#links li.gallery {
+#header.show #links li.gallery>a {
     background-color: #ddc2bf;
+    width: calc(100% - 4px);
+    margin: 0 2px 0 2px;
+    border-radius: var(--header-radius);
+    transition: width .5s, margin .5s, background-color .5s, color .5s, border-radius .5s;
+    transition-delay: 0s, 0s, 0s, 0s, .35s;
 }
 
-#links li.gallery:hover {
-    height: var(--links-font-size) !important;
-    padding-bottom: calc((var(--header-height) - var(--links-font-size)) / 2) !important;
-}
-
-#links li.gallery>a:hover {
+#header.show #links li.gallery:hover>a {
     color: #c89c97 !important;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    transition-delay: 0s, 0s, 0s, 0s, .05s;
+}
+
+@media screen and (max-width: 750px) {
+
+    #header.show #links li.gallery>a {
+        width: 100%;
+        margin: 0;
+        border-radius: 0;
+    }
+
 }
 
 
@@ -424,6 +441,7 @@ a {
     height: var(--image-height);
     margin: 6px 0 6px 0;
     background-image: radial-gradient(ellipse, transparent, rgba(0, 0, 0, .04));
+/*    scroll-margin-top: 125px;*/
 }
 
 #photos div.container {
@@ -707,6 +725,87 @@ a {
 
 #photos div.expanded div.container:hover::after {
     cursor: pointer;
+}
+
+
+/****************** BUttons ******************/
+
+#buttons{
+    position: fixed;
+    width: 100%;
+    height: 0;
+    padding: 0 !important;
+    z-index: 11;
+}
+
+#buttons div.container{
+    --gradient-direction: 90deg;
+    
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-image: linear-gradient(var(--gradient-direction), rgba(0, 0, 0, .2) 25%, transparent);
+    height: 100vh;
+    width: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: width .25s, opacity .5s;
+    transition-delay: 0s, 0s;
+}
+
+#buttons button{
+    width: 100%;
+    height: calc(100vh - 75px);
+    padding: 0;
+    margin-top: auto;
+    background-color: transparent;
+/*    background-color: red;*/
+    border: 0;
+    z-index: 2;
+}
+
+#content:has(div.expanded) #buttons div.container:has(button.show){
+    width: 100px;
+    transition-delay: .25s, 0s;
+}
+
+#buttons div.container:has(button.right) {
+    --gradient-direction: -90deg;
+    
+    right: 0;
+}
+
+#buttons button div.arrow {
+    --arrow-size: 40px;
+    --arrow-left-offset: 30px;
+    --arrow-color: rgba(255, 255, 255, .7);
+    --arrow-direction: -45deg;
+
+    position: absolute;
+    width: var(--arrow-size);
+    height: var(--arrow-size);
+    top: 46%;
+    left: var(--arrow-left-offset);
+    border-left: 10px solid var(--arrow-color);
+    border-top: 10px solid var(--arrow-color);
+    transform: rotate(var(--arrow-direction));
+}
+
+#buttons button.right div.arrow {
+    --arrow-direction: 135deg;
+    --arrow-left-offset: 20px;
+}
+
+#buttons div.container:has(button:hover) {
+    opacity: 1;
+}
+
+#buttons button:hover{
+    cursor: pointer;
+}
+
+#buttons duv.container:has(button.hidden){
+    width: 0;
 }
 
 

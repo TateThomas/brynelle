@@ -8,6 +8,7 @@ var typeFilters = ['elopements', 'engagements', 'bridals', 'couples', 'friends',
 var locationFilters = ['goblin-valley', 'moab', 'sand-dunes', 'antelope-island', 'utah-mountains', 'roadside', 'fall-trees', 'little-white-chapel', 'las-vegas', 'studio', 'downtown', 'parks', 'forest', 'snow', 'salt-flats', 'utah-lake', 'lakes', 'utah-county', 'arches', 'dead-horse', 'luxury-venue', 'fields', 'eagle-mountain', 'tibble-fork', 'salt-lake'];
 var lightingFilters = ["sunrise", "full-sun", "cloudy", "shaded", "sunset", "blue-hour", "flash", "indoor"];
 var database = new Database();
+var lastScrolled = new Date().getTime();
 
 
 function makeListInnerHTML(elementName, listName) {
@@ -149,12 +150,60 @@ function loadMorePhotos() {
 }
 
 
+function changePicture(e) {
+    
+    let currentElements = Array.prototype.slice.call(document.querySelectorAll("div#photos>div.show"));
+    let currentIndex = currentElements.indexOf(document.querySelector(".expanded"));
+    
+    let currentButton = this.classList[0];
+    let newIndex;
+    if (currentButton == 'left') {
+        newIndex = currentIndex - 1;
+    }
+    else {
+        newIndex = (currentIndex + 1) % currentElements.length;
+    }
+    
+    
+    if (currentIndex >= 0) {
+        
+        currentElements[currentIndex].children[0].click();
+        lastScrolled = new Date().getTime();
+        currentElements[newIndex].scrollIntoView({behavior: 'smooth',
+                                                 block: 'nearest'});
+        
+        setTimeout(function() {
+            let currentInterval = setInterval(function() {
+                loadMorePhotos();
+                if ((new Date().getTime() - lastScrolled) > 50) {
+                    currentElements[newIndex].children[0].click();
+                    clearInterval(currentInterval);
+                }
+            }, 10);
+        }, 350);
+        
+    }
+    
+}
+
+
+function buttonsListeners() {
+    
+    let buttons = document.querySelectorAll("div#buttons button");
+    buttons.forEach(button => {
+        button.addEventListener('click', changePicture);
+    });
+    
+}
+
+
 initializeList("type", typeFilters, true);
 initializeList("location", locationFilters, true);
 initializeList("lighting", lightingFilters, false);
 
 window.onscroll = function () {
 
+    lastScrolled = new Date().getTime();
     expandedFollow();
     filtersTabFollow();
     loadMorePhotos();
@@ -183,5 +232,6 @@ window.onload = function () {
     expandedFollow();
     filtersTabFollow();
     setTimeout(loadMorePhotos, 500);
+    buttonsListeners();
 
 }
