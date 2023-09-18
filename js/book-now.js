@@ -16,7 +16,7 @@ let bookNow = `
                 <source type="image/avif" srcset="./images/goblin_valley_transition.avif">
                 <source type="image/webp" srcset="./images/goblin_valley_transition.webp">
                 <source type="image/jpg" srcset="./images/goblin_valley_transition.jpg">
-                <img src="./images/goblin_valley_transition.avif" alt="Couple kissing in goblin valley" loading="lazy">
+                <img src="./images/goblin_valley_transition.webp" alt="Couple kissing in goblin valley" loading="lazy">
             </picture>
 `;
 document.getElementById("book-now").innerHTML = bookNow;

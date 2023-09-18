@@ -8,6 +8,7 @@ var typeFilters = ['elopements', 'engagements', 'bridals', 'couples', 'friends',
 var locationFilters = ['goblin-valley', 'moab', 'sand-dunes', 'antelope-island', 'utah-mountains', 'roadside', 'fall-trees', 'little-white-chapel', 'las-vegas', 'studio', 'downtown', 'parks', 'forest', 'snow', 'salt-flats', 'utah-lake', 'lakes', 'utah-county', 'arches', 'dead-horse', 'luxury-venue', 'fields', 'eagle-mountain', 'tibble-fork', 'salt-lake'];
 var lightingFilters = ["sunrise", "full-sun", "cloudy", "shaded", "sunset", "blue-hour", "flash", "indoor"];
 var database = new Database();
+let buttons = document.querySelectorAll("div#buttons button");
 var lastScrolled = new Date().getTime();
 
 
@@ -151,10 +152,10 @@ function loadMorePhotos() {
 
 
 function changePicture(e) {
-    
+
     let currentElements = Array.prototype.slice.call(document.querySelectorAll("div#photos>div.show"));
     let currentIndex = currentElements.indexOf(document.querySelector(".expanded"));
-    
+
     let currentButton = this.classList[0];
     let newIndex;
     if (currentButton == 'left') {
@@ -163,17 +164,19 @@ function changePicture(e) {
     else {
         newIndex = (currentIndex + 1) % currentElements.length;
     }
-    
-    
+
+
     if (currentIndex >= 0) {
-        
+
         currentElements[currentIndex].children[0].click();
         lastScrolled = new Date().getTime();
-        currentElements[newIndex].scrollIntoView({behavior: 'smooth',
-                                                 block: 'nearest'});
-        
-        setTimeout(function() {
-            let currentInterval = setInterval(function() {
+        currentElements[newIndex].scrollIntoView({
+            behavior: 'smooth',
+            block: 'nearest'
+        });
+
+        setTimeout(function () {
+            let currentInterval = setInterval(function () {
                 loadMorePhotos();
                 if ((new Date().getTime() - lastScrolled) > 50) {
                     currentElements[newIndex].children[0].click();
@@ -181,19 +184,27 @@ function changePicture(e) {
                 }
             }, 10);
         }, 350);
-        
+
     }
-    
+
 }
 
 
 function buttonsListeners() {
-    
-    let buttons = document.querySelectorAll("div#buttons button");
+
     buttons.forEach(button => {
+
         button.addEventListener('click', changePicture);
+
+        button.addEventListener("mousemove", (e) => {
+            const { x, y } = button.getBoundingClientRect();
+            button.parentElement.style.setProperty("--x", e.clientX - x);
+            button.parentElement.style.setProperty("--y", e.clientY - y);
+            currentY = window.scrollY;
+        });
+
     });
-    
+
 }
 
 

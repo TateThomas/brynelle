@@ -44,8 +44,8 @@
     flex-direction: column;
     height: var(--book-now-height);
     position: relative;
-    background-color: transparent;
-    z-index: calc(var(--lower-gradient-z) + 1);
+    background-color: white;
+    z-index: 2;
 }
 
 #book-now>div {

@@ -147,7 +147,7 @@ function initInfo(info, pictures, rowsPerPic) {
                             <source type="image/avif" srcset="${imgPath}.avif">
                             <source type="image/webp" srcset="${imgPath}.webp">
                             <source type="image/jpg" srcset="${imgPath}.jpg">
-                            <img src="${imgPath}.avif" alt="${pictures[nthPicture % pictures.length][1]}">
+                            <img src="${imgPath}.webp" alt="${pictures[nthPicture % pictures.length][1]}">
                         </picture>
                     </div>
                     <div class="questions">
@@ -172,7 +172,7 @@ function initInfo(info, pictures, rowsPerPic) {
                             <source type="image/avif" srcset="${imgPath}.avif">
                             <source type="image/webp" srcset="${imgPath}.webp">
                             <source type="image/jpg" srcset="${imgPath}.jpg">
-                            <img src="${imgPath}.avif" alt="${pictures[nthPicture % pictures.length][1]}">
+                            <img src="${imgPath}.webp" alt="${pictures[nthPicture % pictures.length][1]}">
                         </picture>
                     </div>
                 </div>

@@ -753,6 +753,13 @@ div.single-choice.invalid label:last-child::before {
 }
 
 
+/****************** Footer ******************/
+
+#footer {
+    position: static !important;
+}
+
+
 @media screen and (max-width: 900px) {
 
     #form {

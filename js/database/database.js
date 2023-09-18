@@ -43,6 +43,8 @@ class Database {
             "location": [],
             "lighting": []
         };
+        this.totalPhotosCurrentlyVisible = 0;
+        this.visibleElements = [];
 
         this.loadData();
 
@@ -86,8 +88,8 @@ class Database {
             await obj.updateUserPage();
 
             let thisInterval = setInterval(function () {
-                
-                if (document.getElementById("photos").className == "loaded") {
+
+                if ((document.getElementById("photos").className == "loaded") && (database.totalPhotosCurrentlyVisible >= 0)) {
                     let searchParameters = new URLSearchParams(window.location.search);
                     if (searchParameters.get("filterType") != undefined) {
                         obj.updateFilters(searchParameters.get("filterType").replaceAll('\"', ''), searchParameters.get("filterSpecifier").replaceAll('\"', ''), true);
@@ -410,7 +412,9 @@ class Database {
 
         }
 
-        document.getElementById("photos").getElementsByTagName("h4")[0].innerHTML = `${this.totalPhotosCurrentlyVisible} photo${(this.totalPhotosCurrentlyVisible != 1) ? "s" : ""}`;
+        this.visibleElements = Array.prototype.slice.call(document.querySelectorAll("div#photos>div.show"));
+        this.totalPhotosCurrentlyVisible = this.visibleElements.length;
+        document.getElementById("photo-amount").innerHTML = `${this.totalPhotosCurrentlyVisible} photo${(this.totalPhotosCurrentlyVisible != 1) ? "s" : ""}`;
         //this.updateUserPage();
 
         const filterKeys = Object.keys(this.currentFilters);
@@ -447,8 +451,6 @@ class Database {
             amountElem.className = amountElem.className.replace("hidden", "show");
         }
         amountElem.querySelector(".number").innerHTML = filterCount.toString();
-        
-        this.visibleElements = Array.prototype.slice.call(document.querySelectorAll("div#photos>div.show"));
 
     }
 
@@ -559,7 +561,7 @@ class Database {
         function expandImage() {
 
             let clickedIndex = obj.visibleElements.indexOf(this.parentElement);
-            
+
             if (clickedIndex == 0) {
                 document.querySelector("button.left").className = "left hidden";
             }
@@ -572,9 +574,9 @@ class Database {
             else {
                 document.querySelector("button.right").className = "right show";
             }
-            
+
             let { x, y } = this.parentElement.getBoundingClientRect();
-            
+
             if (this.parentElement.classList[2] == "expanded") {
 
                 this.className = this.className.replace("big", "small");
@@ -621,7 +623,7 @@ class Database {
 
         let obj = this;
         let photos = document.getElementById("photos");
-        let newHTML = `<h4>${this.totalPhotosCurrentlyVisible} photo${(this.totalPhotosCurrentlyVisible != 1) ? "s" : ""}</h4>`;
+        let newHTML = `<p id="photo-amount">${this.totalPhotosCurrentlyVisible} photo${(this.totalPhotosCurrentlyVisible != 1) ? "s" : ""}</p>`;
 
         if (this.currentPictures.length > 0) {
 
@@ -636,6 +638,8 @@ class Database {
                 if (i == (images.length - 1)) {
                     document.getElementById("photos").className = "loaded";
                     this.visibleElements = Array.prototype.slice.call(document.querySelectorAll("div#photos>div.show"));
+                    this.totalPhotosCurrentlyVisible = this.visibleElements.length;
+                    document.getElementById("photo-amount").innerHTML = `${this.totalPhotosCurrentlyVisible} photo${(this.totalPhotosCurrentlyVisible != 1) ? "s" : ""}`;
                 }
             }
 

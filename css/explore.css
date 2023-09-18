@@ -77,7 +77,7 @@
 
 /****************** All ******************/
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
@@ -109,11 +109,14 @@ a {
 }
 
 #content {
+    position: relative;
     color: white;
     display: flex;
     flex-direction: column;
     overflow: hidden;
     width: 100%;
+    background-color: #fffbf5;
+    z-index: 2;
 }
 
 #header.show #links li.gallery>a {
@@ -414,7 +417,7 @@ a {
     padding-top: 0;
 }
 
-#photos h4 {
+#photo-amount {
     grid-column: span 4;
     height: 11px;
     margin: 0;
@@ -441,7 +444,7 @@ a {
     height: var(--image-height);
     margin: 6px 0 6px 0;
     background-image: radial-gradient(ellipse, transparent, rgba(0, 0, 0, .04));
-/*    scroll-margin-top: 125px;*/
+    /*    scroll-margin-top: 125px;*/
 }
 
 #photos div.container {
@@ -572,6 +575,7 @@ a {
     padding: 0;
     margin: 0;
     opacity: 0;
+    overflow: hidden;
 }
 
 #photos img:hover {
@@ -720,7 +724,7 @@ a {
     line-height: 45px;
     text-align: center;
     color: rgba(255, 255, 255, 1);
-    z-index: 2;
+    z-index: 5;
 }
 
 #photos div.expanded div.container:hover::after {
@@ -730,7 +734,10 @@ a {
 
 /****************** BUttons ******************/
 
-#buttons{
+#buttons {
+    --button-width: 125px;
+    --top-offset: 75px;
+
     position: fixed;
     width: 100%;
     height: 0;
@@ -738,74 +745,182 @@ a {
     z-index: 11;
 }
 
-#buttons div.container{
+#buttons div.container {
     --gradient-direction: 90deg;
-    
+    --x: 0px;
+    --y: 0px;
+
     display: flex;
     flex-direction: column;
     position: absolute;
-    background-image: linear-gradient(var(--gradient-direction), rgba(0, 0, 0, .2) 25%, transparent);
+    /*    background-image: linear-gradient(var(--gradient-direction), rgba(0, 0, 0, .2) 25%, transparent);*/
+    /*    background-color: red;*/
     height: 100vh;
     width: 0;
-    opacity: 0;
-    overflow: hidden;
+    /*    opacity: 0;*/
+    /*    overflow: hidden;*/
+    z-index: 5;
     transition: width .25s, opacity .5s;
     transition-delay: 0s, 0s;
 }
 
-#buttons button{
+#buttons button {
+    position: relative;
     width: 100%;
-    height: calc(100vh - 75px);
+    height: calc(100vh - var(--top-offset));
     padding: 0;
-    margin-top: auto;
+    /*    margin-top: auto;*/
+    top: var(--top-offset);
+    left: 0;
     background-color: transparent;
-/*    background-color: red;*/
+    /*    background-color: red;*/
     border: 0;
-    z-index: 2;
+    z-index: 1;
+    transition: width .25s, left .25s;
 }
 
-#content:has(div.expanded) #buttons div.container:has(button.show){
-    width: 100px;
+#buttons div.container::after {
+    content: '';
+    position: absolute;
+    background-image: linear-gradient(var(--gradient-direction), rgba(0, 0, 0, .1) 25%, transparent);
+    width: 0;
+    height: 100vh;
+    /*    top: -75px;*/
+    top: var(--top-offset);
+    left: 0;
+    opacity: 0;
+    z-index: -1;
+    transition: width .25s, top 0s, left .25s, opacity .5s;
+    transition-delay: 0s, .5s, 0s, 0s;
+}
+
+#content:has(div.expanded) #buttons div.container:has(button.show) {
+    /*    width: 100px;*/
     transition-delay: .25s, 0s;
+}
+
+#content:has(div.expanded) #buttons div.container:has(button.show)::after {
+    width: var(--button-width);
+}
+
+#content:has(div.expanded) #buttons button.show {
+    width: var(--button-width);
 }
 
 #buttons div.container:has(button.right) {
     --gradient-direction: -90deg;
-    
+
     right: 0;
+}
+
+#content:has(div.expanded) #buttons button.right.show {
+    left: calc(-1 * var(--button-width));
+}
+
+#content:has(div.expanded) #buttons div.container:has(button.right.show)::after {
+    /*    right: 0;*/
+    left: calc(-1 * var(--button-width));
 }
 
 #buttons button div.arrow {
     --arrow-size: 40px;
-    --arrow-left-offset: 30px;
-    --arrow-color: rgba(255, 255, 255, .7);
+    --arrow-thickness: 10px;
+    --arrow-margin: 45px;
+    --horizontal-offset: calc(var(--button-width) - (var(--arrow-size) + var(--arrow-margin)));
+    --arrow-color: rgba(255, 255, 255, .35);
     --arrow-direction: -45deg;
 
     position: absolute;
     width: var(--arrow-size);
     height: var(--arrow-size);
-    top: 46%;
-    left: var(--arrow-left-offset);
-    border-left: 10px solid var(--arrow-color);
-    border-top: 10px solid var(--arrow-color);
+    top: calc(47.5% - (var(--top-offset) / 2));
+    right: var(--horizontal-offset);
+    border-left: var(--arrow-thickness) solid var(--arrow-color);
+    border-top: var(--arrow-thickness) solid var(--arrow-color);
     transform: rotate(var(--arrow-direction));
+    transition: border .5s;
 }
 
 #buttons button.right div.arrow {
     --arrow-direction: 135deg;
-    --arrow-left-offset: 20px;
+    /*    --arrow-left-offset: calc(var(--button-width) + (var(--arrow-size) / 2));*/
+
+    right: auto;
+    left: var(--horizontal-offset);
 }
 
-#buttons div.container:has(button:hover) {
-    opacity: 1;
-}
-
-#buttons button:hover{
+#buttons button:hover {
     cursor: pointer;
 }
 
-#buttons duv.container:has(button.hidden){
+#buttons div.container:has(button.hidden) {
     width: 0;
+}
+
+#buttons div.container:has(button:hover)::after {
+    top: 0;
+    opacity: 1;
+    transition-delay: 0s, 0s, 0s, 0s;
+}
+
+#buttons button:hover div.arrow {
+    --arrow-color: rgba(255, 255, 255, .725);
+}
+
+#buttons div.mouse-shadow {
+    --cursor-shadow-size: 600px;
+    --cursor-shadow: rgba(0, 0, 0, .175);
+
+    position: absolute;
+    width: var(--button-width);
+    height: 100vh;
+    top: var(--top-offset);
+    /*    top: 0;*/
+    -webkit-mask-image: linear-gradient(var(--gradient-direction), rgba(0, 0, 0, 1) 20%, rgba(0, 0, 0, 0));
+    mask-image: linear-gradient(var(--gradient-direction), rgba(0, 0, 0, 1) 20%, rgba(0, 0, 0, 0));
+    z-index: -1;
+    transition: top 0s;
+    transition-delay: 0.5s;
+}
+
+#buttons div.container:has(button.left) div.mouse-shadow {
+    left: calc(-1 * var(--button-width));
+}
+
+#content:has(div.expanded) #buttons div.container:has(button.left.show) div.mouse-shadow {
+    left: 0;
+}
+
+#buttons div.container:has(button.right) div.mouse-shadow {
+    left: 0;
+}
+
+#content:has(div.expanded) #buttons div.container:has(button.right.show) div.mouse-shadow {
+    left: calc(-1 * var(--button-width));
+}
+
+#buttons div.mouse-shadow::after {
+    content: '';
+    display: block;
+    position: relative;
+    width: var(--cursor-shadow-size);
+    height: var(--cursor-shadow-size);
+    top: calc((var(--y, 0) * 1px) - (var(--cursor-shadow-size) / 2));
+    left: calc((var(--x, 0) * 1px) - (var(--cursor-shadow-size) / 2));
+    background: radial-gradient(var(--cursor-shadow), transparent 70%);
+    opacity: 0;
+    z-index: -2;
+    transition: opacity .5s;
+}
+
+#buttons div.container:has(button.show:hover) div.mouse-shadow {
+    /*    top: -75px;*/
+    top: 0;
+    transition-delay: 0s;
+}
+
+#buttons div.container:has(button.show:hover) div.mouse-shadow::after {
+    opacity: 1;
 }
 
 
@@ -815,7 +930,7 @@ a {
         grid-template-columns: repeat(3, var(--image-width));
     }
 
-    #photos h4 {
+    #photo-amount {
         grid-column: span 3;
     }
 
@@ -838,7 +953,7 @@ a {
         grid-template-columns: repeat(2, var(--image-width));
     }
 
-    #photos h4 {
+    #photo-amount {
         grid-column: span 2;
     }
 
@@ -988,6 +1103,16 @@ a {
         padding-bottom: 2px;
     }
 
+    #buttons {
+        --button-width: 100px;
+    }
+
+    #buttons button div.arrow {
+        --arrow-size: 35px;
+        --arrow-thickness: 9px;
+        --arrow-margin: 35px;
+    }
+
 }
 
 @media screen and (max-width: 700px) {
@@ -997,6 +1122,16 @@ a {
         --image-width: 200px;
 
         margin: auto;
+    }
+
+    #buttons {
+        --button-width: 90px;
+    }
+
+    #buttons button div.arrow {
+        --arrow-size: 32px;
+        --arrow-thickness: 8px;
+        --arrow-margin: 30px;
     }
 
 }
@@ -1045,6 +1180,16 @@ a {
         margin: auto 0 9px 0;
     }
 
+    #buttons {
+        --button-width: 60px;
+    }
+
+    #buttons button div.arrow {
+        --arrow-size: 27px;
+        --arrow-thickness: 7px;
+        --arrow-margin: 22px;
+    }
+
 }
 
 @media screen and (max-width: 400px) {
@@ -1090,7 +1235,7 @@ a {
         grid-template-columns: repeat(1, var(--image-width));
     }
 
-    #photos h4 {
+    #photo-amount {
         grid-column: span 1;
     }
 
@@ -1122,6 +1267,16 @@ a {
     #photos div.img118,
     #photos div.img126 {
         --img-span: 1;
+    }
+
+    #buttons {
+        --button-width: 55px;
+    }
+
+    #buttons button div.arrow {
+        --arrow-size: 24px;
+        --arrow-thickness: 6px;
+        --arrow-margin: 20px;
     }
 
 }

@@ -4,7 +4,7 @@ let steps = `
                     <source type="image/avif" srcset="./images/pricing/sun.avif">
                     <source type="image/webp" srcset="./images/pricing/sun.webp">
                     <source type="image/jpg" srcset="./images/pricing/sun.jpg">
-                    <img src="./images/pricing/sun.avif" alt="Sun line art">
+                    <img src="./images/pricing/sun.webp" alt="Sun line art">
                 </picture>
             </div>
             
