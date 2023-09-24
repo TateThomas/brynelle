@@ -90,8 +90,10 @@ a {
 #content {
     color: white;
     overflow: hidden;
+    position: relative;
     width: 100%;
     background-color: #fffbf5;
+    z-index: 2;
 }
 
 #links li.info {

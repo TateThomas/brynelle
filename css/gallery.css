@@ -95,8 +95,10 @@ a {
 #content {
     color: white;
     overflow-x: hidden;
+    position: relative;
     width: 100%;
-    z-index: 1;
+    z-index: 2;
+    background-color: #FFFBF5;
 }
 
 #header.show #links li.gallery>a {

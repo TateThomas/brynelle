@@ -64,9 +64,11 @@
 #steps {
     display: flex;
     flex-direction: column;
+    position: relative;
     width: 100%;
     padding-bottom: 155px;
     background-color: #fff8ee;
+    z-index: 2;
 }
 
 #steps div.image {

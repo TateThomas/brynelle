@@ -56,7 +56,7 @@
         <div id="form" class="">
 
             <iframe name="hiddenConfirm" id="hiddenConfirm" style="display: none"
-                onload="if(submitted){window.location='contact/success.html';}"></iframe>
+                onload="if(submitted){setTimeout(function() {window.location='contact/success.html';}, 500);}"></iframe>
             <form
                 action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSffOqFmF31uSwLqpY1u2azJ3-zLo0mdqa3BK_PqS8-T7sh7oA/formResponse"
                 method="POST" target="hiddenConfirm" onsubmit="submitted=true">

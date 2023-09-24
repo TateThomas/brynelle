@@ -47,7 +47,7 @@ let appFooter = `
                         <li><a href="https://www.instagram.com/brynellephoto/"><img src="/images/socials/insta.png" alt="Brown Instagram logo"></a>
                         </li>
                         <li>
-                            <a href="https://www.pinterest.com.au/brynelle_photo/"><img src="/images/socials/pinterest.png" alt="Brown Pinterest Logo"></a>
+                            <a href="https://www.pinterest.com/brynellephoto/"><img src="/images/socials/pinterest.png" alt="Brown Pinterest Logo"></a>
                         </li>
                     </ul>
                 </div>

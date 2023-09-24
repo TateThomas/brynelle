@@ -878,6 +878,7 @@ a {
     /*    top: 0;*/
     -webkit-mask-image: linear-gradient(var(--gradient-direction), rgba(0, 0, 0, 1) 20%, rgba(0, 0, 0, 0));
     mask-image: linear-gradient(var(--gradient-direction), rgba(0, 0, 0, 1) 20%, rgba(0, 0, 0, 0));
+    overflow: hidden;
     z-index: -1;
     transition: top 0s;
     transition-delay: 0.5s;
@@ -903,14 +904,15 @@ a {
     content: '';
     display: block;
     position: relative;
-    width: var(--cursor-shadow-size);
-    height: var(--cursor-shadow-size);
-    top: calc((var(--y, 0) * 1px) - (var(--cursor-shadow-size) / 2));
-    left: calc((var(--x, 0) * 1px) - (var(--cursor-shadow-size) / 2));
+    width: 0;
+    height: 0;
+    top: calc((var(--y) * 1px) - (var(--cursor-shadow-size) / 2));
+    left: calc((var(--x) * 1px) - (var(--cursor-shadow-size) / 2));
     background: radial-gradient(var(--cursor-shadow), transparent 70%);
     opacity: 0;
     z-index: -2;
-    transition: opacity .5s;
+    transition: opacity .5s, width 0s, height 0s;
+    transition-delay: 0s, .5s, .5s;
 }
 
 #buttons div.container:has(button.show:hover) div.mouse-shadow {
@@ -920,7 +922,10 @@ a {
 }
 
 #buttons div.container:has(button.show:hover) div.mouse-shadow::after {
+    width: var(--cursor-shadow-size);
+    height: var(--cursor-shadow-size);
     opacity: 1;
+    transition-delay: 0s, 0s, 0s;
 }
 
 
