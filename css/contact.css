@@ -1,5 +1,6 @@
 @import "/css/header.css";
 @import "/css/footer.css";
+@import "/css/top.css";
 
 
 @font-face {
@@ -117,12 +118,19 @@ a {
     width: 100%;
 }
 
-#links li.contact {
+/* #links li.contact {
     background-color: #ddc2bf;
 }
 
 #links li.contact>a:hover {
     color: #c89c97 !important;
+} */
+
+#header.show li.info {
+    height: calc(var(--header-height) - 1px);
+    border-bottom: 1px solid #ca9e85;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
 }
 
 
@@ -396,14 +404,8 @@ div.single-choice input::after {
     position: absolute;
     width: 14px;
     height: 14px;
-/*    top: -4px;*/
-/*    left: -4px;*/
-/*
-    top: -34.9%;
-    left: -34.9%;
-*/
-    top: -3.2px;
-    left: -3.2px;
+    top: -4px;
+    left: -4px;
     border: 1px solid var(--light-black);
     border-radius: 50%;
 }
@@ -578,7 +580,7 @@ div.short-answer input.invalid,
 select.invalid,
 div.single-choice.invalid label {
     border-bottom: 1px solid var(--required-red);
-    box-shadow: 0 0 2px var(--req-red-dark);
+    box-shadow: 0 0 1.5px var(--req-red-dark);
     background-color: var(--req-red-dimmer);
 }
 

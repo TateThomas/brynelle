@@ -2,6 +2,7 @@
 @import "/css/footer.css";
 @import "/css/steps.css";
 @import "/css/book-now.css";
+@import "/css/top.css";
 
 
 @font-face {
@@ -142,11 +143,18 @@ a {
 }
 
 #links li.about-me {
-    background-color: #ddc2bf;
+    /* background-color: #ddc2bf; */
 }
 
 #links li.about-me>a:hover {
-    color: #c89c97 !important;
+    /* color: #c89c97 !important; */
+}
+
+#header.show li.about-me {
+    height: calc(var(--header-height) - 1px);
+    border-bottom: 1px solid #ca9e85;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
 }
 
 
@@ -301,6 +309,7 @@ a {
     width: -webkit-max-content;
     width: -moz-max-content;
     width: max-content;
+    position: relative;
     font-family: "Black Aroug";
     font-weight: bold;
     -webkit-font-feature-settings: "kern" 1;
@@ -312,6 +321,19 @@ a {
     font-size: var(--font-size);
     line-height: var(--line-height);
     z-index: 2;
+}
+
+#top-page div.text h1::after{
+    position: absolute;
+    left: .5px;
+}
+
+#top-page div.text h1:first-child::after{
+    content: 'Meet';
+}
+
+#top-page div.text h1:last-child::after{
+    content: 'Brynelle';
 }
 
 #top-page div.text h1:first-child {

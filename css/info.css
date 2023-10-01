@@ -1,6 +1,7 @@
 @import "/css/header.css";
 @import "/css/footer.css";
 @import "/css/book-now.css";
+@import "/css/top.css";
 
 
 @font-face {
@@ -97,11 +98,18 @@ a {
 }
 
 #links li.info {
-    background-color: #ddc2bf;
+    /* background-color: #ddc2bf; */
 }
 
 #links li.info>a:hover {
-    color: #c89c97 !important;
+    /* color: #c89c97 !important; */
+}
+
+#header.show li.info {
+    height: calc(var(--header-height) - 1px);
+    border-bottom: 1px solid #ca9e85;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
 }
 
 

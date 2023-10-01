@@ -1,6 +1,7 @@
 @import "/css/header.css";
 @import "/css/footer.css";
 @import "/css/book-now.css";
+@import "/css/top.css";
 
 
 @font-face {
@@ -208,7 +209,8 @@ a {
     width: calc(100% - var(--indent));
     padding: 35px 0 35px 0;
     margin: 200px 0 200px 0;
-    background-color: #ffdac2;
+    /* background-color: #ffdac2; */
+    background-color: #fde6db;
 }
 
 #worldwide div.container {
@@ -326,7 +328,8 @@ a {
     padding: 200px 150px 75px 150px;
     margin: 250px auto 0 auto;
     border-radius: 380px 380px 0 0;
-    background-color: #e6d5be;
+    /* background-color: #e6d5be; */
+    background-color: #fff9ef;
     z-index: 3;
 }
 
@@ -368,20 +371,23 @@ a {
 #discount {
     width: 100%;
     padding: 300px 0 275px 0;
-    background-color: #fff5e6;
+    /* background-color: #fff5e6; */
+    background-color: #fffbf5;
 }
 
 #discount div.container {
     display: flex;
     position: relative;
     padding: 100px 0 100px 0;
-    background-color: #d49273;
+    /* background-color: #d49273; */
+    background-color: #fde6db;
 }
 
 #discount h2 {
     position: absolute;
     color: var(--light-black);
-    color: #533626;
+    /* color: #533626; */
+    color: var(--light-black);
     font-family: 'Holland Regular';
     font-size: 80px;
     top: -45px;
@@ -389,6 +395,7 @@ a {
 }
 
 #discount h1 {
+    color: #976345;
     font-family: "Black Aroug";
     -webkit-font-feature-settings: "kern" 1;
     -moz-font-feature-settings: "kern" 1;
@@ -399,7 +406,8 @@ a {
     letter-spacing: 0.02em;
     word-spacing: 5px;
     text-transform: uppercase;
-    border-bottom: 1px solid white;
+    /* border-bottom: 1px solid white; */
+    border-bottom: 1px solid #976345;
     margin: 0 75px 0 auto;
 }
 

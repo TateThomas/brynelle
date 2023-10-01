@@ -2,6 +2,7 @@
 @import "/css/footer.css";
 @import "/css/book-now.css";
 @import "/css/steps.css";
+@import "/css/top.css";
 
 
 @font-face {
@@ -126,13 +127,19 @@ a {
 }
 
 #links li.pricing {
-    background-color: #ddc2bf;
+    /* background-color: #ddc2bf; */
 }
 
 #links li.pricing>a:hover {
-    color: #c89c97 !important;
+    /* color: #c89c97 !important; */
 }
 
+#header.show li.pricing {
+    height: calc(var(--header-height) - 1px);
+    border-bottom: 1px solid #ca9e85;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
 
 /****************** Investment ******************/
 

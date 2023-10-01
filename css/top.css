@@ -1,0 +1,80 @@
+
+#top {
+    --button-size: 50px;
+    --screen-padding: 20px;
+    --arrow-thickness: 5%;
+    --arrow-padding: 20%;
+    --top-offset: 10%;
+    --opacity-initial: .15;
+    --opacity-final: .3;
+    --transition-time: .25s;
+
+    display: flex;
+    position: fixed;
+    width: var(--button-size);
+    height: var(--button-size);
+    bottom: calc(-1 * var(--button-size));
+    right: var(--screen-padding);
+    border-radius: 50%;
+    opacity: 0;
+    z-index: 8;
+    transition: bottom .25s, opacity .25s;
+}
+
+#top.show{
+    bottom: var(--screen-padding);
+    opacity: 1;
+}
+
+#top span.arrow{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, var(--opacity-initial));
+    clip-path: polygon(
+        0% 0%,
+        100% 0%,
+        100% calc(50% + var(--top-offset)),
+        calc(100% - var(--arrow-padding)) calc(50% + var(--top-offset)),
+        50% calc(0% + var(--arrow-padding) + var(--top-offset)),
+        calc(0% + var(--arrow-padding)) calc(50% + var(--top-offset)),
+        calc(var(--arrow-thickness) + var(--arrow-padding)) calc(50% + var(--arrow-thickness) + var(--top-offset)),
+        50% calc((var(--arrow-thickness) * 2) + var(--arrow-padding) + var(--top-offset)),
+        calc(100% - var(--arrow-thickness) - var(--arrow-padding)) calc(50% + var(--arrow-thickness) + var(--top-offset)),
+        calc(100% - var(--arrow-padding)) calc(50% + var(--top-offset)),
+        100% calc(50% + var(--top-offset)),
+        100% 100%,
+        0% 100%
+        );
+    border-radius: 50%;
+    transition: background var(--transition-time);
+}
+
+#top span.inner {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0);
+    clip-path: polygon(
+        var(--arrow-padding) calc(50% + var(--top-offset)),
+        50% calc(var(--arrow-padding) + var(--top-offset)),
+        calc(100% - var(--arrow-padding)) calc(50% + var(--top-offset)),
+        calc(100% - var(--arrow-padding) - var(--arrow-thickness)) calc(50% + var(--top-offset) + var(--arrow-thickness)),
+        50% calc((2 * var(--arrow-thickness)) + var(--arrow-padding) + var(--top-offset)),
+        calc(var(--arrow-padding) + var(--arrow-thickness)) calc(50% + var(--top-offset) + var(--arrow-thickness))
+    );
+    transition: background var(--transition-time);
+}
+
+#top:hover {
+    cursor: pointer;
+}
+
+#top:hover span.arrow {
+    background: rgba(0, 0, 0, var(--opacity-final));
+}
+
+#top:hover span.inner {
+    background: rgba(255, 255, 255, var(--opacity-final));
+}

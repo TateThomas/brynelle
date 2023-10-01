@@ -2,6 +2,7 @@
 @import "/css/footer.css";
 @import "/css/steps.css";
 @import "/css/book-now.css";
+@import "/css/top.css";
 
 
 @font-face {
@@ -185,6 +186,26 @@ a {
     transition: opacity 2.5s;
 }
 
+#images picture:nth-child(1) img{
+    object-position: bottom;
+}
+
+#images picture:nth-child(2) img{
+    object-position: top;
+}
+
+#images picture:nth-child(3) img{
+    object-position: 50% 47.5%;
+}
+
+#images picture:nth-child(5) img{
+    object-position: 50% 25%;
+}
+
+#images picture:nth-child(6) img{
+    object-position: 50% 71%;
+}
+
 #top-page img.show {
     opacity: 1;
 }
@@ -194,15 +215,16 @@ a {
 }
 
 #top-page h2 {
-    --left-transition: 3.5s;
-    --opacity-transition: 4.5s;
+    --left-transition: 3s;
+    --opacity-transition: 4s;
 
     position: relative;
     top: 62vh;
-    left: -400px;
+    left: -125px;
     font-family: 'Holland Regular';
     font-size: 75px;
-    color: var(--light-black);
+    /* color: var(--light-black); */
+    color: #fffaf3;
     z-index: calc(var(--lower-gradient-z) + 3);
     word-spacing: 2px;
     opacity: 0;
@@ -215,7 +237,7 @@ a {
 #top-page h2:nth-child(3) {
     --animation-extend: .25s;
 
-    left: -525px;
+    left: -75px;
     -webkit-transition: left calc(var(--left-transition) + var(--animation-extend)), opacity calc(var(--opacity-transition) + var(--animation-extend));
     -moz-transition: left calc(var(--left-transition) + var(--animation-extend)), opacity calc(var(--opacity-transition) + var(--animation-extend));
     -o-transition: left calc(var(--left-transition) + var(--animation-extend)), opacity calc(var(--opacity-transition) + var(--animation-extend));
@@ -637,7 +659,7 @@ a {
 #about-me-pictures div.image {
     position: absolute;
     padding: 25px 27px 75px 27px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, .05);
+    box-shadow: 0 0 5px rgba(0, 0, 0, .05);
 }
 
 #about-me-pictures div.a {
@@ -765,7 +787,7 @@ a {
 #lower-page>div>div:last-child {
     position: relative;
     display: flex;
-    top: calc((-1 * var(--lower-page-border-thickness)) + .35px);
+    top: calc((-1 * var(--lower-page-border-thickness)));
     width: 100%;
 }
 
@@ -1115,7 +1137,7 @@ a {
 
     position: relative;
     background-color: var(--bottom-color);
-    margin-top: 250px;
+    margin-top: 150px;
     padding-top: 150px;
     padding-bottom: 100px;
     overflow: hidden;
@@ -2398,6 +2420,26 @@ a {
         --top-page-height: 85vh;
     }
 
+    #images picture:nth-child(1) img{
+        object-position: 47.25% 100%;
+    }
+
+    #images picture:nth-child(2) img{
+        object-position: 25% 0%;
+    }
+
+    #images picture:nth-child(3) img{
+        object-position: 45% 25%;
+    }
+
+    #images picture:nth-child(4) img{
+        object-position: 80% 47.5%;
+    }
+
+    #images picture:nth-child(6) img{
+        object-position: 61% 71%;
+    }
+
     #top-page h2 {
         font-size: 38px;
         top: 47vh;
@@ -2771,7 +2813,7 @@ a {
     }
 
     #my-work-content button.shadow-scroll {
-        --extra-width: -30px;
+        --extra-width: -10px;
     }
 
     #my-work-content button.shadow-scroll div.arrow {
@@ -2904,10 +2946,12 @@ a {
     #top-page h2:nth-child(3) {
         width: 250px;
         text-align: center;
+        text-indent: -45px;
     }
 
     #top-page h2.loaded:nth-child(3) {
-        left: 55px;
+        /* left: 80px; */
+        left: calc(100vw - 250px);
     }
 
     #lower-page>div {

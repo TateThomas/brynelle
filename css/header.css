@@ -10,18 +10,36 @@
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'Holland Regular';
+    src: url('/fonts/cursive/holland/Holland.eot');
+    src: url('/fonts/cursive/holland/Holland.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/cursive/holland/Holland.woff2') format('woff2'),
+        url('/fonts/cursive/holland/Holland.woff') format('woff'),
+        url('/fonts/cursive/holland/Holland.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 
 #header {
     --header-height: 46px;
     --header-color: #e6d2c6;
+    --header-color: #efd9c4;
+    --header-color: #fff4ea;
+    --header-color: #fffbf5;
+    /* --line-color: #efd9c4; */
     --header-radius: calc(var(--header-height) / 2);
     --shadow-color: rgba(0, 0, 0, .2);
+    --shadow-color: rgba(255, 251, 245, .2);
 
     position: fixed;
     display: flex;
     width: 100%;
     height: var(--header-height);
     color: white;
+    color: var(--light-black);
     z-index: 10;
     transition: background-color .75s;
 }
@@ -30,7 +48,8 @@
     position: absolute;
     top: var(--header-height);
     width: 0;
-    border-bottom: 2px solid white;
+    /* border-bottom: 2px solid white; */
+    /* border-bottom: 2px solid var(--line-color); */
     z-index: 8;
     /*box-shadow: 0 3px 5px rgba(0, 0, 0, .01);*/
     transition: width 1.3s, box-shadow 2s;
@@ -51,14 +70,20 @@
 }
 
 #header h1 {
-    --brand-font-size: 26px;
+    --brand-font-size: 30px;
     --title-padding: calc((var(--header-height) - var(--brand-font-size)) / 2);
 
     display: inline-block;
     margin-right: auto;
     padding: var(--title-padding) calc(var(--title-padding) + 3px) var(--title-padding) calc(var(--title-padding) + 3px);
     font-family: "Alta";
+    font-family: "Holland Regular";
+    /* text-transform: uppercase; */
+    /* font-style: italic; */
+    /* letter-spacing: .01em; */
+    /* word-spacing: .01em; */
     font-size: var(--brand-font-size);
+    color: var(--light-black);
     height: var(--brand-font-size);
     line-height: var(--brand-font-size);
     /*    transition: background-color .5s;*/
@@ -108,8 +133,13 @@
 #links li h2,
 #links li h3 {
     font-family: "Alta";
+    /* font-family: "Josefin Sans"; */
+    /* text-transform: uppercase; */
+    letter-spacing: .05em;
+    /* font-weight: bold; */
     font-size: var(--links-font-size);
     line-height: var(--links-font-size);
+    color: var(--light-black);
     padding: calc((var(--header-height) - var(--links-font-size)) / 2);
     transition: color .2s, background-color .2s;
 }
@@ -117,6 +147,10 @@
 #links li h3 {
     font-weight: normal;
     margin: 0;
+}
+
+#header.hidden div.title a:hover h1, #header.hidden li:hover h2, #header.hidden li:hover>a>h3{
+    color: black;
 }
 
 #header.hidden ul li:hover {
@@ -136,6 +170,7 @@
 
 #links li div.container {
     height: max-content;
+    overflow: hidden;
     /*    overflow-y: hidden;*/
 }
 
@@ -232,7 +267,7 @@
 #links li:hover ul li {
     /*    height: var(--links-font-size);*/
     height: var(--header-height);
-    opacity: 1;
+    /* opacity: 1; */
 }
 
 #header.show li a {
@@ -245,8 +280,9 @@
 
 #header.show li ul {
     background-color: #ddc2b1;
-    border: 2px solid white;
-    border-top: 0;
+    /* border: 2px solid white; */
+    /* border: 2px solid var(--line-color); */
+    /* border-top: 0; */
     border-radius: 0 0 var(--header-radius) var(--header-radius);
     /*    box-shadow: 0 2px 6px rgba(0, 0, 0, .1);*/
 }
@@ -259,6 +295,10 @@
 
 #header.show li ul li {
     border-radius: 0;
+}
+
+#header.show li ul li h3{
+    color: #fffbf5;
 }
 
 #header.show li:hover ul li:hover {
@@ -277,11 +317,11 @@
     }
 
     #header h1 {
-        --brand-font-size: 22px;
+        --brand-font-size: 25px;
     }
 
     #links li {
-        --links-font-size: 18px;
+        --links-font-size: 19px;
     }
 
     #links>ul>li.gallery {
@@ -298,16 +338,16 @@
     }
 
     #header h1 {
-        --brand-font-size: 20px;
+        --brand-font-size: 22px;
     }
 
     #links li {
-        --links-font-size: 16px;
+        --links-font-size: 18px;
     }
 
     #links>ul>li.gallery {
         --gallery-word-width: 83.89px;
-        --gallery-sublist-width: 145px;
+        --gallery-sublist-width: 150px;
     }
 
 }
@@ -358,15 +398,28 @@
         left: 3px;
         margin: 7px;
         margin-top: var(--margin-top);
-        border: 2px solid white;
+        /* border: 2px solid white; */
+        border: 1px solid var(--light-black);
         border-bottom: 0;
         border-radius: 0;
-        transition: height .4s, width .4s, margin-top .4s, margin-left .4s, border-radius .4s;
+        transition: border .2s, height .4s, width .4s, margin-top .4s, margin-left .4s, border-radius .4s;
     }
 
     #burger span:last-child {
         margin-top: calc(var(--margin-top) + var(--line-spacing));
 
+    }
+
+    #header.hidden #burger:hover span{
+        border-top-color: black;
+        border-left-color: black;
+        border-right-color: black;
+    }
+
+    #header.show #burger:hover span{
+        border-top-color: #ca9e85;
+        border-left-color: #ca9e85;
+        border-right-color: #ca9e85;
     }
 
     #burger.show:hover {
@@ -411,6 +464,10 @@
         transition-delay: 0s, 0s, 0s, 0s;
     }
 
+    #links li {
+        --links-font-size: 16px;
+    }
+
     #links>ul>li {
         width: 100%;
         /*        padding-left: 10px;*/
@@ -436,7 +493,7 @@
     }
 
     #header.hidden #links.show {
-        background-color: rgba(0, 0, 0, .15);
+        background-color: rgba(255, 251, 245, .15);
     }
 
     #header.hidden #links.show:hover {
@@ -445,6 +502,10 @@
 
     #header.show #links>ul>li {
         /*        width: 109.48px;*/
+    }
+
+    #header.show #links li h2{
+        color: #fffbf5;
     }
 
     #links.show>ul>li {
@@ -509,8 +570,8 @@
     #header.show nav>ul {
         background-color: #ddc2b1;
         width: calc(100% - 4px);
-        border: 2px solid white;
-        border-top: 0;
+        /* border: 2px solid white; */
+        /* border-top: 0; */
         border-radius: 0 0 var(--header-radius) var(--header-radius);
         overflow: hidden;
         transition-delay: 0s, .6s, 0s, .6s;

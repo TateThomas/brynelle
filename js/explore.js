@@ -5,7 +5,7 @@
 const filters = ["type", "location", "lighting"];
 
 var typeFilters = ['elopements', 'engagements', 'bridals', 'couples', 'friends', 'portraits', 'weddings', 'families'];
-var locationFilters = ['goblin-valley', 'moab', 'sand-dunes', 'antelope-island', 'utah-mountains', 'roadside', 'fall-trees', 'little-white-chapel', 'las-vegas', 'studio', 'downtown', 'parks', 'forest', 'snow', 'salt-flats', 'utah-lake', 'lakes', 'utah-county', 'arches', 'dead-horse', 'luxury-venue', 'fields', 'eagle-mountain', 'tibble-fork', 'salt-lake'];
+var locationFilters = ['goblin-valley', 'moab', 'sand-dunes', 'antelope-island', 'utah-mountains', 'roadside', 'fall-trees', 'little-white-chapel', 'las-vegas', 'studio', 'downtown', 'parks', 'forest', 'snow', 'salt-flats', 'utah-lake', 'lakes', 'utah-county', 'arches', 'dead-horse', 'luxury-venue', 'fields', 'tibble-fork', 'salt-lake', "las-vegas-strip", "layton", "lehi", "provo", "ogden", "tunnel-springs"];
 var lightingFilters = ["sunrise", "full-sun", "cloudy", "shaded", "sunset", "blue-hour", "flash", "indoor"];
 var database = new Database();
 let buttons = document.querySelectorAll("div#buttons button");
@@ -209,8 +209,8 @@ function buttonsListeners() {
 
 
 initializeList("type", typeFilters, true);
-initializeList("location", locationFilters, true);
 initializeList("lighting", lightingFilters, false);
+initializeList("location", locationFilters, true);
 
 window.onscroll = function () {
 

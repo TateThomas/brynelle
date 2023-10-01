@@ -543,10 +543,10 @@ class Database {
                             <source type="image/avif" srcset="${imagePath}.avif">
                             <source type="image/webp" srcset="${imagePath}.webp">
                             <source type="image/jpg" srcset="${imagePath}.jpg">
-                            <img src='${imagePath}.avif' alt="${altText}" loading="lazy">
+                            <img src='${imagePath}.webp' alt="${altText}" loading="lazy">
                         </picture>
                         <div>
-                            <h3>${dateArray[1]} ${parseInt(dateArray[2])} ${dateArray[3]}</h3>
+                            <h3>${dateArray[1]} ${parseInt(dateArray[2])}, ${dateArray[3]}</h3>
                         </div>
                     </div>
                 </div>
@@ -558,6 +558,7 @@ class Database {
 
     updateUserPage() {
 
+        var expandTimeout;
         function expandImage() {
 
             let clickedIndex = obj.visibleElements.indexOf(this.parentElement);
@@ -579,6 +580,8 @@ class Database {
 
             if (this.parentElement.classList[2] == "expanded") {
 
+                clearTimeout(expandTimeout);
+
                 this.className = this.className.replace("big", "small");
 
                 this.style.setProperty("position", "absolute");
@@ -586,17 +589,19 @@ class Database {
                 this.style.setProperty("top", `${-1 * y}px`);
 
                 let obj = this;
-                setTimeout(function () {
+                expandTimeout = setTimeout(function () {
                     if (obj.classList[1] == "small") {
                         obj.parentElement.className = obj.parentElement.className.replace("expanded", "normal");
                         obj.style.setProperty("--transition-time", ".45s");
                         obj.style.setProperty("left", "0px");
                         obj.style.setProperty("top", "0px");
                     }
-                }, 1);
+                }, 5);
 
             }
             else {
+
+                clearTimeout(expandTimeout);
 
                 this.parentElement.className = this.parentElement.className.replace("normal", "expanded");
 
@@ -605,7 +610,7 @@ class Database {
                 this.style.setProperty("--width", `${document.body.clientWidth}px`);
 
                 let obj = this;
-                setTimeout(function () {
+                expandTimeout = setTimeout(function () {
                     if (obj.parentElement.classList[2] == "expanded") {
                         obj.className = obj.className.replace("small", "big");
                         obj.style.setProperty("--transition-time", "0s");

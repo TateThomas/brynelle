@@ -1,5 +1,6 @@
 @import "/css/header.css";
 @import "/css/footer.css";
+@import "/css/top.css";
 
 
 @font-face {
@@ -385,6 +386,26 @@ a {
 }
 
 
+/****************** Notice ******************/
+
+#info div.notice {
+    margin-top: 25px;
+}
+
+#info div.notice p {
+    width: 450px;
+    text-align: center;
+    color: #707070;
+    font-family: 'Josefin Sans';
+    -webkit-font-feature-settings: "kern" 1;
+    -moz-font-feature-settings: "kern" 1;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
+    font-size: 13px;
+    letter-spacing: 0.005em;
+}
+
+
 /****************** Footer ******************/
 
 #footer {
@@ -461,6 +482,14 @@ a {
         width: calc(100% - (2 * (var(--success-margin) + var(--side-padding))));
         padding: 35px var(--side-padding) 60px var(--side-padding);
         margin-top: 90px;
+    }
+
+    #info div.notice {
+        width: 100%;
+    }
+
+    #info div.notice p {
+        width: 100%;
     }
 
 }
@@ -604,6 +633,10 @@ a {
 
     #success p a {
         font-size: 13px;
+    }
+
+    #info div.notice p {
+        font-size: 11px;
     }
 
 }

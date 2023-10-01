@@ -1,6 +1,7 @@
 @import "/css/header.css";
 @import "/css/footer.css";
 @import "/css/book-now.css";
+@import "/css/top.css";
 
 
 @font-face {
@@ -97,11 +98,11 @@ a {
     overflow-x: hidden;
     position: relative;
     width: 100%;
-    z-index: 2;
+    z-index: 3;
     background-color: #FFFBF5;
 }
 
-#header.show #links li.gallery>a {
+/* #header.show #links li.gallery>a {
     background-color: #ddc2bf;
     width: calc(100% - 4px);
     margin: 0 2px 0 2px;
@@ -125,6 +126,19 @@ a {
         border-radius: 0;
     }
 
+} */
+
+#header.show li.gallery {
+    height: calc(var(--header-height) - 1px);
+    border-bottom: 1px solid #ca9e85;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    transition: background-color .5s, max-width .5s, max-height .5s, border .5s;
+    transition-delay: 0s, .35s, 0s, 0s;
+}
+
+#links>ul>li.gallery:hover {
+    transition-delay: 0s, 0s, 0s, 0s;
 }
 
 
@@ -164,8 +178,8 @@ a {
     height: 100%;
     -o-object-fit: cover;
     object-fit: cover;
-    -o-object-position: 0 20%;
-    object-position: 0 20%;
+    -o-object-position: 0 45%;
+    object-position: 0 45%;
 }
 
 #top-page div.picture h2 {
