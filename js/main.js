@@ -160,17 +160,17 @@ function lowerLineAnimation() {
 function setAutoScrollInterval() {
 
     sliderInterval = setInterval(function () {
-        
+
         let myWork = document.getElementById("my-work");
-        
+
         y = myWork.getBoundingClientRect().y;
         distanceFromTop = y - window.innerHeight + 75;
         distanceFromBottom = y + window.innerHeight - 175;
-        
+
         if ((distanceFromTop < 0) && (distanceFromBottom > 0)) {
             mySiema.next();
         }
-        
+
     }, 4500);
 
 }

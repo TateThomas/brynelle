@@ -222,17 +222,18 @@ function contentsFollow() {
     const infoElem = allInfoElem.getElementsByTagName("div")[0];
     const contents = document.getElementById("contents");
 
-    let distanceFromBottomInfo = allInfoElem.getBoundingClientRect().y + allInfoElem.clientHeight - window.innerHeight;
-    let distanceFromBottomContents = contents.getBoundingClientRect().y + contents.clientHeight - window.innerHeight;
-
+    let infoY = allInfoElem.getBoundingClientRect().y;
+    let contentsY = contents.getBoundingClientRect().y;
     let extraDistance = 125;
     if (window.innerWidth <= 1025) {
         extraDistance = 100;
     }
 
+    let distanceFromBottomInfo = infoY + allInfoElem.clientHeight - window.innerHeight;
+    let distanceFromBottomContents = contentsY + contents.clientHeight - window.innerHeight;
     let computedDistance1 = infoElem.getBoundingClientRect().y - extraDistance;
 
-    if ((allInfoElem.getBoundingClientRect().y + extraDistance) > 0) {
+    if ((infoY + extraDistance) > 0) {
         const contentLists = contents.querySelectorAll(".show");
         for (let i = 0; i < contentLists.length; i++) {
             contentLists[i].className = "hidden";
@@ -241,7 +242,7 @@ function contentsFollow() {
     else if (computedDistance1 > 0) {
         contents.style.top = "0px";
     }
-    else if (((contents.getBoundingClientRect().y - extraDistance) > 0) || ((distanceFromBottomContents < distanceFromBottomInfo) && (computedDistance1 <= 0))) {
+    else if (((contentsY - extraDistance) > 0) || ((distanceFromBottomContents < distanceFromBottomInfo) && (computedDistance1 <= 0))) {
         contents.style.top = `${-1 * computedDistance1}px`;
     }
     else {

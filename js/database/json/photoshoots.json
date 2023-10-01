@@ -1,6 +1,22 @@
 [
     {
         "shoot": "A and C Arches Engagements",
+        "parentId": 296
+    },
+    {
+        "shoot": "A and C Arches Engagements",
+        "parentId": 295
+    },
+    {
+        "shoot": "A and C Arches Engagements",
+        "parentId": 291
+    },
+    {
+        "shoot": "A and C Arches Engagements",
+        "parentId": 290
+    },
+    {
+        "shoot": "A and C Arches Engagements",
         "parentId": 90
     },
     {
@@ -49,6 +65,14 @@
     },
     {
         "shoot": "B and C Couple Shoot",
+        "parentId": 258
+    },
+    {
+        "shoot": "B and C Couple Shoot",
+        "parentId": 256
+    },
+    {
+        "shoot": "B and C Couple Shoot",
         "parentId": 40
     },
     {
@@ -80,12 +104,80 @@
         "parentId": 111
     },
     {
+        "shoot": "B and K Bridals",
+        "parentId": 330
+    },
+    {
+        "shoot": "B and K Bridals",
+        "parentId": 329
+    },
+    {
+        "shoot": "B and K Bridals",
+        "parentId": 319
+    },
+    {
+        "shoot": "B and K Bridals",
+        "parentId": 318
+    },
+    {
+        "shoot": "B and K Bridals",
+        "parentId": 316
+    },
+    {
+        "shoot": "B and K Bridals",
+        "parentId": 315
+    },
+    {
+        "shoot": "B and S Couples Session",
+        "parentId": 338
+    },
+    {
         "shoot": "B and S Couples Session",
         "parentId": 70
     },
     {
-        "shoot": "Bellagio Fountain Bridals",
+        "shoot": "Beliagio Hotel Bridals",
+        "parentId": 200
+    },
+    {
+        "shoot": "Beliagio Hotel Bridals",
+        "parentId": 199
+    },
+    {
+        "shoot": "Beliagio Hotel Bridals",
+        "parentId": 198
+    },
+    {
+        "shoot": "Beliagio Hotel Bridals",
+        "parentId": 197
+    },
+    {
+        "shoot": "Beliagio Hotel Bridals",
+        "parentId": 196
+    },
+    {
+        "shoot": "Beliagio Hotel Bridals",
+        "parentId": 195
+    },
+    {
+        "shoot": "Bellagio Hotel Bridals",
         "parentId": 73
+    },
+    {
+        "shoot": "Best Friends Session",
+        "parentId": 214
+    },
+    {
+        "shoot": "Best Friends Session",
+        "parentId": 213
+    },
+    {
+        "shoot": "Best Friends Session",
+        "parentId": 212
+    },
+    {
+        "shoot": "Best Friends Session",
+        "parentId": 211
     },
     {
         "shoot": "City Bridals 2022",
@@ -108,16 +200,80 @@
         "parentId": 13
     },
     {
-        "shoot": "City Girls Content Day",
-        "parentId": 4
-    },
-    {
         "shoot": "Dead Horse Lookout 2021",
         "parentId": 126
     },
     {
+        "shoot": "Dead Horse Point Picnic",
+        "parentId": 320
+    },
+    {
+        "shoot": "Dead Horse Point Picnic",
+        "parentId": 317
+    },
+    {
+        "shoot": "Dead Horse Point Picnic",
+        "parentId": 314
+    },
+    {
+        "shoot": "Dead Horse Point Picnic",
+        "parentId": 312
+    },
+    {
+        "shoot": "Dead Horse Point Picnic",
+        "parentId": 306
+    },
+    {
+        "shoot": "Dead Horse Point Picnic",
+        "parentId": 304
+    },
+    {
+        "shoot": "Dead Horse Point Picnic",
+        "parentId": 303
+    },
+    {
+        "shoot": "Dead Horse Point Picnic",
+        "parentId": 302
+    },
+    {
+        "shoot": "Dead Horse Point Picnic",
+        "parentId": 301
+    },
+    {
         "shoot": "E and R Engagements",
         "parentId": 64
+    },
+    {
+        "shoot": "Fall Minis 2022",
+        "parentId": 272
+    },
+    {
+        "shoot": "Fall Minis 2022",
+        "parentId": 270
+    },
+    {
+        "shoot": "Fall Minis 2022",
+        "parentId": 267
+    },
+    {
+        "shoot": "Fall Minis 2022",
+        "parentId": 262
+    },
+    {
+        "shoot": "Fremont Street Bridals",
+        "parentId": 210
+    },
+    {
+        "shoot": "Fremont Street Bridals",
+        "parentId": 207
+    },
+    {
+        "shoot": "Fremont Street Bridals",
+        "parentId": 204
+    },
+    {
+        "shoot": "Fremont Street Bridals",
+        "parentId": 203
     },
     {
         "shoot": "Fremont Street Bridals",
@@ -161,6 +317,62 @@
     },
     {
         "shoot": "Goblin Valley Bridals 2021",
+        "parentId": 333
+    },
+    {
+        "shoot": "Goblin Valley Bridals 2021",
+        "parentId": 332
+    },
+    {
+        "shoot": "Goblin Valley Bridals 2021",
+        "parentId": 331
+    },
+    {
+        "shoot": "Goblin Valley Bridals 2021",
+        "parentId": 279
+    },
+    {
+        "shoot": "Goblin Valley Bridals 2021",
+        "parentId": 177
+    },
+    {
+        "shoot": "Goblin Valley Bridals 2021",
+        "parentId": 176
+    },
+    {
+        "shoot": "Goblin Valley Bridals 2021",
+        "parentId": 174
+    },
+    {
+        "shoot": "Goblin Valley Bridals 2021",
+        "parentId": 173
+    },
+    {
+        "shoot": "Goblin Valley Bridals 2021",
+        "parentId": 172
+    },
+    {
+        "shoot": "Goblin Valley Bridals 2021",
+        "parentId": 132
+    },
+    {
+        "shoot": "Goblin Valley Bridals 2021",
+        "parentId": 131
+    },
+    {
+        "shoot": "Goblin Valley Bridals 2021",
+        "parentId": 130
+    },
+    {
+        "shoot": "Goblin Valley Bridals 2021",
+        "parentId": 129
+    },
+    {
+        "shoot": "Goblin Valley Bridals 2021",
+        "parentId": 128
+    },
+    {
+        "shoot": "Goblin Valley Bridals 2021",
         "parentId": 123
     },
     {
@@ -181,6 +393,46 @@
     },
     {
         "shoot": "H and A Couples Session",
+        "parentId": 278
+    },
+    {
+        "shoot": "H and A Couples Session",
+        "parentId": 157
+    },
+    {
+        "shoot": "H and A Couples Session",
+        "parentId": 156
+    },
+    {
+        "shoot": "H and A Couples Session",
+        "parentId": 155
+    },
+    {
+        "shoot": "H and A Couples Session",
+        "parentId": 153
+    },
+    {
+        "shoot": "H and A Couples Session",
+        "parentId": 152
+    },
+    {
+        "shoot": "H and A Couples Session",
+        "parentId": 145
+    },
+    {
+        "shoot": "H and A Couples Session",
+        "parentId": 143
+    },
+    {
+        "shoot": "H and A Couples Session",
+        "parentId": 140
+    },
+    {
+        "shoot": "H and A Couples Session",
+        "parentId": 134
+    },
+    {
+        "shoot": "H and A Couples Session",
         "parentId": 71
     },
     {
@@ -189,7 +441,75 @@
     },
     {
         "shoot": "J and V Couples Session 2022",
+        "parentId": 254
+    },
+    {
+        "shoot": "J and V Couples Session 2022",
+        "parentId": 252
+    },
+    {
+        "shoot": "J and V Couples Session 2022",
+        "parentId": 250
+    },
+    {
+        "shoot": "J and V Couples Session 2022",
+        "parentId": 246
+    },
+    {
+        "shoot": "J and V Couples Session 2022",
         "parentId": 38
+    },
+    {
+        "shoot": "Jubeck Family",
+        "parentId": 241
+    },
+    {
+        "shoot": "Jubeck Family",
+        "parentId": 240
+    },
+    {
+        "shoot": "Jubeck Family",
+        "parentId": 239
+    },
+    {
+        "shoot": "Jubeck Family",
+        "parentId": 236
+    },
+    {
+        "shoot": "Jubeck Family",
+        "parentId": 235
+    },
+    {
+        "shoot": "Jubeck Family",
+        "parentId": 234
+    },
+    {
+        "shoot": "July 2023 SLC Wedding",
+        "parentId": 297
+    },
+    {
+        "shoot": "July 2023 SLC Wedding",
+        "parentId": 294
+    },
+    {
+        "shoot": "July 2023 SLC Wedding",
+        "parentId": 293
+    },
+    {
+        "shoot": "July 2023 SLC Wedding",
+        "parentId": 292
+    },
+    {
+        "shoot": "July 2023 SLC Wedding",
+        "parentId": 289
+    },
+    {
+        "shoot": "July 2023 SLC Wedding",
+        "parentId": 288
+    },
+    {
+        "shoot": "July 2023 SLC Wedding",
+        "parentId": 287
     },
     {
         "shoot": "July 2023 SLC Wedding",
@@ -208,6 +528,42 @@
         "parentId": 107
     },
     {
+        "shoot": "K and A Maturnity Session",
+        "parentId": 313
+    },
+    {
+        "shoot": "K and A Maturnity Session",
+        "parentId": 311
+    },
+    {
+        "shoot": "K and A Maturnity Session",
+        "parentId": 310
+    },
+    {
+        "shoot": "K and A Maturnity Session",
+        "parentId": 309
+    },
+    {
+        "shoot": "K and A Maturnity Session",
+        "parentId": 308
+    },
+    {
+        "shoot": "K and A Maturnity Session",
+        "parentId": 307
+    },
+    {
+        "shoot": "K and A Maturnity Session",
+        "parentId": 305
+    },
+    {
+        "shoot": "L and M Engagements",
+        "parentId": 233
+    },
+    {
+        "shoot": "L and M Engagements",
+        "parentId": 232
+    },
+    {
         "shoot": "L and M Engagements",
         "parentId": 27
     },
@@ -224,12 +580,112 @@
         "parentId": 24
     },
     {
+        "shoot": "Lexi Graduation Session",
+        "parentId": 274
+    },
+    {
+        "shoot": "Lexi Graduation Session",
+        "parentId": 273
+    },
+    {
+        "shoot": "Lexi Graduation Session",
+        "parentId": 269
+    },
+    {
+        "shoot": "Lexi Graduation Session",
+        "parentId": 263
+    },
+    {
+        "shoot": "Lexi Graduation Session",
+        "parentId": 249
+    },
+    {
+        "shoot": "Lexi Graduation Session",
+        "parentId": 245
+    },
+    {
+        "shoot": "Lexi Graduation Session",
+        "parentId": 244
+    },
+    {
+        "shoot": "Lexi Portraits",
+        "parentId": 336
+    },
+    {
+        "shoot": "Lexi Portraits",
+        "parentId": 185
+    },
+    {
+        "shoot": "Little White Chapel Elopement",
+        "parentId": 190
+    },
+    {
+        "shoot": "Little White Chapel Elopement",
+        "parentId": 189
+    },
+    {
+        "shoot": "Little White Chapel Elopement",
+        "parentId": 188
+    },
+    {
+        "shoot": "Little White Chapel Elopement",
+        "parentId": 187
+    },
+    {
+        "shoot": "Little White Chapel Elopement",
+        "parentId": 186
+    },
+    {
+        "shoot": "Little White Chapel Elopement",
+        "parentId": 184
+    },
+    {
+        "shoot": "Little White Chapel Elopement",
+        "parentId": 183
+    },
+    {
+        "shoot": "Little White Chapel Elopement",
+        "parentId": 182
+    },
+    {
+        "shoot": "Little White Chapel Elopement",
+        "parentId": 181
+    },
+    {
+        "shoot": "Little White Chapel Elopement",
+        "parentId": 180
+    },
+    {
         "shoot": "Little White Chapel Elopement",
         "parentId": 72
     },
     {
         "shoot": "Little White Chapel Elopement",
         "parentId": 8
+    },
+    {
+        "shoot": "M Family",
+        "parentId": 326
+    },
+    {
+        "shoot": "M Family",
+        "parentId": 325
+    },
+    {
+        "shoot": "M Family",
+        "parentId": 324
+    },
+    {
+        "shoot": "M Family",
+        "parentId": 323
+    },
+    {
+        "shoot": "M Family",
+        "parentId": 322
+    },
+    {
+        "shoot": "M Family",
+        "parentId": 321
     },
     {
         "shoot": "M Family",
@@ -246,6 +702,30 @@
     {
         "shoot": "M Family",
         "parentId": 82
+    },
+    {
+        "shoot": "M Senior April",
+        "parentId": 209
+    },
+    {
+        "shoot": "M Senior April",
+        "parentId": 208
+    },
+    {
+        "shoot": "M Senior April",
+        "parentId": 206
+    },
+    {
+        "shoot": "M Senior April",
+        "parentId": 205
+    },
+    {
+        "shoot": "M Senior April",
+        "parentId": 202
+    },
+    {
+        "shoot": "M Senior April",
+        "parentId": 201
     },
     {
         "shoot": "M Senior April",
@@ -269,6 +749,18 @@
     },
     {
         "shoot": "M and E Couple Session",
+        "parentId": 222
+    },
+    {
+        "shoot": "M and E Couple Session",
+        "parentId": 221
+    },
+    {
+        "shoot": "M and E Couple Session",
+        "parentId": 218
+    },
+    {
+        "shoot": "M and E Couple Session",
         "parentId": 99
     },
     {
@@ -282,6 +774,18 @@
     {
         "shoot": "M and E Couple Session",
         "parentId": 17
+    },
+    {
+        "shoot": "M and L Arches Bridals",
+        "parentId": 300
+    },
+    {
+        "shoot": "M and L Arches Bridals",
+        "parentId": 299
+    },
+    {
+        "shoot": "M and L Arches Bridals",
+        "parentId": 298
     },
     {
         "shoot": "M and L Arches Bridals",
@@ -320,6 +824,34 @@
         "parentId": 29
     },
     {
+        "shoot": "Maren Senior Pictures",
+        "parentId": 286
+    },
+    {
+        "shoot": "Maren Senior Pictures",
+        "parentId": 285
+    },
+    {
+        "shoot": "Maren Senior Pictures",
+        "parentId": 284
+    },
+    {
+        "shoot": "Moab Cozy Engagements 2021",
+        "parentId": 335
+    },
+    {
+        "shoot": "Moab Cozy Engagements 2021",
+        "parentId": 334
+    },
+    {
+        "shoot": "Moab Cozy Engagements 2021",
+        "parentId": 151
+    },
+    {
+        "shoot": "Moab Cozy Engagements 2021",
+        "parentId": 150
+    },
+    {
         "shoot": "Moab Cozy Engagements 2021",
         "parentId": 124
     },
@@ -345,11 +877,39 @@
     },
     {
         "shoot": "P and A Bridals",
+        "parentId": 154
+    },
+    {
+        "shoot": "P and A Bridals",
+        "parentId": 139
+    },
+    {
+        "shoot": "P and A Bridals",
         "parentId": 5
     },
     {
         "shoot": "P and A Bridals",
         "parentId": 2
+    },
+    {
+        "shoot": "P and L Bridals",
+        "parentId": 238
+    },
+    {
+        "shoot": "P and L Bridals",
+        "parentId": 237
+    },
+    {
+        "shoot": "P and L Bridals",
+        "parentId": 28
+    },
+    {
+        "shoot": "P and M Bridals",
+        "parentId": 243
+    },
+    {
+        "shoot": "P and M Bridals",
+        "parentId": 242
     },
     {
         "shoot": "P and M Bridals",
@@ -360,32 +920,128 @@
         "parentId": 30
     },
     {
-        "shoot": "P and M Engagements",
+        "shoot": "P and M Mountain Engagements",
+        "parentId": 231
+    },
+    {
+        "shoot": "P and M Mountain Engagements",
+        "parentId": 230
+    },
+    {
+        "shoot": "P and M Mountain Engagements",
+        "parentId": 229
+    },
+    {
+        "shoot": "P and M Mountain Engagements",
+        "parentId": 228
+    },
+    {
+        "shoot": "P and M Mountain Engagements",
+        "parentId": 227
+    },
+    {
+        "shoot": "P and M Mountain Engagements",
+        "parentId": 94
+    },
+    {
+        "shoot": "P and M Sand Dunes Engagements",
+        "parentId": 268
+    },
+    {
+        "shoot": "P and M Sand Dunes Engagements",
+        "parentId": 259
+    },
+    {
+        "shoot": "P and M Sand Dunes Engagements",
         "parentId": 43
     },
     {
-        "shoot": "P and M Engagements",
+        "shoot": "P and M Sand Dunes Engagements",
         "parentId": 42
     },
     {
-        "shoot": "P and M Engagements",
+        "shoot": "P and M Sand Dunes Engagements",
         "parentId": 41
     },
     {
-        "shoot": "P and M Engagements",
+        "shoot": "P and M Sand Dunes Engagements",
         "parentId": 1
     },
     {
-        "shoot": "P and M Engagements 1",
-        "parentId": 94
+        "shoot": "Paris Hotel Bridals",
+        "parentId": 194
+    },
+    {
+        "shoot": "Paris Hotel Bridals",
+        "parentId": 193
+    },
+    {
+        "shoot": "Paris Hotel Bridals",
+        "parentId": 192
+    },
+    {
+        "shoot": "Paris Hotel Bridals",
+        "parentId": 191
+    },
+    {
+        "shoot": "Provo Bridal Session",
+        "parentId": 277
+    },
+    {
+        "shoot": "Provo Canyon Bridals",
+        "parentId": 137
+    },
+    {
+        "shoot": "Provo Canyon Bridals",
+        "parentId": 135
+    },
+    {
+        "shoot": "Provo Canyon Bridals",
+        "parentId": 133
+    },
+    {
+        "shoot": "Provo Canyon Engagments",
+        "parentId": 147
+    },
+    {
+        "shoot": "Provo Canyon Engagments",
+        "parentId": 138
+    },
+    {
+        "shoot": "R Newborn Session",
+        "parentId": 265
+    },
+    {
+        "shoot": "R Newborn Session",
+        "parentId": 261
+    },
+    {
+        "shoot": "R Newborn Session",
+        "parentId": 257
+    },
+    {
+        "shoot": "R Newborn Session",
+        "parentId": 253
+    },
+    {
+        "shoot": "R Newborn Session",
+        "parentId": 248
+    },
+    {
+        "shoot": "R Newborn Session",
+        "parentId": 247
+    },
+    {
+        "shoot": "R Newborn Session",
+        "parentId": 39
     },
     {
         "shoot": "R Portrait Session 2021",
         "parentId": 65
     },
     {
-        "shoot": "R and P Newborn Session",
-        "parentId": 39
+        "shoot": "Red Rock Bridals 2021",
+        "parentId": 161
     },
     {
         "shoot": "Red Rock Bridals 2021",
@@ -424,8 +1080,100 @@
         "parentId": 49
     },
     {
-        "shoot": "Salt Flats Bridals 2022",
-        "parentId": 28
+        "shoot": "S and K Wedding Day",
+        "parentId": 337
+    },
+    {
+        "shoot": "SLC Minis",
+        "parentId": 175
+    },
+    {
+        "shoot": "SLC Minis",
+        "parentId": 169
+    },
+    {
+        "shoot": "SLC Minis",
+        "parentId": 167
+    },
+    {
+        "shoot": "SLC Minis",
+        "parentId": 166
+    },
+    {
+        "shoot": "SLC Minis",
+        "parentId": 165
+    },
+    {
+        "shoot": "SLC Minis",
+        "parentId": 164
+    },
+    {
+        "shoot": "SLC Minis",
+        "parentId": 163
+    },
+    {
+        "shoot": "SLC Minis",
+        "parentId": 162
+    },
+    {
+        "shoot": "SLC Minis",
+        "parentId": 160
+    },
+    {
+        "shoot": "SLC Minis",
+        "parentId": 158
+    },
+    {
+        "shoot": "SLC Minis",
+        "parentId": 149
+    },
+    {
+        "shoot": "SLC Minis",
+        "parentId": 148
+    },
+    {
+        "shoot": "SLC Minis",
+        "parentId": 146
+    },
+    {
+        "shoot": "SLC Minis",
+        "parentId": 144
+    },
+    {
+        "shoot": "SLC Minis",
+        "parentId": 142
+    },
+    {
+        "shoot": "SLC Minis",
+        "parentId": 141
+    },
+    {
+        "shoot": "SLC Minis",
+        "parentId": 136
+    },
+    {
+        "shoot": "SLC Minis",
+        "parentId": 4
+    },
+    {
+        "shoot": "SLC Sunrise Bridals",
+        "parentId": 220
+    },
+    {
+        "shoot": "SLC Sunrise Bridals",
+        "parentId": 219
+    },
+    {
+        "shoot": "SLC Sunrise Bridals",
+        "parentId": 217
+    },
+    {
+        "shoot": "SLC Sunrise Bridals",
+        "parentId": 216
+    },
+    {
+        "shoot": "SLC Sunrise Bridals",
+        "parentId": 215
     },
     {
         "shoot": "Salt Flats Wedding Exit",
@@ -445,11 +1193,27 @@
     },
     {
         "shoot": "Snowy Bridals 2022",
+        "parentId": 223
+    },
+    {
+        "shoot": "Snowy Bridals 2022",
         "parentId": 20
     },
     {
         "shoot": "Snowy Bridals 2022",
         "parentId": 19
+    },
+    {
+        "shoot": "Snowy Engagements 2022",
+        "parentId": 226
+    },
+    {
+        "shoot": "Snowy Engagements 2022",
+        "parentId": 225
+    },
+    {
+        "shoot": "Snowy Engagements 2022",
+        "parentId": 224
     },
     {
         "shoot": "Snowy Engagements 2022",
@@ -462,6 +1226,46 @@
     {
         "shoot": "Snowy Engagements 2022",
         "parentId": 21
+    },
+    {
+        "shoot": "Snowy Lovers",
+        "parentId": 171
+    },
+    {
+        "shoot": "Snowy Lovers",
+        "parentId": 170
+    },
+    {
+        "shoot": "Snowy Lovers",
+        "parentId": 168
+    },
+    {
+        "shoot": "Snowy Lovers",
+        "parentId": 159
+    },
+    {
+        "shoot": "Summer Adventure Couples Session",
+        "parentId": 255
+    },
+    {
+        "shoot": "Summer Adventure Couples Session",
+        "parentId": 251
+    },
+    {
+        "shoot": "Summer Content Day",
+        "parentId": 271
+    },
+    {
+        "shoot": "Summer Content Day",
+        "parentId": 266
+    },
+    {
+        "shoot": "Summer Content Day",
+        "parentId": 264
+    },
+    {
+        "shoot": "Summer Content Day",
+        "parentId": 260
     },
     {
         "shoot": "T and L Dead Horse Bridals",
@@ -485,7 +1289,39 @@
     },
     {
         "shoot": "Tibble Fork Paddleboard Lovers",
+        "parentId": 276
+    },
+    {
+        "shoot": "Tibble Fork Paddleboard Lovers",
+        "parentId": 275
+    },
+    {
+        "shoot": "Tibble Fork Paddleboard Lovers",
         "parentId": 77
+    },
+    {
+        "shoot": "Utah Lake Family 2023",
+        "parentId": 328
+    },
+    {
+        "shoot": "Utah Lake Family 2023",
+        "parentId": 327
+    },
+    {
+        "shoot": "Utah Lake Family 2023",
+        "parentId": 283
+    },
+    {
+        "shoot": "Utah Lake Family 2023",
+        "parentId": 282
+    },
+    {
+        "shoot": "Utah Lake Family 2023",
+        "parentId": 281
+    },
+    {
+        "shoot": "Utah Lake Family 2023",
+        "parentId": 280
     },
     {
         "shoot": "Utah Lake Family 2023",
@@ -506,6 +1342,14 @@
     {
         "shoot": "Utah Lake Family 2023",
         "parentId": 83
+    },
+    {
+        "shoot": "Valley Of Fire Engagement",
+        "parentId": 179
+    },
+    {
+        "shoot": "Valley Of Fire Engagement",
+        "parentId": 178
     },
     {
         "shoot": "Western Dead Horse Bridals 2021",

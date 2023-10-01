@@ -4,18 +4,18 @@ let topButton = `
         <span class="inner"></span>
 `;
 
-topElement.addEventListener('click', function() {
+topElement.addEventListener('click', function () {
     window.scrollTo({
         top: 0,
         behavior: "smooth"
     });
 });
 
-window.addEventListener('scroll', function() {
+window.addEventListener('scroll', function () {
 
     let topOffset = window.innerHeight * .75;
     let y = window.scrollY;
-    
+
     if (y > topOffset) {
         topElement.className = "show";
     }

@@ -126,7 +126,7 @@ a {
     color: #c89c97 !important;
 } */
 
-#header.show li.info {
+#header.show li.contact {
     height: calc(var(--header-height) - 1px);
     border-bottom: 1px solid #ca9e85;
     border-bottom-left-radius: 0;
@@ -580,6 +580,7 @@ div.short-answer input.invalid,
 select.invalid,
 div.single-choice.invalid label {
     border-bottom: 1px solid var(--required-red);
+    box-shadow: 0 0 2px var(--req-red-dark);
     box-shadow: 0 0 1.5px var(--req-red-dark);
     background-color: var(--req-red-dimmer);
 }

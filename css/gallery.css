@@ -98,7 +98,12 @@ a {
     overflow-x: hidden;
     position: relative;
     width: 100%;
-    z-index: 3;
+    z-index: 2;
+    -webkit-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
     background-color: #FFFBF5;
 }
 
@@ -128,7 +133,7 @@ a {
 
 } */
 
-#header.show li.gallery {
+#header.show li.gallery>a {
     height: calc(var(--header-height) - 1px);
     border-bottom: 1px solid #ca9e85;
     border-bottom-left-radius: 0;
@@ -137,7 +142,7 @@ a {
     transition-delay: 0s, .35s, 0s, 0s;
 }
 
-#links>ul>li.gallery:hover {
+#links>ul>li.gallery:hover>a {
     transition-delay: 0s, 0s, 0s, 0s;
 }
 

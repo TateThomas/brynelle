@@ -674,7 +674,8 @@ a {
     width: 100%;
     padding: 30px 0 30px 0;
     margin: 10px 0 10px 0;
-    background-color: #ffe0d2;
+    /* background-color: #ffe0d2; */
+    background-color: #fff2ec;
 }
 
 #shoots ul.text li {
@@ -2180,7 +2181,7 @@ a {
         width: 100%;
         padding: 25px 0 25px 0;
         margin: calc(var(--icon-height) - var(--text-height)) auto 0 auto;
-        background-color: #ffe0d2;
+        background-color: #fff2ec;
     }
 
     #shoots ul.text li:nth-child(2) {

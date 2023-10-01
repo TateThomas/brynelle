@@ -186,23 +186,23 @@ a {
     transition: opacity 2.5s;
 }
 
-#images picture:nth-child(1) img{
+#images picture:nth-child(1) img {
     object-position: bottom;
 }
 
-#images picture:nth-child(2) img{
+#images picture:nth-child(2) img {
     object-position: top;
 }
 
-#images picture:nth-child(3) img{
+#images picture:nth-child(3) img {
     object-position: 50% 47.5%;
 }
 
-#images picture:nth-child(5) img{
+#images picture:nth-child(5) img {
     object-position: 50% 25%;
 }
 
-#images picture:nth-child(6) img{
+#images picture:nth-child(6) img {
     object-position: 50% 71%;
 }
 
@@ -2420,23 +2420,23 @@ a {
         --top-page-height: 85vh;
     }
 
-    #images picture:nth-child(1) img{
+    #images picture:nth-child(1) img {
         object-position: 47.25% 100%;
     }
 
-    #images picture:nth-child(2) img{
+    #images picture:nth-child(2) img {
         object-position: 25% 0%;
     }
 
-    #images picture:nth-child(3) img{
+    #images picture:nth-child(3) img {
         object-position: 45% 25%;
     }
 
-    #images picture:nth-child(4) img{
+    #images picture:nth-child(4) img {
         object-position: 80% 47.5%;
     }
 
-    #images picture:nth-child(6) img{
+    #images picture:nth-child(6) img {
         object-position: 61% 71%;
     }
 
@@ -2731,7 +2731,7 @@ a {
         margin-right: 20px;
     }
 
-/*
+    /*
     #lower-page>div>div:nth-child(2) {
         height: 817px;
     }
@@ -2740,12 +2740,12 @@ a {
     #about-me {
         position: relative;
         width: calc(100% - 27px - var(--lower-page-padding) - var(--lower-page-radius) - var(--lower-page-border-thickness));
-/*        height: 765px;*/
+        /*        height: 765px;*/
         height: auto;
     }
 
     #about-me>div {
-/*        position: absolute;*/
+        /*        position: absolute;*/
         width: calc(100% + var(--lower-page-padding) + 18px + 25px);
     }
 
