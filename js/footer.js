@@ -6,10 +6,10 @@ let appFooter = `
                         <a href="https://brynelle.com/style-guide.pdf"><div class="guide">
                             <div class="image">
                                 <picture>
-                                    <source type="image/avif" srcset="/images/gallery/124.avif">
-                                    <source type="image/webp" srcset="/images/gallery/124.webp">
-                                    <source type="image/jpg" srcset="/images/gallery/124.jpg">
-                                    <img src="/images/gallery/124.webp" alt="Boy picking girl up bridal style and swinging her">
+                                    <source type="image/avif" srcset="/images/gallery/124/124-full.avif">
+                                    <source type="image/webp" srcset="/images/gallery/124/124-full.webp">
+                                    <source type="image/jpg" srcset="/images/gallery/124/124-full.jpg">
+                                    <img src="/images/gallery/124/124-full.webp" alt="Boy picking girl up bridal style and swinging her">
                                 </picture>
                             </div>
                             <div class="text">
@@ -27,7 +27,7 @@ let appFooter = `
                     </div>
                 </div>
                 <div class="copyright">
-                    <p>© Brynelle Photo 2024</p>
+                    <p>© Brynelle Photo 2023</p>
                 </div>
             </div>
             <div id="logo">

@@ -540,10 +540,22 @@ class Database {
                             <h3>${location.replaceAll("-", " ")}</h3>
                         </div>
                         <picture>
-                            <source type="image/avif" srcset="${imagePath}.avif">
-                            <source type="image/webp" srcset="${imagePath}.webp">
-                            <source type="image/jpg" srcset="${imagePath}.jpg">
-                            <img src='${imagePath}.webp' alt="${altText}" loading="lazy">
+                            <source media="(min-width: 700px)" type="image/avif" srcset="${imagePath}-icon-reg.avif">
+                            <source media="(min-width: 700px)" type="image/webp" srcset="${imagePath}-icon-reg.webp">
+                            <source media="(min-width: 700px)" type="image/jpg" srcset="${imagePath}-icon-reg.jpg">
+                            <source media="(min-width: 500px)" type="image/avif" srcset="${imagePath}-icon-sml.avif">
+                            <source media="(min-width: 500px)" type="image/webp" srcset="${imagePath}-icon-sml.webp">
+                            <source media="(min-width: 500px)" type="image/jpg" srcset="${imagePath}-icon-sml.jpg">
+                            <source type="image/avif" srcset="${imagePath}-icon-xsml.avif">
+                            <source type="image/webp" srcset="${imagePath}-icon-xsml.webp">
+                            <source type="image/jpg" srcset="${imagePath}-icon-xsml.jpg">
+                            <img src='${imagePath}-full.webp' alt="${altText}" loading="lazy">
+                        </picture>
+                        <picture class="full">
+                            <source media="(max-width: 0px)" type="image/avif" srcset="${imagePath}-full.avif">
+                            <source media="(max-width: 0px)" type="image/webp" srcset="${imagePath}-full.webp">
+                            <source media="(max-width: 0px)" type="image/jpg" srcset="${imagePath}-full.jpg">
+                            <img src='${imagePath}-icon-xsml.jpg' alt="${altText}" loading="lazy">
                         </picture>
                         <div>
                             <h3>${dateArray[1]} ${parseInt(dateArray[2])}, ${dateArray[3]}</h3>
@@ -559,6 +571,7 @@ class Database {
     updateUserPage() {
 
         var expandTimeout;
+        var replaceTimeout;
         function expandImage() {
 
             let clickedIndex = obj.visibleElements.indexOf(this.parentElement);
@@ -581,7 +594,10 @@ class Database {
             if (this.parentElement.classList[2] == "expanded") {
 
                 clearTimeout(expandTimeout);
+                clearTimeout(replaceTimeout);
 
+                let picHTML = this.querySelector("picture.full");
+                picHTML.innerHTML = picHTML.innerHTML.replaceAll("min-width: 0px", "max-width: 0px");
                 this.className = this.className.replace("big", "small");
 
                 this.style.setProperty("position", "absolute");
@@ -602,6 +618,31 @@ class Database {
             else {
 
                 clearTimeout(expandTimeout);
+                clearTimeout(replaceTimeout);
+
+                let thisImage = this.querySelector("picture>img");
+                let imgWidth = thisImage.naturalWidth;
+                let imgHeight = thisImage.naturalHeight;
+                let aspectRatio = imgWidth / imgHeight;
+                if ((window.innerWidth / aspectRatio) > (window.innerHeight * .85)) {
+                    // this.style.setProperty("--img-min-height", `${aspectRatio}`);
+                    this.style.setProperty("--img-min-height", "85vh");
+                    this.style.setProperty("--img-max-width", "100%");
+                    // this.style.setProperty("--img-min-width", "100%");
+                    this.style.setProperty("--img-min-width", `${window.innerHeight * .85 * aspectRatio}px`);
+                }
+                else {
+                    // this.style.setProperty("--img-min-height", "100%");
+                    // this.style.setProperty("--img-min-height", `${window.innerWidth / aspectRatio}px`);
+                    this.style.setProperty("--img-min-width", "100%");
+                    this.style.setProperty("--img-max-width", "100%");
+                }
+                // if ((window.innerHeight * .85 * aspectRatio) >= window.innerWidth) {
+                //     this.style.setProperty("--img-min-width", "100%");
+                // }
+                // else {
+                //     this.style.setProperty("--img-min-width", `${window.innerHeight * .85 * aspectRatio}px`);
+                // }
 
                 this.parentElement.className = this.parentElement.className.replace("normal", "expanded");
 
@@ -610,6 +651,7 @@ class Database {
                 this.style.setProperty("--width", `${document.body.clientWidth}px`);
 
                 let obj = this;
+                let picHTML;
                 expandTimeout = setTimeout(function () {
                     if (obj.parentElement.classList[2] == "expanded") {
                         obj.className = obj.className.replace("small", "big");
@@ -618,9 +660,18 @@ class Database {
                         obj.style.setProperty("left", "0px");
                         obj.style.setProperty("top", "0px");
 
-                        obj.style.setProperty("--img-position", obj.getElementsByTagName("picture")[0].getBoundingClientRect().y + "px");
+                        obj.style.setProperty("--img-position", thisImage.getBoundingClientRect().y + "px");
+                        obj.style.setProperty("--img-position-left", thisImage.getBoundingClientRect().x + "px");
+                        obj.style.setProperty("--img-width", thisImage.offsetWidth + "px");
+                        obj.style.setProperty("--img-height", thisImage.offsetHeight + "px");
                     }
                 }, 450);
+                replaceTimeout = setTimeout(function () {
+                    if (obj.parentElement.classList[2] == "expanded") {
+                        picHTML = obj.querySelector("picture.full");
+                        picHTML.innerHTML = picHTML.innerHTML.replaceAll("max-width: 0px", "min-width: 0px");
+                    }
+                }, 500);
 
             }
 
