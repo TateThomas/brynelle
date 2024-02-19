@@ -4,7 +4,9 @@ function createNewEntry(path, date, name, alt, priority, type, locationsArray, l
     return new Promise(resolve => {
 
         // console.log("START: " + name);
-        database.newEntry(path, date, name, alt, priority, type, locationsArray, lighting);
+        imgNum = path.split("/")[3];
+        // console.log(imgNum);
+        database.newEntry(`${path}/${imgNum}`, date, name, alt, priority, type, locationsArray, lighting);
         // console.log("STOP: " + name);
         setTimeout(function () { resolve("complete") }, 10);
 
@@ -154,7 +156,6 @@ var pictureArray = [
     ["/images/gallery/125", "2021,11,20,14,11,37", "Red Rock Bridals 2021", "Groom leading bride up red rocks", "c", "bridals", ["arches", "moab", "desert", "utah", "arizona"], "shaded"],
     ["/images/gallery/126", "2021,11,21,8,21,12", "Dead Horse Lookout 2021", "Scenic view of Dead Horse Lookout Point", "a", "scenery", ["dead-horse", "moab", "desert", "utah"], "sunset"],
     ["/images/gallery/127", "2021,11,21,9,30,10", "A and H Engagements Session", "Girl on guy's shoulders looking down at him", "b", "engagements", ["moab", "desert", "roadside", "utah"], "sunrise"],
-
     ["/images/gallery/128", "2021,11,21,6,51,46", "Goblin Valley Bridals 2021", "Couple dancing around and holding hands, male looking at female", "a", "bridals", ["goblin-valley", "moab", "desert", "utah", "arizona"], "flash"],
     ["/images/gallery/129", "2021,11,21,7,5,24", "Goblin Valley Bridals 2021", "Male holding female's leg up and female hugging", "b", "engagements", ["goblin-valley", "moab", "desert", "utah", "arizona"], "flash"],
     ["/images/gallery/130", "2021,11,21,7,5,51", "Goblin Valley Bridals 2021", "Couple laughing and walking with arms around eachother", "c", "engagements", ["goblin-valley", "moab", "desert", "utah", "arizona"], "flash"],
