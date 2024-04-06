@@ -9,7 +9,7 @@ let appFooter = `
                                     <source type="image/avif" srcset="/images/gallery/124/124-full.avif">
                                     <source type="image/webp" srcset="/images/gallery/124/124-full.webp">
                                     <source type="image/jpg" srcset="/images/gallery/124/124-full.jpg">
-                                    <img src="/images/gallery/124/124-full.webp" alt="Boy picking girl up bridal style and swinging her">
+                                    <img src="/images/gallery/124/124-full.webp" alt="Boy picking girl up bridal style and swinging her" loading="lazy">
                                 </picture>
                             </div>
                             <div class="text">
