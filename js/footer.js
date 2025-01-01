@@ -27,7 +27,7 @@ let appFooter = `
                     </div>
                 </div>
                 <div class="copyright">
-                    <p>© Brynelle Photo 2024</p>
+                    <p>© Brynelle Photo 2025</p>
                 </div>
             </div>
             <div id="logo">
