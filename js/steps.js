@@ -1,10 +1,10 @@
 let steps = `
             <div class="image">
                 <picture>
-                    <source type="image/avif" srcset="./images/pricing/sun.avif">
-                    <source type="image/webp" srcset="./images/pricing/sun.webp">
-                    <source type="image/jpg" srcset="./images/pricing/sun.jpg">
-                    <img src="./images/pricing/sun.webp" alt="Sun line art">
+                    <source type="image/avif" srcset="/images/pricing/sun/sun.avif">
+                    <source type="image/webp" srcset="/images/pricing/sun/sun.webp">
+                    <source type="image/jpg" srcset="/images/pricing/sun/sun.jpg">
+                    <img src="/images/pricing/sun/sun.webp" alt="Sun line art">
                 </picture>
             </div>
             
@@ -53,7 +53,7 @@ let steps = `
                 <h2><i>5</i></h2>
                 
                 <h3><i>gallery delivered</i></h3>
-                <p>wedding galleries will be delivered within 6 weeks. other sessions will be delivered in 2 weeks</p>
+                <p>wedding galleries will be delivered within 6 weeks (sneak peaks delivered within 1-3 days). other sessions will be delivered in 2 weeks</p>
             
             </div>
             
