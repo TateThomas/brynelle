@@ -348,6 +348,8 @@ a {
 
 #arches h2 {
     color: #fffbf5;
+    /* color: black; */
+    text-shadow: 0 0 7px var(--light-black);
     font-family: "Black Aroug";
     -webkit-font-feature-settings: "kern" 1;
     -moz-font-feature-settings: "kern" 1;
@@ -612,7 +614,8 @@ a {
 #about-me {
     --name-offset-top: 25px;
     --name-offset-left: 70px;
-    --about-me-color: #fae8d7;
+    /* --about-me-color: #fae8d7; */
+    --about-me-color: #f6eee2;
 
     display: inline-block;
     padding: var(--lower-page-padding);
@@ -668,6 +671,7 @@ a {
     left: 0;
     transform: rotate(-7.5deg);
     background-color: #d5b69a;
+    background-color: #ddc5ae;
     z-index: 5;
 }
 
@@ -678,6 +682,7 @@ a {
     right: 0;
     transform: rotate(1deg);
     background-color: #ffefe8;
+    /* background-color: #ddc0b1; */
     z-index: 6;
 }
 
@@ -1133,7 +1138,8 @@ a {
 /****************** Bottom Page ******************/
 
 #bottom-page {
-    --bottom-color: #f1dcc7;
+    /* --bottom-color: #f1dcc7; */
+    --bottom-color: #f6eee2;
 
     position: relative;
     background-color: var(--bottom-color);
@@ -1450,8 +1456,8 @@ a {
     height: 100vh;
     -o-object-fit: cover;
     object-fit: cover;
-    -o-object-position: bottom;
-    object-position: bottom;
+    /* -o-object-position: 50% 50%; */
+    object-position: 50% 1%;
     margin-left: 50%;
     transform: translateX(-50%);
     -webkit-transition: width 1s;
@@ -1876,6 +1882,7 @@ a {
     #more-travel>div:first-child img {
         width: 1500px;
         height: 1000px;
+        object-position: 50% 0%;
     }
 
     #more-travel:hover>div:first-child img {

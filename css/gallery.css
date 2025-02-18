@@ -179,12 +179,15 @@ a {
 
 #top-page div.picture img {
     z-index: 2;
+    position: relative;
     width: 100%;
     height: 100%;
     -o-object-fit: cover;
     object-fit: cover;
-    -o-object-position: 0 45%;
-    object-position: 0 45%;
+    /* -o-object-position: 0 45%;
+    object-position: 0 45%; */
+    margin-left: 50%;
+    transform: translateX(-50%);
 }
 
 #top-page div.picture h2 {
@@ -222,10 +225,10 @@ div.button {
     position: relative;
     width: 100%;
     height: var(--line-thickness);
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
     justify-content: center;
     overflow: visible;
-    background-color: #0e0f0c;
+    /* background-color: #0e0f0c; */
 }
 
 div.button div {
@@ -233,16 +236,19 @@ div.button div {
     width: -moz-max-content;
     width: max-content;
     margin: auto auto auto 15%;
-    border: var(--line-thickness) solid #0e0f0c;
+    /* border: var(--line-thickness) solid #0e0f0c; */
+    border: var(--line-thickness) solid var(--light-black);
     border-radius: 39px;
     background-color: #efe5d6;
-    transition: background-color .3s;
+    background-color: var(--light-black);
+    transition: background-color .3s, border .3s;
 }
 
 div.button h3 {
     padding: 13px 24px 13px 24px;
     margin: 0;
-    color: #0e0f0c;
+    /* color: #0e0f0c; */
+    color: #FFFBF5;
     font-family: "Romile";
     -webkit-font-feature-settings: "kern" 1;
     -moz-font-feature-settings: "kern" 1;
@@ -251,21 +257,30 @@ div.button h3 {
     /* letter-spacing: 2px; */
     letter-spacing: 0.06em;
     font-size: 36px;
+    transition: color .3s;
 }
 
 div.button div:hover {
-    background-color: #e5d4bc;
+    /* background-color: #e5d4bc; */
+    background-color: #4a4a4a;
+    border: var(--line-thickness) solid #4a4a4a;
+}
+
+div.button div:hover h3 {
+    color: white;
 }
 
 #top-page div.quick {
     display: flex;
     width: 100%;
-    margin-top: 125px;
-    background-color: #ffecdf;
+    /* margin-top: 125px; */
+    /* background-color: #ffecdf; */
+    background-color: #efe5d6;
 }
 
 #top-page div.quick h2 {
-    color: #b67354;
+    /* color: #b67354; */
+    color: var(--light-black);
     font-family: 'Holland Regular';
     font-size: 75px;
     padding: 35px;
@@ -363,11 +378,6 @@ div.button div:hover {
 .bottom {
     -o-object-position: bottom;
     object-position: bottom;
-}
-
-#icons a:last-child img {
-    -o-object-position: left;
-    object-position: left;
 }
 
 

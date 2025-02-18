@@ -6,10 +6,10 @@ let appFooter = `
                         <a href="https://brynelle.com/style-guide.pdf"><div class="guide">
                             <div class="image">
                                 <picture>
-                                    <source type="image/avif" srcset="/images/gallery/124/124-full.avif">
-                                    <source type="image/webp" srcset="/images/gallery/124/124-full.webp">
-                                    <source type="image/jpg" srcset="/images/gallery/124/124-full.jpg">
-                                    <img src="/images/gallery/124/124-full.webp" alt="Boy picking girl up bridal style and swinging her" loading="lazy">
+                                    <source type="image/avif" srcset="/images/front_page/couple_cuddling_on_beach/couple_cuddling_on_beach_normal.avif">
+                                    <source type="image/webp" srcset="/images/front_page/couple_cuddling_on_beach/couple_cuddling_on_beach_normal.webp">
+                                    <source type="image/jpg" srcset="/images/front_page/couple_cuddling_on_beach/couple_cuddling_on_beach_normal.jpg">
+                                    <img src="/images/front_page/couple_cuddling_on_beach/couple_cuddling_on_beach_normal.jpg" alt="Boy picking girl up bridal style and swinging her" loading="lazy">
                                 </picture>
                             </div>
                             <div class="text">
